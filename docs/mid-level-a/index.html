@@ -333,9 +333,10 @@
       margin-top: 22px;
       display: flex;
       justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 12px;
     }
-    .next, .restart {
-      border: 0;
+    .next, .restart, .hub-link {
       border-radius: 999px;
       background: var(--button-solid);
       color: var(--button-text);
@@ -343,6 +344,19 @@
       font-weight: 700;
       padding: calc(12px * var(--space-scale)) calc(18px * var(--space-scale));
       cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+    .next, .restart {
+      border: 0;
+    }
+    .hub-link {
+      background: #ffffff;
+      color: var(--teal-dark);
+      border-color: rgba(228, 87, 46, 0.28);
     }
     .result-box {
       display: flex;
@@ -501,6 +515,11 @@
       current: 0,
       selected: null,
       answers: []
+    };
+    const completionNav = {
+      nextHref: "../beginner/",
+      nextLabel: "Take beginner quiz",
+      hubHref: "../"
     };
 
     function clamp(value, min, max) {
@@ -673,6 +692,8 @@
           Keep building your understanding of consent, rights, data handling, and breach response so you can apply DPDP confidently in day-to-day work.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
+          <a class="next" href="${completionNav.nextHref}">${completionNav.nextLabel}</a>
+          <a class="hub-link" href="${completionNav.hubHref}">Go to quiz hub</a>
           <button class="restart" id="restartBtn">Try again</button>
         </div>
       `;
