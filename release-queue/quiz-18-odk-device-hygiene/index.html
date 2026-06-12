@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 18 - ODK Device Hygiene</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 18 | ODK Device Hygiene</p>
+      <h1>ODK Device Hygiene: Offline Forms, Sync, and Loss Response</h1>
+      <p>This set is focused on ODK-based field collection, where offline storage, sync discipline, and device safeguards strongly affect breach exposure.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Platform Setting</strong>ODK Collect and ODK Central workflows</div><div class="topic"><strong>Project Stage</strong>Collection, sync, storage, and incident response</div><div class="topic"><strong>Focus</strong>Encryption, deletion after sync, offline limits, and remote wipe</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -434,69 +434,69 @@
   <script>
     const questions = [
       {
-            "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "module": "ODK checklist",
+            "topic": "Baseline safeguard",
+            "text": "Which control is explicitly named in the ODK checklist for field devices storing offline forms?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
-            ],
-            "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
-      },
-      {
-            "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
-            "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
+                  "Full device encryption",
+                  "Daily photo backups to personal drives",
+                  "Open guest access for troubleshooting",
+                  "Permanent local retention of every submission"
             ],
             "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The checklist specifically calls for device-level encryption as a core safeguard for offline form storage."
       },
       {
-            "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "module": "ODK checklist",
+            "topic": "After successful sync",
+            "text": "What does the ODK-specific checklist expect teams to think about after forms have synced successfully?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "Whether personal-data forms are deleted from devices after sync",
+                  "Whether synced forms are copied into a WhatsApp backup",
+                  "Whether the device should keep every historical submission forever",
+                  "Whether the phone wallpaper reflects programme branding"
             ],
-            "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
+            "correct": 0,
+            "explanation": "The checklist explicitly asks whether forms containing personal data are deleted from devices once sync has succeeded."
       },
       {
-            "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
+            "module": "ODK checklist",
+            "topic": "Long offline periods",
+            "text": "Why does the checklist ask about local storage duration and a maximum offline-period policy?",
             "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
+                  "Because longer offline retention can increase exposure if a device is lost or stolen",
+                  "Because offline collection is prohibited under DPDP",
+                  "Because the law requires every form to sync within one hour",
+                  "Because beneficiaries may withdraw consent only while a device is online"
             ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
+            "correct": 0,
+            "explanation": "The guidance treats local storage duration as a risk-management question because unsynced personal data on a device widens exposure."
       },
       {
-            "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
+            "module": "ODK checklist",
+            "topic": "Remote wipe readiness",
+            "text": "Why does remote wipe capability appear in the ODK checklist and breach SOP together?",
             "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
+                  "Because it can help contain a lost or stolen device incident",
+                  "Because it replaces the need to report a breach",
+                  "Because it lets staff erase evidence before review",
+                  "Because it is only a cosmetic mobile-device feature"
             ],
-            "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "correct": 0,
+            "explanation": "Remote wipe is a containment tool, not a substitute for the incident workflow, which is why it appears in both places."
+      },
+      {
+            "module": "Breach SOP",
+            "topic": "Immediate reaction",
+            "text": "A field tablet carrying unsynced ODK submissions is stolen on a bus ride back from camp. Which response is closest to the combined checklist and SOP guidance?",
+            "options": [
+                  "Escalate immediately so containment and device-response steps can begin",
+                  "Wait until the weekly review because a stolen device may reappear",
+                  "Erase the central logs first to avoid confusion",
+                  "Replace the tablet and do not document the event"
+            ],
+            "correct": 0,
+            "explanation": "The breach SOP is clear that loss of a device holding personal data should be escalated immediately so containment and documentation can begin."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-17-verbal-consent-rights/",
+      previousLabel: "Open Quiz 17",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces how ODK teams should reduce exposure before and after sync, not just after a device goes missing.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

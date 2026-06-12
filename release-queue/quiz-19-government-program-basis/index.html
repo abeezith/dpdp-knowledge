@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 19 - Government Program Basis</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 19 | Government Program Basis</p>
+      <h1>Government Program Basis: Welfare, Law, and Purpose Boundaries</h1>
+      <p>This set focuses on how Section 7-type legitimate uses interact with government-linked programmes, legal obligations, and field assumptions.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Obligation Area</strong>Section 7 legitimate uses in government-linked programmes</div><div class="topic"><strong>People Role</strong>Programme officers, implementors, and reporting teams</div><div class="topic"><strong>Focus</strong>Lawful basis, legal disclosure, and no drift into unrelated use</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -435,68 +435,68 @@
     const questions = [
       {
             "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "topic": "Welfare programme example",
+            "text": "Which example is directly used in the source material to illustrate a government welfare or service context under Section 7?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
-            ],
-            "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
-      },
-      {
-            "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
-            "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
+                  "Beneficiaries enrolled in programmes such as PMMVY or Nikshay",
+                  "Private influencer campaigns for public health awareness",
+                  "Open social media community groups",
+                  "Volunteer photo contests run for fundraising"
             ],
             "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The act summary gives programme examples such as PMMVY and Nikshay when describing legitimate-use scenarios linked to government benefits or services."
       },
       {
-            "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "module": "Legitimate uses",
+            "topic": "What remains in force",
+            "text": "If a team relies on a government-programme legal basis for processing rather than fresh consent, what should they not assume?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "That security and breach obligations still continue",
+                  "That the legal basis allows any unrelated future reuse of the same data",
+                  "That programme scope still matters",
+                  "That rights requests may still need handling"
             ],
             "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
+            "explanation": "The references explicitly reject the idea that legitimate use removes purpose limitation or other protective obligations."
       },
       {
             "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
+            "topic": "Disclosure required by law",
+            "text": "Which sharing situation is specifically recognised in the source materials as a lawful example?",
             "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
+                  "Disclosure required to the State under a legal obligation or mandated reporting context",
+                  "Forwarding records to any interested partner for insight generation",
+                  "Sending spreadsheets to informal volunteer groups",
+                  "Posting data summaries with identifiers in public channels"
             ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
+            "correct": 0,
+            "explanation": "The summary includes examples where law requires disclosure to the State for programme or statutory purposes."
       },
       {
-            "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
+            "module": "Program Officer guidance",
+            "topic": "Scope check",
+            "text": "A programme team collected data for a government-linked service workflow and now wants to repurpose the same identifiable records for a separate internal showcase deck. What is the safer reading?",
             "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
+                  "The original lawful basis automatically covers any later internal reuse",
+                  "A scope check is still needed because purpose boundaries remain important",
+                  "Every internal use is exempt from DPDP review",
+                  "Government-linked data may never be stored in any form"
             ],
             "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "explanation": "The guidance stresses purpose limitation even where processing has a lawful basis other than consent."
+      },
+      {
+            "module": "Compliance timeline",
+            "topic": "Operational now",
+            "text": "Why do the references still push teams to formalise grievance and incident handling even before full Phase III enforcement?",
+            "options": [
+                  "Because the DPBI and complaint environment are already operational from Phase I",
+                  "Because every programme must already appoint a mandatory DPO",
+                  "Because cross-border transfer rules have been fully frozen",
+                  "Because consent forms stop mattering after 2025"
+            ],
+            "correct": 0,
+            "explanation": "The timeline notes say DPBI is already operational and complaints are already possible, so teams should not treat readiness as entirely future-tense."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-18-odk-device-hygiene/",
+      previousLabel: "Open Quiz 18",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces that government-programme processing may have a lawful basis, but it still remains scoped, protected, and purpose-bound.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

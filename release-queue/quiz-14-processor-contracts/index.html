@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 14 - Processor Contracts</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 14 | Processor Contracts</p>
+      <h1>Processor Contracts: Vendors, Scope, and Security Clauses</h1>
+      <p>This set focuses on what Piramal Foundation should lock down when another organisation processes personal data on its behalf.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Obligation Area</strong>Data Processor contracts and role clarity</div><div class="topic"><strong>People Role</strong>IT governance, legal, BIDA, and platform teams</div><div class="topic"><strong>Focus</strong>Scope, security clauses, hosted access, and review triggers</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -435,68 +435,68 @@
     const questions = [
       {
             "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "topic": "Processor definition",
+            "text": "Which description best matches a Data Processor in the DPDP materials used for this repo?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
-            ],
-            "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
-      },
-      {
-            "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
-            "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
+                  "An organisation that processes data on behalf of a Data Fiduciary",
+                  "Any beneficiary who provides information to a programme",
+                  "Only a government office that mandates reporting",
+                  "A volunteer who explains a consent notice in the field"
             ],
             "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The act summary defines a processor as an entity handling data on behalf of the organisation that decides purpose and means."
       },
       {
-            "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "module": "Audit checklist",
+            "topic": "Before sharing to a vendor",
+            "text": "A custom MIS vendor will store beneficiary-level records for Piramal Foundation. What should be in place before treating that as ordinary workflow?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "A written agreement requiring equivalent security safeguards",
+                  "Only a verbal understanding because the vendor is familiar with the programme",
+                  "A promise that the vendor will decide rights responses alone",
+                  "Nothing further if the data is useful for service improvement"
+            ],
+            "correct": 0,
+            "explanation": "Both the audit checklist and role guidance call for processor contracts to include equivalent security obligations."
+      },
+      {
+            "module": "Nikshay checklist",
+            "topic": "Role clarity",
+            "text": "Why does the Nikshay integration checklist ask teams to clarify whether Piramal Foundation is acting as a processor or in another role?",
+            "options": [
+                  "Because role clarity affects what contract and operational obligations should be documented",
+                  "Because the label changes the colour theme of the dashboard",
+                  "Because only processors need to protect personal data",
+                  "Because the answer decides whether data becomes public"
+            ],
+            "correct": 0,
+            "explanation": "The source notes tie role clarity to the right agreement structure and to how processing obligations are framed."
+      },
+      {
+            "module": "Developer guidance",
+            "topic": "Vendor access",
+            "text": "A vendor engineer asks for broad always-on access to production beneficiary data \"just in case.\" Which response best fits the repo's DPDP references?",
+            "options": [
+                  "Grant broad access because speed matters more than scope control",
+                  "Limit access to what is necessary and align it with role-based controls",
+                  "Send weekly exports instead so access logs are unnecessary",
+                  "Replace all account review with a confidentiality email"
             ],
             "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
+            "explanation": "The guidance repeatedly pushes minimum necessary access, RBAC, and auditable control rather than broad standing visibility."
       },
       {
-            "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
+            "module": "Audit checklist",
+            "topic": "Hosted location awareness",
+            "text": "A vendor says the platform may use cloud regions outside India. What does the checklist suggest Piramal Foundation should at least do?",
             "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
+                  "Document the hosting arrangement and monitor it against transfer restrictions",
+                  "Assume the vendor's architecture is irrelevant to DPDP",
+                  "Ban the platform automatically without reviewing the setup",
+                  "Treat external hosting as a branding issue, not a data issue"
             ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
-      },
-      {
-            "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
-            "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
-            ],
-            "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "correct": 0,
+            "explanation": "The audit checklist asks teams to know and document where data is stored or transferred so the setup can be explained and monitored."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-13-jharkhand-health-outreach/",
+      previousLabel: "Open Quiz 13",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces that vendor convenience is not enough; processing relationships need documented scope and equivalent security obligations.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

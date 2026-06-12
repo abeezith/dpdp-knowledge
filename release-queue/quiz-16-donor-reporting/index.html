@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 16 - Donor Reporting</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 16 | Donor Reporting</p>
+      <h1>Donor Reporting: Aggregation, Stories, and Identifiability</h1>
+      <p>This set concentrates on how reporting teams should handle programme evidence without stretching consent or exposing identifiable people unnecessarily.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Lifecycle Stage</strong>Reporting and evidence-sharing after programme delivery</div><div class="topic"><strong>People Role</strong>BI, communications, and donor-reporting teams</div><div class="topic"><strong>Focus</strong>Aggregation, story consent, small counts, and recipient scope</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -434,69 +434,69 @@
   <script>
     const questions = [
       {
-            "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "module": "Consent templates",
+            "topic": "Media purpose specificity",
+            "text": "A communications team wants to reuse a beneficiary photo in a donor report, but the original explanation covered only internal programme documentation. What is the safer interpretation?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
+                  "Internal documentation automatically includes donor-facing publication",
+                  "The donor-report use is a separate purpose that should be covered specifically",
+                  "The photo is free to use because it helps a good cause",
+                  "No consent issue arises if the beneficiary's district is omitted"
             ],
             "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
-      },
-      {
-            "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
-            "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
-            ],
-            "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The photography template calls for purpose-specific use rather than assuming one media explanation covers later external publication."
       },
       {
             "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "topic": "Aggregate preference",
+            "text": "Which reporting approach is more aligned with the DPDP guidance when a donor only needs programme performance patterns?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "Aggregate or anonymised reporting where individuals cannot be identified",
+                  "Row-level exports because donors prefer detail",
+                  "Screenshots of the full MIS with names masked by hand",
+                  "Health lists shared through chat for convenience"
             ],
-            "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
+            "correct": 0,
+            "explanation": "The BI and reporting guidance points toward aggregated or anonymised reporting when individual-level records are not necessary."
       },
       {
-            "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
+            "module": "Mid-level guidance",
+            "topic": "Rare-condition table",
+            "text": "A donor table shows only two cases of a rare condition in a single small block. Why might that still deserve caution even if names are absent?",
             "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
+                  "Because a very small count can still make people easier to identify",
+                  "Because counts below five are always unlawful by rule",
+                  "Because donor reports cannot contain any numbers",
+                  "Because block-level data is automatically classified as biometric"
             ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
+            "correct": 0,
+            "explanation": "The repo's existing BI guidance warns that small-cell outputs can still create re-identification risk in narrow geographies or rare conditions."
       },
       {
-            "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
+            "module": "Cross-border transfers",
+            "topic": "International funder sharing",
+            "text": "The source material notes that international sharing may be permissible under the current transfer model. What still continues to matter?",
             "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
+                  "Purpose limitation and minimisation still apply",
+                  "Every cross-border share becomes public-domain data",
+                  "Security controls no longer matter once a donor is involved",
+                  "The transfer model removes the need for recipient scrutiny"
+            ],
+            "correct": 0,
+            "explanation": "The transfer section says current permissibility does not remove the need for purpose discipline and data minimisation."
+      },
+      {
+            "module": "Consent templates",
+            "topic": "Story bank assumptions",
+            "text": "A programme team argues that once a beneficiary gave a positive interview, the quotes can be archived forever for any future donor pack. What is the better answer from the repo's guidance?",
+            "options": [
+                  "Future donor use is automatically covered by goodwill",
+                  "The use should stay tied to a clearly explained purpose rather than blanket future reuse",
+                  "Interview quotes are never personal data",
+                  "Any archive is exempt if kept on a foundation laptop"
             ],
             "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "explanation": "The consent guidance rejects blanket future-use assumptions and expects purpose-specific explanation, especially when people can be identified."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-15-consent-manager-readiness/",
+      previousLabel: "Open Quiz 15",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces how to keep donor reporting useful while avoiding casual drift into unnecessary identifiable sharing.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

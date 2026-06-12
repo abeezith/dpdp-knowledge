@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 21 - Privacy Contact and Grievances</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 21 | Privacy Contact and Grievances</p>
+      <h1>Privacy Contact and Grievances: Publish, Receive, and Respond</h1>
+      <p>This set focuses on the public-facing mechanics that make rights and grievance handling real for a Data Principal.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Obligation Area</strong>Rule 9 contact publication and grievance handling workflow</div><div class="topic"><strong>People Role</strong>Privacy contacts, web owners, and programme managers</div><div class="topic"><strong>Focus</strong>Public contact details, request routing, and response discipline</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -434,69 +434,69 @@
   <script>
     const questions = [
       {
-            "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "module": "Rule 9",
+            "topic": "What to publish",
+            "text": "What does the source material say should be published on the website or app under the contact-information requirement?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
-            ],
-            "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
-      },
-      {
-            "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
-            "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
+                  "The business contact information of the privacy point of contact or DPO, where applicable",
+                  "Only the name of the software vendor maintaining the platform",
+                  "Only a generic no-reply email address",
+                  "Only a donor-relations helpline"
             ],
             "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The summary materials say the website or app should publish the business contact information of the designated privacy contact."
       },
       {
-            "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "module": "Rights workflow",
+            "topic": "Why publication matters",
+            "text": "Why is publishing a privacy contact operationally important in the repo's DPDP guidance?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "Because people need a practical route to ask questions, exercise rights, or raise grievances",
+                  "Because it replaces the need for any internal workflow",
+                  "Because only public websites, not apps, ever process personal data",
+                  "Because it lets teams skip notice and consent design"
+            ],
+            "correct": 0,
+            "explanation": "The materials connect the published contact point with real rights exercise and grievance handling."
+      },
+      {
+            "module": "Rights",
+            "topic": "Field intake",
+            "text": "A beneficiary raises a complaint verbally with a field worker rather than through email. What is the better handling pattern from the repo's guidance?",
+            "options": [
+                  "Ignore it until it arrives in writing",
+                  "Receive it respectfully, log it, and route it into the grievance process",
+                  "Ask the person to contact the donor instead",
+                  "Treat verbal complaints as outside DPDP scope"
             ],
             "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
+            "explanation": "The field and rights workflows emphasise logging and escalating requests or complaints even when they first arise verbally."
       },
       {
-            "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
+            "module": "Compliance timeline",
+            "topic": "Readiness by date",
+            "text": "By when does the timeline guidance expect the privacy point of contact to be published as part of full readiness planning?",
             "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
+                  "By the broader May 2027 compliance deadline, with preparation earlier",
+                  "Only after Piramal Foundation becomes an SDF",
+                  "Not until an international transfer restriction is issued",
+                  "Only when a donor insists on it"
             ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
+            "correct": 0,
+            "explanation": "The timeline links publication of the privacy point of contact to the overall readiness path toward full compliance, with earlier preparation encouraged."
       },
       {
-            "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
+            "module": "Rule 14",
+            "topic": "Complaint exhaustion logic",
+            "text": "What does the source material say about how Data Principals generally approach the DPBI complaint route?",
             "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
+                  "They should normally exhaust the organisation's grievance mechanism first",
+                  "They must never raise a concern internally",
+                  "They can complain only after a court order",
+                  "They can use DPBI only for children's-data cases"
             ],
-            "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "correct": 0,
+            "explanation": "The rights summary says Data Principals are expected to exhaust the organisation's grievance mechanism before approaching DPBI."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-20-child-safety-settings/",
+      previousLabel: "Open Quiz 20",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces that rights handling is not just an internal concept; people must be able to find a contact and receive timely responses.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

@@ -1071,6 +1071,856 @@ const quizCatalog = [
         explanation: "The timeline note says the proposed acceleration had not been confirmed, so teams should prepare for November 2026 while treating 13 May 2027 as the hard deadline."
       }
     ]
+  },
+  {
+    number: 13,
+    slug: "jharkhand-health-outreach",
+    shortTitle: "Jharkhand Health Outreach",
+    pageTitle: "DPDP Quiz 13 - Jharkhand Health Outreach",
+    eyebrow: "DPDP Quiz 13 | Jharkhand Health Outreach",
+    heroTitle: "Jharkhand Health Outreach: Care Data, Photos, and Referrals",
+    heroIntro: "This queue set uses Jharkhand outreach scenarios to test when health-related processing can rely on care delivery and when teams still need separate consent or tighter sharing discipline.",
+    cardDescription: "Five field-health questions on care versus reporting, referral sharing, voice notes, and how to handle data during direct outreach work.",
+    audience: "Karuna Fellows, implementors, and programme leads working in field health settings",
+    focus: "Health-service processing, referral sharing, media consent, and field handling judgment",
+    resultSummary: "This set reinforces how health outreach teams should separate direct care activity from reporting, media, and informal sharing.",
+    topics: [
+      { label: "Location", text: "Jharkhand outreach and camp-based service settings" },
+      { label: "People Role", text: "Karuna Fellows, implementors, and referral coordinators" },
+      { label: "Focus", text: "Care context, referral scope, and extra consent for non-care uses" }
+    ],
+    questions: [
+      {
+        module: "Karuna Fellow guidance",
+        topic: "Care-linked processing",
+        text: "At a maternal-health outreach visit in Jharkhand, a Karuna Fellow records symptoms and referral notes so a beneficiary can be connected to care. Which legal framing best matches the source material?",
+        options: [
+          "This can sit within the healthcare or care context for service delivery",
+          "This always needs a donor-facing photography consent form first",
+          "This is banned unless a district magistrate signs the register",
+          "This is allowed only after the full Phase III deadline arrives"
+        ],
+        correct: 0,
+        explanation: "The role guidance and act summary treat care-related health processing in the healthcare context differently from separate media or reporting uses."
+      },
+      {
+        module: "Consent templates",
+        topic: "Referral sharing",
+        text: "A field worker wants to pass a beneficiary's phone number and referral note to the named health partner already described in the enrolment explanation. What makes that sharing easier to justify under the templates?",
+        options: [
+          "The sharing was within the stated purpose and explained recipient list",
+          "The worker personally knows the doctor receiving it",
+          "The beneficiary data is always public after enrolment",
+          "Any health-related sharing is exempt from documentation"
+        ],
+        correct: 0,
+        explanation: "The enrolment notice template expects teams to state who will see the data and keep sharing inside that explained purpose."
+      },
+      {
+        module: "Karuna Fellow guidance",
+        topic: "Voice note summary",
+        text: "A Fellow records a beneficiary's explanation as a voice note for later follow-up. Once the note has been used for the intended follow-up, what is the better practice from the role guidance?",
+        options: [
+          "Keep the note permanently in a personal phone archive",
+          "Delete the note once the purpose has been served",
+          "Forward the note to all field staff for cross-learning",
+          "Upload it to social media to document field realities"
+        ],
+        correct: 1,
+        explanation: "The field-role guidance treats recordings as personal data and says they should not be retained once the intended purpose is over."
+      },
+      {
+        module: "Children's data",
+        topic: "Camp photography",
+        text: "During a child-health camp, a team member says the medical check-up already happened, so a photo for the annual impact story can now be taken without further steps. What is the more accurate answer?",
+        options: [
+          "The check-up automatically covers every later storytelling use",
+          "The impact-story photo is a separate purpose and still needs parental or guardian consent",
+          "Photos stop being personal data if the child is not named",
+          "Children's images may be reused freely after any health interaction"
+        ],
+        correct: 1,
+        explanation: "The allowed references separate care-related processing from photography and donor-storytelling uses, especially for children."
+      },
+      {
+        module: "Breach SOP",
+        topic: "Field register handling",
+        text: "A paper register with names and health details is left behind after an outreach activity. Which response best matches the breach mindset in the source material?",
+        options: [
+          "Treat it as a potential breach event and escalate rather than quietly replacing it",
+          "Ignore it because the register was not digital",
+          "Wait a week in case the notebook turns up on its own",
+          "Post a photo of the missing register in a public group for help"
+        ],
+        correct: 0,
+        explanation: "The breach guidance emphasises early reporting of loss or exposure rather than waiting for confirmed harm or improvising in public channels."
+      }
+    ]
+  },
+  {
+    number: 14,
+    slug: "processor-contracts",
+    shortTitle: "Processor Contracts",
+    pageTitle: "DPDP Quiz 14 - Processor Contracts",
+    eyebrow: "DPDP Quiz 14 | Processor Contracts",
+    heroTitle: "Processor Contracts: Vendors, Scope, and Security Clauses",
+    heroIntro: "This set focuses on what Piramal Foundation should lock down when another organisation processes personal data on its behalf.",
+    cardDescription: "Five operational questions on processor agreements, role clarity, security clauses, hosted services, and vendor access boundaries.",
+    audience: "Programme managers, IT governance leads, developers, and procurement reviewers",
+    focus: "Data Processor role clarity, equivalent safeguards, and contract-backed control",
+    resultSummary: "This set reinforces that vendor convenience is not enough; processing relationships need documented scope and equivalent security obligations.",
+    topics: [
+      { label: "Obligation Area", text: "Data Processor contracts and role clarity" },
+      { label: "People Role", text: "IT governance, legal, BIDA, and platform teams" },
+      { label: "Focus", text: "Scope, security clauses, hosted access, and review triggers" }
+    ],
+    questions: [
+      {
+        module: "Act summary",
+        topic: "Processor definition",
+        text: "Which description best matches a Data Processor in the DPDP materials used for this repo?",
+        options: [
+          "An organisation that processes data on behalf of a Data Fiduciary",
+          "Any beneficiary who provides information to a programme",
+          "Only a government office that mandates reporting",
+          "A volunteer who explains a consent notice in the field"
+        ],
+        correct: 0,
+        explanation: "The act summary defines a processor as an entity handling data on behalf of the organisation that decides purpose and means."
+      },
+      {
+        module: "Audit checklist",
+        topic: "Before sharing to a vendor",
+        text: "A custom MIS vendor will store beneficiary-level records for Piramal Foundation. What should be in place before treating that as ordinary workflow?",
+        options: [
+          "A written agreement requiring equivalent security safeguards",
+          "Only a verbal understanding because the vendor is familiar with the programme",
+          "A promise that the vendor will decide rights responses alone",
+          "Nothing further if the data is useful for service improvement"
+        ],
+        correct: 0,
+        explanation: "Both the audit checklist and role guidance call for processor contracts to include equivalent security obligations."
+      },
+      {
+        module: "Nikshay checklist",
+        topic: "Role clarity",
+        text: "Why does the Nikshay integration checklist ask teams to clarify whether Piramal Foundation is acting as a processor or in another role?",
+        options: [
+          "Because role clarity affects what contract and operational obligations should be documented",
+          "Because the label changes the colour theme of the dashboard",
+          "Because only processors need to protect personal data",
+          "Because the answer decides whether data becomes public"
+        ],
+        correct: 0,
+        explanation: "The source notes tie role clarity to the right agreement structure and to how processing obligations are framed."
+      },
+      {
+        module: "Developer guidance",
+        topic: "Vendor access",
+        text: "A vendor engineer asks for broad always-on access to production beneficiary data \"just in case.\" Which response best fits the repo's DPDP references?",
+        options: [
+          "Grant broad access because speed matters more than scope control",
+          "Limit access to what is necessary and align it with role-based controls",
+          "Send weekly exports instead so access logs are unnecessary",
+          "Replace all account review with a confidentiality email"
+        ],
+        correct: 1,
+        explanation: "The guidance repeatedly pushes minimum necessary access, RBAC, and auditable control rather than broad standing visibility."
+      },
+      {
+        module: "Audit checklist",
+        topic: "Hosted location awareness",
+        text: "A vendor says the platform may use cloud regions outside India. What does the checklist suggest Piramal Foundation should at least do?",
+        options: [
+          "Document the hosting arrangement and monitor it against transfer restrictions",
+          "Assume the vendor's architecture is irrelevant to DPDP",
+          "Ban the platform automatically without reviewing the setup",
+          "Treat external hosting as a branding issue, not a data issue"
+        ],
+        correct: 0,
+        explanation: "The audit checklist asks teams to know and document where data is stored or transferred so the setup can be explained and monitored."
+      }
+    ]
+  },
+  {
+    number: 15,
+    slug: "consent-manager-readiness",
+    shortTitle: "Consent Manager Readiness",
+    pageTitle: "DPDP Quiz 15 - Consent Manager Readiness",
+    eyebrow: "DPDP Quiz 15 | Consent Manager Readiness",
+    heroTitle: "Consent Manager Readiness: ABDM, Timeline, and Scope Checks",
+    heroIntro: "This set focuses on the timeline and practical planning questions around Consent Manager readiness and ABDM-aligned workflows.",
+    cardDescription: "Five timeline and design questions on the Consent Manager milestone, ABDM gaps, and how teams should plan before the formal framework becomes active.",
+    audience: "ABDM teams, platform owners, developers, and implementation planners",
+    focus: "Phase II timing, readiness planning, ABDM notice gaps, and withdrawal design",
+    resultSummary: "This set reinforces that Consent Manager work is a planning track with concrete dates and unresolved notice-design checks, not an excuse to defer DPDP basics.",
+    topics: [
+      { label: "Project Stage", text: "Consent Manager readiness and pre-activation planning" },
+      { label: "Platform Setting", text: "ABDM-linked systems and consent workflow design" },
+      { label: "Focus", text: "Phase II date, scope questions, and withdrawal usability" }
+    ],
+    questions: [
+      {
+        module: "Compliance timeline",
+        topic: "Phase II milestone",
+        text: "According to the allowed reference timeline, when does the Consent Manager framework become active?",
+        options: [
+          "13 November 2025",
+          "13 May 2027",
+          "13 November 2026",
+          "13 January 2026"
+        ],
+        correct: 2,
+        explanation: "The compliance timeline marks 13 November 2026 as the Phase II milestone for the Consent Manager framework."
+      },
+      {
+        module: "Developer guidance",
+        topic: "ABDM gap check",
+        text: "What is one of the explicit DPDP questions the developer guidance says teams should assess about ABDM-linked consent flows?",
+        options: [
+          "Whether the notice satisfies Rule 3 itemised-notice requirements",
+          "Whether the app icon uses government colours",
+          "Whether every user has a private printer",
+          "Whether beneficiary records can be used for any later analytics"
+        ],
+        correct: 0,
+        explanation: "The ABDM note in the role guidance specifically asks whether its consent notice covers Rule 3 style itemisation and related DPDP expectations."
+      },
+      {
+        module: "Consent",
+        topic: "Withdrawal ease",
+        text: "Which design principle from the source material still applies when a platform team builds a consent-management experience?",
+        options: [
+          "Withdrawal should be as easy as giving consent",
+          "Withdrawal may be hidden as long as a legal team can find it",
+          "Withdrawal works only for children, not adults",
+          "Withdrawal is optional if the platform is modern"
+        ],
+        correct: 0,
+        explanation: "The consent guidance is explicit that withdrawal must be as easy as the original act of giving consent."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Readiness stance",
+        text: "Why do the timeline notes encourage work before November 2026 even though the full compliance hard deadline remains later?",
+        options: [
+          "Because November 2026 is treated as a prudent readiness target",
+          "Because every rule already became enforceable in 2025",
+          "Because only field teams need to prepare early",
+          "Because the Act stops applying after Phase II begins"
+        ],
+        correct: 0,
+        explanation: "The timeline guidance explicitly says teams should treat November 2026 as a readiness target even while retaining May 2027 as the hard deadline."
+      },
+      {
+        module: "Role guidance",
+        topic: "Beyond ABDM",
+        text: "If a platform uses ABDM-linked consent but also processes data for a use that goes beyond ABDM-consented record sharing, what does the repo guidance suggest?",
+        options: [
+          "Assume ABDM automatically covers every additional purpose",
+          "Treat ABDM consent as complementary and assess whether an extra DPDP-specific layer is needed",
+          "Ignore DPDP because ABDM predates it",
+          "Convert all extra uses into public-interest research by default"
+        ],
+        correct: 1,
+        explanation: "The developer guidance says ABDM consent may be complementary rather than sufficient for every additional processing purpose."
+      }
+    ]
+  },
+  {
+    number: 16,
+    slug: "donor-reporting",
+    shortTitle: "Donor Reporting",
+    pageTitle: "DPDP Quiz 16 - Donor Reporting",
+    eyebrow: "DPDP Quiz 16 | Donor Reporting",
+    heroTitle: "Donor Reporting: Aggregation, Stories, and Identifiability",
+    heroIntro: "This set concentrates on how reporting teams should handle programme evidence without stretching consent or exposing identifiable people unnecessarily.",
+    cardDescription: "Five reporting questions on photos, aggregate statistics, small cell risk, personal stories, and international partner sharing.",
+    audience: "BI teams, communication leads, donor-reporting teams, and programme managers",
+    focus: "Aggregate reporting, identifiable stories, small counts, and scope-conscious sharing",
+    resultSummary: "This set reinforces how to keep donor reporting useful while avoiding casual drift into unnecessary identifiable sharing.",
+    topics: [
+      { label: "Lifecycle Stage", text: "Reporting and evidence-sharing after programme delivery" },
+      { label: "People Role", text: "BI, communications, and donor-reporting teams" },
+      { label: "Focus", text: "Aggregation, story consent, small counts, and recipient scope" }
+    ],
+    questions: [
+      {
+        module: "Consent templates",
+        topic: "Media purpose specificity",
+        text: "A communications team wants to reuse a beneficiary photo in a donor report, but the original explanation covered only internal programme documentation. What is the safer interpretation?",
+        options: [
+          "Internal documentation automatically includes donor-facing publication",
+          "The donor-report use is a separate purpose that should be covered specifically",
+          "The photo is free to use because it helps a good cause",
+          "No consent issue arises if the beneficiary's district is omitted"
+        ],
+        correct: 1,
+        explanation: "The photography template calls for purpose-specific use rather than assuming one media explanation covers later external publication."
+      },
+      {
+        module: "Role guidance",
+        topic: "Aggregate preference",
+        text: "Which reporting approach is more aligned with the DPDP guidance when a donor only needs programme performance patterns?",
+        options: [
+          "Aggregate or anonymised reporting where individuals cannot be identified",
+          "Row-level exports because donors prefer detail",
+          "Screenshots of the full MIS with names masked by hand",
+          "Health lists shared through chat for convenience"
+        ],
+        correct: 0,
+        explanation: "The BI and reporting guidance points toward aggregated or anonymised reporting when individual-level records are not necessary."
+      },
+      {
+        module: "Mid-level guidance",
+        topic: "Rare-condition table",
+        text: "A donor table shows only two cases of a rare condition in a single small block. Why might that still deserve caution even if names are absent?",
+        options: [
+          "Because a very small count can still make people easier to identify",
+          "Because counts below five are always unlawful by rule",
+          "Because donor reports cannot contain any numbers",
+          "Because block-level data is automatically classified as biometric"
+        ],
+        correct: 0,
+        explanation: "The repo's existing BI guidance warns that small-cell outputs can still create re-identification risk in narrow geographies or rare conditions."
+      },
+      {
+        module: "Cross-border transfers",
+        topic: "International funder sharing",
+        text: "The source material notes that international sharing may be permissible under the current transfer model. What still continues to matter?",
+        options: [
+          "Purpose limitation and minimisation still apply",
+          "Every cross-border share becomes public-domain data",
+          "Security controls no longer matter once a donor is involved",
+          "The transfer model removes the need for recipient scrutiny"
+        ],
+        correct: 0,
+        explanation: "The transfer section says current permissibility does not remove the need for purpose discipline and data minimisation."
+      },
+      {
+        module: "Consent templates",
+        topic: "Story bank assumptions",
+        text: "A programme team argues that once a beneficiary gave a positive interview, the quotes can be archived forever for any future donor pack. What is the better answer from the repo's guidance?",
+        options: [
+          "Future donor use is automatically covered by goodwill",
+          "The use should stay tied to a clearly explained purpose rather than blanket future reuse",
+          "Interview quotes are never personal data",
+          "Any archive is exempt if kept on a foundation laptop"
+        ],
+        correct: 1,
+        explanation: "The consent guidance rejects blanket future-use assumptions and expects purpose-specific explanation, especially when people can be identified."
+      }
+    ]
+  },
+  {
+    number: 17,
+    slug: "verbal-consent-rights",
+    shortTitle: "Verbal Consent and Rights",
+    pageTitle: "DPDP Quiz 17 - Verbal Consent and Rights",
+    eyebrow: "DPDP Quiz 17 | Verbal Consent and Rights",
+    heroTitle: "Verbal Consent and Rights: Low-Literacy Field Handling",
+    heroIntro: "This set returns to low-literacy settings, where the quality of explanation, witnessing, and rights handoff matters more than formality alone.",
+    cardDescription: "Five questions on reading out notices, witness records, rights escalation, correction requests, and respectful handling in low-literacy contexts.",
+    audience: "Gandhi Fellows, Karuna Fellows, and programme officers in direct field collection",
+    focus: "Read-aloud notices, witness records, rights logging, and respectful escalation",
+    resultSummary: "This set reinforces that verbal workflows still need structure: clear explanation, documented agreement, and prompt routing of rights requests.",
+    topics: [
+      { label: "Field Setting", text: "Low-literacy village, camp, and household interactions" },
+      { label: "People Role", text: "Fellows, implementors, and first-line supervisors" },
+      { label: "Focus", text: "Read-aloud notice quality, witness records, and rights handoff" }
+    ],
+    questions: [
+      {
+        module: "Verbal consent template",
+        topic: "What to capture",
+        text: "When a beneficiary cannot read and gives verbal agreement, which combination best matches the template's expected record?",
+        options: [
+          "Date, location, language used, beneficiary response, staff name, and witness",
+          "Only the staff member's memory of what was said",
+          "A village nickname plus rough age estimate",
+          "No record at all if the interaction felt straightforward"
+        ],
+        correct: 0,
+        explanation: "The verbal consent record template is specific about documenting the context, the response, and the witnessing details."
+      },
+      {
+        module: "Gandhi Fellow guidance",
+        topic: "Explaining purpose",
+        text: "Why does the field guidance insist on explaining what data is being collected and why before questions begin?",
+        options: [
+          "Because informed notice is part of valid consent, not an optional courtesy",
+          "Because field staff need longer conversations to fill time",
+          "Because every beneficiary must hear the Act title in English",
+          "Because only the purpose explanation matters and rights do not"
+        ],
+        correct: 0,
+        explanation: "The guidance ties valid consent to an understandable explanation of the data being collected and the purpose behind it."
+      },
+      {
+        module: "Rights workflow",
+        topic: "Correction request at the doorstep",
+        text: "A beneficiary points out that her phone number was captured incorrectly during an earlier enrolment. What is the more DPDP-aligned first response?",
+        options: [
+          "Dismiss the point because only office staff can discuss records",
+          "Note the correction request and route it through the programme workflow for update",
+          "Ask her to wait until the next annual survey",
+          "Delete her entire enrolment to avoid future mistakes"
+        ],
+        correct: 1,
+        explanation: "The rights workflow expects correction requests to be received respectfully, logged, and pushed through the update process."
+      },
+      {
+        module: "Rights",
+        topic: "Field escalation",
+        text: "A person says, \"I want you to remove my name from your list.\" What should a field worker avoid doing according to the source guidance?",
+        options: [
+          "Logging the request and informing a supervisor",
+          "Arguing that the request does not matter and can be ignored",
+          "Explaining that the request will be escalated",
+          "Treating the concern calmly and respectfully"
+        ],
+        correct: 1,
+        explanation: "The role guidance specifically warns staff not to dismiss or argue away requests about records or deletion."
+      },
+      {
+        module: "Consent templates",
+        topic: "Partial decline note",
+        text: "In a verbal-consent record, why is there space to note that a beneficiary declined part of the requested data?",
+        options: [
+          "Because the record should reflect scope-limited agreement rather than forcing all-or-nothing collection",
+          "Because partial refusal automatically converts the programme into a breach",
+          "Because any incomplete form becomes unusable by law",
+          "Because witnesses must decide which fields are optional"
+        ],
+        correct: 0,
+        explanation: "The template and learning modules both support specific, limited agreement rather than assuming every field must be accepted together."
+      }
+    ]
+  },
+  {
+    number: 18,
+    slug: "odk-device-hygiene",
+    shortTitle: "ODK Device Hygiene",
+    pageTitle: "DPDP Quiz 18 - ODK Device Hygiene",
+    eyebrow: "DPDP Quiz 18 | ODK Device Hygiene",
+    heroTitle: "ODK Device Hygiene: Offline Forms, Sync, and Loss Response",
+    heroIntro: "This set is focused on ODK-based field collection, where offline storage, sync discipline, and device safeguards strongly affect breach exposure.",
+    cardDescription: "Five ODK-specific questions on encryption, sync cleanup, offline duration, remote wipe, and how to react when a device disappears.",
+    audience: "Field implementors, ODK administrators, and programme tech leads",
+    focus: "Offline collection risk, post-sync cleanup, remote wipe, and lost-device readiness",
+    resultSummary: "This set reinforces how ODK teams should reduce exposure before and after sync, not just after a device goes missing.",
+    topics: [
+      { label: "Platform Setting", text: "ODK Collect and ODK Central workflows" },
+      { label: "Project Stage", text: "Collection, sync, storage, and incident response" },
+      { label: "Focus", text: "Encryption, deletion after sync, offline limits, and remote wipe" }
+    ],
+    questions: [
+      {
+        module: "ODK checklist",
+        topic: "Baseline safeguard",
+        text: "Which control is explicitly named in the ODK checklist for field devices storing offline forms?",
+        options: [
+          "Full device encryption",
+          "Daily photo backups to personal drives",
+          "Open guest access for troubleshooting",
+          "Permanent local retention of every submission"
+        ],
+        correct: 0,
+        explanation: "The checklist specifically calls for device-level encryption as a core safeguard for offline form storage."
+      },
+      {
+        module: "ODK checklist",
+        topic: "After successful sync",
+        text: "What does the ODK-specific checklist expect teams to think about after forms have synced successfully?",
+        options: [
+          "Whether personal-data forms are deleted from devices after sync",
+          "Whether synced forms are copied into a WhatsApp backup",
+          "Whether the device should keep every historical submission forever",
+          "Whether the phone wallpaper reflects programme branding"
+        ],
+        correct: 0,
+        explanation: "The checklist explicitly asks whether forms containing personal data are deleted from devices once sync has succeeded."
+      },
+      {
+        module: "ODK checklist",
+        topic: "Long offline periods",
+        text: "Why does the checklist ask about local storage duration and a maximum offline-period policy?",
+        options: [
+          "Because longer offline retention can increase exposure if a device is lost or stolen",
+          "Because offline collection is prohibited under DPDP",
+          "Because the law requires every form to sync within one hour",
+          "Because beneficiaries may withdraw consent only while a device is online"
+        ],
+        correct: 0,
+        explanation: "The guidance treats local storage duration as a risk-management question because unsynced personal data on a device widens exposure."
+      },
+      {
+        module: "ODK checklist",
+        topic: "Remote wipe readiness",
+        text: "Why does remote wipe capability appear in the ODK checklist and breach SOP together?",
+        options: [
+          "Because it can help contain a lost or stolen device incident",
+          "Because it replaces the need to report a breach",
+          "Because it lets staff erase evidence before review",
+          "Because it is only a cosmetic mobile-device feature"
+        ],
+        correct: 0,
+        explanation: "Remote wipe is a containment tool, not a substitute for the incident workflow, which is why it appears in both places."
+      },
+      {
+        module: "Breach SOP",
+        topic: "Immediate reaction",
+        text: "A field tablet carrying unsynced ODK submissions is stolen on a bus ride back from camp. Which response is closest to the combined checklist and SOP guidance?",
+        options: [
+          "Escalate immediately so containment and device-response steps can begin",
+          "Wait until the weekly review because a stolen device may reappear",
+          "Erase the central logs first to avoid confusion",
+          "Replace the tablet and do not document the event"
+        ],
+        correct: 0,
+        explanation: "The breach SOP is clear that loss of a device holding personal data should be escalated immediately so containment and documentation can begin."
+      }
+    ]
+  },
+  {
+    number: 19,
+    slug: "government-program-basis",
+    shortTitle: "Government Program Basis",
+    pageTitle: "DPDP Quiz 19 - Government Program Basis",
+    eyebrow: "DPDP Quiz 19 | Government Program Basis",
+    heroTitle: "Government Program Basis: Welfare, Law, and Purpose Boundaries",
+    heroIntro: "This set focuses on how Section 7-type legitimate uses interact with government-linked programmes, legal obligations, and field assumptions.",
+    cardDescription: "Five questions on welfare programmes, State-function processing, legal disclosure obligations, and the limits of implied expansion beyond programme purpose.",
+    audience: "Programme officers, implementation leads, and teams working with government-linked systems",
+    focus: "Section 7 examples, reporting by law, purpose boundaries, and discipline under legitimate use",
+    resultSummary: "This set reinforces that government-programme processing may have a lawful basis, but it still remains scoped, protected, and purpose-bound.",
+    topics: [
+      { label: "Obligation Area", text: "Section 7 legitimate uses in government-linked programmes" },
+      { label: "People Role", text: "Programme officers, implementors, and reporting teams" },
+      { label: "Focus", text: "Lawful basis, legal disclosure, and no drift into unrelated use" }
+    ],
+    questions: [
+      {
+        module: "Act summary",
+        topic: "Welfare programme example",
+        text: "Which example is directly used in the source material to illustrate a government welfare or service context under Section 7?",
+        options: [
+          "Beneficiaries enrolled in programmes such as PMMVY or Nikshay",
+          "Private influencer campaigns for public health awareness",
+          "Open social media community groups",
+          "Volunteer photo contests run for fundraising"
+        ],
+        correct: 0,
+        explanation: "The act summary gives programme examples such as PMMVY and Nikshay when describing legitimate-use scenarios linked to government benefits or services."
+      },
+      {
+        module: "Legitimate uses",
+        topic: "What remains in force",
+        text: "If a team relies on a government-programme legal basis for processing rather than fresh consent, what should they not assume?",
+        options: [
+          "That security and breach obligations still continue",
+          "That the legal basis allows any unrelated future reuse of the same data",
+          "That programme scope still matters",
+          "That rights requests may still need handling"
+        ],
+        correct: 1,
+        explanation: "The references explicitly reject the idea that legitimate use removes purpose limitation or other protective obligations."
+      },
+      {
+        module: "Act summary",
+        topic: "Disclosure required by law",
+        text: "Which sharing situation is specifically recognised in the source materials as a lawful example?",
+        options: [
+          "Disclosure required to the State under a legal obligation or mandated reporting context",
+          "Forwarding records to any interested partner for insight generation",
+          "Sending spreadsheets to informal volunteer groups",
+          "Posting data summaries with identifiers in public channels"
+        ],
+        correct: 0,
+        explanation: "The summary includes examples where law requires disclosure to the State for programme or statutory purposes."
+      },
+      {
+        module: "Program Officer guidance",
+        topic: "Scope check",
+        text: "A programme team collected data for a government-linked service workflow and now wants to repurpose the same identifiable records for a separate internal showcase deck. What is the safer reading?",
+        options: [
+          "The original lawful basis automatically covers any later internal reuse",
+          "A scope check is still needed because purpose boundaries remain important",
+          "Every internal use is exempt from DPDP review",
+          "Government-linked data may never be stored in any form"
+        ],
+        correct: 1,
+        explanation: "The guidance stresses purpose limitation even where processing has a lawful basis other than consent."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Operational now",
+        text: "Why do the references still push teams to formalise grievance and incident handling even before full Phase III enforcement?",
+        options: [
+          "Because the DPBI and complaint environment are already operational from Phase I",
+          "Because every programme must already appoint a mandatory DPO",
+          "Because cross-border transfer rules have been fully frozen",
+          "Because consent forms stop mattering after 2025"
+        ],
+        correct: 0,
+        explanation: "The timeline notes say DPBI is already operational and complaints are already possible, so teams should not treat readiness as entirely future-tense."
+      }
+    ]
+  },
+  {
+    number: 20,
+    slug: "child-safety-settings",
+    shortTitle: "Child Safety Settings",
+    pageTitle: "DPDP Quiz 20 - Child Safety Settings",
+    eyebrow: "DPDP Quiz 20 | Child Safety Settings",
+    heroTitle: "Child Safety Settings: School, Creche, and Care Boundaries",
+    heroIntro: "This set revisits children's data through school and care-environment examples, focusing on what the listed exemptions do and do not cover.",
+    cardDescription: "Five questions on school safety tracking, creche settings, parental permission, and the difference between care operations and public storytelling.",
+    audience: "Education teams, child-focused programme staff, and field supervisors",
+    focus: "School and creche exemptions, parental permission, and no casual expansion beyond the child-safety context",
+    resultSummary: "This set reinforces that child-safety and care exemptions are specific, not blanket permission for any later collection or publication.",
+    topics: [
+      { label: "Field Setting", text: "Educational and care environments involving children" },
+      { label: "Obligation Area", text: "4th Schedule child-related exemptions and boundaries" },
+      { label: "Focus", text: "Safety tracking, care use, parental permission, and no broad reuse" }
+    ],
+    questions: [
+      {
+        module: "Children's data",
+        topic: "Creche example",
+        text: "Which child-related setting is explicitly named in the summary as an exemption example for safety monitoring?",
+        options: [
+          "Creches and day care centres",
+          "Outdoor donor events",
+          "Public social media campaigns",
+          "Private marketplace apps"
+        ],
+        correct: 0,
+        explanation: "The children's-data summary names creches and day care centres as an example where safety monitoring of children in care is allowed."
+      },
+      {
+        module: "Children's data",
+        topic: "School attendance and safety",
+        text: "A school-linked programme wants to track attendance and safety movement for children during educational activity. How does the repo's source material frame that?",
+        options: [
+          "As one of the directly relevant educational exemption examples",
+          "As prohibited profiling by default",
+          "As valid only if used for donor social media content too",
+          "As impossible without a biometric gate"
+        ],
+        correct: 0,
+        explanation: "The educational-activity and safety-tracking example appears directly in the listed exemptions."
+      },
+      {
+        module: "Children's data",
+        topic: "Public website reuse",
+        text: "A child was photographed during a school safety activity, and a team member now wants to post that image on the foundation website because the activity itself was permitted. What is the better answer?",
+        options: [
+          "The activity exemption automatically covers the website publication",
+          "Website publication is a separate use and should not be assumed covered by the operational exemption alone",
+          "Any school-linked photo is never personal data",
+          "The website use becomes lawful only if comments are disabled"
+        ],
+        correct: 1,
+        explanation: "The sources distinguish operational or care activity from later media and publication purposes, especially where children are identifiable."
+      },
+      {
+        module: "Act summary",
+        topic: "Detrimental effect boundary",
+        text: "Which broad restriction on children's data appears in the summary materials?",
+        options: [
+          "No processing likely to cause detrimental effect on a child's well-being",
+          "No storage of any child-related information under any circumstances",
+          "No use of school records for safety purposes",
+          "No collection of child data after 2026"
+        ],
+        correct: 0,
+        explanation: "The summary materials state that processing likely to cause detrimental effect on a child's well-being should not occur."
+      },
+      {
+        module: "Karuna Fellow guidance",
+        topic: "Beyond care",
+        text: "Which example best shows a child-data use moving beyond the care or safety exemption and into a separate consent question?",
+        options: [
+          "Recording symptoms to guide direct treatment",
+          "Tracking a child's presence during a supervised educational activity",
+          "Using an identifiable child story in a donor-facing publicity package",
+          "Maintaining a care note needed for the immediate service episode"
+        ],
+        correct: 2,
+        explanation: "The guidance repeatedly separates direct care or safety operations from donor-facing storytelling or publicity uses."
+      }
+    ]
+  },
+  {
+    number: 21,
+    slug: "privacy-contact-grievances",
+    shortTitle: "Privacy Contact and Grievances",
+    pageTitle: "DPDP Quiz 21 - Privacy Contact and Grievances",
+    eyebrow: "DPDP Quiz 21 | Privacy Contact and Grievances",
+    heroTitle: "Privacy Contact and Grievances: Publish, Receive, and Respond",
+    heroIntro: "This set focuses on the public-facing mechanics that make rights and grievance handling real for a Data Principal.",
+    cardDescription: "Five questions on the privacy point of contact, website publication, rights routing, complaint readiness, and response expectations.",
+    audience: "Privacy focal points, website owners, programme managers, and governance teams",
+    focus: "Rule 9 publication, grievance workflow, and practical responsiveness",
+    resultSummary: "This set reinforces that rights handling is not just an internal concept; people must be able to find a contact and receive timely responses.",
+    topics: [
+      { label: "Obligation Area", text: "Rule 9 contact publication and grievance handling workflow" },
+      { label: "People Role", text: "Privacy contacts, web owners, and programme managers" },
+      { label: "Focus", text: "Public contact details, request routing, and response discipline" }
+    ],
+    questions: [
+      {
+        module: "Rule 9",
+        topic: "What to publish",
+        text: "What does the source material say should be published on the website or app under the contact-information requirement?",
+        options: [
+          "The business contact information of the privacy point of contact or DPO, where applicable",
+          "Only the name of the software vendor maintaining the platform",
+          "Only a generic no-reply email address",
+          "Only a donor-relations helpline"
+        ],
+        correct: 0,
+        explanation: "The summary materials say the website or app should publish the business contact information of the designated privacy contact."
+      },
+      {
+        module: "Rights workflow",
+        topic: "Why publication matters",
+        text: "Why is publishing a privacy contact operationally important in the repo's DPDP guidance?",
+        options: [
+          "Because people need a practical route to ask questions, exercise rights, or raise grievances",
+          "Because it replaces the need for any internal workflow",
+          "Because only public websites, not apps, ever process personal data",
+          "Because it lets teams skip notice and consent design"
+        ],
+        correct: 0,
+        explanation: "The materials connect the published contact point with real rights exercise and grievance handling."
+      },
+      {
+        module: "Rights",
+        topic: "Field intake",
+        text: "A beneficiary raises a complaint verbally with a field worker rather than through email. What is the better handling pattern from the repo's guidance?",
+        options: [
+          "Ignore it until it arrives in writing",
+          "Receive it respectfully, log it, and route it into the grievance process",
+          "Ask the person to contact the donor instead",
+          "Treat verbal complaints as outside DPDP scope"
+        ],
+        correct: 1,
+        explanation: "The field and rights workflows emphasise logging and escalating requests or complaints even when they first arise verbally."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Readiness by date",
+        text: "By when does the timeline guidance expect the privacy point of contact to be published as part of full readiness planning?",
+        options: [
+          "By the broader May 2027 compliance deadline, with preparation earlier",
+          "Only after Piramal Foundation becomes an SDF",
+          "Not until an international transfer restriction is issued",
+          "Only when a donor insists on it"
+        ],
+        correct: 0,
+        explanation: "The timeline links publication of the privacy point of contact to the overall readiness path toward full compliance, with earlier preparation encouraged."
+      },
+      {
+        module: "Rule 14",
+        topic: "Complaint exhaustion logic",
+        text: "What does the source material say about how Data Principals generally approach the DPBI complaint route?",
+        options: [
+          "They should normally exhaust the organisation's grievance mechanism first",
+          "They must never raise a concern internally",
+          "They can complain only after a court order",
+          "They can use DPBI only for children's-data cases"
+        ],
+        correct: 0,
+        explanation: "The rights summary says Data Principals are expected to exhaust the organisation's grievance mechanism before approaching DPBI."
+      }
+    ]
+  },
+  {
+    number: 22,
+    slug: "final-readiness-check",
+    shortTitle: "Final Readiness Check",
+    pageTitle: "DPDP Quiz 22 - Final Readiness Check",
+    eyebrow: "DPDP Quiz 22 | Final Readiness Check",
+    heroTitle: "Final Readiness Check: Dates, Gaps, and Cross-Team Priorities",
+    heroIntro: "This set closes the next queued block with a multi-angle readiness check spanning timeline planning, training, platform audits, and incident preparation.",
+    cardDescription: "Five cross-functional questions on readiness targets, staff training, data inventory, breach protocols, and why early preparation matters.",
+    audience: "Cross-functional implementation teams, governance leads, and programme managers",
+    focus: "Timeline discipline, pre-deadline remediation, staff training, and readiness gaps",
+    resultSummary: "This set reinforces the repo's core message: full compliance has a later hard deadline, but serious preparation should happen much earlier and across teams.",
+    topics: [
+      { label: "Difficulty Level", text: "Advanced cross-team readiness judgment" },
+      { label: "Project Stage", text: "Gap assessment, remediation, and launch planning" },
+      { label: "Focus", text: "Dates, inventories, training, breach preparation, and ownership" }
+    ],
+    questions: [
+      {
+        module: "Compliance timeline",
+        topic: "Hard deadline",
+        text: "According to the repo's allowed timeline sources, what should teams currently treat as the hard full-compliance deadline?",
+        options: [
+          "13 May 2027",
+          "13 November 2025",
+          "13 January 2026",
+          "13 November 2026"
+        ],
+        correct: 0,
+        explanation: "The timeline guidance says teams should keep 13 May 2027 as the confirmed hard deadline while preparing earlier."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Why train early",
+        text: "Why do the readiness materials put staff training into the 2026 preparation window rather than waiting for final enforcement?",
+        options: [
+          "Because rights handling, breach response, and good collection practice depend on people knowing what to do before the deadline",
+          "Because training replaces the need for technical controls",
+          "Because only HR has duties under DPDP",
+          "Because training is required only for donor audits"
+        ],
+        correct: 0,
+        explanation: "The timeline explicitly places staff training into the earlier readiness period because many obligations depend on routine behaviour, not just documents."
+      },
+      {
+        module: "Audit checklist",
+        topic: "Inventory before remediation",
+        text: "Why do the source materials keep returning to data inventory and platform mapping as early tasks?",
+        options: [
+          "Because teams cannot sensibly fix consent, security, retention, or sharing gaps without knowing what data exists and where",
+          "Because inventory is needed only for branding reports",
+          "Because mapping removes the need for contracts",
+          "Because the Act applies only to platforms with diagrams"
+        ],
+        correct: 0,
+        explanation: "The readiness guidance treats inventory and mapping as foundational because the later controls depend on knowing systems, fields, and flows."
+      },
+      {
+        module: "Breach SOP",
+        topic: "Practice before crisis",
+        text: "Why does the breach SOP recommend practice runs before the final compliance deadline?",
+        options: [
+          "Because real incident response depends on speed and coordination, not just reading the SOP after a breach occurs",
+          "Because practice runs eliminate the need to notify anyone later",
+          "Because simulations are required only for cloud vendors",
+          "Because practice turns every breach into a low-severity event"
+        ],
+        correct: 0,
+        explanation: "The breach SOP notes that practice is useful because the first hours of a real breach demand immediate coordinated action."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Preparation target meaning",
+        text: "What is the best reading of the repo's repeated use of November 2026 as a preparation target?",
+        options: [
+          "It is a practical milestone for getting major controls and workflows in place before the hard deadline",
+          "It means the Act stops mattering after that month",
+          "It means every remaining gap becomes acceptable until 2027",
+          "It applies only to privacy contacts and not to any other stream"
+        ],
+        correct: 0,
+        explanation: "The timeline uses November 2026 as a pragmatic readiness milestone so teams are not waiting until the hard deadline to build core controls."
+      }
+    ]
   }
 ];
 
@@ -2199,9 +3049,12 @@ function publishNextQueuedQuiz() {
 
 function writeManifest(publishedFolder) {
   const queueFolders = listQuizDirs(queueDir);
+  const existingManifest = fs.existsSync(manifestPath)
+    ? JSON.parse(fs.readFileSync(manifestPath, "utf8"))
+    : null;
   const payload = {
     updatedAt: new Date().toISOString(),
-    publishedThisRun: publishedFolder,
+    publishedThisRun: publishedFolder ?? existingManifest?.publishedThisRun ?? null,
     queuedFolders: queueFolders,
     queuedCount: queueFolders.length
   };

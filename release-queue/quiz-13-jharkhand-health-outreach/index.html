@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 13 - Jharkhand Health Outreach</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 13 | Jharkhand Health Outreach</p>
+      <h1>Jharkhand Health Outreach: Care Data, Photos, and Referrals</h1>
+      <p>This queue set uses Jharkhand outreach scenarios to test when health-related processing can rely on care delivery and when teams still need separate consent or tighter sharing discipline.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Location</strong>Jharkhand outreach and camp-based service settings</div><div class="topic"><strong>People Role</strong>Karuna Fellows, implementors, and referral coordinators</div><div class="topic"><strong>Focus</strong>Care context, referral scope, and extra consent for non-care uses</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -434,69 +434,69 @@
   <script>
     const questions = [
       {
-            "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "module": "Karuna Fellow guidance",
+            "topic": "Care-linked processing",
+            "text": "At a maternal-health outreach visit in Jharkhand, a Karuna Fellow records symptoms and referral notes so a beneficiary can be connected to care. Which legal framing best matches the source material?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
-            ],
-            "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
-      },
-      {
-            "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
-            "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
+                  "This can sit within the healthcare or care context for service delivery",
+                  "This always needs a donor-facing photography consent form first",
+                  "This is banned unless a district magistrate signs the register",
+                  "This is allowed only after the full Phase III deadline arrives"
             ],
             "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The role guidance and act summary treat care-related health processing in the healthcare context differently from separate media or reporting uses."
       },
       {
-            "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "module": "Consent templates",
+            "topic": "Referral sharing",
+            "text": "A field worker wants to pass a beneficiary's phone number and referral note to the named health partner already described in the enrolment explanation. What makes that sharing easier to justify under the templates?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "The sharing was within the stated purpose and explained recipient list",
+                  "The worker personally knows the doctor receiving it",
+                  "The beneficiary data is always public after enrolment",
+                  "Any health-related sharing is exempt from documentation"
             ],
-            "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
-      },
-      {
-            "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
-            "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
-            ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
+            "correct": 0,
+            "explanation": "The enrolment notice template expects teams to state who will see the data and keep sharing inside that explained purpose."
       },
       {
             "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
+            "topic": "Voice note summary",
+            "text": "A Fellow records a beneficiary's explanation as a voice note for later follow-up. Once the note has been used for the intended follow-up, what is the better practice from the role guidance?",
             "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
+                  "Keep the note permanently in a personal phone archive",
+                  "Delete the note once the purpose has been served",
+                  "Forward the note to all field staff for cross-learning",
+                  "Upload it to social media to document field realities"
             ],
             "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "explanation": "The field-role guidance treats recordings as personal data and says they should not be retained once the intended purpose is over."
+      },
+      {
+            "module": "Children's data",
+            "topic": "Camp photography",
+            "text": "During a child-health camp, a team member says the medical check-up already happened, so a photo for the annual impact story can now be taken without further steps. What is the more accurate answer?",
+            "options": [
+                  "The check-up automatically covers every later storytelling use",
+                  "The impact-story photo is a separate purpose and still needs parental or guardian consent",
+                  "Photos stop being personal data if the child is not named",
+                  "Children's images may be reused freely after any health interaction"
+            ],
+            "correct": 1,
+            "explanation": "The allowed references separate care-related processing from photography and donor-storytelling uses, especially for children."
+      },
+      {
+            "module": "Breach SOP",
+            "topic": "Field register handling",
+            "text": "A paper register with names and health details is left behind after an outreach activity. Which response best matches the breach mindset in the source material?",
+            "options": [
+                  "Treat it as a potential breach event and escalate rather than quietly replacing it",
+                  "Ignore it because the register was not digital",
+                  "Wait a week in case the notebook turns up on its own",
+                  "Post a photo of the missing register in a public group for help"
+            ],
+            "correct": 0,
+            "explanation": "The breach guidance emphasises early reporting of loss or exposure rather than waiting for confirmed harm or improvising in public channels."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-12-advanced-field-escalations/",
+      previousLabel: "Open Quiz 12",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces how health outreach teams should separate direct care activity from reporting, media, and informal sharing.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

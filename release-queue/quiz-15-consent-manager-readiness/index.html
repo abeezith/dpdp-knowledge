@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 15 - Consent Manager Readiness</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 15 | Consent Manager Readiness</p>
+      <h1>Consent Manager Readiness: ABDM, Timeline, and Scope Checks</h1>
+      <p>This set focuses on the timeline and practical planning questions around Consent Manager readiness and ABDM-aligned workflows.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Project Stage</strong>Consent Manager readiness and pre-activation planning</div><div class="topic"><strong>Platform Setting</strong>ABDM-linked systems and consent workflow design</div><div class="topic"><strong>Focus</strong>Phase II date, scope questions, and withdrawal usability</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -434,69 +434,69 @@
   <script>
     const questions = [
       {
-            "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "module": "Compliance timeline",
+            "topic": "Phase II milestone",
+            "text": "According to the allowed reference timeline, when does the Consent Manager framework become active?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
+                  "13 November 2025",
+                  "13 May 2027",
+                  "13 November 2026",
+                  "13 January 2026"
             ],
-            "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
+            "correct": 2,
+            "explanation": "The compliance timeline marks 13 November 2026 as the Phase II milestone for the Consent Manager framework."
       },
       {
-            "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
+            "module": "Developer guidance",
+            "topic": "ABDM gap check",
+            "text": "What is one of the explicit DPDP questions the developer guidance says teams should assess about ABDM-linked consent flows?",
             "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
+                  "Whether the notice satisfies Rule 3 itemised-notice requirements",
+                  "Whether the app icon uses government colours",
+                  "Whether every user has a private printer",
+                  "Whether beneficiary records can be used for any later analytics"
             ],
             "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The ABDM note in the role guidance specifically asks whether its consent notice covers Rule 3 style itemisation and related DPDP expectations."
+      },
+      {
+            "module": "Consent",
+            "topic": "Withdrawal ease",
+            "text": "Which design principle from the source material still applies when a platform team builds a consent-management experience?",
+            "options": [
+                  "Withdrawal should be as easy as giving consent",
+                  "Withdrawal may be hidden as long as a legal team can find it",
+                  "Withdrawal works only for children, not adults",
+                  "Withdrawal is optional if the platform is modern"
+            ],
+            "correct": 0,
+            "explanation": "The consent guidance is explicit that withdrawal must be as easy as the original act of giving consent."
+      },
+      {
+            "module": "Compliance timeline",
+            "topic": "Readiness stance",
+            "text": "Why do the timeline notes encourage work before November 2026 even though the full compliance hard deadline remains later?",
+            "options": [
+                  "Because November 2026 is treated as a prudent readiness target",
+                  "Because every rule already became enforceable in 2025",
+                  "Because only field teams need to prepare early",
+                  "Because the Act stops applying after Phase II begins"
+            ],
+            "correct": 0,
+            "explanation": "The timeline guidance explicitly says teams should treat November 2026 as a readiness target even while retaining May 2027 as the hard deadline."
       },
       {
             "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "topic": "Beyond ABDM",
+            "text": "If a platform uses ABDM-linked consent but also processes data for a use that goes beyond ABDM-consented record sharing, what does the repo guidance suggest?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "Assume ABDM automatically covers every additional purpose",
+                  "Treat ABDM consent as complementary and assess whether an extra DPDP-specific layer is needed",
+                  "Ignore DPDP because ABDM predates it",
+                  "Convert all extra uses into public-interest research by default"
             ],
             "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
-      },
-      {
-            "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
-            "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
-            ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
-      },
-      {
-            "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
-            "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
-            ],
-            "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "explanation": "The developer guidance says ABDM consent may be complementary rather than sufficient for every additional processing purpose."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-14-processor-contracts/",
+      previousLabel: "Open Quiz 14",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces that Consent Manager work is a planning track with concrete dates and unresolved notice-design checks, not an excuse to defer DPDP basics.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

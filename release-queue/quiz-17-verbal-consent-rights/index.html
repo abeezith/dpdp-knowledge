@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 17 - Verbal Consent and Rights</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 17 | Verbal Consent and Rights</p>
+      <h1>Verbal Consent and Rights: Low-Literacy Field Handling</h1>
+      <p>This set returns to low-literacy settings, where the quality of explanation, witnessing, and rights handoff matters more than formality alone.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Field Setting</strong>Low-literacy village, camp, and household interactions</div><div class="topic"><strong>People Role</strong>Fellows, implementors, and first-line supervisors</div><div class="topic"><strong>Focus</strong>Read-aloud notice quality, witness records, and rights handoff</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -434,69 +434,69 @@
   <script>
     const questions = [
       {
-            "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "module": "Verbal consent template",
+            "topic": "What to capture",
+            "text": "When a beneficiary cannot read and gives verbal agreement, which combination best matches the template's expected record?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
-            ],
-            "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
-      },
-      {
-            "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
-            "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
+                  "Date, location, language used, beneficiary response, staff name, and witness",
+                  "Only the staff member's memory of what was said",
+                  "A village nickname plus rough age estimate",
+                  "No record at all if the interaction felt straightforward"
             ],
             "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The verbal consent record template is specific about documenting the context, the response, and the witnessing details."
       },
       {
-            "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "module": "Gandhi Fellow guidance",
+            "topic": "Explaining purpose",
+            "text": "Why does the field guidance insist on explaining what data is being collected and why before questions begin?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "Because informed notice is part of valid consent, not an optional courtesy",
+                  "Because field staff need longer conversations to fill time",
+                  "Because every beneficiary must hear the Act title in English",
+                  "Because only the purpose explanation matters and rights do not"
+            ],
+            "correct": 0,
+            "explanation": "The guidance ties valid consent to an understandable explanation of the data being collected and the purpose behind it."
+      },
+      {
+            "module": "Rights workflow",
+            "topic": "Correction request at the doorstep",
+            "text": "A beneficiary points out that her phone number was captured incorrectly during an earlier enrolment. What is the more DPDP-aligned first response?",
+            "options": [
+                  "Dismiss the point because only office staff can discuss records",
+                  "Note the correction request and route it through the programme workflow for update",
+                  "Ask her to wait until the next annual survey",
+                  "Delete her entire enrolment to avoid future mistakes"
             ],
             "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
+            "explanation": "The rights workflow expects correction requests to be received respectfully, logged, and pushed through the update process."
       },
       {
-            "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
+            "module": "Rights",
+            "topic": "Field escalation",
+            "text": "A person says, \"I want you to remove my name from your list.\" What should a field worker avoid doing according to the source guidance?",
             "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
-            ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
-      },
-      {
-            "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
-            "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
+                  "Logging the request and informing a supervisor",
+                  "Arguing that the request does not matter and can be ignored",
+                  "Explaining that the request will be escalated",
+                  "Treating the concern calmly and respectfully"
             ],
             "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "explanation": "The role guidance specifically warns staff not to dismiss or argue away requests about records or deletion."
+      },
+      {
+            "module": "Consent templates",
+            "topic": "Partial decline note",
+            "text": "In a verbal-consent record, why is there space to note that a beneficiary declined part of the requested data?",
+            "options": [
+                  "Because the record should reflect scope-limited agreement rather than forcing all-or-nothing collection",
+                  "Because partial refusal automatically converts the programme into a breach",
+                  "Because any incomplete form becomes unusable by law",
+                  "Because witnesses must decide which fields are optional"
+            ],
+            "correct": 0,
+            "explanation": "The template and learning modules both support specific, limited agreement rather than assuming every field must be accepted together."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-16-donor-reporting/",
+      previousLabel: "Open Quiz 16",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces that verbal workflows still need structure: clear explanation, documented agreement, and prompt routing of rights requests.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

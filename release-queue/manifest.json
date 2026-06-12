@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T00:00:00+05:30",
+  "updatedAt": "2026-06-12T14:20:58.522Z",
   "publishedThisRun": "quiz-02-consent-notices",
   "queuedFolders": [
     "quiz-03-breach-readiness",
@@ -11,7 +11,17 @@
     "quiz-09-audit-readiness",
     "quiz-10-intermediate-sharing",
     "quiz-11-bi-analyst-transfers",
-    "quiz-12-advanced-field-escalations"
+    "quiz-12-advanced-field-escalations",
+    "quiz-13-jharkhand-health-outreach",
+    "quiz-14-processor-contracts",
+    "quiz-15-consent-manager-readiness",
+    "quiz-16-donor-reporting",
+    "quiz-17-verbal-consent-rights",
+    "quiz-18-odk-device-hygiene",
+    "quiz-19-government-program-basis",
+    "quiz-20-child-safety-settings",
+    "quiz-21-privacy-contact-grievances",
+    "quiz-22-final-readiness-check"
   ],
-  "queuedCount": 10
+  "queuedCount": 20
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DPDP Quiz 04 - Children's Data</title>
+  <title>DPDP Quiz 20 - Child Safety Settings</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -421,11 +421,11 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 04 | Children's Data</p>
-      <h1>Children's Data: Care, Consent, and Prohibited Uses</h1>
-      <p>This quiz concentrates on the under-18 threshold, parental consent, care-related exemptions, and the handling limits that apply to children's data.</p>
+      <p class="eyebrow">DPDP Quiz 20 | Child Safety Settings</p>
+      <h1>Child Safety Settings: School, Creche, and Care Boundaries</h1>
+      <p>This set revisits children's data through school and care-environment examples, focusing on what the listed exemptions do and do not cover.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Section 9, Rule 10, Rule 12, and the 4th Schedule</div><div class="topic"><strong>Field Setting</strong>Nutrition camps, school settings, and donor-facing media use</div><div class="topic"><strong>Focus</strong>Parental consent, care exemptions, and no profiling or targeted advertising</div>
+        <div class="topic"><strong>Field Setting</strong>Educational and care environments involving children</div><div class="topic"><strong>Obligation Area</strong>4th Schedule child-related exemptions and boundaries</div><div class="topic"><strong>Focus</strong>Safety tracking, care use, parental permission, and no broad reuse</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -434,69 +434,69 @@
   <script>
     const questions = [
       {
-            "module": "Act summary",
-            "topic": "Who is a child",
-            "text": "Under the DPDP materials used in this repo, who is treated as a child?",
+            "module": "Children's data",
+            "topic": "Creche example",
+            "text": "Which child-related setting is explicitly named in the summary as an exemption example for safety monitoring?",
             "options": [
-                  "Anyone under 16 years of age",
-                  "Anyone under 18 years of age",
-                  "Only school-going minors",
-                  "Only children below 14 years of age"
+                  "Creches and day care centres",
+                  "Outdoor donor events",
+                  "Public social media campaigns",
+                  "Private marketplace apps"
             ],
-            "correct": 1,
-            "explanation": "The act summary defines a child as any individual under 18."
+            "correct": 0,
+            "explanation": "The children's-data summary names creches and day care centres as an example where safety monitoring of children in care is allowed."
       },
       {
             "module": "Children's data",
-            "topic": "Education setting",
-            "text": "A school-linked programme tracks attendance and child safety during educational activities. Which statement best fits the listed exemptions?",
+            "topic": "School attendance and safety",
+            "text": "A school-linked programme wants to track attendance and safety movement for children during educational activity. How does the repo's source material frame that?",
             "options": [
-                  "Educational institutions may process that child data for educational activities and safety tracking",
-                  "All school records require donor consent before they are stored",
-                  "Children's data can never be processed without Aadhaar verification",
-                  "Education-related tracking is allowed only after May 2027"
+                  "As one of the directly relevant educational exemption examples",
+                  "As prohibited profiling by default",
+                  "As valid only if used for donor social media content too",
+                  "As impossible without a biometric gate"
             ],
             "correct": 0,
-            "explanation": "The 4th Schedule includes educational activities and safety tracking as relevant exemption examples for educational institutions."
+            "explanation": "The educational-activity and safety-tracking example appears directly in the listed exemptions."
       },
       {
-            "module": "Role guidance",
-            "topic": "Photography",
-            "text": "A Gandhi Fellow wants to photograph a child at a village event for the Piramal Foundation website. What is the safer DPDP-aligned answer from the role guidance?",
+            "module": "Children's data",
+            "topic": "Public website reuse",
+            "text": "A child was photographed during a school safety activity, and a team member now wants to post that image on the foundation website because the activity itself was permitted. What is the better answer?",
             "options": [
-                  "It is fine if the child smiles on camera",
-                  "Parental or guardian consent is required before taking or using the photo for that purpose",
-                  "The photo is fine without consent if no caption is used",
-                  "Only audio recordings need family permission, not photos"
+                  "The activity exemption automatically covers the website publication",
+                  "Website publication is a separate use and should not be assumed covered by the operational exemption alone",
+                  "Any school-linked photo is never personal data",
+                  "The website use becomes lawful only if comments are disabled"
             ],
             "correct": 1,
-            "explanation": "The field guidance treats identifiable child photography as requiring parental consent, especially for reporting or public-facing use."
+            "explanation": "The sources distinguish operational or care activity from later media and publication purposes, especially where children are identifiable."
       },
       {
             "module": "Act summary",
-            "topic": "Prohibited uses",
-            "text": "Which use of children's data is explicitly ruled out in the summary guidance?",
+            "topic": "Detrimental effect boundary",
+            "text": "Which broad restriction on children's data appears in the summary materials?",
             "options": [
-                  "Tracking a child's MUAC for nutrition care",
-                  "Educational safety monitoring within a school context",
-                  "Behavioural tracking or targeted advertising aimed at children",
-                  "Maintaining a clinic record for treatment"
+                  "No processing likely to cause detrimental effect on a child's well-being",
+                  "No storage of any child-related information under any circumstances",
+                  "No use of school records for safety purposes",
+                  "No collection of child data after 2026"
             ],
-            "correct": 2,
-            "explanation": "The children's-data section says no behavioural tracking, targeted advertising, or profiling of children."
+            "correct": 0,
+            "explanation": "The summary materials state that processing likely to cause detrimental effect on a child's well-being should not occur."
       },
       {
             "module": "Karuna Fellow guidance",
-            "topic": "Care versus programme use",
-            "text": "A mother brings her child to a health camp. The team records the child's symptoms for treatment and also wants to upload the same child's identifiable details to a donor-facing story bank. Which option is most accurate?",
+            "topic": "Beyond care",
+            "text": "Which example best shows a child-data use moving beyond the care or safety exemption and into a separate consent question?",
             "options": [
-                  "Both uses fall under the same care exemption",
-                  "Treatment-related recording may rely on the care context, but donor-story use needs separate parental consent",
-                  "Neither action is allowed because children's data can never be stored",
-                  "Donor-story use is automatically allowed if the child received services first"
+                  "Recording symptoms to guide direct treatment",
+                  "Tracking a child's presence during a supervised educational activity",
+                  "Using an identifiable child story in a donor-facing publicity package",
+                  "Maintaining a care note needed for the immediate service episode"
             ],
-            "correct": 1,
-            "explanation": "The care exemption is tied to providing health services. Using the child's details for donor-facing storytelling is a different purpose that needs parental consent."
+            "correct": 2,
+            "explanation": "The guidance repeatedly separates direct care or safety operations from donor-facing storytelling or publicity uses."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -518,8 +518,8 @@
     };
 
     const completionNav = {
-      previousHref: "../quiz-03-breach-readiness/",
-      previousLabel: "Open Quiz 03",
+      previousHref: "../quiz-19-government-program-basis/",
+      previousLabel: "Open Quiz 19",
       hubHref: "../"
     };
 
@@ -679,7 +679,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This set reinforces when children's data can be processed for care or education and when separate parental permission remains necessary.
+          This set reinforces that child-safety and care exemptions are specific, not blanket permission for any later collection or publication.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>
