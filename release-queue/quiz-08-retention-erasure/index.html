@@ -65,7 +65,7 @@
     .shell {
       max-width: 860px;
       margin: 0 auto;
-      padding: 88px 20px 48px;
+      padding: 36px 20px 48px;
     }
     .toolbar {
       position: sticky;
@@ -387,7 +387,7 @@
     }
     @media (max-width: 720px) {
       .shell {
-        padding: 82px 16px 40px;
+        padding: 22px 16px 40px;
       }
       .toolbar-inner {
         justify-content: center;
@@ -596,8 +596,22 @@
         .replace(/"/g, "&quot;");
     }
 
+    function scrollWithToolbarOffset(targetTop) {
+      const toolbarHeight = document.querySelector(".toolbar")?.offsetHeight || 0;
+      const top = Math.max(0, targetTop - toolbarHeight - 16);
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+
+    function scrollElementToReadingPosition(element) {
+      const rect = element.getBoundingClientRect();
+      scrollWithToolbarOffset(window.scrollY + rect.top);
+    }
+
     function renderIntro() {
       app.hidden = true;
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+      });
     }
 
     function renderQuestion() {
@@ -651,6 +665,16 @@
             state.selected = null;
             renderQuestion();
           }
+        });
+
+        requestAnimationFrame(() => {
+          nextBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+      }
+
+      if (!answered) {
+        requestAnimationFrame(() => {
+          scrollElementToReadingPosition(app);
         });
       }
     }
@@ -715,6 +739,10 @@
       const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
       applyZoom(currentZoom + ZOOM_STEP);
     });
+
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
 
     loadPreferences();
     renderIntro();

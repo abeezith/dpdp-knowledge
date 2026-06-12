@@ -27,6 +27,7 @@
       --hero-text: #1f1f1f;
       --hero-muted: #4f4f4f;
       --button-solid: #e4572e;
+      --button-solid-hover: #c94520;
       --button-text: #ffffff;
       --answer-bg: #ffffff;
       --answer-text: #1f1f1f;
@@ -64,7 +65,7 @@
     .shell {
       max-width: 860px;
       margin: 0 auto;
-      padding: 88px 20px 48px;
+      padding: 36px 20px 48px;
     }
     .toolbar {
       position: sticky;
@@ -269,7 +270,7 @@
       font: inherit;
       text-align: left;
       cursor: pointer;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     }
     .answer:hover,
     .answer:focus-visible,
@@ -386,7 +387,7 @@
     }
     @media (max-width: 720px) {
       .shell {
-        padding: 82px 16px 40px;
+        padding: 22px 16px 40px;
       }
       .toolbar-inner {
         justify-content: center;
@@ -417,16 +418,14 @@
     <div class="hero">
       <div class="brand-row">
         <div class="brand-mark">
-          <img src="../PF_Logo.jpg" alt="Piramal Foundation logo">
+          <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
       <p class="eyebrow">DPDP Quiz 02 | Consent Notices</p>
       <h1>Consent Notices: Itemised, Standalone, and Verifiable</h1>
       <p>This daily quiz focuses on the structure of valid consent notices for enrolment, verbal consent, withdrawal, and deemed-consent boundaries in field programmes.</p>
       <div class="topics">
-        <div class="topic"><strong>Obligation Area</strong>Rule 3 notice design and Section 6 consent practice</div>
-        <div class="topic"><strong>Field Setting</strong>Beneficiary enrolment, low-literacy verbal consent, and programme forms</div>
-        <div class="topic"><strong>Focus</strong>Itemised data fields, withdrawal, burden of proof, and consent scope</div>
+        <div class="topic"><strong>Obligation Area</strong>Rule 3 notice design and Section 6 consent practice</div><div class="topic"><strong>Field Setting</strong>Beneficiary enrolment, low-literacy verbal consent, and programme forms</div><div class="topic"><strong>Focus</strong>Itemised data fields, withdrawal, burden of proof, and consent scope</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -435,71 +434,71 @@
   <script>
     const questions = [
       {
-        module: "Consent templates",
-        topic: "Standalone notice",
-        text: "A programme team wants to tuck the consent paragraph into page 7 of a long MOU that beneficiaries sign at enrolment. Which response fits the DPDP notice guidance?",
-        options: [
-          "This is fine as long as the form is signed",
-          "This is fine if the MOU is translated into Hindi",
-          "The notice should be understandable independently, not buried inside a longer document",
-          "It is allowed only for government welfare programmes"
-        ],
-        correct: 2,
-        explanation: "Rule 3 guidance requires the notice to stand on its own so the person can understand the data collection independently of other terms."
+            "module": "Consent templates",
+            "topic": "Standalone notice",
+            "text": "A programme team wants to tuck the consent paragraph into page 7 of a long MOU that beneficiaries sign at enrolment. Which response fits the DPDP notice guidance?",
+            "options": [
+                  "This is fine as long as the form is signed",
+                  "This is fine if the MOU is translated into Hindi",
+                  "The notice should be understandable independently, not buried inside a longer document",
+                  "It is allowed only for government welfare programmes"
+            ],
+            "correct": 2,
+            "explanation": "Rule 3 guidance requires the notice to stand on its own so the person can understand the data collection independently of other terms."
       },
       {
-        module: "Consent templates",
-        topic: "Itemised data collection",
-        text: "Which notice wording is closer to the required itemised approach for enrolment?",
-        options: [
-          "\"We may collect anything useful for programme administration\"",
-          "\"We are collecting your name, mobile number, village, and pregnancy status for ANC follow-up\"",
-          "\"Your data may be used in any future Piramal Foundation activity\"",
-          "\"Details will be explained later if needed\""
-        ],
-        correct: 1,
-        explanation: "The template and Rule 3 guidance call for itemised data fields and a specific purpose, not broad catch-all language."
+            "module": "Consent templates",
+            "topic": "Itemised data collection",
+            "text": "Which notice wording is closer to the required itemised approach for enrolment?",
+            "options": [
+                  "\"We may collect anything useful for programme administration\"",
+                  "\"We are collecting your name, mobile number, village, and pregnancy status for ANC follow-up\"",
+                  "\"Your data may be used in any future Piramal Foundation activity\"",
+                  "\"Details will be explained later if needed\""
+            ],
+            "correct": 1,
+            "explanation": "The template and Rule 3 guidance call for itemised data fields and a specific purpose, not broad catch-all language."
       },
       {
-        module: "Consent",
-        topic: "Withdrawing consent",
-        text: "A beneficiary asks how to withdraw consent after enrolment. What should the notice already have provided?",
-        options: [
-          "A reminder that consent cannot be withdrawn once a form is signed",
-          "A contact or mechanism for withdrawal that is as easy as giving consent",
-          "Only the district office postal address, because field contacts are optional",
-          "A statement that withdrawal is available only after one year"
-        ],
-        correct: 1,
-        explanation: "The references say the notice must explain how to withdraw consent, and withdrawal should be as easy as giving consent."
+            "module": "Consent",
+            "topic": "Withdrawing consent",
+            "text": "A beneficiary asks how to withdraw consent after enrolment. What should the notice already have provided?",
+            "options": [
+                  "A reminder that consent cannot be withdrawn once a form is signed",
+                  "A contact or mechanism for withdrawal that is as easy as giving consent",
+                  "Only the district office postal address, because field contacts are optional",
+                  "A statement that withdrawal is available only after one year"
+            ],
+            "correct": 1,
+            "explanation": "The references say the notice must explain how to withdraw consent, and withdrawal should be as easy as giving consent."
       },
       {
-        module: "Verbal consent",
-        topic: "Low-literacy settings",
-        text: "A Karuna Fellow is collecting data from a beneficiary who cannot read or sign. Which documentation approach matches the reference templates?",
-        options: [
-          "Record the verbal agreement with date, location, language used, and a witness",
-          "Skip documentation because verbal consent is informal",
-          "Take a thumb impression without explaining the fields",
-          "Ask a neighbour to answer on the beneficiary's behalf"
-        ],
-        correct: 0,
-        explanation: "The verbal-consent template requires the notice to be read out in plain language and the response to be documented with a witness."
+            "module": "Verbal consent",
+            "topic": "Low-literacy settings",
+            "text": "A Karuna Fellow is collecting data from a beneficiary who cannot read or sign. Which documentation approach matches the reference templates?",
+            "options": [
+                  "Record the verbal agreement with date, location, language used, and a witness",
+                  "Skip documentation because verbal consent is informal",
+                  "Take a thumb impression without explaining the fields",
+                  "Ask a neighbour to answer on the beneficiary's behalf"
+            ],
+            "correct": 0,
+            "explanation": "The verbal-consent template requires the notice to be read out in plain language and the response to be documented with a witness."
       },
       {
-        module: "Legitimate uses",
-        topic: "Deemed consent limits",
-        text: "If a government programme relies on a Section 7 legitimate-use basis instead of a fresh consent form, which statement remains true?",
-        options: [
-          "Security safeguards and rights handling still matter",
-          "The team no longer needs to protect the data carefully",
-          "The programme can now use the data for any unrelated purpose",
-          "Breach-reporting rules stop applying"
-        ],
-        correct: 0,
-        explanation: "The act-and-rules summary is explicit that deemed consent does not remove obligations around minimisation, security, breach response, or rights requests."
+            "module": "Legitimate uses",
+            "topic": "Deemed consent limits",
+            "text": "If a government programme relies on a Section 7 legitimate-use basis instead of a fresh consent form, which statement remains true?",
+            "options": [
+                  "Security safeguards and rights handling still matter",
+                  "The team no longer needs to protect the data carefully",
+                  "The programme can now use the data for any unrelated purpose",
+                  "Breach-reporting rules stop applying"
+            ],
+            "correct": 0,
+            "explanation": "The act-and-rules summary is explicit that deemed consent does not remove obligations around minimisation, security, breach response, or rights requests."
       }
-    ];
+];
     const letters = ["A", "B", "C", "D"];
     const app = document.getElementById("app");
     const startBtn = document.getElementById("startBtn");
@@ -597,8 +596,22 @@
         .replace(/"/g, "&quot;");
     }
 
+    function scrollWithToolbarOffset(targetTop) {
+      const toolbarHeight = document.querySelector(".toolbar")?.offsetHeight || 0;
+      const top = Math.max(0, targetTop - toolbarHeight - 16);
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+
+    function scrollElementToReadingPosition(element) {
+      const rect = element.getBoundingClientRect();
+      scrollWithToolbarOffset(window.scrollY + rect.top);
+    }
+
     function renderIntro() {
       app.hidden = true;
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+      });
     }
 
     function renderQuestion() {
@@ -652,6 +665,16 @@
             state.selected = null;
             renderQuestion();
           }
+        });
+
+        requestAnimationFrame(() => {
+          nextBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+      }
+
+      if (!answered) {
+        requestAnimationFrame(() => {
+          scrollElementToReadingPosition(app);
         });
       }
     }
@@ -716,6 +739,10 @@
       const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
       applyZoom(currentZoom + ZOOM_STEP);
     });
+
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
 
     loadPreferences();
     renderIntro();

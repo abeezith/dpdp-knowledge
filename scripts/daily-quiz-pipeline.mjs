@@ -2011,7 +2011,7 @@ function renderQuizHtml(quiz) {
     .shell {
       max-width: 860px;
       margin: 0 auto;
-      padding: 88px 20px 48px;
+      padding: 36px 20px 48px;
     }
     .toolbar {
       position: sticky;
@@ -2333,7 +2333,7 @@ function renderQuizHtml(quiz) {
     }
     @media (max-width: 720px) {
       .shell {
-        padding: 82px 16px 40px;
+        padding: 22px 16px 40px;
       }
       .toolbar-inner {
         justify-content: center;
@@ -2476,8 +2476,22 @@ function renderQuizHtml(quiz) {
         .replace(/"/g, "&quot;");
     }
 
+    function scrollWithToolbarOffset(targetTop) {
+      const toolbarHeight = document.querySelector(".toolbar")?.offsetHeight || 0;
+      const top = Math.max(0, targetTop - toolbarHeight - 16);
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+
+    function scrollElementToReadingPosition(element) {
+      const rect = element.getBoundingClientRect();
+      scrollWithToolbarOffset(window.scrollY + rect.top);
+    }
+
     function renderIntro() {
       app.hidden = true;
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+      });
     }
 
     function renderQuestion() {
@@ -2531,6 +2545,16 @@ function renderQuizHtml(quiz) {
             state.selected = null;
             renderQuestion();
           }
+        });
+
+        requestAnimationFrame(() => {
+          nextBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+      }
+
+      if (!answered) {
+        requestAnimationFrame(() => {
+          scrollElementToReadingPosition(app);
         });
       }
     }
@@ -2595,6 +2619,10 @@ function renderQuizHtml(quiz) {
       const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
       applyZoom(currentZoom + ZOOM_STEP);
     });
+
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
 
     loadPreferences();
     renderIntro();
@@ -3008,7 +3036,7 @@ function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
 }
 
-function writeQueueBatch() {
+function writeQueueBatch(overwriteExisting = false) {
   ensureDir(queueDir);
   if (!fs.existsSync(queueReadme)) {
     fs.writeFileSync(queueReadme, "# Release queue\n", "utf8");
@@ -3025,7 +3053,24 @@ function writeQueueBatch() {
 
     ensureDir(queuePath);
     fs.copyFileSync(logoSource, path.join(queuePath, "PF_Logo.jpg"));
-    fs.writeFileSync(path.join(queuePath, "index.html"), renderQuizHtml(quiz), "utf8");
+    if (overwriteExisting || !fs.existsSync(path.join(queuePath, "index.html"))) {
+      fs.writeFileSync(path.join(queuePath, "index.html"), renderQuizHtml(quiz), "utf8");
+    }
+  }
+}
+
+function writePublishedGeneratedPages(overwriteExisting = false) {
+  for (const quiz of quizCatalog.filter((item) => item.number >= 2)) {
+    const docsPath = path.join(docsDir, folderNameFor(quiz));
+    if (!fs.existsSync(docsPath)) {
+      continue;
+    }
+    if (!fs.existsSync(path.join(docsPath, "PF_Logo.jpg"))) {
+      fs.copyFileSync(logoSource, path.join(docsPath, "PF_Logo.jpg"));
+    }
+    if (overwriteExisting || !fs.existsSync(path.join(docsPath, "index.html"))) {
+      fs.writeFileSync(path.join(docsPath, "index.html"), renderQuizHtml(quiz), "utf8");
+    }
   }
 }
 
@@ -3071,8 +3116,12 @@ function writeHub() {
 function main() {
   const shouldPublish = process.argv.includes("--publish");
   const shouldWriteHub = process.argv.includes("--write-hub");
+  const shouldRefreshExisting = process.argv.includes("--refresh-existing");
   assertNoExactRepeats();
-  writeQueueBatch();
+  writeQueueBatch(shouldRefreshExisting);
+  if (shouldRefreshExisting) {
+    writePublishedGeneratedPages(true);
+  }
   const publishedFolder = shouldPublish ? publishNextQueuedQuiz() : null;
   if (shouldWriteHub) {
     writeHub();
