@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DPDP Quiz 08 - Retention and Erasure</title>
+  <style>
+    :root {
+      --teal: #E4572E;
+      --teal-dark: #7A2410;
+      --teal-light: #FDE6DF;
+      --red-light: #FCEBEB;
+      --red-dark: #501313;
+      --amber-light: #FFF1EC;
+      --amber-dark: #8A3420;
+      --ink: #1f1f1f;
+      --muted: #5c5c5c;
+      --line: #e5d7d2;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --hero-base: #ffffff;
+      --hero-accent: #fff4f0;
+      --surface-soft: #fff7f4;
+      --toolbar-bg: rgba(255, 255, 255, 0.96);
+      --toolbar-border: rgba(228, 87, 46, 0.18);
+      --toolbar-shadow: 0 10px 24px rgba(54, 54, 54, 0.08);
+      --hero-text: #1f1f1f;
+      --hero-muted: #4f4f4f;
+      --button-solid: #e4572e;
+      --button-solid-hover: #c94520;
+      --button-text: #ffffff;
+      --answer-bg: #ffffff;
+      --answer-text: #1f1f1f;
+      --feedback-text: #2f2f2f;
+      --badge-bg: #fff0ea;
+      --badge-text: #9d3418;
+      --success: #1f8f4e;
+      --success-dark: #106438;
+      --success-light: #e8f7ee;
+      --zoom: 1;
+      --space-scale: 1;
+      --panel-padding: calc(24px * var(--space-scale));
+      --hero-padding: calc(28px * var(--space-scale));
+      --topic-padding-y: calc(14px * var(--space-scale));
+      --topic-padding-x: calc(16px * var(--space-scale));
+      --button-padding-y: calc(14px * var(--space-scale));
+      --button-padding-x: calc(22px * var(--space-scale));
+      --answer-padding-y: calc(14px * var(--space-scale));
+      --answer-padding-x: calc(16px * var(--space-scale));
+      --body-size: clamp(16px, calc(16px * var(--zoom)), 19px);
+      --small-size: clamp(13px, calc(13px * var(--zoom)), 14px);
+      --hero-copy-size: clamp(16px, calc(17px * var(--zoom)), 20px);
+      --title-size: clamp(30px, calc(34px * var(--zoom)), 42px);
+      --question-size: clamp(23px, calc(25px * var(--zoom)), 31px);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      font-size: var(--body-size);
+      line-height: 1.55;
+    }
+    .shell {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 88px 20px 48px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .toolbar-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: var(--toolbar-bg);
+      border: 1px solid var(--toolbar-border);
+      box-shadow: var(--toolbar-shadow);
+      backdrop-filter: blur(12px);
+    }
+    .toolbar-label {
+      color: var(--muted);
+      font-size: var(--small-size);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0 6px 0 4px;
+    }
+    .tool-btn {
+      border: 1px solid var(--toolbar-border);
+      background: var(--card);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 11px 15px;
+      min-width: 44px;
+      font-size: var(--small-size);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .zoom-readout {
+      min-width: 56px;
+      text-align: center;
+      color: var(--muted);
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(228, 87, 46, 0.08), transparent 30%),
+        linear-gradient(180deg, var(--hero-base) 0%, var(--hero-accent) 100%);
+      color: var(--hero-text);
+      border-radius: 20px;
+      padding: var(--hero-padding);
+      box-shadow: 0 10px 30px rgba(20, 20, 20, 0.08);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--toolbar-border);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -110px -120px auto;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 68%);
+      pointer-events: none;
+    }
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: inset 0 0 0 1px rgba(228, 87, 46, 0.14);
+    }
+    .brand-mark img {
+      display: block;
+      width: min(100%, 220px);
+      max-width: 220px;
+      height: auto;
+    }
+    .eyebrow {
+      font-size: var(--small-size);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--hero-muted);
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: var(--title-size);
+      line-height: 1.1;
+    }
+    .hero p {
+      margin: 0;
+      font-size: var(--hero-copy-size);
+      line-height: 1.6;
+      max-width: 680px;
+      color: var(--hero-muted);
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      margin-top: 20px;
+      padding: var(--panel-padding);
+      box-shadow: 0 10px 24px rgba(20, 20, 20, 0.06);
+    }
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .topic {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: var(--topic-padding-y) var(--topic-padding-x);
+      background: var(--surface-soft);
+    }
+    .topic strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      color: var(--teal);
+      font-size: var(--small-size);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .start {
+      margin-top: 22px;
+      background: var(--button-solid);
+      color: var(--button-text);
+      border: 0;
+      border-radius: 999px;
+      font-size: var(--body-size);
+      font-weight: 700;
+      padding: var(--button-padding-y) var(--button-padding-x);
+      cursor: pointer;
+      box-shadow: 0 10px 18px rgba(28, 18, 5, 0.14);
+    }
+    .status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: var(--body-size);
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .pill {
+      background: var(--surface-soft);
+      color: var(--teal-dark);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .bar {
+      width: 100%;
+      height: 8px;
+      background: #f3e3de;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 22px;
+    }
+    .bar > div {
+      height: 100%;
+      background: linear-gradient(90deg, #c94520 0%, #ff7a59 100%);
+      width: 0%;
+      transition: width 0.25s ease;
+    }
+    .question {
+      font-size: var(--question-size);
+      line-height: 1.35;
+      margin: 0 0 20px;
+    }
+    .answers {
+      display: grid;
+      gap: 12px;
+    }
+    .answer {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--answer-bg);
+      color: var(--answer-text);
+      padding: var(--answer-padding-y) var(--answer-padding-x);
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .answer:hover,
+    .answer:focus-visible,
+    .tool-btn:hover,
+    .tool-btn:focus-visible,
+    .start:hover,
+    .start:focus-visible,
+    .next:hover,
+    .next:focus-visible,
+    .restart:hover,
+    .restart:focus-visible,
+    .hub-link:hover,
+    .hub-link:focus-visible {
+      outline: none;
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(228, 87, 46, 0.14);
+    }
+    .answer.correct {
+      border-color: rgba(31, 143, 78, 0.4);
+      background: var(--success-light);
+    }
+    .answer.wrong {
+      border-color: rgba(164, 46, 46, 0.28);
+      background: var(--red-light);
+    }
+    .answer.faded {
+      opacity: 0.72;
+    }
+    .answer:disabled {
+      cursor: default;
+    }
+    .badge {
+      flex: 0 0 auto;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: var(--small-size);
+      font-weight: 700;
+      border: 1px solid rgba(228, 87, 46, 0.18);
+    }
+    .answer.correct .badge {
+      background: #dff4e6;
+      color: var(--success-dark);
+      border-color: rgba(31, 143, 78, 0.24);
+    }
+    .feedback {
+      margin-top: 18px;
+      border-radius: 16px;
+      padding: 18px 18px 20px;
+      background: var(--success-light);
+      color: var(--feedback-text);
+      border: 1px solid rgba(31, 143, 78, 0.16);
+      line-height: 1.65;
+    }
+    .feedback.wrong {
+      background: var(--red-light);
+      border-color: rgba(164, 46, 46, 0.18);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .next,
+    .restart,
+    .hub-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .next {
+      background: var(--button-solid);
+      color: var(--button-text);
+    }
+    .restart {
+      background: transparent;
+      color: var(--teal-dark);
+      border-color: rgba(228, 87, 46, 0.24);
+    }
+    .hub-link {
+      background: var(--surface-soft);
+      color: var(--teal-dark);
+      border-color: rgba(228, 87, 46, 0.16);
+    }
+    .result-box {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 20px;
+      padding: 22px;
+      border-radius: 20px;
+    }
+    .score-circle {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-weight: 700;
+    }
+    @media (max-width: 720px) {
+      .shell {
+        padding: 82px 16px 40px;
+      }
+      .toolbar-inner {
+        justify-content: center;
+      }
+      .status,
+      .result-box {
+        grid-template-columns: 1fr;
+      }
+      .result-box {
+        justify-items: start;
+      }
+      .actions > * {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar" aria-label="Reading controls">
+      <div class="toolbar-inner">
+        <span class="toolbar-label">View</span>
+        <button class="tool-btn" id="zoomOutBtn" type="button" aria-label="Zoom out">A-</button>
+        <span class="zoom-readout" id="zoomReadout">100%</span>
+        <button class="tool-btn" id="zoomInBtn" type="button" aria-label="Zoom in">A+</button>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="brand-row">
+        <div class="brand-mark">
+          <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
+        </div>
+      </div>
+      <p class="eyebrow">DPDP Quiz 08 | Retention and Erasure</p>
+      <h1>Retention and Erasure: Purpose End, Notice, and Legal Hold</h1>
+      <p>This daily set turns to lifecycle decisions after collection: how long data should stay, when it should be erased, and what notice must come before automated deletion.</p>
+      <div class="topics">
+        <div class="topic"><strong>Lifecycle Stage</strong>Retention, deletion, and end-of-purpose cleanup</div><div class="topic"><strong>Operational Setting</strong>MIS records, recordings, and programme archives</div><div class="topic"><strong>Focus</strong>Withdrawal, legal retention, and 48-hour notice</div>
+      </div>
+      <button class="start" id="startBtn">Start quiz</button>
+    </div>
+    <div class="panel" id="app" hidden></div>
+  </div>
+  <script>
+    const questions = [
+      {
+            "module": "Rule 8",
+            "topic": "When erasure is triggered",
+            "text": "According to the summary guidance, when should personal data normally be erased?",
+            "options": [
+                  "Only when a donor asks for it",
+                  "When consent is withdrawn or the specified purpose is no longer being served, unless law requires retention",
+                  "Exactly one year after collection in every case",
+                  "Only if the record contains health information"
+            ],
+            "correct": 1,
+            "explanation": "Section 8(7) and Rule 8 are summarised as requiring erasure when consent is withdrawn or the purpose ends, subject to legal retention requirements."
+      },
+      {
+            "module": "Rule 8",
+            "topic": "Pre-erasure notice",
+            "text": "What notice should precede automated erasure under the readiness notes?",
+            "options": [
+                  "No notice is needed if the policy is written down somewhere",
+                  "At least 48 hours' notice to the Data Principal before erasure",
+                  "A one-year notice period",
+                  "A notice only to the internal audit team"
+            ],
+            "correct": 1,
+            "explanation": "The retention section says at least 48 hours before erasure, the Data Principal should be notified."
+      },
+      {
+            "module": "Rule 6 and 8",
+            "topic": "Minimum baseline retention",
+            "text": "Which statement best reflects the baseline retention guidance that appears across the materials?",
+            "options": [
+                  "Logs and related personal data should be retained for a minimum of 1 year from processing",
+                  "All personal data must be deleted within 7 days",
+                  "Logs are optional if backups exist",
+                  "Retention is never documented because purpose varies"
+            ],
+            "correct": 0,
+            "explanation": "The materials repeatedly refer to a minimum 1-year retention expectation for logs, alongside documented retention controls more broadly."
+      },
+      {
+            "module": "Program Officer guidance",
+            "topic": "Legal retention exception",
+            "text": "A beneficiary asks to delete a record tied to a programme where records may need to be retained by law. What is the most defensible response?",
+            "options": [
+                  "Erase it immediately without checking",
+                  "Refuse the request without logging it",
+                  "Log and assess it because legally required retention may limit immediate deletion",
+                  "Tell the beneficiary deletion rights apply only after May 2027"
+            ],
+            "correct": 2,
+            "explanation": "The references emphasise that deletion requests should be logged and assessed against legal retention obligations rather than ignored or auto-approved."
+      },
+      {
+            "module": "Gandhi Fellow guidance",
+            "topic": "Recordings after purpose ends",
+            "text": "A field worker recorded an interview only for note-taking and has already used it for the intended summary. What should happen next?",
+            "options": [
+                  "Keep the recording forever because storage is cheap",
+                  "Delete the recording once the purpose is served",
+                  "Post the recording to the team group for transparency",
+                  "Transfer it to a personal device for safekeeping"
+            ],
+            "correct": 1,
+            "explanation": "The field guidance says recordings are personal data and should be deleted after the purpose they served has ended."
+      }
+];
+    const letters = ["A", "B", "C", "D"];
+    const app = document.getElementById("app");
+    const startBtn = document.getElementById("startBtn");
+    const zoomOutBtn = document.getElementById("zoomOutBtn");
+    const zoomInBtn = document.getElementById("zoomInBtn");
+    const zoomReadout = document.getElementById("zoomReadout");
+    const ZOOM_KEY = "dpdpQuizZoom";
+    const MIN_ZOOM = 0.96;
+    const MAX_ZOOM = 1.18;
+    const ZOOM_STEP = 0.06;
+
+    const state = {
+      started: false,
+      current: 0,
+      selected: null,
+      answers: []
+    };
+
+    const completionNav = {
+      previousHref: "../quiz-07-developer-safeguards/",
+      previousLabel: "Open Quiz 07",
+      hubHref: "../"
+    };
+
+    function clamp(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function applyZoom(zoom) {
+      const safeZoom = clamp(zoom, MIN_ZOOM, MAX_ZOOM);
+      const root = document.documentElement;
+      const spaceScale = safeZoom < 1 ? 0.9 + ((safeZoom - MIN_ZOOM) / (1 - MIN_ZOOM)) * 0.1 : 1 + ((safeZoom - 1) * 0.7);
+      root.style.setProperty("--zoom", safeZoom.toFixed(2));
+      root.style.setProperty("--space-scale", spaceScale.toFixed(2));
+      zoomReadout.textContent = String(Math.round(safeZoom * 100)) + "%";
+      localStorage.setItem(ZOOM_KEY, String(safeZoom));
+    }
+
+    function loadPreferences() {
+      const savedZoom = Number(localStorage.getItem(ZOOM_KEY) || "1");
+      applyZoom(Number.isFinite(savedZoom) ? savedZoom : 1);
+    }
+
+    function getResult(score) {
+      if (score === 5) {
+        return {
+          label: "Perfect score",
+          message: "You are reading the DPDP scenarios carefully and applying the guidance with confidence.",
+          bg: "var(--teal-light)",
+          color: "var(--teal-dark)",
+          border: "var(--teal)"
+        };
+      }
+      if (score >= 4) {
+        return {
+          label: "Excellent",
+          message: "You have a strong grip on these DPDP choices. Another fresh set will help lock in the details.",
+          bg: "var(--teal-light)",
+          color: "var(--teal-dark)",
+          border: "var(--teal)"
+        };
+      }
+      if (score >= 3) {
+        return {
+          label: "Good progress",
+          message: "The main ideas are there. One more round will sharpen the exact trigger points and exceptions.",
+          bg: "#e7f0fb",
+          color: "#123d6b",
+          border: "#2d71c9"
+        };
+      }
+      if (score >= 2) {
+        return {
+          label: "Keep going",
+          message: "You are building momentum. Revisit the guidance and try another set to make the distinctions stick.",
+          bg: "var(--amber-light)",
+          color: "var(--amber-dark)",
+          border: "#ba7517"
+        };
+      }
+      return {
+        label: "Just getting started",
+        message: "A quick review of the DPDP learning notes will make the next attempt much easier.",
+        bg: "var(--red-light)",
+        color: "var(--red-dark)",
+        border: "#cd4d4b"
+      };
+    }
+
+    function escapeHtml(text) {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderIntro() {
+      app.hidden = true;
+    }
+
+    function renderQuestion() {
+      const q = questions[state.current];
+      const answered = state.selected !== null;
+      const progress = (state.current / questions.length) * 100;
+
+      app.hidden = false;
+      app.innerHTML = `
+        <div class="status">
+          <div>Question ${state.current + 1} of ${questions.length}</div>
+          <div class="pill">${escapeHtml(q.module)} | ${escapeHtml(q.topic)}</div>
+        </div>
+        <div class="bar"><div style="width:${progress}%"></div></div>
+        <p class="question">${escapeHtml(q.text)}</p>
+        <div class="answers">
+          ${q.options.map((option, i) => {
+            let cls = "answer";
+            if (answered) {
+              if (i === q.correct) cls += " correct";
+              else if (i === state.selected) cls += " wrong";
+              else cls += " faded";
+            }
+            return `<button class="${cls}" data-option="${i}" ${answered ? "disabled" : ""}>
+              <span class="badge">${letters[i]}</span>
+              <span>${escapeHtml(option)}</span>
+            </button>`;
+          }).join("")}
+        </div>
+        ${answered ? `
+          <div class="feedback ${state.selected === q.correct ? "" : "wrong"}">
+            <strong>${state.selected === q.correct ? "Correct." : "Not quite."}</strong>
+            ${escapeHtml(q.explanation)}
+          </div>
+          <div class="actions">
+            <button class="next" id="nextBtn">${state.current + 1 === questions.length ? "See results" : "Next question"}</button>
+          </div>
+        ` : ""}
+      `;
+
+      app.querySelectorAll("[data-option]").forEach((btn) => {
+        btn.addEventListener("click", () => selectAnswer(Number(btn.dataset.option)));
+      });
+
+      const nextBtn = document.getElementById("nextBtn");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          if (state.current + 1 === questions.length) renderResults();
+          else {
+            state.current += 1;
+            state.selected = null;
+            renderQuestion();
+          }
+        });
+      }
+    }
+
+    function selectAnswer(index) {
+      const q = questions[state.current];
+      if (state.selected !== null) return;
+      state.selected = index;
+      state.answers.push(index === q.correct);
+      renderQuestion();
+    }
+
+    function renderResults() {
+      const score = state.answers.filter(Boolean).length;
+      const result = getResult(score);
+      app.hidden = false;
+      app.innerHTML = `
+        <div class="result-box" style="background:${result.bg}; border:1px solid ${result.border}; color:${result.color};">
+          <div class="score-circle" style="background:white; border:2px solid ${result.border}; color:${result.color};">
+            <div style="font-size:30px;">${score}</div>
+            <div style="font-size:12px;">/ ${questions.length}</div>
+          </div>
+          <div>
+            <div style="font-size:24px; font-weight:700; margin-bottom:6px;">${result.label}</div>
+            <div style="font-size:15px; line-height:1.6;">${result.message}</div>
+          </div>
+        </div>
+        <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
+          This set reinforces that retention must be justified, documented, and linked to purpose, with notice before automated erasure where applicable.
+        </div>
+        <div class="actions" style="justify-content:flex-start; margin-top:24px;">
+          <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>
+          <a class="hub-link" href="${completionNav.hubHref}">Go to quiz hub</a>
+          <button class="restart" id="restartBtn">Try again</button>
+        </div>
+      `;
+      document.getElementById("restartBtn").addEventListener("click", restart);
+    }
+
+    function restart() {
+      state.started = false;
+      state.current = 0;
+      state.selected = null;
+      state.answers = [];
+      app.hidden = true;
+    }
+
+    startBtn.addEventListener("click", () => {
+      state.started = true;
+      state.current = 0;
+      state.selected = null;
+      state.answers = [];
+      renderQuestion();
+    });
+
+    zoomOutBtn.addEventListener("click", () => {
+      const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
+      applyZoom(currentZoom - ZOOM_STEP);
+    });
+
+    zoomInBtn.addEventListener("click", () => {
+      const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
+      applyZoom(currentZoom + ZOOM_STEP);
+    });
+
+    loadPreferences();
+    renderIntro();
+  </script>
+</body>
+</html>
