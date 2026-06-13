@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DPDP Quiz 03 - Breach Readiness</title>
+  <style>
+    :root {
+      --brand: #e4572e;
+      --brand-dark: #7a2410;
+      --brand-soft: #fde6df;
+      --brand-softer: #fff4f0;
+      --ink: #1f1f1f;
+      --muted: #555;
+      --line: #e6d7d1;
+      --success: #1f8f4e;
+      --success-soft: #e8f7ee;
+      --danger-soft: #fceaea;
+      --danger-dark: #6b1f1f;
+      --info-soft: #e8f0fb;
+      --info-dark: #123d6b;
+      --card: #ffffff;
+      --shadow: 0 14px 34px rgba(54, 29, 16, 0.08);
+      --toolbar-shadow: 0 10px 24px rgba(54, 54, 54, 0.08);
+      --zoom: 1;
+      --space-scale: 1;
+      --body-size: clamp(16px, calc(16px * var(--zoom)), 19px);
+      --small-size: clamp(13px, calc(13px * var(--zoom)), 15px);
+      --title-size: clamp(30px, calc(34px * var(--zoom)), 42px);
+      --question-size: clamp(23px, calc(25px * var(--zoom)), 31px);
+      --panel-padding: calc(24px * var(--space-scale));
+      --hero-padding: calc(28px * var(--space-scale));
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(228, 87, 46, 0.08), transparent 24%),
+        linear-gradient(180deg, #fffdfc 0%, #ffffff 20%, #ffffff 100%);
+      font-size: var(--body-size);
+      line-height: 1.6;
+    }
+    .shell {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 36px 20px 48px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .toolbar-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(228, 87, 46, 0.18);
+      box-shadow: var(--toolbar-shadow);
+      backdrop-filter: blur(12px);
+    }
+    .toolbar-label,
+    .zoom-readout {
+      color: var(--muted);
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .tool-btn {
+      border: 1px solid rgba(228, 87, 46, 0.22);
+      background: var(--card);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 11px 16px;
+      min-width: 46px;
+      font-size: var(--small-size);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .hero,
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: var(--hero-padding);
+      background:
+        radial-gradient(circle at top right, rgba(228, 87, 46, 0.08), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, var(--brand-softer) 100%);
+    }
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: #ffffff;
+      border: 1px solid rgba(228, 87, 46, 0.14);
+      margin-bottom: 18px;
+    }
+    .brand-mark img {
+      display: block;
+      width: min(100%, 220px);
+      max-width: 220px;
+      height: auto;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--brand-dark);
+      font-size: var(--small-size);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: var(--title-size);
+      line-height: 1.1;
+    }
+    .hero p {
+      margin: 0;
+      color: #454545;
+    }
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .topic {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fffaf7;
+      padding: 14px 16px;
+    }
+    .topic strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--brand-dark);
+      font-size: var(--small-size);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .start,
+    .next,
+    .restart,
+    .hub-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+    .start,
+    .next {
+      background: var(--brand);
+      color: #ffffff;
+      box-shadow: 0 10px 18px rgba(28, 18, 5, 0.14);
+    }
+    .restart {
+      background: transparent;
+      color: var(--brand-dark);
+      border-color: rgba(228, 87, 46, 0.24);
+    }
+    .hub-link {
+      background: var(--brand-softer);
+      color: var(--brand-dark);
+      border-color: rgba(228, 87, 46, 0.16);
+    }
+    .start { margin-top: 22px; }
+    .panel {
+      margin-top: 20px;
+      padding: var(--panel-padding);
+    }
+    .status {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .pill {
+      background: #fff7f4;
+      color: var(--brand-dark);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .bar {
+      width: 100%;
+      height: 8px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #f3e3de;
+      margin-bottom: 22px;
+    }
+    .bar > div {
+      height: 100%;
+      background: linear-gradient(90deg, #c94520 0%, #ff7a59 100%);
+    }
+    .question {
+      margin: 0 0 20px;
+      font-size: var(--question-size);
+      line-height: 1.35;
+    }
+    .answers {
+      display: grid;
+      gap: 12px;
+    }
+    .answer {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      width: 100%;
+      text-align: left;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #ffffff;
+      color: var(--ink);
+      padding: 14px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .badge {
+      flex: 0 0 auto;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff0ea;
+      color: #9d3418;
+      border: 1px solid rgba(228, 87, 46, 0.18);
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .answer.correct {
+      background: var(--success-soft);
+      border-color: rgba(31, 143, 78, 0.4);
+    }
+    .answer.correct .badge {
+      background: #dff4e6;
+      color: #106438;
+      border-color: rgba(31, 143, 78, 0.24);
+    }
+    .answer.wrong {
+      background: var(--danger-soft);
+      border-color: rgba(164, 46, 46, 0.28);
+    }
+    .answer.faded { opacity: 0.72; }
+    .feedback {
+      margin-top: 18px;
+      border-radius: 16px;
+      padding: 18px 18px 20px;
+      background: var(--success-soft);
+      border: 1px solid rgba(31, 143, 78, 0.16);
+      line-height: 1.65;
+    }
+    .feedback.wrong {
+      background: var(--danger-soft);
+      border-color: rgba(164, 46, 46, 0.18);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .result-box {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 20px;
+      align-items: center;
+      padding: 22px;
+      border-radius: 20px;
+    }
+    .score-circle {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-weight: 700;
+      background: #ffffff;
+    }
+    .tool-btn:hover,
+    .tool-btn:focus-visible,
+    .start:hover,
+    .start:focus-visible,
+    .next:hover,
+    .next:focus-visible,
+    .restart:hover,
+    .restart:focus-visible,
+    .hub-link:hover,
+    .hub-link:focus-visible,
+    .answer:hover,
+    .answer:focus-visible {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(228, 87, 46, 0.14);
+    }
+    @media (max-width: 720px) {
+      .shell { padding: 22px 16px 40px; }
+      .toolbar-inner { justify-content: center; }
+      .status, .result-box { grid-template-columns: 1fr; }
+      .actions > * { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar" aria-label="Reading controls">
+      <div class="toolbar-inner">
+        <span class="toolbar-label">View</span>
+        <button class="tool-btn" id="zoomOutBtn" type="button" aria-label="Zoom out">A-</button>
+        <span class="zoom-readout" id="zoomReadout">100%</span>
+        <button class="tool-btn" id="zoomInBtn" type="button" aria-label="Zoom in">A+</button>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="brand-mark">
+        <img src="../PF_Logo.jpg" alt="Piramal Foundation logo">
+      </div>
+      <p class="eyebrow">DPDP Quiz 03 | Breach Readiness</p>
+      <h1>Breach Readiness: The First 72 Hours</h1>
+      <p>This set tests immediate judgment when a device is lost, a file goes to the wrong recipient, or a system account is compromised.</p>
+      <div class="topics">
+        <div class="topic"><strong>Project Stage</strong>Incident containment, assessment, and early reporting</div>
+        <div class="topic"><strong>Operational Setting</strong>Lost devices, wrong-channel sharing, and system compromise</div>
+        <div class="topic"><strong>Focus</strong>72-hour clock, evidence preservation, and required notification content</div>
+      </div>
+      <button class="start" id="startBtn">Start quiz</button>
+    </section>
+
+    <section class="panel" id="app" hidden></section>
+  </div>
+
+  <script>
+    const questions = [
+      {
+        module: "Breach SOP",
+        topic: "What counts as a breach",
+        text: "A spreadsheet containing beneficiary names and phone numbers is emailed to the wrong external address. No one knows yet whether the recipient opened it. How should this be classified?",
+        options: [
+          "Not a breach unless the recipient confirms they opened it",
+          "A breach only if more than 100 people were affected",
+          "A personal data breach that should be reported and documented",
+          "A routine mistake that can be ignored if the sender apologises"
+        ],
+        correct: 2,
+        explanation: "The breach SOP lists wrongful disclosure to an unintended recipient as a breach scenario and says actual harm does not need to be proven first."
+      },
+      {
+        module: "Breach SOP",
+        topic: "Clock start",
+        text: "When does the 72-hour reporting clock begin under the Piramal Foundation breach SOP?",
+        options: [
+          "When the legal team finishes investigating",
+          "When any person in Piramal Foundation becomes aware of the breach",
+          "When the DPBI asks for a report",
+          "When the IT team confirms that data left the system"
+        ],
+        correct: 1,
+        explanation: "The SOP says the countdown runs from when any person in the organisation becomes aware, not from when the investigation ends."
+      },
+      {
+        module: "Breach SOP",
+        topic: "Technical compromise",
+        text: "A developer sees signs of unauthorised access in a programme database. What is the most defensible immediate action sequence from the SOP?",
+        options: [
+          "Fix the database first and collect logs later if needed",
+          "Preserve logs, isolate the affected system, and revoke compromised credentials",
+          "Wait for the next business day before involving IT governance",
+          "Delete suspicious accounts and avoid screenshots to reduce confusion"
+        ],
+        correct: 1,
+        explanation: "For technical breaches, the SOP prioritises preserving logs before they change, isolating the system, and revoking compromised access."
+      },
+      {
+        module: "Breach SOP",
+        topic: "Data Principal notice",
+        text: "Which item belongs in the notification to affected Data Principals?",
+        options: [
+          "Only an apology and no detail, to avoid causing concern",
+          "Description of the breach, likely consequences, mitigation steps, and a contact point",
+          "The names of internal staff under suspicion",
+          "A promise that the incident will never happen again"
+        ],
+        correct: 1,
+        explanation: "Rule 7 notice content includes what happened, likely consequences, mitigation, self-protection guidance, and how to contact Piramal Foundation."
+      },
+      {
+        module: "Breach SOP",
+        topic: "Initial DPBI report",
+        text: "What should the first DPBI notification include?",
+        options: [
+          "Only the final root-cause analysis",
+          "Nature of breach, approximate extent, timing, location, and likely impact",
+          "A list of all future policy changes the organisation might consider",
+          "Nothing until every affected beneficiary has replied"
+        ],
+        correct: 1,
+        explanation: "The initial DPBI report is meant to go out without delay with the broad facts available at that stage, not only after a complete investigation."
+      }
+    ];
+
+    const letters = ["A", "B", "C", "D"];
+    const app = document.getElementById("app");
+    const startBtn = document.getElementById("startBtn");
+    const zoomOutBtn = document.getElementById("zoomOutBtn");
+    const zoomInBtn = document.getElementById("zoomInBtn");
+    const zoomReadout = document.getElementById("zoomReadout");
+    const ZOOM_KEY = "dpdpQuizZoom";
+    const MIN_ZOOM = 0.96;
+    const MAX_ZOOM = 1.18;
+    const ZOOM_STEP = 0.06;
+
+    const state = {
+      current: 0,
+      selected: null,
+      answers: []
+    };
+
+    function clamp(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function applyZoom(zoom) {
+      const safeZoom = clamp(zoom, MIN_ZOOM, MAX_ZOOM);
+      const spaceScale = safeZoom < 1 ? 0.9 + ((safeZoom - MIN_ZOOM) / (1 - MIN_ZOOM)) * 0.1 : 1 + ((safeZoom - 1) * 0.7);
+      document.documentElement.style.setProperty("--zoom", safeZoom.toFixed(2));
+      document.documentElement.style.setProperty("--space-scale", spaceScale.toFixed(2));
+      zoomReadout.textContent = Math.round(safeZoom * 100) + "%";
+      localStorage.setItem(ZOOM_KEY, String(safeZoom));
+      zoomOutBtn.disabled = safeZoom <= MIN_ZOOM;
+      zoomInBtn.disabled = safeZoom >= MAX_ZOOM;
+    }
+
+    function loadPreferences() {
+      const savedZoom = Number(localStorage.getItem(ZOOM_KEY) || "1");
+      applyZoom(Number.isFinite(savedZoom) ? savedZoom : 1);
+    }
+
+    function escapeHtml(text) {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function scrollElementToReadingPosition(element) {
+      const toolbarHeight = document.querySelector(".toolbar")?.offsetHeight || 0;
+      const top = Math.max(0, window.scrollY + element.getBoundingClientRect().top - toolbarHeight - 16);
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+
+    function getResult(score) {
+      if (score === 5) {
+        return {
+          label: "Perfect score",
+          message: "You are reading the breach-response triggers carefully and applying the timing rules with confidence.",
+          bg: "var(--brand-soft)",
+          color: "var(--brand-dark)",
+          border: "var(--brand)"
+        };
+      }
+      if (score >= 4) {
+        return {
+          label: "Excellent",
+          message: "You have a strong grip on escalation, containment, and notice expectations.",
+          bg: "var(--brand-soft)",
+          color: "var(--brand-dark)",
+          border: "var(--brand)"
+        };
+      }
+      if (score >= 3) {
+        return {
+          label: "Good progress",
+          message: "The main ideas are there. One more round will sharpen the exact reporting triggers and notice content.",
+          bg: "var(--info-soft)",
+          color: "var(--info-dark)",
+          border: "#2d71c9"
+        };
+      }
+      if (score >= 2) {
+        return {
+          label: "Keep going",
+          message: "Review the SOP sequence once more so the first-response steps become automatic.",
+          bg: "#fff1ec",
+          color: "#8a3420",
+          border: "#ba7517"
+        };
+      }
+      return {
+        label: "Just getting started",
+        message: "A quick review of the breach-response notes will make the next attempt much easier.",
+        bg: "var(--danger-soft)",
+        color: "var(--danger-dark)",
+        border: "#cd4d4b"
+      };
+    }
+
+    function renderQuestion() {
+      const q = questions[state.current];
+      const answered = state.selected !== null;
+      const progress = (state.current / questions.length) * 100;
+
+      app.hidden = false;
+      app.innerHTML = `
+        <div class="status">
+          <div>Question ${state.current + 1} of ${questions.length}</div>
+          <div class="pill">${escapeHtml(q.module)} | ${escapeHtml(q.topic)}</div>
+        </div>
+        <div class="bar"><div style="width:${progress}%"></div></div>
+        <p class="question">${escapeHtml(q.text)}</p>
+        <div class="answers">
+          ${q.options.map((option, i) => {
+            let cls = "answer";
+            if (answered) {
+              if (i === q.correct) cls += " correct";
+              else if (i === state.selected) cls += " wrong";
+              else cls += " faded";
+            }
+            return `<button class="${cls}" data-option="${i}" ${answered ? "disabled" : ""}>
+              <span class="badge">${letters[i]}</span>
+              <span>${escapeHtml(option)}</span>
+            </button>`;
+          }).join("")}
+        </div>
+        ${answered ? `
+          <div class="feedback ${state.selected === q.correct ? "" : "wrong"}">
+            <strong>${state.selected === q.correct ? "Correct." : "Not quite."}</strong>
+            ${escapeHtml(q.explanation)}
+          </div>
+          <div class="actions">
+            <button class="next" id="nextBtn">${state.current + 1 === questions.length ? "See results" : "Next question"}</button>
+          </div>
+        ` : ""}
+      `;
+
+      app.querySelectorAll("[data-option]").forEach((btn) => {
+        btn.addEventListener("click", () => selectAnswer(Number(btn.dataset.option)));
+      });
+
+      const nextBtn = document.getElementById("nextBtn");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          if (state.current + 1 === questions.length) {
+            renderResults();
+          } else {
+            state.current += 1;
+            state.selected = null;
+            renderQuestion();
+          }
+        });
+
+        requestAnimationFrame(() => {
+          nextBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+      }
+
+      if (!answered) {
+        requestAnimationFrame(() => {
+          scrollElementToReadingPosition(app);
+        });
+      }
+    }
+
+    function selectAnswer(index) {
+      if (state.selected !== null) return;
+      state.selected = index;
+      state.answers.push(index === questions[state.current].correct);
+      renderQuestion();
+    }
+
+    function renderResults() {
+      const score = state.answers.filter(Boolean).length;
+      const result = getResult(score);
+      app.hidden = false;
+      app.innerHTML = `
+        <div class="result-box" style="background:${result.bg}; border:1px solid ${result.border}; color:${result.color};">
+          <div class="score-circle" style="border:2px solid ${result.border}; color:${result.color};">
+            <div style="font-size:30px;">${score}</div>
+            <div style="font-size:12px;">/ ${questions.length}</div>
+          </div>
+          <div>
+            <div style="font-size:24px; font-weight:700; margin-bottom:6px;">${result.label}</div>
+            <div style="font-size:15px; line-height:1.6;">${result.message}</div>
+          </div>
+        </div>
+        <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
+          This quiz strengthens first-response judgment so teams escalate early, preserve evidence, and notify within the required windows.
+        </div>
+        <div class="actions" style="justify-content:flex-start; margin-top:24px;">
+          <a class="next" href="../quiz-02-consent-notices/">Open Quiz 02</a>
+          <a class="hub-link" href="../">Go to quiz hub</a>
+          <button class="restart" id="restartBtn">Try again</button>
+        </div>
+      `;
+
+      document.getElementById("restartBtn").addEventListener("click", restart);
+    }
+
+    function restart() {
+      state.current = 0;
+      state.selected = null;
+      state.answers = [];
+      app.hidden = true;
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }
+
+    startBtn.addEventListener("click", () => {
+      state.current = 0;
+      state.selected = null;
+      state.answers = [];
+      renderQuestion();
+    });
+
+    zoomOutBtn.addEventListener("click", () => {
+      const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
+      applyZoom(currentZoom - ZOOM_STEP);
+    });
+
+    zoomInBtn.addEventListener("click", () => {
+      const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
+      applyZoom(currentZoom + ZOOM_STEP);
+    });
+
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+
+    loadPreferences();
+  </script>
+</body>
+</html>

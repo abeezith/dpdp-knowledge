@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-12T14:20:58.522Z",
-  "publishedThisRun": "quiz-02-consent-notices",
+  "updatedAt": "2026-06-13T14:10:00.000Z",
+  "publishedThisRun": "quiz-03-breach-readiness",
   "queuedFolders": [
-    "quiz-03-breach-readiness",
     "quiz-04-childrens-data",
     "quiz-05-data-rights",
     "quiz-06-bihar-enrolment",
@@ -23,5 +22,5 @@
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check"
   ],
-  "queuedCount": 20
+  "queuedCount": 19
 }
