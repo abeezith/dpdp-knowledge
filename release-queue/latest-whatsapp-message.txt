@@ -1,5 +1,5 @@
-DPDP Quiz 04 | Children's Data
+DPDP Quiz 05 | Data Rights
 
-5 quick questions on parental consent, care-related exemptions, and the prohibited uses of children's data under DPDP.
+5 quick questions on access, correction, erasure, grievances, and nomination under DPDP.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-04-childrens-data/
+https://abeezith.github.io/dpdp-knowledge/quiz-05-data-rights/
