@@ -1,5 +1,5 @@
-DPDP Quiz 05 | Data Rights
+DPDP Quiz 06 | Bihar Enrolment
 
-5 quick questions on access, correction, erasure, grievances, and nomination under DPDP.
+5 quick questions on field consent conversations, partial refusals, recording permission, and unsafe sharing risks under DPDP.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-05-data-rights/
+https://abeezith.github.io/dpdp-knowledge/quiz-06-bihar-enrolment/
