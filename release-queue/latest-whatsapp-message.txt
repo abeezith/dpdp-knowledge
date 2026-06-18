@@ -1,5 +1,5 @@
-DPDP Quiz 06 | Bihar Enrolment
+DPDP Quiz 07 | Developer Safeguards
 
-5 quick questions on field consent conversations, partial refusals, recording permission, and unsafe sharing risks under DPDP.
+5 quick questions on logs, access, encryption, ODK device controls, and vendor safeguards under DPDP.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-06-bihar-enrolment/
+https://abeezith.github.io/dpdp-knowledge/quiz-07-developer-safeguards/
