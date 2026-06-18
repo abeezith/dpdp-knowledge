@@ -439,9 +439,9 @@
             "text": "Why can a very small count in an aggregated health table still be risky?",
             "options": [
                   "Because small counts can make re-identification easier in rare conditions or small geographies",
-                  "Because counts below 10 are automatically illegal",
-                  "Because aggregation never reduces risk",
-                  "Because the DPDP materials forbid all reporting summaries"
+                  "Because counts below 10 are automatically illegal, with nothing else checked",
+                  "Because aggregation never reduces risk, without any further review",
+                  "Because the DPDP materials forbid all reporting summaries, and treat that as enough, with no escalation at all"
             ],
             "correct": 0,
             "explanation": "The existing quiz set and learning notes warn that tiny cell sizes can still reveal individuals in rare-condition or small-area contexts."
@@ -451,12 +451,12 @@
             "topic": "Export controls",
             "text": "What is the checklist trying to control when it asks whether bulk data exports are logged and restricted?",
             "options": [
-                  "Whether analysts can change the company logo",
                   "Who downloaded beneficiary-level data and when",
-                  "How often newsletters are sent",
-                  "Which browser staff prefer"
+                  "Which browser staff prefer",
+                  "Whether analysts can change the company logo, as the final step",
+                  "How often newsletters are sent"
             ],
-            "correct": 1,
+            "correct": 0,
             "explanation": "The audit checklist wants visibility into who exported data and whether that ability is limited to authorised roles."
       },
       {
@@ -464,12 +464,12 @@
             "topic": "Compromised cloud storage",
             "text": "A cloud storage account containing beneficiary files is compromised. How is that treated in the SOP?",
             "options": [
+                  "As a low-priority event only if files were encrypted, without any further review",
                   "As a breach scenario that triggers the incident workflow",
-                  "As a routine infrastructure issue unrelated to DPDP",
-                  "As a low-priority event only if files were encrypted",
-                  "As a problem only if the account was outside India"
+                  "As a problem only if the account was outside India",
+                  "As a routine infrastructure issue unrelated to DPDP"
             ],
-            "correct": 0,
+            "correct": 1,
             "explanation": "The breach SOP explicitly lists compromised cloud storage accounts as breach scenarios."
       },
       {
@@ -477,10 +477,10 @@
             "topic": "Dashboard scope",
             "text": "Which design choice best matches the guidance for analytical dashboards?",
             "options": [
-                  "Expose beneficiary-level rows to all viewers to reduce friction",
+                  "Let each analyst decide whether consent was broad enough",
                   "Use aggregated views by default and limit row-level access to authorised cases",
                   "Disable logging so analysts feel less monitored",
-                  "Let each analyst decide whether consent was broad enough"
+                  "Expose beneficiary-level rows to all viewers to reduce friction, without any further review"
             ],
             "correct": 1,
             "explanation": "The role guidance for custom MIS and dashboards prefers aggregated or masked views with restricted row-level access."
@@ -490,12 +490,12 @@
             "topic": "Restricted-country list",
             "text": "What do the source materials say about the government's restricted-country list as of mid-2026?",
             "options": [
-                  "It had already banned every major cloud provider",
                   "It had not yet been published",
+                  "It had already banned every major cloud provider",
                   "It applied only to paper records",
                   "It required Piramal Foundation to stop all international reporting immediately"
             ],
-            "correct": 1,
+            "correct": 0,
             "explanation": "The act summary states that, as of mid-2026, the government had not yet published the restricted-country list."
       }
 ];

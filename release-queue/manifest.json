@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-16T22:01:00+05:30",
-  "publishedThisRun": "quiz-06-bihar-enrolment",
+  "updatedAt": "2026-06-18T01:36:14.384Z",
+  "publishedThisRun": "quiz-07-developer-safeguards",
   "queuedFolders": [
-    "quiz-07-developer-safeguards",
     "quiz-08-retention-erasure",
     "quiz-09-audit-readiness",
     "quiz-10-intermediate-sharing",
@@ -19,5 +18,5 @@
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check"
   ],
-  "queuedCount": 16
+  "queuedCount": 15
 }

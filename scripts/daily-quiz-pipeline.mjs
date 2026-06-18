@@ -1873,7 +1873,7 @@ const quizCatalog = [
         topic: "Why train early",
         text: "Why do the readiness materials put staff training into the 2026 preparation window rather than waiting for final enforcement?",
         options: [
-          "Because rights handling, breach response, and good collection practice depend on people knowing what to do before the deadline",
+          "Because people need to know the rights, breach, and collection steps before the deadline",
           "Because training replaces the need for technical controls",
           "Because only HR has duties under DPDP",
           "Because training is required only for donor audits"
@@ -1886,7 +1886,7 @@ const quizCatalog = [
         topic: "Inventory before remediation",
         text: "Why do the source materials keep returning to data inventory and platform mapping as early tasks?",
         options: [
-          "Because teams cannot sensibly fix consent, security, retention, or sharing gaps without knowing what data exists and where",
+          "Because teams cannot fix control gaps until they know what data exists and where",
           "Because inventory is needed only for branding reports",
           "Because mapping removes the need for contracts",
           "Because the Act applies only to platforms with diagrams"
@@ -1936,20 +1936,122 @@ function escapeHtml(text) {
     .replace(/"/g, "&quot;");
 }
 
+const optionOrderPatterns = [
+  [0, 1, 2, 3],
+  [1, 3, 0, 2],
+  [2, 0, 3, 1],
+  [3, 1, 2, 0],
+  [1, 0, 2, 3],
+  [2, 3, 1, 0]
+];
+
+const distractorSuffixes = [
+  ", with nothing else checked",
+  ", and treat that as enough",
+  ", without any further review",
+  ", even if the programme is urgent",
+  ", with no escalation at all",
+  ", as the final step"
+];
+
+const correctOptionCompactors = [
+  [/explicitly authorised for individual-level access/g, "authorised for row-level access"],
+  [/capable of resolving grievances within 90 days/g, "to resolve grievances within 90 days"],
+  [/the specified purpose is no longer being served/g, "the purpose has ended"],
+  [/individuals cannot be identified/g, "people cannot be identified"],
+  [/equivalent security safeguards from the Data Processor/g, "equivalent Data Processor safeguards"],
+  [/should be known, documented, and monitored against future restrictions/g, "should be documented and monitored for future restrictions"],
+  [/the Data Principal/g, "the person"],
+  [/individual-level/g, "row-level"],
+  [/ at least /g, " at least "],
+  [/ +/g, " "]
+];
+
+function cloneQuestion(question) {
+  return {
+    ...question,
+    options: [...question.options]
+  };
+}
+
+function uniqueLongestCorrect(question) {
+  const lengths = question.options.map((option) => option.length);
+  const maxLength = Math.max(...lengths);
+  return lengths[question.correct] === maxLength && lengths.filter((value) => value === maxLength).length === 1;
+}
+
+function chooseVariantIndex(...numbers) {
+  return numbers.reduce((acc, value) => (acc * 31 + value) % 10007, 17);
+}
+
+function compactCorrectOption(text) {
+  let compacted = text;
+  for (const [pattern, replacement] of correctOptionCompactors) {
+    compacted = compacted.replace(pattern, replacement);
+  }
+  return compacted.trim();
+}
+
+function balanceQuestionOptions(question, quizNumber, questionNumber) {
+  const balanced = cloneQuestion(question);
+  balanced.options[balanced.correct] = compactCorrectOption(balanced.options[balanced.correct]);
+  if (!uniqueLongestCorrect(balanced)) {
+    return balanced;
+  }
+
+  const wrongIndices = balanced.options
+    .map((_, index) => index)
+    .filter((index) => index !== balanced.correct)
+    .sort((a, b) => balanced.options[b].length - balanced.options[a].length);
+
+  for (let suffixRound = 0; suffixRound < distractorSuffixes.length && uniqueLongestCorrect(balanced); suffixRound += 1) {
+    const wrongIndex = wrongIndices[suffixRound % wrongIndices.length];
+    const suffix = distractorSuffixes[chooseVariantIndex(quizNumber, questionNumber, wrongIndex, suffixRound) % distractorSuffixes.length];
+    if (!balanced.options[wrongIndex].endsWith(suffix)) {
+      balanced.options[wrongIndex] += suffix;
+    }
+  }
+
+  return balanced;
+}
+
+function reorderQuestionOptions(question, quizNumber, questionNumber) {
+  const pattern = optionOrderPatterns[chooseVariantIndex(quizNumber, questionNumber) % optionOrderPatterns.length];
+  const reordered = cloneQuestion(question);
+  reordered.options = pattern.map((index) => question.options[index]);
+  reordered.correct = pattern.indexOf(question.correct);
+  return reordered;
+}
+
+function prepareQuizForRendering(quiz) {
+  if (quiz.number < 7) {
+    return quiz;
+  }
+
+  return {
+    ...quiz,
+    questions: quiz.questions.map((question, index) => {
+      const balanced = balanceQuestionOptions(question, quiz.number, index + 1);
+      return reorderQuestionOptions(balanced, quiz.number, index + 1);
+    })
+  };
+}
+
 function renderQuizHtml(quiz) {
+  const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
     ? quizCatalog.find((item) => item.number === quiz.number - 1)
     : null;
   const previousHref = previousQuiz ? `../${folderNameFor(previousQuiz)}/` : "../";
   const previousLabel = previousQuiz ? `Open Quiz ${String(previousQuiz.number).padStart(2, "0")}` : "Go to quiz hub";
-  const questionsJson = JSON.stringify(quiz.questions, null, 6);
+  const questionsJson = JSON.stringify(preparedQuiz.questions, null, 6);
 
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(quiz.pageTitle)}</title>
+  <title>${escapeHtml(preparedQuiz.pageTitle)}</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -2367,11 +2469,11 @@ function renderQuizHtml(quiz) {
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">${escapeHtml(quiz.eyebrow)}</p>
-      <h1>${escapeHtml(quiz.heroTitle)}</h1>
-      <p>${escapeHtml(quiz.heroIntro)}</p>
+      <p class="eyebrow">${escapeHtml(preparedQuiz.eyebrow)}</p>
+      <h1>${escapeHtml(preparedQuiz.heroTitle)}</h1>
+      <p>${escapeHtml(preparedQuiz.heroIntro)}</p>
       <div class="topics">
-        ${quiz.topics.map((topic) => `<div class="topic"><strong>${escapeHtml(topic.label)}</strong>${escapeHtml(topic.text)}</div>`).join("")}
+        ${preparedQuiz.topics.map((topic) => `<div class="topic"><strong>${escapeHtml(topic.label)}</strong>${escapeHtml(topic.text)}</div>`).join("")}
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -2583,7 +2685,7 @@ function renderQuizHtml(quiz) {
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          ${escapeHtml(quiz.resultSummary)}
+          ${escapeHtml(preparedQuiz.resultSummary)}
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="\${completionNav.previousHref}">\${completionNav.previousLabel}</a>
@@ -3117,8 +3219,9 @@ function main() {
   const shouldPublish = process.argv.includes("--publish");
   const shouldWriteHub = process.argv.includes("--write-hub");
   const shouldRefreshExisting = process.argv.includes("--refresh-existing");
+  const shouldRefreshQueue = process.argv.includes("--refresh-queue");
   assertNoExactRepeats();
-  writeQueueBatch(shouldRefreshExisting);
+  writeQueueBatch(shouldRefreshExisting || shouldRefreshQueue);
   if (shouldRefreshExisting) {
     writePublishedGeneratedPages(true);
   }
