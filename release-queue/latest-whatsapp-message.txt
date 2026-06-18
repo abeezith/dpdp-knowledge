@@ -1,5 +1,5 @@
-DPDP Quiz 07 | Developer Safeguards
+DPDP Quiz 08 | Retention and Erasure
 
-5 quick questions on logs, access, encryption, ODK device controls, and vendor safeguards under DPDP.
+5 quick questions on purpose completion, deletion timing, legal holds, retention schedules, and notice before erasure under DPDP.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-07-developer-safeguards/
+https://abeezith.github.io/dpdp-knowledge/quiz-08-retention-erasure/
