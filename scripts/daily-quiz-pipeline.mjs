@@ -2051,6 +2051,7 @@ function renderQuizHtml(quiz) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer data-domain="abeezith.github.io" src="https://plausible.io/js/script.js"></script>
   <title>${escapeHtml(preparedQuiz.pageTitle)}</title>
   <style>
     :root {
@@ -2498,6 +2499,7 @@ function renderQuizHtml(quiz) {
       selected: null,
       answers: []
     };
+    const quizTelemetryId = window.location.pathname.replace(/\\/+$/, "") || "/";
 
     const completionNav = {
       previousHref: "${previousHref}",
@@ -2522,6 +2524,19 @@ function renderQuizHtml(quiz) {
     function loadPreferences() {
       const savedZoom = Number(localStorage.getItem(ZOOM_KEY) || "1");
       applyZoom(Number.isFinite(savedZoom) ? savedZoom : 1);
+    }
+
+    function trackQuizCompleted(score) {
+      if (typeof window.plausible !== "function") {
+        return;
+      }
+      window.plausible("Quiz Completed", {
+        props: {
+          quiz: quizTelemetryId,
+          score: String(score),
+          total: String(questions.length)
+        }
+      });
     }
 
     function getResult(score) {
@@ -2672,6 +2687,7 @@ function renderQuizHtml(quiz) {
     function renderResults() {
       const score = state.answers.filter(Boolean).length;
       const result = getResult(score);
+      trackQuizCompleted(score);
       app.hidden = false;
       app.innerHTML = \`
         <div class="result-box" style="background:\${result.bg}; border:1px solid \${result.border}; color:\${result.color};">
