@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-kNfkKRdjscYYRVvZBL_67.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <title>DPDP Quiz 01 - Role Field Scenarios</title>
+  <style>
+    :root {
+      --teal: #E4572E;
+      --teal-dark: #7A2410;
+      --teal-light: #FDE6DF;
+      --red-light: #FCEBEB;
+      --red-dark: #501313;
+      --amber-light: #FFF1EC;
+      --amber-dark: #8A3420;
+      --ink: #1f1f1f;
+      --muted: #5c5c5c;
+      --line: #e5d7d2;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --hero-base: #ffffff;
+      --hero-accent: #fff4f0;
+      --surface-soft: #fff7f4;
+      --toolbar-bg: rgba(255, 255, 255, 0.96);
+      --toolbar-border: rgba(228, 87, 46, 0.18);
+      --toolbar-shadow: 0 10px 24px rgba(54, 54, 54, 0.08);
+      --hero-text: #1f1f1f;
+      --hero-muted: #4f4f4f;
+      --button-solid: #e4572e;
+      --button-solid-hover: #c94520;
+      --button-text: #ffffff;
+      --answer-bg: #ffffff;
+      --answer-text: #1f1f1f;
+      --feedback-text: #2f2f2f;
+      --badge-bg: #fff0ea;
+      --badge-text: #9d3418;
+      --success: #1f8f4e;
+      --success-dark: #106438;
+      --success-light: #e8f7ee;
+      --zoom: 1;
+      --space-scale: 1;
+      --panel-padding: calc(24px * var(--space-scale));
+      --hero-padding: calc(28px * var(--space-scale));
+      --topic-padding-y: calc(14px * var(--space-scale));
+      --topic-padding-x: calc(16px * var(--space-scale));
+      --button-padding-y: calc(14px * var(--space-scale));
+      --button-padding-x: calc(22px * var(--space-scale));
+      --answer-padding-y: calc(14px * var(--space-scale));
+      --answer-padding-x: calc(16px * var(--space-scale));
+      --body-size: clamp(16px, calc(16px * var(--zoom)), 19px);
+      --small-size: clamp(13px, calc(13px * var(--zoom)), 14px);
+      --hero-copy-size: clamp(16px, calc(17px * var(--zoom)), 20px);
+      --title-size: clamp(30px, calc(34px * var(--zoom)), 42px);
+      --question-size: clamp(23px, calc(25px * var(--zoom)), 31px);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      font-size: var(--body-size);
+      line-height: 1.55;
+    }
+    .shell {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 88px 20px 48px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .toolbar-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: var(--toolbar-bg);
+      border: 1px solid var(--toolbar-border);
+      box-shadow: var(--toolbar-shadow);
+      backdrop-filter: blur(12px);
+    }
+    .toolbar-label {
+      color: var(--muted);
+      font-size: var(--small-size);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0 6px 0 4px;
+    }
+    .tool-btn {
+      border: 1px solid var(--toolbar-border);
+      background: var(--card);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 11px 15px;
+      min-width: 44px;
+      font-size: var(--small-size);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .zoom-readout {
+      min-width: 56px;
+      text-align: center;
+      color: var(--muted);
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(228, 87, 46, 0.08), transparent 30%),
+        linear-gradient(180deg, var(--hero-base) 0%, var(--hero-accent) 100%);
+      color: var(--hero-text);
+      border-radius: 20px;
+      padding: var(--hero-padding);
+      box-shadow: 0 10px 30px rgba(20, 20, 20, 0.08);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--toolbar-border);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -110px -120px auto;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 68%);
+      pointer-events: none;
+    }
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: inset 0 0 0 1px rgba(228, 87, 46, 0.14);
+    }
+    .brand-mark img {
+      display: block;
+      width: min(100%, 220px);
+      max-width: 220px;
+      height: auto;
+    }
+    .eyebrow {
+      font-size: var(--small-size);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--hero-muted);
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: var(--title-size);
+      line-height: 1.1;
+    }
+    .hero p {
+      margin: 0;
+      font-size: var(--hero-copy-size);
+      line-height: 1.6;
+      max-width: 680px;
+      color: var(--hero-muted);
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      margin-top: 20px;
+      padding: var(--panel-padding);
+      box-shadow: 0 10px 24px rgba(20, 20, 20, 0.06);
+    }
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .topic {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: var(--topic-padding-y) var(--topic-padding-x);
+      background: var(--surface-soft);
+    }
+    .topic strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      color: var(--teal);
+      font-size: var(--small-size);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .start {
+      margin-top: 22px;
+      background: var(--button-solid);
+      color: var(--button-text);
+      border: 0;
+      border-radius: 999px;
+      font-size: var(--body-size);
+      font-weight: 700;
+      padding: var(--button-padding-y) var(--button-padding-x);
+      cursor: pointer;
+      box-shadow: 0 10px 18px rgba(28, 18, 5, 0.14);
+    }
+    .status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: var(--body-size);
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .pill {
+      background: var(--surface-soft);
+      color: var(--teal-dark);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .bar {
+      width: 100%;
+      height: 8px;
+      background: #f3e3de;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 22px;
+    }
+    .bar > div {
+      height: 100%;
+      background: linear-gradient(90deg, #c94520 0%, #ff7a59 100%);
+      width: 0%;
+      transition: width 0.25s ease;
+    }
+    .question {
+      font-size: var(--question-size);
+      line-height: 1.35;
+      margin: 0 0 20px;
+    }
+    .answers {
+      display: grid;
+      gap: 12px;
+    }
+    .answer {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: var(--answer-bg);
+      color: var(--answer-text);
+      padding: var(--answer-padding-y) var(--answer-padding-x);
+      text-align: left;
+      cursor: pointer;
+      font: inherit;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .answer:hover:not(:disabled) {
+      transform: translateY(-1px);
+      border-color: rgba(228, 87, 46, 0.36);
+      box-shadow: 0 10px 24px rgba(20, 20, 20, 0.05);
+    }
+    .answer:disabled {
+      cursor: default;
+    }
+    .answer.correct {
+      border-color: rgba(31, 143, 78, 0.42);
+      background: #f3fbf6;
+    }
+    .answer.wrong {
+      border-color: rgba(205, 77, 75, 0.42);
+      background: #fff6f6;
+    }
+    .answer.faded {
+      opacity: 0.72;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+    .answer.correct .badge {
+      background: var(--success-light);
+      color: var(--success-dark);
+    }
+    .feedback {
+      margin-top: 18px;
+      border-radius: 16px;
+      background: #eef7ff;
+      color: var(--feedback-text);
+      border: 1px solid #d3e7fb;
+      padding: 16px 18px;
+      line-height: 1.6;
+    }
+    .feedback.wrong {
+      background: #fff7f2;
+      border-color: #f2ddd1;
+    }
+    .feedback strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .next,
+    .hub-link,
+    .restart {
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 13px 18px;
+      font-weight: 700;
+      font-size: var(--small-size);
+      border: 0;
+      cursor: pointer;
+    }
+    .next {
+      background: var(--button-solid);
+      color: var(--button-text);
+      box-shadow: 0 10px 18px rgba(28, 18, 5, 0.14);
+    }
+    .hub-link,
+    .restart {
+      background: #fff5f0;
+      color: var(--teal-dark);
+      border: 1px solid rgba(228, 87, 46, 0.24);
+    }
+    .result-box {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .score-circle {
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(20, 20, 20, 0.06);
+    }
+    @media (max-width: 640px) {
+      .shell {
+        padding: 78px 16px 40px;
+      }
+      .status {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .result-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar" aria-label="Reading controls">
+      <div class="toolbar-inner">
+        <span class="toolbar-label">View</span>
+        <button class="tool-btn" id="zoomOutBtn" type="button" aria-label="Zoom out">A-</button>
+        <span class="zoom-readout" id="zoomReadout">100%</span>
+        <button class="tool-btn" id="zoomInBtn" type="button" aria-label="Zoom in">A+</button>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="brand-row">
+        <div class="brand-mark">
+          <span style="font-weight:700; letter-spacing:0.08em; color:#7A2410; font-size:clamp(20px,2.4vw,28px);">DPDP Quiz</span>
+        </div>
+      </div>
+      <p class="eyebrow">DPDP Quiz 01 | Role Field Scenarios</p>
+      <h1>Field Scenarios: Roles, Children, Breaches, and Data Sharing</h1>
+      <p>5 fresh DPDP questions built from the DPDP learning pack for NGOs in India. This set focuses on role-based judgment in Bihar and Jharkhand field settings, with no repeated question wording from the earlier published quizzes.</p>
+      <div class="topics">
+        <div class="topic"><strong>Role</strong>health outreach worker, programme officer, Developer, and BI analyst decisions</div>
+        <div class="topic"><strong>Field Setting</strong>Bihar and Jharkhand programme scenarios grounded in the training notes</div>
+        <div class="topic"><strong>Focus</strong>Children's data, breach response, consent design, access control, and external sharing</div>
+      </div>
+      <button class="start" id="startBtn">Start quiz</button>
+    </div>
+    <div class="panel" id="app" hidden></div>
+  </div>
+  <script>
+    const questions = [
+      {
+        module: "Module 5",
+        topic: "Children's data in a camp setting",
+        text: "At a nutrition camp in Bihar, a health outreach worker records a child's weight and MUAC for care. The team also wants to use the child's photo later in a donor deck. Which option best matches the DPDP guidance in the learning pack?",
+        options: [
+          "Both the health record and the donor-use photo can be taken without any further consent",
+          "The care-related health recording can rely on the healthcare context, but the donor-use photo needs parental or guardian consent",
+          "The photo is allowed without consent if the child's name is not written below it",
+          "Neither the care record nor the photo can be collected in a health camp"
+        ],
+        correct: 1,
+        explanation: "The references allow children's health data to be processed for health services in the relevant care context, but photography for reporting or donor use is a separate purpose and needs parental or guardian consent."
+      },
+      {
+        module: "Module 4",
+        topic: "Lost device response",
+        text: "A field implementor in Jharkhand loses a phone carrying unsynced ODK forms with beneficiary details. According to the breach response SOP, what should happen first?",
+        options: [
+          "Wait until the device is definitely unrecoverable before telling anyone",
+          "Delete related entries from the central system to avoid questions",
+          "Report the loss to the supervisor and IT immediately so containment steps like remote wipe can begin",
+          "Notify the donor first because external reporting has highest priority"
+        ],
+        correct: 2,
+        explanation: "The breach-response SOP is clear that a lost or stolen device with personal data is treated as a breach scenario. The first move is immediate escalation so containment and documentation can start without delay."
+      },
+      {
+        module: "Role Guidance",
+        topic: "Access control and inactive accounts",
+        text: "A developer reviewing a DHIS2 deployment notices old user accounts that have not logged in for over a year but still remain active. Which DPDP-oriented response is most appropriate?",
+        options: [
+          "Keep them active because unused accounts cannot create risk",
+          "Review and deactivate or restrict inactive accounts as part of access-control hygiene",
+          "Export the full user list to a public tracker so teams can comment on it",
+          "Ignore the issue until the full compliance deadline arrives"
+        ],
+        correct: 1,
+        explanation: "The role guidance and platform audit checklist treat stale access as a security concern. Access should be limited to authorised people who need it, and inactive accounts should be reviewed rather than left open."
+      },
+      {
+        module: "Module 2",
+        topic: "Specific consent",
+        text: "A programme officer wants a single line in a form saying, \"I agree to all future uses of my data by this organisation.\" Based on the consent guidance, how should this be treated?",
+        options: [
+          "It is valid because one signature covers all future uses",
+          "It is valid if the beneficiary is already receiving programme benefits",
+          "It is not valid because consent must be specific and understandable as a standalone notice",
+          "It becomes valid if the form is translated into a local language"
+        ],
+        correct: 2,
+        explanation: "The consent references reject blanket future-use language. Consent must be specific to defined purposes, presented clearly, and not hidden inside a broader form or agreement."
+      },
+      {
+        module: "BI Guidance",
+        topic: "External sharing and pseudonymisation",
+        text: "A BI analyst plans to share a row-level dataset with an international partner after replacing names with ID numbers, but the IDs can still be linked back internally. What is the best interpretation from the reference notes?",
+        options: [
+          "This is still personal data because the individuals remain re-identifiable, so aggregation or stronger safeguards should be preferred before sharing",
+          "It stops being personal data as soon as names are removed",
+          "Cross-border sharing is always banned under DPDP",
+          "Sharing is automatically allowed because the recipient is doing analysis"
+        ],
+        correct: 0,
+        explanation: "The BI guidance distinguishes pseudonymisation from anonymisation. If the data can still be linked back to people, it remains personal data and should be handled with purpose, sharing, and agreement controls in mind."
+      }
+    ];
+    const letters = ["A", "B", "C", "D"];
+    const app = document.getElementById("app");
+    const startBtn = document.getElementById("startBtn");
+    const zoomOutBtn = document.getElementById("zoomOutBtn");
+    const zoomInBtn = document.getElementById("zoomInBtn");
+    const zoomReadout = document.getElementById("zoomReadout");
+    const ZOOM_KEY = "dpdpQuizZoom";
+    const MIN_ZOOM = 0.96;
+    const MAX_ZOOM = 1.18;
+    const ZOOM_STEP = 0.06;
+
+    const state = {
+      started: false,
+      current: 0,
+      selected: null,
+      answers: []
+    };
+    const quizTelemetryId = window.location.pathname.replace(/\/+$/, "") || "/";
+    const completionNav = {
+          nextHref: "../mid-level-a/",
+      nextLabel: "Open Quiz A",
+      hubHref: "../"
+    };
+
+    function clamp(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function applyZoom(zoom) {
+      const safeZoom = clamp(zoom, MIN_ZOOM, MAX_ZOOM);
+      const root = document.documentElement;
+      const spaceScale = safeZoom < 1 ? 0.9 + ((safeZoom - MIN_ZOOM) / (1 - MIN_ZOOM)) * 0.1 : 1 + ((safeZoom - 1) * 0.7);
+      root.style.setProperty("--zoom", safeZoom.toFixed(2));
+      root.style.setProperty("--space-scale", spaceScale.toFixed(2));
+      zoomReadout.textContent = `${Math.round(safeZoom * 100)}%`;
+      localStorage.setItem(ZOOM_KEY, String(safeZoom));
+    }
+
+    function loadPreferences() {
+      const savedZoom = Number(localStorage.getItem(ZOOM_KEY) || "1");
+      applyZoom(Number.isFinite(savedZoom) ? savedZoom : 1);
+    }
+
+    function trackQuizCompleted(score) {
+      if (typeof window.plausible !== "function") {
+        return;
+      }
+      window.plausible("Quiz Completed", {
+        props: {
+          quiz: quizTelemetryId,
+          score: String(score),
+          total: String(questions.length)
+        }
+      });
+    }
+
+    function getResult(score) {
+      if (score === 5) {
+        return {
+          label: "Perfect score",
+          message: "You are reading the field scenarios carefully and applying the DPDP guidance with confidence.",
+          bg: "var(--teal-light)",
+          color: "var(--teal-dark)",
+          border: "var(--teal)"
+        };
+      }
+      if (score >= 4) {
+        return {
+          label: "Excellent",
+          message: "You have a strong grip on role-based DPDP choices. Keep reinforcing the details through fresh scenarios.",
+          bg: "var(--teal-light)",
+          color: "var(--teal-dark)",
+          border: "var(--teal)"
+        };
+      }
+      if (score >= 3) {
+        return {
+          label: "Good progress",
+          message: "You know many of the core ideas. Another round will help sharpen your judgment on field exceptions and escalation steps.",
+          bg: "#e7f0fb",
+          color: "#123d6b",
+          border: "#2d71c9"
+        };
+      }
+      if (score >= 2) {
+        return {
+          label: "Keep going",
+          message: "You are building momentum. Revisit the consent, breach, and role-guidance notes, then try again.",
+          bg: "var(--amber-light)",
+          color: "var(--amber-dark)",
+          border: "#ba7517"
+        };
+      }
+      return {
+        label: "Just getting started",
+        message: "This is a good starting point. A quick review of the DPDP learning modules will make the next attempt much easier.",
+        bg: "var(--red-light)",
+        color: "var(--red-dark)",
+        border: "#cd4d4b"
+      };
+    }
+
+    function escapeHtml(text) {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderIntro() {
+      app.hidden = true;
+    }
+
+    function renderQuestion() {
+      const q = questions[state.current];
+      const answered = state.selected !== null;
+      const progress = (state.current / questions.length) * 100;
+
+      app.hidden = false;
+      app.innerHTML = `
+        <div class="status">
+          <div>Question ${state.current + 1} of ${questions.length}</div>
+          <div class="pill">${escapeHtml(q.module)} | ${escapeHtml(q.topic)}</div>
+        </div>
+        <div class="bar"><div style="width:${progress}%"></div></div>
+        <p class="question">${escapeHtml(q.text)}</p>
+        <div class="answers">
+          ${q.options.map((option, i) => {
+            let cls = "answer";
+            if (answered) {
+              if (i === q.correct) cls += " correct";
+              else if (i === state.selected) cls += " wrong";
+              else cls += " faded";
+            }
+            return `<button class="${cls}" data-option="${i}" ${answered ? "disabled" : ""}>
+              <span class="badge">${letters[i]}</span>
+              <span>${escapeHtml(option)}</span>
+            </button>`;
+          }).join("")}
+        </div>
+        ${answered ? `
+          <div class="feedback ${state.selected === q.correct ? "" : "wrong"}">
+            <strong>${state.selected === q.correct ? "Correct." : "Not quite."}</strong>
+            ${escapeHtml(q.explanation)}
+          </div>
+          <div class="actions">
+            <button class="next" id="nextBtn">${state.current + 1 === questions.length ? "See results" : "Next question"}</button>
+          </div>
+        ` : ""}
+      `;
+
+      app.querySelectorAll("[data-option]").forEach((btn) => {
+        btn.addEventListener("click", () => selectAnswer(Number(btn.dataset.option)));
+      });
+
+      const nextBtn = document.getElementById("nextBtn");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          if (state.current + 1 === questions.length) renderResults();
+          else {
+            state.current += 1;
+            state.selected = null;
+            renderQuestion();
+          }
+        });
+
+        requestAnimationFrame(() => {
+          nextBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+      }
+
+      if (!answered) {
+        requestAnimationFrame(() => {
+          app.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+    }
+
+    function selectAnswer(index) {
+      const q = questions[state.current];
+      if (state.selected !== null) return;
+      state.selected = index;
+      state.answers.push(index === q.correct);
+      renderQuestion();
+    }
+
+    function renderResults() {
+      const score = state.answers.filter(Boolean).length;
+      const result = getResult(score);
+      trackQuizCompleted(score);
+      app.hidden = false;
+      app.innerHTML = `
+        <div class="result-box" style="background:${result.bg}; border:1px solid ${result.border}; color:${result.color};">
+          <div class="score-circle" style="background:white; border:2px solid ${result.border}; color:${result.color};">
+            <div style="font-size:30px;">${score}</div>
+            <div style="font-size:12px;">/ ${questions.length}</div>
+          </div>
+          <div>
+            <div style="font-size:24px; font-weight:700; margin-bottom:6px;">${result.label}</div>
+            <div style="font-size:15px; line-height:1.6;">${result.message}</div>
+          </div>
+        </div>
+        <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
+          This daily set reinforces decisions around children's data, breach response, access control, consent wording, and external sharing.
+        </div>
+        <div class="actions" style="justify-content:flex-start; margin-top:24px;">
+          <a class="next" href="${completionNav.nextHref}">${completionNav.nextLabel}</a>
+          <a class="hub-link" href="${completionNav.hubHref}">Go to quiz hub</a>
+          <button class="restart" id="restartBtn">Try again</button>
+        </div>
+      `;
+      document.getElementById("restartBtn").addEventListener("click", restart);
+    }
+
+    function restart() {
+      state.started = false;
+      state.current = 0;
+      state.selected = null;
+      state.answers = [];
+      app.hidden = true;
+    }
+
+    startBtn.addEventListener("click", () => {
+      state.started = true;
+      state.current = 0;
+      state.selected = null;
+      state.answers = [];
+      renderQuestion();
+    });
+
+    zoomOutBtn.addEventListener("click", () => {
+      const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
+      applyZoom(currentZoom - ZOOM_STEP);
+    });
+
+    zoomInBtn.addEventListener("click", () => {
+      const currentZoom = Number(getComputedStyle(document.documentElement).getPropertyValue("--zoom")) || 1;
+      applyZoom(currentZoom + ZOOM_STEP);
+    });
+
+    loadPreferences();
+    renderIntro();
+  </script>
+</body>
+</html>
