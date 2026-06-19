@@ -1,5 +1,7 @@
-DPDP Quiz 08 | Retention and Erasure
+DPDP Quiz 09 | Audit Readiness
 
-5 quick questions on purpose completion, deletion timing, legal holds, retention schedules, and notice before erasure under DPDP.
+5 quick questions on data inventory, backup restorability, VAPT evidence, hosting visibility, and rights-handling ownership under DPDP.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-08-retention-erasure/
+https://abeezith.github.io/dpdp-knowledge/quiz-09-audit-readiness/
+
+Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
