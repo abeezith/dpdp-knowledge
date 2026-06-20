@@ -1,7 +1,7 @@
-DPDP Quiz 09 | Audit Readiness
+DPDP Quiz 10 | Intermediate Sharing
 
-5 quick questions on data inventory, backup restorability, VAPT evidence, hosting visibility, and rights-handling ownership under DPDP.
+Intermediate scenario quiz on partner sharing, donor reports, processor contracts, and cross-border transfer boundaries under DPDP.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-09-audit-readiness/
+https://abeezith.github.io/dpdp-knowledge/quiz-10-intermediate-sharing/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

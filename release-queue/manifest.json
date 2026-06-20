@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-19T13:49:17.929Z",
-  "publishedThisRun": "quiz-09-audit-readiness",
+  "updatedAt": "2026-06-20T16:07:56.252Z",
+  "publishedThisRun": "quiz-10-intermediate-sharing",
   "queuedFolders": [
-    "quiz-10-intermediate-sharing",
     "quiz-11-bi-analyst-transfers",
     "quiz-12-advanced-field-escalations",
     "quiz-13-jharkhand-health-outreach",
@@ -16,5 +15,5 @@
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check"
   ],
-  "queuedCount": 13
+  "queuedCount": 12
 }
