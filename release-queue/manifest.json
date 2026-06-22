@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-20T16:07:56.252Z",
-  "publishedThisRun": "quiz-10-intermediate-sharing",
+  "updatedAt": "2026-06-22T02:06:17.697Z",
+  "publishedThisRun": "quiz-11-bi-analyst-transfers",
   "queuedFolders": [
-    "quiz-11-bi-analyst-transfers",
     "quiz-12-advanced-field-escalations",
     "quiz-13-jharkhand-health-outreach",
     "quiz-14-processor-contracts",
@@ -15,5 +14,5 @@
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check"
   ],
-  "queuedCount": 12
+  "queuedCount": 11
 }

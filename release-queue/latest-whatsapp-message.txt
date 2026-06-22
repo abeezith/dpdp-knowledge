@@ -1,7 +1,7 @@
-DPDP Quiz 10 | Intermediate Sharing
+DPDP Quiz 11 | BI Analyst Transfers
 
-Intermediate scenario quiz on partner sharing, donor reports, processor contracts, and cross-border transfer boundaries under DPDP.
+Advanced scenario quiz on small counts, export controls, cloud compromise, dashboard scope, and cross-border transfer monitoring under DPDP.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-10-intermediate-sharing/
+https://abeezith.github.io/dpdp-knowledge/quiz-11-bi-analyst-transfers/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
