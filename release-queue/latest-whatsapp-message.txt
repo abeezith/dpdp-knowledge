@@ -1,7 +1,7 @@
-DPDP Quiz 11 | BI Analyst Transfers
+DPDP Quiz 12 | Advanced Field Escalations
 
-Advanced scenario quiz on small counts, export controls, cloud compromise, dashboard scope, and cross-border transfer monitoring under DPDP.
+Five advanced questions on distressed beneficiaries, third-party sharing pressure, out-of-scope data requests, Phase I obligations, and rollout-date planning.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-11-bi-analyst-transfers/
+https://abeezith.github.io/dpdp-knowledge/quiz-12-advanced-field-escalations/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

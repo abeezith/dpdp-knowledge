@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-22T02:06:17.697Z",
-  "publishedThisRun": "quiz-11-bi-analyst-transfers",
+  "updatedAt": "2026-06-23T01:29:00.459Z",
+  "publishedThisRun": "quiz-12-advanced-field-escalations",
   "queuedFolders": [
-    "quiz-12-advanced-field-escalations",
     "quiz-13-jharkhand-health-outreach",
     "quiz-14-processor-contracts",
     "quiz-15-consent-manager-readiness",
@@ -14,5 +13,5 @@
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check"
   ],
-  "queuedCount": 11
+  "queuedCount": 10
 }

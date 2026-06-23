@@ -7,6 +7,7 @@ const queueDir = path.join(root, "release-queue");
 const logoSource = path.join(docsDir, "quiz-01-role-field-scenarios", "PF_Logo.jpg");
 const queueReadme = path.join(queueDir, "README.md");
 const manifestPath = path.join(queueDir, "manifest.json");
+const latestWhatsAppMessagePath = path.join(queueDir, "latest-whatsapp-message.txt");
 
 const legacyQuizzes = [
   {
@@ -3236,6 +3237,43 @@ function writeHub() {
   fs.writeFileSync(path.join(docsDir, "index.html"), renderHubHtml(publishedDaily), "utf8");
 }
 
+function latestPublishedQuiz() {
+  return listQuizDirs(docsDir)
+    .map((folder) => quizCatalog.find((quiz) => folderNameFor(quiz) === folder))
+    .filter(Boolean)
+    .sort((a, b) => a.number - b.number)
+    .at(-1) ?? null;
+}
+
+function renderWhatsAppMessage(quiz) {
+  const folder = folderNameFor(quiz);
+  return [
+    `${quiz.eyebrow}`,
+    "",
+    quiz.cardDescription,
+    "",
+    `https://abeezith.github.io/dpdp-knowledge/${folder}/`,
+    "",
+    "Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured"
+  ].join("\n");
+}
+
+function writeLatestWhatsAppMessage() {
+  const latestQuiz = latestPublishedQuiz();
+  if (!latestQuiz) {
+    return;
+  }
+
+  const nextContent = renderWhatsAppMessage(latestQuiz);
+  const currentContent = fs.existsSync(latestWhatsAppMessagePath)
+    ? fs.readFileSync(latestWhatsAppMessagePath, "utf8").trim()
+    : null;
+
+  if (currentContent !== nextContent) {
+    fs.writeFileSync(latestWhatsAppMessagePath, `${nextContent}\n`, "utf8");
+  }
+}
+
 function main() {
   const shouldPublish = process.argv.includes("--publish");
   const shouldWriteHub = process.argv.includes("--write-hub");
@@ -3251,6 +3289,7 @@ function main() {
     writeHub();
   }
   writeManifest(publishedFolder);
+  writeLatestWhatsAppMessage();
 
   const queuedCount = listQuizDirs(queueDir).length;
   const publishedDailyCount = listQuizDirs(docsDir).length;
