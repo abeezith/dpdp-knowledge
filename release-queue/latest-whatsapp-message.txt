@@ -1,7 +1,7 @@
-DPDP Quiz 12 | Advanced Field Escalations
+DPDP Quiz 13 | Jharkhand Health Outreach
 
-Five advanced questions on distressed beneficiaries, third-party sharing pressure, out-of-scope data requests, Phase I obligations, and rollout-date planning.
+Five field-health questions on care versus reporting, referral sharing, voice notes, and how to handle data during direct outreach work.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-12-advanced-field-escalations/
+https://abeezith.github.io/dpdp-knowledge/quiz-13-jharkhand-health-outreach/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

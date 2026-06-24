@@ -1922,6 +1922,91 @@ const quizCatalog = [
         explanation: "The timeline uses November 2026 as a pragmatic readiness milestone so teams are not waiting until the hard deadline to build core controls."
       }
     ]
+  },
+  {
+    number: 23,
+    slug: "platform-operations-controls",
+    shortTitle: "Platform Operations Controls",
+    pageTitle: "DPDP Quiz 23 - Platform Operations Controls",
+    eyebrow: "DPDP Quiz 23 | Platform Operations Controls",
+    heroTitle: "Platform Operations Controls: Logs, Devices, Tokens, and Escalation",
+    heroIntro: "This next queued set shifts back to platform operations, focusing on the day-to-day controls developers and system owners need before privacy promises can be trusted in practice.",
+    cardDescription: "Five platform-operations questions on log retention, ODK device hygiene, API token control, ABDM consent gaps, and first-response breach discipline.",
+    audience: "Developers, BIDA platform owners, and IT operations teams",
+    focus: "Audit logs, device controls, consent architecture gaps, and incident-first actions",
+    resultSummary: "This set reinforces that DPDP readiness depends on practical controls: retained logs, cleaned devices, restricted tokens, scoped consent, and disciplined escalation.",
+    topics: [
+      { label: "People Role", text: "Developers, platform owners, and IT operations teams" },
+      { label: "Platform Setting", text: "DHIS2, ODK, ABDM-linked workflows, and custom systems" },
+      { label: "Focus", text: "Log retention, token hygiene, device handling, and breach response" }
+    ],
+    questions: [
+      {
+        module: "Role guidance",
+        topic: "Audit-log retention",
+        text: "A platform lead says application audit logs can be deleted after three months because storage is expensive. What is the closer DPDP-aligned reading from the source pack?",
+        options: [
+          "That is acceptable if backups are kept somewhere else",
+          "Logs connected to personal-data processing should be retained for at least one year",
+          "Only financial systems need log retention at all",
+          "Logs can be removed early if no breach has happened yet"
+        ],
+        correct: 1,
+        explanation: "The act summary and developer guidance both point to Rule 6 and the expectation that logs tied to personal-data processing are retained for a minimum of one year."
+      },
+      {
+        module: "Audit checklist",
+        topic: "Synced ODK forms",
+        text: "After a field phone successfully syncs beneficiary forms to ODK Central, which control question from the checklist matters most for reducing avoidable local exposure?",
+        options: [
+          "Whether old forms containing personal data are deleted from the device after sync",
+          "Whether the wallpaper uses the programme logo",
+          "Whether the phone has two messaging apps installed",
+          "Whether the same form can be printed in colour"
+        ],
+        correct: 0,
+        explanation: "The ODK checklist explicitly asks whether forms containing personal data are deleted from devices after successful sync so extra local copies do not linger."
+      },
+      {
+        module: "Audit checklist",
+        topic: "API tokens",
+        text: "Why does the DHIS2-specific checklist care about rotating API keys or tokens and logging API calls?",
+        options: [
+          "Because those controls help limit silent misuse and show who accessed data programmatically",
+          "Because token rotation is required only for social-media integrations",
+          "Because API calls stop counting as processing once they are automated",
+          "Because rotation removes the need for role-based access control"
+        ],
+        correct: 0,
+        explanation: "The platform checklist treats token rotation and API-call logging as part of access control and traceability for personal-data access through system integrations."
+      },
+      {
+        module: "Role guidance",
+        topic: "ABDM versus DPDP notice",
+        text: "A team assumes ABDM consent by itself automatically covers every later health-data use in its programme workflow. Based on the developer guidance, what is the safer interpretation?",
+        options: [
+          "ABDM consent should be treated as complementary, and extra DPDP-specific consent may still be needed for processing beyond that health-record sharing context",
+          "ABDM consent makes Rule 3 notice requirements irrelevant for every case",
+          "ABDM consent allows unlimited donor reporting with identified records",
+          "ABDM consent matters only if the programme never stores data digitally"
+        ],
+        correct: 0,
+        explanation: "The role guidance says ABDM consent architecture predates the DPDP Rules and may need an added DPDP-specific layer where processing goes beyond the original health-record sharing context."
+      },
+      {
+        module: "Breach SOP",
+        topic: "First move in a compromise",
+        text: "A developer notices signs that a dashboard database account was misused overnight. Before trying to clean up the system, what does the breach SOP prioritise first?",
+        options: [
+          "Preserve the logs and isolate the affected system before remediation changes erase evidence",
+          "Quietly reset the password and avoid creating incident records",
+          "Wait for a full root-cause analysis before telling IT governance",
+          "Delete suspicious entries so the export list looks normal again"
+        ],
+        correct: 0,
+        explanation: "The breach SOP is explicit that teams should preserve logs and isolate the affected system first, because evidence can be lost if remediation starts before documentation."
+      }
+    ]
   }
 ];
 

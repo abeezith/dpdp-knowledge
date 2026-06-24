@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-23T01:29:00.459Z",
-  "publishedThisRun": "quiz-12-advanced-field-escalations",
+  "updatedAt": "2026-06-24T02:01:14.334Z",
+  "publishedThisRun": "quiz-13-jharkhand-health-outreach",
   "queuedFolders": [
-    "quiz-13-jharkhand-health-outreach",
     "quiz-14-processor-contracts",
     "quiz-15-consent-manager-readiness",
     "quiz-16-donor-reporting",
@@ -11,7 +10,8 @@
     "quiz-19-government-program-basis",
     "quiz-20-child-safety-settings",
     "quiz-21-privacy-contact-grievances",
-    "quiz-22-final-readiness-check"
+    "quiz-22-final-readiness-check",
+    "quiz-23-platform-operations-controls"
   ],
   "queuedCount": 10
 }
