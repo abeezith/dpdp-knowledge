@@ -9,7 +9,7 @@
     window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
     plausible.init()
   </script>
-  <title>DPDP Quiz 01 - Role Field Scenarios</title>
+  <title>DPDP Quiz 11 - BI Analyst Transfers</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -427,11 +427,11 @@
           <span style="font-weight:700; letter-spacing:0.08em; color:#7A2410; font-size:clamp(20px,2.4vw,28px);">DPDP Quiz</span>
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 01 | Role Field Scenarios</p>
-      <h1>Field Scenarios: Roles, Children, Breaches, and Data Sharing</h1>
-      <p>5 fresh DPDP questions built from the DPDP learning pack for NGOs in India. This set focuses on role-based judgment in Bihar and Jharkhand field settings, with no repeated question wording from the earlier published quizzes.</p>
+      <p class="eyebrow">DPDP Quiz 11 | BI Analyst Transfers</p>
+      <h1>BI Analyst Judgment: Small Counts, Exports, and Transfers</h1>
+      <p>This advanced daily set looks at data-analysis risks that arise after collection, especially around re-identification, exports, and hosted systems.</p>
       <div class="topics">
-        <div class="topic"><strong>Role</strong>health outreach workers, programme officers, developers, and BI analyst decisions</div><div class="topic"><strong>Field Setting</strong>Bihar and Jharkhand programme scenarios grounded in the training notes</div><div class="topic"><strong>Focus</strong>Children's data, breach response, consent design, access control, and external sharing</div>
+        <div class="topic"><strong>People Role</strong>BI and reporting teams working with programme datasets</div><div class="topic"><strong>Difficulty Level</strong>Advanced judgment on analysis and transfer scenarios</div><div class="topic"><strong>Focus</strong>Small counts, cloud compromise, export logs, and transfer monitoring</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -440,69 +440,69 @@
   <script>
     const questions = [
       {
-            "module": "Children's data",
-            "topic": "Health camp care versus reporting",
-            "text": "At a nutrition camp in Bihar, a health outreach worker records a child's weight and MUAC for care. The team also wants to use the child's photo later in a donor deck. Which option best matches the DPDP guidance in the learning pack?",
+            "module": "Mid-level guidance",
+            "topic": "Small counts",
+            "text": "Why can a very small count in an aggregated health table still be risky?",
             "options": [
-                  "Both the health record and the donor-use photo can be taken without any further consent",
-                  "The care-related health recording can rely on the healthcare context, but the donor-use photo needs parental or guardian consent",
-                  "The photo is allowed without consent if the child's name is not written below it",
-                  "Neither the care record nor the photo can be collected in a health camp"
+                  "Because small counts can make re-identification easier in rare conditions or small geographies",
+                  "Because counts below 10 are automatically illegal, with nothing else checked",
+                  "Because aggregation never reduces risk, without any further review",
+                  "Because the DPDP materials forbid all reporting summaries, and treat that as enough, with no escalation at all"
             ],
-            "correct": 1,
-            "explanation": "The references allow children's health data to be processed for health services in the relevant care context, but photography for reporting or donor use is a separate purpose and needs parental or guardian consent."
+            "correct": 0,
+            "explanation": "The existing quiz set and learning notes warn that tiny cell sizes can still reveal individuals in rare-condition or small-area contexts."
+      },
+      {
+            "module": "Custom MIS checklist",
+            "topic": "Export controls",
+            "text": "What is the checklist trying to control when it asks whether bulk data exports are logged and restricted?",
+            "options": [
+                  "Who downloaded beneficiary-level data and when",
+                  "Which browser staff prefer",
+                  "Whether analysts can change the company logo, as the final step",
+                  "How often newsletters are sent"
+            ],
+            "correct": 0,
+            "explanation": "The audit checklist wants visibility into who exported data and whether that ability is limited to authorised roles."
       },
       {
             "module": "Breach SOP",
-            "topic": "Lost device response",
-            "text": "A field implementor in Jharkhand loses a phone carrying unsynced ODK forms with beneficiary details. According to the breach response SOP, what should happen first?",
+            "topic": "Compromised cloud storage",
+            "text": "A cloud storage account containing beneficiary files is compromised. How is that treated in the SOP?",
             "options": [
-                  "Wait until the device is definitely unrecoverable before telling anyone",
-                  "Delete related entries from the central system to avoid questions",
-                  "Report the loss to the supervisor and IT immediately so containment steps like remote wipe can begin",
-                  "Notify the donor first because external reporting has highest priority"
+                  "As a low-priority event only if files were encrypted, without any further review",
+                  "As a breach scenario that triggers the incident workflow",
+                  "As a problem only if the account was outside India",
+                  "As a routine infrastructure issue unrelated to DPDP"
             ],
-            "correct": 2,
-            "explanation": "The breach-response SOP is clear that a lost or stolen device with personal data is treated as a breach scenario. The first move is immediate escalation so containment and documentation can start without delay."
+            "correct": 1,
+            "explanation": "The breach SOP explicitly lists compromised cloud storage accounts as breach scenarios."
       },
       {
             "module": "Role guidance",
-            "topic": "Inactive accounts",
-            "text": "A developer reviewing a DHIS2 deployment notices old user accounts that have not logged in for over a year but still remain active. Which DPDP-oriented response is most appropriate?",
+            "topic": "Dashboard scope",
+            "text": "Which design choice best matches the guidance for analytical dashboards?",
             "options": [
-                  "Keep them active because unused accounts cannot create risk",
-                  "Review and deactivate or restrict inactive accounts as part of access-control hygiene",
-                  "Export the full user list to a public tracker so teams can comment on it",
-                  "Ignore the issue until the full compliance deadline arrives"
+                  "Let each analyst decide whether consent was broad enough",
+                  "Use aggregated views by default and limit row-level access to authorised cases",
+                  "Disable logging so analysts feel less monitored",
+                  "Expose beneficiary-level rows to all viewers to reduce friction, without any further review"
             ],
             "correct": 1,
-            "explanation": "The role guidance and platform audit checklist treat stale access as a security concern. Access should be limited to authorised people who need it, and inactive accounts should be reviewed rather than left open."
+            "explanation": "The role guidance for custom MIS and dashboards prefers aggregated or masked views with restricted row-level access."
       },
       {
-            "module": "Consent",
-            "topic": "Specific consent",
-            "text": "A programme officer wants a single line in a form saying, \"I agree to all future uses of my data by this organisation.\" Based on the consent guidance, how should this be treated?",
+            "module": "Cross-border transfers",
+            "topic": "Restricted-country list",
+            "text": "What do the source materials say about the government's restricted-country list as of mid-2026?",
             "options": [
-                  "It is valid because one signature covers all future uses",
-                  "It is valid if the beneficiary is already receiving programme benefits",
-                  "It is not valid because consent must be specific and understandable as a standalone notice",
-                  "It becomes valid if the form is translated into a local language"
-            ],
-            "correct": 2,
-            "explanation": "The consent references reject blanket future-use language. Consent must be specific to defined purposes, presented clearly, and not hidden inside a broader form or agreement."
-      },
-      {
-            "module": "Cross-border sharing",
-            "topic": "Pseudonymisation",
-            "text": "A BI analyst plans to share a row-level dataset with an international partner after replacing names with ID numbers, but the IDs can still be linked back internally. What is the best interpretation from the reference notes?",
-            "options": [
-                  "This is still personal data because the individuals remain re-identifiable, so aggregation or stronger safeguards should be preferred before sharing",
-                  "It stops being personal data as soon as names are removed",
-                  "Cross-border sharing is always banned under DPDP",
-                  "Sharing is automatically allowed because the recipient is doing analysis"
+                  "It had not yet been published",
+                  "It had already banned every major cloud provider",
+                  "It applied only to paper records",
+                  "It required the organisation to stop all international reporting immediately"
             ],
             "correct": 0,
-            "explanation": "The BI guidance distinguishes pseudonymisation from anonymisation. If the data can still be linked back to people, it remains personal data and should be handled with purpose, sharing, and agreement controls in mind."
+            "explanation": "The act summary states that, as of mid-2026, the government had not yet published the restricted-country list."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -525,8 +525,8 @@
     const quizTelemetryId = window.location.pathname.replace(/\/+$/, "") || "/";
 
     const completionNav = {
-      previousHref: "../",
-      previousLabel: "Go to quiz hub",
+      previousHref: "../quiz-10-intermediate-sharing/",
+      previousLabel: "Open Quiz 10",
       hubHref: "../"
     };
 
@@ -724,7 +724,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This daily set reinforces decisions around children's data, breach response, access control, consent wording, and external sharing.
+          This set reinforces that analytical convenience does not remove privacy obligations around identifiability, exports, or hosted infrastructure.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

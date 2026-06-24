@@ -9,7 +9,7 @@
     window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
     plausible.init()
   </script>
-  <title>DPDP Quiz 01 - Role Field Scenarios</title>
+  <title>DPDP Quiz 12 - Advanced Field Escalations</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -427,11 +427,11 @@
           <span style="font-weight:700; letter-spacing:0.08em; color:#7A2410; font-size:clamp(20px,2.4vw,28px);">DPDP Quiz</span>
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 01 | Role Field Scenarios</p>
-      <h1>Field Scenarios: Roles, Children, Breaches, and Data Sharing</h1>
-      <p>5 fresh DPDP questions built from the DPDP learning pack for NGOs in India. This set focuses on role-based judgment in Bihar and Jharkhand field settings, with no repeated question wording from the earlier published quizzes.</p>
+      <p class="eyebrow">DPDP Quiz 12 | Advanced Field Escalations</p>
+      <h1>Advanced Field Escalations: Distress, Sharing Pressure, and Deadline Judgment</h1>
+      <p>This final queued set focuses on harder field calls where teams are pressured to share, improvise, or postpone action beyond what the references support.</p>
       <div class="topics">
-        <div class="topic"><strong>Role</strong>health outreach workers, programme officers, developers, and BI analyst decisions</div><div class="topic"><strong>Field Setting</strong>Bihar and Jharkhand programme scenarios grounded in the training notes</div><div class="topic"><strong>Focus</strong>Children's data, breach response, consent design, access control, and external sharing</div>
+        <div class="topic"><strong>Difficulty Level</strong>Advanced scenario judgment under pressure</div><div class="topic"><strong>People Role</strong>Field leads, programme managers, and escalation contacts</div><div class="topic"><strong>Focus</strong>Distress handling, third-party pressure, complaints, and rollout dates</div>
       </div>
       <button class="start" id="startBtn">Start quiz</button>
     </div>
@@ -440,69 +440,69 @@
   <script>
     const questions = [
       {
-            "module": "Children's data",
-            "topic": "Health camp care versus reporting",
-            "text": "At a nutrition camp in Bihar, a health outreach worker records a child's weight and MUAC for care. The team also wants to use the child's photo later in a donor deck. Which option best matches the DPDP guidance in the learning pack?",
+            "module": "health outreach worker guidance",
+            "topic": "Distressed beneficiary",
+            "text": "A family member becomes upset during data collection and says they do not want the team writing anything further. What is the safer DPDP-aligned response?",
             "options": [
-                  "Both the health record and the donor-use photo can be taken without any further consent",
-                  "The care-related health recording can rely on the healthcare context, but the donor-use photo needs parental or guardian consent",
-                  "The photo is allowed without consent if the child's name is not written below it",
-                  "Neither the care record nor the photo can be collected in a health camp"
-            ],
-            "correct": 1,
-            "explanation": "The references allow children's health data to be processed for health services in the relevant care context, but photography for reporting or donor use is a separate purpose and needs parental or guardian consent."
-      },
-      {
-            "module": "Breach SOP",
-            "topic": "Lost device response",
-            "text": "A field implementor in Jharkhand loses a phone carrying unsynced ODK forms with beneficiary details. According to the breach response SOP, what should happen first?",
-            "options": [
-                  "Wait until the device is definitely unrecoverable before telling anyone",
-                  "Delete related entries from the central system to avoid questions",
-                  "Report the loss to the supervisor and IT immediately so containment steps like remote wipe can begin",
-                  "Notify the donor first because external reporting has highest priority"
-            ],
-            "correct": 2,
-            "explanation": "The breach-response SOP is clear that a lost or stolen device with personal data is treated as a breach scenario. The first move is immediate escalation so containment and documentation can start without delay."
-      },
-      {
-            "module": "Role guidance",
-            "topic": "Inactive accounts",
-            "text": "A developer reviewing a DHIS2 deployment notices old user accounts that have not logged in for over a year but still remain active. Which DPDP-oriented response is most appropriate?",
-            "options": [
-                  "Keep them active because unused accounts cannot create risk",
-                  "Review and deactivate or restrict inactive accounts as part of access-control hygiene",
-                  "Export the full user list to a public tracker so teams can comment on it",
-                  "Ignore the issue until the full compliance deadline arrives"
-            ],
-            "correct": 1,
-            "explanation": "The role guidance and platform audit checklist treat stale access as a security concern. Access should be limited to authorised people who need it, and inactive accounts should be reviewed rather than left open."
-      },
-      {
-            "module": "Consent",
-            "topic": "Specific consent",
-            "text": "A programme officer wants a single line in a form saying, \"I agree to all future uses of my data by this organisation.\" Based on the consent guidance, how should this be treated?",
-            "options": [
-                  "It is valid because one signature covers all future uses",
-                  "It is valid if the beneficiary is already receiving programme benefits",
-                  "It is not valid because consent must be specific and understandable as a standalone notice",
-                  "It becomes valid if the form is translated into a local language"
-            ],
-            "correct": 2,
-            "explanation": "The consent references reject blanket future-use language. Consent must be specific to defined purposes, presented clearly, and not hidden inside a broader form or agreement."
-      },
-      {
-            "module": "Cross-border sharing",
-            "topic": "Pseudonymisation",
-            "text": "A BI analyst plans to share a row-level dataset with an international partner after replacing names with ID numbers, but the IDs can still be linked back internally. What is the best interpretation from the reference notes?",
-            "options": [
-                  "This is still personal data because the individuals remain re-identifiable, so aggregation or stronger safeguards should be preferred before sharing",
-                  "It stops being personal data as soon as names are removed",
-                  "Cross-border sharing is always banned under DPDP",
-                  "Sharing is automatically allowed because the recipient is doing analysis"
+                  "Stop, reassure them, and escalate the concern through the programme chain",
+                  "Ask a neighbour to persuade them on the team's behalf, as the final step",
+                  "Continue quickly before they change their mind again, even if the programme is urgent",
+                  "Tell them the programme rules make consent optional"
             ],
             "correct": 0,
-            "explanation": "The BI guidance distinguishes pseudonymisation from anonymisation. If the data can still be linked back to people, it remains personal data and should be handled with purpose, sharing, and agreement controls in mind."
+            "explanation": "The role guidance says distress about data collection is a stop-and-escalate moment, not something to push through."
+      },
+      {
+            "module": "health outreach worker guidance",
+            "topic": "Third-party request",
+            "text": "A local employer asks a Fellow to share a beneficiary's health information \"just to help coordinate support.\" What should the Fellow do?",
+            "options": [
+                  "Share only the diagnosis but hide the phone number, as the final step",
+                  "Share it if the employer sounds trustworthy",
+                  "Post the update in the work WhatsApp group first, and treat that as enough",
+                  "Do not share it without the beneficiary's knowledge; escalate the request"
+            ],
+            "correct": 3,
+            "explanation": "The health-role guidance is direct: do not share beneficiary health information with third parties without proper basis and escalation."
+      },
+      {
+            "module": "programme officer guidance",
+            "topic": "Out-of-scope partner ask",
+            "text": "A partner requests individual-level programme data, but the existing consent notice did not clearly cover sharing with that partner. What is the best next step?",
+            "options": [
+                  "Assume implied consent because the data was collected for a good cause, and treat that as enough",
+                  "Check whether the sharing is within scope; if not, escalate before sharing",
+                  "Rename the columns and send the data immediately",
+                  "Send the file anyway because the partner works on social impact"
+            ],
+            "correct": 1,
+            "explanation": "The programme guidance says individual-level sharing requests outside the normal scope should be checked against the notice and escalated if not clearly covered."
+      },
+      {
+            "module": "Compliance timeline",
+            "topic": "Current obligations",
+            "text": "What does the timeline say is already true from Phase I, dated 13 November 2025?",
+            "options": [
+                  "All core rules became fully enforceable on that date",
+                  "The DPBI exists and grievance complaints are already possible",
+                  "Consent Manager registration had already become mandatory for the organisation",
+                  "Children's-data workflows no longer needed preparation"
+            ],
+            "correct": 1,
+            "explanation": "Phase I is when the DPBI was constituted and complaints became live; it is not the full compliance date."
+      },
+      {
+            "module": "Compliance timeline",
+            "topic": "Planning target",
+            "text": "Which planning stance matches the timeline note in the allowed references as of mid-2026?",
+            "options": [
+                  "Treat 13 November 2026 as the readiness target while keeping 13 May 2027 as the confirmed hard deadline",
+                  "Postpone every DPDP workstream until a formal DPO is appointed, with no escalation at all, and treat that as enough",
+                  "Assume the gazette already moved everything to November 2026, even if the programme is urgent",
+                  "Ignore November 2026 entirely and wait until 2028, even if the programme is urgent"
+            ],
+            "correct": 0,
+            "explanation": "The timeline note says the proposed acceleration had not been confirmed, so teams should prepare for November 2026 while treating 13 May 2027 as the hard deadline."
       }
 ];
     const letters = ["A", "B", "C", "D"];
@@ -525,8 +525,8 @@
     const quizTelemetryId = window.location.pathname.replace(/\/+$/, "") || "/";
 
     const completionNav = {
-      previousHref: "../",
-      previousLabel: "Go to quiz hub",
+      previousHref: "../quiz-11-bi-analyst-transfers/",
+      previousLabel: "Open Quiz 11",
       hubHref: "../"
     };
 
@@ -724,7 +724,7 @@
           </div>
         </div>
         <div style="font-size:var(--body-size); line-height:1.7; color:var(--ink); margin-top:18px;">
-          This daily set reinforces decisions around children's data, breach response, access control, consent wording, and external sharing.
+          This set reinforces that difficult field situations still need calm rights handling, scope checks, and immediate escalation rather than improvisation.
         </div>
         <div class="actions" style="justify-content:flex-start; margin-top:24px;">
           <a class="next" href="${completionNav.previousHref}">${completionNav.previousLabel}</a>

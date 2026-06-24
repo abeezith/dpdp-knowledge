@@ -3,6 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const docsDir = path.join(root, "docs");
+const ngoDir = path.join(docsDir, "ngo");
 const queueDir = path.join(root, "release-queue");
 const logoSource = path.join(docsDir, "quiz-01-role-field-scenarios", "PF_Logo.jpg");
 const queueReadme = path.join(queueDir, "README.md");
@@ -47,6 +48,49 @@ const legacyQuizzes = [
     title: "DPDP Mid-Level Quiz A",
     description: "This set covers grievance timelines, photography consent, aggregate reporting, the Consent Manager milestone, and retention-linked automated erasure.",
     audience: "DPDP Working Group and Implementation Group members",
+    focus: "Governance, reporting, timelines, and lifecycle controls",
+    cta: "Open Quiz A"
+  }
+];
+
+const ngoLegacyQuizzes = [
+  {
+    href: "./beginner/",
+    badge: "Beginner",
+    count: "10 questions",
+    title: "DPDP Beginner Quiz",
+    description: "Scenario-based introduction for participants who are getting started with the Digital Personal Data Protection Act 2023 and key NGO use cases in India.",
+    audience: "General participants and new learners",
+    focus: "Basics, consent, rights, breaches, and children's data",
+    cta: "Open beginner quiz"
+  },
+  {
+    href: "./mid-level/",
+    badge: "Mid-level",
+    count: "10 questions",
+    title: "DPDP Mid-Level Quiz",
+    description: "Practical scenario set for privacy, programme, and implementation team members covering processors, consent design, rights handling, security safeguards, and readiness planning.",
+    audience: "privacy, programme, and implementation team members",
+    focus: "Operational readiness and implementation judgment",
+    cta: "Open mid-level quiz"
+  },
+  {
+    href: "./mid-level-fresh/",
+    badge: "Mid-level Fresh",
+    count: "5 questions",
+    title: "DPDP Mid-Level Fresh Quiz",
+    description: "A fresh scenario set focused on vendor classification, standalone consent notices, rights contact routes, access control gaps, and early readiness actions.",
+    audience: "privacy, programme, and implementation team members",
+    focus: "Refresher practice and readiness reinforcement",
+    cta: "Open fresh quiz"
+  },
+  {
+    href: "./mid-level-a/",
+    badge: "Mid-level Quiz A",
+    count: "5 questions",
+    title: "DPDP Mid-Level Quiz A",
+    description: "This set covers grievance timelines, photography consent, aggregate reporting, the Consent Manager milestone, and retention-linked automated erasure.",
+    audience: "privacy, programme, and implementation team members",
     focus: "Governance, reporting, timelines, and lifecycle controls",
     cta: "Open Quiz A"
   }
@@ -2857,6 +2901,71 @@ function renderCard(quiz) {
       </article>`;
 }
 
+function replaceAll(text, replacements) {
+  let next = text;
+  for (const [from, to] of replacements) {
+    next = next.replaceAll(from, to);
+  }
+  return next;
+}
+
+const ngoTextReplacements = [
+  ["Piramal Foundation DPDP learning pack", "DPDP learning pack for NGOs in India"],
+  ["all future Piramal Foundation uses of my data", "all future uses of my data by this organisation"],
+  ["all future Piramal Foundation activity", "all future activity by this organisation"],
+  ["Piramal Foundation website or social media", "organisation website or social media"],
+  ["Piramal Foundation website", "organisation website"],
+  ["Piramal Foundation uses", "uses by this organisation"],
+  ["on Piramal Foundation's behalf", "on the organisation's behalf"],
+  ["When any person in Piramal Foundation becomes aware of the breach", "When any person in the organisation becomes aware of the breach"],
+  ["Piramal Foundation should", "the organisation should"],
+  ["Piramal Foundation becomes", "the organisation becomes"],
+  ["Piramal Foundation to stop", "the organisation to stop"],
+  ["Piramal Foundation can map back", "the organisation can map back"],
+  ["Piramal Foundation", "the organisation"],
+  ["Karuna Fellows", "health outreach workers"],
+  ["Karuna Fellow", "health outreach worker"],
+  ["Gandhi Fellows", "field fellows"],
+  ["Gandhi Fellow", "field fellow"],
+  ["Program Officers", "programme officers"],
+  ["Program Officer guidance", "programme officer guidance"],
+  ["Program Officer", "programme officer"],
+  ["Implementors", "implementors"],
+  ["Implementor", "implementor"]
+];
+
+function genericizeValue(value) {
+  if (typeof value === "string") {
+    return replaceAll(value, ngoTextReplacements);
+  }
+  if (Array.isArray(value)) {
+    return value.map(genericizeValue);
+  }
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([key, entryValue]) => [key, genericizeValue(entryValue)]));
+  }
+  return value;
+}
+
+function genericizeQuiz(quiz) {
+  const prepared = genericizeValue(quiz);
+  if (prepared.number === 1) {
+    prepared.cardDescription = "Fresh field scenarios across health outreach workers, programme officers, developers, and BI analyst decisions, with Bihar and Jharkhand examples and no repeated wording from the earlier published quiz sets.";
+    prepared.topics = prepared.topics.map((topic) => topic.label === "Role"
+      ? { ...topic, text: "health outreach workers, programme officers, developers, and BI analyst decisions" }
+      : topic);
+  }
+  return prepared;
+}
+
+function renderNgoQuizHtml(quiz) {
+  const html = renderQuizHtml(genericizeQuiz(quiz));
+  return html.replace(
+    '<img src="./PF_Logo.jpg" alt="Piramal Foundation logo">',
+    '<span style="font-weight:700; letter-spacing:0.08em; color:#7A2410; font-size:clamp(20px,2.4vw,28px);">DPDP Quiz</span>'
+  );
+}
+
 function renderLegacyCard(card) {
   return `      <article class="quiz-card">
         <div class="badge-row">
@@ -3172,6 +3281,32 @@ ${legacyCards}
 </html>`;
 }
 
+function renderNgoHubHtml(publishedDailyQuizzes) {
+  const dailyCards = publishedDailyQuizzes
+    .map(genericizeQuiz)
+    .sort((a, b) => b.number - a.number)
+    .map(renderCard)
+    .join("\n");
+  const legacyCards = ngoLegacyQuizzes.map(renderLegacyCard).join("\n");
+
+  return renderHubHtml([])
+    .replace("<title>Piramal Foundation DPDP Quiz Hub</title>", "<title>DPDP Quiz Hub for Indian NGOs</title>")
+    .replace(
+      '<img src="./PF_Logo.jpg" alt="Piramal Foundation logo">',
+      '<span style="font-weight:700; letter-spacing:0.08em; color:#7A2410; font-size:clamp(20px,2.4vw,28px);">DPDP Quiz</span>'
+    )
+    .replace(
+      '<p>Choose a quiz below based on the audience, theme, and depth you want. The numbered daily releases follow a queued publish pattern, while the earlier sets remain available for onboarding and workshop use.</p>',
+      '<p>Choose a quiz below based on the audience, theme, and depth you want. The numbered daily releases follow a queued publish pattern, while the earlier sets remain available for onboarding and workshop use.</p>'
+    )
+    .replace(
+      '<div class="hero-note">Tip: The latest daily release appears first. Use the older beginner and mid-level sets for longer workshops, then use the five-question daily releases for regular reinforcement.</div>',
+      '<div class="hero-note">Tip: The latest daily release appears first. Use the older beginner and mid-level sets for longer workshops, then use the five-question daily releases for regular reinforcement.</div>'
+    )
+    .replace(/<section class="quiz-list" aria-label="Daily quiz list">[\s\S]*?<\/section>/, `<section class="quiz-list" aria-label="Daily quiz list">\n${dailyCards}\n    </section>`)
+    .replace(/<section class="quiz-list" aria-label="Earlier quiz list">[\s\S]*?<\/section>/, `<section class="quiz-list" aria-label="Earlier quiz list">\n${legacyCards}\n    </section>`);
+}
+
 function listQuizDirs(baseDir) {
   if (!fs.existsSync(baseDir)) return [];
   return fs.readdirSync(baseDir, { withFileTypes: true })
@@ -3283,6 +3418,21 @@ function writePublishedGeneratedPages(overwriteExisting = false) {
   }
 }
 
+function writeNgoPublishedPages(overwriteExisting = false) {
+  ensureDir(ngoDir);
+  for (const quiz of quizCatalog.filter((item) => item.number >= 1)) {
+    const docsPath = path.join(docsDir, folderNameFor(quiz));
+    if (!fs.existsSync(docsPath)) {
+      continue;
+    }
+    const ngoPath = path.join(ngoDir, folderNameFor(quiz));
+    ensureDir(ngoPath);
+    if (overwriteExisting || !fs.existsSync(path.join(ngoPath, "index.html"))) {
+      fs.writeFileSync(path.join(ngoPath, "index.html"), renderNgoQuizHtml(quiz), "utf8");
+    }
+  }
+}
+
 function publishNextQueuedQuiz() {
   const queuedFolders = listQuizDirs(queueDir);
   if (queuedFolders.length === 0) {
@@ -3320,6 +3470,14 @@ function writeHub() {
     .map((folder) => quizCatalog.find((quiz) => folderNameFor(quiz) === folder))
     .filter(Boolean);
   fs.writeFileSync(path.join(docsDir, "index.html"), renderHubHtml(publishedDaily), "utf8");
+}
+
+function writeNgoHub() {
+  ensureDir(ngoDir);
+  const publishedDaily = listQuizDirs(docsDir)
+    .map((folder) => quizCatalog.find((quiz) => folderNameFor(quiz) === folder))
+    .filter(Boolean);
+  fs.writeFileSync(path.join(ngoDir, "index.html"), renderNgoHubHtml(publishedDaily), "utf8");
 }
 
 function latestPublishedQuiz() {
@@ -3372,7 +3530,9 @@ function main() {
   const publishedFolder = shouldPublish ? publishNextQueuedQuiz() : null;
   if (shouldWriteHub) {
     writeHub();
+    writeNgoHub();
   }
+  writeNgoPublishedPages(shouldRefreshExisting || shouldWriteHub);
   writeManifest(publishedFolder);
   writeLatestWhatsAppMessage();
 
