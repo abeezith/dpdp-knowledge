@@ -1,7 +1,7 @@
-DPDP Quiz 13 | Jharkhand Health Outreach
+DPDP Quiz 14 | Processor Contracts
 
-Five field-health questions on care versus reporting, referral sharing, voice notes, and how to handle data during direct outreach work.
+Five operational questions on processor agreements, role clarity, security clauses, hosted services, and vendor access boundaries.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-13-jharkhand-health-outreach/
+https://abeezith.github.io/dpdp-knowledge/quiz-14-processor-contracts/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

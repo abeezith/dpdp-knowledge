@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-24T02:01:14.334Z",
-  "publishedThisRun": "quiz-13-jharkhand-health-outreach",
+  "updatedAt": "2026-06-25T13:33:49.166Z",
+  "publishedThisRun": "quiz-14-processor-contracts",
   "queuedFolders": [
-    "quiz-14-processor-contracts",
     "quiz-15-consent-manager-readiness",
     "quiz-16-donor-reporting",
     "quiz-17-verbal-consent-rights",
@@ -11,7 +10,8 @@
     "quiz-20-child-safety-settings",
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check",
-    "quiz-23-platform-operations-controls"
+    "quiz-23-platform-operations-controls",
+    "quiz-24-readiness-timeline"
   ],
   "queuedCount": 10
 }

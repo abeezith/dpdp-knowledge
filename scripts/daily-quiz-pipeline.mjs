@@ -2051,6 +2051,91 @@ const quizCatalog = [
         explanation: "The breach SOP is explicit that teams should preserve logs and isolate the affected system first, because evidence can be lost if remediation starts before documentation."
       }
     ]
+  },
+  {
+    number: 24,
+    slug: "readiness-timeline",
+    shortTitle: "Readiness Timeline",
+    pageTitle: "DPDP Quiz 24 - Readiness Timeline",
+    eyebrow: "DPDP Quiz 24 | Readiness Timeline",
+    heroTitle: "Readiness Timeline: What Must Happen Now, by November 2026, and by May 2027",
+    heroIntro: "This queued set shifts from platform controls to rollout planning. It focuses on the DPDP compliance calendar, what is already in force, and what programme and governance teams should sequence next.",
+    cardDescription: "Five rollout-planning questions on live Phase I obligations, Consent Manager timing, the May 2027 deadline, readiness sequencing, and privacy-contact publication.",
+    audience: "Programme managers, IT governance leads, BIDA reviewers, and readiness coordinators",
+    focus: "Rollout phases, deadline sequencing, grievance readiness, and privacy-governance milestones",
+    resultSummary: "This set reinforces that DPDP planning is a staged programme: complaint readiness now, build-out through 2026, and full operational compliance by May 2027.",
+    topics: [
+      { label: "Project Stage", text: "Readiness planning across immediate, November 2026, and May 2027 milestones" },
+      { label: "Difficulty", text: "Intermediate governance and rollout judgment for teams sequencing compliance work" },
+      { label: "Focus", text: "Phase triggers, preparation priorities, and ownership of published privacy contacts" }
+    ],
+    questions: [
+      {
+        module: "Compliance timeline",
+        topic: "What is already live",
+        text: "A programme lead says DPDP can be ignored until May 2027 because that is the full compliance deadline. Which response best fits the compliance timeline note?",
+        options: [
+          "That is correct because nothing is enforceable before May 2027",
+          "Only children's-data rules apply before May 2027",
+          "That is incorrect because the DPBI and grievance complaint pathway are already operational from Phase I",
+          "That is correct unless the programme uses a digital platform"
+        ],
+        correct: 2,
+        explanation: "The timeline note says Phase I began on 13 November 2025, so the DPBI is already constituted and complaints can already arise even though the full compliance pack lands later."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Consent Manager date",
+        text: "What is the significance of 13 November 2026 in the DPDP rollout plan used in the source pack?",
+        options: [
+          "It is the hard deadline for every Rule 3 to Rule 16 obligation",
+          "It is when the Consent Manager framework becomes active under Phase II",
+          "It is when cross-border transfers stop entirely",
+          "It is when Piramal Foundation automatically becomes a Significant Data Fiduciary"
+        ],
+        correct: 1,
+        explanation: "The compliance-timeline reference marks 13 November 2026 as Phase II, when the Consent Manager framework becomes active."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Hard planning date",
+        text: "Stakeholder discussion suggested accelerating the compliance deadline to November 2026. Until a new gazette changes the rule, what planning stance does the source pack recommend?",
+        options: [
+          "Treat November 2026 as the legal deadline and ignore May 2027",
+          "Assume the deadline is undecided and pause all preparation",
+          "Plan for May 13 2027 as the hard deadline while using November 2026 as the readiness target",
+          "Wait for a donor instruction before scheduling any DPDP work"
+        ],
+        correct: 2,
+        explanation: "The timeline note is explicit: the acceleration idea was not confirmed by gazette notification, so teams should plan for 13 May 2027 as the hard deadline and use November 2026 as the preparation target."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Q3 2026 priority",
+        text: "A team can fund only one readiness activity this quarter. Which option most closely matches the timeline's 'start now' priorities for 2026?",
+        options: [
+          "Launch a public donor microsite before documenting data flows",
+          "Begin data inventory and platform audit work across systems handling beneficiary data",
+          "Delay internal mapping until after the Consent Manager framework goes live",
+          "Rewrite every consent form first and leave platform review for 2027"
+        ],
+        correct: 1,
+        explanation: "The compliance timeline marks data inventory and platform audit as start-now items feeding the wider readiness programme, rather than work to postpone until the end."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Privacy contact",
+        text: "By the full-compliance stage, what does Rule 9 require Piramal Foundation to publish on its website or app?",
+        options: [
+          "The names of all staff who ever processed personal data",
+          "Business contact information for the privacy point of contact or DPO, as applicable",
+          "The internal passwords used by grievance handlers",
+          "A public list of every rights request ever received"
+        ],
+        correct: 1,
+        explanation: "The act-and-rules summary says Rule 9 requires business contact information for the DPO if one exists, or otherwise a designated privacy point of contact who can answer questions about processing."
+      }
+    ]
   }
 ];
 
