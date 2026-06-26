@@ -1,7 +1,7 @@
-DPDP Quiz 14 | Processor Contracts
+DPDP Quiz 15 | Consent Manager Readiness
 
-Five operational questions on processor agreements, role clarity, security clauses, hosted services, and vendor access boundaries.
+Five timeline and design questions on the Consent Manager milestone, ABDM gaps, and how teams should plan before the formal framework becomes active.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-14-processor-contracts/
+https://abeezith.github.io/dpdp-knowledge/quiz-15-consent-manager-readiness/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

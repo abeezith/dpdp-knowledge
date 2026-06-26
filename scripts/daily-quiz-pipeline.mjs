@@ -2136,6 +2136,91 @@ const quizCatalog = [
         explanation: "The act-and-rules summary says Rule 9 requires business contact information for the DPO if one exists, or otherwise a designated privacy point of contact who can answer questions about processing."
       }
     ]
+  },
+  {
+    number: 25,
+    slug: "program-officer-rights-desk",
+    shortTitle: "Program Officer Rights Desk",
+    pageTitle: "DPDP Quiz 25 - Program Officer Rights Desk",
+    eyebrow: "DPDP Quiz 25 | Program Officer Rights Desk",
+    heroTitle: "Program Officer Rights Desk: Access, Correction, Erasure, and Escalation",
+    heroIntro: "This queued set moves from rollout planning into frontline rights handling. It focuses on the Program Officer's job when beneficiaries ask what data is held, request corrections, seek erasure, or want to escalate a grievance.",
+    cardDescription: "Five rights-handling questions on logging requests, correcting MIS data, retention-based limits on erasure, the 90-day response window, and the DPBI escalation path.",
+    audience: "Program Officers, implementors, grievance handlers, and privacy contacts",
+    focus: "Rights workflow, escalation discipline, record correction, erasure limits, and grievance response timing",
+    resultSummary: "This set reinforces that rights handling is operational work: log the request, check the actual record, correct what is wrong, escalate hard cases, and respond within the defined window.",
+    topics: [
+      { label: "People Role", text: "Program Officers, implementors, grievance handlers, and privacy contacts" },
+      { label: "Project Stage", text: "Live rights-request intake, record review, correction, and grievance follow-through" },
+      { label: "Focus", text: "Access requests, correction, erasure, nomination, and DPBI escalation conditions" }
+    ],
+    questions: [
+      {
+        module: "Role guidance",
+        topic: "Access request intake",
+        text: "A beneficiary says, \"What data do you have on me?\" According to the role guidance, what should a Program Officer do first?",
+        options: [
+          "Log the request, route it to the supervisor or privacy contact, and provide a record-based summary rather than guessing",
+          "Answer from memory on the spot so the person does not have to wait",
+          "Refuse to respond because only the DPBI can ask for record details",
+          "Ask the beneficiary to come back after the next audit cycle"
+        ],
+        correct: 0,
+        explanation: "The role guidance says staff should log the request, refer it through the rights workflow, and use the actual record for the response rather than guessing."
+      },
+      {
+        module: "Role guidance",
+        topic: "Correction workflow",
+        text: "A beneficiary points out that her village name is wrong in the MIS. Which response is closest to the source guidance?",
+        options: [
+          "Leave it unchanged until the next annual review",
+          "Correct the MIS entry, document the correction, and inform the beneficiary that it has been done",
+          "Delete the full record because any mistake makes the whole file invalid",
+          "Tell her corrections are allowed only if she submits a court affidavit"
+        ],
+        correct: 1,
+        explanation: "The role guidance is explicit that inaccurate information should be corrected in the MIS, the correction should be documented, and the beneficiary should be informed."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Erasure limit",
+        text: "A TB-program beneficiary asks for all her records to be deleted immediately. What is the most defensible DPDP-aligned response from the source pack?",
+        options: [
+          "Delete everything at once because erasure must always be immediate",
+          "Reject the request automatically because DPDP never allows erasure",
+          "Log and escalate the request, because data can be erased unless retention is legally required",
+          "Ignore the request unless it comes by email to the DPBI"
+        ],
+        correct: 2,
+        explanation: "The source materials say erasure requests should be logged and escalated. Data can be erased unless there is a legal retention requirement, such as programme records that must be kept by law."
+      },
+      {
+        module: "Consent templates",
+        topic: "Response window tracking",
+        text: "In the rights-request tracking template, how should the response due date be set?",
+        options: [
+          "Exactly 30 days from the request date",
+          "Only after the next monthly programme review",
+          "Request date plus 90 days maximum",
+          "Whenever the beneficiary next visits the field office"
+        ],
+        correct: 2,
+        explanation: "The rights-request record template states that the response due date should be set as the request date plus the maximum 90-day response window."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Escalation beyond the organisation",
+        text: "When can a beneficiary normally approach the DPBI about a grievance, according to the allowed sources?",
+        options: [
+          "Immediately after making the request to any field worker",
+          "Only after a criminal complaint has been filed",
+          "After the organisation's grievance mechanism has been exhausted",
+          "Only when the matter involves children's data"
+        ],
+        correct: 2,
+        explanation: "The act summary states that Data Principals generally need to exhaust the organisation's grievance redressal mechanism before approaching the DPBI."
+      }
+    ]
   }
 ];
 

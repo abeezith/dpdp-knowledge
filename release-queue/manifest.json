@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-25T13:33:49.166Z",
-  "publishedThisRun": "quiz-14-processor-contracts",
+  "updatedAt": "2026-06-26T13:33:24.226Z",
+  "publishedThisRun": "quiz-15-consent-manager-readiness",
   "queuedFolders": [
-    "quiz-15-consent-manager-readiness",
     "quiz-16-donor-reporting",
     "quiz-17-verbal-consent-rights",
     "quiz-18-odk-device-hygiene",
@@ -11,7 +10,8 @@
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check",
     "quiz-23-platform-operations-controls",
-    "quiz-24-readiness-timeline"
+    "quiz-24-readiness-timeline",
+    "quiz-25-program-officer-rights-desk"
   ],
   "queuedCount": 10
 }
