@@ -1,7 +1,7 @@
-DPDP Quiz 15 | Consent Manager Readiness
+DPDP Quiz 16 | Donor Reporting
 
-Five timeline and design questions on the Consent Manager milestone, ABDM gaps, and how teams should plan before the formal framework becomes active.
+Five reporting questions on photos, aggregate statistics, small cell risk, personal stories, and international partner sharing.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-15-consent-manager-readiness/
+https://abeezith.github.io/dpdp-knowledge/quiz-16-donor-reporting/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

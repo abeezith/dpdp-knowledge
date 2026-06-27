@@ -2221,6 +2221,91 @@ const quizCatalog = [
         explanation: "The act summary states that Data Principals generally need to exhaust the organisation's grievance redressal mechanism before approaching the DPBI."
       }
     ]
+  },
+  {
+    number: 26,
+    slug: "cross-border-donor-sharing",
+    shortTitle: "Cross-Border Donor Sharing",
+    pageTitle: "DPDP Quiz 26 - Cross-Border Donor Sharing",
+    eyebrow: "DPDP Quiz 26 | Cross-Border Donor Sharing",
+    heroTitle: "Cross-Border Donor Sharing: Transfers, Agreements, and Safe Reporting",
+    heroIntro: "This queued set moves from frontline rights handling into international data sharing. It focuses on what BI and programme teams should check before sending beneficiary-linked information to overseas donors, evaluators, or cloud services.",
+    cardDescription: "Five transfer questions on the negative-list rule, donor datasets, anonymisation limits, partner agreements, and when aggregate reporting is the safer choice.",
+    audience: "BI analysts, donor-reporting teams, programme managers, and privacy reviewers",
+    focus: "Cross-border transfer judgment, partner agreements, anonymisation discipline, and safe external reporting",
+    resultSummary: "This set reinforces that cross-border sharing is not banned by default, but it still requires purpose discipline, minimisation, contracts, and a preference for aggregated outputs when possible.",
+    topics: [
+      { label: "Obligation Area", text: "Cross-border transfers, partner sharing checks, and donor-reporting safeguards" },
+      { label: "Difficulty", text: "Advanced judgment for BI, reporting, and governance teams handling external disclosures" },
+      { label: "Focus", text: "Negative-list status, DPA coverage, anonymisation limits, and safer reporting choices" }
+    ],
+    questions: [
+      {
+        module: "Act and rules summary",
+        topic: "Transfer baseline",
+        text: "A donor asks whether DPDP blocks all transfers of beneficiary data to servers outside India. Which answer best matches the allowed sources?",
+        options: [
+          "Yes, all international transfers are prohibited until MeitY publishes an approval list",
+          "No. Transfers are currently allowed unless the government restricts a country or entity under the negative-list approach",
+          "Yes, but only for NGOs working in health programmes",
+          "No approval is ever needed because cross-border sharing is outside DPDP"
+        ],
+        correct: 1,
+        explanation: "The act-and-rules summary says DPDP follows a negative-list model: cross-border transfers are permitted unless the government restricts a specific country or entity."
+      },
+      {
+        module: "Role guidance",
+        topic: "First check before donor sharing",
+        text: "Before sending an individual-level beneficiary dataset to an international donor, what should the BI team check first according to the role guidance?",
+        options: [
+          "Whether the original consent notice covered sharing for that purpose",
+          "Whether the donor promises to delete the file after reading it",
+          "Whether the donor prefers Excel over CSV",
+          "Whether the report deadline is within the same month"
+        ],
+        correct: 0,
+        explanation: "The BI role guidance lists the first question as whether the original consent notice covered sharing with that partner or for that purpose."
+      },
+      {
+        module: "Role guidance",
+        topic: "Pseudonymisation limit",
+        text: "A dataset replaces names with beneficiary ID numbers, but the team can still map those IDs back to people internally. How should this dataset be treated?",
+        options: [
+          "As fully anonymous data that can be shared freely",
+          "As personal data, because pseudonymisation does not remove re-identification risk",
+          "As exempt from DPDP once names are removed",
+          "As outside scope only if it is sent to a research partner"
+        ],
+        correct: 1,
+        explanation: "The BI guidance is explicit that pseudonymisation is not anonymisation. If the IDs can be linked back to people, the data remains personal data."
+      },
+      {
+        module: "Role guidance",
+        topic: "Agreement gap",
+        text: "A global evaluation partner wants row-level records, but there is no data sharing agreement in place yet. What is the safest DPDP-aligned next step from the source pack?",
+        options: [
+          "Share the file if the partner says it is urgent",
+          "Share only after legal review and a proper sharing or processing agreement is in place",
+          "Upload the file to a shared drive first and negotiate the agreement later",
+          "Send the data if the partner promises not to publish names"
+        ],
+        correct: 1,
+        explanation: "The BI role guidance says do not share individual-level data with an external partner without consent coverage and a data sharing or processing agreement; legal review is required when those checks fail."
+      },
+      {
+        module: "Role guidance",
+        topic: "Safer donor reporting",
+        text: "Which donor-reporting option is described in the allowed sources as the lower-risk default when the programme goal can be met without personal records?",
+        options: [
+          "Case studies with full names and village details",
+          "Before-and-after photographs without a media consent record",
+          "Aggregate district or programme-level reporting",
+          "A raw line list containing phone numbers and health status"
+        ],
+        correct: 2,
+        explanation: "The donor-reporting guidance says aggregate or anonymised reporting is the lower-risk path and should be preferred when it meets the reporting purpose."
+      }
+    ]
   }
 ];
 
