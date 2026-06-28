@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-27T14:12:48.876Z",
-  "publishedThisRun": "quiz-16-donor-reporting",
+  "updatedAt": "2026-06-28T13:40:53.942Z",
+  "publishedThisRun": "quiz-17-verbal-consent-rights",
   "queuedFolders": [
-    "quiz-17-verbal-consent-rights",
     "quiz-18-odk-device-hygiene",
     "quiz-19-government-program-basis",
     "quiz-20-child-safety-settings",
@@ -11,7 +10,17 @@
     "quiz-23-platform-operations-controls",
     "quiz-24-readiness-timeline",
     "quiz-25-program-officer-rights-desk",
-    "quiz-26-cross-border-donor-sharing"
+    "quiz-26-cross-border-donor-sharing",
+    "quiz-27-beginner-readiness-calendar",
+    "quiz-28-developer-audit-log-controls",
+    "quiz-29-privacy-contact-grievance-channel",
+    "quiz-30-karuna-child-health-exemptions",
+    "quiz-31-gandhi-fellow-media-boundaries",
+    "quiz-32-breach-first-six-hours",
+    "quiz-33-field-rights-request-desk",
+    "quiz-34-partner-sharing-checks",
+    "quiz-35-retention-erasure-operations",
+    "quiz-36-advanced-research-exemption"
   ],
-  "queuedCount": 10
+  "queuedCount": 19
 }

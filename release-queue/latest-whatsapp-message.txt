@@ -1,7 +1,7 @@
-DPDP Quiz 16 | Donor Reporting
+DPDP Quiz 17 | Verbal Consent and Rights
 
-Five reporting questions on photos, aggregate statistics, small cell risk, personal stories, and international partner sharing.
+Five questions on reading out notices, witness records, rights escalation, correction requests, and respectful handling in low-literacy contexts.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-16-donor-reporting/
+https://abeezith.github.io/dpdp-knowledge/quiz-17-verbal-consent-rights/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
