@@ -1,7 +1,7 @@
-DPDP Quiz 17 | Verbal Consent and Rights
+DPDP Quiz 18 | ODK Device Hygiene
 
-Five questions on reading out notices, witness records, rights escalation, correction requests, and respectful handling in low-literacy contexts.
+Five ODK-specific questions on encryption, sync cleanup, offline duration, remote wipe, and how to react when a device disappears.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-17-verbal-consent-rights/
+https://abeezith.github.io/dpdp-knowledge/quiz-18-odk-device-hygiene/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

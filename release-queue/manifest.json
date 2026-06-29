@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-28T13:40:53.942Z",
-  "publishedThisRun": "quiz-17-verbal-consent-rights",
+  "updatedAt": "2026-06-29T13:32:30.150Z",
+  "publishedThisRun": "quiz-18-odk-device-hygiene",
   "queuedFolders": [
-    "quiz-18-odk-device-hygiene",
     "quiz-19-government-program-basis",
     "quiz-20-child-safety-settings",
     "quiz-21-privacy-contact-grievances",
@@ -22,5 +21,5 @@
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption"
   ],
-  "queuedCount": 19
+  "queuedCount": 18
 }
