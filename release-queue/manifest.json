@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-29T13:32:30.150Z",
-  "publishedThisRun": "quiz-18-odk-device-hygiene",
+  "updatedAt": "2026-06-30T13:32:19.690Z",
+  "publishedThisRun": "quiz-19-government-program-basis",
   "queuedFolders": [
-    "quiz-19-government-program-basis",
     "quiz-20-child-safety-settings",
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check",
@@ -21,5 +20,5 @@
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption"
   ],
-  "queuedCount": 18
+  "queuedCount": 17
 }

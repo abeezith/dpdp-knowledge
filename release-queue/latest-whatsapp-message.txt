@@ -1,7 +1,7 @@
-DPDP Quiz 18 | ODK Device Hygiene
+DPDP Quiz 19 | Government Program Basis
 
-Five ODK-specific questions on encryption, sync cleanup, offline duration, remote wipe, and how to react when a device disappears.
+Five questions on welfare programmes, State-function processing, legal disclosure obligations, and the limits of implied expansion beyond programme purpose.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-18-odk-device-hygiene/
+https://abeezith.github.io/dpdp-knowledge/quiz-19-government-program-basis/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
