@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-06-30T13:32:19.690Z",
-  "publishedThisRun": "quiz-19-government-program-basis",
+  "updatedAt": "2026-07-01T13:34:03.711Z",
+  "publishedThisRun": "quiz-20-child-safety-settings",
   "queuedFolders": [
-    "quiz-20-child-safety-settings",
     "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check",
     "quiz-23-platform-operations-controls",
@@ -20,5 +19,5 @@
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption"
   ],
-  "queuedCount": 17
+  "queuedCount": 16
 }
