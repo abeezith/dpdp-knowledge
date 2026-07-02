@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-07-01T13:34:03.711Z",
-  "publishedThisRun": "quiz-20-child-safety-settings",
+  "updatedAt": "2026-07-02T13:33:33.542Z",
+  "publishedThisRun": "quiz-21-privacy-contact-grievances",
   "queuedFolders": [
-    "quiz-21-privacy-contact-grievances",
     "quiz-22-final-readiness-check",
     "quiz-23-platform-operations-controls",
     "quiz-24-readiness-timeline",
@@ -19,5 +18,5 @@
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption"
   ],
-  "queuedCount": 16
+  "queuedCount": 15
 }

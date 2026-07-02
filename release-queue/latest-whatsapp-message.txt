@@ -1,7 +1,7 @@
-DPDP Quiz 20 | Child Safety Settings
+DPDP Quiz 21 | Privacy Contact and Grievances
 
-Five questions on school safety tracking, creche settings, parental permission, and the difference between care operations and public storytelling.
+Five questions on the privacy point of contact, website publication, rights routing, complaint readiness, and response expectations.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-20-child-safety-settings/
+https://abeezith.github.io/dpdp-knowledge/quiz-21-privacy-contact-grievances/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
