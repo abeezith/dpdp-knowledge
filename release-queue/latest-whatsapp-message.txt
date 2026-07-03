@@ -1,7 +1,7 @@
-DPDP Quiz 21 | Privacy Contact and Grievances
+DPDP Quiz 22 | Final Readiness Check
 
-Five questions on the privacy point of contact, website publication, rights routing, complaint readiness, and response expectations.
+Five cross-functional questions on readiness targets, staff training, data inventory, breach protocols, and why early preparation matters.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-21-privacy-contact-grievances/
+https://abeezith.github.io/dpdp-knowledge/quiz-22-final-readiness-check/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -1,8 +1,7 @@
 {
-  "updatedAt": "2026-07-02T13:33:33.542Z",
-  "publishedThisRun": "quiz-21-privacy-contact-grievances",
+  "updatedAt": "2026-07-03T16:29:04.617Z",
+  "publishedThisRun": "quiz-22-final-readiness-check",
   "queuedFolders": [
-    "quiz-22-final-readiness-check",
     "quiz-23-platform-operations-controls",
     "quiz-24-readiness-timeline",
     "quiz-25-program-officer-rights-desk",
@@ -18,5 +17,5 @@
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption"
   ],
-  "queuedCount": 15
+  "queuedCount": 14
 }
