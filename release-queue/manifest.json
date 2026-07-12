@@ -1,10 +1,9 @@
 {
-  "updatedAt": "2026-07-09T08:34:11.1711049Z",
-  "publishedThisRun": "quiz-23-platform-operations-controls",
-  "latestPublishedFolder": "quiz-23-platform-operations-controls",
+  "updatedAt": "2026-07-12T13:33:25.675Z",
+  "publishedThisRun": "quiz-24-readiness-timeline",
+  "latestPublishedFolder": "quiz-24-readiness-timeline",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-24-readiness-timeline",
     "quiz-25-program-officer-rights-desk",
     "quiz-26-cross-border-donor-sharing",
     "quiz-27-beginner-readiness-calendar",
@@ -18,5 +17,5 @@
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption"
   ],
-  "queuedCount": 13
+  "queuedCount": 12
 }

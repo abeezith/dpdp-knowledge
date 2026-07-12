@@ -4422,7 +4422,12 @@ function listQuizDirs(baseDir) {
       return fs.existsSync(path.join(baseDir, entry.name, "index.html"));
     })
     .map((entry) => entry.name)
-    .sort();
+    .sort((a, b) => extractQuizNumber(a) - extractQuizNumber(b) || a.localeCompare(b));
+}
+
+function extractQuizNumber(folderName) {
+  const match = folderName.match(/^quiz-(\d+)/);
+  return match ? Number(match[1]) : Number.POSITIVE_INFINITY;
 }
 
 function copyDirectoryRecursive(sourceDir, targetDir) {
@@ -4564,6 +4569,8 @@ function writeManifest(publishedFolder) {
   const payload = {
     updatedAt: new Date().toISOString(),
     publishedThisRun: publishedFolder ?? existingManifest?.publishedThisRun ?? null,
+    latestPublishedFolder: publishedFolder ?? existingManifest?.latestPublishedFolder ?? null,
+    lastNotificationSentFor: existingManifest?.lastNotificationSentFor ?? null,
     queuedFolders: queueFolders,
     queuedCount: queueFolders.length
   };
