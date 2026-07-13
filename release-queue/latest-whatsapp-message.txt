@@ -1,7 +1,7 @@
-DPDP Quiz 24 | Readiness Timeline
+DPDP Quiz 25 | Program Officer Rights Desk
 
-Five rollout-planning questions on live Phase I obligations, Consent Manager timing, the May 2027 deadline, readiness sequencing, and privacy-contact publication.
+Five rights-handling questions on logging requests, correcting MIS data, retention-based limits on erasure, the 90-day response window, and the DPBI escalation path.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-24-readiness-timeline/
+https://abeezith.github.io/dpdp-knowledge/quiz-25-program-officer-rights-desk/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
