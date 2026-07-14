@@ -1,7 +1,7 @@
-DPDP Quiz 25 | Program Officer Rights Desk
+DPDP Quiz 26 | Cross-Border Donor Sharing
 
-Five rights-handling questions on logging requests, correcting MIS data, retention-based limits on erasure, the 90-day response window, and the DPBI escalation path.
+Five transfer questions on the negative-list rule, donor datasets, anonymisation limits, partner agreements, and when aggregate reporting is the safer choice.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-25-program-officer-rights-desk/
+https://abeezith.github.io/dpdp-knowledge/quiz-26-cross-border-donor-sharing/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -1,10 +1,9 @@
 {
-  "updatedAt": "2026-07-13T13:35:43.301Z",
-  "publishedThisRun": "quiz-25-program-officer-rights-desk",
-  "latestPublishedFolder": "quiz-25-program-officer-rights-desk",
+  "updatedAt": "2026-07-14T13:31:56.812Z",
+  "publishedThisRun": "quiz-26-cross-border-donor-sharing",
+  "latestPublishedFolder": "quiz-26-cross-border-donor-sharing",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-26-cross-border-donor-sharing",
     "quiz-27-beginner-readiness-calendar",
     "quiz-28-developer-audit-log-controls",
     "quiz-29-privacy-contact-grievance-channel",
@@ -16,5 +15,5 @@
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption"
   ],
-  "queuedCount": 11
+  "queuedCount": 10
 }
