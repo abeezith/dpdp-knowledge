@@ -1,7 +1,7 @@
-DPDP Quiz 26 | Cross-Border Donor Sharing
+DPDP Quiz 27 | Beginner Readiness Calendar
 
-Five transfer questions on the negative-list rule, donor datasets, anonymisation limits, partner agreements, and when aggregate reporting is the safer choice.
+Five timeline questions on the live phases, the November 2026 readiness target, May 2027 full compliance, and priority actions that cannot be postponed.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-26-cross-border-donor-sharing/
+https://abeezith.github.io/dpdp-knowledge/quiz-27-beginner-readiness-calendar/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

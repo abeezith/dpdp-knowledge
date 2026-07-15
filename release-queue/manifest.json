@@ -1,10 +1,9 @@
 {
-  "updatedAt": "2026-07-14T13:31:56.812Z",
-  "publishedThisRun": "quiz-26-cross-border-donor-sharing",
-  "latestPublishedFolder": "quiz-26-cross-border-donor-sharing",
+  "updatedAt": "2026-07-15T14:55:16.965Z",
+  "publishedThisRun": "quiz-27-beginner-readiness-calendar",
+  "latestPublishedFolder": "quiz-27-beginner-readiness-calendar",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-27-beginner-readiness-calendar",
     "quiz-28-developer-audit-log-controls",
     "quiz-29-privacy-contact-grievance-channel",
     "quiz-30-karuna-child-health-exemptions",
@@ -13,7 +12,8 @@
     "quiz-33-field-rights-request-desk",
     "quiz-34-partner-sharing-checks",
     "quiz-35-retention-erasure-operations",
-    "quiz-36-advanced-research-exemption"
+    "quiz-36-advanced-research-exemption",
+    "quiz-37-implementor-consent-records"
   ],
   "queuedCount": 10
 }

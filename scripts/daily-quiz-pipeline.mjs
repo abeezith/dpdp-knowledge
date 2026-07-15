@@ -3156,6 +3156,91 @@ const quizCatalog = [
         explanation: "The BI guidance ties the exemption to accountable, minimal, and secure processing rather than treating it as a free pass."
       }
     ]
+  },
+  {
+    number: 37,
+    slug: "implementor-consent-records",
+    shortTitle: "Implementor Consent Records",
+    pageTitle: "DPDP Quiz 37 - Implementor Consent Records",
+    eyebrow: "DPDP Quiz 37 | Implementor Consent Records",
+    heroTitle: "Implementor Consent Records: Proving Notice, Choice, and Scope in the Field",
+    heroIntro: "This next queued set moves back to frontline programme practice. It tests whether implementors can document consent properly, handle partial refusal calmly, and preserve evidence that the notice actually matched the data use.",
+    cardDescription: "Five implementor-focused questions on verbal consent records, partial refusal, burden of proof, named sharing recipients, and documenting deemed-consent use correctly.",
+    audience: "Program Officers, implementors, field coordinators, and enrolment reviewers",
+    focus: "Consent documentation, evidence quality, notice scope, and disciplined field recording",
+    resultSummary: "This set reinforces that good consent handling is not just saying the right words in the field. Teams need records that show what was explained, what the person agreed to, and when a different legal basis is actually being used.",
+    topics: [
+      { label: "People Role", text: "Implementor and Program Officer consent-handling judgment" },
+      { label: "Difficulty", text: "Beginner to intermediate field documentation practice" },
+      { label: "Focus", text: "Verbal records, refusal handling, sharing scope, and proof of consent" }
+    ],
+    questions: [
+      {
+        module: "Consent templates",
+        topic: "Low-literacy documentation",
+        text: "In a village enrolment where the beneficiary cannot read or sign, which record best matches the verbal-consent template from the approved source pack?",
+        options: [
+          "A note saying \"consent taken\" with no witness, no language used, and no fields listed",
+          "A verbal-consent record showing the location, data fields collected, purpose explained, language used, exact agreement, and witness details",
+          "A blank paper signed later at the block office by another staff member",
+          "A WhatsApp message from the field worker saying the visit went fine"
+        ],
+        correct: 1,
+        explanation: "The verbal-consent template expects a fuller record: where the consent happened, what data was involved, the purpose explained, the language used, the beneficiary's verbal response, and witness details."
+      },
+      {
+        module: "Role guidance",
+        topic: "Partial refusal",
+        text: "During a household survey, a beneficiary agrees to share name and phone number but refuses to disclose income. What handling fits the role guidance best?",
+        options: [
+          "Record all fields anyway because partial refusal creates messy data",
+          "Stop the entire survey permanently because one field was refused",
+          "Skip the refused income field, record only what was agreed to, and continue within scope",
+          "Tell the beneficiary benefits may be delayed unless every question is answered"
+        ],
+        correct: 2,
+        explanation: "The role guidance says people must be allowed to refuse, and unnecessary collection should not continue just because a form contains the field."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Burden of proof",
+        text: "Why is a supervisor wrong to say, \"Our staff usually explain the form, so we do not need proof for each beneficiary\"?",
+        options: [
+          "Because only digital signatures count as legal evidence",
+          "Because the Data Fiduciary bears the burden of proof that notice was given and consent was obtained",
+          "Because proof matters only if the programme shares data internationally",
+          "Because explanation is optional when the form has more than one page"
+        ],
+        correct: 1,
+        explanation: "The act-and-rules summary says the Data Fiduciary must be able to prove that notice was given and consent was obtained. Habit or assumption is not enough."
+      },
+      {
+        module: "Consent templates",
+        topic: "Named sharing scope",
+        text: "An enrolment notice says data may be used for the programme but says nothing about sharing identifiable records with the district NHM office. Before that sharing happens, what is the safer reading from the source material?",
+        options: [
+          "Sharing is automatically covered because any government office can be added later",
+          "The sharing should be treated carefully because the notice should identify who will see the information when consent is the basis",
+          "The missing detail does not matter if the recipient promises confidentiality",
+          "The team can solve the issue by changing the purpose line after collection"
+        ],
+        correct: 1,
+        explanation: "The consent template includes a specific \"Who will see this information\" section. If consent is the basis, identifiable sharing should match what the notice actually described."
+      },
+      {
+        module: "Consent templates",
+        topic: "Government-program recordkeeping",
+        text: "For a government-linked workflow where the team is relying on Section 7 deemed consent instead of the formal enrolment template, what should programme records still show?",
+        options: [
+          "Nothing, because deemed consent removes the need for any documentation",
+          "Only the beneficiary's nickname so the file stays short",
+          "The legal basis for processing should be documented in programme records rather than pretending a standard consent form was used",
+          "That staff plan to collect a signature later if someone asks"
+        ],
+        correct: 2,
+        explanation: "The consent-template notes say that when deemed consent applies, teams may not need the formal notice template, but they should document the legal basis for processing in programme records."
+      }
+    ]
   }
 ];
 
