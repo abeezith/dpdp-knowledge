@@ -1,10 +1,9 @@
 {
-  "updatedAt": "2026-07-15T14:55:16.965Z",
-  "publishedThisRun": "quiz-27-beginner-readiness-calendar",
-  "latestPublishedFolder": "quiz-27-beginner-readiness-calendar",
+  "updatedAt": "2026-07-22T17:50:04.666Z",
+  "publishedThisRun": "quiz-28-developer-audit-log-controls",
+  "latestPublishedFolder": "quiz-28-developer-audit-log-controls",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-28-developer-audit-log-controls",
     "quiz-29-privacy-contact-grievance-channel",
     "quiz-30-karuna-child-health-exemptions",
     "quiz-31-gandhi-fellow-media-boundaries",
@@ -13,7 +12,8 @@
     "quiz-34-partner-sharing-checks",
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption",
-    "quiz-37-implementor-consent-records"
+    "quiz-37-implementor-consent-records",
+    "quiz-38-jharkhand-odk-device-recovery"
   ],
   "queuedCount": 10
 }

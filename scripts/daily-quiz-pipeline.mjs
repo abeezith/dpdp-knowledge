@@ -3241,6 +3241,91 @@ const quizCatalog = [
         explanation: "The consent-template notes say that when deemed consent applies, teams may not need the formal notice template, but they should document the legal basis for processing in programme records."
       }
     ]
+  },
+  {
+    number: 38,
+    slug: "jharkhand-odk-device-recovery",
+    shortTitle: "Jharkhand ODK Device Recovery",
+    pageTitle: "DPDP Quiz 38 - Jharkhand ODK Device Recovery",
+    eyebrow: "DPDP Quiz 38 | Jharkhand ODK Device Recovery",
+    heroTitle: "Jharkhand ODK Device Recovery: Protecting Offline Forms After a Field Incident",
+    heroIntro: "This field-setting quiz follows the first response to a lost or compromised ODK device. It turns the breach SOP and ODK checklist into five practical choices for teams working with offline beneficiary forms.",
+    cardDescription: "Five Jharkhand field questions on lost ODK devices, rapid escalation, preserving evidence, remote wipe, and reducing exposure from synced forms.",
+    audience: "Field implementors, Program Officers, ODK administrators, and district IT coordinators",
+    focus: "Lost-device response, breach evidence, ODK safeguards, and offline-form hygiene",
+    resultSummary: "This set reinforces that an offline-device incident must be reported and contained immediately, while the team preserves evidence, assesses exposure, and follows the notification process.",
+    topics: [
+      { label: "Location", text: "Jharkhand field operations using offline ODK Collect forms" },
+      { label: "Lifecycle Stage", text: "Incident response and recovery after collection" },
+      { label: "Focus", text: "Rapid reporting, remote wipe, evidence preservation, and local-copy controls" }
+    ],
+    questions: [
+      {
+        module: "Breach response SOP",
+        topic: "First report",
+        text: "A Dumka field worker cannot find a phone containing unsynced ODK beneficiary forms. What should happen first under the breach SOP?",
+        options: [
+          "Report it to the supervisor and IT immediately, without waiting to see whether the phone turns up",
+          "Wait until the end of the week so the team can search quietly",
+          "Create replacement forms before telling anyone",
+          "Delete the ODK account from another phone and assume that ends the incident"
+        ],
+        correct: 0,
+        explanation: "The lost-device procedure requires immediate escalation to the supervisor and IT; delay can prevent containment and timely assessment."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Remote wipe readiness",
+        text: "Which control makes it possible for IT to reduce exposure from a lost field device when the device is enrolled and reachable?",
+        options: [
+          "A remote wipe capability through device management",
+          "A longer paper consent notice",
+          "A new beneficiary ID format",
+          "A public WhatsApp update about the missing phone"
+        ],
+        correct: 0,
+        explanation: "The ODK checklist calls for remote-wipe capability for lost or stolen devices, and the SOP directs IT to attempt it promptly."
+      },
+      {
+        module: "Breach response SOP",
+        topic: "Evidence preservation",
+        text: "After unauthorised access is suspected on the ODK server, what should the technical team avoid doing before preserving relevant evidence?",
+        options: [
+          "Trying to fix the incident before logs are preserved",
+          "Recording the time the issue was noticed",
+          "Alerting the IT and governance contacts",
+          "Checking which accounts may have been affected"
+        ],
+        correct: 0,
+        explanation: "The SOP says to preserve logs before actions change the environment and not to remediate first, because evidence is needed to understand and document the incident."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Synced-form deletion",
+        text: "Why should an ODK team define and follow deletion of personal-data forms after successful sync?",
+        options: [
+          "It limits unnecessary local copies and the exposure they create on field devices",
+          "It turns the form data into anonymous data automatically",
+          "It removes the need for access controls on ODK Central",
+          "It means a lost phone can never be a breach"
+        ],
+        correct: 0,
+        explanation: "The audit checklist asks whether synced forms are deleted from devices because retaining unnecessary local copies increases exposure."
+      },
+      {
+        module: "Breach response SOP",
+        topic: "Incident scoping",
+        text: "When documenting a stolen device with offline forms, which information is most useful for the initial assessment?",
+        options: [
+          "The device details, time and last location of loss, the data on it, and the approximate people affected",
+          "Only the field worker's preferred replacement handset",
+          "A promise that the forms were probably harmless",
+          "A new schedule for next month's enrolment camp"
+        ],
+        correct: 0,
+        explanation: "The SOP calls for documenting device details, loss timing and location, what data was present, and the scope of affected people so the incident can be assessed and handled."
+      }
+    ]
   }
 ];
 

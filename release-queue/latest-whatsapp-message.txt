@@ -1,7 +1,7 @@
-DPDP Quiz 27 | Beginner Readiness Calendar
+DPDP Quiz 28 | Developer Audit Log Controls
 
-Five timeline questions on the live phases, the November 2026 readiness target, May 2027 full compliance, and priority actions that cannot be postponed.
+Five developer questions on 1-year log retention, RBAC, encrypted backups, export logging, and why inactive accounts are a real DPDP risk.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-27-beginner-readiness-calendar/
+https://abeezith.github.io/dpdp-knowledge/quiz-28-developer-audit-log-controls/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
