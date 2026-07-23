@@ -1,7 +1,7 @@
-DPDP Quiz 28 | Developer Audit Log Controls
+DPDP Quiz 29 | Privacy Contact Grievance Channel
 
-Five developer questions on 1-year log retention, RBAC, encrypted backups, export logging, and why inactive accounts are a real DPDP risk.
+Five obligation questions on the website contact point, grievance handling, the 90-day response ceiling, and why channel design matters operationally.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-28-developer-audit-log-controls/
+https://abeezith.github.io/dpdp-knowledge/quiz-29-privacy-contact-grievance-channel/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

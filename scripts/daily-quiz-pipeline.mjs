@@ -3326,6 +3326,91 @@ const quizCatalog = [
         explanation: "The SOP calls for documenting device details, loss timing and location, what data was present, and the scope of affected people so the incident can be assessed and handled."
       }
     ]
+  },
+  {
+    number: 39,
+    slug: "platform-audit-evidence",
+    shortTitle: "Platform Audit Evidence",
+    pageTitle: "DPDP Quiz 39 - Platform Audit Evidence",
+    eyebrow: "DPDP Quiz 39 | Platform Audit Evidence",
+    heroTitle: "Platform Audit Evidence: Proving What the System Stores, Shares, and Protects",
+    heroIntro: "This queued quiz moves into the audit stage of the lifecycle. It checks whether platform owners can recognise the evidence an internal DPDP audit actually needs instead of treating readiness as a vague future exercise.",
+    cardDescription: "Five audit-focused questions on data inventory, processor safeguards, backup evidence, hosted infrastructure visibility, and why the platform audit should already be underway.",
+    audience: "BIDA reviewers, IT governance leads, platform owners, developers, and programme technology managers",
+    focus: "Audit evidence, platform inventory, vendor safeguards, backup verification, and readiness sequencing",
+    resultSummary: "This set reinforces that a DPDP platform audit needs concrete evidence about data flows, storage, sharing, and controls. Teams should be able to show where data sits, who can access it, what contracts apply, and whether safeguards really work.",
+    topics: [
+      { label: "Project Stage", text: "Readiness audit before full compliance becomes enforceable" },
+      { label: "Obligation Area", text: "Rule 3 and Rule 6 evidence across platforms and vendors" },
+      { label: "Focus", text: "Inventory, contracts, backups, hosting visibility, and remediation timing" }
+    ],
+    questions: [
+      {
+        module: "Data audit checklist",
+        topic: "Inventory evidence",
+        text: "During a DPDP platform review, a system owner says, \"We know the MIS is useful, but we have never mapped exactly which personal data fields it stores or where they sit.\" In the checklist, what does that reveal first?",
+        options: [
+          "A gap in basic data inventory that should be fixed before the audit can be considered complete",
+          "A harmless documentation issue because storage details matter only after May 2027",
+          "A sign that the platform can skip consent review if the team knows the beneficiary names",
+          "Proof that the vendor alone now owns all DPDP responsibilities"
+        ],
+        correct: 0,
+        explanation: "The general checklist starts with data inventory: teams should know what personal data a platform stores, where it is stored, and whether it is shared externally."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Processor safeguards",
+        text: "Why does the source pack treat a missing vendor or Data Processor security clause as more than a procurement detail?",
+        options: [
+          "Because DPDP expects contractual provisions requiring equivalent security safeguards from the Data Processor",
+          "Because vendors automatically become Data Principals once a contract is signed",
+          "Because contracts matter only when the data leaves India",
+          "Because a contract can replace access controls inside the platform"
+        ],
+        correct: 0,
+        explanation: "The act-and-rules summary says Data Processor arrangements should include contractual provisions requiring equivalent security safeguards."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Backup proof",
+        text: "An infrastructure lead says, \"Backups run every night, so we do not need to test restores during the audit.\" What is the closer checklist answer?",
+        options: [
+          "That is enough because backup existence is the only thing the audit checks",
+          "Restore testing still matters because the checklist asks whether backups are tested for restorability",
+          "Restore testing matters only for Significant Data Fiduciaries",
+          "Backups can be ignored if logs are retained for one year"
+        ],
+        correct: 1,
+        explanation: "The checklist asks not only whether backups exist, but whether they are tested for restorability."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Hosted infrastructure visibility",
+        text: "For a custom MIS hosted by an external provider, which detail is the audit checklist explicitly trying to surface before teams assume cross-border issues are understood?",
+        options: [
+          "The favourite browser of each analyst",
+          "Where the MIS is hosted, including cloud region or vendor, and whether that is documented",
+          "Only the colour scheme used in the dashboard",
+          "Whether the homepage mentions DPDP in its footer"
+        ],
+        correct: 1,
+        explanation: "The custom MIS checklist asks where the platform is hosted and whether that hosting arrangement is documented."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Readiness sequencing",
+        text: "According to the timeline guidance, how should Piramal Foundation treat the platform-audit work for systems like DHIS2, AMRIT, ODK, and Nikshay-linked flows?",
+        options: [
+          "Leave the audit until after the Consent Manager framework goes live",
+          "Start it now as part of the November 2026 readiness target rather than waiting for the final enforcement date",
+          "Do it only if the organisation becomes a Significant Data Fiduciary",
+          "Postpone it until the first beneficiary complaint arrives"
+        ],
+        correct: 1,
+        explanation: "The compliance timeline says platform audit work should start now and be part of the November 2026 readiness target, even though full compliance is enforced later."
+      }
+    ]
   }
 ];
 
