@@ -3411,6 +3411,91 @@ const quizCatalog = [
         explanation: "The compliance timeline says platform audit work should start now and be part of the November 2026 readiness target, even though full compliance is enforced later."
       }
     ]
+  },
+  {
+    number: 40,
+    slug: "notice-design-withdrawal-paths",
+    shortTitle: "Notice Design Withdrawal Paths",
+    pageTitle: "DPDP Quiz 40 - Notice Design Withdrawal Paths",
+    eyebrow: "DPDP Quiz 40 | Notice Design Withdrawal Paths",
+    heroTitle: "Notice Design and Withdrawal Paths: Making Consent Understandable and Actionable",
+    heroIntro: "This queued quiz shifts from audit evidence to front-end notice design. It focuses on whether teams can recognise a valid standalone notice, explain sharing clearly, and give beneficiaries a real withdrawal route instead of vague wording.",
+    cardDescription: "Five Rule 3 questions on standalone notices, itemised fields, named sharing, withdrawal channels, and proving that consent was actually documented.",
+    audience: "Programme teams, implementors, privacy coordinators, field supervisors, and product owners designing enrolment flows",
+    focus: "Notice structure, specific purpose wording, withdrawal mechanisms, and consent evidence quality",
+    resultSummary: "This set reinforces that a DPDP notice is not a formality. It must stand on its own, explain specific data and sharing clearly, and leave behind evidence that the beneficiary truly agreed.",
+    topics: [
+      { label: "Obligation Area", text: "Rule 3 notice design and Section 6 consent practice" },
+      { label: "Project Stage", text: "Data collection and enrolment workflow design before processing begins" },
+      { label: "Focus", text: "Standalone notice quality, withdrawal paths, and burden-of-proof records" }
+    ],
+    questions: [
+      {
+        module: "Consent templates",
+        topic: "Standalone notice",
+        text: "A product owner wants the enrolment notice placed behind a small \"learn more\" link at the end of a long programme agreement so the main page looks cleaner. Based on the source pack, what is the better DPDP view?",
+        options: [
+          "That is acceptable because any linked notice counts as informed consent",
+          "The notice should remain understandable independently rather than being buried inside a larger document flow",
+          "The notice can stay hidden if field staff promise to explain it later only when asked",
+          "The notice is required only when the platform collects Aadhaar numbers"
+        ],
+        correct: 1,
+        explanation: "The consent templates and act summary say the notice must be understandable independently and should not be buried inside a longer agreement or MOU."
+      },
+      {
+        module: "Consent templates",
+        topic: "Specific sharing disclosure",
+        text: "Which enrolment line is closer to the template guidance on explaining who may see the data?",
+        options: [
+          "\"Your information may go to anyone supporting development work\"",
+          "\"Your information may be shared with Piramal Foundation programme staff and the named government partner for programme reporting\"",
+          "\"Sharing details are internal and need not be disclosed to beneficiaries\"",
+          "\"We will decide later who needs access once the programme scales\""
+        ],
+        correct: 1,
+        explanation: "The template asks teams to explain who will see the information using named or clearly described recipients, not vague future-sharing language."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Withdrawal route",
+        text: "A consent notice says beneficiaries may withdraw consent by sending a written request to the state office in another city during office hours. What is the main issue under the guidance?",
+        options: [
+          "There is no issue because any withdrawal method is automatically valid",
+          "Withdrawal should be as easy as giving consent, so the mechanism should not be needlessly hard to use",
+          "Withdrawal is relevant only for children's data",
+          "Withdrawal is optional if the notice already lists the data fields"
+        ],
+        correct: 1,
+        explanation: "The act-and-rules summary states that the notice must explain how to withdraw consent and that withdrawal should be as easy as giving consent."
+      },
+      {
+        module: "Consent templates",
+        topic: "Burden of proof",
+        text: "After a beneficiary questions whether she ever agreed to programme monitoring, the team can show only a screenshot saying \"consent collected\" with no date, witness, form ID, or explanation record. Which DPDP principle is weakest here?",
+        options: [
+          "The burden of proof that notice was given and consent was obtained",
+          "The rule on cross-border negative-list monitoring",
+          "The requirement to appoint a Data Protection Officer immediately",
+          "The rule that every notice must include a donor logo"
+        ],
+        correct: 0,
+        explanation: "The source pack says Piramal Foundation bears the burden of proof for giving notice and obtaining consent, so records need enough detail to show what happened."
+      },
+      {
+        module: "Consent templates",
+        topic: "Itemised data wording",
+        text: "A field app notice says, \"We collect details needed for service improvement.\" Which revision better matches the approved templates?",
+        options: [
+          "\"We collect anything useful for future programme expansion\"",
+          "\"We collect your name, mobile number, village, and pregnancy status for antenatal follow-up and programme reporting\"",
+          "\"Collection details can be shared verbally only after the form is submitted\"",
+          "\"Specific fields do not need to be listed if the app belongs to Piramal Foundation\""
+        ],
+        correct: 1,
+        explanation: "The templates require itemised data fields and a specific stated purpose rather than broad statements about collecting useful details."
+      }
+    ]
   }
 ];
 
