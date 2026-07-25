@@ -3496,6 +3496,91 @@ const quizCatalog = [
         explanation: "The templates require itemised data fields and a specific stated purpose rather than broad statements about collecting useful details."
       }
     ]
+  },
+  {
+    number: 41,
+    slug: "bihar-voice-consent-workflows",
+    shortTitle: "Bihar Voice Consent Workflows",
+    pageTitle: "DPDP Quiz 41 - Bihar Voice Consent Workflows",
+    eyebrow: "DPDP Quiz 41 | Bihar Voice Consent Workflows",
+    heroTitle: "Bihar Voice Consent Workflows: Recordings, Retention, and Programme Boundaries",
+    heroIntro: "This queued quiz moves into Bihar field and livelihood workflows where staff may record voices for surveys, training, or AI support tools. It checks whether teams can separate valid recording consent from casual collection habits and manage audio files once the work is done.",
+    cardDescription: "Five Bihar-focused questions on voice-recording consent, named AI Didi purpose, withdrawal clarity, audio retention, and JEEViKA role-boundary checks.",
+    audience: "Gandhi Fellows, programme coordinators, AI Didi teams, JEEViKA-facing staff, and privacy reviewers",
+    focus: "Audio consent, purpose limitation, retention discipline, and partnership role clarity",
+    resultSummary: "This set reinforces that voice data is personal data. Teams should explain the exact recording purpose, avoid broad future-use wording, delete files when the stated use is complete, and clarify partner roles before scaling collection.",
+    topics: [
+      { label: "Location", text: "Bihar community and livelihood workflows including AI Didi-style voice use" },
+      { label: "People Role", text: "Field staff, programme coordinators, and partnership teams handling recordings" },
+      { label: "Focus", text: "Recording consent, withdrawal routes, retention, and role-boundary checks" }
+    ],
+    questions: [
+      {
+        module: "Compliance timeline",
+        topic: "AI Didi consent trigger",
+        text: "A Bihar team wants to collect Bank Sakhi voice samples for an AI Didi support feature. According to the approved source pack, what is the first privacy question the team should treat as real rather than optional?",
+        options: [
+          "Whether voice recordings are identifiable personal data that need consent before collection",
+          "Whether the recordings can be treated as anonymous because they are audio instead of text",
+          "Whether the samples can skip notice if the project is described as innovation",
+          "Whether only the final AI model, and not the recordings, falls under DPDP"
+        ],
+        correct: 0,
+        explanation: "The compliance timeline explicitly flags Bank Sakhi voice recordings for AI Didi as potentially personal data if identifiable, which means teams should address consent before collecting them."
+      },
+      {
+        module: "Consent templates",
+        topic: "Specific recording purpose",
+        text: "Which notice line is closer to the approved template when staff want to record a participant's voice in Bihar for a defined support use case?",
+        options: [
+          "\"We may use your voice in any current or future digital initiative\"",
+          "\"We would like to record your voice for AI Didi training support and explain whether it will be used in training materials, internal documentation, or another named purpose\"",
+          "\"Recording details are internal, so staff can decide the use after collection\"",
+          "\"If the person is already in the programme, a separate recording purpose need not be explained\""
+        ],
+        correct: 1,
+        explanation: "The photography and audio consent template requires the purpose to be described specifically, not left as a broad future-use statement."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Withdrawal path",
+        text: "A recording-consent flow says a participant may withdraw only by visiting the state office in person after the pilot ends. What is the main problem under the source guidance?",
+        options: [
+          "There is no issue because audio consent cannot be withdrawn once captured",
+          "Withdrawal should be as easy as giving consent, so the route should not be made harder than the collection flow",
+          "Withdrawal rules apply only to photographs, not to voice recordings",
+          "The issue is only that the office is in Bihar rather than Delhi"
+        ],
+        correct: 1,
+        explanation: "The act-and-rules summary says the notice must explain how to withdraw consent and that withdrawal should be as easy as giving consent."
+      },
+      {
+        module: "Role guidance",
+        topic: "Retention after purpose served",
+        text: "A Gandhi Fellow recorded an explanatory voice note from a participant for follow-up support and has already used it for the intended task. What does the source pack point to next?",
+        options: [
+          "Keep the file indefinitely in case a future programme might find it useful",
+          "Share the clip in the wider team group so others can learn from it",
+          "Delete the recording once the purpose it served is complete",
+          "Move it to a personal phone because private storage removes DPDP concerns"
+        ],
+        correct: 2,
+        explanation: "The role guidance says recordings are personal data and should be deleted once the purpose they served has ended."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "JEEViKA role clarity",
+        text: "Before scaling a Bihar voice-data workflow with JEEViKA-NRLM, what does the compliance timeline say the programme should clarify in the partnership setup?",
+        options: [
+          "Whether JEEViKA is acting as a joint Data Fiduciary or a Data Processor",
+          "Whether staff can skip a retention policy until May 2027",
+          "Whether only English notices can be used for audio collection",
+          "Whether every recording must be stored outside India"
+        ],
+        correct: 0,
+        explanation: "The compliance timeline specifically flags JEEViKA role clarity and says teams should determine whether it is acting as a joint Data Fiduciary or a Data Processor."
+      }
+    ]
   }
 ];
 

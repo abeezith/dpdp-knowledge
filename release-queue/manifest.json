@@ -1,10 +1,9 @@
 {
-  "updatedAt": "2026-07-24T13:34:12.604Z",
-  "publishedThisRun": "quiz-30-karuna-child-health-exemptions",
-  "latestPublishedFolder": "quiz-30-karuna-child-health-exemptions",
+  "updatedAt": "2026-07-25T13:35:03.164Z",
+  "publishedThisRun": "quiz-31-gandhi-fellow-media-boundaries",
+  "latestPublishedFolder": "quiz-31-gandhi-fellow-media-boundaries",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-31-gandhi-fellow-media-boundaries",
     "quiz-32-breach-first-six-hours",
     "quiz-33-field-rights-request-desk",
     "quiz-34-partner-sharing-checks",
@@ -13,7 +12,8 @@
     "quiz-37-implementor-consent-records",
     "quiz-38-jharkhand-odk-device-recovery",
     "quiz-39-platform-audit-evidence",
-    "quiz-40-notice-design-withdrawal-paths"
+    "quiz-40-notice-design-withdrawal-paths",
+    "quiz-41-bihar-voice-consent-workflows"
   ],
   "queuedCount": 10
 }

@@ -1,7 +1,7 @@
-DPDP Quiz 30 | Karuna Child Health Exemptions
+DPDP Quiz 31 | Gandhi Fellow Media Boundaries
 
-Five child-health questions on care exemptions, camp photography, verbal explanation, distress handling, and when programme databases need separate consent coverage.
+Five field questions on survey explanations, refusing optional fields, audio recording, child photography, and why private memories are still personal data if the person is identifiable.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-30-karuna-child-health-exemptions/
+https://abeezith.github.io/dpdp-knowledge/quiz-31-gandhi-fellow-media-boundaries/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
