@@ -1,7 +1,7 @@
-DPDP Quiz 32 | Breach First Six Hours
+DPDP Quiz 33 | Field Rights Request Desk
 
-Five breach-response questions on the 72-hour clock, immediate containment, preserving logs, notifying affected people, and the first DPBI report.
+Five rights-workflow questions on logging requests, record-based responses, correction tracking, lawful retention exceptions, and the request register.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-32-breach-first-six-hours/
+https://abeezith.github.io/dpdp-knowledge/quiz-33-field-rights-request-desk/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

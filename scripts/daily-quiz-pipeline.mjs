@@ -3666,6 +3666,856 @@ const quizCatalog = [
         explanation: "In the rights section, the checklist asks whether there is a designated person to handle rights requests and whether grievances can be resolved within 90 days."
       }
     ]
+  },
+  {
+    number: 42,
+    slug: "developer-export-access",
+    shortTitle: "Developer Export Access",
+    pageTitle: "DPDP Quiz 42 - Developer Export Access",
+    eyebrow: "DPDP Quiz 42 | Developer Export Access",
+    heroTitle: "Developer Export Access: Logs, Tokens, and Least-Privilege Controls",
+    heroIntro: "This queued set shifts away from Bihar voice workflows into platform engineering. It checks whether developers and system owners can reduce export risk before beneficiary data leaves the system through APIs, spreadsheets, or admin tools.",
+    cardDescription: "Five developer questions on export logging, inactive accounts, API token rotation, encrypted backups, and vendor-security clauses.",
+    audience: "Developers, DHIS2 owners, MIS administrators, and IT governance reviewers",
+    focus: "Rule 6 safeguards, least-privilege access, auditability, and processor-aligned security controls",
+    resultSummary: "This set reinforces that export rights should be restricted, audit logs retained, stale accounts reviewed, backups protected, and vendors bound to equivalent security safeguards.",
+    topics: [
+      { label: "People Role", text: "Developers and platform owners shipping or maintaining data-heavy systems" },
+      { label: "Project Stage", text: "Feature hardening before release and before granting export access" },
+      { label: "Focus", text: "Least privilege, logging, token handling, backups, and processor contracts" }
+    ],
+    questions: [
+      {
+        module: "Data audit checklist",
+        topic: "CSV export restriction",
+        text: "A custom MIS lets every logged-in user export beneficiary-level CSV files because the team wants convenience. Which DPDP-oriented correction is closest to the approved checklist?",
+        options: [
+          "Restrict export capability to authorised roles and keep a record of who downloaded what",
+          "Leave exports open because the users are all internal staff",
+          "Allow exports but disable audit logging so the interface feels faster",
+          "Move the export button to a harder-to-find menu and treat that as enough"
+        ],
+        correct: 0,
+        explanation: "The platform audit checklist says bulk data exports should be restricted and logged. Convenience does not replace RBAC or auditability."
+      },
+      {
+        module: "Role guidance",
+        topic: "Inactive account review",
+        text: "During a DHIS2 review, a developer sees many enabled accounts that have not logged in for over a year. What does the source pack treat as the correct next step?",
+        options: [
+          "Keep them because only active misuse creates DPDP risk",
+          "Publish the user list to all teams so anyone can judge who seems unnecessary",
+          "Review and deactivate or limit stale accounts as part of access-control hygiene",
+          "Wait until May 13, 2027 before changing account status"
+        ],
+        correct: 2,
+        explanation: "The role guidance and audit checklist both describe inactive accounts as a security risk that should be reviewed and restricted, not left open."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "API token discipline",
+        text: "What does the DHIS2-focused checklist expect for API access used by integrations and scripts?",
+        options: [
+          "API calls do not need logging if they come from trusted internal systems",
+          "API keys or tokens should be rotated regularly and API calls should be logged",
+          "One shared permanent token is preferable because rotation complicates automation",
+          "API controls matter only after the government issues a cross-border negative list"
+        ],
+        correct: 1,
+        explanation: "The DHIS2 checklist explicitly asks whether API keys or tokens are rotated regularly and whether API calls are logged."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Backup protection",
+        text: "A team has daily backups of a beneficiary database, but the backups are copied to an unprotected drive readable by many staff. Which interpretation fits Rule 6 guidance best?",
+        options: [
+          "This is acceptable because having any backup satisfies the safeguard requirement",
+          "Backups should support continued processing, but they still need appropriate protection such as access control and encryption",
+          "Backups fall outside DPDP because they are only for disaster recovery",
+          "The problem disappears if the drive is located inside India"
+        ],
+        correct: 1,
+        explanation: "Rule 6 requires safeguards such as encryption and access control, and backups are part of continued processing. A broadly accessible backup copy is not a compliant control posture."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Vendor contract baseline",
+        text: "When Piramal Foundation uses a vendor to host or maintain a system processing beneficiary data, what must the written arrangement cover?",
+        options: [
+          "Only commercial pricing and uptime terms",
+          "A promise that the vendor will share data only on request from donors",
+          "Equivalent security safeguards for the Data Processor under contract",
+          "No contract is needed if the vendor is already technically skilled"
+        ],
+        correct: 2,
+        explanation: "The act summary says Data Processor contracts must include data security requirements, and Rule 6 expects equivalent safeguards through the vendor arrangement."
+      }
+    ]
+  },
+  {
+    number: 43,
+    slug: "karuna-child-photo-boundaries",
+    shortTitle: "Karuna Child Photo Boundaries",
+    pageTitle: "DPDP Quiz 43 - Karuna Child Photo Boundaries",
+    eyebrow: "DPDP Quiz 43 | Karuna Child Photo Boundaries",
+    heroTitle: "Karuna Child Photo Boundaries: Care Exemptions Versus Storytelling Uses",
+    heroIntro: "This set returns to field health work, but with a sharper children’s-data lens. It tests whether teams can separate direct care from photos, donor storytelling, and program databases that go beyond the healthcare exemption.",
+    cardDescription: "Five Karuna-focused questions on care exemptions, parental consent for media, MIS entry boundaries, safety tracking, and child well-being protections.",
+    audience: "Karuna Fellows, camp coordinators, child-health teams, and supervisors",
+    focus: "Children's data, care-purpose limits, parental consent, and prohibited harmful processing",
+    resultSummary: "This set reinforces that direct care has a narrow exemption, while photos, reporting, and non-care reuse need separate parental consent and caution.",
+    topics: [
+      { label: "People Role", text: "Karuna Fellows and camp staff working closest to mothers and children" },
+      { label: "Obligation Area", text: "Section 9 children's data protections and 4th Schedule exemptions" },
+      { label: "Focus", text: "Care-versus-media boundaries, MIS entry, and child-well-being safeguards" }
+    ],
+    questions: [
+      {
+        module: "Act and rules summary",
+        topic: "Direct care boundary",
+        text: "At a nutrition camp, a Karuna Fellow records a child's weight and MUAC to guide immediate counselling. Why can this happen without separate parental consent under the source pack?",
+        options: [
+          "Because all child data is automatically exempt under DPDP",
+          "Because direct health-service processing for the child's care falls within the healthcare exemption",
+          "Because measurement data is not treated as personal data",
+          "Because any camp run by an NGO is outside the law"
+        ],
+        correct: 1,
+        explanation: "The 4th Schedule summary says healthcare professionals and similar health-service settings can process children's health data for care without separate parental consent."
+      },
+      {
+        module: "Consent templates",
+        topic: "Child photo for donor deck",
+        text: "The team wants to photograph the same child later for a donor presentation. What does the approved source pack require?",
+        options: [
+          "No extra step, because the child already attended the camp",
+          "Only the child's oral agreement is enough",
+          "Parental or guardian consent for the media use",
+          "A promise not to publish the child's village name"
+        ],
+        correct: 2,
+        explanation: "The media consent template says identifiable photos are personal data, and for children the parent or guardian must consent."
+      },
+      {
+        module: "Role guidance",
+        topic: "MIS entry outside direct care",
+        text: "A fellow says, \"If care is exempt, I can enter every child detail into any program database without checking the enrolment basis.\" Which response best fits the source guidance?",
+        options: [
+          "That is correct because once care begins, all later processing is covered",
+          "Only donor reporting is limited; program databases never need review",
+          "The exemption is for care-related processing, so wider MIS or reporting use should still be covered appropriately",
+          "The exemption applies only if the child is above 14 years old"
+        ],
+        correct: 2,
+        explanation: "The role guidance draws a bright line: direct care is different from later database, reporting, or media uses, which need their own lawful basis and documentation."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "School safety comparison",
+        text: "Which example from the approved summary is presented as an exemption context for children's processing without fresh parental consent?",
+        options: [
+          "Behavioural advertising in an education app",
+          "Educational activities or safety tracking by an educational institution",
+          "Open-ended analytics on children's preferences for future campaigns",
+          "Selling child case stories to a partner network"
+        ],
+        correct: 1,
+        explanation: "The summary lists educational institutions and safety tracking in that context as an exemption example, while profiling and promotional reuse are not."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Detrimental-effect line",
+        text: "Which practice is explicitly inconsistent with the child-protection section of the source pack?",
+        options: [
+          "Collecting care data during a health camp for treatment",
+          "Tracking a child's behaviour or profiling them in a way likely to harm their well-being",
+          "Recording a child's weight for referral support",
+          "Explaining a notice to a parent in plain language"
+        ],
+        correct: 1,
+        explanation: "The children's-data section prohibits behavioural tracking, profiling, and processing likely to cause a detrimental effect on a child's well-being."
+      }
+    ]
+  },
+  {
+    number: 44,
+    slug: "rights-request-ledger",
+    shortTitle: "Rights Request Ledger",
+    pageTitle: "DPDP Quiz 44 - Rights Request Ledger",
+    eyebrow: "DPDP Quiz 44 | Rights Request Ledger",
+    heroTitle: "Rights Request Ledger: Logging, Escalation, and the 90-Day Clock",
+    heroIntro: "This queued quiz focuses on the mechanics of handling Data Principal rights. It checks whether staff record requests cleanly, avoid improvised answers, and keep the 90-day response window in view.",
+    cardDescription: "Five rights-handling questions on access, correction, erasure, nomination, and why logging requests matters from day one.",
+    audience: "Program Officers, implementors, grievance handlers, and privacy contacts",
+    focus: "Rights intake, escalation, documentation, lawful retention limits, and response timing",
+    resultSummary: "This set reinforces disciplined intake: receive calmly, log the request, escalate appropriately, and respond within the allowed window without guessing.",
+    topics: [
+      { label: "Obligation Area", text: "Sections 11 to 14 rights handling and Rule 14 response operations" },
+      { label: "Project Stage", text: "Frontline request intake before detailed resolution starts" },
+      { label: "Focus", text: "Access, correction, erasure, nomination, and grievance timing" }
+    ],
+    questions: [
+      {
+        module: "Consent templates",
+        topic: "Minimum rights log detail",
+        text: "Which entry best matches the approved rights-request tracking template when a beneficiary asks to see their record?",
+        options: [
+          "Only the beneficiary's first name, because more detail creates risk",
+          "Request date, beneficiary name or ID, type of request, who received it, escalation, and response due date",
+          "A short memory note with no date, because staff can fill in the rest later",
+          "Nothing written down unless the person comes back twice"
+        ],
+        correct: 1,
+        explanation: "The rights-request template includes the request date, beneficiary details, request type, recipient, escalation path, and response due date."
+      },
+      {
+        module: "Learning modules",
+        topic: "Access request response",
+        text: "A Gandhi Fellow is asked, \"What data do you have about me?\" but cannot see the full system record. What should happen next?",
+        options: [
+          "Provide an estimated answer from memory so the beneficiary does not wait",
+          "Say rights apply only after May 2027",
+          "Log the request and escalate instead of guessing",
+          "Tell the beneficiary to ask the DPBI directly first"
+        ],
+        correct: 2,
+        explanation: "The learning modules say frontline staff should not invent an answer. They should record the request and escalate it through the proper workflow."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Erasure limit",
+        text: "A beneficiary asks for deletion, but the programme is legally required to retain a related government record. Which answer is closest to the source pack?",
+        options: [
+          "Erasure is absolute, so legal retention never matters",
+          "The request should be logged and assessed, but records required by law may need to be retained",
+          "The request can be ignored if the data is old",
+          "Only paper files are affected by the erasure right"
+        ],
+        correct: 1,
+        explanation: "The act summary says erasure applies unless retention is required by law, so the request must be considered rather than dismissed or automatically granted."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Response clock",
+        text: "What is the maximum response period stated for grievances and rights-related handling in the approved source pack?",
+        options: [
+          "30 days",
+          "60 days",
+          "90 days",
+          "180 days"
+        ],
+        correct: 2,
+        explanation: "The summary states that grievance responses must be provided within 90 days maximum, and the training material uses that same window operationally."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Nomination right",
+        text: "Which right allows a beneficiary to designate another person to act on their behalf in case of death or incapacity?",
+        options: [
+          "Right to correction",
+          "Right to nomination",
+          "Right to data portability",
+          "Right to silence"
+        ],
+        correct: 1,
+        explanation: "Section 14 in the summary describes the right to nominate another person to exercise rights after death or incapacity."
+      }
+    ]
+  },
+  {
+    number: 45,
+    slug: "donor-evaluation-anonymisation",
+    shortTitle: "Donor Evaluation Anonymisation",
+    pageTitle: "DPDP Quiz 45 - Donor Evaluation Anonymisation",
+    eyebrow: "DPDP Quiz 45 | Donor Evaluation Anonymisation",
+    heroTitle: "Donor Evaluation Anonymisation: Sharing Insight Without Re-Identifying People",
+    heroIntro: "This set is for BI and partnership teams who prepare reports, evaluations, and research outputs. It tests whether they can distinguish anonymisation from pseudonymisation and prefer safer sharing patterns when reporting externally.",
+    cardDescription: "Five BI-focused questions on aggregate reporting, pseudonymisation limits, partner agreements, small-cell risk, and research-use boundaries.",
+    audience: "BI analysts, donor-reporting teams, evaluation leads, and partnership reviewers",
+    focus: "Anonymisation, purpose limitation, external sharing discipline, and research exemption boundaries",
+    resultSummary: "This set reinforces that aggregated reporting is usually safer, pseudonymised data may still be personal data, and external sharing needs purpose coverage plus agreement controls.",
+    topics: [
+      { label: "People Role", text: "BI and evaluation teams shaping reports for donors and external partners" },
+      { label: "Obligation Area", text: "Research exemption, cross-border sharing, and sharing agreements" },
+      { label: "Focus", text: "Aggregation, small-cell suppression, agreements, and re-identification risk" }
+    ],
+    questions: [
+      {
+        module: "Role guidance",
+        topic: "Pseudonymisation test",
+        text: "An analyst replaces beneficiary names with IDs but keeps a separate table that can reconnect every ID to a person. Under the source guidance, how should that dataset be treated?",
+        options: [
+          "As fully anonymised and outside DPDP",
+          "As personal data because re-identification remains possible",
+          "As public data once shared with a donor",
+          "As exempt automatically because the analyst is not a field worker"
+        ],
+        correct: 1,
+        explanation: "The BI guidance says pseudonymisation is not anonymisation. If the data can still be linked back to individuals, it remains personal data."
+      },
+      {
+        module: "Role guidance",
+        topic: "Safer donor reporting default",
+        text: "What is the default low-risk sharing pattern recommended for donor reports in the BI guidance?",
+        options: [
+          "Individual-level case rows with names removed but detailed geography retained",
+          "Aggregate district-level reporting without individual identifiers",
+          "Full beneficiary exports so donors can run their own analyses",
+          "Audio recordings instead of tabular files"
+        ],
+        correct: 1,
+        explanation: "The BI quick card says aggregate data at district or programme level is the safer default for donor reporting."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Cross-border condition",
+        text: "As of mid-2026 in the approved summary, what is the practical position on cross-border transfers?",
+        options: [
+          "All international transfers are currently banned",
+          "Transfers are allowed unless the government restricts a specific country or entity",
+          "Transfers are allowed only for Significant Data Fiduciaries",
+          "Transfers are allowed only after May 2027"
+        ],
+        correct: 1,
+        explanation: "The act summary describes a negative-list approach: transfers are currently permissible unless a specific country or entity is restricted."
+      },
+      {
+        module: "Role guidance",
+        topic: "Small-cell protection",
+        text: "A district dashboard shows a village count of 1 for a highly sensitive condition. Which privacy-preserving technique in the BI guidance is designed for this kind of risk?",
+        options: [
+          "Increasing font size so fewer people overlook the record",
+          "Cell suppression for very small counts",
+          "Adding more staff accounts to review the dashboard",
+          "Converting the table to PDF"
+        ],
+        correct: 1,
+        explanation: "The BI guidance recommends masking very small counts through cell suppression to reduce re-identification risk."
+      },
+      {
+        module: "Role guidance",
+        topic: "External partner pre-check",
+        text: "Before sharing individual-level data with an external evaluation partner, which combination is closest to the approved pre-check?",
+        options: [
+          "Only whether the file is easy to email",
+          "Purpose coverage in the original consent or legal basis, plus an appropriate agreement with the partner",
+          "Only whether the partner is based in India",
+          "Only whether the partner promises not to complain later"
+        ],
+        correct: 1,
+        explanation: "The BI guidance says external individual-level sharing should be checked against the original purpose or lawful basis and supported by a data sharing or processing agreement."
+      }
+    ]
+  },
+  {
+    number: 46,
+    slug: "jharkhand-device-offline-limits",
+    shortTitle: "Jharkhand Device Offline Limits",
+    pageTitle: "DPDP Quiz 46 - Jharkhand Device Offline Limits",
+    eyebrow: "DPDP Quiz 46 | Jharkhand Device Offline Limits",
+    heroTitle: "Jharkhand Device Offline Limits: ODK Storage, Sync, and Loss Preparedness",
+    heroIntro: "This set returns to a field-device theme, but with a lifecycle angle rather than incident reporting alone. It checks whether teams manage how long data stays offline, what happens after sync, and what controls exist before a phone goes missing.",
+    cardDescription: "Five Jharkhand field questions on device encryption, offline-duration policy, post-sync deletion, remote wipe, and lost-device escalation.",
+    audience: "Implementors, ODK administrators, programme tech leads, and field supervisors",
+    focus: "Device safeguards, local-storage minimisation, sync cleanup, and lost-device readiness",
+    resultSummary: "This set reinforces that offline storage should be controlled, synced data should not linger unnecessarily, devices should be wipe-capable where possible, and losses must be escalated quickly.",
+    topics: [
+      { label: "Location", text: "Jharkhand field deployments where connectivity gaps create offline-device risk" },
+      { label: "Project Stage", text: "Collection, sync, and post-sync cleanup on field devices" },
+      { label: "Focus", text: "Encryption, maximum offline duration, cleanup, and remote-wipe readiness" }
+    ],
+    questions: [
+      {
+        module: "Data audit checklist",
+        topic: "Encryption baseline",
+        text: "What does the ODK checklist ask first about phones or tablets collecting beneficiary data offline?",
+        options: [
+          "Whether the wallpaper reminds staff to be careful",
+          "Whether full device encryption is enabled",
+          "Whether the devices are used only during the daytime",
+          "Whether the devices are purchased from one vendor"
+        ],
+        correct: 1,
+        explanation: "The ODK-specific checklist explicitly asks whether field devices running ODK have full device encryption enabled."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Maximum offline period",
+        text: "Why does the checklist ask how long personal data stays on the device before sync and whether there is a maximum offline-period policy?",
+        options: [
+          "Because longer local retention increases unnecessary exposure on the device",
+          "Because DPDP sets a fixed national limit of 24 hours for all apps",
+          "Because synced data can never be deleted afterwards",
+          "Because offline collection is illegal in government programmes"
+        ],
+        correct: 0,
+        explanation: "The checklist treats local-storage duration as a risk-management issue: personal data should not remain on devices longer than needed."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "After successful sync",
+        text: "Which control is specifically listed for devices once personal data has been successfully synced?",
+        options: [
+          "Duplicate the same forms in a personal notes app",
+          "Delete synced forms containing personal data from the device",
+          "Forward a sample of records to a WhatsApp group for backup",
+          "Keep all records forever to help with future analytics"
+        ],
+        correct: 1,
+        explanation: "The ODK checklist asks whether synced data is deleted from devices after successful sync, reducing unnecessary local exposure."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Remote wipe capability",
+        text: "Which preparedness question in the ODK checklist speaks directly to what happens if a phone is lost or stolen?",
+        options: [
+          "Whether devices can be remotely wiped through an enrolled management setup",
+          "Whether staff prefer Android over iOS",
+          "Whether forms include a district code",
+          "Whether the program uses printed registers alongside ODK"
+        ],
+        correct: 0,
+        explanation: "The ODK checklist specifically asks whether remote wipe capability exists for lost or stolen devices."
+      },
+      {
+        module: "Breach response SOP",
+        topic: "Immediate escalation",
+        text: "A field worker in Jharkhand notices a device is missing after a day of unsynced collection. What should happen first according to the source pack?",
+        options: [
+          "Wait until morning in case the device reappears",
+          "Report it to the supervisor and IT immediately so response steps can start",
+          "Delete the beneficiary from the central system and end the matter",
+          "Announce the names of affected people in the village meeting"
+        ],
+        correct: 1,
+        explanation: "The breach SOP says lost devices with personal data should be reported immediately to the supervisor and IT; staff should not wait for certainty first."
+      }
+    ]
+  },
+  {
+    number: 47,
+    slug: "phase-three-readiness-sprint",
+    shortTitle: "Phase Three Readiness Sprint",
+    pageTitle: "DPDP Quiz 47 - Phase Three Readiness Sprint",
+    eyebrow: "DPDP Quiz 47 | Phase Three Readiness Sprint",
+    heroTitle: "Phase Three Readiness Sprint: What Cannot Be Left Until the Deadline",
+    heroIntro: "This quiz uses the compliance calendar as its theme. It checks whether teams understand what is already live, what should be ready by November 2026, and what becomes fully enforceable on May 13, 2027.",
+    cardDescription: "Five timeline questions on Phase I realities, November 2026 preparation, May 2027 enforcement, grievance readiness, and staff-training priorities.",
+    audience: "Programme managers, governance leads, implementation planners, and new team leads",
+    focus: "Timeline sequencing, preparation targets, current obligations, and readiness ownership",
+    resultSummary: "This set reinforces that DPDP is already operational, readiness work should not be delayed, and May 13, 2027 remains the hard full-compliance date in the approved pack.",
+    topics: [
+      { label: "Difficulty", text: "Beginner-to-intermediate timeline and readiness judgment" },
+      { label: "Project Stage", text: "Planning and sequencing before the final compliance deadline" },
+      { label: "Focus", text: "Phase I, Phase II readiness, Phase III enforcement, and ownership" }
+    ],
+    questions: [
+      {
+        module: "Compliance timeline",
+        topic: "What is live now",
+        text: "Which statement best reflects the Phase I position in the approved timeline?",
+        options: [
+          "Nothing is operational until May 2027",
+          "The DPBI is already constituted and grievance complaints are already possible",
+          "Consent Manager rules and all core compliance duties already started together in 2025",
+          "Only Significant Data Fiduciaries need to care before 2027"
+        ],
+        correct: 1,
+        explanation: "The timeline says Phase I began on November 13, 2025, with the DPBI operational and grievances already possible."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Preparation target",
+        text: "Even though full enforcement is later, what readiness target does the source pack repeatedly recommend treating seriously?",
+        options: [
+          "November 13, 2026",
+          "January 1, 2028",
+          "The date of the next donor review meeting only",
+          "No intermediate target is mentioned"
+        ],
+        correct: 0,
+        explanation: "The approved timeline says teams should treat November 13, 2026 as the preparation target even while planning for May 13, 2027 as the hard deadline."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Full-enforcement date",
+        text: "According to the source pack, what is the hard date for Phase III full compliance unless a new gazette notification changes it?",
+        options: [
+          "November 13, 2025",
+          "November 13, 2026",
+          "May 13, 2027",
+          "May 13, 2028"
+        ],
+        correct: 2,
+        explanation: "The timeline explicitly says to plan for May 13, 2027 as the hard deadline for full compliance."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Q3 2026 action example",
+        text: "Which of these is listed as a Q3 2026-style readiness action rather than something to postpone to the last minute?",
+        options: [
+          "Publishing the privacy point of contact and documenting the grievance mechanism",
+          "Waiting for every complaint before designing a response path",
+          "Skipping staff training until the law has been enforced for a year",
+          "Treating consent templates as optional until 2027"
+        ],
+        correct: 0,
+        explanation: "The timeline lists grievance documentation and privacy-contact publication as 2026 readiness tasks, not last-minute actions."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "Training ownership",
+        text: "Who does the timeline identify as owning broad staff training on DPDP basics and role-specific obligations?",
+        options: [
+          "Only the Board of India",
+          "HR together with programme teams",
+          "Only external vendors",
+          "No one, because training is voluntary"
+        ],
+        correct: 1,
+        explanation: "The timeline table assigns staff training to HR plus program teams."
+      }
+    ]
+  },
+  {
+    number: 48,
+    slug: "processor-contract-handoffs",
+    shortTitle: "Processor Contract Handoffs",
+    pageTitle: "DPDP Quiz 48 - Processor Contract Handoffs",
+    eyebrow: "DPDP Quiz 48 | Processor Contract Handoffs",
+    heroTitle: "Processor Contract Handoffs: Role Clarity Before Data Moves",
+    heroIntro: "This queued set focuses on vendor and partner interfaces. It checks whether teams can tell when a partner is acting on Piramal Foundation’s behalf, when role clarity is missing, and why written agreements matter before any individual-level data is shared.",
+    cardDescription: "Five partner-management questions on Data Processor contracts, Nikshay role clarity, JEEViKA alignment, purpose limits, and equivalent safeguards.",
+    audience: "Programme managers, legal reviewers, IT governance leads, and partnership teams",
+    focus: "Role clarity, written contracts, scope control, and secure partner processing",
+    resultSummary: "This set reinforces that data cannot move on assumption alone. Teams need role clarity, written safeguards, and purpose-limited sharing before handing data to partners.",
+    topics: [
+      { label: "Obligation Area", text: "Data Processor relationships and partner governance" },
+      { label: "People Role", text: "Managers and reviewers approving data flows beyond Piramal Foundation" },
+      { label: "Focus", text: "Contracts, purpose limits, role clarity, and equivalent security" }
+    ],
+    questions: [
+      {
+        module: "Act and rules summary",
+        topic: "Processor definition",
+        text: "Which statement best matches the source pack's definition of a Data Processor?",
+        options: [
+          "A person who decides the purpose and means of processing for themselves",
+          "An organisation that processes data on behalf of a Data Fiduciary",
+          "Any beneficiary who corrects their own record",
+          "Only a cloud provider outside India"
+        ],
+        correct: 1,
+        explanation: "The act summary defines a Data Processor as an entity processing data on behalf of the Data Fiduciary."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Nikshay formalisation",
+        text: "What does the Nikshay integration checklist ask Piramal Foundation to formalise about its role?",
+        options: [
+          "Whether Piramal Foundation's role as Data Processor is formally documented",
+          "Whether Nikshay can be converted into a donor platform",
+          "Whether all field staff may keep local copies of Nikshay data",
+          "Whether the programme should stop using written agreements"
+        ],
+        correct: 0,
+        explanation: "The Nikshay checklist asks whether Piramal Foundation's Data Processor role is formally documented and supported by an agreement."
+      },
+      {
+        module: "Compliance timeline",
+        topic: "JEEViKA ambiguity",
+        text: "The compliance timeline flags one specific partnership question for AI Didi and JEEViKA-NRLM. What is it?",
+        options: [
+          "Whether JEEViKA is acting as a joint Data Fiduciary or a Data Processor",
+          "Whether JEEViKA can exempt all audio retention rules",
+          "Whether only Delhi-based partners need a contract",
+          "Whether voice data stops being personal data in a livelihood programme"
+        ],
+        correct: 0,
+        explanation: "The timeline explicitly says JEEViKA's role should be clarified as joint Data Fiduciary or Data Processor."
+      },
+      {
+        module: "Role guidance",
+        topic: "Scope before sharing",
+        text: "A partner asks for identifiable records for a new analysis that was never mentioned in the enrolment notice. What does the guidance point toward first?",
+        options: [
+          "Share immediately if the partner promises confidentiality",
+          "Check whether the purpose is covered and escalate instead of assuming the share is allowed",
+          "Remove the logo from the file and send it",
+          "Share only with personal email addresses"
+        ],
+        correct: 1,
+        explanation: "The role guidance says identifiable sharing should be checked against the original purpose or legal basis, and unclear cases should be escalated."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Equivalent safeguards",
+        text: "Why does the source pack keep returning to vendor and processor agreements in security discussions?",
+        options: [
+          "Because DPDP applies only to written contracts",
+          "Because contracts are where equivalent security safeguards must be imposed on processors",
+          "Because contracts replace breach notification duties",
+          "Because contracts make consent optional"
+        ],
+        correct: 1,
+        explanation: "Rule 6 expects processor arrangements to require equivalent safeguards, so the contract is a key control point."
+      }
+    ]
+  },
+  {
+    number: 49,
+    slug: "beginner-consent-language",
+    shortTitle: "Beginner Consent Language",
+    pageTitle: "DPDP Quiz 49 - Beginner Consent Language",
+    eyebrow: "DPDP Quiz 49 | Beginner Consent Language",
+    heroTitle: "Beginner Consent Language: Plain Words, Clear Purpose, Easy Withdrawal",
+    heroIntro: "This set is designed as a simpler refresher for frontline staff. It checks whether a notice is understandable on its own, itemises fields clearly, and gives the beneficiary a realistic withdrawal route.",
+    cardDescription: "Five beginner questions on standalone notices, plain language, itemised fields, verbal consent records, and easy withdrawal paths.",
+    audience: "New staff, fellows, implementors, and anyone learning DPDP consent basics",
+    focus: "Notice design, understandable language, itemised data, and verifiable consent records",
+    resultSummary: "This set reinforces the core habit: explain clearly, stay specific, document consent properly, and make withdrawal practical.",
+    topics: [
+      { label: "Difficulty", text: "Beginner refresher for frontline consent collection" },
+      { label: "Obligation Area", text: "Rule 3 notice design and Section 6 consent practice" },
+      { label: "Focus", text: "Standalone notices, itemisation, verbal documentation, and withdrawal" }
+    ],
+    questions: [
+      {
+        module: "Consent templates",
+        topic: "Standalone notice rule",
+        text: "Why does the source pack warn against hiding the consent notice inside a long MOU or multi-page agreement?",
+        options: [
+          "Because the notice must be understandable independently of other information",
+          "Because MOUs are banned for every programme",
+          "Because signatures on longer forms are always invalid",
+          "Because only audio notices are recognised under DPDP"
+        ],
+        correct: 0,
+        explanation: "Rule 3 guidance in the source pack says the notice must stand on its own and not be buried inside other terms."
+      },
+      {
+        module: "Consent templates",
+        topic: "Specific fields",
+        text: "Which wording is closer to the itemised style expected in the approved templates?",
+        options: [
+          "\"We may collect whatever details are useful later\"",
+          "\"We collect your name, mobile number, village, and household size for programme follow-up\"",
+          "\"Data details can be finalised after enrolment\"",
+          "\"The form fields do not matter if the staff member knows the family\""
+        ],
+        correct: 1,
+        explanation: "The templates require itemised data fields and a specific purpose, not broad statements about collecting whatever might be useful."
+      },
+      {
+        module: "Consent templates",
+        topic: "Verbal consent record",
+        text: "When a beneficiary cannot read or sign, what extra support does the approved verbal-consent template require?",
+        options: [
+          "No documentation at all, because the conversation itself is enough",
+          "A witness and a record of the language used, date, location, and the person's response",
+          "A promise that the staff member will remember it later",
+          "A separate donor approval note"
+        ],
+        correct: 1,
+        explanation: "The verbal-consent template asks for a witness plus key details such as date, location, language used, and the recorded verbal response."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Withdrawal ease",
+        text: "A consent notice says withdrawal is possible only through a state-level office visit after six months. What is the central problem?",
+        options: [
+          "There is no problem because withdrawal can always be delayed",
+          "Withdrawal should be as easy as giving consent, so the route should not be made harder",
+          "Withdrawal is relevant only for photographs",
+          "The only issue is that the office is state-level"
+        ],
+        correct: 1,
+        explanation: "The act summary says the notice must explain withdrawal, and withdrawing should be as easy as giving consent."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Burden of proof",
+        text: "Who carries the burden of proving that notice was given and consent was obtained?",
+        options: [
+          "The beneficiary alone",
+          "The Data Fiduciary, which here is Piramal Foundation for its own programmes",
+          "Only the technology vendor",
+          "No one, because consent is assumed once data is collected"
+        ],
+        correct: 1,
+        explanation: "The act summary explicitly says the Data Fiduciary bears the burden of proof for notice and consent."
+      }
+    ]
+  },
+  {
+    number: 50,
+    slug: "advanced-nikshay-role-clarity",
+    shortTitle: "Advanced Nikshay Role Clarity",
+    pageTitle: "DPDP Quiz 50 - Advanced Nikshay Role Clarity",
+    eyebrow: "DPDP Quiz 50 | Advanced Nikshay Role Clarity",
+    heroTitle: "Advanced Nikshay Role Clarity: Government Flows, Scope Limits, and Local Copies",
+    heroIntro: "This queued set raises the difficulty again. It focuses on government-linked TB workflows where Piramal Foundation may be processing on behalf of the State and must avoid casual copying, unclear authority, and out-of-scope analytics.",
+    cardDescription: "Five advanced questions on Nikshay role clarity, local copies, authorised access, legal-basis boundaries, and escalation when deletion authority is unclear.",
+    audience: "TB programme leads, advanced implementors, governance reviewers, and integration teams",
+    focus: "Government data flows, processor-vs-fiduciary clarity, scope control, and secure access handling",
+    resultSummary: "This set reinforces that Nikshay-related access is purpose-bound, role clarity matters, local copies should be avoided, and deletion authority must be assessed rather than assumed.",
+    topics: [
+      { label: "Difficulty", text: "Advanced judgement for government-linked TB programme data" },
+      { label: "Location", text: "Nikshay and NTEP-aligned workflows across programme operations" },
+      { label: "Focus", text: "Role clarity, authorised use, local-copy avoidance, and escalation discipline" }
+    ],
+    questions: [
+      {
+        module: "Data audit checklist",
+        topic: "Avoiding local copies",
+        text: "Which control appears in the Nikshay-specific checklist to reduce unnecessary exposure on personal devices or laptops?",
+        options: [
+          "Avoiding local copies of Nikshay data wherever possible",
+          "Printing the entire patient list for backup",
+          "Letting every district worker keep their own archive",
+          "Sending daily exports to private email accounts"
+        ],
+        correct: 0,
+        explanation: "The Nikshay checklist asks whether Nikshay data is avoided from local storage rather than downloaded to personal devices."
+      },
+      {
+        module: "Learning modules",
+        topic: "Likely PF role",
+        text: "When Piramal Foundation accesses Nikshay data on behalf of the TB programme, how does the source pack generally frame PF's role?",
+        options: [
+          "As the automatic owner of all Nikshay data",
+          "As likely acting as a Data Processor for government programme data",
+          "As outside DPDP entirely",
+          "As a Consent Manager by default"
+        ],
+        correct: 1,
+        explanation: "The learning modules and checklist both say PF is likely acting as a Data Processor in Nikshay-related government flows."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Access restriction",
+        text: "What does the Nikshay checklist ask about login credentials?",
+        options: [
+          "Whether credentials are restricted to authorised staff",
+          "Whether passwords are easy for district teams to remember",
+          "Whether one shared state login is available to everyone",
+          "Whether logins can be stored in a common spreadsheet"
+        ],
+        correct: 0,
+        explanation: "The checklist asks whether Nikshay login credentials are restricted to authorised staff."
+      },
+      {
+        module: "Role guidance",
+        topic: "Out-of-scope analytics",
+        text: "A team wants to reuse identifiable Nikshay records for a separate analytics exercise unrelated to NTEP delivery. What is the safest reading from the approved guidance?",
+        options: [
+          "Reuse is always allowed if the dataset is useful",
+          "Use should remain within the programme scope unless separate authority or lawful basis is established",
+          "Any internal analytics automatically count as anonymised",
+          "Role clarity matters only for vendor contracts, not data use"
+        ],
+        correct: 1,
+        explanation: "The Nikshay checklist and role guidance both emphasise purpose limitation: the data should be used only for the authorised programme purpose unless another lawful basis exists."
+      },
+      {
+        module: "Learning modules",
+        topic: "Deletion request ambiguity",
+        text: "A beneficiary asks for deletion of data that may sit in Nikshay records. Why does the source pack tell staff to escalate rather than promise immediate deletion?",
+        options: [
+          "Because rights requests are optional in government-linked work",
+          "Because authority to delete may rest with the government Data Fiduciary and needs assessment",
+          "Because TB data is never personal data",
+          "Because deletion is banned for all programme records"
+        ],
+        correct: 1,
+        explanation: "The learning modules say that when Nikshay is involved, staff should escalate to understand whether PF actually has authority to delete the government-held record."
+      }
+    ]
+  },
+  {
+    number: 51,
+    slug: "retention-pre-erasure-notice",
+    shortTitle: "Retention Pre-Erasure Notice",
+    pageTitle: "DPDP Quiz 51 - Retention Pre-Erasure Notice",
+    eyebrow: "DPDP Quiz 51 | Retention Pre-Erasure Notice",
+    heroTitle: "Retention Pre-Erasure Notice: Keeping Data No Longer Than Needed",
+    heroIntro: "This set closes the next queue block with a lifecycle theme. It checks whether teams understand purpose-complete deletion, legal-retention exceptions, the 48-hour pre-erasure notice, and the one-year minimum for logs.",
+    cardDescription: "Five lifecycle questions on purpose-complete deletion, legal retention limits, 48-hour pre-erasure notice, platform policies, and one-year log retention.",
+    audience: "System owners, programme managers, privacy reviewers, and operations teams",
+    focus: "Retention schedules, erasure triggers, pre-erasure communication, and log-minimum rules",
+    resultSummary: "This set reinforces that data should not be kept indefinitely. Once purpose ends or consent is withdrawn, erasure should follow unless law requires retention, while logs still have a one-year minimum.",
+    topics: [
+      { label: "Project Stage", text: "Retention review, deletion design, and end-of-purpose cleanup" },
+      { label: "Obligation Area", text: "Rule 8 erasure duties and Rule 6 log-retention safeguards" },
+      { label: "Focus", text: "Purpose completion, withdrawal, legal retention, user notice, and logs" }
+    ],
+    questions: [
+      {
+        module: "Act and rules summary",
+        topic: "Main erasure trigger",
+        text: "Under the approved summary, when should personal data generally be erased if no law requires it to be kept?",
+        options: [
+          "Only after five fixed years in every case",
+          "When consent is withdrawn or the specified purpose is no longer being served, whichever is earlier",
+          "Only when the database reaches storage capacity",
+          "Only after the next annual audit"
+        ],
+        correct: 1,
+        explanation: "The act summary says erasure follows when consent is withdrawn or the purpose is no longer being served, unless retention is required by law."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Pre-erasure communication",
+        text: "What notice timing does the source pack specify before erasure?",
+        options: [
+          "At least 48 hours before erasure",
+          "At least 30 days before erasure in every case",
+          "No advance notice is ever required",
+          "Notice only after data has already been deleted"
+        ],
+        correct: 0,
+        explanation: "The Rule 8 summary says the Data Principal should be notified at least 48 hours before erasure."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Platform retention policy",
+        text: "Which question appears in the erasure section of the platform audit checklist?",
+        options: [
+          "Is there a documented retention policy for this platform?",
+          "Does every user have personal export rights?",
+          "Is the platform logo updated each quarter?",
+          "Can the platform operate without any backups?"
+        ],
+        correct: 0,
+        explanation: "The platform checklist asks whether there is a documented retention policy and whether technical controls can enforce erasure."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Log minimum",
+        text: "Even when teams want broad deletion discipline, what minimum retention rule still applies to logs under the approved summary?",
+        options: [
+          "Logs may be deleted immediately after each session",
+          "Logs must be retained for a minimum of one year from the date of processing",
+          "Logs must be kept for ten years in every system",
+          "Logs matter only for Significant Data Fiduciaries"
+        ],
+        correct: 1,
+        explanation: "Rule 6 in the source pack requires logs and related personal data needed for that safeguard context to be retained for a minimum of one year."
+      },
+      {
+        module: "Role guidance",
+        topic: "No indefinite keeping",
+        text: "A staff member argues that old recordings and spreadsheets should be kept forever because they might help some future programme. What is the strongest source-based response?",
+        options: [
+          "That is acceptable if the files are interesting",
+          "The source pack points toward purpose limitation and deletion once the stated purpose has ended",
+          "DPDP encourages indefinite retention for training value",
+          "Only audio files need deletion; spreadsheets do not"
+        ],
+        correct: 1,
+        explanation: "Across the role guidance and Rule 8 summary, the approved pack rejects indefinite retention just because a future use might appear later."
+      }
+    ]
   }
 ];
 
@@ -4985,19 +5835,47 @@ function assertNoExactRepeats() {
     }
   }
 
-  for (const quiz of quizCatalog.filter((item) => item.number >= 2)) {
-    if (quiz.number <= 10) {
-      for (const question of quiz.questions) {
-        if (existingQuestions.has(question.text)) {
-          throw new Error(`Exact question repeat detected before quiz 10: ${question.text}`);
-        }
+  for (const quiz of quizCatalog.filter((item) => item.number >= 2).sort((a, b) => a.number - b.number)) {
+    let repeatCount = 0;
+    for (const question of quiz.questions) {
+      if (existingQuestions.has(question.text)) {
+        repeatCount += 1;
       }
+    }
+    const allowedRepeats = quiz.number <= 10 ? 0 : 1;
+    if (repeatCount > allowedRepeats) {
+      throw new Error(`Exact question repeat limit exceeded for quiz ${quiz.number}: ${repeatCount} repeats`);
+    }
+    for (const question of quiz.questions) {
+      existingQuestions.add(question.text);
     }
   }
 }
 
 function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
+}
+
+function loadManifest() {
+  if (!fs.existsSync(manifestPath)) {
+    return null;
+  }
+  return JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+}
+
+function getTodayLocalDate() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Calcutta"
+  }).format(new Date());
+}
+
+function reconcilePublishedAndQueuedCopies() {
+  const published = new Set(listQuizDirs(docsDir));
+  for (const folder of listQuizDirs(queueDir)) {
+    if (published.has(folder)) {
+      fs.rmSync(path.join(queueDir, folder), { recursive: true, force: true });
+    }
+  }
 }
 
 function writeQueueBatch(overwriteExisting = false) {
@@ -5064,8 +5942,12 @@ function publishNextQueuedQuiz() {
   const toPath = path.join(docsDir, nextFolder);
 
   if (!fs.existsSync(toPath)) {
-    copyDirectoryRecursive(fromPath, toPath);
-    fs.rmSync(fromPath, { recursive: true, force: true });
+    try {
+      fs.renameSync(fromPath, toPath);
+    } catch {
+      copyDirectoryRecursive(fromPath, toPath);
+      fs.rmSync(fromPath, { recursive: true, force: true });
+    }
   }
 
   return nextFolder;
@@ -5073,13 +5955,15 @@ function publishNextQueuedQuiz() {
 
 function writeManifest(publishedFolder) {
   const queueFolders = listQuizDirs(queueDir);
-  const existingManifest = fs.existsSync(manifestPath)
-    ? JSON.parse(fs.readFileSync(manifestPath, "utf8"))
-    : null;
+  const existingManifest = loadManifest();
+  const publishedAt = publishedFolder ? new Date().toISOString() : existingManifest?.lastPublishedAt ?? null;
+  const publishedOnLocalDate = publishedFolder ? getTodayLocalDate() : existingManifest?.lastPublishedOnLocalDate ?? null;
   const payload = {
     updatedAt: new Date().toISOString(),
     publishedThisRun: publishedFolder ?? existingManifest?.publishedThisRun ?? null,
     latestPublishedFolder: publishedFolder ?? existingManifest?.latestPublishedFolder ?? null,
+    lastPublishedAt: publishedAt,
+    lastPublishedOnLocalDate: publishedOnLocalDate,
     lastNotificationSentFor: existingManifest?.lastNotificationSentFor ?? null,
     queuedFolders: queueFolders,
     queuedCount: queueFolders.length
@@ -5140,15 +6024,22 @@ function writeLatestWhatsAppMessage() {
 }
 
 function main() {
-  const shouldPublish = process.argv.includes("--publish");
+  const shouldPublishRequested = process.argv.includes("--publish");
   const shouldWriteHub = process.argv.includes("--write-hub");
   const shouldRefreshExisting = process.argv.includes("--refresh-existing");
   const shouldRefreshQueue = process.argv.includes("--refresh-queue");
+  const existingManifest = loadManifest();
+  const todayLocalDate = getTodayLocalDate();
+  const alreadyPublishedToday = existingManifest?.lastPublishedOnLocalDate === todayLocalDate;
+
+  reconcilePublishedAndQueuedCopies();
   assertNoExactRepeats();
   writeQueueBatch(shouldRefreshExisting || shouldRefreshQueue);
+  reconcilePublishedAndQueuedCopies();
   if (shouldRefreshExisting) {
     writePublishedGeneratedPages(true);
   }
+  const shouldPublish = shouldPublishRequested && !alreadyPublishedToday;
   const publishedFolder = shouldPublish ? publishNextQueuedQuiz() : null;
   if (shouldWriteHub) {
     writeHub();
@@ -5161,9 +6052,11 @@ function main() {
   const queuedCount = listQuizDirs(queueDir).length;
   const publishedDailyCount = listQuizDirs(docsDir).length;
   console.log(JSON.stringify({
+    alreadyPublishedToday,
     publishedFolder,
     queuedCount,
-    publishedDailyCount
+    publishedDailyCount,
+    todayLocalDate
   }, null, 2));
 }
 

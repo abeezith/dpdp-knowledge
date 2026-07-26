@@ -1,10 +1,11 @@
 {
-  "updatedAt": "2026-07-26T16:12:43.967Z",
-  "publishedThisRun": "quiz-32-breach-first-six-hours",
-  "latestPublishedFolder": "quiz-32-breach-first-six-hours",
+  "updatedAt": "2026-07-26T16:17:09.341Z",
+  "publishedThisRun": "quiz-33-field-rights-request-desk",
+  "latestPublishedFolder": "quiz-33-field-rights-request-desk",
+  "lastPublishedAt": "2026-07-26T16:17:09.335Z",
+  "lastPublishedOnLocalDate": "2026-07-26",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-33-field-rights-request-desk",
     "quiz-34-partner-sharing-checks",
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption",
@@ -13,7 +14,17 @@
     "quiz-39-platform-audit-evidence",
     "quiz-40-notice-design-withdrawal-paths",
     "quiz-41-bihar-voice-consent-workflows",
-    "quiz-42-platform-data-inventory-kickoff"
+    "quiz-42-developer-export-access",
+    "quiz-42-platform-data-inventory-kickoff",
+    "quiz-43-karuna-child-photo-boundaries",
+    "quiz-44-rights-request-ledger",
+    "quiz-45-donor-evaluation-anonymisation",
+    "quiz-46-jharkhand-device-offline-limits",
+    "quiz-47-phase-three-readiness-sprint",
+    "quiz-48-processor-contract-handoffs",
+    "quiz-49-beginner-consent-language",
+    "quiz-50-advanced-nikshay-role-clarity",
+    "quiz-51-retention-pre-erasure-notice"
   ],
-  "queuedCount": 10
+  "queuedCount": 19
 }
