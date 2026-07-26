@@ -1,10 +1,9 @@
 {
-  "updatedAt": "2026-07-25T13:35:03.164Z",
-  "publishedThisRun": "quiz-31-gandhi-fellow-media-boundaries",
-  "latestPublishedFolder": "quiz-31-gandhi-fellow-media-boundaries",
+  "updatedAt": "2026-07-26T16:12:43.967Z",
+  "publishedThisRun": "quiz-32-breach-first-six-hours",
+  "latestPublishedFolder": "quiz-32-breach-first-six-hours",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-32-breach-first-six-hours",
     "quiz-33-field-rights-request-desk",
     "quiz-34-partner-sharing-checks",
     "quiz-35-retention-erasure-operations",
@@ -13,7 +12,8 @@
     "quiz-38-jharkhand-odk-device-recovery",
     "quiz-39-platform-audit-evidence",
     "quiz-40-notice-design-withdrawal-paths",
-    "quiz-41-bihar-voice-consent-workflows"
+    "quiz-41-bihar-voice-consent-workflows",
+    "quiz-42-platform-data-inventory-kickoff"
   ],
   "queuedCount": 10
 }

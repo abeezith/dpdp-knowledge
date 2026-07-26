@@ -3581,6 +3581,91 @@ const quizCatalog = [
         explanation: "The compliance timeline specifically flags JEEViKA role clarity and says teams should determine whether it is acting as a joint Data Fiduciary or a Data Processor."
       }
     ]
+  },
+  {
+    number: 42,
+    slug: "platform-data-inventory-kickoff",
+    shortTitle: "Platform Data Inventory Kickoff",
+    pageTitle: "DPDP Quiz 42 - Platform Data Inventory Kickoff",
+    eyebrow: "DPDP Quiz 42 | Platform Data Inventory Kickoff",
+    heroTitle: "Platform Data Inventory Kickoff: Know the Fields, Flows, and Owners",
+    heroIntro: "This queued quiz shifts into audit-readiness work. It tests whether platform owners can start a DPDP review by identifying what personal data exists, where it sits, who can access it, and which linked obligations need evidence rather than assumptions.",
+    cardDescription: "Five audit-readiness questions on data dictionaries, external sharing checks, standalone notices, one-year logs, and named rights-handling ownership.",
+    audience: "BIDA reviewers, IT governance teams, platform owners, programme MIS leads, and privacy coordinators",
+    focus: "Data inventory, notice evidence, processor oversight, log retention, and rights workflow ownership",
+    resultSummary: "This set reinforces that audit readiness starts with a usable data inventory, visible sharing flows, proof of valid notices, one-year logs, and a named person who can route rights and grievances.",
+    topics: [
+      { label: "Project Stage", text: "Early audit-readiness and platform control review" },
+      { label: "Obligation Area", text: "Data inventory, consent evidence, security safeguards, and rights handling" },
+      { label: "Focus", text: "Field-level documentation, vendor checks, retention proof, and accountable ownership" }
+    ],
+    questions: [
+      {
+        module: "Data audit checklist",
+        topic: "Field-level inventory",
+        text: "A platform owner says, \"We know the MIS stores beneficiary data, but we have never documented each field or table.\" Which audit artifact from the approved source pack best closes that gap first?",
+        options: [
+          "A data dictionary or schema that documents each field and where personal data is stored",
+          "A promise to explain the system verbally during the audit meeting",
+          "A screenshot of the login page because that shows the platform exists",
+          "A broad note saying the platform stores only useful programme details"
+        ],
+        correct: 0,
+        explanation: "The data-audit checklist asks whether the team knows exactly what personal data the platform stores and whether there is a data dictionary or schema documenting each field and storage location."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "External sharing evidence",
+        text: "During an audit, the team confirms that beneficiary data from the platform is shared with an outside vendor. What linked check does the approved checklist require next?",
+        options: [
+          "Whether a Data Processing Agreement is in place",
+          "Whether the vendor has promised informally to be careful",
+          "Whether the transfer happened only after working hours",
+          "Whether the platform owner can remember the vendor's name"
+        ],
+        correct: 0,
+        explanation: "The checklist explicitly asks: if data is shared with any external party, is there a Data Processing Agreement in place."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Notice proof",
+        text: "An auditor asks how the platform proves people received a valid notice before collection. Which answer is closest to the source guidance?",
+        options: [
+          "The notice should be standalone, itemise the data fields, state the specific purpose, and explain withdrawal",
+          "A signed MOU is enough even if the notice is buried inside it",
+          "The team can leave the purpose blank if the platform is internal",
+          "Specific data fields need not be listed when the platform is already in use"
+        ],
+        correct: 0,
+        explanation: "Rule 3 in the act-and-rules summary requires a clear standalone notice that itemises the data collected, states the specific purpose, and explains how to withdraw consent."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Log retention evidence",
+        text: "A reviewer finds access logs are enabled but rotated away after three months. Why is that still a DPDP gap under the approved source pack?",
+        options: [
+          "Logs are optional if the platform already has HTTPS",
+          "DPDP expects access logs to be retained for a minimum of one year",
+          "Only Significant Data Fiduciaries need any logs at all",
+          "Three months is enough whenever the platform has backups"
+        ],
+        correct: 1,
+        explanation: "Both the act-and-rules summary and the data-audit checklist state that logs should be retained for a minimum of one year."
+      },
+      {
+        module: "Data audit checklist",
+        topic: "Rights-handling ownership",
+        text: "The audit shows there is no clearly named person to handle access, correction, deletion, or grievance requests. Which checklist line does this fail most directly?",
+        options: [
+          "Whether individual records can be exported to Excel",
+          "Whether there is a designated person to handle rights requests",
+          "Whether the platform uses a branded dashboard theme",
+          "Whether field staff can make every privacy decision without escalation"
+        ],
+        correct: 1,
+        explanation: "In the rights section, the checklist asks whether there is a designated person to handle rights requests and whether grievances can be resolved within 90 days."
+      }
+    ]
   }
 ];
 

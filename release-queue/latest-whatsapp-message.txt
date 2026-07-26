@@ -1,7 +1,7 @@
-DPDP Quiz 31 | Gandhi Fellow Media Boundaries
+DPDP Quiz 32 | Breach First Six Hours
 
-Five field questions on survey explanations, refusing optional fields, audio recording, child photography, and why private memories are still personal data if the person is identifiable.
+Five breach-response questions on the 72-hour clock, immediate containment, preserving logs, notifying affected people, and the first DPBI report.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-31-gandhi-fellow-media-boundaries/
+https://abeezith.github.io/dpdp-knowledge/quiz-32-breach-first-six-hours/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
