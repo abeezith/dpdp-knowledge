@@ -1,7 +1,7 @@
-DPDP Quiz 33 | Field Rights Request Desk
+DPDP Quiz 34 | Partner Sharing Checks
 
-Five rights-workflow questions on logging requests, record-based responses, correction tracking, lawful retention exceptions, and the request register.
+Five sharing questions on purpose coverage, processing agreements, anonymised alternatives, role clarity, and when escalation is required.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-33-field-rights-request-desk/
+https://abeezith.github.io/dpdp-knowledge/quiz-34-partner-sharing-checks/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-07-26T16:17:09.341Z",
-  "publishedThisRun": "quiz-33-field-rights-request-desk",
-  "latestPublishedFolder": "quiz-33-field-rights-request-desk",
-  "lastPublishedAt": "2026-07-26T16:17:09.335Z",
-  "lastPublishedOnLocalDate": "2026-07-26",
+  "updatedAt": "2026-07-29T03:32:38.733Z",
+  "publishedThisRun": "quiz-34-partner-sharing-checks",
+  "latestPublishedFolder": "quiz-34-partner-sharing-checks",
+  "lastPublishedAt": "2026-07-29T03:32:38.732Z",
+  "lastPublishedOnLocalDate": "2026-07-29",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-34-partner-sharing-checks",
     "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption",
     "quiz-37-implementor-consent-records",
@@ -26,5 +25,5 @@
     "quiz-50-advanced-nikshay-role-clarity",
     "quiz-51-retention-pre-erasure-notice"
   ],
-  "queuedCount": 19
+  "queuedCount": 18
 }
