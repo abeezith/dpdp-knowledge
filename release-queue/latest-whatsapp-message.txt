@@ -1,7 +1,7 @@
-DPDP Quiz 34 | Partner Sharing Checks
+DPDP Quiz 35 | Retention Erasure Operations
 
-Five sharing questions on purpose coverage, processing agreements, anonymised alternatives, role clarity, and when escalation is required.
+Five lifecycle questions on purpose completion, legal retention limits, 48-hour pre-erasure notice, local device copies, and documented retention policies.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-34-partner-sharing-checks/
+https://abeezith.github.io/dpdp-knowledge/quiz-35-retention-erasure-operations/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

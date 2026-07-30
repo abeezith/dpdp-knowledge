@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-07-29T03:32:38.733Z",
-  "publishedThisRun": "quiz-34-partner-sharing-checks",
-  "latestPublishedFolder": "quiz-34-partner-sharing-checks",
-  "lastPublishedAt": "2026-07-29T03:32:38.732Z",
-  "lastPublishedOnLocalDate": "2026-07-29",
+  "updatedAt": "2026-07-30T13:33:57.749Z",
+  "publishedThisRun": "quiz-35-retention-erasure-operations",
+  "latestPublishedFolder": "quiz-35-retention-erasure-operations",
+  "lastPublishedAt": "2026-07-30T13:33:57.746Z",
+  "lastPublishedOnLocalDate": "2026-07-30",
   "lastNotificationSentFor": "quiz-23-platform-operations-controls",
   "queuedFolders": [
-    "quiz-35-retention-erasure-operations",
     "quiz-36-advanced-research-exemption",
     "quiz-37-implementor-consent-records",
     "quiz-38-jharkhand-odk-device-recovery",
@@ -25,5 +24,5 @@
     "quiz-50-advanced-nikshay-role-clarity",
     "quiz-51-retention-pre-erasure-notice"
   ],
-  "queuedCount": 18
+  "queuedCount": 17
 }
