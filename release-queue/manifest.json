@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-10T11:56:47.205Z",
-  "publishedThisRun": "quiz-35-retention-erasure-operations",
-  "latestPublishedFolder": "quiz-35-retention-erasure-operations",
-  "lastPublishedAt": "2026-07-30T13:33:57.746Z",
-  "lastPublishedOnLocalDate": "2026-07-30",
+  "updatedAt": "2026-08-10T13:33:43.304Z",
+  "publishedThisRun": "quiz-36-advanced-research-exemption",
+  "latestPublishedFolder": "quiz-36-advanced-research-exemption",
+  "lastPublishedAt": "2026-08-10T13:33:43.303Z",
+  "lastPublishedOnLocalDate": "2026-08-10",
   "lastNotificationSentFor": "quiz-35-retention-erasure-operations",
   "queuedFolders": [
-    "quiz-36-advanced-research-exemption",
     "quiz-37-implementor-consent-records",
     "quiz-38-jharkhand-odk-device-recovery",
     "quiz-39-platform-audit-evidence",
@@ -24,5 +23,5 @@
     "quiz-51-retention-pre-erasure-notice",
     "quiz-52-developer-export-access"
   ],
-  "queuedCount": 17
+  "queuedCount": 16
 }
