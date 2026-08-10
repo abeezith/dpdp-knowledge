@@ -5827,32 +5827,293 @@ const ngoSectionCatalog = [
   }
 ];
 
-const ngoSectionPlans = {
-  roles: [
-    "Field Staff and Fellows",
-    "Programme Officer",
-    "Privacy or Compliance Focal Person",
-    "Developer or Product Builder",
-    "Data Analyst or M&E Team",
-    "NGO Leadership or Operations Head"
-  ],
-  scenarios: [
-    "Beneficiary Refuses One Field",
-    "Child Photo for Donor Deck",
-    "Lost Phone with Offline Forms",
-    "Wrong WhatsApp Share",
-    "Rights Request at Field Level",
-    "Sharing Data with External Evaluator"
-  ],
-  tools: [
-    "Decision Tree: Can We Collect This Data?",
-    "Decision Tree: Do We Need Consent?",
-    "Decision Tree: Is This a Breach?",
-    "Checklist: Breach First Response",
-    "Checklist: Consent Notice Review",
-    "Readiness Self-Assessment"
-  ]
-};
+const ngoRolePages = [
+  {
+    slug: "field-staff-fellows",
+    title: "Field Staff and Fellows",
+    summary: "A practical guide for people collecting information directly from community members during surveys, visits, events, and enrolment workflows.",
+    audience: "Field staff, outreach workers, enumerators, mobilisation teams, and community fellows",
+    keyFocus: "Plain-language notice, consent quality, photography and recording boundaries, and respectful rights handling",
+    whatYouHandle: [
+      "Household visits, beneficiary enrolment, mobilisation activities, field surveys, event registration, and informal data collection in villages or community settings.",
+      "Personal data such as names, phone numbers, household details, health-related responses, and photographs or voice recordings."
+    ],
+    responsibilities: [
+      "Explain what data you are collecting and why before you start.",
+      "Allow people to refuse a question or the full interaction without pressure.",
+      "Use the approved notice and consent flow rather than improvised explanations.",
+      "Treat photos, videos, and voice recordings as personal data that need a clear purpose and consent.",
+      "Log access, correction, deletion, or grievance requests instead of handling them casually."
+    ],
+    redFlags: [
+      "A person says they do not want to share one field but staff continue anyway.",
+      "A beneficiary is photographed because the moment feels useful for reporting.",
+      "Field notes or lists are shared in WhatsApp groups for convenience.",
+      "A rights request is brushed off with a verbal assurance instead of being recorded."
+    ],
+    safeDefaults: [
+      "Use short, direct language: what is being collected, why, and how the person can ask questions later.",
+      "If someone declines a question, continue only with the agreed parts.",
+      "Ask separately before taking any photo, video, or audio.",
+      "If unsure whether a use was covered, pause and escalate instead of guessing."
+    ],
+    escalateWhen: [
+      "A beneficiary asks to access, correct, delete, or formally complain about their data.",
+      "A device containing forms or lists is lost, stolen, or shared with the wrong person.",
+      "A partner or government official asks for individual-level data outside the normal workflow.",
+      "The interaction involves a child, distress, or sensitive health information and the purpose is not clearly direct care."
+    ],
+    practiceNext: [
+      { label: "Use a scenario", href: "../../scenarios/beneficiary-refuses-one-field/" },
+      { label: "Open a tool", href: "../../tools/can-we-collect-this-data/" }
+    ]
+  },
+  {
+    slug: "programme-officer",
+    title: "Programme Officer",
+    summary: "Guidance for the people who oversee enrolment, reporting, partner sharing, and the first escalation path for beneficiary data issues.",
+    audience: "Programme officers, implementation leads, district coordinators, and NGO team supervisors",
+    keyFocus: "Consent coverage, purpose limitation, partner sharing checks, rights workflow ownership, and calm escalation",
+    whatYouHandle: [
+      "Programme delivery decisions, MIS supervision, field-team guidance, donor or partner reporting, and operational escalation.",
+      "The point where field activity, data collection, and formal accountability meet."
+    ],
+    responsibilities: [
+      "Confirm the data being collected matches a defined programme purpose.",
+      "Make sure notices and consent records are actually documented and not only assumed.",
+      "Check whether partner or government sharing is within the original scope or supported by a lawful basis.",
+      "Keep a named process for rights requests and grievances that can be resolved within 90 days.",
+      "Escalate incidents early when a breach, complaint, or unusual sharing request appears."
+    ],
+    redFlags: [
+      "A programme form keeps growing because teams want 'all useful details'.",
+      "A donor or evaluator asks for row-level data and the team starts preparing it before checking coverage and agreements.",
+      "No one can clearly say who handles correction or deletion requests.",
+      "A beneficiary complaint is treated as a communication issue rather than a rights issue."
+    ],
+    safeDefaults: [
+      "Ask whether the current purpose really needs each field being collected.",
+      "Use aggregated or anonymised reporting whenever that still serves the need.",
+      "Require a documented route for rights and grievance handling rather than informal follow-up.",
+      "If sharing is not obviously covered, stop and check legal basis, contract, and notice scope first."
+    ],
+    escalateWhen: [
+      "A rights request cannot be resolved from the normal workflow.",
+      "A partner asks for individual-level data without a clear agreement or basis.",
+      "A breach may have occurred, even if the exact impact is still unknown.",
+      "A child-related, health-related, or cross-border sharing issue falls outside the routine programme process."
+    ],
+    practiceNext: [
+      { label: "Use a scenario", href: "../../scenarios/child-photo-donor-deck/" },
+      { label: "Open a tool", href: "../../tools/consent-notice-review-checklist/" }
+    ]
+  },
+  {
+    slug: "developer-product-builder",
+    title: "Developer or Product Builder",
+    summary: "A guide for system owners and builders who shape how personal data is stored, accessed, exported, and secured inside digital platforms.",
+    audience: "Developers, product builders, platform owners, and technical administrators",
+    keyFocus: "Data inventory, RBAC, logs, exports, backups, API tokens, and processor-aligned safeguards",
+    whatYouHandle: [
+      "Features, forms, APIs, dashboards, integrations, exports, backups, and admin access inside systems that process personal data.",
+      "Technical controls that decide whether privacy commitments can actually be enforced."
+    ],
+    responsibilities: [
+      "Know what personal data the system stores and where it lives.",
+      "Restrict access and export rights to the minimum set of authorised roles.",
+      "Retain logs for a minimum of one year and make them reviewable.",
+      "Protect data in transit and at rest, including backups and offline devices.",
+      "Ensure vendors or processors are contractually held to equivalent safeguards."
+    ],
+    redFlags: [
+      "Everyone with a login can export beneficiary-level CSV files.",
+      "Inactive accounts stay enabled because no one owns quarterly review.",
+      "A shared token runs integrations for years without rotation or logging.",
+      "Backups exist but are broadly accessible and not clearly protected."
+    ],
+    safeDefaults: [
+      "Start reviews with a data dictionary, access map, and export map.",
+      "Prefer aggregated or masked views for analysis unless row-level access is justified.",
+      "Treat logs, backups, and API credentials as first-class controls, not afterthoughts.",
+      "When a new integration or export is proposed, ask what personal data moves and who really needs it."
+    ],
+    escalateWhen: [
+      "There is evidence of unusual access, data exfiltration, or credential compromise.",
+      "A system change affects children's data, health data, or a sensitive government-linked workflow.",
+      "A vendor-hosted platform lacks clear contractual security obligations.",
+      "A feature requires broader access than the current role model supports safely."
+    ],
+    practiceNext: [
+      { label: "Use a scenario", href: "../../scenarios/lost-phone-offline-forms/" },
+      { label: "Open a tool", href: "../../tools/is-this-a-breach/" }
+    ]
+  }
+];
+
+const ngoToolPages = [
+  {
+    slug: "can-we-collect-this-data",
+    title: "Decision Tree: Can We Collect This Data?",
+    summary: "A quick decision aid for deciding whether a team should collect a specific data point in the first place.",
+    audience: "Field teams, programme leads, and form designers",
+    keyFocus: "Purpose limitation, minimisation, notice readiness, and special caution for children and sensitive contexts",
+    whenToUse: "Use this before adding a new field to a form, asking for a document, taking a photo, or starting a new data-collection step.",
+    steps: [
+      "Step 1: Can you clearly state the specific programme purpose for this data point? If no, do not collect it yet.",
+      "Step 2: Is this the minimum data needed for that purpose? If no, reduce the field list first.",
+      "Step 3: Can the person be told in plain language what is being collected and why? If no, fix the notice before collecting.",
+      "Step 4: Is the use covered by valid consent or a clearly applicable legitimate-use basis? If no, pause and resolve the legal basis.",
+      "Step 5: If the data involves a child, health information, recordings, or identifiable photos, have you checked the added safeguards and boundaries? If no, escalate."
+    ],
+    outcomes: [
+      "Proceed only when the purpose, minimum data set, notice, and legal basis are all clear.",
+      "Use a safer alternative such as an aggregated answer, a narrower field, or no collection at all when the exact data point is not essential."
+    ],
+    relatedLinks: [
+      { label: "Role guide", href: "../../roles/field-staff-fellows/" },
+      { label: "Scenario", href: "../../scenarios/beneficiary-refuses-one-field/" }
+    ]
+  },
+  {
+    slug: "is-this-a-breach",
+    title: "Decision Tree: Is This a Breach?",
+    summary: "A fast triage tool for deciding whether an incident should be treated as a personal data breach and escalated immediately.",
+    audience: "All NGO staff, especially field teams, programme officers, and technical owners",
+    keyFocus: "Unauthorised access, wrong sharing, loss of devices, accidental disclosure, and early escalation",
+    whenToUse: "Use this the moment a device is lost, a file is sent wrongly, a system account looks compromised, or personal data may have been seen by someone who should not have it.",
+    steps: [
+      "Step 1: Did personal data become unavailable, exposed, shared, changed, or accessed without authorisation? If yes, treat it as a breach candidate.",
+      "Step 2: Was a device, spreadsheet, account, chat message, or printed list involved? If yes, assume evidence must be preserved and escalate.",
+      "Step 3: Can you confirm the data stayed fully within authorised access and no confidentiality, integrity, or availability issue occurred? If no, keep treating it as a breach candidate.",
+      "Step 4: Would delay make containment harder, such as remote wipe, access revocation, or wrong-recipient follow-up? If yes, act immediately and investigate in parallel."
+    ],
+    outcomes: [
+      "If there is unauthorised access, wrong disclosure, loss, destruction, or unavailability affecting personal data, escalate as a breach immediately.",
+      "When unsure, treat it as a breach first and refine the facts after containment starts."
+    ],
+    relatedLinks: [
+      { label: "Checklist", href: "../../tools/breach-first-response-checklist/" },
+      { label: "Scenario", href: "../../scenarios/lost-phone-offline-forms/" }
+    ]
+  },
+  {
+    slug: "breach-first-response-checklist",
+    title: "Checklist: Breach First Response",
+    summary: "A practical first-response checklist for the first hour and first six hours after discovering a likely breach.",
+    audience: "Programme leads, IT or platform teams, and first discoverers of incidents",
+    keyFocus: "Containment, evidence preservation, affected-data scoping, and fast escalation",
+    whenToUse: "Use this as soon as a likely breach is discovered, especially for lost devices, wrong sharing, unauthorised system access, or compromised accounts.",
+    steps: [
+      "Immediate containment: preserve evidence, stop further spread, and trigger remote wipe, credential revocation, or wrong-recipient follow-up as relevant.",
+      "Scope quickly: identify what categories of personal data were involved, how many people may be affected, and whether the incident is still active.",
+      "Notify internally without delay: bring in the responsible technical and programme escalation path immediately rather than waiting for a finished investigation.",
+      "Prepare beneficiary and regulator communication in parallel: initial reporting should not wait for perfect information."
+    ],
+    outcomes: [
+      "The first goal is to contain and document, not to hide or quietly fix the incident.",
+      "A timely, incomplete report is better than a late report after the evidence has already shifted."
+    ],
+    relatedLinks: [
+      { label: "Decision tree", href: "../../tools/is-this-a-breach/" },
+      { label: "Role guide", href: "../../roles/programme-officer/" }
+    ]
+  },
+  {
+    slug: "consent-notice-review-checklist",
+    title: "Checklist: Consent Notice Review",
+    summary: "A short review aid for checking whether a notice and consent flow are understandable, itemised, and specific enough before use.",
+    audience: "Programme officers, field leads, and anyone preparing enrolment or media-consent materials",
+    keyFocus: "Standalone notice, itemised fields, specific purpose, withdrawal path, and documentation quality",
+    whenToUse: "Use this before approving a beneficiary form, verbal-consent process, photo consent sheet, or translated notice.",
+    steps: [
+      "Check that the notice stands on its own and is not buried inside a long agreement.",
+      "Check that the exact fields being collected are itemised rather than hidden behind broad wording.",
+      "Check that the purpose is specific and understandable, not 'all future uses'.",
+      "Check that the withdrawal route and contact point are clearly explained.",
+      "Check that the documentation route fits the setting, including witness-backed verbal consent where needed."
+    ],
+    outcomes: [
+      "A notice is ready only when a person can understand it independently and decide meaningfully whether to agree.",
+      "If one part is vague, expand it before use rather than relying on verbal explanation later."
+    ],
+    relatedLinks: [
+      { label: "Role guide", href: "../../roles/programme-officer/" },
+      { label: "Scenario", href: "../../scenarios/child-photo-donor-deck/" }
+    ]
+  }
+];
+
+const ngoScenarioPages = [
+  {
+    slug: "beneficiary-refuses-one-field",
+    title: "Scenario: Beneficiary Refuses One Field",
+    summary: "A field enrolment case about partial refusal and whether a team can keep collecting the rest of the form.",
+    audience: "Field staff, outreach workers, and programme supervisors",
+    setting: "A field worker is enrolling a beneficiary for a programme form that includes name, phone number, village, household size, and income range.",
+    situation: "The beneficiary agrees to most questions but says they do not want to share income information.",
+    bestResponse: "Respect the refusal on that field, continue only with the agreed questions if the programme can still proceed, and avoid inventing or forcing an answer.",
+    whyBest: [
+      "Consent should remain free and specific, which means a person can decline part of a data request.",
+      "The field team should not convert refusal into pressure just because the form was originally designed with that field."
+    ],
+    riskyOptions: [
+      "Recording a guessed or zero value to make the form complete.",
+      "Telling the person the whole service or conversation cannot continue unless every field is answered, unless that is genuinely required and clearly explained beforehand.",
+      "Promising that the field 'does not matter' and collecting it anyway."
+    ],
+    escalateNote: "Escalate if the programme cannot operate without that field, or if the field was not truly necessary and the form needs redesign.",
+    relatedLinks: [
+      { label: "Role guide", href: "../../roles/field-staff-fellows/" },
+      { label: "Tool", href: "../../tools/can-we-collect-this-data/" }
+    ]
+  },
+  {
+    slug: "child-photo-donor-deck",
+    title: "Scenario: Child Photo for Donor Deck",
+    summary: "A common reporting case about whether a useful programme photograph can be reused for donor communication.",
+    audience: "Programme officers, communications leads, and field teams",
+    setting: "At a community activity, a team member has a strong photo of a child with staff during service delivery.",
+    situation: "The photo would work well in a donor deck, but the original interaction focused on service delivery rather than media use.",
+    bestResponse: "Treat donor-use photography as a separate purpose and obtain clear parental or guardian consent before using the child’s image for reports or external communication.",
+    whyBest: [
+      "Direct care or programme interaction does not automatically cover donor or storytelling reuse.",
+      "Children’s data requires additional caution, and identifiable images are personal data."
+    ],
+    riskyOptions: [
+      "Assuming the photo is fine because the child’s name will not be shown.",
+      "Relying on the fact that the programme visit itself was legitimate to justify a different media purpose.",
+      "Using the image internally first and deciding on external use later."
+    ],
+    escalateNote: "Escalate if no clear parental permission exists, if the image might reveal sensitive context, or if the team is unsure how broadly it will be circulated.",
+    relatedLinks: [
+      { label: "Role guide", href: "../../roles/programme-officer/" },
+      { label: "Tool", href: "../../tools/consent-notice-review-checklist/" }
+    ]
+  },
+  {
+    slug: "lost-phone-offline-forms",
+    title: "Scenario: Lost Phone with Offline Forms",
+    summary: "A device-loss case focused on the first response when personal data may be sitting offline on a field phone.",
+    audience: "Field implementors, programme leads, and technical support teams",
+    setting: "A field phone used for offline form collection is lost while returning from programme work.",
+    situation: "The device may contain unsynced forms with beneficiary details, and the staff member is unsure whether to wait until the phone turns up.",
+    bestResponse: "Treat the loss as a likely breach, report it immediately, preserve the timeline, and start containment actions such as remote wipe or account review without waiting for certainty.",
+    whyBest: [
+      "A lost device with personal data is a breach candidate even before actual misuse is proven.",
+      "Delay makes containment and documentation harder, especially when remote actions or log checks are time-sensitive."
+    ],
+    riskyOptions: [
+      "Waiting to see if the phone is recovered before telling anyone.",
+      "Deleting central records quietly without preserving incident evidence.",
+      "Assuming there is no issue because the device belonged to an internal team member."
+    ],
+    escalateNote: "Escalate to the designated technical and programme response path immediately and document what data the device likely held.",
+    relatedLinks: [
+      { label: "Role guide", href: "../../roles/developer-product-builder/" },
+      { label: "Tool", href: "../../tools/is-this-a-breach/" }
+    ]
+  }
+];
 
 function renderNgoSitePage({
   title,
@@ -6206,6 +6467,168 @@ function renderNgoSectionCard(section, hrefPrefix = ".") {
         </article>`;
 }
 
+function renderNgoHubResourceCard(item) {
+  const focusLine = item.keyFocus ?? item.whenToUse ?? item.setting ?? "Practical DPDP guidance for NGO teams.";
+  return `        <article class="resource-card">
+          <div class="badge-row">
+            <span class="badge success">Live now</span>
+          </div>
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.summary)}</p>
+          <div class="meta-list">
+            <div>Audience: ${escapeHtml(item.audience)}</div>
+            <div>Focus: ${escapeHtml(focusLine)}</div>
+          </div>
+          <a class="cta-link primary" href="./${escapeHtml(item.slug)}/">Open page</a>
+        </article>`;
+}
+
+function renderBulletList(items) {
+  return items.map((item) => `          <div>${escapeHtml(item)}</div>`).join("\n");
+}
+
+function renderNgoActionLinks(links) {
+  return links.map((link) => `          <a class="cta-link" href="${link.href}">${escapeHtml(link.label)}</a>`).join("\n");
+}
+
+function renderRoleDetailHtml(page) {
+  return renderNgoSitePage({
+    title: page.title,
+    eyebrow: "Role guide",
+    heroTitle: page.title,
+    intro: page.summary,
+    note: "This page is designed for quick practical use. It focuses on safe defaults and escalation points rather than legal jargon.",
+    currentKey: "roles",
+    basePath: "../../",
+    bodyHtml: `      <section class="panel">
+        <h2 class="section-title">What this role usually handles</h2>
+        <div class="bullet-list">
+${renderBulletList(page.whatYouHandle)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Key DPDP responsibilities</h2>
+        <div class="bullet-list">
+${renderBulletList(page.responsibilities)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Red flags</h2>
+        <div class="bullet-list">
+${renderBulletList(page.redFlags)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Safe default actions</h2>
+        <div class="bullet-list">
+${renderBulletList(page.safeDefaults)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Escalate when</h2>
+        <div class="bullet-list">
+${renderBulletList(page.escalateWhen)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Practice next</h2>
+        <div class="nav-list">
+${renderNgoActionLinks(page.practiceNext)}
+        </div>
+      </section>`
+  });
+}
+
+function renderToolDetailHtml(page) {
+  return renderNgoSitePage({
+    title: page.title,
+    eyebrow: "Decision aid",
+    heroTitle: page.title,
+    intro: page.summary,
+    note: page.whenToUse,
+    currentKey: "tools",
+    basePath: "../../",
+    bodyHtml: `      <section class="panel">
+        <h2 class="section-title">When to use this tool</h2>
+        <div class="bullet-list">
+          <div>${escapeHtml(page.whenToUse)}</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Steps</h2>
+        <div class="bullet-list">
+${renderBulletList(page.steps)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">What good output looks like</h2>
+        <div class="bullet-list">
+${renderBulletList(page.outcomes)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Use with</h2>
+        <div class="nav-list">
+${renderNgoActionLinks(page.relatedLinks)}
+        </div>
+      </section>`
+  });
+}
+
+function renderScenarioDetailHtml(page) {
+  return renderNgoSitePage({
+    title: page.title,
+    eyebrow: "Scenario lab",
+    heroTitle: page.title,
+    intro: page.summary,
+    note: "Read the situation first, decide what should happen next, and then compare your instinct with the guided answer.",
+    currentKey: "scenarios",
+    basePath: "../../",
+    bodyHtml: `      <section class="panel">
+        <h2 class="section-title">Setting</h2>
+        <div class="bullet-list">
+          <div>${escapeHtml(page.setting)}</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Situation</h2>
+        <div class="bullet-list">
+          <div>${escapeHtml(page.situation)}</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Best response</h2>
+        <div class="bullet-list">
+          <div>${escapeHtml(page.bestResponse)}</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Why this is the safest choice</h2>
+        <div class="bullet-list">
+${renderBulletList(page.whyBest)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Risky options to avoid</h2>
+        <div class="bullet-list">
+${renderBulletList(page.riskyOptions)}
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Escalation note</h2>
+        <div class="bullet-list">
+          <div>${escapeHtml(page.escalateNote)}</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Related pages</h2>
+        <div class="nav-list">
+${renderNgoActionLinks(page.relatedLinks)}
+        </div>
+      </section>`
+  });
+}
+
 function renderNgoLandingHtml(latestQuiz) {
   const latestCard = latestQuiz ? `      <section class="spotlight">
         <div class="badge-row">
@@ -6249,21 +6672,21 @@ function renderNgoSectionHubHtml(sectionKey) {
       title: "NGO Roles Hub",
       eyebrow: "Role-based guidance",
       heroTitle: "Role-based DPDP guidance for NGO teams",
-      intro: "This section is prepared to host concise guidance pages for the main NGO roles that handle personal data or shape data systems.",
-      note: "We are creating these pages next so the site becomes useful for onboarding and decision support beyond quizzes."
+      intro: "This section now includes the first role guides for NGO teams that collect, supervise, or technically manage personal data.",
+      note: "Use these pages for onboarding, refresher practice, and clear escalation defaults."
     },
     scenarios: {
       title: "NGO Scenario Hub",
       eyebrow: "Scenario labs",
       heroTitle: "Scenario labs for practical DPDP judgment",
-      intro: "This section is prepared for realistic NGO case exercises where users choose what should happen next and then review guided reasoning.",
+      intro: "This section now includes realistic NGO situations where users can test their judgment and compare it with guided reasoning.",
       note: "Scenario labs are designed to complement quizzes by focusing on applied judgment rather than only right or wrong recall."
     },
     tools: {
       title: "NGO Tools Hub",
       eyebrow: "Decision aids",
       heroTitle: "Digital DPDP tools for NGO implementation",
-      intro: "This section is prepared for practical tools such as decision trees, checklists, and readiness self-assessments that teams can use during actual work.",
+      intro: "This section now includes practical decision trees and checklists that teams can use during actual field, programme, and platform work.",
       note: "The aim is to make recurring compliance decisions faster, clearer, and easier to repeat across teams."
     },
     about: {
@@ -6276,7 +6699,11 @@ function renderNgoSectionHubHtml(sectionKey) {
   };
 
   const page = pageMap[sectionKey];
-  const planItems = ngoSectionPlans[sectionKey] ?? [];
+  const libraryMap = {
+    roles: ngoRolePages,
+    scenarios: ngoScenarioPages,
+    tools: ngoToolPages
+  };
   const bodyHtml = sectionKey === "about"
     ? `      <section class="panel">
         <h2 class="section-title">Current site status</h2>
@@ -6288,9 +6715,9 @@ function renderNgoSectionHubHtml(sectionKey) {
         </div>
       </section>`
     : `      <section class="panel">
-        <h2 class="section-title">Planned first-wave content</h2>
-        <div class="bullet-list">
-${planItems.map((item) => `          <div>${escapeHtml(item)}</div>`).join("\n")}
+        <h2 class="section-title">Live pages in this section</h2>
+        <div class="grid">
+${(libraryMap[sectionKey] ?? []).map(renderNgoHubResourceCard).join("\n")}
         </div>
       </section>`;
 
@@ -6304,6 +6731,26 @@ ${planItems.map((item) => `          <div>${escapeHtml(item)}</div>`).join("\n")
     basePath: "../",
     bodyHtml
   });
+}
+
+function writeNgoContentPages() {
+  for (const page of ngoRolePages) {
+    const dir = path.join(ngoDir, "roles", page.slug);
+    ensureDir(dir);
+    fs.writeFileSync(path.join(dir, "index.html"), renderRoleDetailHtml(page), "utf8");
+  }
+
+  for (const page of ngoToolPages) {
+    const dir = path.join(ngoDir, "tools", page.slug);
+    ensureDir(dir);
+    fs.writeFileSync(path.join(dir, "index.html"), renderToolDetailHtml(page), "utf8");
+  }
+
+  for (const page of ngoScenarioPages) {
+    const dir = path.join(ngoDir, "scenarios", page.slug);
+    ensureDir(dir);
+    fs.writeFileSync(path.join(dir, "index.html"), renderScenarioDetailHtml(page), "utf8");
+  }
 }
 
 function listQuizDirs(baseDir) {
@@ -6519,6 +6966,7 @@ function writeNgoHub() {
   ensureDir(path.join(ngoDir, "scenarios"));
   ensureDir(path.join(ngoDir, "tools"));
   ensureDir(path.join(ngoDir, "about"));
+  writeNgoContentPages();
   const publishedDaily = listQuizDirs(docsDir)
     .map((folder) => quizCatalog.find((quiz) => folderNameFor(quiz) === folder))
     .filter(Boolean);

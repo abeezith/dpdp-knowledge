@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NGO Roles Hub</title>
+  <title>Developer or Product Builder</title>
   <style>
     :root {
       --brand: #e4572e;
@@ -263,61 +263,71 @@
       </div>
     </div>
     <section class="hero">
-      <p class="eyebrow">Role-based guidance</p>
-      <h1>Role-based DPDP guidance for NGO teams</h1>
-      <p>This section now includes the first role guides for NGO teams that collect, supervise, or technically manage personal data.</p>
-      <div class="hero-note">Use these pages for onboarding, refresher practice, and clear escalation defaults.</div>
+      <p class="eyebrow">Role guide</p>
+      <h1>Developer or Product Builder</h1>
+      <p>A guide for system owners and builders who shape how personal data is stored, accessed, exported, and secured inside digital platforms.</p>
+      <div class="hero-note">This page is designed for quick practical use. It focuses on safe defaults and escalation points rather than legal jargon.</div>
     </section>
     <nav class="nav-wrap" aria-label="NGO learning navigation">
       <div class="nav-list">
-          <a class="nav-link" href="../">Home</a>
-          <a class="nav-link" href="../quizzes/">Quizzes</a>
-          <a class="nav-link active" href="../roles/" aria-current="page">Roles</a>
-          <a class="nav-link" href="../scenarios/">Scenarios</a>
-          <a class="nav-link" href="../tools/">Tools</a>
-          <a class="nav-link" href="../about/">About</a>
+          <a class="nav-link" href="../../">Home</a>
+          <a class="nav-link" href="../../quizzes/">Quizzes</a>
+          <a class="nav-link active" href="../../roles/" aria-current="page">Roles</a>
+          <a class="nav-link" href="../../scenarios/">Scenarios</a>
+          <a class="nav-link" href="../../tools/">Tools</a>
+          <a class="nav-link" href="../../about/">About</a>
       </div>
     </nav>
     <div class="content-stack">
       <section class="panel">
-        <h2 class="section-title">Live pages in this section</h2>
-        <div class="grid">
-        <article class="resource-card">
-          <div class="badge-row">
-            <span class="badge success">Live now</span>
-          </div>
-          <h3>Field Staff and Fellows</h3>
-          <p>A practical guide for people collecting information directly from community members during surveys, visits, events, and enrolment workflows.</p>
-          <div class="meta-list">
-            <div>Audience: Field staff, outreach workers, enumerators, mobilisation teams, and community fellows</div>
-            <div>Focus: Plain-language notice, consent quality, photography and recording boundaries, and respectful rights handling</div>
-          </div>
-          <a class="cta-link primary" href="./field-staff-fellows/">Open page</a>
-        </article>
-        <article class="resource-card">
-          <div class="badge-row">
-            <span class="badge success">Live now</span>
-          </div>
-          <h3>Programme Officer</h3>
-          <p>Guidance for the people who oversee enrolment, reporting, partner sharing, and the first escalation path for beneficiary data issues.</p>
-          <div class="meta-list">
-            <div>Audience: Programme officers, implementation leads, district coordinators, and NGO team supervisors</div>
-            <div>Focus: Consent coverage, purpose limitation, partner sharing checks, rights workflow ownership, and calm escalation</div>
-          </div>
-          <a class="cta-link primary" href="./programme-officer/">Open page</a>
-        </article>
-        <article class="resource-card">
-          <div class="badge-row">
-            <span class="badge success">Live now</span>
-          </div>
-          <h3>Developer or Product Builder</h3>
-          <p>A guide for system owners and builders who shape how personal data is stored, accessed, exported, and secured inside digital platforms.</p>
-          <div class="meta-list">
-            <div>Audience: Developers, product builders, platform owners, and technical administrators</div>
-            <div>Focus: Data inventory, RBAC, logs, exports, backups, API tokens, and processor-aligned safeguards</div>
-          </div>
-          <a class="cta-link primary" href="./developer-product-builder/">Open page</a>
-        </article>
+        <h2 class="section-title">What this role usually handles</h2>
+        <div class="bullet-list">
+          <div>Features, forms, APIs, dashboards, integrations, exports, backups, and admin access inside systems that process personal data.</div>
+          <div>Technical controls that decide whether privacy commitments can actually be enforced.</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Key DPDP responsibilities</h2>
+        <div class="bullet-list">
+          <div>Know what personal data the system stores and where it lives.</div>
+          <div>Restrict access and export rights to the minimum set of authorised roles.</div>
+          <div>Retain logs for a minimum of one year and make them reviewable.</div>
+          <div>Protect data in transit and at rest, including backups and offline devices.</div>
+          <div>Ensure vendors or processors are contractually held to equivalent safeguards.</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Red flags</h2>
+        <div class="bullet-list">
+          <div>Everyone with a login can export beneficiary-level CSV files.</div>
+          <div>Inactive accounts stay enabled because no one owns quarterly review.</div>
+          <div>A shared token runs integrations for years without rotation or logging.</div>
+          <div>Backups exist but are broadly accessible and not clearly protected.</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Safe default actions</h2>
+        <div class="bullet-list">
+          <div>Start reviews with a data dictionary, access map, and export map.</div>
+          <div>Prefer aggregated or masked views for analysis unless row-level access is justified.</div>
+          <div>Treat logs, backups, and API credentials as first-class controls, not afterthoughts.</div>
+          <div>When a new integration or export is proposed, ask what personal data moves and who really needs it.</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Escalate when</h2>
+        <div class="bullet-list">
+          <div>There is evidence of unusual access, data exfiltration, or credential compromise.</div>
+          <div>A system change affects children's data, health data, or a sensitive government-linked workflow.</div>
+          <div>A vendor-hosted platform lacks clear contractual security obligations.</div>
+          <div>A feature requires broader access than the current role model supports safely.</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="section-title">Practice next</h2>
+        <div class="nav-list">
+          <a class="cta-link" href="../../scenarios/lost-phone-offline-forms/">Use a scenario</a>
+          <a class="cta-link" href="../../tools/is-this-a-breach/">Open a tool</a>
         </div>
       </section>
     </div>
