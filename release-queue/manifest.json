@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T13:33:57.749Z",
+  "updatedAt": "2026-08-10T11:56:47.205Z",
   "publishedThisRun": "quiz-35-retention-erasure-operations",
   "latestPublishedFolder": "quiz-35-retention-erasure-operations",
   "lastPublishedAt": "2026-07-30T13:33:57.746Z",
@@ -12,7 +12,6 @@
     "quiz-39-platform-audit-evidence",
     "quiz-40-notice-design-withdrawal-paths",
     "quiz-41-bihar-voice-consent-workflows",
-    "quiz-42-developer-export-access",
     "quiz-42-platform-data-inventory-kickoff",
     "quiz-43-karuna-child-photo-boundaries",
     "quiz-44-rights-request-ledger",
@@ -22,7 +21,8 @@
     "quiz-48-processor-contract-handoffs",
     "quiz-49-beginner-consent-language",
     "quiz-50-advanced-nikshay-role-clarity",
-    "quiz-51-retention-pre-erasure-notice"
+    "quiz-51-retention-pre-erasure-notice",
+    "quiz-52-developer-export-access"
   ],
   "queuedCount": 17
 }

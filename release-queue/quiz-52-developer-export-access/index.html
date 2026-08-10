@@ -9,7 +9,7 @@
     window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
     plausible.init()
   </script>
-  <title>DPDP Quiz 42 - Developer Export Access</title>
+  <title>DPDP Quiz 52 - Developer Export Access</title>
   <style>
     :root {
       --teal: #E4572E;
@@ -427,7 +427,7 @@
           <img src="./PF_Logo.jpg" alt="Piramal Foundation logo">
         </div>
       </div>
-      <p class="eyebrow">DPDP Quiz 42 | Developer Export Access</p>
+      <p class="eyebrow">DPDP Quiz 52 | Developer Export Access</p>
       <h1>Developer Export Access: Logs, Tokens, and Least-Privilege Controls</h1>
       <p>This queued set shifts away from Bihar voice workflows into platform engineering. It checks whether developers and system owners can reduce export risk before beneficiary data leaves the system through APIs, spreadsheets, or admin tools.</p>
       <div class="topics">
@@ -444,12 +444,12 @@
             "topic": "CSV export restriction",
             "text": "A custom MIS lets every logged-in user export beneficiary-level CSV files because the team wants convenience. Which DPDP-oriented correction is closest to the approved checklist?",
             "options": [
+                  "Allow exports but disable audit logging so the interface feels faster",
+                  "Move the export button to a harder-to-find menu and treat that as enough, without any further review",
                   "Leave exports open because the users are all internal staff",
-                  "Move the export button to a harder-to-find menu and treat that as enough, as the final step",
-                  "Restrict export capability to authorised roles and keep a record of who downloaded what",
-                  "Allow exports but disable audit logging so the interface feels faster"
+                  "Restrict export capability to authorised roles and keep a record of who downloaded what"
             ],
-            "correct": 2,
+            "correct": 3,
             "explanation": "The platform audit checklist says bulk data exports should be restricted and logged. Convenience does not replace RBAC or auditability."
       },
       {
@@ -457,12 +457,12 @@
             "topic": "Inactive account review",
             "text": "During a DHIS2 review, a developer sees many enabled accounts that have not logged in for over a year. What does the source pack treat as the correct next step?",
             "options": [
-                  "Review and deactivate or limit stale accounts as part of access-control hygiene",
                   "Keep them because only active misuse creates DPDP risk",
-                  "Wait until May 13, 2027 before changing account status",
-                  "Publish the user list to all teams so anyone can judge who seems unnecessary, with no escalation at all"
+                  "Publish the user list to all teams so anyone can judge who seems unnecessary, and treat that as enough",
+                  "Review and deactivate or limit stale accounts as part of access-control hygiene",
+                  "Wait until May 13, 2027 before changing account status"
             ],
-            "correct": 0,
+            "correct": 2,
             "explanation": "The role guidance and audit checklist both describe inactive accounts as a security risk that should be reviewed and restricted, not left open."
       },
       {
@@ -470,12 +470,12 @@
             "topic": "API token discipline",
             "text": "What does the DHIS2-focused checklist expect for API access used by integrations and scripts?",
             "options": [
-                  "API controls matter only after the government issues a cross-border negative list",
                   "API keys or tokens should be rotated regularly and API calls should be logged",
-                  "One shared permanent token is preferable because rotation complicates automation",
-                  "API calls do not need logging if they come from trusted internal systems"
+                  "API controls matter only after the government issues a cross-border negative list",
+                  "API calls do not need logging if they come from trusted internal systems",
+                  "One shared permanent token is preferable because rotation complicates automation"
             ],
-            "correct": 1,
+            "correct": 0,
             "explanation": "The DHIS2 checklist explicitly asks whether API keys or tokens are rotated regularly and whether API calls are logged."
       },
       {
@@ -483,12 +483,12 @@
             "topic": "Backup protection",
             "text": "A team has daily backups of a beneficiary database, but the backups are copied to an unprotected drive readable by many staff. Which interpretation fits Rule 6 guidance best?",
             "options": [
-                  "Backups should support continued processing, but they still need appropriate protection such as access control and encryption",
-                  "This is acceptable because having any backup satisfies the safeguard requirement, as the final step, without any further review",
-                  "Backups fall outside DPDP because they are only for disaster recovery, without any further review",
-                  "The problem disappears if the drive is located inside India, with no escalation at all"
+                  "Backups fall outside DPDP because they are only for disaster recovery, with nothing else checked",
+                  "This is acceptable because having any backup satisfies the safeguard requirement, even if the programme is urgent, with nothing else checked",
+                  "The problem disappears if the drive is located inside India, without any further review",
+                  "Backups should support continued processing, but they still need appropriate protection such as access control and encryption"
             ],
-            "correct": 0,
+            "correct": 3,
             "explanation": "Rule 6 requires safeguards such as encryption and access control, and backups are part of continued processing. A broadly accessible backup copy is not a compliant control posture."
       },
       {
@@ -496,12 +496,12 @@
             "topic": "Vendor contract baseline",
             "text": "When Piramal Foundation uses a vendor to host or maintain a system processing beneficiary data, what must the written arrangement cover?",
             "options": [
-                  "Equivalent security safeguards for the Data Processor under contract",
                   "No contract is needed if the vendor is already technically skilled",
                   "A promise that the vendor will share data only on request from donors",
+                  "Equivalent security safeguards for the Data Processor under contract",
                   "Only commercial pricing and uptime terms"
             ],
-            "correct": 0,
+            "correct": 2,
             "explanation": "The act summary says Data Processor contracts must include data security requirements, and Rule 6 expects equivalent safeguards through the vendor arrangement."
       }
 ];
@@ -525,8 +525,8 @@
     const quizTelemetryId = window.location.pathname.replace(/\/+$/, "") || "/";
 
     const completionNav = {
-      previousHref: "../quiz-41-bihar-voice-consent-workflows/",
-      previousLabel: "Open Quiz 41",
+      previousHref: "../quiz-51-retention-pre-erasure-notice/",
+      previousLabel: "Open Quiz 51",
       hubHref: "../"
     };
 

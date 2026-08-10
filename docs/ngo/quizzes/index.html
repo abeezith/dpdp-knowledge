@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DPDP Quiz Hub for Indian NGOs</title>
+  <style>
+    :root {
+      --brand: #e4572e;
+      --brand-dark: #8a3420;
+      --brand-soft: #fff2ec;
+      --brand-soft-2: #fde6df;
+      --ink: #1f1f1f;
+      --muted: #5b5b5b;
+      --line: #ead4cc;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --success: #1f8f4e;
+      --shadow: 0 18px 40px rgba(122, 36, 16, 0.09);
+      --toolbar-shadow: 0 10px 24px rgba(54, 54, 54, 0.08);
+      --zoom: 1;
+      --body-size: clamp(16px, calc(16px * var(--zoom)), 19px);
+      --small-size: clamp(13px, calc(13px * var(--zoom)), 15px);
+      --title-size: clamp(2rem, calc(2.2rem * var(--zoom)), 3rem);
+      --card-title: clamp(1.25rem, calc(1.35rem * var(--zoom)), 1.75rem);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(228, 87, 46, 0.08), transparent 24%),
+        linear-gradient(180deg, #fffdfc 0%, #ffffff 20%, #ffffff 100%);
+      font-size: var(--body-size);
+      line-height: 1.6;
+    }
+    .shell {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 88px 20px 56px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .toolbar-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(228, 87, 46, 0.18);
+      box-shadow: var(--toolbar-shadow);
+      backdrop-filter: blur(12px);
+    }
+    .toolbar-label,
+    .zoom-readout {
+      color: var(--muted);
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .tool-btn {
+      border: 1px solid rgba(228, 87, 46, 0.22);
+      background: var(--card);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 11px 16px;
+      min-width: 46px;
+      font-size: var(--small-size);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .tool-btn:hover,
+    .tool-btn:focus-visible,
+    .quiz-link:hover,
+    .quiz-link:focus-visible {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(228, 87, 46, 0.14);
+    }
+    .zoom-readout {
+      min-width: 58px;
+      text-align: center;
+    }
+    .hero,
+    .quiz-card {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(180deg, #ffffff 0%, #fffaf7 100%);
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 30px;
+      margin-bottom: 26px;
+    }
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 16px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      margin-bottom: 22px;
+    }
+    .logo-wrap img {
+      display: block;
+      max-width: min(320px, 72vw);
+      height: auto;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--brand-dark);
+      font-size: var(--small-size);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 14px;
+      font-size: var(--title-size);
+      line-height: 1.12;
+    }
+    .hero p {
+      margin: 0;
+      max-width: 760px;
+      color: #353535;
+    }
+    .hero-note {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--brand);
+      border-radius: 16px;
+      background: var(--brand-soft);
+      color: #3f312c;
+    }
+    .section-title {
+      margin: 0 0 16px;
+      font-size: clamp(1.35rem, calc(1.45rem * var(--zoom)), 1.8rem);
+    }
+    .quiz-list {
+      display: grid;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+    .quiz-card {
+      padding: 24px;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .badge.success {
+      background: #e8f7ee;
+      color: var(--success);
+    }
+    .quiz-card h2 {
+      margin: 0 0 10px;
+      font-size: var(--card-title);
+      line-height: 1.2;
+    }
+    .quiz-card p {
+      margin: 0 0 18px;
+      color: #3c3c3c;
+    }
+    .meta {
+      display: grid;
+      gap: 10px;
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: var(--small-size);
+    }
+    .quiz-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      background: var(--brand);
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: var(--small-size);
+      text-align: center;
+    }
+    @media (max-width: 640px) {
+      .shell {
+        padding: 84px 16px 42px;
+      }
+      .hero,
+      .quiz-card {
+        border-radius: 22px;
+        padding: 20px;
+      }
+      .toolbar-inner {
+        justify-content: center;
+      }
+      .quiz-link {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar" aria-label="Reading controls">
+      <div class="toolbar-inner">
+        <span class="toolbar-label">View</span>
+        <button class="tool-btn" id="zoomOutBtn" type="button" aria-label="Zoom out">A-</button>
+        <span class="zoom-readout" id="zoomReadout">100%</span>
+        <button class="tool-btn" id="zoomInBtn" type="button" aria-label="Zoom in">A+</button>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="logo-wrap">
+        <span style="font-weight:700; letter-spacing:0.08em; color:#7A2410; font-size:clamp(20px,2.4vw,28px);">DPDP Quiz</span>
+      </div>
+      <p class="eyebrow">Digital Personal Data Protection</p>
+      <h1>NGO Quiz Hub</h1>
+      <p>Choose a quiz below based on the audience, theme, and depth you want. The numbered daily releases follow a queued publish pattern, while the earlier sets remain available for onboarding and workshop use.</p>
+      <div class="hero-note">Tip: The latest daily release appears first. Use the older beginner and mid-level sets for longer workshops, then use the five-question daily releases for regular reinforcement.</div>
+    </section>
+
+    <h2 class="section-title">Daily Quiz Releases</h2>
+    <section class="quiz-list" aria-label="Daily quiz list">
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 35 | Retention Erasure Operations</h2>
+        <p>Five lifecycle questions on purpose completion, legal retention limits, 48-hour pre-erasure notice, local device copies, and documented retention policies.</p>
+        <div class="meta">
+          <div>Audience: Operations leads, MIS owners, programme teams, and governance reviewers</div>
+          <div>Focus: Retention policy discipline, erasure triggers, and reducing unnecessary lingering copies</div>
+        </div>
+        <a class="quiz-link" href="../quiz-35-retention-erasure-operations/">Open Quiz 35</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 34 | Partner Sharing Checks</h2>
+        <p>Five sharing questions on purpose coverage, processing agreements, anonymised alternatives, role clarity, and when escalation is required.</p>
+        <div class="meta">
+          <div>Audience: Program managers, BI teams, partnership staff, and IT governance reviewers</div>
+          <div>Focus: Data-sharing checks, legal coverage, and choosing aggregated outputs where they work</div>
+        </div>
+        <a class="quiz-link" href="../quiz-34-partner-sharing-checks/">Open Quiz 34</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 33 | Field Rights Request Desk</h2>
+        <p>Five rights-workflow questions on logging requests, record-based responses, correction tracking, lawful retention exceptions, and the request register.</p>
+        <div class="meta">
+          <div>Audience: programme officers, block coordinators, helpline teams, and supervisors</div>
+          <div>Focus: Rights intake discipline, recordkeeping, and avoiding off-the-cuff answers</div>
+        </div>
+        <a class="quiz-link" href="../quiz-33-field-rights-request-desk/">Open Quiz 33</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 32 | Breach First Six Hours</h2>
+        <p>Five breach-response questions on the 72-hour clock, immediate containment, preserving logs, notifying affected people, and the first DPBI report.</p>
+        <div class="meta">
+          <div>Audience: Programme officers, IT teams, supervisors, and anyone who may discover a breach first</div>
+          <div>Focus: Initial incident handling, evidence preservation, and parallel notification duties</div>
+        </div>
+        <a class="quiz-link" href="../quiz-32-breach-first-six-hours/">Open Quiz 32</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 31 | field fellow Media Boundaries</h2>
+        <p>Five field questions on survey explanations, refusing optional fields, audio recording, child photography, and why private memories are still personal data if the person is identifiable.</p>
+        <div class="meta">
+          <div>Audience: field fellows, community mobilisers, and field supervisors</div>
+          <div>Focus: Consent quality, respectful refusal handling, and media collection discipline in villages and events</div>
+        </div>
+        <a class="quiz-link" href="../quiz-31-gandhi-fellow-media-boundaries/">Open Quiz 31</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 30 | Karuna Child Health Exemptions</h2>
+        <p>Five child-health questions on care exemptions, camp photography, verbal explanation, distress handling, and when programme databases need separate consent coverage.</p>
+        <div class="meta">
+          <div>Audience: health outreach workers, camp coordinators, MCH teams, and supervisors</div>
+          <div>Focus: Children's data, care-vs-non-care boundaries, and low-literacy field handling</div>
+        </div>
+        <a class="quiz-link" href="../quiz-30-karuna-child-health-exemptions/">Open Quiz 30</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 29 | Privacy Contact Grievance Channel</h2>
+        <p>Five obligation questions on the website contact point, grievance handling, the 90-day response ceiling, and why channel design matters operationally.</p>
+        <div class="meta">
+          <div>Audience: Programme leads, operations teams, web owners, and privacy coordinators</div>
+          <div>Focus: Rule 9 contact publication, grievance workflow design, and beneficiary-facing accountability</div>
+        </div>
+        <a class="quiz-link" href="../quiz-29-privacy-contact-grievance-channel/">Open Quiz 29</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 28 | Developer Audit Log Controls</h2>
+        <p>Five developer questions on 1-year log retention, RBAC, encrypted backups, export logging, and why inactive accounts are a real DPDP risk.</p>
+        <div class="meta">
+          <div>Audience: Developers, DHIS2 and MIS administrators, platform owners, and IT governance reviewers</div>
+          <div>Focus: Security safeguards, auditability, access control, and privacy-by-design checks before release</div>
+        </div>
+        <a class="quiz-link" href="../quiz-28-developer-audit-log-controls/">Open Quiz 28</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 27 | Beginner Readiness Calendar</h2>
+        <p>Five timeline questions on the live phases, the November 2026 readiness target, May 2027 full compliance, and priority actions that cannot be postponed.</p>
+        <div class="meta">
+          <div>Audience: New programme staff, team leads, coordinators, and anyone building their first DPDP roadmap</div>
+          <div>Focus: Timeline sequencing, practical preparation targets, and distinguishing current duties from full-enforcement duties</div>
+        </div>
+        <a class="quiz-link" href="../quiz-27-beginner-readiness-calendar/">Open Quiz 27</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 26 | Cross-Border Donor Sharing</h2>
+        <p>Five transfer questions on the negative-list rule, donor datasets, anonymisation limits, partner agreements, and when aggregate reporting is the safer choice.</p>
+        <div class="meta">
+          <div>Audience: BI analysts, donor-reporting teams, programme managers, and privacy reviewers</div>
+          <div>Focus: Cross-border transfer judgment, partner agreements, anonymisation discipline, and safe external reporting</div>
+        </div>
+        <a class="quiz-link" href="../quiz-26-cross-border-donor-sharing/">Open Quiz 26</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 25 | programme officer Rights Desk</h2>
+        <p>Five rights-handling questions on logging requests, correcting MIS data, retention-based limits on erasure, the 90-day response window, and the DPBI escalation path.</p>
+        <div class="meta">
+          <div>Audience: programme officers, implementors, grievance handlers, and privacy contacts</div>
+          <div>Focus: Rights workflow, escalation discipline, record correction, erasure limits, and grievance response timing</div>
+        </div>
+        <a class="quiz-link" href="../quiz-25-program-officer-rights-desk/">Open Quiz 25</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 24 | Readiness Timeline</h2>
+        <p>Five rollout-planning questions on live Phase I obligations, Consent Manager timing, the May 2027 deadline, readiness sequencing, and privacy-contact publication.</p>
+        <div class="meta">
+          <div>Audience: Programme managers, IT governance leads, BIDA reviewers, and readiness coordinators</div>
+          <div>Focus: Rollout phases, deadline sequencing, grievance readiness, and privacy-governance milestones</div>
+        </div>
+        <a class="quiz-link" href="../quiz-24-readiness-timeline/">Open Quiz 24</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 23 | Platform Operations Controls</h2>
+        <p>Five platform-operations questions on log retention, ODK device hygiene, API token control, ABDM consent gaps, and first-response breach discipline.</p>
+        <div class="meta">
+          <div>Audience: Developers, BIDA platform owners, and IT operations teams</div>
+          <div>Focus: Audit logs, device controls, consent architecture gaps, and incident-first actions</div>
+        </div>
+        <a class="quiz-link" href="../quiz-23-platform-operations-controls/">Open Quiz 23</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 22 | Final Readiness Check</h2>
+        <p>Five cross-functional questions on readiness targets, staff training, data inventory, breach protocols, and why early preparation matters.</p>
+        <div class="meta">
+          <div>Audience: Cross-functional implementation teams, governance leads, and programme managers</div>
+          <div>Focus: Timeline discipline, pre-deadline remediation, staff training, and readiness gaps</div>
+        </div>
+        <a class="quiz-link" href="../quiz-22-final-readiness-check/">Open Quiz 22</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 21 | Privacy Contact and Grievances</h2>
+        <p>Five questions on the privacy point of contact, website publication, rights routing, complaint readiness, and response expectations.</p>
+        <div class="meta">
+          <div>Audience: Privacy focal points, website owners, programme managers, and governance teams</div>
+          <div>Focus: Rule 9 publication, grievance workflow, and practical responsiveness</div>
+        </div>
+        <a class="quiz-link" href="../quiz-21-privacy-contact-grievances/">Open Quiz 21</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 20 | Child Safety Settings</h2>
+        <p>Five questions on school safety tracking, creche settings, parental permission, and the difference between care operations and public storytelling.</p>
+        <div class="meta">
+          <div>Audience: Education teams, child-focused programme staff, and field supervisors</div>
+          <div>Focus: School and creche exemptions, parental permission, and no casual expansion beyond the child-safety context</div>
+        </div>
+        <a class="quiz-link" href="../quiz-20-child-safety-settings/">Open Quiz 20</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 19 | Government Program Basis</h2>
+        <p>Five questions on welfare programmes, State-function processing, legal disclosure obligations, and the limits of implied expansion beyond programme purpose.</p>
+        <div class="meta">
+          <div>Audience: Programme officers, implementation leads, and teams working with government-linked systems</div>
+          <div>Focus: Section 7 examples, reporting by law, purpose boundaries, and discipline under legitimate use</div>
+        </div>
+        <a class="quiz-link" href="../quiz-19-government-program-basis/">Open Quiz 19</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 18 | ODK Device Hygiene</h2>
+        <p>Five ODK-specific questions on encryption, sync cleanup, offline duration, remote wipe, and how to react when a device disappears.</p>
+        <div class="meta">
+          <div>Audience: Field implementors, ODK administrators, and programme tech leads</div>
+          <div>Focus: Offline collection risk, post-sync cleanup, remote wipe, and lost-device readiness</div>
+        </div>
+        <a class="quiz-link" href="../quiz-18-odk-device-hygiene/">Open Quiz 18</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 17 | Verbal Consent and Rights</h2>
+        <p>Five questions on reading out notices, witness records, rights escalation, correction requests, and respectful handling in low-literacy contexts.</p>
+        <div class="meta">
+          <div>Audience: field fellows, health outreach workers, and programme officers in direct field collection</div>
+          <div>Focus: Read-aloud notices, witness records, rights logging, and respectful escalation</div>
+        </div>
+        <a class="quiz-link" href="../quiz-17-verbal-consent-rights/">Open Quiz 17</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 16 | Donor Reporting</h2>
+        <p>Five reporting questions on photos, aggregate statistics, small cell risk, personal stories, and international partner sharing.</p>
+        <div class="meta">
+          <div>Audience: BI teams, communication leads, donor-reporting teams, and programme managers</div>
+          <div>Focus: Aggregate reporting, identifiable stories, small counts, and scope-conscious sharing</div>
+        </div>
+        <a class="quiz-link" href="../quiz-16-donor-reporting/">Open Quiz 16</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 15 | Consent Manager Readiness</h2>
+        <p>Five timeline and design questions on the Consent Manager milestone, ABDM gaps, and how teams should plan before the formal framework becomes active.</p>
+        <div class="meta">
+          <div>Audience: ABDM teams, platform owners, developers, and implementation planners</div>
+          <div>Focus: Phase II timing, readiness planning, ABDM notice gaps, and withdrawal design</div>
+        </div>
+        <a class="quiz-link" href="../quiz-15-consent-manager-readiness/">Open Quiz 15</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 14 | Processor Contracts</h2>
+        <p>Five operational questions on processor agreements, role clarity, security clauses, hosted services, and vendor access boundaries.</p>
+        <div class="meta">
+          <div>Audience: Programme managers, IT governance leads, developers, and procurement reviewers</div>
+          <div>Focus: Data Processor role clarity, equivalent safeguards, and contract-backed control</div>
+        </div>
+        <a class="quiz-link" href="../quiz-14-processor-contracts/">Open Quiz 14</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 13 | Jharkhand Health Outreach</h2>
+        <p>Five field-health questions on care versus reporting, referral sharing, voice notes, and how to handle data during direct outreach work.</p>
+        <div class="meta">
+          <div>Audience: health outreach workers, implementors, and programme leads working in field health settings</div>
+          <div>Focus: Health-service processing, referral sharing, media consent, and field handling judgment</div>
+        </div>
+        <a class="quiz-link" href="../quiz-13-jharkhand-health-outreach/">Open Quiz 13</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 12 | Advanced Field Escalations</h2>
+        <p>Five advanced questions on distressed beneficiaries, third-party sharing pressure, out-of-scope data requests, Phase I obligations, and rollout-date planning.</p>
+        <div class="meta">
+          <div>Audience: Experienced field leads, programme managers, and escalation points</div>
+          <div>Focus: Calm escalation, out-of-scope requests, complaint readiness, and date-based planning</div>
+        </div>
+        <a class="quiz-link" href="../quiz-12-advanced-field-escalations/">Open Quiz 12</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 11 | BI Analyst Transfers</h2>
+        <p>Five BI-oriented questions on small-cell disclosure, export logs, compromise of cloud accounts, row-level access, and the still-unpublished restricted-country list.</p>
+        <div class="meta">
+          <div>Audience: BI analysts, reporting teams, and data governance reviewers</div>
+          <div>Focus: Re-identification risk, export controls, cloud incidents, access scope, and transfer monitoring</div>
+        </div>
+        <a class="quiz-link" href="../quiz-11-bi-analyst-transfers/">Open Quiz 11</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 10 | Intermediate Sharing</h2>
+        <p>Five sharing scenarios covering aggregated reports, processor agreements, lawful government disclosure, pseudonymised files, and the current transfer model.</p>
+        <div class="meta">
+          <div>Audience: Intermediate learners, programme leads, and BI or partnership teams</div>
+          <div>Focus: Purpose limitation, partner agreements, aggregation, and transfer conditions</div>
+        </div>
+        <a class="quiz-link" href="../quiz-10-intermediate-sharing/">Open Quiz 10</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 09 | Audit Readiness</h2>
+        <p>Five questions built from the platform audit checklist: data inventory, backup testing, VAPT, cross-border hosting visibility, and rights-handling ownership.</p>
+        <div class="meta">
+          <div>Audience: BIDA, IT governance, and programme teams preparing platform reviews</div>
+          <div>Focus: Readiness checks, remediation evidence, and ownership of controls</div>
+        </div>
+        <a class="quiz-link" href="../quiz-09-audit-readiness/">Open Quiz 09</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 08 | Retention and Erasure</h2>
+        <p>Five scenario questions on withdrawal, purpose completion, 48-hour pre-erasure notice, legal retention exceptions, and lifecycle cleanup.</p>
+        <div class="meta">
+          <div>Audience: Programme managers, system owners, and teams designing deletion workflows</div>
+          <div>Focus: Purpose limitation, legal retention, pre-erasure notice, and end-of-use deletion</div>
+        </div>
+        <a class="quiz-link" href="../quiz-08-retention-erasure/">Open Quiz 08</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 07 | Developer Safeguards</h2>
+        <p>A five-question developer-focused set on log retention, ODK device controls, data export access, HTTPS, and vendor security clauses.</p>
+        <div class="meta">
+          <div>Audience: Developers, BIDA reviewers, and platform owners</div>
+          <div>Focus: Rule 6 controls, ODK safeguards, analytics access boundaries, and processor contracts</div>
+        </div>
+        <a class="quiz-link" href="../quiz-07-developer-safeguards/">Open Quiz 07</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 06 | Bihar Enrolment</h2>
+        <p>Five field-facing questions set in Bihar-style enrolment and survey workflows, with emphasis on respecting refusal and explaining purpose clearly.</p>
+        <div class="meta">
+          <div>Audience: field fellows, implementors, and programme officers handling household or health enrolment</div>
+          <div>Focus: Partial refusal, sharing explanations, audio consent, photo consent, and WhatsApp risk</div>
+        </div>
+        <a class="quiz-link" href="../quiz-06-bihar-enrolment/">Open Quiz 06</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 05 | Data Rights</h2>
+        <p>A five-question rights refresher covering access, correction, erasure, grievance handling, and the right to nominate another person.</p>
+        <div class="meta">
+          <div>Audience: Programme officers, field supervisors, and privacy focal points</div>
+          <div>Focus: Rights logging, escalation, response timelines, and lawful retention exceptions</div>
+        </div>
+        <a class="quiz-link" href="../quiz-05-data-rights/">Open Quiz 05</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 04 | Children's Data</h2>
+        <p>A five-question set on child-specific DPDP rules, including healthcare exemptions, photography consent, and prohibited profiling or behavioural tracking.</p>
+        <div class="meta">
+          <div>Audience: health outreach workers, school-linked teams, and anyone working with minors' data</div>
+          <div>Focus: Under-18 status, parental consent, healthcare and education exemptions, and prohibited uses</div>
+        </div>
+        <a class="quiz-link" href="../quiz-04-childrens-data/">Open Quiz 04</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 03 | Breach Readiness</h2>
+        <p>Five practical questions on what counts as a breach, when the reporting clock starts, and what must be preserved and notified during the first 72 hours.</p>
+        <div class="meta">
+          <div>Audience: IT teams, programme leads, and field staff who may discover incidents first</div>
+          <div>Focus: Breach identification, containment, logs, DPBI notifications, and Data Principal alerts</div>
+        </div>
+        <a class="quiz-link" href="../quiz-03-breach-readiness/">Open Quiz 03</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 02 | Consent Notices</h2>
+        <p>A five-question refresher on what a DPDP-compliant notice must say, how verbal consent is documented, and what still applies when a programme relies on deemed consent.</p>
+        <div class="meta">
+          <div>Audience: implementors, Fellows, and programme teams collecting data in the field</div>
+          <div>Focus: Standalone notices, itemised fields, withdrawal, verbal consent, and deemed-consent limits</div>
+        </div>
+        <a class="quiz-link" href="../quiz-02-consent-notices/">Open Quiz 02</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Daily Release</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Quiz 01 | Role Field Scenarios</h2>
+        <p>Fresh field scenarios across health outreach workers, programme officers, developers, and BI analyst decisions, with Bihar and Jharkhand examples and no repeated wording from the earlier published quiz sets.</p>
+        <div class="meta">
+          <div>Audience: Daily refresher for DPDP learners and implementation teams</div>
+          <div>Focus: Children's data, breaches, consent design, access control, and sharing judgment</div>
+        </div>
+        <a class="quiz-link" href="../quiz-01-role-field-scenarios/">Open Quiz 01</a>
+      </article>
+    </section>
+
+    <h2 class="section-title">Earlier Quiz Sets</h2>
+    <section class="quiz-list" aria-label="Earlier quiz list">
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Beginner</span>
+          <span class="badge success">10 questions</span>
+        </div>
+        <h2>DPDP Beginner Quiz</h2>
+        <p>Scenario-based introduction for participants who are getting started with the Digital Personal Data Protection Act 2023 and key NGO use cases in India.</p>
+        <div class="meta">
+          <div>Audience: General participants and new learners</div>
+          <div>Focus: Basics, consent, rights, breaches, and children's data</div>
+        </div>
+        <a class="quiz-link" href="../beginner/">Open beginner quiz</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Mid-level</span>
+          <span class="badge success">10 questions</span>
+        </div>
+        <h2>DPDP Mid-Level Quiz</h2>
+        <p>Practical scenario set for privacy, programme, and implementation team members covering processors, consent design, rights handling, security safeguards, and readiness planning.</p>
+        <div class="meta">
+          <div>Audience: privacy, programme, and implementation team members</div>
+          <div>Focus: Operational readiness and implementation judgment</div>
+        </div>
+        <a class="quiz-link" href="../mid-level/">Open mid-level quiz</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Mid-level Fresh</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Mid-Level Fresh Quiz</h2>
+        <p>A fresh scenario set focused on vendor classification, standalone consent notices, rights contact routes, access control gaps, and early readiness actions.</p>
+        <div class="meta">
+          <div>Audience: privacy, programme, and implementation team members</div>
+          <div>Focus: Refresher practice and readiness reinforcement</div>
+        </div>
+        <a class="quiz-link" href="../mid-level-fresh/">Open fresh quiz</a>
+      </article>
+      <article class="quiz-card">
+        <div class="badge-row">
+          <span class="badge">Mid-level Quiz A</span>
+          <span class="badge success">5 questions</span>
+        </div>
+        <h2>DPDP Mid-Level Quiz A</h2>
+        <p>This set covers grievance timelines, photography consent, aggregate reporting, the Consent Manager milestone, and retention-linked automated erasure.</p>
+        <div class="meta">
+          <div>Audience: privacy, programme, and implementation team members</div>
+          <div>Focus: Governance, reporting, timelines, and lifecycle controls</div>
+        </div>
+        <a class="quiz-link" href="../mid-level-a/">Open Quiz A</a>
+      </article>
+    </section>
+
+    <p class="footer">Hosted on GitHub Pages for simple sharing across Teams, browser, and training workflows.</p>
+  </div>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const zoomReadout = document.getElementById("zoomReadout");
+      const zoomInBtn = document.getElementById("zoomInBtn");
+      const zoomOutBtn = document.getElementById("zoomOutBtn");
+      let zoom = 1;
+
+      function applyZoom() {
+        root.style.setProperty("--zoom", zoom.toFixed(2));
+        zoomReadout.textContent = Math.round(zoom * 100) + "%";
+        zoomOutBtn.disabled = zoom <= 0.9;
+        zoomInBtn.disabled = zoom >= 1.2;
+      }
+
+      zoomOutBtn.addEventListener("click", function () {
+        zoom = Math.max(0.9, Math.round((zoom - 0.05) * 100) / 100);
+        applyZoom();
+      });
+
+      zoomInBtn.addEventListener("click", function () {
+        zoom = Math.min(1.2, Math.round((zoom + 0.05) * 100) / 100);
+        applyZoom();
+      });
+
+      applyZoom();
+    }());
+  </script>
+</body>
+</html>

@@ -4,6 +4,7 @@ import path from "node:path";
 const root = process.cwd();
 const docsDir = path.join(root, "docs");
 const ngoDir = path.join(docsDir, "ngo");
+const ngoQuizHubDir = path.join(ngoDir, "quizzes");
 const queueDir = path.join(root, "release-queue");
 const logoSource = path.join(docsDir, "quiz-01-role-field-scenarios", "PF_Logo.jpg");
 const queueReadme = path.join(queueDir, "README.md");
@@ -3668,11 +3669,11 @@ const quizCatalog = [
     ]
   },
   {
-    number: 42,
+    number: 52,
     slug: "developer-export-access",
     shortTitle: "Developer Export Access",
-    pageTitle: "DPDP Quiz 42 - Developer Export Access",
-    eyebrow: "DPDP Quiz 42 | Developer Export Access",
+    pageTitle: "DPDP Quiz 52 - Developer Export Access",
+    eyebrow: "DPDP Quiz 52 | Developer Export Access",
     heroTitle: "Developer Export Access: Logs, Tokens, and Least-Privilege Controls",
     heroIntro: "This queued set shifts away from Bihar voice workflows into platform engineering. It checks whether developers and system owners can reduce export risk before beneficiary data leaves the system through APIs, spreadsheets, or admin tools.",
     cardDescription: "Five developer questions on export logging, inactive accounts, API token rotation, encrypted backups, and vendor-security clauses.",
@@ -5349,7 +5350,14 @@ function renderQuizHtml(quiz) {
 </html>`;
 }
 
-function renderCard(quiz) {
+function withHrefPrefix(href, prefix = ".") {
+  if (href.startsWith("./")) {
+    return `${prefix}${href.slice(1)}`;
+  }
+  return href;
+}
+
+function renderCard(quiz, hrefPrefix = ".") {
   const folder = folderNameFor(quiz);
   return `      <article class="quiz-card">
         <div class="badge-row">
@@ -5362,7 +5370,7 @@ function renderCard(quiz) {
           <div>Audience: ${escapeHtml(quiz.audience)}</div>
           <div>Focus: ${escapeHtml(quiz.focus)}</div>
         </div>
-        <a class="quiz-link" href="./${folder}/">Open Quiz ${String(quiz.number).padStart(2, "0")}</a>
+        <a class="quiz-link" href="${withHrefPrefix(`./${folder}/`, hrefPrefix)}">Open Quiz ${String(quiz.number).padStart(2, "0")}</a>
       </article>`;
 }
 
@@ -5431,7 +5439,7 @@ function renderNgoQuizHtml(quiz) {
   );
 }
 
-function renderLegacyCard(card) {
+function renderLegacyCard(card, hrefPrefix = ".") {
   return `      <article class="quiz-card">
         <div class="badge-row">
           <span class="badge">${escapeHtml(card.badge)}</span>
@@ -5443,16 +5451,16 @@ function renderLegacyCard(card) {
           <div>Audience: ${escapeHtml(card.audience)}</div>
           <div>Focus: ${escapeHtml(card.focus)}</div>
         </div>
-        <a class="quiz-link" href="${card.href}">${escapeHtml(card.cta)}</a>
+        <a class="quiz-link" href="${withHrefPrefix(card.href, hrefPrefix)}">${escapeHtml(card.cta)}</a>
       </article>`;
 }
 
 function renderHubHtml(publishedDailyQuizzes) {
   const dailyCards = publishedDailyQuizzes
     .sort((a, b) => b.number - a.number)
-    .map(renderCard)
+    .map((quiz) => renderCard(quiz))
     .join("\n");
-  const legacyCards = legacyQuizzes.map(renderLegacyCard).join("\n");
+  const legacyCards = legacyQuizzes.map((card) => renderLegacyCard(card)).join("\n");
 
   return `<!doctype html>
 <html lang="en">
@@ -5750,9 +5758,9 @@ function renderNgoHubHtml(publishedDailyQuizzes) {
   const dailyCards = publishedDailyQuizzes
     .map(genericizeQuiz)
     .sort((a, b) => b.number - a.number)
-    .map(renderCard)
+    .map((quiz) => renderCard(quiz, ".."))
     .join("\n");
-  const legacyCards = ngoLegacyQuizzes.map(renderLegacyCard).join("\n");
+  const legacyCards = ngoLegacyQuizzes.map((card) => renderLegacyCard(card, "..")).join("\n");
 
   return renderHubHtml([])
     .replace("<title>Piramal Foundation DPDP Quiz Hub</title>", "<title>DPDP Quiz Hub for Indian NGOs</title>")
@@ -5769,7 +5777,533 @@ function renderNgoHubHtml(publishedDailyQuizzes) {
       '<div class="hero-note">Tip: The latest daily release appears first. Use the older beginner and mid-level sets for longer workshops, then use the five-question daily releases for regular reinforcement.</div>'
     )
     .replace(/<section class="quiz-list" aria-label="Daily quiz list">[\s\S]*?<\/section>/, `<section class="quiz-list" aria-label="Daily quiz list">\n${dailyCards}\n    </section>`)
-    .replace(/<section class="quiz-list" aria-label="Earlier quiz list">[\s\S]*?<\/section>/, `<section class="quiz-list" aria-label="Earlier quiz list">\n${legacyCards}\n    </section>`);
+    .replace(/<section class="quiz-list" aria-label="Earlier quiz list">[\s\S]*?<\/section>/, `<section class="quiz-list" aria-label="Earlier quiz list">\n${legacyCards}\n    </section>`)
+    .replace(
+      '<h1>DPDP Quiz Hub</h1>',
+      '<h1>NGO Quiz Hub</h1>'
+    );
+}
+
+const ngoSectionCatalog = [
+  {
+    key: "quizzes",
+    title: "Quizzes",
+    href: "./quizzes/",
+    badge: "Live now",
+    description: "Browse the published NGO quizzes, including the daily release stream and the earlier workshop-ready sets.",
+    note: "This section is updated by the existing quiz publish pipeline."
+  },
+  {
+    key: "roles",
+    title: "Roles",
+    href: "./roles/",
+    badge: "Foundation ready",
+    description: "Role-specific DPDP guidance for field teams, programme leaders, developers, analysts, and NGO operations leads.",
+    note: "This will become the quickest route for role-based onboarding."
+  },
+  {
+    key: "scenarios",
+    title: "Scenarios",
+    href: "./scenarios/",
+    badge: "Foundation ready",
+    description: "Scenario labs for realistic NGO situations like consent refusal, child photos, lost devices, rights requests, and safe sharing.",
+    note: "These pages will be built to guide judgment, not just test recall."
+  },
+  {
+    key: "tools",
+    title: "Tools",
+    href: "./tools/",
+    badge: "Foundation ready",
+    description: "Decision trees, checklists, and self-assessments that teams can use during implementation and review.",
+    note: "This section will house practical, repeatable digital aids."
+  },
+  {
+    key: "about",
+    title: "About",
+    href: "./about/",
+    badge: "Live now",
+    description: "Understand the scope of this NGO DPDP learning site, how to use each section, and how it stays separate from PF-only surfaces.",
+    note: "This page also sets expectations for future additions."
+  }
+];
+
+const ngoSectionPlans = {
+  roles: [
+    "Field Staff and Fellows",
+    "Programme Officer",
+    "Privacy or Compliance Focal Person",
+    "Developer or Product Builder",
+    "Data Analyst or M&E Team",
+    "NGO Leadership or Operations Head"
+  ],
+  scenarios: [
+    "Beneficiary Refuses One Field",
+    "Child Photo for Donor Deck",
+    "Lost Phone with Offline Forms",
+    "Wrong WhatsApp Share",
+    "Rights Request at Field Level",
+    "Sharing Data with External Evaluator"
+  ],
+  tools: [
+    "Decision Tree: Can We Collect This Data?",
+    "Decision Tree: Do We Need Consent?",
+    "Decision Tree: Is This a Breach?",
+    "Checklist: Breach First Response",
+    "Checklist: Consent Notice Review",
+    "Readiness Self-Assessment"
+  ]
+};
+
+function renderNgoSitePage({
+  title,
+  eyebrow,
+  heroTitle,
+  intro,
+  note,
+  currentKey = "home",
+  basePath = "./",
+  bodyHtml,
+  footer = "Hosted on GitHub Pages as a lightweight NGO DPDP learning site."
+}) {
+  const navItems = [
+    { key: "home", label: "Home", href: `${basePath}` },
+    { key: "quizzes", label: "Quizzes", href: `${basePath}quizzes/` },
+    { key: "roles", label: "Roles", href: `${basePath}roles/` },
+    { key: "scenarios", label: "Scenarios", href: `${basePath}scenarios/` },
+    { key: "tools", label: "Tools", href: `${basePath}tools/` },
+    { key: "about", label: "About", href: `${basePath}about/` }
+  ];
+
+  const navHtml = navItems.map((item) => {
+    const activeClass = item.key === currentKey ? " nav-link active" : " nav-link";
+    const ariaCurrent = item.key === currentKey ? ' aria-current="page"' : "";
+    return `          <a class="${activeClass.trim()}" href="${item.href}"${ariaCurrent}>${item.label}</a>`;
+  }).join("\n");
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${escapeHtml(title)}</title>
+  <style>
+    :root {
+      --brand: #e4572e;
+      --brand-dark: #8a3420;
+      --brand-soft: #fff2ec;
+      --brand-soft-2: #fde6df;
+      --ink: #1f1f1f;
+      --muted: #5b5b5b;
+      --line: #ead4cc;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --success: #1f8f4e;
+      --shadow: 0 18px 40px rgba(122, 36, 16, 0.09);
+      --toolbar-shadow: 0 10px 24px rgba(54, 54, 54, 0.08);
+      --zoom: 1;
+      --body-size: clamp(16px, calc(16px * var(--zoom)), 19px);
+      --small-size: clamp(13px, calc(13px * var(--zoom)), 15px);
+      --title-size: clamp(2rem, calc(2.2rem * var(--zoom)), 3rem);
+      --card-title: clamp(1.2rem, calc(1.25rem * var(--zoom)), 1.6rem);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(228, 87, 46, 0.08), transparent 24%),
+        linear-gradient(180deg, #fffdfc 0%, #ffffff 20%, #ffffff 100%);
+      font-size: var(--body-size);
+      line-height: 1.6;
+    }
+    .shell {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 88px 20px 56px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .toolbar-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(228, 87, 46, 0.18);
+      box-shadow: var(--toolbar-shadow);
+      backdrop-filter: blur(12px);
+    }
+    .toolbar-label,
+    .zoom-readout {
+      color: var(--muted);
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .tool-btn {
+      border: 1px solid rgba(228, 87, 46, 0.22);
+      background: var(--card);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 11px 16px;
+      min-width: 46px;
+      font-size: var(--small-size);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .tool-btn:hover,
+    .tool-btn:focus-visible,
+    .nav-link:hover,
+    .nav-link:focus-visible,
+    .cta-link:hover,
+    .cta-link:focus-visible {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(228, 87, 46, 0.14);
+    }
+    .zoom-readout {
+      min-width: 58px;
+      text-align: center;
+    }
+    .hero,
+    .nav-wrap,
+    .panel,
+    .resource-card,
+    .spotlight {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(180deg, #ffffff 0%, #fffaf7 100%);
+      box-shadow: var(--shadow);
+    }
+    .hero,
+    .panel,
+    .spotlight {
+      padding: 30px;
+    }
+    .hero {
+      margin-bottom: 20px;
+    }
+    .nav-wrap {
+      padding: 14px;
+      margin-bottom: 24px;
+    }
+    .nav-list {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .nav-link,
+    .cta-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(228, 87, 46, 0.2);
+      color: var(--ink);
+      text-decoration: none;
+      background: #fff;
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .nav-link.active,
+    .cta-link.primary {
+      background: var(--brand);
+      color: #fff;
+      border-color: transparent;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--brand-dark);
+      font-size: var(--small-size);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    h1 {
+      margin-bottom: 14px;
+      font-size: var(--title-size);
+      line-height: 1.12;
+    }
+    .hero p,
+    .panel p,
+    .resource-card p,
+    .spotlight p {
+      margin: 0;
+      color: #353535;
+    }
+    .hero-note {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--brand);
+      border-radius: 16px;
+      background: var(--brand-soft);
+      color: #3f312c;
+    }
+    .section-title {
+      margin: 0 0 16px;
+      font-size: clamp(1.35rem, calc(1.45rem * var(--zoom)), 1.8rem);
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+    .resource-card {
+      padding: 24px;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      font-size: var(--small-size);
+      font-weight: 700;
+    }
+    .badge.success {
+      background: #e8f7ee;
+      color: var(--success);
+    }
+    .resource-card h3,
+    .spotlight h2,
+    .panel h2 {
+      margin-bottom: 10px;
+      font-size: var(--card-title);
+      line-height: 1.2;
+    }
+    .resource-card p {
+      margin-bottom: 14px;
+    }
+    .meta-list,
+    .bullet-list {
+      display: grid;
+      gap: 10px;
+      color: var(--muted);
+      font-size: var(--small-size);
+      margin: 14px 0 20px;
+    }
+    .content-stack {
+      display: grid;
+      gap: 24px;
+    }
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: var(--small-size);
+      text-align: center;
+    }
+    @media (max-width: 640px) {
+      .shell {
+        padding: 84px 16px 42px;
+      }
+      .hero,
+      .panel,
+      .spotlight,
+      .resource-card {
+        border-radius: 22px;
+        padding: 20px;
+      }
+      .toolbar-inner,
+      .nav-list {
+        justify-content: center;
+      }
+      .cta-link,
+      .nav-link {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar" aria-label="Reading controls">
+      <div class="toolbar-inner">
+        <span class="toolbar-label">View</span>
+        <button class="tool-btn" id="zoomOutBtn" type="button" aria-label="Zoom out">A-</button>
+        <span class="zoom-readout" id="zoomReadout">100%</span>
+        <button class="tool-btn" id="zoomInBtn" type="button" aria-label="Zoom in">A+</button>
+      </div>
+    </div>
+    <section class="hero">
+      <p class="eyebrow">${escapeHtml(eyebrow)}</p>
+      <h1>${escapeHtml(heroTitle)}</h1>
+      <p>${escapeHtml(intro)}</p>
+      <div class="hero-note">${escapeHtml(note)}</div>
+    </section>
+    <nav class="nav-wrap" aria-label="NGO learning navigation">
+      <div class="nav-list">
+${navHtml}
+      </div>
+    </nav>
+    <div class="content-stack">
+${bodyHtml}
+    </div>
+    <p class="footer">${escapeHtml(footer)}</p>
+  </div>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const zoomReadout = document.getElementById("zoomReadout");
+      const zoomInBtn = document.getElementById("zoomInBtn");
+      const zoomOutBtn = document.getElementById("zoomOutBtn");
+      let zoom = 1;
+
+      function applyZoom() {
+        root.style.setProperty("--zoom", zoom.toFixed(2));
+        zoomReadout.textContent = Math.round(zoom * 100) + "%";
+        zoomOutBtn.disabled = zoom <= 0.9;
+        zoomInBtn.disabled = zoom >= 1.2;
+      }
+
+      zoomOutBtn.addEventListener("click", function () {
+        zoom = Math.max(0.9, Math.round((zoom - 0.05) * 100) / 100);
+        applyZoom();
+      });
+
+      zoomInBtn.addEventListener("click", function () {
+        zoom = Math.min(1.2, Math.round((zoom + 0.05) * 100) / 100);
+        applyZoom();
+      });
+
+      applyZoom();
+    }());
+  </script>
+</body>
+</html>`;
+}
+
+function renderNgoSectionCard(section, hrefPrefix = ".") {
+  return `        <article class="resource-card">
+          <div class="badge-row">
+            <span class="badge">${escapeHtml(section.badge)}</span>
+          </div>
+          <h3>${escapeHtml(section.title)}</h3>
+          <p>${escapeHtml(section.description)}</p>
+          <div class="meta-list">
+            <div>${escapeHtml(section.note)}</div>
+          </div>
+          <a class="cta-link primary" href="${withHrefPrefix(section.href, hrefPrefix)}">Open ${escapeHtml(section.title)}</a>
+        </article>`;
+}
+
+function renderNgoLandingHtml(latestQuiz) {
+  const latestCard = latestQuiz ? `      <section class="spotlight">
+        <div class="badge-row">
+          <span class="badge success">Latest quiz live</span>
+          <span class="badge">Quiz ${String(latestQuiz.number).padStart(2, "0")}</span>
+        </div>
+        <h2>Latest release: DPDP Quiz ${String(latestQuiz.number).padStart(2, "0")} | ${escapeHtml(genericizeQuiz(latestQuiz).shortTitle)}</h2>
+        <p>${escapeHtml(genericizeQuiz(latestQuiz).cardDescription)}</p>
+        <div class="meta-list">
+          <div>Audience: ${escapeHtml(genericizeQuiz(latestQuiz).audience)}</div>
+          <div>Focus: ${escapeHtml(genericizeQuiz(latestQuiz).focus)}</div>
+        </div>
+        <div class="nav-list">
+          <a class="cta-link primary" href="./${folderNameFor(latestQuiz)}/">Open latest quiz</a>
+          <a class="cta-link" href="./quizzes/">Browse all quizzes</a>
+        </div>
+      </section>` : "";
+
+  const sectionCards = ngoSectionCatalog.map((section) => renderNgoSectionCard(section)).join("\n");
+  return renderNgoSitePage({
+    title: "DPDP Learning Hub for Indian NGOs",
+    eyebrow: "Digital Personal Data Protection",
+    heroTitle: "DPDP Learning Hub for Indian NGOs",
+    intro: "This NGO learning site now has a dedicated landing page, a separate quiz hub, and section hubs for the next digital capacity-building formats we will release online.",
+    note: "The quiz pipeline stays intact. New sections are being staged in the same GitHub Pages site so future capacity-building formats can grow without disturbing the daily quiz stream.",
+    currentKey: "home",
+    basePath: "./",
+    bodyHtml: `${latestCard}
+      <section class="panel">
+        <h2 class="section-title">Choose a learning path</h2>
+        <div class="grid">
+${sectionCards}
+        </div>
+      </section>`
+  });
+}
+
+function renderNgoSectionHubHtml(sectionKey) {
+  const pageMap = {
+    roles: {
+      title: "NGO Roles Hub",
+      eyebrow: "Role-based guidance",
+      heroTitle: "Role-based DPDP guidance for NGO teams",
+      intro: "This section is prepared to host concise guidance pages for the main NGO roles that handle personal data or shape data systems.",
+      note: "We are creating these pages next so the site becomes useful for onboarding and decision support beyond quizzes."
+    },
+    scenarios: {
+      title: "NGO Scenario Hub",
+      eyebrow: "Scenario labs",
+      heroTitle: "Scenario labs for practical DPDP judgment",
+      intro: "This section is prepared for realistic NGO case exercises where users choose what should happen next and then review guided reasoning.",
+      note: "Scenario labs are designed to complement quizzes by focusing on applied judgment rather than only right or wrong recall."
+    },
+    tools: {
+      title: "NGO Tools Hub",
+      eyebrow: "Decision aids",
+      heroTitle: "Digital DPDP tools for NGO implementation",
+      intro: "This section is prepared for practical tools such as decision trees, checklists, and readiness self-assessments that teams can use during actual work.",
+      note: "The aim is to make recurring compliance decisions faster, clearer, and easier to repeat across teams."
+    },
+    about: {
+      title: "About This NGO Site",
+      eyebrow: "Scope and use",
+      heroTitle: "How to use this NGO DPDP learning site",
+      intro: "This section explains what is already live, what is being added next, and how the NGO site stays separate from the Piramal Foundation surfaces.",
+      note: "The NGO site is built as a generic, practical learning surface for Indian NGOs and related teams working on DPDP readiness."
+    }
+  };
+
+  const page = pageMap[sectionKey];
+  const planItems = ngoSectionPlans[sectionKey] ?? [];
+  const bodyHtml = sectionKey === "about"
+    ? `      <section class="panel">
+        <h2 class="section-title">Current site status</h2>
+        <div class="bullet-list">
+          <div>The quiz stream is live and continues to publish from the existing queue.</div>
+          <div>The root NGO page is now a landing page, while quizzes have a dedicated section at <code>/ngo/quizzes/</code>.</div>
+          <div>Roles, Scenarios, and Tools now have stable hubs so we can add content without changing the route structure again.</div>
+          <div>PF-specific and NGO-specific surfaces remain separate in wording and navigation.</div>
+        </div>
+      </section>`
+    : `      <section class="panel">
+        <h2 class="section-title">Planned first-wave content</h2>
+        <div class="bullet-list">
+${planItems.map((item) => `          <div>${escapeHtml(item)}</div>`).join("\n")}
+        </div>
+      </section>`;
+
+  return renderNgoSitePage({
+    title: page.title,
+    eyebrow: page.eyebrow,
+    heroTitle: page.heroTitle,
+    intro: page.intro,
+    note: page.note,
+    currentKey: sectionKey,
+    basePath: "../",
+    bodyHtml
+  });
 }
 
 function listQuizDirs(baseDir) {
@@ -5980,10 +6514,20 @@ function writeHub() {
 
 function writeNgoHub() {
   ensureDir(ngoDir);
+  ensureDir(ngoQuizHubDir);
+  ensureDir(path.join(ngoDir, "roles"));
+  ensureDir(path.join(ngoDir, "scenarios"));
+  ensureDir(path.join(ngoDir, "tools"));
+  ensureDir(path.join(ngoDir, "about"));
   const publishedDaily = listQuizDirs(docsDir)
     .map((folder) => quizCatalog.find((quiz) => folderNameFor(quiz) === folder))
     .filter(Boolean);
-  fs.writeFileSync(path.join(ngoDir, "index.html"), renderNgoHubHtml(publishedDaily), "utf8");
+  fs.writeFileSync(path.join(ngoDir, "index.html"), renderNgoLandingHtml(publishedDaily.sort((a, b) => a.number - b.number).at(-1) ?? null), "utf8");
+  fs.writeFileSync(path.join(ngoQuizHubDir, "index.html"), renderNgoHubHtml(publishedDaily), "utf8");
+  fs.writeFileSync(path.join(ngoDir, "roles", "index.html"), renderNgoSectionHubHtml("roles"), "utf8");
+  fs.writeFileSync(path.join(ngoDir, "scenarios", "index.html"), renderNgoSectionHubHtml("scenarios"), "utf8");
+  fs.writeFileSync(path.join(ngoDir, "tools", "index.html"), renderNgoSectionHubHtml("tools"), "utf8");
+  fs.writeFileSync(path.join(ngoDir, "about", "index.html"), renderNgoSectionHubHtml("about"), "utf8");
 }
 
 function latestPublishedQuiz() {
