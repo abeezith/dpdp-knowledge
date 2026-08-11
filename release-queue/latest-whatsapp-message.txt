@@ -1,7 +1,7 @@
-DPDP Quiz 36 | Advanced Research Exemption
+DPDP Quiz 37 | Implementor Consent Records
 
-Five advanced BI questions on Section 17(2)(b), decision-specific use, true anonymisation, secure statistical processing, and when exemptions do not remove governance duties.
+Five implementor-focused questions on verbal consent records, partial refusal, burden of proof, named sharing recipients, and documenting deemed-consent use correctly.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-36-advanced-research-exemption/
+https://abeezith.github.io/dpdp-knowledge/quiz-37-implementor-consent-records/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

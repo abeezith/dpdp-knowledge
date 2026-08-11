@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-10T13:33:43.304Z",
-  "publishedThisRun": "quiz-36-advanced-research-exemption",
-  "latestPublishedFolder": "quiz-36-advanced-research-exemption",
-  "lastPublishedAt": "2026-08-10T13:33:43.303Z",
-  "lastPublishedOnLocalDate": "2026-08-10",
+  "updatedAt": "2026-08-11T13:32:27.667Z",
+  "publishedThisRun": "quiz-37-implementor-consent-records",
+  "latestPublishedFolder": "quiz-37-implementor-consent-records",
+  "lastPublishedAt": "2026-08-11T13:32:27.666Z",
+  "lastPublishedOnLocalDate": "2026-08-11",
   "lastNotificationSentFor": "quiz-36-advanced-research-exemption",
   "queuedFolders": [
-    "quiz-37-implementor-consent-records",
     "quiz-38-jharkhand-odk-device-recovery",
     "quiz-39-platform-audit-evidence",
     "quiz-40-notice-design-withdrawal-paths",
@@ -23,5 +22,5 @@
     "quiz-51-retention-pre-erasure-notice",
     "quiz-52-developer-export-access"
   ],
-  "queuedCount": 16
+  "queuedCount": 15
 }
