@@ -1,7 +1,7 @@
-DPDP Quiz 37 | Implementor Consent Records
+DPDP Quiz 38 | Jharkhand ODK Device Recovery
 
-Five implementor-focused questions on verbal consent records, partial refusal, burden of proof, named sharing recipients, and documenting deemed-consent use correctly.
+Five Jharkhand field questions on lost ODK devices, rapid escalation, preserving evidence, remote wipe, and reducing exposure from synced forms.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-37-implementor-consent-records/
+https://abeezith.github.io/dpdp-knowledge/quiz-38-jharkhand-odk-device-recovery/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
