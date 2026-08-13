@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-12T13:32:58.6334688Z",
-  "publishedThisRun": "quiz-38-jharkhand-odk-device-recovery",
-  "latestPublishedFolder": "quiz-38-jharkhand-odk-device-recovery",
-  "lastPublishedAt": "2026-08-12T13:31:57.829Z",
-  "lastPublishedOnLocalDate": "2026-08-12",
+  "updatedAt": "2026-08-13T13:32:31.132Z",
+  "publishedThisRun": "quiz-39-platform-audit-evidence",
+  "latestPublishedFolder": "quiz-39-platform-audit-evidence",
+  "lastPublishedAt": "2026-08-13T13:32:31.129Z",
+  "lastPublishedOnLocalDate": "2026-08-13",
   "lastNotificationSentFor": "quiz-38-jharkhand-odk-device-recovery",
   "queuedFolders": [
-    "quiz-39-platform-audit-evidence",
     "quiz-40-notice-design-withdrawal-paths",
     "quiz-41-bihar-voice-consent-workflows",
     "quiz-42-platform-data-inventory-kickoff",
@@ -21,5 +20,5 @@
     "quiz-51-retention-pre-erasure-notice",
     "quiz-52-developer-export-access"
   ],
-  "queuedCount": 14
+  "queuedCount": 13
 }

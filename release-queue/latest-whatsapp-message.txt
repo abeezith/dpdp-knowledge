@@ -1,7 +1,7 @@
-DPDP Quiz 38 | Jharkhand ODK Device Recovery
+DPDP Quiz 39 | Platform Audit Evidence
 
-Five Jharkhand field questions on lost ODK devices, rapid escalation, preserving evidence, remote wipe, and reducing exposure from synced forms.
+Five audit-focused questions on data inventory, processor safeguards, backup evidence, hosted infrastructure visibility, and why the platform audit should already be underway.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-38-jharkhand-odk-device-recovery/
+https://abeezith.github.io/dpdp-knowledge/quiz-39-platform-audit-evidence/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
