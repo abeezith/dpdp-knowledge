@@ -1,24 +1,23 @@
 {
-    "updatedAt":  "2026-08-13T13:35:02.9898516Z",
-    "publishedThisRun":  "quiz-39-platform-audit-evidence",
-    "latestPublishedFolder":  "quiz-39-platform-audit-evidence",
-    "lastPublishedAt":  "2026-08-13T13:32:31.129Z",
-    "lastPublishedOnLocalDate":  "2026-08-13",
-    "lastNotificationSentFor":  "quiz-39-platform-audit-evidence",
-    "queuedFolders":  [
-                          "quiz-40-notice-design-withdrawal-paths",
-                          "quiz-41-bihar-voice-consent-workflows",
-                          "quiz-42-platform-data-inventory-kickoff",
-                          "quiz-43-karuna-child-photo-boundaries",
-                          "quiz-44-rights-request-ledger",
-                          "quiz-45-donor-evaluation-anonymisation",
-                          "quiz-46-jharkhand-device-offline-limits",
-                          "quiz-47-phase-three-readiness-sprint",
-                          "quiz-48-processor-contract-handoffs",
-                          "quiz-49-beginner-consent-language",
-                          "quiz-50-advanced-nikshay-role-clarity",
-                          "quiz-51-retention-pre-erasure-notice",
-                          "quiz-52-developer-export-access"
-                      ],
-    "queuedCount":  13
+  "updatedAt": "2026-08-14T13:36:08.452Z",
+  "publishedThisRun": "quiz-40-notice-design-withdrawal-paths",
+  "latestPublishedFolder": "quiz-40-notice-design-withdrawal-paths",
+  "lastPublishedAt": "2026-08-14T13:36:08.452Z",
+  "lastPublishedOnLocalDate": "2026-08-14",
+  "lastNotificationSentFor": "quiz-39-platform-audit-evidence",
+  "queuedFolders": [
+    "quiz-41-bihar-voice-consent-workflows",
+    "quiz-42-platform-data-inventory-kickoff",
+    "quiz-43-karuna-child-photo-boundaries",
+    "quiz-44-rights-request-ledger",
+    "quiz-45-donor-evaluation-anonymisation",
+    "quiz-46-jharkhand-device-offline-limits",
+    "quiz-47-phase-three-readiness-sprint",
+    "quiz-48-processor-contract-handoffs",
+    "quiz-49-beginner-consent-language",
+    "quiz-50-advanced-nikshay-role-clarity",
+    "quiz-51-retention-pre-erasure-notice",
+    "quiz-52-developer-export-access"
+  ],
+  "queuedCount": 12
 }

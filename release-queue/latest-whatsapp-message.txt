@@ -1,7 +1,7 @@
-DPDP Quiz 39 | Platform Audit Evidence
+DPDP Quiz 40 | Notice Design Withdrawal Paths
 
-Five audit-focused questions on data inventory, processor safeguards, backup evidence, hosted infrastructure visibility, and why the platform audit should already be underway.
+Five Rule 3 questions on standalone notices, itemised fields, named sharing, withdrawal channels, and proving that consent was actually documented.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-39-platform-audit-evidence/
+https://abeezith.github.io/dpdp-knowledge/quiz-40-notice-design-withdrawal-paths/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
