@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-14T13:36:08.452Z",
-  "publishedThisRun": "quiz-40-notice-design-withdrawal-paths",
-  "latestPublishedFolder": "quiz-40-notice-design-withdrawal-paths",
-  "lastPublishedAt": "2026-08-14T13:36:08.452Z",
-  "lastPublishedOnLocalDate": "2026-08-14",
+  "updatedAt": "2026-08-19T13:52:31.728Z",
+  "publishedThisRun": "quiz-41-bihar-voice-consent-workflows",
+  "latestPublishedFolder": "quiz-41-bihar-voice-consent-workflows",
+  "lastPublishedAt": "2026-08-19T13:52:31.717Z",
+  "lastPublishedOnLocalDate": "2026-08-19",
   "lastNotificationSentFor": "quiz-40-notice-design-withdrawal-paths",
   "queuedFolders": [
-    "quiz-41-bihar-voice-consent-workflows",
     "quiz-42-platform-data-inventory-kickoff",
     "quiz-43-karuna-child-photo-boundaries",
     "quiz-44-rights-request-ledger",
@@ -19,5 +18,5 @@
     "quiz-51-retention-pre-erasure-notice",
     "quiz-52-developer-export-access"
   ],
-  "queuedCount": 12
+  "queuedCount": 11
 }
