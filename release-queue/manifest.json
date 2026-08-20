@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-19T13:52:31.728Z",
-  "publishedThisRun": "quiz-41-bihar-voice-consent-workflows",
-  "latestPublishedFolder": "quiz-41-bihar-voice-consent-workflows",
-  "lastPublishedAt": "2026-08-19T13:52:31.717Z",
-  "lastPublishedOnLocalDate": "2026-08-19",
+  "updatedAt": "2026-08-20T13:34:31.327Z",
+  "publishedThisRun": "quiz-42-platform-data-inventory-kickoff",
+  "latestPublishedFolder": "quiz-42-platform-data-inventory-kickoff",
+  "lastPublishedAt": "2026-08-20T13:34:31.325Z",
+  "lastPublishedOnLocalDate": "2026-08-20",
   "lastNotificationSentFor": "quiz-41-bihar-voice-consent-workflows",
   "queuedFolders": [
-    "quiz-42-platform-data-inventory-kickoff",
     "quiz-43-karuna-child-photo-boundaries",
     "quiz-44-rights-request-ledger",
     "quiz-45-donor-evaluation-anonymisation",
@@ -18,5 +17,5 @@
     "quiz-51-retention-pre-erasure-notice",
     "quiz-52-developer-export-access"
   ],
-  "queuedCount": 11
+  "queuedCount": 10
 }
