@@ -4517,6 +4517,91 @@ const quizCatalog = [
         explanation: "Across the role guidance and Rule 8 summary, the approved pack rejects indefinite retention just because a future use might appear later."
       }
     ]
+  },
+  {
+    number: 53,
+    slug: "intermediate-grievance-intake",
+    shortTitle: "Intermediate Grievance Intake",
+    pageTitle: "DPDP Quiz 53 - Intermediate Grievance Intake",
+    eyebrow: "DPDP Quiz 53 | Intermediate Grievance Intake",
+    heroTitle: "Intermediate Grievance Intake: Routing Requests Before They Escalate",
+    heroIntro: "This next queued set shifts from developer hardening to operational rights handling. It tests whether field and programme teams can log requests properly, avoid unsafe disclosures, and keep the published grievance route usable before matters reach the DPBI.",
+    cardDescription: "Five intermediate questions on published privacy contacts, rights-request logging, 90-day responses, sensitive phone handling, and standalone grievance channels.",
+    audience: "Program Officers, field supervisors, privacy contacts, and grievance handlers",
+    focus: "Rule 9 contact publishing, Rule 14 rights handling, and disciplined intake of sensitive complaints",
+    resultSummary: "This set reinforces that grievance handling starts with a visible contact route, clean request records, careful identity-aware communication, and responses within the 90-day limit.",
+    topics: [
+      { label: "Difficulty", text: "Intermediate judgement for everyday rights and grievance intake" },
+      { label: "Obligation Area", text: "Rule 9 contact publication and Rule 14 grievance-response workflow" },
+      { label: "Focus", text: "Logging, escalation, response timing, and safe handling of sensitive calls" }
+    ],
+    questions: [
+      {
+        module: "Act and rules summary",
+        topic: "What must be published",
+        text: "A programme website currently shows only a generic no-reply mailbox. According to the approved source pack, what should be available instead for DPDP compliance?",
+        options: [
+          "Only a donor-facing communications alias because rights queries can wait",
+          "Business contact information for the designated privacy point of contact",
+          "No published contact until Piramal Foundation becomes a Significant Data Fiduciary",
+          "A rotating volunteer phone number with no named ownership"
+        ],
+        correct: 1,
+        explanation: "Rule 9 in the source summary says the website or app should publish the business contact information of the designated privacy contact who can answer processing questions."
+      },
+      {
+        module: "Consent templates",
+        topic: "Minimum request record",
+        text: "A beneficiary asks for correction of her phone number during a field visit. Which record format is closest to the approved rights-request template?",
+        options: [
+          "A note that says \"fixed later\" with no request date or owner",
+          "A rights-request record showing request date, beneficiary identity, request type, who received it, escalation path, and response due date",
+          "A fresh consent form replacing the original enrolment sheet",
+          "A WhatsApp forward to the district group with the beneficiary's full details"
+        ],
+        correct: 1,
+        explanation: "The consent-template pack includes a Data Principal rights request record with the request date, type, receiver, escalation path, and response timeline."
+      },
+      {
+        module: "Act and rules summary",
+        topic: "Response deadline",
+        text: "Once a grievance or rights request is formally received, what maximum response window does the approved pack expect Piramal Foundation to meet?",
+        options: [
+          "30 days in every case",
+          "72 hours because every complaint is treated like a breach",
+          "90 days maximum",
+          "Only by the next annual compliance review"
+        ],
+        correct: 2,
+        explanation: "The act-and-rules summary and role guidance both state that grievances should be resolved within 90 days."
+      },
+      {
+        module: "Learning modules",
+        topic: "Sensitive helpline request",
+        text: "A caller says her husband must not learn whether she appears in a TB-related record and asks the helpline to confirm it immediately. What handling pattern best matches the approved training module?",
+        options: [
+          "Confirm the record status on the call so she feels reassured",
+          "Deny the record exists and close the matter without logging it",
+          "Record the request, avoid confirming or denying specific record status on the phone, and escalate for formal handling",
+          "Tell her to call back only after filing a DPBI complaint"
+        ],
+        correct: 2,
+        explanation: "The learning module's helpline scenario says staff should not confirm or deny specific record status in a sensitive case. They should log the request and escalate it carefully."
+      },
+      {
+        module: "Role guidance",
+        topic: "Usable grievance route",
+        text: "Why does the source pack treat a clear public grievance route as more than a website formality?",
+        options: [
+          "Because it helps people exercise rights before escalating to the DPBI",
+          "Because publishing a contact removes the need to answer deletion requests",
+          "Because only significant data fiduciaries need internal ownership",
+          "Because grievances are handled only by external vendors"
+        ],
+        correct: 0,
+        explanation: "Across the role guidance and summary, the published grievance path matters because Data Principals must be able to raise issues and exhaust that route before going to the DPBI."
+      }
+    ]
   }
 ];
 
