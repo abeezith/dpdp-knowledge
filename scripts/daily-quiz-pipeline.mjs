@@ -4602,6 +4602,91 @@ const quizCatalog = [
         explanation: "Across the role guidance and summary, the published grievance path matters because Data Principals must be able to raise issues and exhaust that route before going to the DPBI."
       }
     ]
+  },
+  {
+    number: 54,
+    slug: "collection-minimum-fields",
+    shortTitle: "Collection Minimum Fields",
+    pageTitle: "DPDP Quiz 54 - Collection Minimum Fields",
+    eyebrow: "DPDP Quiz 54 | Collection Minimum Fields",
+    heroTitle: "Collection Minimum Fields: Ask Only What the Program Needs",
+    heroIntro: "This queued set returns to the earliest stage of the data lifecycle. It checks whether field and programme teams can keep enrolment narrow, explain each field clearly, and document consent properly before anything reaches the MIS.",
+    cardDescription: "Five collection-stage questions on data minimisation, itemised notices, Aadhaar limits, low-literacy verbal consent records, and handling optional fields respectfully.",
+    audience: "Implementors, Program Officers, Fellows, and field supervisors",
+    focus: "Rule 3 notice design, minimum-field collection, and documented consent at intake",
+    resultSummary: "This set reinforces that strong DPDP practice begins before data entry: collect only what is needed, explain each field and purpose clearly, and record consent in a way that can later be proved.",
+    topics: [
+      { label: "Project Stage", text: "Initial enrolment and first-contact data collection" },
+      { label: "Obligation Area", text: "Rule 3 notice design and frontline data minimisation" },
+      { label: "Focus", text: "Itemised fields, optional-data restraint, Aadhaar limits, and verbal consent records" }
+    ],
+    questions: [
+      {
+        module: "Role guidance",
+        topic: "Optional income field",
+        text: "During a maternal-health enrolment visit, a form includes household income as an optional field, but the current service does not need it. What is the best source-based choice?",
+        options: [
+          "Collect it anyway because optional fields are harmless once a form exists",
+          "Skip it unless the programme actually needs it for the stated purpose",
+          "Collect it first and decide later whether to use it",
+          "Replace it with a free-text note about the family's finances"
+        ],
+        correct: 1,
+        explanation: "The role guidance says frontline teams should collect only the data a programme needs. If a field is optional and not needed for the stated purpose, it should be skipped."
+      },
+      {
+        module: "Consent templates",
+        topic: "Itemised notice wording",
+        text: "Which notice style is closest to the approved enrolment template?",
+        options: [
+          "We may collect some basic details for programme support as needed",
+          "We collect whatever information our staff think will be useful later",
+          "We collect your name, mobile number, village, and pregnancy status to provide antenatal support and track programme outcomes",
+          "By joining the programme, you accept all present and future data uses"
+        ],
+        correct: 2,
+        explanation: "The approved template requires an itemised list of the specific data fields being collected and the specific purpose for collecting them."
+      },
+      {
+        module: "Consent templates",
+        topic: "Aadhaar restraint",
+        text: "A field worker wants to make Aadhaar mandatory in every enrolment form \"just in case it helps later.\" What does the source pack support?",
+        options: [
+          "Collect Aadhaar only if it is actually required for government benefit linkage or the programme's defined purpose",
+          "Make Aadhaar mandatory in all forms because it reduces duplicate records",
+          "Collect Aadhaar but leave the purpose blank until the district team decides",
+          "Ask for Aadhaar only after the beneficiary has signed a blanket future-use clause"
+        ],
+        correct: 0,
+        explanation: "The enrolment template lists Aadhaar only where required for government benefit linkage. The broader guidance rejects collecting extra fields without a clear programme need."
+      },
+      {
+        module: "Consent templates",
+        topic: "Low-literacy verbal record",
+        text: "When a beneficiary cannot read or sign, which record is most consistent with the verbal-consent template?",
+        options: [
+          "A staff memory that the person seemed comfortable sharing information",
+          "A witness-backed record noting date, location, data collected, purpose explained, language used, and the beneficiary's verbal agreement",
+          "Only the beneficiary's thumb impression with no explanation details",
+          "A supervisor message saying the team usually reads notices aloud"
+        ],
+        correct: 1,
+        explanation: "The verbal-consent template requires a documented record with the date, location, data fields, purpose explained, language used, verbal response, field staff details, and witness information."
+      },
+      {
+        module: "Gandhi Fellow guidance",
+        topic: "Refusal of one field",
+        text: "A beneficiary agrees to answer a survey but refuses to share one household-detail field. What handling pattern best matches the guidance?",
+        options: [
+          "Stop the entire interaction and mark the person permanently ineligible",
+          "Fill the missing answer from a neighbour's estimate so the record stays complete",
+          "Respect the refusal, avoid collecting that field, and continue only if the rest of the collection still fits the programme purpose",
+          "Insist on the field because partial consent is not recognised in the source pack"
+        ],
+        correct: 2,
+        explanation: "The Gandhi Fellow guidance says people must be allowed to say no. If they decline a field, staff should not force collection or invent the answer."
+      }
+    ]
   }
 ];
 

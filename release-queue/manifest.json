@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-22T05:38:36.365Z",
-  "publishedThisRun": "quiz-43-karuna-child-photo-boundaries",
-  "latestPublishedFolder": "quiz-43-karuna-child-photo-boundaries",
-  "lastPublishedAt": "2026-08-22T05:36:39.061Z",
-  "lastPublishedOnLocalDate": "2026-08-22",
+  "updatedAt": "2026-08-23T17:29:57.958Z",
+  "publishedThisRun": "quiz-44-rights-request-ledger",
+  "latestPublishedFolder": "quiz-44-rights-request-ledger",
+  "lastPublishedAt": "2026-08-23T17:29:57.955Z",
+  "lastPublishedOnLocalDate": "2026-08-23",
   "lastNotificationSentFor": "quiz-43-karuna-child-photo-boundaries",
   "queuedFolders": [
-    "quiz-44-rights-request-ledger",
     "quiz-45-donor-evaluation-anonymisation",
     "quiz-46-jharkhand-device-offline-limits",
     "quiz-47-phase-three-readiness-sprint",
@@ -15,7 +14,8 @@
     "quiz-50-advanced-nikshay-role-clarity",
     "quiz-51-retention-pre-erasure-notice",
     "quiz-52-developer-export-access",
-    "quiz-53-intermediate-grievance-intake"
+    "quiz-53-intermediate-grievance-intake",
+    "quiz-54-collection-minimum-fields"
   ],
   "queuedCount": 10
 }

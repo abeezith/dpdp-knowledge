@@ -1,7 +1,7 @@
-DPDP Quiz 43 | Karuna Child Photo Boundaries
+DPDP Quiz 44 | Rights Request Ledger
 
-Five Karuna-focused questions on care exemptions, parental consent for media, MIS entry boundaries, safety tracking, and child well-being protections.
+Five rights-handling questions on access, correction, erasure, nomination, and why logging requests matters from day one.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-43-karuna-child-photo-boundaries/
+https://abeezith.github.io/dpdp-knowledge/quiz-44-rights-request-ledger/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
