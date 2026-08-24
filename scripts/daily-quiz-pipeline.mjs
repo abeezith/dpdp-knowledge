@@ -4687,6 +4687,91 @@ const quizCatalog = [
         explanation: "The Gandhi Fellow guidance says people must be allowed to say no. If they decline a field, staff should not force collection or invent the answer."
       }
     ]
+  },
+  {
+    number: 55,
+    slug: "gandhi-fellow-voice-note-boundaries",
+    shortTitle: "Gandhi Fellow Voice Note Boundaries",
+    pageTitle: "DPDP Quiz 55 - Gandhi Fellow Voice Note Boundaries",
+    eyebrow: "DPDP Quiz 55 | Gandhi Fellow Voice Note Boundaries",
+    heroTitle: "Gandhi Fellow Voice Note Boundaries: Consent, Sharing, and Respectful Follow-Up",
+    heroIntro: "This next queued set moves back to a field-role theme. It checks whether Gandhi Fellows can explain collection clearly, respect partial refusal, avoid unsafe sharing, and treat audio or media capture as a separate consent decision.",
+    cardDescription: "Five Gandhi Fellow questions on plain-language notices, partial refusal, WhatsApp sharing risk, audio-consent boundaries, and escalation of rights requests.",
+    audience: "Gandhi Fellows, field coordinators, Program Officers, and community-facing teams",
+    focus: "Field explanation, minimum necessary collection, media consent, safe sharing, and rights escalation",
+    resultSummary: "This set reinforces that Gandhi Fellows should explain purpose in simple language, respect refusal of individual fields, avoid casual sharing channels, and escalate rights requests instead of improvising.",
+    topics: [
+      { label: "People Role", text: "Gandhi Fellows and field teams collecting data directly from households" },
+      { label: "Field Setting", text: "Village enrolment, follow-up, and low-literacy community interactions" },
+      { label: "Focus", text: "Plain-language notices, audio consent, refusal handling, and safe data sharing" }
+    ],
+    questions: [
+      {
+        module: "Learning modules",
+        topic: "Explain before asking",
+        text: "Before starting a household survey in a village, what should a Gandhi Fellow do first according to the approved learning pack?",
+        options: [
+          "Begin with the most sensitive questions so the visit finishes faster",
+          "Explain what data will be collected, why it is being collected, and ask for agreement before proceeding",
+          "Collect the details first and explain the purpose only if the person objects later",
+          "Skip the notice if the beneficiary already knows the programme name"
+        ],
+        correct: 1,
+        explanation: "The learning modules say field staff should show or explain the notice, explain the purpose and any sharing, and ask for agreement before starting collection."
+      },
+      {
+        module: "Learning modules",
+        topic: "One-field refusal",
+        text: "A woman agrees to a household survey but says she does not want to disclose one income-related field. What is the better handling pattern from the source pack?",
+        options: [
+          "Respect the refusal, mark that field as declined or leave it uncollected, and continue only with the rest of the permitted survey",
+          "Tell her the whole survey becomes invalid unless every field is completed",
+          "Guess the income range from local context so the record stays usable",
+          "Collect the field anyway because the programme may need it later"
+        ],
+        correct: 0,
+        explanation: "The learning modules and role guidance say people can refuse specific data points. Staff should respect that choice rather than forcing or inventing the answer."
+      },
+      {
+        module: "Learning modules",
+        topic: "WhatsApp follow-up list",
+        text: "A Gandhi Fellow is asked to post a list of beneficiary names and phone numbers in a WhatsApp group for easier follow-up. Which answer best fits the approved guidance?",
+        options: [
+          "It is acceptable because internal programme groups are always secure",
+          "It is acceptable if the list is deleted after a week",
+          "It is risky and should be avoided because personal data can be forwarded or exposed outside controlled channels",
+          "It becomes compliant automatically if the names are sorted by village"
+        ],
+        correct: 2,
+        explanation: "The learning modules use WhatsApp-style forwarding as a warning example. Casual sharing of personal data through insecure channels creates avoidable exposure and should not be the default."
+      },
+      {
+        module: "Learning modules",
+        topic: "Voice recording purpose",
+        text: "A Fellow wants to record a beneficiary's voice note to use later in programme storytelling. What is the safest source-based view?",
+        options: [
+          "A voice note is personal data, so a separate clear agreement is needed for that recording use",
+          "Voice notes are outside DPDP if no written transcript is made",
+          "Audio can always be recorded once a survey has started",
+          "Storytelling use is automatically covered by consent for service delivery"
+        ],
+        correct: 0,
+        explanation: "The learning modules say identifiable audio is personal data. Recording for storytelling is a separate use and needs clear consent rather than being assumed from routine programme collection."
+      },
+      {
+        module: "Role guidance",
+        topic: "Rights request escalation",
+        text: "During a visit, a beneficiary says, \"Show me what your records say about me.\" What should the Gandhi Fellow do?",
+        options: [
+          "Read out whatever they remember from prior visits and close the matter informally",
+          "Promise that the data will be deleted immediately without checking the system",
+          "Note the request and escalate it through the Programme Officer route so the formal response can be handled properly",
+          "Ignore the request unless it is submitted through a lawyer"
+        ],
+        correct: 2,
+        explanation: "The role guidance and learning modules say field staff should log the request and escalate it rather than guessing or improvising a response."
+      }
+    ]
   }
 ];
 
