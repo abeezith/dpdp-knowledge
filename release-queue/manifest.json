@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-24T13:34:00.631Z",
-  "publishedThisRun": "quiz-45-donor-evaluation-anonymisation",
-  "latestPublishedFolder": "quiz-45-donor-evaluation-anonymisation",
-  "lastPublishedAt": "2026-08-24T13:34:00.625Z",
-  "lastPublishedOnLocalDate": "2026-08-24",
+  "updatedAt": "2026-08-25T13:33:31.099Z",
+  "publishedThisRun": "quiz-46-jharkhand-device-offline-limits",
+  "latestPublishedFolder": "quiz-46-jharkhand-device-offline-limits",
+  "lastPublishedAt": "2026-08-25T13:33:31.099Z",
+  "lastPublishedOnLocalDate": "2026-08-25",
   "lastNotificationSentFor": "quiz-45-donor-evaluation-anonymisation",
   "queuedFolders": [
-    "quiz-46-jharkhand-device-offline-limits",
     "quiz-47-phase-three-readiness-sprint",
     "quiz-48-processor-contract-handoffs",
     "quiz-49-beginner-consent-language",
@@ -15,7 +14,8 @@
     "quiz-52-developer-export-access",
     "quiz-53-intermediate-grievance-intake",
     "quiz-54-collection-minimum-fields",
-    "quiz-55-gandhi-fellow-voice-note-boundaries"
+    "quiz-55-gandhi-fellow-voice-note-boundaries",
+    "quiz-56-platform-contact-point-publish"
   ],
   "queuedCount": 10
 }

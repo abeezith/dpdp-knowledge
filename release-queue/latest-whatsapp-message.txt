@@ -1,7 +1,7 @@
-DPDP Quiz 45 | Donor Evaluation Anonymisation
+DPDP Quiz 46 | Jharkhand Device Offline Limits
 
-Five BI-focused questions on aggregate reporting, pseudonymisation limits, partner agreements, small-cell risk, and research-use boundaries.
+Five Jharkhand-focused questions on offline device storage, sync cleanup, encryption, remote wipe, and immediate escalation after a phone goes missing.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-45-donor-evaluation-anonymisation/
+https://abeezith.github.io/dpdp-knowledge/quiz-46-jharkhand-device-offline-limits/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
