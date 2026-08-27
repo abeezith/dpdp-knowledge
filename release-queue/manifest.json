@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-25T13:40:15.856Z",
-  "publishedThisRun": "quiz-46-jharkhand-device-offline-limits",
-  "latestPublishedFolder": "quiz-46-jharkhand-device-offline-limits",
-  "lastPublishedAt": "2026-08-25T13:33:31.099Z",
-  "lastPublishedOnLocalDate": "2026-08-25",
+  "updatedAt": "2026-08-27T13:37:54.602Z",
+  "publishedThisRun": "quiz-47-phase-three-readiness-sprint",
+  "latestPublishedFolder": "quiz-47-phase-three-readiness-sprint",
+  "lastPublishedAt": "2026-08-27T13:37:54.600Z",
+  "lastPublishedOnLocalDate": "2026-08-27",
   "lastNotificationSentFor": "quiz-46-jharkhand-device-offline-limits",
   "queuedFolders": [
-    "quiz-47-phase-three-readiness-sprint",
     "quiz-48-processor-contract-handoffs",
     "quiz-49-beginner-consent-language",
     "quiz-50-advanced-nikshay-role-clarity",
@@ -15,7 +14,17 @@
     "quiz-53-intermediate-grievance-intake",
     "quiz-54-collection-minimum-fields",
     "quiz-55-gandhi-fellow-voice-note-boundaries",
-    "quiz-56-platform-contact-point-publish"
+    "quiz-56-platform-contact-point-publish",
+    "quiz-57-bihar-photo-consent-boundaries",
+    "quiz-58-retention-cleanup-checkpoint",
+    "quiz-59-developer-abdm-consent-gap",
+    "quiz-60-child-health-care-boundary",
+    "quiz-61-beginner-rights-routing",
+    "quiz-62-sitamarhi-ai-didi-audio",
+    "quiz-63-bi-analyst-small-cell-guardrails",
+    "quiz-64-nikshay-processor-scope",
+    "quiz-65-breach-notification-drill",
+    "quiz-66-advanced-audit-evidence-sequencing"
   ],
-  "queuedCount": 10
+  "queuedCount": 19
 }

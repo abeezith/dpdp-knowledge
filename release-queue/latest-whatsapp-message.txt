@@ -1,7 +1,7 @@
-DPDP Quiz 46 | Jharkhand Device Offline Limits
+DPDP Quiz 47 | Phase Three Readiness Sprint
 
-Five Jharkhand-focused questions on offline device storage, sync cleanup, encryption, remote wipe, and immediate escalation after a phone goes missing.
+Five timeline questions on Phase I realities, November 2026 preparation, May 2027 enforcement, grievance readiness, and staff-training priorities.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-46-jharkhand-device-offline-limits/
+https://abeezith.github.io/dpdp-knowledge/quiz-47-phase-three-readiness-sprint/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
