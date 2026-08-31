@@ -1,7 +1,7 @@
-DPDP Quiz 48 | Processor Contract Handoffs
+DPDP Quiz 49 | Beginner Consent Language
 
-Five partner-management questions on Data Processor contracts, Nikshay role clarity, JEEViKA alignment, purpose limits, and equivalent safeguards.
+Five simpler consent questions on standalone notices, itemised fields, verbal documentation, practical withdrawal, and proving consent was obtained.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-48-processor-contract-handoffs/
+https://abeezith.github.io/dpdp-knowledge/quiz-49-beginner-consent-language/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
