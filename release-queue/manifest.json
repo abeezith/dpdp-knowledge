@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-31T07:46:12.122Z",
-  "publishedThisRun": "quiz-49-beginner-consent-language",
-  "latestPublishedFolder": "quiz-49-beginner-consent-language",
-  "lastPublishedAt": "2026-08-31T07:46:12.122Z",
-  "lastPublishedOnLocalDate": "2026-08-31",
-  "lastNotificationSentFor": "quiz-49-beginner-consent-language",
+  "updatedAt": "2026-09-01T13:44:58.691Z",
+  "publishedThisRun": "quiz-50-advanced-nikshay-role-clarity",
+  "latestPublishedFolder": "quiz-50-advanced-nikshay-role-clarity",
+  "lastPublishedAt": "2026-09-01T13:44:58.688Z",
+  "lastPublishedOnLocalDate": "2026-09-01",
+  "lastNotificationSentFor": "quiz-50-advanced-nikshay-role-clarity",
   "queuedFolders": [
-    "quiz-50-advanced-nikshay-role-clarity",
     "quiz-51-retention-pre-erasure-notice",
     "quiz-52-developer-export-access",
     "quiz-53-intermediate-grievance-intake",
@@ -24,5 +23,5 @@
     "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing"
   ],
-  "queuedCount": 17
+  "queuedCount": 16
 }
