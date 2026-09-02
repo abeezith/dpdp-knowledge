@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-01T13:44:58.691Z",
-  "publishedThisRun": "quiz-50-advanced-nikshay-role-clarity",
-  "latestPublishedFolder": "quiz-50-advanced-nikshay-role-clarity",
-  "lastPublishedAt": "2026-09-01T13:44:58.688Z",
-  "lastPublishedOnLocalDate": "2026-09-01",
+  "updatedAt": "2026-09-02T13:32:31.329Z",
+  "publishedThisRun": "quiz-51-retention-pre-erasure-notice",
+  "latestPublishedFolder": "quiz-51-retention-pre-erasure-notice",
+  "lastPublishedAt": "2026-09-02T13:32:31.328Z",
+  "lastPublishedOnLocalDate": "2026-09-02",
   "lastNotificationSentFor": "quiz-50-advanced-nikshay-role-clarity",
   "queuedFolders": [
-    "quiz-51-retention-pre-erasure-notice",
     "quiz-52-developer-export-access",
     "quiz-53-intermediate-grievance-intake",
     "quiz-54-collection-minimum-fields",
@@ -23,5 +22,5 @@
     "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing"
   ],
-  "queuedCount": 16
+  "queuedCount": 15
 }
