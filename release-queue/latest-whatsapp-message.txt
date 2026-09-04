@@ -1,7 +1,7 @@
-DPDP Quiz 52 | Developer Export Access
+DPDP Quiz 53 | Intermediate Grievance Intake
 
-Five developer questions on export logging, inactive accounts, API token rotation, encrypted backups, and vendor-security clauses.
+Five intermediate questions on published privacy contacts, rights-request logging, 90-day responses, sensitive phone handling, and standalone grievance channels.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-52-developer-export-access/
+https://abeezith.github.io/dpdp-knowledge/quiz-53-intermediate-grievance-intake/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

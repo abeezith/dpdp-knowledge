@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-03T13:32:58.589Z",
-  "publishedThisRun": "quiz-52-developer-export-access",
-  "latestPublishedFolder": "quiz-52-developer-export-access",
-  "lastPublishedAt": "2026-09-03T13:32:58.587Z",
-  "lastPublishedOnLocalDate": "2026-09-03",
+  "updatedAt": "2026-09-04T13:32:48.123Z",
+  "publishedThisRun": "quiz-53-intermediate-grievance-intake",
+  "latestPublishedFolder": "quiz-53-intermediate-grievance-intake",
+  "lastPublishedAt": "2026-09-04T13:32:48.119Z",
+  "lastPublishedOnLocalDate": "2026-09-04",
   "lastNotificationSentFor": "quiz-51-retention-pre-erasure-notice",
   "queuedFolders": [
-    "quiz-53-intermediate-grievance-intake",
     "quiz-54-collection-minimum-fields",
     "quiz-55-gandhi-fellow-voice-note-boundaries",
     "quiz-56-platform-contact-point-publish",
@@ -21,5 +20,5 @@
     "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing"
   ],
-  "queuedCount": 14
+  "queuedCount": 13
 }
