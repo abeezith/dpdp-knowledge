@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-04T13:32:48.123Z",
-  "publishedThisRun": "quiz-53-intermediate-grievance-intake",
-  "latestPublishedFolder": "quiz-53-intermediate-grievance-intake",
-  "lastPublishedAt": "2026-09-04T13:32:48.119Z",
-  "lastPublishedOnLocalDate": "2026-09-04",
+  "updatedAt": "2026-09-05T13:32:49.388Z",
+  "publishedThisRun": "quiz-54-collection-minimum-fields",
+  "latestPublishedFolder": "quiz-54-collection-minimum-fields",
+  "lastPublishedAt": "2026-09-05T13:32:49.385Z",
+  "lastPublishedOnLocalDate": "2026-09-05",
   "lastNotificationSentFor": "quiz-53-intermediate-grievance-intake",
   "queuedFolders": [
-    "quiz-54-collection-minimum-fields",
     "quiz-55-gandhi-fellow-voice-note-boundaries",
     "quiz-56-platform-contact-point-publish",
     "quiz-57-bihar-photo-consent-boundaries",
@@ -20,5 +19,5 @@
     "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing"
   ],
-  "queuedCount": 13
+  "queuedCount": 12
 }

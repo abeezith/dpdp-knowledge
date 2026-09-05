@@ -1,7 +1,7 @@
-DPDP Quiz 53 | Intermediate Grievance Intake
+DPDP Quiz 54 | Collection Minimum Fields
 
-Five intermediate questions on published privacy contacts, rights-request logging, 90-day responses, sensitive phone handling, and standalone grievance channels.
+Five collection-stage questions on data minimisation, itemised notices, Aadhaar limits, low-literacy verbal consent records, and handling optional fields respectfully.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-53-intermediate-grievance-intake/
+https://abeezith.github.io/dpdp-knowledge/quiz-54-collection-minimum-fields/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
