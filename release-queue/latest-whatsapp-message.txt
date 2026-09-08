@@ -1,7 +1,7 @@
-DPDP Quiz 54 | Collection Minimum Fields
+DPDP Quiz 55 | Gandhi Fellow Voice Note Boundaries
 
-Five collection-stage questions on data minimisation, itemised notices, Aadhaar limits, low-literacy verbal consent records, and handling optional fields respectfully.
+Five Gandhi Fellow questions on plain-language notices, partial refusal, WhatsApp sharing risk, audio-consent boundaries, and escalation of rights requests.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-54-collection-minimum-fields/
+https://abeezith.github.io/dpdp-knowledge/quiz-55-gandhi-fellow-voice-note-boundaries/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
