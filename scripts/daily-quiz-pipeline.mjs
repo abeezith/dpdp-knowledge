@@ -5710,6 +5710,63 @@ const quizCatalog = [
   }
 ];
 
+// Source: approved data-audit-checklist.md, ODK Collect / ODK Central checklist.
+quizCatalog.push({
+  number: 67,
+  slug: "odk-form-retirement",
+  shortTitle: "ODK Form Retirement",
+  pageTitle: "DPDP Quiz 67 - ODK Form Retirement",
+  eyebrow: "DPDP Quiz 67 | ODK Form Retirement",
+  heroTitle: "ODK Form Retirement: Closing the Old Collection Route",
+  heroIntro: "Five practical scenarios on retiring outdated ODK forms and controlling the personal data left on field devices.",
+  cardDescription: "Five questions on retiring old ODK forms, limiting fields, controlling form management, offline storage, and deleting successfully synced copies.",
+  audience: "Field implementors, ODK administrators, and programme teams",
+  focus: "Form retirement and local data cleanup",
+  resultSummary: "Retirement includes old form versions, unnecessary fields, management permissions, offline periods, and synced device copies.",
+  topics: [
+    { label: "Project Stage", text: "Retiring and replacing field collection forms" },
+    { label: "Platform", text: "ODK Collect and ODK Central" },
+    { label: "Focus", text: "Version control, minimal collection, and local copies" }
+  ],
+  questions: [
+    {
+      module: "Data audit checklist", topic: "Old version retirement",
+      text: "A district replaces an ODK survey with a version that removes unnecessary sensitive fields, but staff can still select the old version. What remains to be done?",
+      options: ["Retire the old form version so it no longer provides the outdated collection route", "Keep both versions available indefinitely for convenience", "Rename the old form without changing availability", "Ask staff to erase only the title of the old form"],
+      correct: 0,
+      explanation: "The ODK checklist explicitly asks whether old form versions with sensitive fields are retired. Issuing a replacement alone leaves that check unresolved."
+    },
+    {
+      module: "Data audit checklist", topic: "Replacement field review",
+      text: "While retiring a household form, the team copies every old field into its replacement, including details no longer needed by the programme. Which review should change this design?",
+      options: ["Check only whether the new form opens faster", "Keep fields because they were collected previously", "Review each field and retain only the minimum required information", "Make unused fields mandatory to reduce missing values"],
+      correct: 2,
+      explanation: "The ODK form-minimisation check asks whether forms collect only the minimum required fields. Prior inclusion is not a reason to retain an unnecessary field."
+    },
+    {
+      module: "Data audit checklist", topic: "Form management permission",
+      text: "After an ODK form replacement, an account used only for viewing submissions can also change the form configuration. Which checklist item should the administrator investigate?",
+      options: ["Whether the account prefers the new question order", "Whether submission access and form management are restricted to authorised staff", "Whether the form has a longer introduction", "Whether every viewer can be given the same editing access"],
+      correct: 1,
+      explanation: "The ODK Central access-control check covers both submission access and form management. Permissions should match authorised responsibilities."
+    },
+    {
+      module: "Data audit checklist", topic: "Offline period policy",
+      text: "A retired survey still has unsynced personal-data forms on several phones. The team has no rule for how long forms may remain offline. Which operational gap does this reveal?",
+      options: ["Every unsynced form must be made public", "Offline forms are outside the platform review", "The checklist sets the same fixed offline duration for every programme", "The team needs to define and review its maximum offline period policy"],
+      correct: 3,
+      explanation: "The ODK checklist asks how long data stays on devices before sync and whether a maximum offline period policy exists. It does not prescribe one universal duration."
+    },
+    {
+      module: "Data audit checklist", topic: "Successful sync cleanup",
+      text: "An administrator confirms that the last submissions from an old ODK form have successfully synced. Personal-data copies remain on the field tablets. Which remaining retirement action matches the checklist?",
+      options: ["Delete the successfully synced personal-data forms from the devices under the established process", "Keep all copies indefinitely because the form is retired", "Email the local copies to every field worker", "Treat successful sync as proof that the device copies no longer exist"],
+      correct: 0,
+      explanation: "The ODK checklist specifically checks deletion of forms containing personal data from devices after successful sync. Syncing does not itself demonstrate local deletion."
+    }
+  ]
+});
+
 function folderNameFor(quiz) {
   return `quiz-${String(quiz.number).padStart(2, "0")}-${quiz.slug}`;
 }
