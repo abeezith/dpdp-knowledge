@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-11T13:35:43.066Z",
-  "publishedThisRun": "quiz-57-bihar-photo-consent-boundaries",
-  "latestPublishedFolder": "quiz-57-bihar-photo-consent-boundaries",
-  "lastPublishedAt": "2026-09-11T13:33:28.468Z",
-  "lastPublishedOnLocalDate": "2026-09-11",
+  "updatedAt": "2026-09-13T13:33:11.273Z",
+  "publishedThisRun": "quiz-58-retention-cleanup-checkpoint",
+  "latestPublishedFolder": "quiz-58-retention-cleanup-checkpoint",
+  "lastPublishedAt": "2026-09-13T13:33:11.271Z",
+  "lastPublishedOnLocalDate": "2026-09-13",
   "lastNotificationSentFor": "quiz-57-bihar-photo-consent-boundaries",
   "queuedFolders": [
-    "quiz-58-retention-cleanup-checkpoint",
     "quiz-59-developer-abdm-consent-gap",
     "quiz-60-child-health-care-boundary",
     "quiz-61-beginner-rights-routing",
@@ -15,7 +14,8 @@
     "quiz-64-nikshay-processor-scope",
     "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing",
-    "quiz-67-odk-form-retirement"
+    "quiz-67-odk-form-retirement",
+    "quiz-68-karuna-fellow-escalation-judgment"
   ],
   "queuedCount": 10
 }

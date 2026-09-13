@@ -5767,6 +5767,102 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved role-guidance.md, Karuna Fellow Quick Card.
+quizCatalog.push({
+  "number": 68,
+  "slug": "karuna-fellow-escalation-judgment",
+  "shortTitle": "Karuna Fellow Escalation Judgment",
+  "pageTitle": "DPDP Quiz 68 - Karuna Fellow Escalation Judgment",
+  "eyebrow": "DPDP Quiz 68 | Karuna Fellow Escalation Judgment",
+  "heroTitle": "Karuna Fellow Escalation Judgment",
+  "heroIntro": "Five field scenarios on responding to privacy concerns during health outreach.",
+  "cardDescription": "Five questions on distress during collection, removal requests, suspected access, third-party demands, and witnessed verbal consent.",
+  "audience": "Karuna Fellows and health outreach teams",
+  "focus": "Respectful responses and privacy escalation",
+  "resultSummary": "Recognise when to pause, document a request, and involve the appropriate programme or breach-response contact.",
+  "topics": [
+    {
+      "label": "Role",
+      "text": "Karuna Fellow"
+    },
+    {
+      "label": "Setting",
+      "text": "Health outreach visits"
+    },
+    {
+      "label": "Focus",
+      "text": "Privacy concerns and escalation"
+    }
+  ],
+  "questions": [
+    {
+      "module": "Role guidance",
+      "topic": "Distress during collection",
+      "text": "During an outreach visit, a family becomes distressed when a Karuna Fellow starts asking for health details. Which response follows the role card?",
+      "options": [
+        "Finish the questionnaire before addressing the concern",
+        "Stop collection, reassure the family, and escalate",
+        "Ask a neighbour to supply the missing answers",
+        "Record the family as having consented because they attended"
+      ],
+      "correct": 1,
+      "explanation": "The Karuna Fellow escalation guidance says to stop, reassure, and escalate when a beneficiary or family member is distressed about data collection."
+    },
+    {
+      "module": "Role guidance",
+      "topic": "Removal request",
+      "text": "At the next home visit, a participant asks a Karuna Fellow to remove her from the programme records. What should the Fellow do with this request?",
+      "options": [
+        "Log the request and escalate to the Program Officer",
+        "Promise that every copy has already been deleted",
+        "Wait until several participants make the same request",
+        "Explain that only technical staff may raise a request"
+      ],
+      "correct": 0,
+      "explanation": "The role card instructs Karuna Fellows to log removal requests and escalate them to the Program Officer, rather than dismissing them or promising unverified deletion."
+    },
+    {
+      "module": "Role guidance",
+      "topic": "Suspected unauthorised access",
+      "text": "A Karuna Fellow suspects someone without permission has viewed camp health records. Which escalation route does the role guidance specify?",
+      "options": [
+        "Mention it only at the next routine team meeting",
+        "Ask the suspected viewer to decide whether escalation is needed",
+        "Escalate to the Program Officer and trigger the breach SOP",
+        "Wait for proof that the records were copied"
+      ],
+      "correct": 2,
+      "explanation": "The role card directs suspected unauthorised access to the Program Officer and the breach SOP. Suspicion should be escalated rather than held until copying is proven."
+    },
+    {
+      "module": "Role guidance",
+      "topic": "Third-party demand",
+      "text": "An employer calls a Karuna Fellow asking for a worker's health information, without the worker's knowledge. What is the appropriate immediate response?",
+      "options": [
+        "Share the record because the caller employs the worker",
+        "Share a photograph of the record instead of the file",
+        "Let the caller choose which fields are needed",
+        "Do not share the information; escalate the request"
+      ],
+      "correct": 3,
+      "explanation": "The Karuna Fellow guidance says not to share health information with a third party without the beneficiary's knowledge and to escalate such requests."
+    },
+    {
+      "module": "Role guidance",
+      "topic": "Witnessed verbal consent",
+      "text": "A participant who cannot read or sign agrees after the Karuna Fellow reads and explains the notice in her language. Which record best matches the role card?",
+      "options": [
+        "Only a tick beside the participant's name",
+        "The date, location, witness name, and what the participant consented to",
+        "A general statement that everyone at the visit agreed",
+        "A note of the Fellow's travel time only"
+      ],
+      "correct": 1,
+      "explanation": "For verbal consent, the role card specifies a witness and documentation of the date, location, witness name, and what was consented to, using the verbal-consent template."
+    }
+  ]
+});
+
 function folderNameFor(quiz) {
   return `quiz-${String(quiz.number).padStart(2, "0")}-${quiz.slug}`;
 }

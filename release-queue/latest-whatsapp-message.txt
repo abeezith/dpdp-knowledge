@@ -1,7 +1,7 @@
-DPDP Quiz 57 | Bihar Photo Consent Boundaries
+DPDP Quiz 58 | Retention Cleanup Checkpoint
 
-Five Bihar-focused questions on child photos, care-versus-reporting boundaries, donor-use consent, refusal handling, and safe field media practice.
+Five lifecycle questions on purpose completion, 48-hour pre-erasure notice, local-copy cleanup, legal-retention exceptions, and documenting deletion triggers.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-57-bihar-photo-consent-boundaries/
+https://abeezith.github.io/dpdp-knowledge/quiz-58-retention-cleanup-checkpoint/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
