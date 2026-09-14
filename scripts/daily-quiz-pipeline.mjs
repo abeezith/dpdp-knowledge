@@ -5863,6 +5863,102 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved data-audit-checklist.md, Custom MIS / Program Dashboards Checklist.
+quizCatalog.push({
+  "number": 69,
+  "slug": "dashboard-audit-readiness",
+  "shortTitle": "Dashboard Audit Readiness",
+  "pageTitle": "DPDP Quiz 69 - Dashboard Audit Readiness",
+  "eyebrow": "DPDP Quiz 69 | Dashboard Audit Readiness",
+  "heroTitle": "Dashboard Audit Readiness",
+  "heroIntro": "Five scenarios on reviewing a programme dashboard before an audit.",
+  "cardDescription": "Five questions on dashboard data sources, aggregated reports, export controls, hosting records, and vendor safeguards.",
+  "audience": "Programme dashboard owners and audit teams",
+  "focus": "Custom MIS and dashboard audit evidence",
+  "resultSummary": "Check the data feeding a dashboard, the reports leaving it, export permissions, hosting details, and vendor security terms.",
+  "topics": [
+    {
+      "label": "Obligation Area",
+      "text": "Audit readiness"
+    },
+    {
+      "label": "Platform",
+      "text": "Custom MIS and programme dashboards"
+    },
+    {
+      "label": "Focus",
+      "text": "Data flows and safeguards"
+    }
+  ],
+  "questions": [
+    {
+      "module": "Data audit checklist",
+      "topic": "Source documentation",
+      "text": "An audit pack lists dashboard chart titles but does not identify the personal data feeding the MIS. What should the owner add?",
+      "options": [
+        "A list of chart colours",
+        "Documentation of the personal data sources feeding the dashboard",
+        "Only the dashboard launch date",
+        "A screenshot of the login page"
+      ],
+      "correct": 1,
+      "explanation": "The custom MIS checklist asks whether the personal data feeding the dashboard or MIS is documented. Chart titles alone do not answer that question."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Standard report aggregation",
+      "text": "A routine dashboard report sends named beneficiary rows to analysts who need programme totals. Which checklist-aligned change should be reviewed?",
+      "options": [
+        "Add a confidentiality footer and leave the report unchanged",
+        "Ask each analyst to hide names after receipt",
+        "Aggregate the standard report without individual identifiers before it reaches analysts",
+        "Replace the report title with a generic name"
+      ],
+      "correct": 2,
+      "explanation": "The custom MIS checklist asks whether standard reports are already aggregated, with no individual identifiers, before reaching analysts."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Bulk export evidence",
+      "text": "A dashboard restricts bulk downloads to authorised roles, but nobody can establish which exports occurred. Which additional check remains open?",
+      "options": [
+        "Whether bulk exports are logged",
+        "Whether downloads use shorter filenames",
+        "Whether all staff can export instead",
+        "Whether charts are sorted alphabetically"
+      ],
+      "correct": 0,
+      "explanation": "The dashboard checklist checks both restrictions on bulk exports and logging. Restricting permissions does not demonstrate that exports are logged."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Hosting documentation",
+      "text": "An MIS owner records only the hosting product name and says the cloud region is irrelevant to the audit. Which documentation would satisfy the hosting check more fully?",
+      "options": [
+        "The vendor logo alone",
+        "The colour of the hosting console",
+        "The number of dashboard tabs",
+        "The hosting location, cloud region, and vendor"
+      ],
+      "correct": 3,
+      "explanation": "The custom MIS checklist asks where the MIS is hosted, including cloud region and vendor, and whether this is documented. It does not say that every foreign hosting arrangement is prohibited."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Vendor terms",
+      "text": "A dashboard vendor contract covers uptime and invoices but contains no DPDP security terms. Which audit action addresses the identified gap?",
+      "options": [
+        "Treat uptime commitments as complete privacy safeguards",
+        "Review and include DPDP security requirements in the vendor contract",
+        "Remove the vendor name from the audit pack",
+        "Close the item because invoices are paid"
+      ],
+      "correct": 1,
+      "explanation": "The custom MIS checklist explicitly asks whether the vendor contract includes DPDP security requirements. Commercial and availability terms alone do not establish this."
+    }
+  ]
+});
+
 function folderNameFor(quiz) {
   return `quiz-${String(quiz.number).padStart(2, "0")}-${quiz.slug}`;
 }

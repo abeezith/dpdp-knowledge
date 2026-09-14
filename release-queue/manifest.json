@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-13T13:35:54.480Z",
-  "publishedThisRun": "quiz-58-retention-cleanup-checkpoint",
-  "latestPublishedFolder": "quiz-58-retention-cleanup-checkpoint",
-  "lastPublishedAt": "2026-09-13T13:33:11.271Z",
-  "lastPublishedOnLocalDate": "2026-09-13",
+  "updatedAt": "2026-09-14T15:19:53.386Z",
+  "publishedThisRun": "quiz-59-developer-abdm-consent-gap",
+  "latestPublishedFolder": "quiz-59-developer-abdm-consent-gap",
+  "lastPublishedAt": "2026-09-14T15:19:53.384Z",
+  "lastPublishedOnLocalDate": "2026-09-14",
   "lastNotificationSentFor": "quiz-58-retention-cleanup-checkpoint",
   "queuedFolders": [
-    "quiz-59-developer-abdm-consent-gap",
     "quiz-60-child-health-care-boundary",
     "quiz-61-beginner-rights-routing",
     "quiz-62-sitamarhi-ai-didi-audio",
@@ -15,7 +14,8 @@
     "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing",
     "quiz-67-odk-form-retirement",
-    "quiz-68-karuna-fellow-escalation-judgment"
+    "quiz-68-karuna-fellow-escalation-judgment",
+    "quiz-69-dashboard-audit-readiness"
   ],
   "queuedCount": 10
 }

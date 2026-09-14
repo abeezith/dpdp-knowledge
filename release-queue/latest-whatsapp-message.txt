@@ -1,7 +1,7 @@
-DPDP Quiz 58 | Retention Cleanup Checkpoint
+DPDP Quiz 59 | Developer ABDM Consent Gap
 
-Five lifecycle questions on purpose completion, 48-hour pre-erasure notice, local-copy cleanup, legal-retention exceptions, and documenting deletion triggers.
+Five developer questions on ABDM notice gaps, easy withdrawal, one-year logs, RBAC, and when to escalate new child-data or Aadhaar features.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-58-retention-cleanup-checkpoint/
+https://abeezith.github.io/dpdp-knowledge/quiz-59-developer-abdm-consent-gap/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
