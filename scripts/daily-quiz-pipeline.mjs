@@ -5959,6 +5959,102 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved consent-templates.md, Templates 1, 3, and 4.
+quizCatalog.push({
+  "number": 70,
+  "slug": "rajasthan-consent-record-handoff",
+  "shortTitle": "Rajasthan Consent Record Handoff",
+  "pageTitle": "DPDP Quiz 70 - Rajasthan Consent Record Handoff",
+  "eyebrow": "DPDP Quiz 70 | Rajasthan Consent Record Handoff",
+  "heroTitle": "Rajasthan Consent Record Handoff",
+  "heroIntro": "Five scenarios on handing over clear, complete consent records between field teams in Rajasthan.",
+  "cardDescription": "Five questions on regional-language notices, verbal response records, partial refusals, sharing disclosures, and withdrawal during field-team handover.",
+  "audience": "Field teams and programme supervisors",
+  "focus": "Consent documentation at field-team handover",
+  "resultSummary": "Keep the explanation, response, scope, recipients, and withdrawal route clear when consent records change hands.",
+  "topics": [
+    {
+      "label": "Field Setting",
+      "text": "Rajasthan programme team handover"
+    },
+    {
+      "label": "Project Stage",
+      "text": "Consent record handoff"
+    },
+    {
+      "label": "Focus",
+      "text": "Consent templates and documentation"
+    }
+  ],
+  "questions": [
+    {
+      "module": "Consent templates",
+      "topic": "Language preparation",
+      "text": "A new Rajasthan outreach team receives the Hindi placeholder consent structure and plans to print it with English field labels still present. What preparation follows the template guidance?",
+      "options": [
+        "Use it unchanged because the heading is Hindi",
+        "Arrange a full translation by a qualified translator and adapt the notice to the programme",
+        "Remove the data-field list to shorten it",
+        "Ask beneficiaries to sign before translating"
+      ],
+      "correct": 1,
+      "explanation": "Template 3 is a placeholder structure, and the guidance calls for a full Hindi translation by a qualified translator. Templates must also be adapted to the programme and data collected."
+    },
+    {
+      "module": "Consent templates",
+      "topic": "Exact verbal response",
+      "text": "At handover, a verbal-consent record says only \"participant cooperative\" instead of recording what the person said. Which entry should the team seek to document?",
+      "options": [
+        "The beneficiary's actual verbal response to the explained notice",
+        "The collector's opinion of the beneficiary",
+        "Only the duration of the visit",
+        "A supervisor's assumed agreement"
+      ],
+      "correct": 0,
+      "explanation": "The verbal-consent template includes the beneficiary's verbal response and asks staff to record the exact words, rather than substituting an impression of cooperation."
+    },
+    {
+      "module": "Consent templates",
+      "topic": "Partial refusal record",
+      "text": "During a Rajasthan enrolment visit, a beneficiary agrees to the listed programme collection but declines one part. What should the outgoing team preserve in the verbal-consent handover record?",
+      "options": [
+        "A single statement that all parts were accepted",
+        "Only the programme name",
+        "A note of the part the beneficiary declined",
+        "No record until the next visit"
+      ],
+      "correct": 2,
+      "explanation": "The verbal-consent record explicitly includes a note if the beneficiary declined any part. Preserving that detail keeps the consent record faithful to the response."
+    },
+    {
+      "module": "Consent templates",
+      "topic": "Sharing explanation",
+      "text": "An incoming field team finds an enrolment notice that explains the purpose but leaves \"Who will see this information\" blank. Which correction follows the beneficiary template?",
+      "options": [
+        "Replace the blank with \"anyone interested\"",
+        "Leave recipients unspecified if a signature exists",
+        "Record only the fieldworker's travel route",
+        "Identify the programme staff and applicable government or other partners who may receive it"
+      ],
+      "correct": 3,
+      "explanation": "Template 1 identifies programme staff, government partners for programme reporting, and other applicable partners in its sharing section. The notice should be adapted to the actual programme."
+    },
+    {
+      "module": "Consent templates",
+      "topic": "Withdrawal assurance",
+      "text": "After a Rajasthan team handover, a participant asks whether withdrawing consent changes services she already received. What assurance appears in the enrolment template?",
+      "options": [
+        "Withdrawal is unavailable after handover",
+        "Withdrawal will not affect services already provided",
+        "All earlier services must be repaid",
+        "Only the previous fieldworker can accept withdrawal"
+      ],
+      "correct": 1,
+      "explanation": "The enrolment template says consent can be withdrawn at any time through the stated route, and withdrawing consent will not affect services already provided."
+    }
+  ]
+});
+
 function folderNameFor(quiz) {
   return `quiz-${String(quiz.number).padStart(2, "0")}-${quiz.slug}`;
 }

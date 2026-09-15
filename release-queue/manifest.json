@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-14T15:21:58.536Z",
-  "publishedThisRun": "quiz-59-developer-abdm-consent-gap",
-  "latestPublishedFolder": "quiz-59-developer-abdm-consent-gap",
-  "lastPublishedAt": "2026-09-14T15:19:53.384Z",
-  "lastPublishedOnLocalDate": "2026-09-14",
+  "updatedAt": "2026-09-15T13:33:30.785Z",
+  "publishedThisRun": "quiz-60-child-health-care-boundary",
+  "latestPublishedFolder": "quiz-60-child-health-care-boundary",
+  "lastPublishedAt": "2026-09-15T13:33:30.784Z",
+  "lastPublishedOnLocalDate": "2026-09-15",
   "lastNotificationSentFor": "quiz-59-developer-abdm-consent-gap",
   "queuedFolders": [
-    "quiz-60-child-health-care-boundary",
     "quiz-61-beginner-rights-routing",
     "quiz-62-sitamarhi-ai-didi-audio",
     "quiz-63-bi-analyst-small-cell-guardrails",
@@ -15,7 +14,8 @@
     "quiz-66-advanced-audit-evidence-sequencing",
     "quiz-67-odk-form-retirement",
     "quiz-68-karuna-fellow-escalation-judgment",
-    "quiz-69-dashboard-audit-readiness"
+    "quiz-69-dashboard-audit-readiness",
+    "quiz-70-rajasthan-consent-record-handoff"
   ],
   "queuedCount": 10
 }

@@ -1,7 +1,7 @@
-DPDP Quiz 59 | Developer ABDM Consent Gap
+DPDP Quiz 60 | Child Health Care Boundary
 
-Five developer questions on ABDM notice gaps, easy withdrawal, one-year logs, RBAC, and when to escalate new child-data or Aadhaar features.
+Five child-data questions on direct care exemptions, MIS entry scope, parent approval, prohibited profiling, and education or care-context limits.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-59-developer-abdm-consent-gap/
+https://abeezith.github.io/dpdp-knowledge/quiz-60-child-health-care-boundary/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
