@@ -1,7 +1,7 @@
-DPDP Quiz 60 | Child Health Care Boundary
+DPDP Quiz 61 | Beginner Rights Routing
 
-Five child-data questions on direct care exemptions, MIS entry scope, parent approval, prohibited profiling, and education or care-context limits.
+Five beginner questions on rights recognition, logging basics, escalation routes, lawful-retention limits, and the 90-day response window.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-60-child-health-care-boundary/
+https://abeezith.github.io/dpdp-knowledge/quiz-61-beginner-rights-routing/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

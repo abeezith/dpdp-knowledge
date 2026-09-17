@@ -6055,6 +6055,102 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved data-audit-checklist.md, General A/C, DHIS2, Audit Summary.
+quizCatalog.push({
+  "number": 71,
+  "slug": "backup-recovery-readiness",
+  "shortTitle": "Backup Recovery Readiness",
+  "pageTitle": "DPDP Quiz 71 - Backup Recovery Readiness",
+  "eyebrow": "DPDP Quiz 71 | Backup Recovery Readiness",
+  "heroTitle": "Backup Recovery Readiness: Prove Recovery and Protect Stored Copies",
+  "heroIntro": "Five practical scenarios on backup readiness using the approved platform audit checklist. Check recovery evidence, DHIS2 backup controls, and complete storage inventories.",
+  "cardDescription": "Five practical questions on restore testing, encrypted backups, off-site storage, data inventories, and accountable remediation.",
+  "audience": "Platform owners, IT teams, developers, and audit coordinators",
+  "focus": "Backup testing, DHIS2 backup controls, storage inventories, and remediation ownership",
+  "resultSummary": "A successful backup job is one part of readiness: teams also need tested recovery, protected copies, documented storage, and owned remediation.",
+  "topics": [
+    {
+      "label": "Project Stage",
+      "text": "Backup and recovery readiness before an incident"
+    },
+    {
+      "label": "Platform",
+      "text": "General platform audit and DHIS2 backup checks"
+    },
+    {
+      "label": "Focus",
+      "text": "Restorability, encryption, off-site copies, inventory, and gap ownership"
+    }
+  ],
+  "questions": [
+    {
+      "module": "Data audit checklist",
+      "topic": "Recovery evidence",
+      "text": "An MIS backup job reports success every night, but nobody has restored a copy in a test environment. Which checklist item remains unproven?",
+      "options": [
+        "Whether the backups are tested for restorability",
+        "Whether the dashboard has a new colour scheme",
+        "Whether every beneficiary has received an export",
+        "Whether the programme has stopped collecting data"
+      ],
+      "correct": 0,
+      "explanation": "The general security checklist asks separately about a regular backup process and whether backups are tested for restorability. Successful job logs alone do not demonstrate restoration."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Backup encryption",
+      "text": "A DHIS2 owner shows daily off-site backup files that are stored without encryption. Which part of the DHIS2 backup check needs attention?",
+      "options": [
+        "Publishing the backup filenames",
+        "Adding more analytics dimensions",
+        "Encrypting the backup copies",
+        "Giving all staff backup access"
+      ],
+      "correct": 2,
+      "explanation": "The DHIS2-specific checklist asks about daily backups, encryption, and off-site storage. Frequency and location do not satisfy its encryption check."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Storage location",
+      "text": "A DHIS2 team keeps its only backup copy alongside the running database at the same site. Which additional backup arrangement does the approved checklist explicitly ask reviewers to examine?",
+      "options": [
+        "Keeping the backup in a public folder",
+        "Off-site storage",
+        "Replacing backups with screenshots",
+        "Sending raw copies to every analyst"
+      ],
+      "correct": 1,
+      "explanation": "The DHIS2 backup frequency and encryption row includes off-site storage as an explicit audit question."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Backup inventory",
+      "text": "While preparing a recovery drill, an auditor finds beneficiary backup files in a cloud bucket missing from the platform inventory. What is the appropriate checklist response?",
+      "options": [
+        "Exclude all backups because they are not live tables",
+        "Document the bucket only after a breach",
+        "Assume the vendor has already listed it",
+        "Include that storage location in the personal-data inventory"
+      ],
+      "correct": 3,
+      "explanation": "The general data-inventory checklist asks whether all personal-data locations are known, including tables, files, and cloud buckets. A backup containing personal data belongs in that inventory."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Remediation ownership",
+      "text": "A recovery audit records an untested backup and missing encryption, then closes with no assigned follow-up. Which fields from the audit summary would make the next steps accountable?",
+      "options": [
+        "Remediation owner and target date",
+        "Only a new platform nickname",
+        "Only the count of meeting attendees",
+        "A statement that backups never fail"
+      ],
+      "correct": 0,
+      "explanation": "The audit summary template includes key gaps, a remediation owner, and a target date. These fields connect identified gaps to accountable follow-up."
+    }
+  ]
+});
+
 function folderNameFor(quiz) {
   return `quiz-${String(quiz.number).padStart(2, "0")}-${quiz.slug}`;
 }

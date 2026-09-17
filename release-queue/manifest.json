@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-15T13:35:12.959Z",
-  "publishedThisRun": "quiz-60-child-health-care-boundary",
-  "latestPublishedFolder": "quiz-60-child-health-care-boundary",
-  "lastPublishedAt": "2026-09-15T13:33:30.784Z",
-  "lastPublishedOnLocalDate": "2026-09-15",
+  "updatedAt": "2026-09-17T16:12:19.022Z",
+  "publishedThisRun": "quiz-61-beginner-rights-routing",
+  "latestPublishedFolder": "quiz-61-beginner-rights-routing",
+  "lastPublishedAt": "2026-09-17T16:12:19.019Z",
+  "lastPublishedOnLocalDate": "2026-09-17",
   "lastNotificationSentFor": "quiz-60-child-health-care-boundary",
   "queuedFolders": [
-    "quiz-61-beginner-rights-routing",
     "quiz-62-sitamarhi-ai-didi-audio",
     "quiz-63-bi-analyst-small-cell-guardrails",
     "quiz-64-nikshay-processor-scope",
@@ -15,7 +14,8 @@
     "quiz-67-odk-form-retirement",
     "quiz-68-karuna-fellow-escalation-judgment",
     "quiz-69-dashboard-audit-readiness",
-    "quiz-70-rajasthan-consent-record-handoff"
+    "quiz-70-rajasthan-consent-record-handoff",
+    "quiz-71-backup-recovery-readiness"
   ],
   "queuedCount": 10
 }
