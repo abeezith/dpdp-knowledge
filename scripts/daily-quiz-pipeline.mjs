@@ -6151,6 +6151,102 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved role-guidance.md, Implementor and Gandhi Fellow quick cards.
+quizCatalog.push({
+  "number": 72,
+  "slug": "implementor-correction-follow-through",
+  "shortTitle": "Implementor Correction Follow-Through",
+  "pageTitle": "DPDP Quiz 72 - Implementor Correction Follow-Through",
+  "eyebrow": "DPDP Quiz 72 | Implementor Correction Follow-Through",
+  "heroTitle": "Implementor Correction Follow-Through: From Request to Confirmation",
+  "heroIntro": "Five scenarios on responding to beneficiary concerns and completing the correction workflow described in the approved role guidance.",
+  "cardDescription": "Five practical questions on logging requests, checking actual records, correcting MIS entries, documenting changes, and confirming completion.",
+  "audience": "Implementors, Program Officers, and field supervisors",
+  "focus": "Beneficiary correction requests and accountable follow-through",
+  "resultSummary": "Handle requests calmly, use actual records, correct the MIS, document changes, and tell the beneficiary when the correction is complete.",
+  "topics": [
+    {
+      "label": "People Role",
+      "text": "Implementors and Program Officers handling beneficiary records"
+    },
+    {
+      "label": "Project Stage",
+      "text": "Record maintenance during programme delivery"
+    },
+    {
+      "label": "Focus",
+      "text": "Request routing, corrections, and confirmation"
+    }
+  ],
+  "questions": [
+    {
+      "module": "Role guidance",
+      "topic": "Documenting a correction",
+      "text": "An Implementor fixes a beneficiary phone number in the MIS during a review call. The beneficiary has been informed, but no correction record was kept. Which step is still missing from the role guidance?",
+      "options": [
+        "Re-enrol every household in the village",
+        "Document the correction that was made",
+        "Share the corrected number with all partner organisations",
+        "Wait for another error before recording the change"
+      ],
+      "correct": 1,
+      "explanation": "The Implementor quick card says to correct the MIS, document the correction, and inform the beneficiary. Updating the field alone does not complete all three steps."
+    },
+    {
+      "module": "Role guidance",
+      "topic": "Closing the loop",
+      "text": "A Program Officer corrects a beneficiary record and documents the change. The team closes the task without contacting the person who requested it. What should happen next?",
+      "options": [
+        "Ask the beneficiary to discover the change at their next visit",
+        "Send the full database as proof",
+        "Inform the beneficiary that the correction has been completed",
+        "Undo the correction until a new enrolment form arrives"
+      ],
+      "correct": 2,
+      "explanation": "The approved Implementor guidance explicitly includes informing the beneficiary that the correction has been done."
+    },
+    {
+      "module": "Role guidance",
+      "topic": "Actual record check",
+      "text": "Before asking for a correction, a beneficiary wants to know what information the programme holds. A new Implementor knows the usual form fields but has not checked this record. What is the appropriate response?",
+      "options": [
+        "Log and refer the request through the supervisor or privacy contact, using the actual record rather than guessing",
+        "List the usual form fields as if they are the verified personal record",
+        "Decline because the beneficiary has not yet identified an error",
+        "Ask another beneficiary to describe the likely record"
+      ],
+      "correct": 0,
+      "explanation": "For an access request, the Implementor quick card says to log the request, refer it to the supervisor or privacy contact, and obtain the actual record instead of guessing."
+    },
+    {
+      "module": "Role guidance",
+      "topic": "Calm acknowledgement",
+      "text": "While checking an incorrect MIS entry, a beneficiary says they do not remember agreeing to the collection. Which response matches the Implementor quick card?",
+      "options": [
+        "Insist that being in the MIS proves that every use was agreed",
+        "Dismiss the concern because the correction is minor",
+        "Tell the person that consent questions prevent any correction",
+        "Acknowledge calmly, offer information about rights, and refer to the privacy contact"
+      ],
+      "correct": 3,
+      "explanation": "The role guidance says to acknowledge this concern calmly, ask whether the person wants to know more about their rights, and refer them to the privacy contact without dismissing or arguing."
+    },
+    {
+      "module": "Role guidance",
+      "topic": "Field-to-supervisor handoff",
+      "text": "A Gandhi Fellow hears that a household detail is wrong and tells the Implementor that the concern was noted but never passed to a supervisor. Which missing handoff does the Fellow guidance identify?",
+      "options": [
+        "Post the household record in a Fellows group",
+        "Inform the supervisor about the noted correction",
+        "Wait for the household to repeat the concern three times",
+        "Treat the conversation as permission for unrelated data collection"
+      ],
+      "correct": 1,
+      "explanation": "The Gandhi Fellow quick card says to note the correction and inform the supervisor when a community member reports that information is wrong."
+    }
+  ]
+});
+
 function folderNameFor(quiz) {
   return `quiz-${String(quiz.number).padStart(2, "0")}-${quiz.slug}`;
 }

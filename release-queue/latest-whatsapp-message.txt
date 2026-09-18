@@ -1,7 +1,7 @@
-DPDP Quiz 61 | Beginner Rights Routing
+DPDP Quiz 62 | Sitamarhi AI Didi Audio
 
-Five beginner questions on rights recognition, logging basics, escalation routes, lawful-retention limits, and the 90-day response window.
+Five Sitamarhi-style questions on voice recordings, identifiable audio, retention policies, partner role clarity, and separate consent for AI or storytelling use.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-61-beginner-rights-routing/
+https://abeezith.github.io/dpdp-knowledge/quiz-62-sitamarhi-ai-didi-audio/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
