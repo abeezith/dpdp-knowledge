@@ -1,7 +1,7 @@
-DPDP Quiz 62 | Sitamarhi AI Didi Audio
+DPDP Quiz 63 | BI Analyst Small Cell Guardrails
 
-Five Sitamarhi-style questions on voice recordings, identifiable audio, retention policies, partner role clarity, and separate consent for AI or storytelling use.
+Five BI questions on small-cell risk, pseudonymisation limits, partner agreements, research exemptions, and safer aggregate reporting defaults.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-62-sitamarhi-ai-didi-audio/
+https://abeezith.github.io/dpdp-knowledge/quiz-63-bi-analyst-small-cell-guardrails/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

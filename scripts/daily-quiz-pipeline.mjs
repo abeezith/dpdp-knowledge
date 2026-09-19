@@ -6360,6 +6360,102 @@ function prepareQuizForRendering(quiz) {
   };
 }
 
+// Source: approved breach-response-sop.md, Post-Breach: Within 30 Days.
+quizCatalog.push({
+  "number": 73,
+  "slug": "post-breach-review",
+  "shortTitle": "Post-Breach Review",
+  "pageTitle": "DPDP Quiz 73 - Post-Breach Review",
+  "eyebrow": "DPDP Quiz 73 | Post-Breach Review",
+  "heroTitle": "Post-Breach Review: Learning After Containment",
+  "heroIntro": "Practice the approved SOP’s post-breach review steps through five scenarios. The SOP is for Phase III from 13 May 2027, with practice runs recommended in advance.",
+  "cardDescription": "Five scenarios on root causes, lasting fixes, beneficiary follow-up, staff support, and updating the breach-response SOP.",
+  "audience": "Programme leads, IT teams, and privacy reviewers",
+  "focus": "Post-breach remediation and review within the SOP’s 30-day window",
+  "resultSummary": "Containment is followed by root-cause analysis, gap closure, beneficiary follow-up, staff support, remediation reporting, and SOP improvements.",
+  "topics": [
+    {
+      "label": "Project Stage",
+      "text": "Post-breach remediation and review"
+    },
+    {
+      "label": "Source",
+      "text": "Approved breach-response SOP: Post-Breach, Within 30 Days"
+    },
+    {
+      "label": "Focus",
+      "text": "Lasting fixes and learning from an incident"
+    }
+  ],
+  "questions": [
+    {
+      "module": "Breach SOP",
+      "topic": "Root-cause analysis",
+      "text": "In a practice incident review, access has been restored and notifications recorded. The closure note only says “service working again.” What investigation is still needed under the post-breach checklist?",
+      "options": [
+        "Investigate the root cause rather than treating restored service as the complete review",
+        "Delete the incident record now that service works",
+        "Replace the review with a count of unrelated helpdesk tickets",
+        "Wait for another incident before asking why this one occurred"
+      ],
+      "correct": 0,
+      "explanation": "The post-breach checklist calls for completed root-cause analysis within 30 days. Restoring service does not establish what caused the incident."
+    },
+    {
+      "module": "Breach SOP",
+      "topic": "Addressing the gap",
+      "text": "A review finds that staff repeatedly send beneficiary files through an unsafe workflow. The team has recovered the latest file but left that workflow unchanged. Which action addresses the post-breach checklist?",
+      "options": [
+        "Mark the gap resolved because this file was recovered",
+        "Keep the workflow until every staff member has made the same mistake",
+        "Address the security gap through an appropriate process change, training, or technical fix",
+        "Remove all mention of the workflow from the review"
+      ],
+      "correct": 2,
+      "explanation": "The SOP asks whether the security gap has been addressed through a technical fix, process change, or training. Recovery of a single file does not resolve an unchanged process gap."
+    },
+    {
+      "module": "Breach SOP",
+      "topic": "Ongoing harm",
+      "text": "A programme has completed its initial breach messages. During the subsequent review, a beneficiary reports continuing suspicious calls linked to the exposed information. Which checklist item should guide the next action?",
+      "options": [
+        "Assume the first message ended the organisation’s follow-up work",
+        "Follow up with affected Data Principals to assess ongoing harm",
+        "Ask the beneficiary to wait until the next annual audit",
+        "Record only that the original message was delivered"
+      ],
+      "correct": 1,
+      "explanation": "The post-breach checklist explicitly includes following up with affected Data Principals and asking whether there is ongoing harm."
+    },
+    {
+      "module": "Breach SOP",
+      "topic": "Staff support",
+      "text": "After a simulated file-sharing incident, a review lead proposes publicly blaming the staff member while ignoring the workflow that enabled the error. What approach does the approved SOP recommend?",
+      "options": [
+        "Treat public blame as the main preventive control",
+        "Cancel the review because a staff member was involved",
+        "Avoid discussing any system weaknesses",
+        "Support involved staff and focus on systems through a no-blame culture"
+      ],
+      "correct": 3,
+      "explanation": "The SOP’s post-breach checklist calls for supporting staff involved in the breach, with a no-blame culture focused on systems."
+    },
+    {
+      "module": "Breach SOP",
+      "topic": "Closing the learning loop",
+      "text": "A completed breach review has produced new remediation steps and a better response procedure, but both remain in a private meeting note. Which pair of actions completes the relevant post-breach checklist items?",
+      "options": [
+        "Notify DPBI of remediation steps and update the SOP with lessons learned",
+        "Publish beneficiary-level incident data and discard the SOP",
+        "Keep both improvements private until another breach occurs",
+        "Replace remediation reporting with an informal staff poll"
+      ],
+      "correct": 0,
+      "explanation": "The post-breach checklist includes notifying DPBI of remediation steps and updating the SOP based on lessons learned. These are part of the approved SOP’s Phase III readiness practice."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

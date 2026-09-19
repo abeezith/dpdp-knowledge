@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-18T13:43:43.391Z",
-  "publishedThisRun": "quiz-62-sitamarhi-ai-didi-audio",
-  "latestPublishedFolder": "quiz-62-sitamarhi-ai-didi-audio",
-  "lastPublishedAt": "2026-09-18T13:37:56.669Z",
-  "lastPublishedOnLocalDate": "2026-09-18",
+  "updatedAt": "2026-09-19T15:35:42.115Z",
+  "publishedThisRun": "quiz-63-bi-analyst-small-cell-guardrails",
+  "latestPublishedFolder": "quiz-63-bi-analyst-small-cell-guardrails",
+  "lastPublishedAt": "2026-09-19T15:35:42.113Z",
+  "lastPublishedOnLocalDate": "2026-09-19",
   "lastNotificationSentFor": "quiz-62-sitamarhi-ai-didi-audio",
   "queuedFolders": [
-    "quiz-63-bi-analyst-small-cell-guardrails",
     "quiz-64-nikshay-processor-scope",
     "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing",
@@ -15,7 +14,8 @@
     "quiz-69-dashboard-audit-readiness",
     "quiz-70-rajasthan-consent-record-handoff",
     "quiz-71-backup-recovery-readiness",
-    "quiz-72-implementor-correction-follow-through"
+    "quiz-72-implementor-correction-follow-through",
+    "quiz-73-post-breach-review"
   ],
   "queuedCount": 10
 }
