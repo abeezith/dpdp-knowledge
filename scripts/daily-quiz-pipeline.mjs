@@ -6456,6 +6456,102 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved data-audit-checklist.md, AMRIT-Specific Checklist.
+quizCatalog.push({
+  "number": 74,
+  "slug": "beginner-amrit-access-checks",
+  "shortTitle": "Beginner AMRIT Access Checks",
+  "pageTitle": "DPDP Quiz 74 - Beginner AMRIT Access Checks",
+  "eyebrow": "DPDP Quiz 74 | Beginner AMRIT Access Checks",
+  "heroTitle": "Beginner AMRIT Access Checks",
+  "heroIntro": "Five introductory scenarios on checking patient-record access and safeguards in AMRIT using the approved platform audit checklist.",
+  "cardDescription": "Five beginner questions on authorised patient access, ABHA-linked records, inactive sessions, access logs, and database encryption.",
+  "audience": "New platform reviewers and programme teams",
+  "focus": "AMRIT patient access and basic security checks",
+  "resultSummary": "Check authorised roles, separate controls for ABHA-linked records, inactivity timeouts, retained access logs, and encryption at rest.",
+  "topics": [
+    {
+      "label": "Difficulty",
+      "text": "Beginner"
+    },
+    {
+      "label": "Platform",
+      "text": "AMRIT patient records"
+    },
+    {
+      "label": "Focus",
+      "text": "Access controls and security evidence"
+    }
+  ],
+  "questions": [
+    {
+      "module": "Data audit checklist",
+      "topic": "Patient visibility",
+      "text": "At an AMRIT orientation, a new reviewer sees that every programme login can open patient records. What should the reviewer check first?",
+      "options": [
+        "Whether patient records are limited to treating clinicians and authorised roles",
+        "Whether everyone uses the same screen colour",
+        "Whether staff have bookmarked the patient list",
+        "Whether the page loads on a larger monitor"
+      ],
+      "correct": 0,
+      "explanation": "The AMRIT checklist asks whether patient data is visible only to treating clinicians and authorised roles."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "ABHA linkage",
+      "text": "An AMRIT team has reviewed general patient permissions but has not checked ABHA-linked records separately. Which audit item remains open?",
+      "options": [
+        "Whether ABHA numbers appear first in the table",
+        "Whether ABHA-linked records are access-controlled separately",
+        "Whether all staff can export ABHA-linked records",
+        "Whether the dashboard has a new title"
+      ],
+      "correct": 1,
+      "explanation": "The AMRIT checklist explicitly asks whether ABHA-linked records are access-controlled separately."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Inactive sessions",
+      "text": "A clinician leaves an AMRIT workstation idle, and the signed-in session remains open indefinitely. Which checklist feature should be reviewed?",
+      "options": [
+        "A daily change of desktop wallpaper",
+        "An automatic export of every patient record",
+        "A session timeout after inactivity",
+        "A larger font for patient names"
+      ],
+      "correct": 2,
+      "explanation": "The AMRIT session-management check asks whether sessions time out after inactivity."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Access trail",
+      "text": "An AMRIT review can show who has permission, but has no retained record of patient-record access. What additional evidence does the checklist ask for?",
+      "options": [
+        "The number of staff orientation slides",
+        "The colour of the sign-in button",
+        "A list of favourite reports",
+        "Enabled and retained access logs for patient records"
+      ],
+      "correct": 3,
+      "explanation": "The AMRIT audit-trail item asks whether access logs for patient records are enabled and retained."
+    },
+    {
+      "module": "Data audit checklist",
+      "topic": "Stored data",
+      "text": "A beginner reviewer confirms AMRIT permissions and session timeouts. Which separate database safeguard should still be checked?",
+      "options": [
+        "Patient data encryption at rest in the AMRIT database",
+        "Alphabetical ordering of every patient row",
+        "A shorter name for each database table",
+        "Identical passwords for all authorised staff"
+      ],
+      "correct": 0,
+      "explanation": "The AMRIT encryption item asks whether patient data is encrypted at rest in the database; access permissions do not answer that separate check."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

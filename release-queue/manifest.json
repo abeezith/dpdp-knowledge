@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-19T15:38:08.829Z",
-  "publishedThisRun": "quiz-63-bi-analyst-small-cell-guardrails",
-  "latestPublishedFolder": "quiz-63-bi-analyst-small-cell-guardrails",
-  "lastPublishedAt": "2026-09-19T15:35:42.113Z",
-  "lastPublishedOnLocalDate": "2026-09-19",
+  "updatedAt": "2026-09-20T14:50:19.407Z",
+  "publishedThisRun": "quiz-64-nikshay-processor-scope",
+  "latestPublishedFolder": "quiz-64-nikshay-processor-scope",
+  "lastPublishedAt": "2026-09-20T14:50:19.403Z",
+  "lastPublishedOnLocalDate": "2026-09-20",
   "lastNotificationSentFor": "quiz-63-bi-analyst-small-cell-guardrails",
   "queuedFolders": [
-    "quiz-64-nikshay-processor-scope",
     "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing",
     "quiz-67-odk-form-retirement",
@@ -15,7 +14,8 @@
     "quiz-70-rajasthan-consent-record-handoff",
     "quiz-71-backup-recovery-readiness",
     "quiz-72-implementor-correction-follow-through",
-    "quiz-73-post-breach-review"
+    "quiz-73-post-breach-review",
+    "quiz-74-beginner-amrit-access-checks"
   ],
   "queuedCount": 10
 }
