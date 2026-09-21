@@ -6552,6 +6552,68 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved consent-templates.md, Template 5 — Data Subject Rights Request Response.
+quizCatalog.push({
+  number: 75,
+  slug: "program-officer-request-records",
+  shortTitle: "Program Officer Request Records",
+  pageTitle: "DPDP Quiz 75 - Program Officer Request Records",
+  eyebrow: "DPDP Quiz 75 | Program Officer Request Records",
+  heroTitle: "Program Officer Request Records: From Intake to Response",
+  heroIntro: "Five practical scenarios using the approved rights-request tracking template. Help a Program Officer maintain a clear record of what was requested, who received it, and how the response progressed.",
+  cardDescription: "Five scenarios on recording rights requests, staff handoffs, pending responses, response details, and beneficiary satisfaction.",
+  audience: "Program Officers and teams handling beneficiary requests",
+  focus: "Complete and traceable rights-request records",
+  resultSummary: "A useful request record captures the request, receiving staff, escalation, response status and details, and the Data Principal's satisfaction.",
+  topics: [
+    { label: "People Role", text: "Program Officer handling beneficiary requests" },
+    { label: "Source", text: "Approved consent templates: Template 5" },
+    { label: "Focus", text: "Intake, handoff, response, and satisfaction records" }
+  ],
+  questions: [
+    {
+      module: "Consent templates",
+      topic: "Request classification",
+      text: "A beneficiary asks a Program Officer to replace an incorrect date of birth in her record. How should the officer classify and describe this in Template 5?",
+      options: ["Record a correction request and describe the date-of-birth issue", "Record an erasure request because one value will change", "Record an access request without describing the requested change", "Leave the request type blank until the next reporting cycle"],
+      correct: 0,
+      explanation: "Template 5 includes both the type of request (Access, Correction, Erasure, or Grievance) and a description. A request to fix an incorrect date of birth belongs under Correction."
+    },
+    {
+      module: "Consent templates",
+      topic: "Staff handoff",
+      text: "Meera receives a rights request and forwards it to a supervisor before taking leave. Which pair of Template 5 fields makes that handoff visible to the next Program Officer?",
+      options: ["Beneficiary ID and request date only", "Received by and Escalated to", "Response date and beneficiary name only", "Type of request and programme attendance"],
+      correct: 1,
+      explanation: "The tracking template separately records the receiving staff member and whom the request was escalated to, allowing the handoff to be traced."
+    },
+    {
+      module: "Consent templates",
+      topic: "Pending response",
+      text: "An officer has acknowledged a request, but the requested information is still being prepared. Which entry avoids implying that the substantive response has already been provided?",
+      options: ["Mark Response provided as Yes because a file was opened", "Enter a future date as the completed response date", "Mark Response provided as Pending while the response is being prepared", "Remove the record until the information is ready"],
+      correct: 2,
+      explanation: "Template 5 offers Yes, No, or Pending for Response provided. Pending accurately records an outstanding response; opening a file or acknowledging intake does not describe the substantive response as completed."
+    },
+    {
+      module: "Consent templates",
+      topic: "Response evidence",
+      text: "A completed request row says only 'Yes' under Response provided. Which additional Template 5 entries capture when the officer replied and what the reply contained?",
+      options: ["A staff attendance total and travel claim", "The next programme event and its location", "Only the beneficiary's village name", "Response date and Response description"],
+      correct: 3,
+      explanation: "The approved template includes Response date and Response description alongside the response status, so a completed record can show both timing and substance."
+    },
+    {
+      module: "Consent templates",
+      topic: "Beneficiary satisfaction",
+      text: "After receiving a reply, a beneficiary says the issue remains unresolved but has not reported escalating it to the Board. How should the officer record the satisfaction field in Template 5?",
+      options: ["Record No under Data Principal satisfied?", "Record Yes whenever any reply has been sent", "Record Escalated to DPBI even though no escalation is reported", "Replace the beneficiary's response with the officer's opinion"],
+      correct: 0,
+      explanation: "Template 5 distinguishes Yes, No, and Escalated to DPBI in its satisfaction field. A sent response is not proof of satisfaction or of escalation to the Board."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

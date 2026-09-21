@@ -1,7 +1,7 @@
-DPDP Quiz 64 | Nikshay Processor Scope
+DPDP Quiz 65 | Breach Notification Drill
 
-Five Nikshay-focused questions on processor-role clarity, written agreements, local-copy limits, authorised access, and programme-only use of TB data.
+Five breach-response questions on the first hour, wrong-recipient deletion requests, Data Principal notice content, initial Board reporting, and preserving logs before fixes.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-64-nikshay-processor-scope/
+https://abeezith.github.io/dpdp-knowledge/quiz-65-breach-notification-drill/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

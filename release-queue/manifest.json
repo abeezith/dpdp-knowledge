@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-20T14:52:44.883Z",
-  "publishedThisRun": "quiz-64-nikshay-processor-scope",
-  "latestPublishedFolder": "quiz-64-nikshay-processor-scope",
-  "lastPublishedAt": "2026-09-20T14:50:19.403Z",
-  "lastPublishedOnLocalDate": "2026-09-20",
+  "updatedAt": "2026-09-21T13:34:23.052Z",
+  "publishedThisRun": "quiz-65-breach-notification-drill",
+  "latestPublishedFolder": "quiz-65-breach-notification-drill",
+  "lastPublishedAt": "2026-09-21T13:34:23.049Z",
+  "lastPublishedOnLocalDate": "2026-09-21",
   "lastNotificationSentFor": "quiz-64-nikshay-processor-scope",
   "queuedFolders": [
-    "quiz-65-breach-notification-drill",
     "quiz-66-advanced-audit-evidence-sequencing",
     "quiz-67-odk-form-retirement",
     "quiz-68-karuna-fellow-escalation-judgment",
@@ -15,7 +14,8 @@
     "quiz-71-backup-recovery-readiness",
     "quiz-72-implementor-correction-follow-through",
     "quiz-73-post-breach-review",
-    "quiz-74-beginner-amrit-access-checks"
+    "quiz-74-beginner-amrit-access-checks",
+    "quiz-75-program-officer-request-records"
   ],
   "queuedCount": 10
 }
