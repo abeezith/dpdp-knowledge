@@ -6614,6 +6614,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 76,
+  slug: "maharashtra-dhis2-review",
+  shortTitle: "Maharashtra DHIS2 Review",
+  pageTitle: "DPDP Quiz 76 - Maharashtra DHIS2 Review",
+  eyebrow: "DPDP Quiz 76 | Maharashtra DHIS2 Review",
+  heroTitle: "Maharashtra DHIS2 Review: Check the Configuration",
+  heroIntro: "Five scenarios for a Maharashtra programme team reviewing DHIS2. Apply the approved platform checklist to permissions, metadata, API access, patches, and inactive accounts.",
+  cardDescription: "Five Maharashtra field-team scenarios on DHIS2 permissions, metadata privacy, API controls, security patches, and inactive accounts.",
+  audience: "Maharashtra programme teams and DHIS2 administrators",
+  focus: "DHIS2 configuration and access hygiene",
+  resultSummary: "Check role-specific organisation units and data sets, keep personal information out of metadata, review API controls, maintain security patches, and review inactive accounts.",
+  topics: [
+    { label: "Field Setting", text: "Maharashtra programme DHIS2 review" },
+    { label: "Source", text: "Approved data-audit-checklist.md: DHIS2-Specific Checklist" },
+    { label: "Focus", text: "Permissions, metadata, API access, patches, and accounts" }
+  ],
+  questions: [
+    {
+      module: "Data audit checklist", topic: "Organisation unit permissions",
+      text: "During a Maharashtra DHIS2 review, a district coordinator can open another district's data sets despite having no assigned role there. Which checklist review directly addresses this finding?",
+      options: ["Review organisation unit and data set restrictions for the user's role", "Change the dashboard colour scheme for each district", "Give every coordinator the same statewide access", "Disable the coordinator's browser bookmarks only"],
+      correct: 0,
+      explanation: "The DHIS2 checklist asks whether organisation unit and data set access restrictions are correct for each user role. Review those permissions against the coordinator's authorised scope."
+    },
+    {
+      module: "Data audit checklist", topic: "Personal information in metadata",
+      text: "A Maharashtra analyst finds beneficiary names embedded in DHIS2 analytics category labels even though the report values are totals. What should the team flag?",
+      options: ["No concern because the report values are totals", "Personal information in metadata that should not be there", "A requirement to add phone numbers to the same labels", "A reason to publish the category list for verification"],
+      correct: 1,
+      explanation: "The DHIS2-specific checklist explicitly says names and personal information should not be stored in analytics dimension names or categories. Aggregate values do not resolve identifying labels."
+    },
+    {
+      module: "Data audit checklist", topic: "API review",
+      text: "A Maharashtra integration team confirms that its DHIS2 connector works, but has no evidence of token rotation or recorded API calls. Which evidence should the reviewer request?",
+      options: ["Only a screenshot of the connector's success message", "A list of public dashboard colours", "Records of regular key or token rotation and API call logging", "A shared permanent token distributed to all field staff"],
+      correct: 2,
+      explanation: "The DHIS2 API access check asks whether keys or tokens are rotated regularly and whether API calls are logged. Successful connectivity alone does not answer those checks."
+    },
+    {
+      module: "Data audit checklist", topic: "Security patch status",
+      text: "A Maharashtra DHIS2 administrator says an old deployment needs no security update because its reports still load correctly. What does the approved checklist ask the team to verify?",
+      options: ["Whether the report title includes the current month", "Whether users prefer the old interface", "Whether a working report can replace the audit", "Whether the DHIS2 version is up to date with security patches"],
+      correct: 3,
+      explanation: "Under its cross-site scripting check, the DHIS2 checklist asks whether the version is up to date with security patches. Working reports are not evidence of current patch status."
+    },
+    {
+      module: "Data audit checklist", topic: "Quarterly account review",
+      text: "After a Maharashtra programme changes its field team, administrators propose leaving old DHIS2 accounts untouched until someone complains. Which routine matches the platform checklist?",
+      options: ["Review and deactivate inactive accounts through a quarterly process", "Keep all former staff accounts active indefinitely", "Rename the accounts without reviewing access", "Give former staff a common login to simplify tracking"],
+      correct: 0,
+      explanation: "The DHIS2-specific inactive account policy check calls for a process to review and deactivate accounts quarterly. This is a checklist practice, not a newly asserted statutory deadline."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

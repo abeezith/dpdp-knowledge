@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-21T13:36:57.840Z",
-  "publishedThisRun": "quiz-65-breach-notification-drill",
-  "latestPublishedFolder": "quiz-65-breach-notification-drill",
-  "lastPublishedAt": "2026-09-21T13:34:23.049Z",
-  "lastPublishedOnLocalDate": "2026-09-21",
+  "updatedAt": "2026-09-22T13:33:31.839Z",
+  "publishedThisRun": "quiz-66-advanced-audit-evidence-sequencing",
+  "latestPublishedFolder": "quiz-66-advanced-audit-evidence-sequencing",
+  "lastPublishedAt": "2026-09-22T13:33:31.837Z",
+  "lastPublishedOnLocalDate": "2026-09-22",
   "lastNotificationSentFor": "quiz-65-breach-notification-drill",
   "queuedFolders": [
-    "quiz-66-advanced-audit-evidence-sequencing",
     "quiz-67-odk-form-retirement",
     "quiz-68-karuna-fellow-escalation-judgment",
     "quiz-69-dashboard-audit-readiness",
@@ -15,7 +14,8 @@
     "quiz-72-implementor-correction-follow-through",
     "quiz-73-post-breach-review",
     "quiz-74-beginner-amrit-access-checks",
-    "quiz-75-program-officer-request-records"
+    "quiz-75-program-officer-request-records",
+    "quiz-76-maharashtra-dhis2-review"
   ],
   "queuedCount": 10
 }

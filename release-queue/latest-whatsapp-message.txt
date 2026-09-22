@@ -1,7 +1,7 @@
-DPDP Quiz 65 | Breach Notification Drill
+DPDP Quiz 66 | Advanced Audit Evidence Sequencing
 
-Five breach-response questions on the first hour, wrong-recipient deletion requests, Data Principal notice content, initial Board reporting, and preserving logs before fixes.
+Five advanced audit questions on data inventory, export restrictions, vendor-contract checks, backup restorability, and named rights-handling ownership.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-65-breach-notification-drill/
+https://abeezith.github.io/dpdp-knowledge/quiz-66-advanced-audit-evidence-sequencing/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
