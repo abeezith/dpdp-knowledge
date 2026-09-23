@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-22T13:36:58.755Z",
-  "publishedThisRun": "quiz-66-advanced-audit-evidence-sequencing",
-  "latestPublishedFolder": "quiz-66-advanced-audit-evidence-sequencing",
-  "lastPublishedAt": "2026-09-22T13:33:31.837Z",
-  "lastPublishedOnLocalDate": "2026-09-22",
+  "updatedAt": "2026-09-23T13:34:25.522Z",
+  "publishedThisRun": "quiz-67-odk-form-retirement",
+  "latestPublishedFolder": "quiz-67-odk-form-retirement",
+  "lastPublishedAt": "2026-09-23T13:34:25.521Z",
+  "lastPublishedOnLocalDate": "2026-09-23",
   "lastNotificationSentFor": "quiz-66-advanced-audit-evidence-sequencing",
   "queuedFolders": [
-    "quiz-67-odk-form-retirement",
     "quiz-68-karuna-fellow-escalation-judgment",
     "quiz-69-dashboard-audit-readiness",
     "quiz-70-rajasthan-consent-record-handoff",
@@ -15,7 +14,8 @@
     "quiz-73-post-breach-review",
     "quiz-74-beginner-amrit-access-checks",
     "quiz-75-program-officer-request-records",
-    "quiz-76-maharashtra-dhis2-review"
+    "quiz-76-maharashtra-dhis2-review",
+    "quiz-77-advanced-purpose-change-review"
   ],
   "queuedCount": 10
 }

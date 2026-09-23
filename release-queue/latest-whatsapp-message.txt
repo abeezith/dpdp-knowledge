@@ -1,7 +1,7 @@
-DPDP Quiz 66 | Advanced Audit Evidence Sequencing
+DPDP Quiz 67 | ODK Form Retirement
 
-Five advanced audit questions on data inventory, export restrictions, vendor-contract checks, backup restorability, and named rights-handling ownership.
+Five questions on retiring old ODK forms, limiting fields, controlling form management, offline storage, and deleting successfully synced copies.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-66-advanced-audit-evidence-sequencing/
+https://abeezith.github.io/dpdp-knowledge/quiz-67-odk-form-retirement/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

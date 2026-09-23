@@ -6670,6 +6670,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 77,
+  slug: "advanced-purpose-change-review",
+  shortTitle: "Advanced Purpose Change Review",
+  pageTitle: "DPDP Quiz 77 - Advanced Purpose Change Review",
+  eyebrow: "DPDP Quiz 77 | Advanced Purpose Change Review",
+  heroTitle: "Advanced Purpose Change Review: Test a New Use Before It Starts",
+  heroIntro: "Five advanced scenarios for reviewing proposed new uses of programme data before implementation. Apply purpose, consent, sharing, minimisation, and accountability guidance from the approved learning modules.",
+  cardDescription: "Five advanced review scenarios on changed purposes, partial consent, vendor accountability, re-identification risk, and rights-safe programme decisions.",
+  audience: "Programme leads, data teams, and reviewers assessing changes to existing data use",
+  focus: "Purpose change, consent scope, minimisation, external processing, and rights protection",
+  resultSummary: "Review a new use against the original purpose and consent, minimise fields, check whether people remain identifiable, control processors, and preserve beneficiary rights.",
+  topics: [
+    { label: "Lifecycle Stage", text: "Change review before an existing dataset is reused" },
+    { label: "Difficulty", text: "Advanced judgement across purpose, sharing, and identifiability" },
+    { label: "Source", text: "Approved learning-modules.md: consent, roles, rights, and analyst quick cards" }
+  ],
+  questions: [
+    {
+      module: "Consent", topic: "New purpose review",
+      text: "A programme collected mobile numbers to schedule clinic visits. A new team now wants to use the same numbers for unrelated fundraising messages. What should the change review conclude?",
+      options: ["The original collection permits every later organisational use", "The new use needs its own specific basis and should not be assumed from clinic scheduling consent", "Fundraising is allowed if the list stays inside the organisation", "The change is acceptable whenever fewer than 100 people are contacted"],
+      correct: 1,
+      explanation: "The learning module describes valid consent as specific to a defined purpose, not agreement to all future uses. Consent for clinic scheduling should not be stretched to unrelated fundraising."
+    },
+    {
+      module: "Consent", topic: "Partial participation",
+      text: "During a change review, a household survey adds an optional income field. A participant agrees to the survey but declines income. Which design best follows the approved field guidance?",
+      options: ["Block the entire survey until income is supplied", "Enter an estimated income without telling the participant", "Record income as declined and continue the agreed parts of the survey", "Ask another household member for the income after the visit"],
+      correct: 2,
+      explanation: "The approved scenario says a participant may decline a specific data point and the remaining survey can continue with agreement. The refusal should be respected rather than bypassed."
+    },
+    {
+      module: "Data actors", topic: "Vendor accountability",
+      text: "A technology vendor will run a new analysis on beneficiary records for the Foundation. The vendor says responsibility transfers to it once the file is uploaded. What is the correct review finding?",
+      options: ["The vendor becomes the Data Principal", "The Foundation remains accountable for a processor acting on its behalf", "Responsibility disappears if the vendor hosts the data abroad", "Only the beneficiaries are responsible for vendor compliance"],
+      correct: 1,
+      explanation: "The learning modules define a processor as an organisation processing data on the Foundation's behalf and state that the Foundation remains responsible for processor compliance."
+    },
+    {
+      module: "BI analyst guidance", topic: "Re-identification test",
+      text: "For a proposed donor analysis, names are removed but village, age, rare diagnosis, and visit date remain. The analyst can still identify several people by combining those fields. How should the dataset be treated?",
+      options: ["As non-personal data because names were deleted", "As personal data because people remain identifiable in combination", "As public data because a donor requested it", "As anonymous data if the spreadsheet is password protected"],
+      correct: 1,
+      explanation: "The approved test is whether a person can be identified directly or by combining information. Removing names alone does not make a still-identifiable dataset anonymous."
+    },
+    {
+      module: "Data Principal rights", topic: "No retaliation",
+      text: "A beneficiary asks for deletion while a team is considering a new reporting use of her record. A manager proposes excluding her from future services unless she withdraws the request. What must the reviewer flag?",
+      options: ["A valid incentive to preserve reporting data", "A harmless operational shortcut", "Improper retaliation: services must not be reduced because a person exercises a DPDP right", "A mandatory condition for every erasure request"],
+      correct: 2,
+      explanation: "The learning modules state that a beneficiary must not be penalised, refused services, or treated differently for exercising a DPDP right. The request should be logged and escalated instead."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
