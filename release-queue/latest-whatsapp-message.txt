@@ -1,7 +1,7 @@
-DPDP Quiz 67 | ODK Form Retirement
+DPDP Quiz 68 | Karuna Fellow Escalation Judgment
 
-Five questions on retiring old ODK forms, limiting fields, controlling form management, offline storage, and deleting successfully synced copies.
+Five questions on distress during collection, removal requests, suspected access, third-party demands, and witnessed verbal consent.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-67-odk-form-retirement/
+https://abeezith.github.io/dpdp-knowledge/quiz-68-karuna-fellow-escalation-judgment/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

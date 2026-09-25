@@ -6726,6 +6726,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 78,
+  slug: "field-rights-request-handling",
+  shortTitle: "Field Rights Request Handling",
+  pageTitle: "DPDP Quiz 78 - Field Rights Request Handling",
+  eyebrow: "DPDP Quiz 78 | Field Rights Request Handling",
+  heroTitle: "Field Rights Request Handling: Receive, Record, and Escalate",
+  heroIntro: "Five field-facing scenarios on receiving access, correction, erasure, grievance, and nomination requests without exposing or mishandling beneficiary information.",
+  cardDescription: "Five practical field scenarios on recognising rights requests, recording them safely, escalating them, and responding without retaliation.",
+  audience: "Fellows, implementors, programme officers, and helpline teams",
+  focus: "Access, correction, erasure, grievance handling, nomination, and safe escalation",
+  resultSummary: "Recognise a rights request, record only what is needed, escalate through the proper channel, and protect the person from retaliation or further disclosure.",
+  topics: [
+    { label: "Role", text: "Fellows, implementors, programme officers, and helpline staff" },
+    { label: "Obligation Area", text: "Access, correction, erasure, grievance redressal, and nomination rights" },
+    { label: "Project Stage", text: "Request intake, verification, escalation, and response" }
+  ],
+  questions: [
+    {
+      module: "Data Principal rights", topic: "Access request intake",
+      text: "At a field desk, a beneficiary asks, ‘What information do you hold about me, why are you using it, and who has received it?’ How should the team classify this request?",
+      options: ["A request only for a printed consent form", "A right-to-access request that should be recorded and escalated", "A request that can be ignored unless a lawyer submits it", "A breach report because the beneficiary mentioned sharing"],
+      correct: 1,
+      explanation: "The approved Act summary describes the right to access as asking what data is held, what is being done with it, and who it has been shared with. Field staff should record and escalate the request rather than guess at an answer."
+    },
+    {
+      module: "Data quality", topic: "Correction before a decision",
+      text: "A beneficiary says her address is wrong in a system and the record will be used to decide eligibility for a service. What is the most appropriate response?",
+      options: ["Keep the old address because system entries cannot be corrected", "Record and escalate the correction request so the data can be made accurate and complete", "Ask the beneficiary to submit a new record under a different name", "Wait until the annual audit before noting the error"],
+      correct: 1,
+      explanation: "The references require completeness, accuracy, and consistency where data informs a decision affecting a person. A correction request should be logged and routed for proper handling."
+    },
+    {
+      module: "Erasure", topic: "Retention exception",
+      text: "A participant withdraws consent and asks for erasure, but the programme team identifies a legal requirement to retain one relevant record. Which response best follows the guidance?",
+      options: ["Erase every record immediately without checking the requirement", "Refuse to record the request because retention is required", "Log and escalate the request, then erase data unless retention is required by law", "Keep all data forever because one record must be retained"],
+      correct: 2,
+      explanation: "The summary says personal data is erased on consent withdrawal or when the purpose ends, unless retention is required by law. The request still needs to be recorded and assessed; a narrow retention exception is not a reason to ignore it."
+    },
+    {
+      module: "Grievance redressal", topic: "First route for a complaint",
+      text: "A beneficiary says the organisation did not resolve her data complaint and asks where to go next. Which pathway is reflected in the approved guidance?",
+      options: ["She must use the organisation’s grievance mechanism before approaching the DPBI", "She must first post the complaint on social media", "Only a Data Processor can accept the complaint", "There is no grievance route for personal-data concerns"],
+      correct: 0,
+      explanation: "The Act summary states that every Data Fiduciary must publish a grievance mechanism and that a Data Principal must exhaust it before approaching the Data Protection Board of India."
+    },
+    {
+      module: "Data Principal rights", topic: "Nominee request",
+      text: "A beneficiary wants to name her adult daughter to exercise DPDP rights if the beneficiary later dies or becomes incapacitated. What should staff recognise?",
+      options: ["A prohibited transfer of all beneficiary data", "The right to nominate someone to exercise rights in case of death or incapacity", "A request that only an employer may make", "An automatic instruction to disclose records to any family member now"],
+      correct: 1,
+      explanation: "The approved learning material includes a right to nominate a person to exercise rights in the event of death or incapacity. It does not authorise immediate disclosure to family members without appropriate handling."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
