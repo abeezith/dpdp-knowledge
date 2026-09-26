@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-25T13:36:55.491Z",
-  "publishedThisRun": "quiz-68-karuna-fellow-escalation-judgment",
-  "latestPublishedFolder": "quiz-68-karuna-fellow-escalation-judgment",
-  "lastPublishedAt": "2026-09-25T13:35:58.379Z",
-  "lastPublishedOnLocalDate": "2026-09-25",
+  "updatedAt": "2026-09-26T13:34:12.998Z",
+  "publishedThisRun": "quiz-69-dashboard-audit-readiness",
+  "latestPublishedFolder": "quiz-69-dashboard-audit-readiness",
+  "lastPublishedAt": "2026-09-26T13:33:16.975Z",
+  "lastPublishedOnLocalDate": "2026-09-26",
   "lastNotificationSentFor": "quiz-68-karuna-fellow-escalation-judgment",
   "queuedFolders": [
-    "quiz-69-dashboard-audit-readiness",
     "quiz-70-rajasthan-consent-record-handoff",
     "quiz-71-backup-recovery-readiness",
     "quiz-72-implementor-correction-follow-through",
@@ -15,7 +14,8 @@
     "quiz-75-program-officer-request-records",
     "quiz-76-maharashtra-dhis2-review",
     "quiz-77-advanced-purpose-change-review",
-    "quiz-78-field-rights-request-handling"
+    "quiz-78-field-rights-request-handling",
+    "quiz-79-odk-minimum-collection"
   ],
   "queuedCount": 10
 }

@@ -1,7 +1,7 @@
-DPDP Quiz 68 | Karuna Fellow Escalation Judgment
+DPDP Quiz 69 | Dashboard Audit Readiness
 
-Five questions on distress during collection, removal requests, suspected access, third-party demands, and witnessed verbal consent.
+Five questions on dashboard data sources, aggregated reports, export controls, hosting records, and vendor safeguards.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-68-karuna-fellow-escalation-judgment/
+https://abeezith.github.io/dpdp-knowledge/quiz-69-dashboard-audit-readiness/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

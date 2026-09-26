@@ -6782,6 +6782,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 79,
+  slug: "odk-minimum-collection",
+  shortTitle: "ODK Minimum Collection",
+  pageTitle: "DPDP Quiz 79 - ODK Minimum Collection",
+  eyebrow: "DPDP Quiz 79 | ODK Minimum Collection",
+  heroTitle: "ODK Minimum Collection: Design the Field Form Carefully",
+  heroIntro: "Five practical ODK form-design scenarios on collecting only what is needed, protecting field-device data, and retiring sensitive forms when their purpose is complete.",
+  cardDescription: "Five field-form scenarios on data minimisation, device encryption, controlled ODK access, post-sync cleanup, and retiring old sensitive forms.",
+  audience: "Implementors, form designers, field supervisors, and ODK administrators",
+  focus: "Minimum fields, device protection, authorised access, synced-data cleanup, and form retirement",
+  resultSummary: "Keep field forms limited to their purpose, protect the device and ODK access, remove synced data safely, and retire obsolete sensitive forms.",
+  topics: [
+    { label: "Project Stage", text: "Field form design, collection, synchronisation, and retirement" },
+    { label: "Platform", text: "ODK Collect and ODK Central" },
+    { label: "Source", text: "Approved data-audit-checklist.md ODK-specific checks" }
+  ],
+  questions: [
+    {
+      module: "Data audit checklist", topic: "Form data minimisation",
+      text: "A team designs an ODK enrolment form for referral follow-up. It adds caste, household income, and a family contact ‘in case they help later’, although none is needed for the referral. What should the form reviewer require?",
+      options: ["Keep every field because extra data may be useful someday", "Collect only the minimum fields required for the stated referral purpose", "Collect the fields but hide them from field staff", "Ask the beneficiary to decide which unneeded fields the team may retain forever"],
+      correct: 1,
+      explanation: "The approved ODK checklist asks whether forms collect only the minimum required fields. Potential future usefulness is not the stated collection purpose."
+    },
+    {
+      module: "Data audit checklist", topic: "Field-device protection",
+      text: "An implementor uses ODK on a tablet holding beneficiary forms and says a four-digit app PIN is enough even though the tablet itself is unencrypted. Which checklist safeguard is missing?",
+      options: ["Full device encryption for field phones or tablets running ODK", "A longer title for the ODK form", "A public list of all device users", "An extra copy of the forms on a personal USB drive"],
+      correct: 0,
+      explanation: "The ODK-specific checklist asks whether field devices running ODK have full device encryption enabled."
+    },
+    {
+      module: "Data audit checklist", topic: "ODK Central access",
+      text: "A programme gives all field staff the same ODK Central administrator login so anyone can change forms or see every submission. What should the access review conclude?",
+      options: ["Shared administration is the easiest way to prove accountability", "Submission access and form management should be restricted to authorised staff", "All staff need access to every form for convenience", "The login can remain shared if the password changes yearly"],
+      correct: 1,
+      explanation: "The approved checklist asks whether ODK Central submission access and form management are restricted to authorised staff."
+    },
+    {
+      module: "Data audit checklist", topic: "Post-sync cleanup",
+      text: "A field phone has successfully synced completed ODK forms containing personal data. What control should the team verify next?",
+      options: ["That the forms are retained on every device as a permanent backup", "That the phone is lent to the next field worker", "That forms with personal data are deleted from the device after successful sync", "That screenshots of the forms are shared in the team group"],
+      correct: 2,
+      explanation: "The ODK checklist specifically checks for deletion of forms containing personal data from devices after successful synchronisation."
+    },
+    {
+      module: "Data audit checklist", topic: "Old form retirement",
+      text: "A replaced ODK form version still collects an obsolete sensitive field and remains available for selection. Which audit action is appropriate?",
+      options: ["Keep it available in case an old field worker prefers it", "Copy it to a personal phone before changing anything", "Add more sensitive fields so it is worth retaining", "Retire old form versions that contain sensitive fields"],
+      correct: 3,
+      explanation: "The approved checklist asks whether old ODK form versions with sensitive fields are retired. Leaving an obsolete version selectable creates avoidable collection risk."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
