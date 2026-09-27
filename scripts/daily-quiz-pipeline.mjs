@@ -6838,6 +6838,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 80,
+  slug: "gandhi-fellow-consent-check",
+  shortTitle: "Gandhi Fellow Consent Check",
+  pageTitle: "DPDP Quiz 80 - Gandhi Fellow Consent Check",
+  eyebrow: "DPDP Quiz 80 | Gandhi Fellow Consent Check",
+  heroTitle: "Gandhi Fellow Consent Check: Explain, Ask, and Record",
+  heroIntro: "Five field scenarios on explaining a standalone notice, respecting partial refusal, documenting verbal agreement, and handling consent withdrawal carefully.",
+  cardDescription: "Five Gandhi Fellow scenarios on local-language notices, specific agreement, witness-backed verbal consent, partial refusal, and withdrawal.",
+  audience: "Gandhi Fellows, field implementors, and programme supervisors",
+  focus: "Plain-language notice, specific consent, verbal records, refusal, and withdrawal",
+  resultSummary: "Explain the purpose and sharing clearly, document a genuine affirmative response, respect refused fields, and route withdrawals safely.",
+  topics: [
+    { label: "People Role", text: "Gandhi Fellow conducting field enrolment" },
+    { label: "Obligation Area", text: "Consent notice and verifiable field records" },
+    { label: "Source", text: "Approved consent-templates.md and learning-modules.md" }
+  ],
+  questions: [
+    {
+      module: "Consent templates", topic: "Independent notice",
+      text: "Before a household survey, a Gandhi Fellow plans to say, ‘Please sign the programme agreement; the data details are inside it.’ What should happen instead?",
+      options: ["Use a notice the beneficiary can understand independently of the wider agreement", "Rely on the signature because it covers every page", "Explain the details only if the beneficiary complains later", "Ask the village volunteer to approve the agreement for everyone"],
+      correct: 0,
+      explanation: "The approved consent template says the notice must not be embedded in a larger agreement: it needs to be understandable independently."
+    },
+    {
+      module: "Learning module", topic: "Specific purpose",
+      text: "A beneficiary asks why her mobile number is needed during a nutrition follow-up. Which response best supports informed consent?",
+      options: ["We collect it because every form has a phone field", "It may be useful for any future Foundation activity", "We need it to contact you about this nutrition follow-up, and you can decide whether to agree", "You must provide it before you can hear about the service"],
+      correct: 2,
+      explanation: "The learning module says staff should explain what is collected and why in plain language; consent is for a defined purpose and should not be coerced."
+    },
+    {
+      module: "Verbal consent record", topic: "Witness-backed documentation",
+      text: "A beneficiary cannot read or sign but verbally agrees after the notice is read aloud. What is required for the field record?",
+      options: ["Only the Fellow’s memory of the conversation", "The date, location, data fields, purpose, language, exact response, and witness details", "A blank form marked ‘verbal’", "A family member’s signature without recording what was explained"],
+      correct: 1,
+      explanation: "Template 4 specifies these verbal-consent record fields and requires a witness, along with certification by the field staff member."
+    },
+    {
+      module: "Learning module", topic: "Partial refusal",
+      text: "During a survey, a beneficiary agrees to share her name and village but declines household income. What should the Gandhi Fellow do?",
+      options: ["End the interaction and deny all services", "Enter an estimated income from neighbours", "Respect the refusal, mark income as declined, and continue only with the agreed fields", "Collect the income later without mentioning it"],
+      correct: 2,
+      explanation: "The approved learning scenario directs field staff to respect a refusal of a specific data point and continue the remaining survey only with the person’s agreement."
+    },
+    {
+      module: "Consent templates", topic: "Withdrawal route",
+      text: "After enrolment, a beneficiary says she wants to withdraw consent. What is the safest immediate field response?",
+      options: ["Tell her withdrawal is impossible once services started", "Provide or use the designated contact route and ensure the request is handled without affecting services already provided", "Ask her to post the request in a public group", "Delete every record on the phone immediately without escalation"],
+      correct: 1,
+      explanation: "The beneficiary enrolment template allows withdrawal at any time through the designated contact and says withdrawal does not affect services already provided."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
