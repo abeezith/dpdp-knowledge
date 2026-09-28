@@ -6894,6 +6894,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 81,
+  slug: "intermediate-data-quality-decisions",
+  shortTitle: "Intermediate Data Quality Decisions",
+  pageTitle: "DPDP Quiz 81 - Intermediate Data Quality Decisions",
+  eyebrow: "DPDP Quiz 81 | Intermediate Data Quality Decisions",
+  heroTitle: "Data Quality Decisions: Accurate Before Action or Sharing",
+  heroIntro: "Five intermediate scenarios on keeping decision-use and shared beneficiary data complete, accurate, and consistent before it is acted on.",
+  cardDescription: "Five intermediate scenarios on correcting records, checking completeness, and validating data before a decision or external sharing.",
+  audience: "Programme Officers, data teams, and implementation supervisors",
+  focus: "Data quality, correction requests, decision-making, and sharing controls",
+  resultSummary: "Check the record before it drives a decision or leaves the programme: completeness, accuracy, and consistency protect people as well as operations.",
+  topics: [
+    { label: "Difficulty", text: "Intermediate operational judgment" },
+    { label: "Obligation Area", text: "Data quality before decisions or sharing" },
+    { label: "Source", text: "Approved act-and-rules-summary.md" }
+  ],
+  questions: [
+    {
+      module: "Data quality", topic: "Eligibility decision",
+      text: "A dashboard flags Meera as ineligible for a nutrition follow-up because her age was entered as 51 instead of 15. Before the record is used to decide her eligibility, what is the best action?",
+      options: ["Check and correct the record so the decision uses complete, accurate, and consistent data", "Keep the entry because the dashboard generated it automatically", "Delete Meera from the dashboard without checking the source record", "Share the error in a broad staff group so anyone can edit it"],
+      correct: 0,
+      explanation: "The approved Act summary says data used to make a decision affecting a beneficiary must be complete, accurate, and consistent. The discrepancy should be verified and corrected before relying on it."
+    },
+    {
+      module: "Data quality", topic: "Partner handoff",
+      text: "A programme team plans to send a beneficiary follow-up file to an authorised partner, but several mobile numbers are missing and two village codes conflict with the master list. What should the team do first?",
+      options: ["Send it promptly and let the partner resolve the gaps", "Validate and reconcile the missing or conflicting fields before sharing", "Replace the missing numbers with generic dummy values", "Remove every field except names, regardless of the purpose"],
+      correct: 1,
+      explanation: "Where personal data is shared with another Data Fiduciary, the guidance requires completeness, accuracy, and consistency. The source records should be checked before the handoff."
+    },
+    {
+      module: "Right to correction", topic: "Reported error",
+      text: "During a helpline call, a beneficiary says her address in the programme record is wrong. Which response best fits the DPDP guidance?",
+      options: ["Record and route the correction request for verification and updating", "Tell her only the original field worker can ever change it", "Ask her to publish her full address in a group chat", "Ignore it until the next annual audit"],
+      correct: 0,
+      explanation: "The right to correction allows a Data Principal to ask for inaccurate data to be corrected or incomplete data to be completed. Staff should record and escalate the request through the proper process."
+    },
+    {
+      module: "Data quality", topic: "Inconsistent health record",
+      text: "Two connected systems show different TB treatment dates for the same person, and a case worker must schedule follow-up. What is the safest DPDP-oriented approach?",
+      options: ["Use whichever date is more convenient", "Verify the authoritative source and resolve the inconsistency before acting", "Average the two dates and continue", "Send both records to all field volunteers for a vote"],
+      correct: 1,
+      explanation: "The data-quality obligation covers consistency as well as completeness and accuracy when data affects a person. Resolve the discrepancy through authorised records and workflows before making the follow-up decision."
+    },
+    {
+      module: "Data minimisation", topic: "Quality review scope",
+      text: "A data manager is checking why a monthly report has inconsistent referral counts. Which review is most appropriate?",
+      options: ["Open every beneficiary profile even when identifiers are not needed", "Review only the fields and authorised records needed to trace and correct the count", "Export all raw data to a personal laptop for convenience", "Skip the review because quality checks are optional"],
+      correct: 1,
+      explanation: "The approved summary requires data minimisation and security safeguards alongside data quality. A quality review should use only the necessary data and authorised access."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

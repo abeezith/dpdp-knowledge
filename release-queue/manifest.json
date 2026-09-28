@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-27T16:23:15.000Z",
-  "publishedThisRun": "quiz-70-rajasthan-consent-record-handoff",
-  "latestPublishedFolder": "quiz-70-rajasthan-consent-record-handoff",
-  "lastPublishedAt": "2026-09-27T16:20:04.381Z",
-  "lastPublishedOnLocalDate": "2026-09-27",
+  "updatedAt": "2026-09-28T14:48:55.240Z",
+  "publishedThisRun": "quiz-71-backup-recovery-readiness",
+  "latestPublishedFolder": "quiz-71-backup-recovery-readiness",
+  "lastPublishedAt": "2026-09-28T14:48:55.235Z",
+  "lastPublishedOnLocalDate": "2026-09-28",
   "lastNotificationSentFor": "quiz-70-rajasthan-consent-record-handoff",
   "queuedFolders": [
-    "quiz-71-backup-recovery-readiness",
     "quiz-72-implementor-correction-follow-through",
     "quiz-73-post-breach-review",
     "quiz-74-beginner-amrit-access-checks",
@@ -15,7 +14,8 @@
     "quiz-77-advanced-purpose-change-review",
     "quiz-78-field-rights-request-handling",
     "quiz-79-odk-minimum-collection",
-    "quiz-80-gandhi-fellow-consent-check"
+    "quiz-80-gandhi-fellow-consent-check",
+    "quiz-81-intermediate-data-quality-decisions"
   ],
   "queuedCount": 10
 }
