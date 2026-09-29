@@ -6950,6 +6950,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 82,
+  slug: "partner-sharing-gate",
+  shortTitle: "Partner Sharing Gate",
+  pageTitle: "DPDP Quiz 82 - Partner Sharing Gate",
+  eyebrow: "DPDP Quiz 82 | Partner Sharing Gate",
+  heroTitle: "Partner Sharing Gate: Check Purpose, Agreement, and Alternatives",
+  heroIntro: "Five practical scenarios for deciding whether a proposed partner-data handoff is covered, controlled, and genuinely necessary.",
+  cardDescription: "Five practical checks before partner sharing: consent scope, agreements, minimum data, secure transfer, and escalation.",
+  audience: "Programme Officers, partnership teams, BI analysts, and data governance reviewers",
+  focus: "Purpose limitation, partner agreements, minimisation, and authorised sharing",
+  resultSummary: "Before personal data leaves the programme, confirm purpose coverage, an appropriate agreement, the minimum dataset, and a controlled transfer route.",
+  topics: [
+    { label: "Obligation Area", text: "Purpose-limited sharing and processor controls" },
+    { label: "Project Stage", text: "External partner handoff" },
+    { label: "Source", text: "Approved role-guidance.md and data-audit-checklist.md" }
+  ],
+  questions: [
+    {
+      module: "Partner sharing", topic: "Consent scope",
+      text: "A partner asks for individual beneficiary records to plan a new programme activity that was not named in the original enrolment notice. What should the Programme Officer do first?",
+      options: ["Send the records because the partner also serves beneficiaries", "Check whether the original notice covers the sharing and escalate if it does not", "Remove only the beneficiary names and send every other field", "Ask the partner to promise not to reuse the data"],
+      correct: 1,
+      explanation: "The role guidance says individual-level sharing must be within the original consent notice or otherwise be escalated. A partner's useful purpose does not by itself expand the original collection purpose."
+    },
+    {
+      module: "Partner sharing", topic: "Agreement check",
+      text: "Before giving an external service provider access to programme data, which control is specifically expected in the approved guidance?",
+      options: ["A data sharing or Data Processing Agreement that includes the necessary safeguards", "A verbal assurance from the provider's project lead", "A public announcement that the provider will receive data", "A one-time export with no record of the access"],
+      correct: 0,
+      explanation: "The role guidance calls for a data sharing agreement with external partners and for processor contracts to specify security requirements."
+    },
+    {
+      module: "Data minimisation", topic: "Evaluation file",
+      text: "An evaluator needs district-level outcome trends, but requests a file containing names, phone numbers, and full beneficiary histories. Which response best follows the learning guidance?",
+      options: ["Provide the full file because evaluators may find every field useful", "Prefer aggregated or anonymised trends and limit any data shared to what the evaluation needs", "Replace names with serial numbers and treat the file as automatically anonymous", "Upload the full file to a shared group for faster access"],
+      correct: 1,
+      explanation: "The BI guidance prefers aggregated or genuinely anonymised data for evaluation and requires minimisation. Replacing names with IDs is only pseudonymisation when re-identification remains possible."
+    },
+    {
+      module: "Secure transfer", topic: "Authorised channel",
+      text: "A field coordinator proposes sending an approved partner a beneficiary extract through a personal messaging app because the file is small. What is the safest response?",
+      options: ["Use the messaging app if the partner is trusted", "Use the approved secure transfer route and limit access to authorised recipients", "Split the file across several group messages", "Send a screenshot instead of the file"],
+      correct: 1,
+      explanation: "The approved guidance treats casual messaging of beneficiary details as an avoidable exposure risk. Sharing should use authorised, controlled channels with access limited to those who need it."
+    },
+    {
+      module: "Escalation", topic: "Unclear request",
+      text: "A government office asks for a detailed beneficiary list outside the normal reporting workflow, but the legal basis and purpose are unclear. What should the receiving team do?",
+      options: ["Release the list immediately because the request came from government", "Ignore the request without documenting it", "Check the applicable reporting basis and escalate the out-of-scope request", "Share the list after deleting a few optional columns"],
+      correct: 2,
+      explanation: "Implementor guidance says to escalate government or partner requests outside normal scope. Sharing may be permitted when required by law, but the basis and scope must be checked rather than assumed."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
