@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-29T14:59:45.971Z",
-  "publishedThisRun": "quiz-72-implementor-correction-follow-through",
-  "latestPublishedFolder": "quiz-72-implementor-correction-follow-through",
-  "lastPublishedAt": "2026-09-29T14:57:38.552Z",
-  "lastPublishedOnLocalDate": "2026-09-29",
+  "updatedAt": "2026-09-30T17:11:29.637Z",
+  "publishedThisRun": "quiz-73-post-breach-review",
+  "latestPublishedFolder": "quiz-73-post-breach-review",
+  "lastPublishedAt": "2026-09-30T17:10:42.143Z",
+  "lastPublishedOnLocalDate": "2026-09-30",
   "lastNotificationSentFor": "quiz-72-implementor-correction-follow-through",
   "queuedFolders": [
-    "quiz-73-post-breach-review",
     "quiz-74-beginner-amrit-access-checks",
     "quiz-75-program-officer-request-records",
     "quiz-76-maharashtra-dhis2-review",
@@ -15,7 +14,8 @@
     "quiz-79-odk-minimum-collection",
     "quiz-80-gandhi-fellow-consent-check",
     "quiz-81-intermediate-data-quality-decisions",
-    "quiz-82-partner-sharing-gate"
+    "quiz-82-partner-sharing-gate",
+    "quiz-83-jharkhand-rights-desk"
   ],
   "queuedCount": 10
 }

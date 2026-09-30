@@ -7006,6 +7006,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 83,
+  slug: "jharkhand-rights-desk",
+  shortTitle: "Jharkhand Rights Desk",
+  pageTitle: "DPDP Quiz 83 - Jharkhand Rights Desk",
+  eyebrow: "DPDP Quiz 83 | Jharkhand Rights Desk",
+  heroTitle: "Jharkhand Rights Desk: Receive, Verify, and Route Requests",
+  heroIntro: "Five field-desk scenarios on recognising a data-rights request, recording it safely, and routing it for an accountable response.",
+  cardDescription: "Five practical checks for field teams handling access, correction, erasure, grievance, and identity-verification requests.",
+  audience: "Gandhi Fellows, Implementors, Programme Officers, and privacy contact teams",
+  focus: "Data Principal rights, request records, identity checks, escalation, and respectful field handling",
+  resultSummary: "A rights request is not a disruption to work; it is a request that needs a clear record, careful identity handling, and the right escalation path.",
+  topics: [
+    { label: "Field Setting", text: "Jharkhand community and programme touchpoints" },
+    { label: "Obligation Area", text: "Access, correction, erasure, and grievance handling" },
+    { label: "Source", text: "Approved learning-modules.md and consent-templates.md" }
+  ],
+  questions: [
+    {
+      module: "Data rights", topic: "Recognising a request",
+      text: "At a Jharkhand health outreach, a beneficiary says, \"Please tell me what information you have about me and why you use it.\" How should the field worker treat this?",
+      options: ["As a data-access request that should be recorded and routed through the stated contact path", "As a casual question that needs no record", "As consent to collect more information", "As a request that only a government office may make"],
+      correct: 0,
+      explanation: "The learning material gives people a right to know what data is held and how it is used. The worker should note the request and use the established routing path rather than dismiss it."
+    },
+    {
+      module: "Correction", topic: "Safe record update",
+      text: "A beneficiary says her mobile number in a follow-up register is wrong. What is the best immediate field response?",
+      options: ["Change it from memory without noting the request", "Record the correction request and pass it to the authorised supervisor or system process", "Share a photograph of the register in a group chat for confirmation", "Tell her corrections are possible only at the end of the programme"],
+      correct: 1,
+      explanation: "The quick guidance directs field teams to note an incorrect-data concern and inform the supervisor. An authorised workflow preserves accuracy and avoids exposing the register."
+    },
+    {
+      module: "Erasure", topic: "Purpose completed",
+      text: "A participant asks for deletion of contact details after the follow-up purpose described in the notice has ended. Which response is most appropriate?",
+      options: ["Explain the request will be routed for review under the retention and erasure process", "Promise immediate deletion from every system without checking records", "Keep the details indefinitely because they might be useful later", "Ask the participant to post the request publicly"],
+      correct: 0,
+      explanation: "The references connect deletion requests with defined purpose and retention controls. The request should be routed for an accountable review, not ignored or handled through an unsafe informal channel."
+    },
+    {
+      module: "Identity handling", topic: "Verification proportionate to risk",
+      text: "Someone calls the privacy contact asking for a copy of a beneficiary's records. Before disclosing personal data, what should the team do?",
+      options: ["Send the records because the caller knows the beneficiary's village", "Use a proportionate verification step before processing the request", "Ask for unrelated family records to make verification stronger", "Read the records aloud on a shared speakerphone"],
+      correct: 1,
+      explanation: "Rights handling must protect the person's data while responding. Verification should be sufficient for the request without collecting unnecessary extra information."
+    },
+    {
+      module: "Grievance", topic: "Clear contact route",
+      text: "A field notice tells people they can complain about data handling but provides no contact, phone number, or escalation route. What key improvement is needed?",
+      options: ["Add a clear privacy contact or grievance mechanism people can actually use", "Remove the grievance statement because it creates work", "Tell people to find a contact online without assistance", "Replace the notice with a general promise of confidentiality"],
+      correct: 0,
+      explanation: "The consent templates require a practical contact route for questions, rights, and complaints. A vague promise does not give a person a usable way to seek redress."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

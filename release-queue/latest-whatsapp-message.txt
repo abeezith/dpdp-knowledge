@@ -1,7 +1,7 @@
-DPDP Quiz 72 | Implementor Correction Follow-Through
+DPDP Quiz 73 | Post-Breach Review
 
-Five practical questions on logging requests, checking actual records, correcting MIS entries, documenting changes, and confirming completion.
+Five scenarios on root causes, lasting fixes, beneficiary follow-up, staff support, and updating the breach-response SOP.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-72-implementor-correction-follow-through/
+https://abeezith.github.io/dpdp-knowledge/quiz-73-post-breach-review/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
