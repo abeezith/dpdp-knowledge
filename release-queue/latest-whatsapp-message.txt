@@ -1,7 +1,7 @@
-DPDP Quiz 73 | Post-Breach Review
+DPDP Quiz 74 | Beginner AMRIT Access Checks
 
-Five scenarios on root causes, lasting fixes, beneficiary follow-up, staff support, and updating the breach-response SOP.
+Five beginner questions on authorised patient access, ABHA-linked records, inactive sessions, access logs, and database encryption.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-73-post-breach-review/
+https://abeezith.github.io/dpdp-knowledge/quiz-74-beginner-amrit-access-checks/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

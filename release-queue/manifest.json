@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-09-30T17:11:29.637Z",
-  "publishedThisRun": "quiz-73-post-breach-review",
-  "latestPublishedFolder": "quiz-73-post-breach-review",
-  "lastPublishedAt": "2026-09-30T17:10:42.143Z",
-  "lastPublishedOnLocalDate": "2026-09-30",
+  "updatedAt": "2026-10-01T13:33:00.275Z",
+  "publishedThisRun": "quiz-74-beginner-amrit-access-checks",
+  "latestPublishedFolder": "quiz-74-beginner-amrit-access-checks",
+  "lastPublishedAt": "2026-10-01T13:33:00.275Z",
+  "lastPublishedOnLocalDate": "2026-10-01",
   "lastNotificationSentFor": "quiz-72-implementor-correction-follow-through",
   "queuedFolders": [
-    "quiz-74-beginner-amrit-access-checks",
     "quiz-75-program-officer-request-records",
     "quiz-76-maharashtra-dhis2-review",
     "quiz-77-advanced-purpose-change-review",
@@ -15,7 +14,8 @@
     "quiz-80-gandhi-fellow-consent-check",
     "quiz-81-intermediate-data-quality-decisions",
     "quiz-82-partner-sharing-gate",
-    "quiz-83-jharkhand-rights-desk"
+    "quiz-83-jharkhand-rights-desk",
+    "quiz-84-phase-two-consent-manager-readiness"
   ],
   "queuedCount": 10
 }

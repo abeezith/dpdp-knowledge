@@ -7062,6 +7062,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 84,
+  slug: "phase-two-consent-manager-readiness",
+  shortTitle: "Phase II Consent Manager Readiness",
+  pageTitle: "DPDP Quiz 84 - Phase II Consent Manager Readiness",
+  eyebrow: "DPDP Quiz 84 | Phase II Consent Manager Readiness",
+  heroTitle: "Phase II Consent Manager Readiness: Plan the Next Milestone",
+  heroIntro: "Five planning questions on the Consent Manager milestone, the November 2026 preparation target, and the work teams should sequence before full compliance.",
+  cardDescription: "Five practical questions on Consent Manager readiness, data mapping, ownership, and the path from Phase II preparation to full compliance.",
+  audience: "BIDA, IT Governance, platform teams, Legal, and programme leaders",
+  focus: "Phase II timing, Consent Manager framework, readiness sequencing, and accountable ownership",
+  resultSummary: "Phase II is a preparation milestone, not a reason to defer the wider programme. Clear ownership and early evidence-building make the May 2027 deadline manageable.",
+  topics: [
+    { label: "Project Stage", text: "Phase II readiness and compliance sequencing" },
+    { label: "Obligation Area", text: "Consent Manager framework and privacy programme preparation" },
+    { label: "Source", text: "Approved compliance-timeline.md" }
+  ],
+  questions: [
+    {
+      module: "Timeline", topic: "Phase II milestone",
+      text: "According to the approved timeline, when does the Consent Manager framework become active?",
+      options: ["13 November 2025", "13 November 2026", "13 May 2027", "Only after Piramal Foundation appoints a full-time DPO"],
+      correct: 1,
+      explanation: "The timeline identifies 13 November 2026 as Phase II, when Rule 4 and the Consent Manager framework become active."
+    },
+    {
+      module: "Preparation", topic: "Early action",
+      text: "A platform team says it will start data mapping only after the full-compliance date arrives. What does the timeline recommend instead?",
+      options: ["Start the privacy programme and data inventory now as preparation work", "Wait until every rule is enforceable", "Map only paper records and ignore platforms", "Ask each vendor to decide what to map"],
+      correct: 0,
+      explanation: "The Phase II readiness section says the privacy programme and data inventory should start now, rather than waiting for the May 2027 full-compliance deadline."
+    },
+    {
+      module: "Governance", topic: "Consent Manager role",
+      text: "What is the timeline's specific Phase II implication for an organisation acting as a Consent Manager?",
+      options: ["It must register with the DPBI", "It may stop maintaining consent records", "It becomes exempt from security safeguards", "It can replace all beneficiary notices with a single verbal statement"],
+      correct: 0,
+      explanation: "The approved timeline says the Consent Manager framework becomes active in Phase II and Consent Managers require registration with the DPBI."
+    },
+    {
+      module: "Platform planning", topic: "ABDM alignment",
+      text: "Before the Phase II milestone, what should the ABDM integration team do according to the timeline?",
+      options: ["Assess whether the ABDM consent architecture aligns with the relevant requirements", "Assume ABDM consent automatically covers every DPDP requirement", "Remove all consent records to reduce risk", "Delay all platform reviews until May 2027"],
+      correct: 0,
+      explanation: "The timeline lists an ABDM consent architecture alignment assessment as a Q4 2026 priority for the platform team."
+    },
+    {
+      module: "Ownership", topic: "Privacy programme",
+      text: "Which teams are assigned ownership for initiating the privacy programme in the readiness timeline?",
+      options: ["IT Governance and BIDA", "Only external auditors", "Only field fellows", "Only the Data Protection Board of India"],
+      correct: 0,
+      explanation: "The timeline assigns privacy-programme initiation to IT Governance and BIDA, with work beginning before the later full-compliance date."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
