@@ -1,7 +1,7 @@
-DPDP Quiz 74 | Beginner AMRIT Access Checks
+DPDP Quiz 75 | Program Officer Request Records
 
-Five beginner questions on authorised patient access, ABHA-linked records, inactive sessions, access logs, and database encryption.
+Five scenarios on recording rights requests, staff handoffs, pending responses, response details, and beneficiary satisfaction.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-74-beginner-amrit-access-checks/
+https://abeezith.github.io/dpdp-knowledge/quiz-75-program-officer-request-records/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

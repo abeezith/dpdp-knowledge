@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-01T13:33:00.275Z",
-  "publishedThisRun": "quiz-74-beginner-amrit-access-checks",
-  "latestPublishedFolder": "quiz-74-beginner-amrit-access-checks",
-  "lastPublishedAt": "2026-10-01T13:33:00.275Z",
-  "lastPublishedOnLocalDate": "2026-10-01",
+  "updatedAt": "2026-10-02T13:32:47.072Z",
+  "publishedThisRun": "quiz-75-program-officer-request-records",
+  "latestPublishedFolder": "quiz-75-program-officer-request-records",
+  "lastPublishedAt": "2026-10-02T13:32:47.069Z",
+  "lastPublishedOnLocalDate": "2026-10-02",
   "lastNotificationSentFor": "quiz-72-implementor-correction-follow-through",
   "queuedFolders": [
-    "quiz-75-program-officer-request-records",
     "quiz-76-maharashtra-dhis2-review",
     "quiz-77-advanced-purpose-change-review",
     "quiz-78-field-rights-request-handling",
@@ -15,7 +14,8 @@
     "quiz-81-intermediate-data-quality-decisions",
     "quiz-82-partner-sharing-gate",
     "quiz-83-jharkhand-rights-desk",
-    "quiz-84-phase-two-consent-manager-readiness"
+    "quiz-84-phase-two-consent-manager-readiness",
+    "quiz-85-data-fiduciary-accountability"
   ],
   "queuedCount": 10
 }

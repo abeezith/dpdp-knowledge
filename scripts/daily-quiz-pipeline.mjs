@@ -7118,6 +7118,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 85,
+  slug: "data-fiduciary-accountability",
+  shortTitle: "Data Fiduciary Accountability",
+  pageTitle: "DPDP Quiz 85 - Data Fiduciary Accountability",
+  eyebrow: "DPDP Quiz 85 | Data Fiduciary Accountability",
+  heroTitle: "Data Fiduciary Accountability: Own the Decision and the Safeguards",
+  heroIntro: "Five practical questions on the Data Fiduciary's responsibility for accurate decisions, processor safeguards, notice design, and accountable handling of personal data.",
+  cardDescription: "Five practical questions on Data Fiduciary accountability: accurate decisions, processor safeguards, clear notices, and responsible handling of personal data.",
+  audience: "Programme leads, platform owners, Legal, IT Governance, and delivery partners",
+  focus: "Data quality, processor safeguards, notice duties, breach accountability, and documented ownership",
+  resultSummary: "A Data Fiduciary cannot delegate away accountability. Sound governance links clear purposes, reliable records, processor controls, and timely action when something goes wrong.",
+  topics: [
+    { label: "Obligation Area", text: "Data Fiduciary obligations under Section 8 and Rules 3, 6, and 7" },
+    { label: "Difficulty", text: "Intermediate accountability and governance judgment" },
+    { label: "Source", text: "Approved act-and-rules-summary.md" }
+  ],
+  questions: [
+    {
+      module: "Data quality", topic: "Benefit eligibility decision",
+      text: "A programme will use beneficiary records to decide who receives a follow-up service. Before the decision is made, what quality standard must the Data Fiduciary ensure?",
+      options: ["The records are complete, accurate, and consistent", "The records are as detailed as possible, even if conflicting", "The decision is made from the first record received", "The records are shared publicly so anyone can edit them"],
+      correct: 0,
+      explanation: "The approved summary says data used for a decision affecting a beneficiary must be complete, accurate, and consistent. This protects the person as well as the programme's decision-making."
+    },
+    {
+      module: "Processor controls", topic: "Vendor agreement",
+      text: "A cloud vendor processes beneficiary data for a programme. Which safeguard should the Data Fiduciary require in the vendor arrangement?",
+      options: ["Contractual provisions requiring the Data Processor to maintain equivalent security safeguards", "A promise that the vendor will decide its own retention rules", "Permission for the vendor to use the records for unrelated marketing", "No written obligations if the vendor is technically experienced"],
+      correct: 0,
+      explanation: "Rule 6 safeguards include contractual provisions requiring Data Processors to maintain equivalent security. Technical capability does not remove the need for accountable contractual controls."
+    },
+    {
+      module: "Notice", topic: "Purpose change request",
+      text: "A team plans to collect mobile numbers for appointment reminders and later use them for an unrelated research invitation. What should guide the Data Fiduciary before the new use?",
+      options: ["The notice and consent must state a specific purpose; broad future-use language is not enough", "A mobile number can be used for any purpose once collected", "The team may change the purpose if the invitation is short", "The new use is automatically allowed when sent by a programme partner"],
+      correct: 0,
+      explanation: "The approved notice guidance requires specific data items and a specific purpose. It rejects blanket language that tries to authorise every future use."
+    },
+    {
+      module: "Breach accountability", topic: "Third-party incident",
+      text: "A Data Processor reports that personal data was exposed through its system. What is the most appropriate Data Fiduciary response under the approved summary?",
+      options: ["Treat it as a personal data breach and begin the required notification and mitigation response", "Leave notification entirely to the processor because the system is theirs", "Wait for a beneficiary to complain before recording the incident", "Delete the affected records immediately without investigating"],
+      correct: 0,
+      explanation: "The summary requires action on becoming aware of a personal data breach: affected people are notified immediately, DPBI receives an initial notification without delay, and the detailed report follows within 72 hours."
+    },
+    {
+      module: "Governance", topic: "Ownership of data purpose",
+      text: "Which organisation role is accountable for deciding why and how personal data is processed in its own programme?",
+      options: ["The Data Fiduciary", "Any individual employee who collects a form", "The Data Principal", "The Data Protection Board of India"],
+      correct: 0,
+      explanation: "The DPDP framework distinguishes the Data Fiduciary, which determines the purpose and means of processing, from people providing data, staff acting for it, and the regulator."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
