@@ -1,7 +1,7 @@
-DPDP Quiz 75 | Program Officer Request Records
+DPDP Quiz 76 | Maharashtra DHIS2 Review
 
-Five scenarios on recording rights requests, staff handoffs, pending responses, response details, and beneficiary satisfaction.
+Five Maharashtra field-team scenarios on DHIS2 permissions, metadata privacy, API controls, security patches, and inactive accounts.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-75-program-officer-request-records/
+https://abeezith.github.io/dpdp-knowledge/quiz-76-maharashtra-dhis2-review/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

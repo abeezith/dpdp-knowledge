@@ -7174,6 +7174,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 86,
+  slug: "international-sharing-controls",
+  shortTitle: "International Sharing Controls",
+  pageTitle: "DPDP Quiz 86 - International Sharing Controls",
+  eyebrow: "DPDP Quiz 86 | International Sharing Controls",
+  heroTitle: "International Sharing Controls: Purpose, Minimisation, and Review",
+  heroIntro: "Five practical questions on assessing an international data-sharing request while preserving purpose limitation, minimisation, and the safeguards that still apply.",
+  cardDescription: "Five practical questions on reviewing international data sharing, keeping transfers proportionate, and monitoring the current restriction position.",
+  audience: "Programme leads, BI analysts, platform owners, and partner-management teams",
+  focus: "Cross-border transfer, minimisation, purpose limitation, research boundaries, and current restrictions",
+  resultSummary: "International transfers are not a shortcut around DPDP duties: teams still need a defined purpose, proportionate data, safeguards, and an up-to-date restriction check.",
+  topics: [
+    { label: "Data Lifecycle", text: "Partner sharing and international transfer review" },
+    { label: "Obligation Area", text: "Section 16 transfer controls and continuing data-protection duties" },
+    { label: "Source", text: "Approved act-and-rules-summary.md" }
+  ],
+  questions: [
+    {
+      module: "Transfer review", topic: "Starting position",
+      text: "A BI team plans to send personal-data records to an overseas implementation partner. What is the approved summary's starting position on an international transfer?",
+      options: ["It may be transferred unless the Central Government restricts the relevant country or entity", "It is always prohibited once data leaves India", "It is permitted only after every beneficiary gives a notarised letter", "It is allowed only when the recipient is a government department"],
+      correct: 0,
+      explanation: "The approved summary describes a negative-list approach: international transfers are permitted unless the Central Government restricts a country or entity. Teams must still meet the other applicable DPDP duties."
+    },
+    {
+      module: "Minimisation", topic: "Donor reporting",
+      text: "An international donor requests a beneficiary-level file to understand programme performance, but an aggregated dashboard would answer its question. What is the best DPDP-oriented choice?",
+      options: ["Use the aggregated dashboard and avoid sharing identifiable records that are unnecessary", "Send the entire raw file because the donor is overseas", "Add more identifiers so the donor can validate each record", "Publish the file first so the transfer is transparent"],
+      correct: 0,
+      explanation: "The summary keeps international transfers subject to purpose limitation and minimisation. If aggregate reporting meets the need, it is the more proportionate option."
+    },
+    {
+      module: "Purpose", topic: "New recipient use",
+      text: "A cloud provider hosts programme data internationally and asks to reuse identifiable records for an unrelated product study. What should the programme team conclude?",
+      options: ["The unrelated reuse needs a valid, specific basis; hosting does not authorise a new purpose", "The provider can reuse it because the data is already outside India", "The reuse is fine if names are kept in a separate spreadsheet", "Any vendor can choose new purposes after signing a security clause"],
+      correct: 0,
+      explanation: "A transfer does not remove purpose limits. The references require processing to remain tied to a defined purpose rather than treating collection or hosting as permission for unrelated use."
+    },
+    {
+      module: "Research", topic: "Evaluation dataset",
+      text: "An overseas evaluator proposes research using programme records and says the results will not decide anything about an individual beneficiary. Which additional condition is still required for the research exemption described in the summary?",
+      options: ["Follow the specified standards, including lawful processing, data minimisation, and security safeguards", "Delete every security control because research is exempt", "Make individual records public so results can be checked", "Use the data for beneficiary-specific eligibility decisions"],
+      correct: 0,
+      explanation: "The research and statistical exemption is conditional. The approved summary says the work must not make an individual-specific decision and must follow the Second Schedule standards, including minimisation and safeguards."
+    },
+    {
+      module: "Monitoring", topic: "Restriction check",
+      text: "Before approving a new transfer to an international partner, what continuing governance step does the summary recommend?",
+      options: ["Monitor MeitY notifications for any restricted-country list", "Assume the rules can never change after the first transfer", "Wait for a complaint before checking eligibility", "Check only whether the partner has a social-media page"],
+      correct: 0,
+      explanation: "The summary notes that the restricted-country position can change and specifically directs teams to monitor MeitY notifications for a restricted list."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
