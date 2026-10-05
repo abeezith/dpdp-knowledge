@@ -7230,6 +7230,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 87,
+  slug: "incident-evidence-preservation",
+  shortTitle: "Incident Evidence Preservation",
+  pageTitle: "DPDP Quiz 87 - Incident Evidence Preservation",
+  eyebrow: "DPDP Quiz 87 | Incident Evidence Preservation",
+  heroTitle: "Incident Evidence Preservation: Secure the Facts Before the Fix",
+  heroIntro: "Five breach-response scenarios on preserving evidence, containing exposure, and building an accurate incident record before remediation changes the facts.",
+  cardDescription: "Five practical questions on evidence preservation, containment, notification facts, and post-breach learning.",
+  audience: "Field teams, programme leads, IT staff, and incident-response coordinators",
+  focus: "Breach evidence, physical and technical containment, notification records, and root-cause follow-through",
+  resultSummary: "A sound breach response contains harm quickly while preserving the facts needed for notification, investigation, and prevention.",
+  topics: [
+    { label: "Project Stage", text: "Incident response: containment, assessment, notification, and review" },
+    { label: "Obligation Area", text: "Section 8(6) and Rule 7 breach-response practice" },
+    { label: "Source", text: "Approved breach-response-sop.md" }
+  ],
+  questions: [
+    {
+      module: "Technical response", topic: "Cloud-account compromise",
+      text: "A cloud-storage account may be compromised and its access logs could change during remediation. What should the IT team do before attempting a fix?",
+      options: ["Export or preserve the relevant logs and evidence, then isolate access and remediate", "Delete the logs so the attacker cannot see them", "Wait for the full investigation before containing access", "Reset every system without recording what was affected"],
+      correct: 0,
+      explanation: "The SOP directs teams to preserve logs before taking action in a technical breach, then isolate the affected system and revoke compromised access. Evidence supports both assessment and the required reporting."
+    },
+    {
+      module: "Physical response", topic: "Wrong-recipient file",
+      text: "A field officer sends a beneficiary file to the wrong email recipient. Which immediate action is specifically called for alongside documentation?",
+      options: ["Contact the unintended recipient, request deletion, and record the response", "Recall the email silently and close the incident", "Send the file to more recipients so no one is singled out", "Wait until the recipient confirms harm before acting"],
+      correct: 0,
+      explanation: "For a wrongly shared file, the physical-breach checklist says to contact the recipient, request deletion, and document their response while preserving the incident evidence."
+    },
+    {
+      module: "Assessment", topic: "Incident scope",
+      text: "Which fact is most important to establish during the SOP's early assessment of a data breach?",
+      options: ["What personal data was affected and approximately how many Data Principals may be involved", "Whether the team can finish the final report before telling anyone", "Which staff member should be blamed first", "Whether the incident is likely to attract press attention"],
+      correct: 0,
+      explanation: "The assessment checklist requires teams to identify the personal data involved, approximate affected people, likely harm, whether the breach is contained, timing, and likely cause."
+    },
+    {
+      module: "DPBI reporting", topic: "Detailed report",
+      text: "Which item belongs in the detailed report to the DPBI within 72 hours, rather than being omitted because containment has finished?",
+      options: ["Mitigation measures and remedial steps taken to prevent recurrence", "Only the name of the staff member who discovered the incident", "A promise to never disclose the incident", "A list of unrelated programme achievements"],
+      correct: 0,
+      explanation: "The SOP lists mitigation, circumstances and reasons, findings about the cause, remedial steps, and the outcome of Data Principal notifications as detailed-report content."
+    },
+    {
+      module: "Post-breach review", topic: "Learning loop",
+      text: "After a contained breach, which follow-through best matches the SOP's 30-day review expectations?",
+      options: ["Complete root-cause analysis, address the gap, follow up with affected people, and update the SOP if needed", "Erase all incident records to make the event disappear", "Treat the event as closed once the first notification is sent", "Focus only on individual blame and skip process improvements"],
+      correct: 0,
+      explanation: "The post-breach checklist calls for root-cause analysis, a technical or process fix, follow-up with affected people, notification of remediation steps, and SOP improvement without a blame culture."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

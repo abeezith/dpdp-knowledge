@@ -1,7 +1,7 @@
-DPDP Quiz 76 | Maharashtra DHIS2 Review
+DPDP Quiz 77 | Advanced Purpose Change Review
 
-Five Maharashtra field-team scenarios on DHIS2 permissions, metadata privacy, API controls, security patches, and inactive accounts.
+Five advanced review scenarios on changed purposes, partial consent, vendor accountability, re-identification risk, and rights-safe programme decisions.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-76-maharashtra-dhis2-review/
+https://abeezith.github.io/dpdp-knowledge/quiz-77-advanced-purpose-change-review/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-04T13:30:45.657Z",
-  "publishedThisRun": "quiz-76-maharashtra-dhis2-review",
-  "latestPublishedFolder": "quiz-76-maharashtra-dhis2-review",
-  "lastPublishedAt": "2026-10-03T19:01:40.391Z",
-  "lastPublishedOnLocalDate": "2026-10-04",
+  "updatedAt": "2026-10-05T15:10:37.906Z",
+  "publishedThisRun": "quiz-77-advanced-purpose-change-review",
+  "latestPublishedFolder": "quiz-77-advanced-purpose-change-review",
+  "lastPublishedAt": "2026-10-05T15:09:40.156Z",
+  "lastPublishedOnLocalDate": "2026-10-05",
   "lastNotificationSentFor": "quiz-75-program-officer-request-records",
   "queuedFolders": [
-    "quiz-77-advanced-purpose-change-review",
     "quiz-78-field-rights-request-handling",
     "quiz-79-odk-minimum-collection",
     "quiz-80-gandhi-fellow-consent-check",
@@ -15,7 +14,8 @@
     "quiz-83-jharkhand-rights-desk",
     "quiz-84-phase-two-consent-manager-readiness",
     "quiz-85-data-fiduciary-accountability",
-    "quiz-86-international-sharing-controls"
+    "quiz-86-international-sharing-controls",
+    "quiz-87-incident-evidence-preservation"
   ],
   "queuedCount": 10
 }
