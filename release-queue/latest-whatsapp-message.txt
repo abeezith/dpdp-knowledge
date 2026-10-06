@@ -1,7 +1,7 @@
-DPDP Quiz 77 | Advanced Purpose Change Review
+DPDP Quiz 78 | Field Rights Request Handling
 
-Five advanced review scenarios on changed purposes, partial consent, vendor accountability, re-identification risk, and rights-safe programme decisions.
+Five practical field scenarios on recognising rights requests, recording them safely, escalating them, and responding without retaliation.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-77-advanced-purpose-change-review/
+https://abeezith.github.io/dpdp-knowledge/quiz-78-field-rights-request-handling/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

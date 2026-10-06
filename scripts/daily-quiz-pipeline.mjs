@@ -7286,6 +7286,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 88,
+  slug: "intermediate-breach-notice-practice",
+  shortTitle: "Intermediate Breach Notice Practice",
+  pageTitle: "DPDP Quiz 88 - Intermediate Breach Notice Practice",
+  eyebrow: "DPDP Quiz 88 | Intermediate Breach Notice Practice",
+  heroTitle: "Breach Notices: Clear, Timely, and Useful",
+  heroIntro: "Five intermediate scenarios on communicating a personal data breach clearly, recording response activity, and keeping Data Principal notifications useful during a fast-moving incident.",
+  cardDescription: "Five intermediate scenarios on breach notice content, field communication, response records, and timely escalation.",
+  audience: "Programme leads, field supervisors, privacy contacts, and incident-response teams",
+  focus: "Data Principal notice content, accessible communication, response evidence, and incident escalation",
+  resultSummary: "Effective breach notices explain the event, likely effects, protective steps, and a reliable contact route without delaying the wider response.",
+  topics: [
+    { label: "Difficulty", text: "Intermediate: applied incident-notification decisions" },
+    { label: "Obligation Area", text: "Rule 7 Data Principal notification and incident documentation" },
+    { label: "Source", text: "Approved breach-response-sop.md" }
+  ],
+  questions: [
+    {
+      module: "Data Principal notice", topic: "Useful notification", 
+      text: "A beneficiary asks what a breach message should tell them besides the fact that an incident happened. Which response best follows the SOP?",
+      options: ["The likely consequences, the mitigation underway, steps they can take, and a privacy contact", "Only that the organisation is investigating", "The private names of every staff member involved", "Nothing further until the detailed DPBI report is complete"],
+      correct: 0,
+      explanation: "The SOP requires a description of the breach, likely consequences, steps being taken, practical self-protection steps, and contact details for questions."
+    },
+    {
+      module: "Field notification", topic: "Low connectivity", 
+      text: "Some affected beneficiaries have no reliable phone or WhatsApp access after a field data incident. What does the SOP recommend where practical?",
+      options: ["Use field teams to notify people in person and document attempts and outcomes", "Skip notification because a digital channel is unavailable", "Wait until every beneficiary changes their phone number", "Publish the full affected list publicly"],
+      correct: 0,
+      explanation: "For low-connectivity settings, the SOP calls for in-person notification by field teams where practical, with documented attempts and outcomes."
+    },
+    {
+      module: "Initial reporting", topic: "Known facts", 
+      text: "An incident team has not yet confirmed the full root cause of a suspected data exposure. What should it do about the initial breach report?",
+      options: ["Report the known facts without delay and investigate in parallel", "Wait until the investigation can identify every contributing factor", "Discard uncertain details and avoid recording the discovery time", "Send only a final report after 72 hours"],
+      correct: 0,
+      explanation: "The SOP says not to wait for investigation completion: report first and investigate in parallel, using the known nature, extent, timing, location, and likely impact."
+    },
+    {
+      module: "Response records", topic: "Notification evidence", 
+      text: "Why should the team record how many affected people were notified, by which channel, and with what outcome?",
+      options: ["It forms part of the detailed DPBI-report record of Data Principal notifications", "It replaces the need to contain the incident", "It is needed only if a donor requests it", "It lets the team avoid assessing likely harm"],
+      correct: 0,
+      explanation: "The detailed DPBI report must include a report on notifications given to affected Data Principals, including numbers, methods, and outcomes."
+    },
+    {
+      module: "Escalation", topic: "After-hours discovery", 
+      text: "A Gandhi Fellow discovers a possible loss of beneficiary data late at night. What escalation default does the SOP set?",
+      options: ["Escalate immediately through the supervisor and IT path; do not wait for normal working hours", "Keep a personal note and report at the next weekly meeting", "Notify only after confirming that actual harm occurred", "Contact affected people first but tell no internal team"],
+      correct: 0,
+      explanation: "The escalation path requires immediate reporting through the Program Officer and IT Governance or BIDA route, and explicitly says not to wait for normal working hours."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
