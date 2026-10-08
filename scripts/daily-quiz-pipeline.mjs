@@ -7342,6 +7342,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 89,
+  slug: "phase-three-readiness-calendar",
+  shortTitle: "Phase III Readiness Calendar",
+  pageTitle: "DPDP Quiz 89 - Phase III Readiness Calendar",
+  eyebrow: "DPDP Quiz 89 | Phase III Readiness Calendar",
+  heroTitle: "Phase III Readiness: Turning Dates into Actions",
+  heroIntro: "Five practical planning scenarios for converting the DPDP rollout timeline into accountable programme, platform, and field-team work.",
+  cardDescription: "Five readiness-planning scenarios on rollout dates, ownership, platform controls, and preparing for full DPDP compliance.",
+  audience: "Programme leaders, IT Governance, BIDA, and implementation teams",
+  focus: "Phase I through III timing, accountable preparation, platform review, and full-compliance readiness",
+  resultSummary: "This set reinforces the published DPDP rollout dates and the practical work needed to be ready before Phase III.",
+  topics: [
+    { label: "Project Stage", text: "Readiness planning, gap assessment, remediation, and final compliance preparation" },
+    { label: "Obligation Area", text: "DPDP Rules rollout and operational ownership" },
+    { label: "Source", text: "Approved compliance-timeline.md" }
+  ],
+  questions: [
+    {
+      module: "Compliance timeline", topic: "Hard deadline",
+      text: "A team hears that full DPDP compliance may be accelerated to November 2026 and pauses its May 2027 planning. What should its plan use as the hard deadline under the approved timeline?",
+      options: ["13 May 2027, unless a new gazette notification changes the position", "13 November 2025, because every Rule took effect immediately", "The next annual audit date chosen internally", "Only the date on which a beneficiary first complains"],
+      correct: 0,
+      explanation: "The timeline says the proposed acceleration had not been confirmed by gazette notification. Teams should plan for 13 May 2027 as the hard deadline while treating November 2026 as the preparation target."
+    },
+    {
+      module: "Phase I", topic: "Grievance path",
+      text: "Which immediate operational check belongs to Phase I of the rollout rather than waiting for the full-compliance phase?",
+      options: ["Ensure the grievance escalation path works because DPBI complaints are already possible", "Wait to identify any privacy contact until after May 2027", "Retire all programme platforms immediately without review", "Publish every beneficiary record to demonstrate transparency"],
+      correct: 0,
+      explanation: "The timeline lists a working grievance escalation path, first-response protocol, leadership awareness, and an internal privacy contact as actions for the immediate Phase I period."
+    },
+    {
+      module: "Readiness target", topic: "Data mapping ownership",
+      text: "Who should jointly start the data inventory and mapping work for personal data held across programmes?",
+      options: ["BIDA and programme teams", "Only an external donor", "Field volunteers without programme input", "Only the Data Protection Board of India"],
+      correct: 0,
+      explanation: "The approved readiness table assigns data inventory and mapping—what personal data is held, where, and why—to BIDA and programme teams."
+    },
+    {
+      module: "Platform readiness", topic: "DHIS2 audit trail",
+      text: "During a DHIS2 readiness review, what log-retention control should the team confirm before the Phase III deadline?",
+      options: ["Audit logs are retained for at least one year", "Logs are deleted every week to save space", "Only successful logins are recorded", "Logs are shared in public groups for peer review"],
+      correct: 0,
+      explanation: "The timeline identifies confirmation of at least one-year DHIS2 audit-log retention as a Rule 6 readiness action."
+    },
+    {
+      module: "Final preparation", topic: "Children's data",
+      text: "For Bihar maternal and child health work, which Q4 2026 preparation step is specified for children's personal data?",
+      options: ["Establish parental consent or healthcare-exemption documentation", "Use a blanket donor-release statement for all child data", "Stop recording health data in every care setting", "Treat a photograph as automatically covered by a health-service purpose"],
+      correct: 0,
+      explanation: "The timeline directs MCH/RMNCH+A programmes to establish parental-consent or healthcare-exemption documentation for children's data by Q4 2026."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

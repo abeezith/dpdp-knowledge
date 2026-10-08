@@ -1,7 +1,7 @@
-DPDP Quiz 78 | Field Rights Request Handling
+DPDP Quiz 79 | ODK Minimum Collection
 
-Five practical field scenarios on recognising rights requests, recording them safely, escalating them, and responding without retaliation.
+Five field-form scenarios on data minimisation, device encryption, controlled ODK access, post-sync cleanup, and retiring old sensitive forms.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-78-field-rights-request-handling/
+https://abeezith.github.io/dpdp-knowledge/quiz-79-odk-minimum-collection/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-06T13:33:19.075Z",
-  "publishedThisRun": "quiz-78-field-rights-request-handling",
-  "latestPublishedFolder": "quiz-78-field-rights-request-handling",
-  "lastPublishedAt": "2026-10-06T13:32:18.671Z",
-  "lastPublishedOnLocalDate": "2026-10-06",
+  "updatedAt": "2026-10-08T13:33:01.879Z",
+  "publishedThisRun": "quiz-79-odk-minimum-collection",
+  "latestPublishedFolder": "quiz-79-odk-minimum-collection",
+  "lastPublishedAt": "2026-10-08T13:32:10.524Z",
+  "lastPublishedOnLocalDate": "2026-10-08",
   "lastNotificationSentFor": "quiz-75-program-officer-request-records",
   "queuedFolders": [
-    "quiz-79-odk-minimum-collection",
     "quiz-80-gandhi-fellow-consent-check",
     "quiz-81-intermediate-data-quality-decisions",
     "quiz-82-partner-sharing-gate",
@@ -15,7 +14,8 @@
     "quiz-85-data-fiduciary-accountability",
     "quiz-86-international-sharing-controls",
     "quiz-87-incident-evidence-preservation",
-    "quiz-88-intermediate-breach-notice-practice"
+    "quiz-88-intermediate-breach-notice-practice",
+    "quiz-89-phase-three-readiness-calendar"
   ],
   "queuedCount": 10
 }
