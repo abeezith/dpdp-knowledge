@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-08T13:34:59.1926639Z",
-  "publishedThisRun": "quiz-79-odk-minimum-collection",
-  "latestPublishedFolder": "quiz-79-odk-minimum-collection",
-  "lastPublishedAt": "2026-10-08T13:32:10.524Z",
-  "lastPublishedOnLocalDate": "2026-10-08",
+  "updatedAt": "2026-10-09T13:35:25.132Z",
+  "publishedThisRun": "quiz-80-gandhi-fellow-consent-check",
+  "latestPublishedFolder": "quiz-80-gandhi-fellow-consent-check",
+  "lastPublishedAt": "2026-10-09T13:34:16.236Z",
+  "lastPublishedOnLocalDate": "2026-10-09",
   "lastNotificationSentFor": "quiz-79-odk-minimum-collection",
   "queuedFolders": [
-    "quiz-80-gandhi-fellow-consent-check",
     "quiz-81-intermediate-data-quality-decisions",
     "quiz-82-partner-sharing-gate",
     "quiz-83-jharkhand-rights-desk",
@@ -15,7 +14,8 @@
     "quiz-86-international-sharing-controls",
     "quiz-87-incident-evidence-preservation",
     "quiz-88-intermediate-breach-notice-practice",
-    "quiz-89-phase-three-readiness-calendar"
+    "quiz-89-phase-three-readiness-calendar",
+    "quiz-90-platform-lifecycle-cleanup"
   ],
   "queuedCount": 10
 }

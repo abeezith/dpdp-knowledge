@@ -7398,6 +7398,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 90,
+  slug: "platform-lifecycle-cleanup",
+  shortTitle: "Platform Lifecycle Cleanup",
+  pageTitle: "DPDP Quiz 90 - Platform Lifecycle Cleanup",
+  eyebrow: "DPDP Quiz 90 | Platform Lifecycle Cleanup",
+  heroTitle: "Platform Lifecycle Cleanup: Retain, Protect, and Erase",
+  heroIntro: "Five operational scenarios for turning retention, erasure, backup, and device-cleanup requirements into routine platform controls.",
+  cardDescription: "Five lifecycle-control scenarios on retention rules, pre-erasure notice, field-device cleanup, backups, and rights-based deletion.",
+  audience: "Platform owners, IT teams, programme data leads, and field supervisors",
+  focus: "Retention policies, automated erasure, backups, device cleanup, and deletion requests",
+  resultSummary: "This set reinforces the practical controls that prevent personal data from being retained or copied longer than needed.",
+  topics: [
+    { label: "Data Lifecycle", text: "Retention, deletion, backup recovery, and device cleanup" },
+    { label: "Obligation Area", text: "Rule 8 erasure and Rule 6 security safeguards" },
+    { label: "Source", text: "Approved act-and-rules-summary.md and data-audit-checklist.md" }
+  ],
+  questions: [
+    {
+      module: "Erasure and retention", topic: "Purpose completion",
+      text: "A programme database keeps beneficiary contact records after its follow-up purpose has ended, with no legal retention requirement recorded. What control should the platform owner apply?",
+      options: ["Keep every record indefinitely in case a future project wants it", "Erase the data under the documented retention policy once the purpose is served", "Move the records to a staff member's personal drive", "Publish the records so beneficiaries can check them"],
+      correct: 1,
+      explanation: "The approved summary says personal data must be erased when the purpose is no longer served unless retention is required by law; platforms should have documented retention policies."
+    },
+    {
+      module: "Rule 8 control", topic: "Pre-erasure notice",
+      text: "An automated cleanup job is scheduled to remove dormant personal-data records tonight. What user-facing step must be built into the workflow before that erasure?",
+      options: ["Send affected Data Principals a notice at least 48 hours before erasure", "Wait to explain only if someone complains after deletion", "Ask a donor to approve each deletion", "Disable the cleanup job permanently"],
+      correct: 0,
+      explanation: "The source requires notice to the Data Principal at least 48 hours before erasure under the documented erasure workflow."
+    },
+    {
+      module: "ODK audit checklist", topic: "Post-sync cleanup",
+      text: "A field tablet has successfully synced forms containing personal data to the approved server. Which checklist control most directly limits unnecessary local retention?",
+      options: ["Leave every synced form on the tablet for convenience", "Copy the forms into a personal messaging app", "Delete personal-data forms from the device after successful sync", "Turn off device encryption to make cleanup faster"],
+      correct: 2,
+      explanation: "The field-device checklist asks whether forms containing personal data are deleted from devices after successful sync."
+    },
+    {
+      module: "Security safeguards", topic: "Recoverable backups",
+      text: "A platform lead says backups are complete because files are created nightly, but no restore has ever been attempted. What additional assurance does the audit checklist require?",
+      options: ["Backups should be tested for restorability", "Backups should be emailed to all staff", "Backups make access controls unnecessary", "The team should stop recording whether backups exist"],
+      correct: 0,
+      explanation: "The audit checklist separately asks whether there is a regular backup process and whether backups are tested for restorability."
+    },
+    {
+      module: "Data Principal rights", topic: "Deletion request",
+      text: "A beneficiary submits a request to delete her record from a programme platform. Which technical capability should the platform's audit review confirm?",
+      options: ["Individual records can be deleted on request, subject to any legal retention requirement", "Only a complete platform shutdown can remove one record", "The request can be ignored because records were collected earlier", "Deletion is allowed only when a donor asks"],
+      correct: 0,
+      explanation: "The checklist asks whether individual records can be deleted on request, while the summary notes that legally required retention remains an exception."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
