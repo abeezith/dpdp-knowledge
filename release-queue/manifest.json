@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-09T13:37:00.000Z",
-  "publishedThisRun": "quiz-80-gandhi-fellow-consent-check",
-  "latestPublishedFolder": "quiz-80-gandhi-fellow-consent-check",
-  "lastPublishedAt": "2026-10-09T13:34:16.236Z",
-  "lastPublishedOnLocalDate": "2026-10-09",
+  "updatedAt": "2026-10-10T13:28:47.995Z",
+  "publishedThisRun": "quiz-81-intermediate-data-quality-decisions",
+  "latestPublishedFolder": "quiz-81-intermediate-data-quality-decisions",
+  "lastPublishedAt": "2026-10-10T13:28:47.994Z",
+  "lastPublishedOnLocalDate": "2026-10-10",
   "lastNotificationSentFor": "quiz-80-gandhi-fellow-consent-check",
   "queuedFolders": [
-    "quiz-81-intermediate-data-quality-decisions",
     "quiz-82-partner-sharing-gate",
     "quiz-83-jharkhand-rights-desk",
     "quiz-84-phase-two-consent-manager-readiness",
@@ -15,7 +14,8 @@
     "quiz-87-incident-evidence-preservation",
     "quiz-88-intermediate-breach-notice-practice",
     "quiz-89-phase-three-readiness-calendar",
-    "quiz-90-platform-lifecycle-cleanup"
+    "quiz-90-platform-lifecycle-cleanup",
+    "quiz-91-child-data-decision-path"
   ],
   "queuedCount": 10
 }

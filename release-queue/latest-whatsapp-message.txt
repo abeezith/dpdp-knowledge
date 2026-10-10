@@ -1,7 +1,7 @@
-DPDP Quiz 80 | Gandhi Fellow Consent Check
+DPDP Quiz 81 | Intermediate Data Quality Decisions
 
-Five Gandhi Fellow scenarios on local-language notices, specific agreement, witness-backed verbal consent, partial refusal, and withdrawal.
+Five intermediate scenarios on correcting records, checking completeness, and validating data before a decision or external sharing.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-80-gandhi-fellow-consent-check/
+https://abeezith.github.io/dpdp-knowledge/quiz-81-intermediate-data-quality-decisions/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

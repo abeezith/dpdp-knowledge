@@ -7454,6 +7454,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 91,
+  slug: "child-data-decision-path",
+  shortTitle: "Child Data Decision Path",
+  pageTitle: "DPDP Quiz 91 - Child Data Decision Path",
+  eyebrow: "DPDP Quiz 91 | Child Data Decision Path",
+  heroTitle: "Child Data: Care, Consent, and Safeguards",
+  heroIntro: "Five practical decisions for distinguishing direct child healthcare from other collection and use of children's personal data.",
+  cardDescription: "Five child-data scenarios on direct care, parental consent, photographs, verification, and prohibited uses.",
+  audience: "Karuna Fellows, field implementors, programme officers, and child-health teams",
+  focus: "Healthcare boundaries, verifiable parental consent, photography, and child-data safeguards",
+  resultSummary: "This set reinforces when direct healthcare can proceed and when child-data processing needs documented parental consent and extra safeguards.",
+  topics: [
+    { label: "Obligation Area", text: "Children's personal data and healthcare-use boundaries" },
+    { label: "Project Stage", text: "Child health service delivery, enrolment, documentation, and reporting" },
+    { label: "Source", text: "Approved learning-modules.md" }
+  ],
+  questions: [
+    {
+      module: "Direct healthcare", topic: "Care boundary",
+      text: "At a nutrition camp, a Karuna Fellow records a child's weight so the child can receive care during that visit. Which approach matches the learning module?",
+      options: ["Use the healthcare exemption for direct care while protecting the data", "Require the child alone to sign a marketing consent form", "Post the child's measurements in a public group", "Treat the information as non-personal because it came from a camp"],
+      correct: 0,
+      explanation: "The module says a Karuna Fellow recording data for a child's direct healthcare can use the healthcare exemption, but the information still needs careful protection."
+    },
+    {
+      module: "Programme monitoring", topic: "Beyond care",
+      text: "After a child-health visit, an implementor wants to enter the child's details into ODK for programme monitoring rather than direct care. What is the stated default?",
+      options: ["Obtain parental consent because this goes beyond direct care", "Rely on the child's verbal approval alone", "Assume every health-related use is exempt", "Share the record with any partner without a purpose check"],
+      correct: 0,
+      explanation: "The module distinguishes direct healthcare from data collection for programme monitoring; the latter requires enrolment consent."
+    },
+    {
+      module: "Media use", topic: "Donor reporting",
+      text: "A team wants a photograph of an identifiable child for a donor report. What should happen before taking or using the photograph?",
+      options: ["Obtain photography consent and parental consent", "Use the image because the child attended a public camp", "Blur the report only after it has been sent", "Ask another parent in the village to approve it"],
+      correct: 0,
+      explanation: "The module identifies photographs of children for donor reporting as requiring both photography consent and parental consent."
+    },
+    {
+      module: "Consent verification", topic: "Parent identity",
+      text: "Why does the child-data guidance call parental or guardian consent verifiable rather than simply written down?",
+      options: ["The parent or guardian's identity must be confirmed through Aadhaar, DigiLocker, or another government-issued identity system", "Any adult's signature is enough without checking identity", "The child can verify the adult after the data is shared", "Verification is needed only for paper forms"],
+      correct: 0,
+      explanation: "The learning module explains that verifiable consent requires confirming the parent's identity through Aadhaar, DigiLocker, or another government-issued identity system."
+    },
+    {
+      module: "Prohibited processing", topic: "Child wellbeing",
+      text: "Which proposed use of children's personal data is expressly prohibited in the learning module?",
+      options: ["Behavioural tracking for targeted advertising", "Recording a weight during direct care", "Escalating a child-data question to the programme team", "Applying strong security safeguards to a care record"],
+      correct: 0,
+      explanation: "The module lists behavioural tracking for targeted advertising, profiling, and processing likely to harm a child's wellbeing as prohibited uses."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
