@@ -7510,6 +7510,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 92,
+  slug: "platform-audit-evidence",
+  shortTitle: "Platform Audit Evidence",
+  pageTitle: "DPDP Quiz 92 - Platform Audit Evidence",
+  eyebrow: "DPDP Quiz 92 | Platform Audit Evidence",
+  heroTitle: "Platform Audit Evidence: Prove the Control",
+  heroIntro: "Five audit-readiness decisions for turning DPDP platform controls into evidence that a review team can check.",
+  cardDescription: "Five platform-audit scenarios on inventory, access logs, backups, erasure, and rights-request ownership.",
+  audience: "BIDA, IT teams, platform owners, and programme leads",
+  focus: "Data inventory, security evidence, retention, erasure, and Data Principal rights",
+  resultSummary: "This set reinforces the evidence a platform audit needs before a team can credibly mark a DPDP control complete.",
+  topics: [
+    { label: "Project Stage", text: "Platform audit and remediation planning" },
+    { label: "Obligation Area", text: "Security safeguards, retention, and rights readiness" },
+    { label: "Source", text: "Approved data-audit-checklist.md" }
+  ],
+  questions: [
+    {
+      module: "Data inventory", topic: "Known storage locations",
+      text: "During an audit of a beneficiary platform, the owner can name its main database but cannot say whether personal data also sits in exported files or cloud buckets. What should the audit record show?",
+      options: ["A gap, because all locations where personal data is stored should be known", "Green, because the main database is known", "Not applicable unless a breach has happened", "Complete, if the owner promises to check next year"],
+      correct: 0,
+      explanation: "The general checklist asks whether the organisation knows exactly what personal data the platform stores and where it is held, including tables, files, and cloud buckets."
+    },
+    {
+      module: "Security safeguards", topic: "Access-log evidence",
+      text: "A system has access logging switched on, but the platform team cannot show that logs are reviewed or retained for a year. Which audit conclusion best fits the checklist?",
+      options: ["The security control is only partial until review and one-year retention are evidenced", "Logging alone closes every security item", "Logs should be removed quickly to reduce storage use", "Only external vendors need to retain logs"],
+      correct: 0,
+      explanation: "The checklist separately asks whether access logs are enabled and reviewed, and whether they are retained for a minimum of one year."
+    },
+    {
+      module: "Backup readiness", topic: "Restoration test",
+      text: "A platform owner says daily backups run automatically, but there is no record of a restoration test. What is the most accurate audit response?",
+      options: ["Mark the backup control partial and plan a restorability test", "Mark it complete because backups exist", "Delete the backups to avoid any retention question", "Treat restoration testing as relevant only after data loss"],
+      correct: 0,
+      explanation: "The checklist asks both whether there is a regular backup process and whether backups are tested for restorability."
+    },
+    {
+      module: "Erasure and retention", topic: "Automated erasure notice",
+      text: "A platform is configured to erase records automatically when its retention period ends. What additional process does the audit checklist specifically ask the team to confirm?",
+      options: ["A process to notify users 48 hours before automated erasure", "A rule to keep every record indefinitely", "A public list of records scheduled for deletion", "A requirement that only the vendor can erase records"],
+      correct: 0,
+      explanation: "Under erasure and retention, the checklist asks whether there is a process to notify users 48 hours before automated erasure."
+    },
+    {
+      module: "Data Principal rights", topic: "Request ownership",
+      text: "A programme platform can technically receive correction requests, but no named person is responsible for handling them. Which readiness item remains open?",
+      options: ["Designation of a person to handle Data Principal rights requests", "Encryption at rest", "Photography consent", "Remote wiping of field devices"],
+      correct: 0,
+      explanation: "The rights section of the checklist asks whether there is a designated person to handle rights requests, alongside access, correction, deletion, and grievance readiness."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

@@ -1,7 +1,7 @@
-DPDP Quiz 81 | Intermediate Data Quality Decisions
+DPDP Quiz 82 | Partner Sharing Gate
 
-Five intermediate scenarios on correcting records, checking completeness, and validating data before a decision or external sharing.
+Five practical checks before partner sharing: consent scope, agreements, minimum data, secure transfer, and escalation.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-81-intermediate-data-quality-decisions/
+https://abeezith.github.io/dpdp-knowledge/quiz-82-partner-sharing-gate/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

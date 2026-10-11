@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-10T13:31:29.175Z",
-  "publishedThisRun": "quiz-81-intermediate-data-quality-decisions",
-  "latestPublishedFolder": "quiz-81-intermediate-data-quality-decisions",
-  "lastPublishedAt": "2026-10-10T13:28:47.994Z",
-  "lastPublishedOnLocalDate": "2026-10-10",
+  "updatedAt": "2026-10-11T13:26:54.258Z",
+  "publishedThisRun": "quiz-82-partner-sharing-gate",
+  "latestPublishedFolder": "quiz-82-partner-sharing-gate",
+  "lastPublishedAt": "2026-10-11T13:26:54.257Z",
+  "lastPublishedOnLocalDate": "2026-10-11",
   "lastNotificationSentFor": "quiz-81-intermediate-data-quality-decisions",
   "queuedFolders": [
-    "quiz-82-partner-sharing-gate",
     "quiz-83-jharkhand-rights-desk",
     "quiz-84-phase-two-consent-manager-readiness",
     "quiz-85-data-fiduciary-accountability",
@@ -15,7 +14,8 @@
     "quiz-88-intermediate-breach-notice-practice",
     "quiz-89-phase-three-readiness-calendar",
     "quiz-90-platform-lifecycle-cleanup",
-    "quiz-91-child-data-decision-path"
+    "quiz-91-child-data-decision-path",
+    "quiz-92-platform-audit-evidence"
   ],
   "queuedCount": 10
 }
