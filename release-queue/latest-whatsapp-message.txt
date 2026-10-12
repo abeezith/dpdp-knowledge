@@ -1,7 +1,7 @@
-DPDP Quiz 82 | Partner Sharing Gate
+DPDP Quiz 83 | Jharkhand Rights Desk
 
-Five practical checks before partner sharing: consent scope, agreements, minimum data, secure transfer, and escalation.
+Five practical checks for field teams handling access, correction, erasure, grievance, and identity-verification requests.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-82-partner-sharing-gate/
+https://abeezith.github.io/dpdp-knowledge/quiz-83-jharkhand-rights-desk/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

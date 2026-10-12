@@ -7566,6 +7566,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 93,
+  slug: "odk-field-sync-hygiene",
+  shortTitle: "ODK Field Sync Hygiene",
+  pageTitle: "DPDP Quiz 93 - ODK Field Sync Hygiene",
+  eyebrow: "DPDP Quiz 93 | ODK Field Sync Hygiene",
+  heroTitle: "ODK Field Sync Hygiene: Protect Data on the Move",
+  heroIntro: "Five field-operational checks for keeping beneficiary data protected from collection through successful ODK sync.",
+  cardDescription: "Five ODK field scenarios on encrypted devices, minimum fields, sync delays, access control, and retiring old forms.",
+  audience: "Field teams, ODK administrators, implementors, and programme leads",
+  focus: "Device protection, data minimisation, offline handling, access control, and form retirement",
+  resultSummary: "This set reinforces that ODK safeguards begin on the device and continue until data is securely synced, access is controlled, and old sensitive forms are retired.",
+  topics: [
+    { label: "Field Setting", text: "ODK Collect and ODK Central operations" },
+    { label: "Project Stage", text: "Collection, offline storage, sync, and form lifecycle" },
+    { label: "Source", text: "Approved data-audit-checklist.md" }
+  ],
+  questions: [
+    {
+      module: "Device protection", topic: "Field-device baseline",
+      text: "Before a field tablet is used with ODK Collect for beneficiary enrolment, which device condition should the audit confirm?",
+      options: ["Full device encryption is enabled", "The screen wallpaper shows the programme logo", "The tablet can connect to every public Wi-Fi network", "The device has no passcode so handovers are faster"],
+      correct: 0,
+      explanation: "The ODK-specific checklist asks whether phones and tablets running ODK have full device encryption enabled."
+    },
+    {
+      module: "Data minimisation", topic: "Form design",
+      text: "A revised ODK form adds a household landmark field because it might be useful someday, but no programme purpose has been identified. What should the reviewer do?",
+      options: ["Remove or justify the field so the form collects only the minimum required data", "Add it because future usefulness is enough", "Collect it only from people who ask no questions", "Put the field in a separate spreadsheet after sync"],
+      correct: 0,
+      explanation: "The checklist asks whether ODK forms collect only the minimum required fields; an undefined future use does not establish that need."
+    },
+    {
+      module: "Offline handling", topic: "Sync-delay policy",
+      text: "A field team leaves completed ODK forms on devices for an open-ended period after network access returns. Which control needs clarification?",
+      options: ["The maximum offline-period policy and local-storage duration before sync", "The colour used for the form submit button", "Whether every device uses the same ringtone", "Whether field staff print every completed form"],
+      correct: 0,
+      explanation: "The ODK checklist asks how long data remains on a device before sync and whether there is a maximum offline-period policy."
+    },
+    {
+      module: "ODK Central", topic: "Authorised access",
+      text: "Which ODK Central setup best matches the checklist for protecting submissions and forms?",
+      options: ["Restrict submission access and form management to authorised staff", "Give every volunteer administrator access for flexibility", "Allow shared credentials during busy campaigns", "Publish form-management passwords in the field group"],
+      correct: 0,
+      explanation: "The checklist calls for ODK Central submission access and form management to be restricted to authorised staff."
+    },
+    {
+      module: "Form lifecycle", topic: "Sensitive legacy fields",
+      text: "A superseded ODK form still contains sensitive fields that are no longer needed. What should the programme verify?",
+      options: ["That the old form version is retired", "That the old form stays available for any future experiment", "That the form is renamed without changing access", "That field staff memorise the sensitive fields"],
+      correct: 0,
+      explanation: "The ODK checklist specifically asks whether old form versions containing sensitive fields are retired."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
