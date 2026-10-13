@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-12T13:28:04.443Z",
-  "publishedThisRun": "quiz-83-jharkhand-rights-desk",
-  "latestPublishedFolder": "quiz-83-jharkhand-rights-desk",
-  "lastPublishedAt": "2026-10-12T13:28:04.440Z",
-  "lastPublishedOnLocalDate": "2026-10-12",
+  "updatedAt": "2026-10-13T13:32:41.926Z",
+  "publishedThisRun": "quiz-84-phase-two-consent-manager-readiness",
+  "latestPublishedFolder": "quiz-84-phase-two-consent-manager-readiness",
+  "lastPublishedAt": "2026-10-13T13:32:41.923Z",
+  "lastPublishedOnLocalDate": "2026-10-13",
   "lastNotificationSentFor": "quiz-81-intermediate-data-quality-decisions",
   "queuedFolders": [
-    "quiz-84-phase-two-consent-manager-readiness",
     "quiz-85-data-fiduciary-accountability",
     "quiz-86-international-sharing-controls",
     "quiz-87-incident-evidence-preservation",
@@ -15,7 +14,8 @@
     "quiz-90-platform-lifecycle-cleanup",
     "quiz-91-child-data-decision-path",
     "quiz-92-platform-audit-evidence",
-    "quiz-93-odk-field-sync-hygiene"
+    "quiz-93-odk-field-sync-hygiene",
+    "quiz-94-breach-first-hour-actions"
   ],
   "queuedCount": 10
 }

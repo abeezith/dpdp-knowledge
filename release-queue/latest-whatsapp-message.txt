@@ -1,7 +1,7 @@
-DPDP Quiz 83 | Jharkhand Rights Desk
+DPDP Quiz 84 | Phase II Consent Manager Readiness
 
-Five practical checks for field teams handling access, correction, erasure, grievance, and identity-verification requests.
+Five practical questions on Consent Manager readiness, data mapping, ownership, and the path from Phase II preparation to full compliance.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-83-jharkhand-rights-desk/
+https://abeezith.github.io/dpdp-knowledge/quiz-84-phase-two-consent-manager-readiness/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -7622,6 +7622,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 94,
+  slug: "breach-first-hour-actions",
+  shortTitle: "Breach First-Hour Actions",
+  pageTitle: "DPDP Quiz 94 - Breach First-Hour Actions",
+  eyebrow: "DPDP Quiz 94 | Breach First-Hour Actions",
+  heroTitle: "Breach First-Hour Actions: Contain, Preserve, Escalate",
+  heroIntro: "Five incident-response decisions for taking the right first actions when personal data may have been exposed or lost.",
+  cardDescription: "Five breach-response scenarios on lost devices, evidence preservation, escalation, recipient deletion, and the 72-hour reporting clock.",
+  audience: "Field teams, programme leads, IT teams, and incident responders",
+  focus: "Containment, evidence preservation, escalation, assessment, and timely notification",
+  resultSummary: "This set reinforces that teams must report promptly, contain safely, preserve evidence, and investigate alongside—not before—notification work.",
+  topics: [
+    { label: "Project Stage", text: "Incident discovery and the first response hour" },
+    { label: "Obligation Area", text: "Personal data breach containment and notification" },
+    { label: "Source", text: "Approved breach-response-sop.md" }
+  ],
+  questions: [
+    {
+      module: "Lost device", topic: "Immediate escalation",
+      text: "A field implementor discovers that a phone containing unsynced beneficiary ODK forms has been stolen. What should happen in the first hour?",
+      options: ["Report it to the supervisor and IT immediately so remote-wipe and documentation steps can begin", "Wait for the phone to be recovered before reporting", "Delete central records so the device data no longer matters", "Notify only the donor because it funded the device"],
+      correct: 0,
+      explanation: "The SOP directs staff to report a lost or stolen device to the supervisor and IT immediately; IT can attempt a remote wipe and the team should document the device, timing, location, and data involved."
+    },
+    {
+      module: "Technical breach", topic: "Preserve before remediation",
+      text: "An administrator sees signs that an unauthorised account accessed a beneficiary database. Before trying to repair the system, what evidence-focused action is required?",
+      options: ["Preserve logs and relevant evidence before changes are made", "Clear logs to prevent further access", "Wait until the detailed investigation is complete", "Ask users to change passwords without recording anything"],
+      correct: 0,
+      explanation: "For a technical breach, the SOP says to preserve logs before taking action and not to attempt a fix before the incident is documented."
+    },
+    {
+      module: "Wrong recipient", topic: "Containment request",
+      text: "A spreadsheet with beneficiary details is emailed to the wrong recipient. Which containment step does the SOP specify?",
+      options: ["Contact the recipient, request deletion, and document their response", "Recall the message silently and take no further action", "Send the file again with a password but no explanation", "Treat it as harmless if the recipient is known to the team"],
+      correct: 0,
+      explanation: "The physical-breach containment checklist says to contact the wrong recipient, request deletion, and document the response."
+    },
+    {
+      module: "Reporting clock", topic: "When time starts",
+      text: "When does the SOP say the 72-hour breach-reporting clock begin?",
+      options: ["When any person in Piramal Foundation becomes aware of the breach", "When Legal finishes its investigation", "When a Data Principal complains", "When the affected system is fully restored"],
+      correct: 0,
+      explanation: "The SOP states that the 72-hour deadline runs from the time any person in Piramal Foundation becomes aware; reporting and investigation should proceed in parallel."
+    },
+    {
+      module: "Data Principal notice", topic: "Useful protective guidance",
+      text: "Which item belongs in a Data Principal breach notification under the SOP?",
+      options: ["Steps the person can take to protect themselves and a privacy contact for questions", "The internal password used by the incident team", "A promise that no personal data was involved without assessment", "Only a statement that the organisation is investigating"],
+      correct: 0,
+      explanation: "The required notification content includes what happened, likely consequences, mitigation steps, protective actions the person can take, and privacy contact details."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
