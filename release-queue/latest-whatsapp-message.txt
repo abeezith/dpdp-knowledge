@@ -1,7 +1,7 @@
-DPDP Quiz 84 | Phase II Consent Manager Readiness
+DPDP Quiz 85 | Data Fiduciary Accountability
 
-Five practical questions on Consent Manager readiness, data mapping, ownership, and the path from Phase II preparation to full compliance.
+Five practical questions on Data Fiduciary accountability: accurate decisions, processor safeguards, clear notices, and responsible handling of personal data.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-84-phase-two-consent-manager-readiness/
+https://abeezith.github.io/dpdp-knowledge/quiz-85-data-fiduciary-accountability/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-13T13:34:29.007Z",
-  "publishedThisRun": "quiz-84-phase-two-consent-manager-readiness",
-  "latestPublishedFolder": "quiz-84-phase-two-consent-manager-readiness",
-  "lastPublishedAt": "2026-10-13T13:32:41.923Z",
-  "lastPublishedOnLocalDate": "2026-10-13",
+  "updatedAt": "2026-10-14T13:34:39.041Z",
+  "publishedThisRun": "quiz-85-data-fiduciary-accountability",
+  "latestPublishedFolder": "quiz-85-data-fiduciary-accountability",
+  "lastPublishedAt": "2026-10-14T13:34:13.674Z",
+  "lastPublishedOnLocalDate": "2026-10-14",
   "lastNotificationSentFor": "quiz-84-phase-two-consent-manager-readiness",
   "queuedFolders": [
-    "quiz-85-data-fiduciary-accountability",
     "quiz-86-international-sharing-controls",
     "quiz-87-incident-evidence-preservation",
     "quiz-88-intermediate-breach-notice-practice",
@@ -15,7 +14,8 @@
     "quiz-91-child-data-decision-path",
     "quiz-92-platform-audit-evidence",
     "quiz-93-odk-field-sync-hygiene",
-    "quiz-94-breach-first-hour-actions"
+    "quiz-94-breach-first-hour-actions",
+    "quiz-95-field-data-quality-handoff"
   ],
   "queuedCount": 10
 }

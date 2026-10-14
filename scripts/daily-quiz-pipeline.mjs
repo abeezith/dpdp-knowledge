@@ -7678,6 +7678,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 95,
+  slug: "field-data-quality-handoff",
+  shortTitle: "Field Data Quality Handoff",
+  pageTitle: "DPDP Quiz 95 - Field Data Quality Handoff",
+  eyebrow: "DPDP Quiz 95 | Field Data Quality Handoff",
+  heroTitle: "Field Data Quality Handoff: Complete, Accurate, and Controlled",
+  heroIntro: "Five practical decisions for protecting data quality when beneficiary records move from field collection into programme decisions and sharing.",
+  cardDescription: "Five field-to-platform scenarios on accurate records, controlled corrections, quality checks, authorised sharing, and retention-aware handoffs.",
+  audience: "Field teams, programme officers, data stewards, and platform teams",
+  focus: "Completeness, accuracy, consistency, correction workflows, and authorised sharing",
+  resultSummary: "This set reinforces that data used for decisions or sharing needs quality checks, a traceable correction route, and access limited to people with a legitimate role.",
+  topics: [
+    { label: "Project Stage", text: "Field collection through programme handoff" },
+    { label: "Obligation Area", text: "Data quality, security safeguards, and rights handling" },
+    { label: "Source", text: "Approved act-and-rules-summary.md and data-audit-checklist.md" }
+  ],
+  questions: [
+    {
+      module: "Data quality", topic: "Decision-ready record",
+      text: "A programme will use household records to decide which beneficiaries receive follow-up support. Before the decision, which DPDP data-quality standard is most relevant?",
+      options: ["Ensure the records are complete, accurate, and consistent", "Keep every field optional so data arrives faster", "Share the raw list immediately without review", "Remove all correction controls after submission"],
+      correct: 0,
+      explanation: "The Act summary says that when data is used to make a decision affecting a beneficiary, the Data Fiduciary must ensure completeness, accuracy, and consistency."
+    },
+    {
+      module: "Correction workflow", topic: "Field correction request",
+      text: "A beneficiary reports that their mobile number was entered incorrectly during enrolment. Which operational response best supports the right to correction?",
+      options: ["Route the request through a designated correction process and update the record after verification", "Tell the beneficiary that submitted records can never change", "Ask the beneficiary to create a second duplicate record", "Ignore the request unless a donor asks about it"],
+      correct: 0,
+      explanation: "The reference summary recognises a right to correct inaccurate and complete incomplete data; the audit checklist also expects a designated person to handle rights requests."
+    },
+    {
+      module: "Access control", topic: "Handoff spreadsheet",
+      text: "A district team needs a beneficiary spreadsheet for a defined follow-up activity. What is the soundest sharing setup?",
+      options: ["Give access only to authorised team members who need it for the defined activity", "Post the spreadsheet in a public group for faster coordination", "Share one common password with all volunteers", "Send the full file to every district office in case it becomes useful"],
+      correct: 0,
+      explanation: "The approved guidance requires access controls and purpose-limited handling; access should be restricted to authorised people with a work need."
+    },
+    {
+      module: "Quality assurance", topic: "Inconsistent values",
+      text: "A data review finds that the same beneficiary has two conflicting dates of birth across linked programme records. What should the team do before relying on the record for a decision?",
+      options: ["Resolve and document the discrepancy through the approved data-quality process", "Pick whichever value appears first", "Delete both records without checking", "Keep the conflict because any date is adequate for analysis"],
+      correct: 0,
+      explanation: "Where records inform decisions or sharing, the Act summary requires completeness, accuracy, and consistency; unresolved conflicting values should be checked before use."
+    },
+    {
+      module: "Retention", topic: "Completed handoff",
+      text: "After a defined follow-up campaign ends, a team keeps its exported beneficiary spreadsheet indefinitely just in case it might help later. What should guide the next step?",
+      options: ["Apply the documented retention policy and erase data once the purpose is no longer served unless law requires retention", "Keep every export forever because storage is cheap", "Email the file to personal accounts as a backup", "Publish the file so other teams can reuse it"],
+      correct: 0,
+      explanation: "The Act summary says personal data must be erased when the specified purpose is no longer served or consent is withdrawn, unless retention is required by law."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
