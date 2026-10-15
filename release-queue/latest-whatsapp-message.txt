@@ -1,7 +1,7 @@
-DPDP Quiz 85 | Data Fiduciary Accountability
+DPDP Quiz 86 | International Sharing Controls
 
-Five practical questions on Data Fiduciary accountability: accurate decisions, processor safeguards, clear notices, and responsible handling of personal data.
+Five practical questions on reviewing international data sharing, keeping transfers proportionate, and monitoring the current restriction position.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-85-data-fiduciary-accountability/
+https://abeezith.github.io/dpdp-knowledge/quiz-86-international-sharing-controls/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -7734,6 +7734,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 96,
+  slug: "advanced-dhis2-access-review",
+  shortTitle: "Advanced DHIS2 Access Review",
+  pageTitle: "DPDP Quiz 96 - Advanced DHIS2 Access Review",
+  eyebrow: "DPDP Quiz 96 | Advanced DHIS2 Access Review",
+  heroTitle: "Advanced DHIS2 Access Review: Traceable, Restricted, and Current",
+  heroIntro: "Five advanced checks for keeping DHIS2 access, exports, logs, and metadata aligned with the approved audit checklist.",
+  cardDescription: "Five advanced DHIS2 scenarios on role-restricted access, dormant accounts, audit trails, controlled exports, and keeping identifiers out of analytical metadata.",
+  audience: "DHIS2 administrators, platform owners, data stewards, and audit teams",
+  focus: "RBAC, account reviews, audit logs, export controls, and analytical metadata",
+  resultSummary: "This set reinforces a defensible DHIS2 posture: access follows roles, evidence is retained, and beneficiary-level data is neither overexposed nor embedded in analytics labels.",
+  topics: [
+    { label: "Difficulty", text: "Advanced platform-control scenarios" },
+    { label: "Platform", text: "DHIS2 access, audit trails, and exports" },
+    { label: "Source", text: "Approved data-audit-checklist.md" }
+  ],
+  questions: [
+    {
+      module: "RBAC", topic: "Organisation-unit access",
+      text: "During a DHIS2 review, a district user can open beneficiary-level records from every state although their work is limited to one district. Which control should be corrected first?",
+      options: ["Restrict organisation-unit and data-set access to the user's authorised role", "Keep nationwide access because it avoids future permission requests", "Give the user an export account instead of changing access", "Remove all user roles so access is equal"],
+      correct: 0,
+      explanation: "The DHIS2 checklist calls for an RBAC review to confirm that organisation-unit and data-set restrictions are correct for each user role."
+    },
+    {
+      module: "Account audit", topic: "Dormant account",
+      text: "An account has not logged in for fourteen months but still has active DHIS2 permissions. What outcome meets the checklist target?",
+      options: ["Review and deactivate the inactive account rather than leaving dormant access open", "Keep the account permanently because no login means no risk", "Share its password with the replacement staff member", "Wait until an incident occurs before reviewing it"],
+      correct: 0,
+      explanation: "The checklist targets zero accounts older than 12 months with no login and expects a quarterly process to review and deactivate inactive accounts."
+    },
+    {
+      module: "Audit evidence", topic: "Log retention",
+      text: "A platform owner says DHIS2 audit logs are enabled but are automatically deleted after ninety days. What additional evidence should the audit seek?",
+      options: ["That audit logs are exported and retained for at least one year", "That logs are deleted more quickly to save storage", "That only screenshots of dashboards are retained", "That staff rely on memory instead of system logs"],
+      correct: 0,
+      explanation: "The approved checklist asks whether DHIS2 audit logs are enabled and exported for retention of at least one year."
+    },
+    {
+      module: "Export controls", topic: "Analyst request",
+      text: "A new analyst requests CSV export rights for all DHIS2 datasets to explore future uses. Which response best fits the checklist?",
+      options: ["Grant export access only to authorised roles and ensure bulk exports are controlled", "Give universal export access because analysis may become useful", "Email a complete export to the analyst's personal account", "Turn off logging before granting export rights"],
+      correct: 0,
+      explanation: "The checklist requires data export to CSV or Excel to be restricted to authorised roles, with export controls and logging used for analytical platforms."
+    },
+    {
+      module: "Metadata", topic: "Analytics labels",
+      text: "A dashboard designer proposes putting beneficiary names into DHIS2 category labels so field teams can recognise records faster. What is the checklist-aligned decision?",
+      options: ["Do not store names or other personal information in analytics dimension names or categories", "Add more identifiers so categories are easier to search", "Use names only if the dashboard has attractive colours", "Move the same labels into a public report instead"],
+      correct: 0,
+      explanation: "The DHIS2 checklist explicitly asks whether names or personal information appear in analytics dimension names or categories and says they should not."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
