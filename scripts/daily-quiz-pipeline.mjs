@@ -7790,6 +7790,62 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 97,
+  slug: "beneficiary-rights-desk",
+  shortTitle: "Beneficiary Rights Desk",
+  pageTitle: "DPDP Quiz 97 - Beneficiary Rights Desk",
+  eyebrow: "DPDP Quiz 97 | Beneficiary Rights Desk",
+  heroTitle: "Beneficiary Rights Desk: Access, Correction, Erasure, and Grievances",
+  heroIntro: "Five practical choices for teams receiving beneficiary requests about their personal data, from first routing through closure.",
+  cardDescription: "Five rights-desk scenarios on access requests, correcting records, erasure decisions, grievance routing, and responsible ownership.",
+  audience: "Programme officers, field supervisors, privacy contacts, and data stewards",
+  focus: "Access, correction, erasure, grievance redressal, and accountable request handling",
+  resultSummary: "This set reinforces a usable rights process: route requests to an accountable contact, verify and act on them, and preserve only what a lawful retention need requires.",
+  topics: [
+    { label: "Project Stage", text: "Rights-request intake through resolution" },
+    { label: "Obligation Area", text: "Access, correction, erasure, and grievance redressal" },
+    { label: "Source", text: "Approved act-and-rules-summary.md and data-audit-checklist.md" }
+  ],
+  questions: [
+    {
+      module: "Right to access", topic: "Beneficiary enquiry",
+      text: "A beneficiary asks a field office what personal data the programme holds about her and which organisations it has shared it with. Which response best follows the DPDP rights guidance?",
+      options: ["Route the request through the designated rights process so the beneficiary can receive the data held, its use, and sharing information", "Tell her that field-collected data cannot be discussed", "Provide only her name because sharing information is never relevant", "Ask her to submit the request only after a grievance has failed"],
+      correct: 0,
+      explanation: "The right of access covers personal data held, processing information, and details of sharing. The audit checklist also expects a process for individuals to request access to their own data."
+    },
+    {
+      module: "Right to correction", topic: "Incomplete record",
+      text: "A beneficiary sees that her village is missing from a record used to assign outreach visits. What should the responsible team do?",
+      options: ["Provide a controlled route to complete the incomplete record and verify the update", "Leave the record unchanged because it was originally submitted", "Create an unrelated new profile without checking the old one", "Delete all programme data for the district"],
+      correct: 0,
+      explanation: "Section 12 gives people a right to correct inaccurate data and complete incomplete data. A controlled, verifiable update avoids creating inconsistent duplicate records."
+    },
+    {
+      module: "Erasure", topic: "Withdrawn consent",
+      text: "A beneficiary withdraws consent for a voluntary programme follow-up list. No law requires the list to be retained. What is the appropriate next action?",
+      options: ["Erase the personal data through the documented process because consent was withdrawn and no legal retention need applies", "Keep the list indefinitely in case the programme restarts", "Move the list to a staff member's personal drive", "Use it for an unrelated survey before erasing it"],
+      correct: 0,
+      explanation: "The approved summary says personal data must be erased when consent is withdrawn or the specified purpose is no longer served, unless retention is required by law."
+    },
+    {
+      module: "Grievance redressal", topic: "Escalation route",
+      text: "A person says their correction request was not resolved and wants to complain to the DPBI immediately. What should the organisation's published mechanism make possible first?",
+      options: ["A clear internal grievance route that can respond within 90 days before DPBI escalation", "A rule that grievances can only be made by email in English", "A requirement to wait a year before raising a concern", "Automatic publication of the person's complaint"],
+      correct: 0,
+      explanation: "Every Data Fiduciary must publish a grievance redressal mechanism and respond within 90 days. Data Principals first exhaust that mechanism before approaching the DPBI."
+    },
+    {
+      module: "Accountability", topic: "Request ownership",
+      text: "During an audit, no one can identify who receives beneficiary access and erasure requests for a programme platform. Which gap should be closed?",
+      options: ["Assign and publish a designated privacy contact or responsible person for rights requests", "Ask every staff member to handle requests informally", "Disable the platform's contact page", "Send every request directly to an external vendor without oversight"],
+      correct: 0,
+      explanation: "Rule 9 requires published business contact information for a designated privacy point of contact, and the audit checklist asks whether a designated person handles rights requests."
+    }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

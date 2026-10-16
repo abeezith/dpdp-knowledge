@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-15T13:27:17.566Z",
-  "publishedThisRun": "quiz-86-international-sharing-controls",
-  "latestPublishedFolder": "quiz-86-international-sharing-controls",
-  "lastPublishedAt": "2026-10-15T13:27:17.563Z",
-  "lastPublishedOnLocalDate": "2026-10-15",
+  "updatedAt": "2026-10-16T13:26:05.495Z",
+  "publishedThisRun": "quiz-87-incident-evidence-preservation",
+  "latestPublishedFolder": "quiz-87-incident-evidence-preservation",
+  "lastPublishedAt": "2026-10-16T13:26:05.494Z",
+  "lastPublishedOnLocalDate": "2026-10-16",
   "lastNotificationSentFor": "quiz-86-international-sharing-controls",
   "queuedFolders": [
-    "quiz-87-incident-evidence-preservation",
     "quiz-88-intermediate-breach-notice-practice",
     "quiz-89-phase-three-readiness-calendar",
     "quiz-90-platform-lifecycle-cleanup",
@@ -15,7 +14,8 @@
     "quiz-93-odk-field-sync-hygiene",
     "quiz-94-breach-first-hour-actions",
     "quiz-95-field-data-quality-handoff",
-    "quiz-96-advanced-dhis2-access-review"
+    "quiz-96-advanced-dhis2-access-review",
+    "quiz-97-beneficiary-rights-desk"
   ],
   "queuedCount": 10
 }

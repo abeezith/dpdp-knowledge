@@ -1,7 +1,7 @@
-DPDP Quiz 86 | International Sharing Controls
+DPDP Quiz 87 | Incident Evidence Preservation
 
-Five practical questions on reviewing international data sharing, keeping transfers proportionate, and monitoring the current restriction position.
+Five practical questions on evidence preservation, containment, notification facts, and post-breach learning.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-86-international-sharing-controls/
+https://abeezith.github.io/dpdp-knowledge/quiz-87-incident-evidence-preservation/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
