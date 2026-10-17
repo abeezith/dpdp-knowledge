@@ -1,7 +1,7 @@
-DPDP Quiz 87 | Incident Evidence Preservation
+DPDP Quiz 88 | Intermediate Breach Notice Practice
 
-Five practical questions on evidence preservation, containment, notification facts, and post-breach learning.
+Five intermediate scenarios on breach notice content, field communication, response records, and timely escalation.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-87-incident-evidence-preservation/
+https://abeezith.github.io/dpdp-knowledge/quiz-88-intermediate-breach-notice-practice/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
