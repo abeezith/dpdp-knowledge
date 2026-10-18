@@ -7846,6 +7846,50 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 98,
+  slug: "data-quality-sharing-gate",
+  shortTitle: "Data Quality Sharing Gate",
+  pageTitle: "DPDP Quiz 98 - Data Quality Sharing Gate",
+  eyebrow: "DPDP Quiz 98 | Data Quality Sharing Gate",
+  heroTitle: "Data Quality Sharing Gate: Accurate, Limited, and Accountable",
+  heroIntro: "Five decisions on preparing personal data for sharing, access, and decision-making.",
+  cardDescription: "Five practical checks on data quality, purpose-specific sharing, least-privilege access, international transfers, and consent evidence.",
+  audience: "Programme teams, data stewards, analysts, and platform owners",
+  focus: "Accuracy, purpose limitation, access control, transfers, and consent records",
+  resultSummary: "This set reinforces a simple sharing default: use accurate data, limit it to the stated purpose, and retain evidence for each decision.",
+  topics: [{ label: "Lifecycle stage", text: "Quality review and controlled sharing" }, { label: "Obligation area", text: "Accuracy, minimisation, security, and consent" }, { label: "Source", text: "Approved act-and-rules-summary.md" }],
+  questions: [
+    { module: "Data quality", topic: "Outreach assignment", text: "Before sharing a beneficiary list with a partner that will assign outreach visits, the team finds several duplicate records and outdated mobile numbers. What should it do first?", options: ["Share the file unchanged because the partner can sort it out later", "Check and improve completeness, accuracy, and consistency before the decision-use sharing", "Remove all contact fields without checking whether the visits can be assigned", "Send a public link so beneficiaries can edit every record"], correct: 1, explanation: "When personal data is used to make a decision affecting a beneficiary or is shared with another Data Fiduciary, Section 8(3) requires completeness, accuracy, and consistency." },
+    { module: "Purpose limitation", topic: "New partner request", text: "A donor asks for individual-level beneficiary data for a new research activity that was not part of the original consent purpose. The team intends to rely on consent. What is the best next step?", options: ["Send the data because the donor funds the programme", "Use the original consent silently because the data is already collected", "Seek a fresh, specific choice for the new purpose before using the data that way", "Replace the names with serial numbers and assume consent no longer matters"], correct: 2, explanation: "Valid consent is specific to a defined purpose. Where consent is the basis, a new purpose needs a fresh, specific choice rather than silent reuse." },
+    { module: "Access control", topic: "District dashboard", text: "A district coordinator needs records for two blocks but is given a dashboard showing all state beneficiaries. Which control most directly reduces the DPDP risk?", options: ["Give every coordinator the same statewide view for convenience", "Limit access to the records needed for the coordinator's assigned work", "Ask the coordinator to share the dashboard password with field teams", "Export the statewide file to a personal device for faster filtering"], correct: 1, explanation: "Rule 6 requires access controls on computer resources. Restricting access to work need reduces unnecessary exposure of personal data." },
+    { module: "Sharing review", topic: "International reporting", text: "A programme wants to provide an overseas partner with an identifiable monitoring file. Which statement best reflects the approved guidance?", options: ["International transfers are always prohibited", "The file may be transferred only after publishing every beneficiary name", "Transfers are currently permitted unless restricted, but purpose limitation and minimisation still apply", "Removing the word 'beneficiary' from the filename makes the file anonymous"], correct: 2, explanation: "The summary describes a negative-list approach to cross-border transfers, while keeping purpose limitation and data minimisation relevant to any identifiable-data sharing." },
+    { module: "Consent evidence", topic: "Language and proof", text: "A field team used a Hindi notice during enrolment but retained only an unsigned spreadsheet with no record of the purpose explained. What evidence gap should it close?", options: ["A record showing who agreed, when, and for which stated purpose", "A longer internal budget note", "A list of all staff birthdays", "A blanket statement allowing every future use"], correct: 0, explanation: "The Data Fiduciary bears the burden of proving that notice was given and consent obtained. A clear record should link the person, timing, and specific agreed purpose." }
+  ]
+});
+
+quizCatalog.push({
+  number: 99,
+  slug: "consent-withdrawal-pathway",
+  shortTitle: "Consent Withdrawal Pathway",
+  pageTitle: "DPDP Quiz 99 - Consent Withdrawal Pathway",
+  eyebrow: "DPDP Quiz 99 | Consent Withdrawal Pathway",
+  heroTitle: "Consent Withdrawal Pathway: Make Choice Easy to Exercise",
+  heroIntro: "Five field and programme scenarios about explaining, recording, and actioning consent withdrawal responsibly.",
+  cardDescription: "Five practical scenarios on a clear withdrawal route, service fairness, verbal records, purpose boundaries, and lawful retention.",
+  audience: "Field implementors, programme officers, and consent-record owners",
+  focus: "Withdrawal, accessible notices, voluntary choice, recordkeeping, and erasure decisions",
+  resultSummary: "This set reinforces that consent is an ongoing choice: make withdrawal accessible, preserve essential evidence, and stop voluntary processing when it is withdrawn.",
+  topics: [{ label: "Project stage", text: "Enrolment through consent withdrawal" }, { label: "Field setting", text: "Low-literacy and beneficiary-facing workflows" }, { label: "Source", text: "Approved consent-templates.md and learning-modules.md" }],
+  questions: [
+    { module: "Withdrawal", topic: "Easy route", text: "An enrolment notice tells beneficiaries they may withdraw consent only by travelling to a distant state office, while consent was collected during a village visit. What should the team improve?", options: ["Provide a practical withdrawal route that is as easy to use as the consent process", "Remove the withdrawal information from the notice", "Require a court order before accepting withdrawal", "Tell staff to decide informally which withdrawals count"], correct: 0, explanation: "The approved consent guidance says withdrawal should be as easy as giving consent and the notice should explain how to do it." },
+    { module: "Voluntary choice", topic: "Service pressure", text: "A field worker says a beneficiary cannot receive a routine voluntary programme service unless she also agrees to optional success-story photography. What is the safer response?", options: ["Separate the optional photography choice from the service so refusal does not pressure the beneficiary", "Treat silence as agreement because the service is valuable", "Use the photograph without consent if the beneficiary attends the event", "Ask a colleague to decide for her"], correct: 0, explanation: "Consent must be freely given and specific. Optional media use should not be made a condition for receiving an unrelated service." },
+    { module: "Verbal consent", topic: "Recorded refusal", text: "A beneficiary who cannot read agrees to health follow-up but declines an optional audio recording. How should the field worker document this?", options: ["Record the language, purpose, exact response, field worker, and witness, including the declined optional part", "Record only that the beneficiary was present", "Assume the health agreement covers every optional recording", "Ask a family member to give audio consent without explanation"], correct: 0, explanation: "The verbal-consent template calls for a clear record of the notice, language, response, staff member, witness, and any part the beneficiary declined." },
+    { module: "Purpose boundary", topic: "Old contact list", text: "After consent is withdrawn for a voluntary SMS follow-up list, a team wants to retain the number for a new awareness campaign. What is the appropriate decision?", options: ["Do not repurpose the number; a new use needs its own valid basis and the withdrawal must be respected", "Keep using it because the number was collected once", "Share it with another team before deleting it", "Publish it so the beneficiary can see it was retained"], correct: 0, explanation: "Consent is purpose-specific. Withdrawal ends consent for the specified processing, and an unrelated new use cannot be assumed from past collection." },
+    { module: "Erasure", topic: "Retention exception", text: "A beneficiary withdraws consent and asks for deletion, but a government programme record must be kept under an applicable legal requirement. What should the team do?", options: ["Explain and document the lawful retention need while stopping processing that no longer has a valid purpose", "Ignore the request because government programmes have no DPDP duties", "Delete every system record without checking the requirement", "Keep all copies forever for convenience"], correct: 0, explanation: "The approved guidance allows retention where law requires it, while erasure and purpose limitation still guide data that does not need to be kept." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

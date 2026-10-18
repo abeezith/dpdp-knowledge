@@ -1,7 +1,7 @@
-DPDP Quiz 88 | Intermediate Breach Notice Practice
+DPDP Quiz 89 | Phase III Readiness Calendar
 
-Five intermediate scenarios on breach notice content, field communication, response records, and timely escalation.
+Five readiness-planning scenarios on rollout dates, ownership, platform controls, and preparing for full DPDP compliance.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-88-intermediate-breach-notice-practice/
+https://abeezith.github.io/dpdp-knowledge/quiz-89-phase-three-readiness-calendar/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
