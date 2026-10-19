@@ -7890,6 +7890,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 100,
+  slug: "processor-assurance-gate",
+  shortTitle: "Processor Assurance Gate",
+  pageTitle: "DPDP Quiz 100 - Processor Assurance Gate",
+  eyebrow: "DPDP Quiz 100 | Processor Assurance Gate",
+  heroTitle: "Processor Assurance Gate: Safe Vendor Data Handling",
+  heroIntro: "Five practical decisions for teams that share beneficiary information with technology and evaluation partners.",
+  cardDescription: "Five applied checks on processor contracts, least-privilege access, purpose boundaries, logs, and accountable sharing.",
+  audience: "Programme owners, developers, procurement teams, and BI analysts",
+  focus: "Data Processor contracts, minimum access, security safeguards, logs, and external sharing",
+  resultSummary: "This set reinforces that a processor relationship needs a defined purpose, written safeguards, and active oversight by the Data Fiduciary.",
+  topics: [{ label: "Role", text: "Programme owner, developer, procurement, and BI analyst" }, { label: "Obligation area", text: "Processor safeguards and controlled data sharing" }, { label: "Source", text: "Approved act-and-rules-summary.md, learning-modules.md, and Excel Quiz 2 and Quiz 3 seed concepts" }],
+  questions: [
+    { module: "Processor scope", topic: "Purpose-led contract", text: "A programme engages a vendor to repair its MIS. The vendor asks for a complete historical beneficiary export " + "\"for future analytics\"" + ". What should the programme owner do before any transfer?", options: ["Limit any sharing to the defined repair purpose and put required data-protection safeguards in the written processor arrangement", "Send the full export because the vendor has technical expertise", "Let the vendor decide which fields are useful after receiving the data", "Publish the export so all vendors can offer solutions"], correct: 0, explanation: "A processor handles data on the Data Fiduciary's behalf. The approved guidance requires a written arrangement with security requirements, and sharing should stay tied to a defined purpose and minimum need." },
+    { module: "Access control", topic: "Temporary support account", text: "During a support call, a vendor engineer needs to diagnose one district's dashboard issue. Which access setup best follows the security guidance?", options: ["A time-bound account restricted to the relevant district and task", "A shared administrator password for the whole platform", "A permanent account covering every programme database", "A spreadsheet of all beneficiary credentials"], correct: 0, explanation: "Rule 6 guidance calls for access controls. The least-privilege approach gives only the access needed for the support task and avoids unnecessary continuing access." },
+    { module: "Security safeguards", topic: "Equivalent protections", text: "A survey platform vendor says its standard contract has no clause about protecting personal data because it already has a privacy webpage. What is the best next step?", options: ["Require contractual provisions that make the processor apply equivalent security safeguards", "Accept the webpage because contracts are optional", "Send data first and discuss safeguards at renewal", "Ask field staff to personally guarantee the vendor's security"], correct: 0, explanation: "The approved act-and-rules summary lists contractual provisions with Data Processors requiring equivalent security as a minimum safeguard. A general webpage does not replace this documented responsibility." },
+    { module: "Audit evidence", topic: "Investigation trail", text: "After a suspected unauthorised vendor login, what evidence should the platform team preserve for review?", options: ["Relevant access and activity logs before they are overwritten", "Only a summary written after the investigation ends", "The vendor's marketing brochure", "Unrelated beneficiary survey answers"], correct: 0, explanation: "The security and breach guidance emphasises logs, monitoring, and review to detect unauthorised access. Preserving relevant evidence supports containment and an accountable investigation." },
+    { module: "Accountability", topic: "Who remains responsible", text: "A Data Fiduciary uses an external analytics firm to process programme records under instructions. Which statement is most accurate?", options: ["The Data Fiduciary remains accountable for the processor relationship and must require safeguards", "The external firm automatically becomes free to set any new purpose", "The Data Fiduciary has no duties once data leaves its servers", "A processor contract removes the need for breach response"], correct: 0, explanation: "The learning guidance explains that processors act on behalf of the Data Fiduciary, which remains responsible for ensuring the relationship has appropriate protections and purpose controls." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

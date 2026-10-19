@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-18T13:29:16.513Z",
-  "publishedThisRun": "quiz-89-phase-three-readiness-calendar",
-  "latestPublishedFolder": "quiz-89-phase-three-readiness-calendar",
-  "lastPublishedAt": "2026-10-18T13:27:16.043Z",
-  "lastPublishedOnLocalDate": "2026-10-18",
+  "updatedAt": "2026-10-19T13:34:26.488Z",
+  "publishedThisRun": "quiz-90-platform-lifecycle-cleanup",
+  "latestPublishedFolder": "quiz-90-platform-lifecycle-cleanup",
+  "lastPublishedAt": "2026-10-19T13:34:26.485Z",
+  "lastPublishedOnLocalDate": "2026-10-19",
   "lastNotificationSentFor": "quiz-89-phase-three-readiness-calendar",
   "queuedFolders": [
-    "quiz-90-platform-lifecycle-cleanup",
     "quiz-91-child-data-decision-path",
     "quiz-92-platform-audit-evidence",
     "quiz-93-odk-field-sync-hygiene",
@@ -15,7 +14,8 @@
     "quiz-96-advanced-dhis2-access-review",
     "quiz-97-beneficiary-rights-desk",
     "quiz-98-data-quality-sharing-gate",
-    "quiz-99-consent-withdrawal-pathway"
+    "quiz-99-consent-withdrawal-pathway",
+    "quiz-100-processor-assurance-gate"
   ],
   "queuedCount": 10
 }

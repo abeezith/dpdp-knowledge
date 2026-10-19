@@ -1,7 +1,7 @@
-DPDP Quiz 89 | Phase III Readiness Calendar
+DPDP Quiz 90 | Platform Lifecycle Cleanup
 
-Five readiness-planning scenarios on rollout dates, ownership, platform controls, and preparing for full DPDP compliance.
+Five lifecycle-control scenarios on retention rules, pre-erasure notice, field-device cleanup, backups, and rights-based deletion.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-89-phase-three-readiness-calendar/
+https://abeezith.github.io/dpdp-knowledge/quiz-90-platform-lifecycle-cleanup/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
