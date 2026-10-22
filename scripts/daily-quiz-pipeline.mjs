@@ -7912,6 +7912,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 101,
+  slug: "jharkhand-notice-comprehension",
+  shortTitle: "Jharkhand Notice Comprehension",
+  pageTitle: "DPDP Quiz 101 - Jharkhand Notice Comprehension",
+  eyebrow: "DPDP Quiz 101 | Jharkhand Notice Comprehension",
+  heroTitle: "Jharkhand Notice Comprehension: Explain Before You Collect",
+  heroIntro: "Five practical field decisions on giving an understandable notice and recording a meaningful choice before collection.",
+  cardDescription: "Five Jharkhand field scenarios on notice timing, local-language explanation, itemised collection, voluntary choice, and consent evidence.",
+  audience: "Gandhi Fellows, implementors, programme officers, and enrolment teams",
+  focus: "Notice design, comprehension, consent records, voluntary choice, and collection boundaries",
+  resultSummary: "This set reinforces a field-first standard: explain the specific collection clearly, confirm understanding, and record the choice before collecting personal data.",
+  topics: [{ label: "Field setting", text: "Jharkhand enrolment and outreach workflows" }, { label: "Obligation area", text: "Clear notice and valid consent" }, { label: "Source", text: "Approved act-and-rules-summary.md, consent-templates.md, learning-modules.md, and Excel Quiz 1 seed concepts" }],
+  questions: [
+    { module: "Notice timing", topic: "Village enrolment", text: "At a Jharkhand enrolment desk, a volunteer starts entering a beneficiary's name and phone number, planning to explain the notice after the form is saved. What should change?", options: ["Give the clear notice and seek the person's choice before entering the personal details", "Finish entering the form because the notice can be read during the next visit", "Collect the details first if the queue is long", "Explain the notice only if the beneficiary asks"], correct: 0, explanation: "The approved notice guidance requires notice before collection when consent is the basis, so the person can make an informed choice before their data is entered." },
+    { module: "Understandable language", topic: "Local-language explanation", text: "A beneficiary understands Santhali better than the written Hindi form. Which approach best supports an informed choice?", options: ["Use an understandable explanation in the beneficiary's language and confirm what the collection is for", "Ask the beneficiary to sign the Hindi form without an explanation", "Use more legal terminology so the form looks official", "Treat the presence of a family member as automatic consent"], correct: 0, explanation: "Notices must be in clear, plain language. The field guidance calls for explaining the notice in the person's language before documenting their response." },
+    { module: "Itemised collection", topic: "Nutrition follow-up", text: "A team says it needs " + '"all household details"' + " for nutrition follow-up. Which notice is more appropriate?", options: ["We will collect your child's name, age, weight and caregiver mobile number to arrange nutrition follow-up", "We may collect any details that are useful now or later", "Give us all household details so the programme can decide later", "The purpose will be explained after the survey is complete"], correct: 0, explanation: "A compliant notice should itemise the data and state a specific purpose. Broad catch-all wording does not let a person understand the proposed processing." },
+    { module: "Voluntary choice", topic: "Optional recording", text: "During a health outreach visit, a worker asks for an optional audio testimonial after completing the care interaction. The beneficiary hesitates. What is the safest response?", options: ["Explain the separate optional purpose and accept a refusal without affecting the care interaction", "Record the testimonial because the beneficiary accepted care", "Say the testimonial is required for future services", "Treat hesitation as a yes if a colleague is present"], correct: 0, explanation: "Consent must be free, specific and based on clear affirmative action. Optional media use should remain separate from the service and refusal must be respected." },
+    { module: "Consent evidence", topic: "Supervisor review", text: "A supervisor reviews a field team's consent log and sees only names beside a tick mark. What key evidence should be added?", options: ["The date, stated purpose, method or language of notice, and the person's recorded affirmative response", "The staff member's personal opinion of each beneficiary", "A single blanket approval for all future activities", "A copy of every unrelated programme report"], correct: 0, explanation: "The Data Fiduciary bears the burden of proving notice and consent. A useful record links the person, timing, stated purpose and documented affirmative choice." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

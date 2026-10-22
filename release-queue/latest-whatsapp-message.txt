@@ -1,7 +1,7 @@
-DPDP Quiz 90 | Platform Lifecycle Cleanup
+DPDP Quiz 91 | Child Data Decision Path
 
-Five lifecycle-control scenarios on retention rules, pre-erasure notice, field-device cleanup, backups, and rights-based deletion.
+Five child-data scenarios on direct care, parental consent, photographs, verification, and prohibited uses.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-90-platform-lifecycle-cleanup/
+https://abeezith.github.io/dpdp-knowledge/quiz-91-child-data-decision-path/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
