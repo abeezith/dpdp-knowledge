@@ -1,7 +1,7 @@
-DPDP Quiz 91 | Child Data Decision Path
+DPDP Quiz 92 | Platform Audit Evidence
 
-Five child-data scenarios on direct care, parental consent, photographs, verification, and prohibited uses.
+Five platform-audit scenarios on inventory, access logs, backups, erasure, and rights-request ownership.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-91-child-data-decision-path/
+https://abeezith.github.io/dpdp-knowledge/quiz-92-platform-audit-evidence/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

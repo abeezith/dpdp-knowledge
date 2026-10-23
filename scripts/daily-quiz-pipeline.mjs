@@ -7934,6 +7934,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 102,
+  slug: "advanced-rights-request-triage",
+  shortTitle: "Advanced Rights Request Triage",
+  pageTitle: "DPDP Quiz 102 - Advanced Rights Request Triage",
+  eyebrow: "DPDP Quiz 102 | Advanced Rights Request Triage",
+  heroTitle: "Advanced Rights Request Triage: Verify, Log, Escalate",
+  heroIntro: "Five advanced scenarios on receiving, safeguarding, and routing Data Principal requests without exposing more personal data.",
+  cardDescription: "Five advanced rights-desk scenarios on safe identity checks, correction, erasure limits, nomination, and grievance routing.",
+  audience: "Programme officers, rights-desk staff, implementors, and data governance teams",
+  focus: "Access, correction, erasure, nomination, grievance handling, and confidentiality",
+  resultSummary: "This set reinforces a practical sequence for rights requests: protect identity, record the request, escalate it, and respond through the right channel.",
+  topics: [{ label: "Difficulty", text: "Advanced rights-request judgment" }, { label: "Project stage", text: "Request intake, verification, escalation, and response" }, { label: "Source", text: "Approved act-and-rules-summary.md, role-guidance.md, learning-modules.md, and Excel Quiz 3 seed concepts" }],
+  questions: [
+    { module: "Access request", topic: "Safe caller handling", text: "A caller says she wants to know whether a TB record exists in her name, but staff cannot safely verify her identity on the call. What should the rights-desk worker do first?", options: ["Avoid confirming any record, log the request, and use the approved verification and escalation path", "Read out possible records until the caller recognises one", "Tell the caller that rights requests are accepted only in person", "Send all matching records to the caller's WhatsApp number"], correct: 0, explanation: "The learning guidance stresses that staff should not disclose a sensitive record before safe handling. Record the request and escalate through the approved process so identity and authority can be checked." },
+    { module: "Correction", topic: "Wrong beneficiary detail", text: "A beneficiary reports that her mobile number is wrong in a programme MIS and asks for it to be corrected. Which response best fits the role guidance?", options: ["Log the correction request and route it to the responsible programme or system team for action", "Ask her to create a new identity instead", "Ignore the request unless a donor asks about the number", "Delete every programme record immediately without checking"], correct: 0, explanation: "Correction and completion are Data Principal rights. Frontline staff should record the request and escalate it rather than guessing, ignoring it, or making uncontrolled changes." },
+    { module: "Erasure", topic: "Retention obligation", text: "A person asks a field team to erase a record that may be required in a government health system. What is the most appropriate immediate response?", options: ["Record and escalate the erasure request to determine whether a legal retention obligation applies", "Promise immediate deletion before checking the record's legal context", "Refuse all erasure requests because government systems exist", "Ask the person to withdraw the request if it might take time"], correct: 0, explanation: "Erasure requests must be handled, but the approved guidance notes that some records may need to be retained where law requires it. The team should log and escalate for a reasoned decision." },
+    { module: "Nomination", topic: "Incapacity support", text: "A beneficiary has formally nominated her adult daughter to exercise DPDP rights if the beneficiary becomes incapacitated. How should the programme treat a later request from the daughter after verifying the circumstances?", options: ["Treat nomination as a recognised route for exercising the beneficiary's rights and process it through the rights workflow", "Reject it because only the original beneficiary can ever make a request", "Share the entire database with the daughter without safeguards", "Require a new blanket consent from every family member"], correct: 0, explanation: "The Act summary explains the right to nominate someone to exercise rights in case of death or incapacity. The request still needs appropriate verification and controlled handling." },
+    { module: "Grievance", topic: "Unresolved complaint", text: "After a rights request has been handled, a beneficiary says the response is unsatisfactory and wants to complain further. What guidance should staff provide?", options: ["Explain the organisation's grievance route and that the Data Protection Board route follows exhaustion of that process", "Tell the beneficiary that complaints are prohibited after a response", "Ask the beneficiary to post their records publicly to prove the issue", "Close the request without recording the dissatisfaction"], correct: 0, explanation: "The approved learning module says a person can seek grievance redressal and may approach the Data Protection Board after exhausting the organisation's grievance process. Staff should record and route the concern respectfully." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
