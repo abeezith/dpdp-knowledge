@@ -7956,6 +7956,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 103,
+  slug: "developer-privacy-release-check",
+  shortTitle: "Developer Privacy Release Check",
+  pageTitle: "DPDP Quiz 103 - Developer Privacy Release Check",
+  eyebrow: "DPDP Quiz 103 | Developer Privacy Release Check",
+  heroTitle: "Developer Privacy Release Check: Build Safeguards In",
+  heroIntro: "Five release-stage choices for developers responsible for platforms that handle beneficiary personal data.",
+  cardDescription: "Five developer scenarios on minimum collection, protected offline forms, audit evidence, recovery checks, and child-data release gates.",
+  audience: "Developers, product owners, platform administrators, and technical reviewers",
+  focus: "Privacy by design, encryption, audit logs, recovery, and children's-data safeguards",
+  resultSummary: "This set reinforces that privacy controls are release requirements: reduce collection, protect data, retain evidence, test recovery, and escalate high-risk changes.",
+  topics: [{ label: "Role", text: "Developer and technical release reviewer" }, { label: "Project stage", text: "Feature design, release, and operational assurance" }, { label: "Source", text: "Approved role-guidance.md, learning-modules.md, and Excel Quiz 2 security seed concepts" }],
+  questions: [
+    { module: "Data minimisation", topic: "New registration field", text: "A developer is asked to add a mandatory family-income field to an appointment-booking feature, but the appointment workflow does not use income. What should the developer do before release?", options: ["Challenge or remove the field unless a defined programme purpose requires it", "Make the field mandatory because it could be useful later", "Collect the field and decide its purpose after launch", "Hide the field label so people provide it quickly"], correct: 0, explanation: "The developer checklist requires identifying the minimum personal data needed for a feature. A field without a defined operational purpose should not be collected merely for possible future use." },
+    { module: "ODK Collect", topic: "Offline device protection", text: "A field app will keep unsent beneficiary forms on a phone during areas with no network. Which release control most directly addresses that offline-data risk?", options: ["Enable device-level encryption and ensure remote wipe capability is in place", "Store the forms in an unprotected downloads folder", "Ask staff to share one device PIN", "Delay every form until a network is available regardless of programme need"], correct: 0, explanation: "The ODK Collect guidance calls for device-level encryption for offline forms and a remote-wipe capability for field devices, reducing the impact if a device is lost or stolen." },
+    { module: "Audit logging", topic: "Export investigation", text: "A dashboard release includes an export function for authorised users. Which logging design best supports DPDP-oriented accountability?", options: ["Record who downloaded which export and when, with retention configured for at least one year", "Keep no export logs to save storage", "Log only successful logins and not export activity", "Allow every user to delete their own activity trail"], correct: 0, explanation: "The developer and dashboard guidance calls for export logs that show who downloaded what and when, while Rule 6 guidance requires audit logs to be retained for a minimum of one year." },
+    { module: "Recovery readiness", topic: "Encrypted backup restore", text: "Before deploying a database upgrade that handles beneficiary records, what is the most reliable way to check that backup protection is operational?", options: ["Verify encrypted backups and test that an authorised restoration can succeed", "Assume backups work because a scheduled job exists", "Copy the database to a personal laptop as a fallback", "Disable backups during the upgrade to avoid alerts"], correct: 0, explanation: "The approved developer checklist requires a backup and recovery mechanism. The security module adds that restoration should be tested; an untested backup is not reliable evidence of recoverability." },
+    { module: "Children's data", topic: "Feature escalation", text: "A product team proposes a feature that profiles children's activity patterns to personalise programme messages. What should the developer do first?", options: ["Escalate the children's-data feature for review rather than implementing profiling by default", "Deploy it because personalisation always improves services", "Replace names with nicknames and proceed without review", "Collect more data so the profiles are more accurate"], correct: 0, explanation: "The developer quick card identifies children's-data features as an escalation trigger. The learning module also flags profiling and processing likely to harm a child's well-being as prohibited concerns, so the feature cannot be treated as a routine release." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

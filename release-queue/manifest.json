@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-23T14:41:31.580Z",
-  "publishedThisRun": "quiz-92-platform-audit-evidence",
-  "latestPublishedFolder": "quiz-92-platform-audit-evidence",
-  "lastPublishedAt": "2026-10-23T14:40:23.844Z",
-  "lastPublishedOnLocalDate": "2026-10-23",
+  "updatedAt": "2026-10-26T13:27:34.379Z",
+  "publishedThisRun": "quiz-93-odk-field-sync-hygiene",
+  "latestPublishedFolder": "quiz-93-odk-field-sync-hygiene",
+  "lastPublishedAt": "2026-10-26T13:27:15.530Z",
+  "lastPublishedOnLocalDate": "2026-10-26",
   "lastNotificationSentFor": "quiz-92-platform-audit-evidence",
   "queuedFolders": [
-    "quiz-93-odk-field-sync-hygiene",
     "quiz-94-breach-first-hour-actions",
     "quiz-95-field-data-quality-handoff",
     "quiz-96-advanced-dhis2-access-review",
@@ -15,7 +14,8 @@
     "quiz-99-consent-withdrawal-pathway",
     "quiz-100-processor-assurance-gate",
     "quiz-101-jharkhand-notice-comprehension",
-    "quiz-102-advanced-rights-request-triage"
+    "quiz-102-advanced-rights-request-triage",
+    "quiz-103-developer-privacy-release-check"
   ],
   "queuedCount": 10
 }

@@ -1,7 +1,7 @@
-DPDP Quiz 92 | Platform Audit Evidence
+DPDP Quiz 93 | ODK Field Sync Hygiene
 
-Five platform-audit scenarios on inventory, access logs, backups, erasure, and rights-request ownership.
+Five ODK field scenarios on encrypted devices, minimum fields, sync delays, access control, and retiring old forms.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-92-platform-audit-evidence/
+https://abeezith.github.io/dpdp-knowledge/quiz-93-odk-field-sync-hygiene/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
