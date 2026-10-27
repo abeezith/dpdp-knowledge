@@ -1,7 +1,7 @@
-DPDP Quiz 93 | ODK Field Sync Hygiene
+DPDP Quiz 94 | Breach First-Hour Actions
 
-Five ODK field scenarios on encrypted devices, minimum fields, sync delays, access control, and retiring old forms.
+Five breach-response scenarios on lost devices, evidence preservation, escalation, recipient deletion, and the 72-hour reporting clock.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-93-odk-field-sync-hygiene/
+https://abeezith.github.io/dpdp-knowledge/quiz-94-breach-first-hour-actions/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

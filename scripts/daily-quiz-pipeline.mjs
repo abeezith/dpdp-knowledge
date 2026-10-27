@@ -7978,6 +7978,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 104,
+  slug: "bihar-consent-choice-points",
+  shortTitle: "Bihar Consent Choice Points",
+  pageTitle: "DPDP Quiz 104 - Bihar Consent Choice Points",
+  eyebrow: "DPDP Quiz 104 | Bihar Consent Choice Points",
+  heroTitle: "Bihar Consent Choice Points: Explain, Choose, Record",
+  heroIntro: "Five Bihar field scenarios on giving people a meaningful, documented choice before using their personal data.",
+  cardDescription: "Five Bihar enrolment scenarios on clear notices, active consent, optional fields, sharing explanations, and withdrawal handling.",
+  audience: "Gandhi Fellows, enrolment teams, programme officers, and supervisors",
+  focus: "Notice timing, affirmative choice, purpose limitation, sharing transparency, and withdrawal",
+  resultSummary: "This set turns consent basics into practical field choices: explain the proposed use first, record a real choice, and respect boundaries.",
+  topics: [{ label: "Location", text: "Bihar enrolment and follow-up settings" }, { label: "Obligation area", text: "Notice and consent practice" }, { label: "Source", text: "Approved act-and-rules-summary.md, learning-modules.md, consent-templates.md, and Excel Quiz 1 and 3 seed concepts" }],
+  questions: [
+    { module: "Notice", topic: "Registration queue", text: "At a Bihar health-camp registration desk, a worker says the privacy notice can be explained after the beneficiary gives a phone number because the queue is long. What is the appropriate response?", options: ["Give or explain the clear notice before collecting the phone number", "Collect the number first because speed replaces notice", "Explain the notice only if a beneficiary objects", "Use the same notice at the end of the month for everyone"], correct: 0, explanation: "When consent is the basis, notice must come before collection. Queue pressure does not remove the need for an informed choice." },
+    { module: "Affirmative consent", topic: "Pre-selected form", text: "A digital enrolment form displays an already-selected agreement toggle for follow-up calls. Which change best supports valid consent?", options: ["Leave the toggle unselected and let the person actively choose after an explanation", "Keep it selected because the person can untick it later", "Hide the toggle in a longer form", "Treat completing the rest of the form as consent to follow-up calls"], correct: 0, explanation: "Consent needs a clear affirmative action. A pre-selected option does not reliably show that the person chose the additional purpose." },
+    { module: "Purpose limitation", topic: "Optional livelihood question", text: "During a maternal-health follow-up, a worker asks to record household debt for a future livelihoods study that has not been explained. What should happen?", options: ["Do not collect it unless its separate, specific purpose is explained and the person agrees", "Record it because it may help another programme later", "Make it compulsory for every health follow-up", "Ask a neighbour to provide the answer"], correct: 0, explanation: "Consent must be specific and informed. A possible future use is not a defined purpose for collecting an additional personal detail now." },
+    { module: "Sharing", topic: "Referral partner", text: "A beneficiary agrees to a disability-support referral. Before the worker shares contact details with the named partner, what should the field explanation include?", options: ["That the details will be shared with that partner for the stated referral purpose", "Only that the referral is helpful", "Nothing, because partner sharing never needs explanation", "A promise that the data will be used for every future service"], correct: 0, explanation: "The field consent process should explain the purpose and intended sharing so the person understands what will happen to their information." },
+    { module: "Withdrawal", topic: "SMS reminder opt-out", text: "A beneficiary who earlier accepted appointment reminders now asks a Bihar programme team to stop the messages. What is the best next step?", options: ["Record the withdrawal and stop the reminder use through the defined process", "Keep messaging until the beneficiary submits a new paper form", "Ignore the request because the original consent was signed", "Delete all health records without checking any retention requirement"], correct: 0, explanation: "Withdrawal should be as easy as giving consent. The request should be documented and acted on for the consent-based reminder purpose." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
