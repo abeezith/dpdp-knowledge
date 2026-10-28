@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-27T13:28:58.327Z",
-  "publishedThisRun": "quiz-94-breach-first-hour-actions",
-  "latestPublishedFolder": "quiz-94-breach-first-hour-actions",
-  "lastPublishedAt": "2026-10-27T13:27:17.604Z",
-  "lastPublishedOnLocalDate": "2026-10-27",
+  "updatedAt": "2026-10-28T13:26:44.715Z",
+  "publishedThisRun": "quiz-95-field-data-quality-handoff",
+  "latestPublishedFolder": "quiz-95-field-data-quality-handoff",
+  "lastPublishedAt": "2026-10-28T13:26:44.711Z",
+  "lastPublishedOnLocalDate": "2026-10-28",
   "lastNotificationSentFor": "quiz-93-odk-field-sync-hygiene",
   "queuedFolders": [
-    "quiz-95-field-data-quality-handoff",
     "quiz-96-advanced-dhis2-access-review",
     "quiz-97-beneficiary-rights-desk",
     "quiz-98-data-quality-sharing-gate",
@@ -17,5 +16,5 @@
     "quiz-103-developer-privacy-release-check",
     "quiz-104-bihar-consent-choice-points"
   ],
-  "queuedCount": 10
+  "queuedCount": 9
 }

@@ -1,7 +1,7 @@
-DPDP Quiz 94 | Breach First-Hour Actions
+DPDP Quiz 95 | Field Data Quality Handoff
 
-Five breach-response scenarios on lost devices, evidence preservation, escalation, recipient deletion, and the 72-hour reporting clock.
+Five field-to-platform scenarios on accurate records, controlled corrections, quality checks, authorised sharing, and retention-aware handoffs.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-94-breach-first-hour-actions/
+https://abeezith.github.io/dpdp-knowledge/quiz-95-field-data-quality-handoff/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
