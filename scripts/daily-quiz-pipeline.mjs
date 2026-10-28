@@ -8000,6 +8000,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 105,
+  slug: "advanced-child-data-safeguards",
+  shortTitle: "Advanced Child Data Safeguards",
+  pageTitle: "DPDP Quiz 105 - Advanced Child Data Safeguards",
+  eyebrow: "DPDP Quiz 105 | Advanced Child Data Safeguards",
+  heroTitle: "Advanced Child Data Safeguards: Verify, Limit, Escalate",
+  heroIntro: "Five advanced decisions for teams handling children's information in health, outreach, and digital programme settings.",
+  cardDescription: "Five advanced child-data scenarios on verifiable parental consent, safe purpose boundaries, photo use, profiling risks, and escalation.",
+  audience: "Karuna Fellows, programme officers, developers, and child-focused programme teams",
+  focus: "Children's data, verifiable parental consent, purpose limitation, safety, and escalation",
+  resultSummary: "This set reinforces a cautious rule for child data: verify authority, explain the purpose, collect only what is needed, and escalate uncertain or high-risk uses.",
+  topics: [{ label: "Difficulty", text: "Advanced child-data judgment" }, { label: "Project stage", text: "Collection, media use, digital design, and escalation" }, { label: "Source", text: "Approved act-and-rules-summary.md, learning-modules.md, role-guidance.md, and Excel Quiz 1-3 seed themes" }],
+  questions: [
+    { module: "Parental consent", topic: "Camp enrolment", text: "At a child nutrition camp, an uncle says he can approve collection of a child's growth details, but the team cannot establish whether he is the child's parent or lawful guardian. What should the team do before using consent as the basis?", options: ["Use a verifiable parental or guardian consent process before proceeding with the consent-based collection", "Accept any adult relative's statement without checking", "Collect first because nutrition data is always exempt", "Ask another child to confirm the uncle's identity"], correct: 0, explanation: "The approved guidance requires verifiable parental or guardian consent for a child's personal data where consent is relied on. The team should use the established verification route rather than assume an adult relative has authority." },
+    { module: "Purpose boundary", topic: "Care record and publicity", text: "A team collected a child's health measurements for care follow-up. It now wants to use the child's identifiable photograph in a public success story. Which response best fits the guidance?", options: ["Treat public photo use as a separate purpose and obtain the appropriate parental or guardian consent", "Use the photo automatically because the health record was collected", "Post the photo if the child's name is omitted", "Ask a staff member to approve the publicity use"], correct: 0, explanation: "A care-related collection purpose does not automatically cover public reporting or publicity. The learning guidance treats identifiable child photography as personal data requiring parental consent for the stated use." },
+    { module: "Digital design", topic: "Behavioural profiling", text: "A developer proposes scoring children's app activity to target personalised programme prompts. What is the safest DPDP-oriented first action?", options: ["Escalate the proposal for review because profiling that may harm a child's well-being is a high-risk concern", "Release it quietly because scores are internal", "Collect more behavioural data to improve the score", "Replace names with nicknames and assume the risk is gone"], correct: 0, explanation: "The child-data guidance flags tracking, behavioural monitoring, and profiling as areas requiring heightened care; processing likely to harm a child's well-being is prohibited. This is not a routine feature decision." },
+    { module: "Data minimisation", topic: "Optional family detail", text: "A school-outreach form for a child health referral includes a mandatory field for the parent's income, although the referral workflow does not use it. What should the programme do?", options: ["Remove or make the field optional unless a defined programme purpose requires it", "Keep it mandatory in case it helps a later programme", "Ask the child to estimate the income", "Collect the value and explain the purpose after referral"], correct: 0, explanation: "The approved materials require collection to stay tied to a defined purpose and minimum need. A child-focused referral does not justify unrelated mandatory family details merely because they may be useful later." },
+    { module: "Incident response", topic: "Shared photo folder", text: "A Karuna Fellow finds that a shared field-drive folder containing identifiable child photographs is open to staff who do not need access. What should happen first?", options: ["Restrict access and immediately escalate the potential exposure through the breach or security process", "Leave access unchanged until the monthly review", "Copy the folder to more personal devices for safekeeping", "Post a reminder in a public group without changing permissions"], correct: 0, explanation: "Unauthorised availability of identifiable child photographs is an exposure risk. The guidance calls for access controls and immediate escalation of potential breaches so containment and assessment can begin." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
