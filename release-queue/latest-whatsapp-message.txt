@@ -1,7 +1,7 @@
-DPDP Quiz 95 | Field Data Quality Handoff
+DPDP Quiz 96 | Advanced DHIS2 Access Review
 
-Five field-to-platform scenarios on accurate records, controlled corrections, quality checks, authorised sharing, and retention-aware handoffs.
+Five advanced DHIS2 scenarios on role-restricted access, dormant accounts, audit trails, controlled exports, and keeping identifiers out of analytical metadata.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-95-field-data-quality-handoff/
+https://abeezith.github.io/dpdp-knowledge/quiz-96-advanced-dhis2-access-review/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

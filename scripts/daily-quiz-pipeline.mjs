@@ -8022,6 +8022,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 106,
+  slug: "odk-release-governance",
+  shortTitle: "ODK Release Governance",
+  pageTitle: "DPDP Quiz 106 - ODK Release Governance",
+  eyebrow: "DPDP Quiz 106 | ODK Release Governance",
+  heroTitle: "ODK Release Governance: Approve, Restrict, Retire",
+  heroIntro: "Five release-stage decisions for keeping ODK forms, access, and field-device handling aligned with the approved DPDP audit checklist.",
+  cardDescription: "Five ODK release-stage scenarios on approving minimum fields, authorised form control, HTTPS, version retirement, and field-device readiness.",
+  audience: "Form designers, ODK administrators, field supervisors, and programme data stewards",
+  focus: "Minimum fields, authorised access, secure transmission, version control, and device readiness",
+  resultSummary: "This set reinforces that an ODK release is a control point: confirm the need for every field, restrict administration, protect transmission, and retire risky legacy versions.",
+  topics: [{ label: "Project stage", text: "ODK form design, approval, release, and retirement" }, { label: "Platform setting", text: "ODK Collect and ODK Central field operations" }, { label: "Source", text: "Approved data-audit-checklist.md and Excel Quiz 2 seed themes" }],
+  questions: [
+    { module: "Release approval", topic: "Unneeded identifier", text: "Before releasing an ODK form for a village survey, a reviewer sees a new alternate-contact field but cannot find a documented purpose for it. What should the reviewer require?", options: ["Remove the field or document why it is necessary before release", "Release it because extra contacts may help in a future campaign", "Collect it only from people who appear comfortable", "Move it to the form footer so it is less noticeable"], correct: 0, explanation: "The ODK checklist asks whether forms collect only the minimum required fields. A field should have a defined need before the form is released." },
+    { module: "Access control", topic: "Temporary form editor", text: "A district team asks for one shared ODK Central administrator login so several temporary volunteers can quickly change live forms. Which decision best follows the checklist?", options: ["Limit form-management access to authorised staff instead of using shared administrator credentials", "Share the login but change its password after the campaign", "Give every volunteer administrator access for the sake of speed", "Publish the login in the team group so help is available"], correct: 0, explanation: "The ODK-specific checklist calls for submission access and form management to be restricted to authorised staff. Shared administrator credentials undermine that control." },
+    { module: "Secure transmission", topic: "Central server link", text: "During pre-release testing, a form can be submitted to an ODK Central address over an ordinary HTTP connection. What should the release owner do?", options: ["Require HTTPS before using the connection for personal-data submissions", "Proceed because field data is encrypted only after it reaches the server", "Use HTTP only on weekdays", "Ask workers to avoid entering sensitive values"], correct: 0, explanation: "The approved ODK checklist explicitly checks that ODK Central is accessed over HTTPS, protecting data in transit." },
+    { module: "Version control", topic: "Legacy form availability", text: "A corrected ODK form is ready, but the older version with an unnecessary sensitive question remains selectable on field devices. What is the best release action?", options: ["Retire the old sensitive form version and ensure teams use the approved replacement", "Leave both versions available so workers can choose", "Rename the old form without changing its availability", "Keep the old form for a future pilot without any review"], correct: 0, explanation: "The checklist asks whether old form versions with sensitive fields are retired. Releasing a safer version should not leave the risky legacy form available by default." },
+    { module: "Field readiness", topic: "Device baseline", text: "A supervisor is issuing tablets for a new ODK rollout and confirms that the forms work. Which additional readiness check is directly supported by the audit checklist?", options: ["Confirm full device encryption is enabled on the tablets", "Confirm each tablet has the same wallpaper", "Confirm the devices can install any consumer app", "Confirm every worker can use one shared unlock code"], correct: 0, explanation: "For field phones and tablets running ODK, the checklist specifically asks whether full device encryption is enabled." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

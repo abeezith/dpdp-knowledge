@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-28T13:29:01.048Z",
-  "publishedThisRun": "quiz-95-field-data-quality-handoff",
-  "latestPublishedFolder": "quiz-95-field-data-quality-handoff",
-  "lastPublishedAt": "2026-10-28T13:26:44.711Z",
-  "lastPublishedOnLocalDate": "2026-10-28",
+  "updatedAt": "2026-10-29T14:41:45.007Z",
+  "publishedThisRun": "quiz-96-advanced-dhis2-access-review",
+  "latestPublishedFolder": "quiz-96-advanced-dhis2-access-review",
+  "lastPublishedAt": "2026-10-29T14:41:45.005Z",
+  "lastPublishedOnLocalDate": "2026-10-29",
   "lastNotificationSentFor": "quiz-95-field-data-quality-handoff",
   "queuedFolders": [
-    "quiz-96-advanced-dhis2-access-review",
     "quiz-97-beneficiary-rights-desk",
     "quiz-98-data-quality-sharing-gate",
     "quiz-99-consent-withdrawal-pathway",
@@ -15,7 +14,8 @@
     "quiz-102-advanced-rights-request-triage",
     "quiz-103-developer-privacy-release-check",
     "quiz-104-bihar-consent-choice-points",
-    "quiz-105-advanced-child-data-safeguards"
+    "quiz-105-advanced-child-data-safeguards",
+    "quiz-106-odk-release-governance"
   ],
   "queuedCount": 10
 }
