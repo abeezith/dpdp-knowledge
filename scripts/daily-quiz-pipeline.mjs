@@ -8044,6 +8044,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 107,
+  slug: "notice-field-readiness",
+  shortTitle: "Notice Field Readiness",
+  pageTitle: "DPDP Quiz 107 - Notice Field Readiness",
+  eyebrow: "DPDP Quiz 107 | Notice Field Readiness",
+  heroTitle: "Notice Field Readiness: Explain, Check, Record",
+  heroIntro: "Five field-readiness decisions for giving a clear DPDP notice before collection and keeping evidence that people were properly informed.",
+  cardDescription: "Five field-ready notice scenarios on timing, specific purposes, understandable language, evidence of explanation, and routes for exercising rights.",
+  audience: "Field implementors, programme officers, supervisors, and consent-record custodians",
+  focus: "Pre-collection notice, plain language, proof of notice, and rights contact routes",
+  resultSummary: "This set reinforces that field collection begins with an understandable notice, a defensible record, and a usable path for people to exercise their rights.",
+  topics: [{ label: "Project stage", text: "Pre-collection briefing and field enrolment" }, { label: "Field setting", text: "Beneficiary-facing notice and consent records" }, { label: "Source", text: "Approved act-and-rules-summary.md, consent-templates.md, and Excel Quiz 1 seed themes" }],
+  questions: [
+    { module: "Notice timing", topic: "Before collection", text: "At a Bihar enrolment desk, a volunteer plans to explain the privacy notice only after entering a beneficiary's name and phone number. What should the supervisor require?", options: ["Give the notice before collecting the personal information", "Wait until the beneficiary asks about privacy", "Give the notice only if health information is also collected", "Explain it after the form is submitted"], correct: 0, explanation: "The DPDP notice guidance and Excel readiness assessment both place the notice before collection, so the person can understand the processing before providing data." },
+    { module: "Notice content", topic: "Specific purpose", text: "A field notice says, 'We collect your details for programme purposes.' Which improvement is most important?", options: ["Add a specific, plain-language reason for each stated collection activity", "Replace it with a longer legal disclaimer", "Remove the purpose so the notice is shorter", "Use the phrase only in English, regardless of audience"], correct: 0, explanation: "A notice must state the specific purpose in understandable language. The Excel seed assessment similarly contrasts a concrete use, such as session reminders, with the vague phrase 'programme purposes'." },
+    { module: "Field comprehension", topic: "Language choice", text: "A Jharkhand team has an English notice but is meeting beneficiaries who primarily understand Hindi. What is the most appropriate field-ready approach?", options: ["Use or explain the notice in a language the person understands, while keeping English available if requested", "Use English because it is the team’s standard document", "Ask a family member to sign without any explanation", "Skip the notice when the queue is long"], correct: 0, explanation: "Rule 3 guidance calls for clear, plain-language notices available in English or a scheduled Indian language. The readiness seed emphasises that the person should be able to understand the notice." },
+    { module: "Proof of notice", topic: "Record keeping", text: "After a verbal explanation at a low-literacy outreach session, what record best supports the organisation's ability to show that notice was given?", options: ["A dated record of the explanation, language used, beneficiary response, field staff, and witness where applicable", "A staff member’s assurance that they usually explain it", "No record, because a spoken notice cannot be documented", "Only the programme’s monthly attendance total"], correct: 0, explanation: "The verbal-consent template calls for these field details, including a witness, and the Data Fiduciary carries the burden of proving notice and consent where consent is relied upon." },
+    { module: "Rights route", topic: "Accessible contact", text: "A beneficiary asks who can help correct an incorrect mobile number after enrolment. Which notice feature should make the answer available?", options: ["A designated contact or mechanism for access, correction, erasure, withdrawal, and complaints", "A general promise that the database is secure", "The name of every volunteer on duty", "A statement that changes are never allowed"], correct: 0, explanation: "Rule 3 notice requirements include a way to withdraw consent, exercise rights, and complain. The enrolment template also directs people to the designated contact for correction and other rights." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
