@@ -8066,6 +8066,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 108,
+  slug: "retention-control-checkpoint",
+  shortTitle: "Retention Control Checkpoint",
+  pageTitle: "DPDP Quiz 108 - Retention Control Checkpoint",
+  eyebrow: "DPDP Quiz 108 | Retention Control Checkpoint",
+  heroTitle: "Retention Control Checkpoint: Retain, Notify, Erase",
+  heroIntro: "Five lifecycle decisions for turning retention and erasure requirements into dependable platform and field controls.",
+  cardDescription: "Five retention-control scenarios on documented schedules, legal holds, 48-hour notices, individual erasure requests, and audit-log preservation.",
+  audience: "Programme data stewards, platform owners, records teams, and implementation leads",
+  focus: "Retention schedules, purpose completion, erasure controls, notices, and audit evidence",
+  resultSummary: "This set reinforces that lifecycle controls need a documented retention decision, workable erasure mechanisms, advance notice, and evidence that essential logs are retained.",
+  topics: [{ label: "Project stage", text: "Retention review, automated erasure, and records closure" }, { label: "Obligation area", text: "Section 8(7) and Rule 8 lifecycle controls" }, { label: "Source", text: "Approved act-and-rules-summary.md and data-audit-checklist.md" }],
+  questions: [
+    { module: "Retention policy", topic: "Undocumented platform schedule", text: "A programme dashboard holds beneficiary contact details, but its owner cannot show a retention policy or review date. What is the most appropriate next step?", options: ["Document the retention purpose, period, review trigger, and erasure approach for the platform", "Keep all records indefinitely because storage is inexpensive", "Delete the entire dashboard immediately without checking operational or legal needs", "Ask every user to choose a different retention period"], correct: 0, explanation: "The audit checklist asks whether the platform has a documented retention policy. A defensible lifecycle decision should state why data is retained, when it is reviewed, and how it will be erased when no longer needed." },
+    { module: "Purpose completion", topic: "Closed follow-up programme", text: "A maternal-health follow-up programme has ended and the contact list is no longer needed for its stated purpose. No law requires the list to be kept. Which action best fits the approved guidance?", options: ["Initiate the approved erasure process because the stated purpose is no longer being served", "Keep the list for possible future campaigns", "Transfer it to a personal spreadsheet for convenience", "Publish it as an archived programme record"], correct: 0, explanation: "The summary states that personal data should be erased when consent is withdrawn or the specified purpose is no longer served, unless retention is required by law." },
+    { module: "Automated erasure", topic: "Advance notice", text: "A system is scheduled to automatically erase inactive beneficiary records on Friday. What communication control should be built into the process?", options: ["Notify the Data Principal at least 48 hours before erasure", "Send notice only after the records are deleted", "Avoid notification so no one asks questions", "Notify only internal administrators after the run"], correct: 0, explanation: "The approved Rule 8 guidance calls for notifying the Data Principal at least 48 hours before erasure. The checklist tests whether this process exists." },
+    { module: "Rights handling", topic: "Targeted deletion request", text: "A beneficiary asks to erase their record from a case-management system. The system can delete only an entire monthly export, not one person’s record. What gap should the owner address?", options: ["Build or adopt a controlled method to delete individual records on request, subject to lawful retention requirements", "Refuse all individual requests because batch exports exist", "Ask the beneficiary to wait until the next annual cleanup", "Delete unrelated people’s records with the same first name"], correct: 0, explanation: "The audit checklist specifically asks whether individual records can be deleted on request. The right to correction and erasure remains subject to any lawful requirement to retain data." },
+    { module: "Audit evidence", topic: "Security log cleanup", text: "During a storage cleanup, an administrator proposes deleting DHIS2 audit logs from six months ago along with expired beneficiary records. What should the review distinguish?", options: ["Preserve processing logs for at least one year while applying the relevant lifecycle rule to personal records", "Delete all logs whenever any beneficiary record reaches retention review", "Keep only screenshots of the most recent login", "Replace logs with an informal team memory of events"], correct: 0, explanation: "The approved summary sets a minimum one-year retention period for logs from the date of processing. Lifecycle cleanup should distinguish necessary audit evidence from personal records that are ready for erasure." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

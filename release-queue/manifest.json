@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-10-30T13:29:08.716Z",
-  "publishedThisRun": "quiz-97-beneficiary-rights-desk",
-  "latestPublishedFolder": "quiz-97-beneficiary-rights-desk",
-  "lastPublishedAt": "2026-10-30T13:26:35.881Z",
-  "lastPublishedOnLocalDate": "2026-10-30",
+  "updatedAt": "2026-10-31T13:27:57.056Z",
+  "publishedThisRun": "quiz-98-data-quality-sharing-gate",
+  "latestPublishedFolder": "quiz-98-data-quality-sharing-gate",
+  "lastPublishedAt": "2026-10-31T13:27:28.145Z",
+  "lastPublishedOnLocalDate": "2026-10-31",
   "lastNotificationSentFor": "quiz-97-beneficiary-rights-desk",
   "queuedFolders": [
-    "quiz-98-data-quality-sharing-gate",
     "quiz-99-consent-withdrawal-pathway",
     "quiz-100-processor-assurance-gate",
     "quiz-101-jharkhand-notice-comprehension",
@@ -15,7 +14,8 @@
     "quiz-104-bihar-consent-choice-points",
     "quiz-105-advanced-child-data-safeguards",
     "quiz-106-odk-release-governance",
-    "quiz-107-notice-field-readiness"
+    "quiz-107-notice-field-readiness",
+    "quiz-108-retention-control-checkpoint"
   ],
   "queuedCount": 10
 }

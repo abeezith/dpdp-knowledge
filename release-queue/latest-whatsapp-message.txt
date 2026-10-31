@@ -1,7 +1,7 @@
-DPDP Quiz 97 | Beneficiary Rights Desk
+DPDP Quiz 98 | Data Quality Sharing Gate
 
-Five rights-desk scenarios on access requests, correcting records, erasure decisions, grievance routing, and responsible ownership.
+Five practical checks on data quality, purpose-specific sharing, least-privilege access, international transfers, and consent evidence.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-97-beneficiary-rights-desk/
+https://abeezith.github.io/dpdp-knowledge/quiz-98-data-quality-sharing-gate/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
