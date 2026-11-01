@@ -8088,6 +8088,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 109,
+  slug: "karuna-fellow-care-reporting-boundary",
+  shortTitle: "Karuna Fellow Care and Reporting Boundary",
+  pageTitle: "DPDP Quiz 109 - Karuna Fellow Care and Reporting Boundary",
+  eyebrow: "DPDP Quiz 109 | Karuna Fellow Care and Reporting Boundary",
+  heroTitle: "Karuna Fellow Decisions: Care, Records, and Reporting",
+  heroIntro: "Five field decisions on applying higher care to health information while separating direct care from reporting and media uses.",
+  cardDescription: "Five Karuna Fellow scenarios on child-care records, consent for reporting, verbal-consent evidence, confidential conversations, and safe escalation.",
+  audience: "Karuna Fellows, field supervisors, programme officers, and health programme teams",
+  focus: "Health-data care, children’s data, consent records, confidentiality, and escalation",
+  resultSummary: "This set reinforces the difference between care delivery and secondary uses, with practical safeguards for health and children’s information.",
+  topics: [{ label: "People role", text: "Karuna Fellow field decisions" }, { label: "Field setting", text: "Nutrition, maternal-health, and household outreach" }, { label: "Source", text: "Approved learning-modules.md and consent-templates.md" }],
+  questions: [
+    { module: "Children’s health care", topic: "Care record versus donor story", text: "At a nutrition session, a Karuna Fellow records a child’s weight to guide care. Later, a communications colleague asks for the child’s photo and progress details for a donor story. What is the best next step?", options: ["Use the care record and photo together because the child attended the session", "Obtain parent or guardian consent for the donor-story use before sharing identifiable material", "Share only the child’s first name, which removes the need for consent", "Ask the child alone to approve the story"], correct: 1, explanation: "The learning module distinguishes direct health care from photography and reporting. Identifiable material for a donor story is a separate purpose and needs appropriate parent or guardian consent for a child." },
+    { module: "Health confidentiality", topic: "Family enquiry", text: "A beneficiary’s relative asks a Karuna Fellow whether the beneficiary is receiving treatment for a health condition. The beneficiary has not authorised disclosure. What should the Fellow do?", options: ["Confirm the condition because family members are entitled to know", "Avoid disclosing the health information and use the approved escalation route if help is needed", "Give the relative a screenshot of the programme record", "Discuss the information in the village group so others can assist"], correct: 1, explanation: "The role guidance says never to share a beneficiary’s health status with family or third parties without explicit consent. The safe response protects confidentiality and escalates appropriately." },
+    { module: "Verbal consent", topic: "Low-literacy home visit", text: "During a home visit, a beneficiary cannot read the enrolment form but agrees after the notice is explained in her language. Which record is most complete?", options: ["Only the field worker’s name and the word ‘agreed’", "The date, location, data fields, purpose, language, beneficiary’s response, field staff, and witness", "A later message saying the household seemed comfortable", "No record because the agreement was spoken"], correct: 1, explanation: "The verbal-consent template requires a detailed record, including the explanation language, response, field staff, and witness. This supports a clear and verifiable field process." },
+    { module: "Purpose limitation", topic: "Training presentation", text: "A Karuna Fellow has case notes collected for maternal-health follow-up. A training team wants to display the notes in a workshop. Which approach best respects the guidance?", options: ["Share the full notes because internal training is never a new use", "Use a genuinely de-identified example or obtain consent for the specific training use", "Replace the beneficiary’s name but retain every other identifying detail", "Post the notes in the workshop chat for convenience"], correct: 1, explanation: "Data collected for care should not be reused casually for another purpose. A genuinely de-identified example or a specific consent route reduces the risk of exposing the beneficiary." },
+    { module: "Rights request", topic: "Correction at outreach", text: "A beneficiary says her recorded phone number is wrong and asks the Karuna Fellow to correct it. What should happen first?", options: ["Tell her corrections are allowed only at year-end", "Record the correction request and escalate it through the programme process", "Delete the entire programme database on the spot", "Ask a neighbour to decide whether the number is correct"], correct: 1, explanation: "The learning module directs frontline staff to record a rights request and escalate it to the Program Officer or supervisor. The organisation must then handle the request through its defined process." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
