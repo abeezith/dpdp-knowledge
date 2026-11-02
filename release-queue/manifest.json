@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-01T13:37:00.866Z",
-  "publishedThisRun": "quiz-99-consent-withdrawal-pathway",
-  "latestPublishedFolder": "quiz-99-consent-withdrawal-pathway",
-  "lastPublishedAt": "2026-11-01T13:37:00.866Z",
-  "lastPublishedOnLocalDate": "2026-11-01",
+  "updatedAt": "2026-11-02T13:35:24.833Z",
+  "publishedThisRun": "quiz-100-processor-assurance-gate",
+  "latestPublishedFolder": "quiz-100-processor-assurance-gate",
+  "lastPublishedAt": "2026-11-02T13:35:24.826Z",
+  "lastPublishedOnLocalDate": "2026-11-02",
   "lastNotificationSentFor": "quiz-99-consent-withdrawal-pathway",
   "queuedFolders": [
-    "quiz-100-processor-assurance-gate",
     "quiz-101-jharkhand-notice-comprehension",
     "quiz-102-advanced-rights-request-triage",
     "quiz-103-developer-privacy-release-check",
@@ -15,7 +14,8 @@
     "quiz-106-odk-release-governance",
     "quiz-107-notice-field-readiness",
     "quiz-108-retention-control-checkpoint",
-    "quiz-109-karuna-fellow-care-reporting-boundary"
+    "quiz-109-karuna-fellow-care-reporting-boundary",
+    "quiz-110-intermediate-rights-request-handoff"
   ],
   "queuedCount": 10
 }

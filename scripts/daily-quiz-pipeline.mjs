@@ -8110,6 +8110,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 110,
+  slug: "intermediate-rights-request-handoff",
+  shortTitle: "Intermediate Rights Request Handoff",
+  pageTitle: "DPDP Quiz 110 - Intermediate Rights Request Handoff",
+  eyebrow: "DPDP Quiz 110 | Intermediate Rights Request Handoff",
+  heroTitle: "Rights Requests: From First Conversation to Accountable Follow-Through",
+  heroIntro: "Five practical decisions on receiving, recording, routing, and resolving beneficiary requests without improvised disclosures.",
+  cardDescription: "Five intermediate scenarios on access, correction, withdrawal, grievance escalation, and nominated representatives.",
+  audience: "Programme officers, field supervisors, implementors, and data-handling teams",
+  focus: "Data Principal rights, request records, escalation routes, and safe communications",
+  resultSummary: "This set reinforces that a respectful first response is only the start: each request needs a clear record and accountable follow-through.",
+  topics: [{ label: "Lifecycle stage", text: "Rights requests and grievance handling" }, { label: "Difficulty", text: "Intermediate field-to-programme handoff" }, { label: "Source", text: "Approved learning-modules.md" }],
+  questions: [
+    { module: "Right to know", topic: "Village follow-up request", text: "At a village follow-up visit, a beneficiary asks, ‘What information do you hold about me, why are you using it, and who has received it?’ What should the field worker do?", options: ["Explain that only headquarters can ever hear the question", "Record the access request and route it through the defined programme process", "Read another beneficiary’s file as an example", "Ask the beneficiary to post the question publicly"], correct: 1, explanation: "The learning module describes a right to know what personal data is held, why it is used, and who it has been shared with. Frontline staff should record the request and route it through the organisation’s defined process rather than improvise." },
+    { module: "Correction", topic: "Duplicate household record", text: "A beneficiary says two household records have been created in her name and asks that the inaccurate duplicate be corrected. Which response best supports the rights process?", options: ["Log the correction request with the identifying details needed to investigate and send it to the responsible team", "Tell her duplicate records cannot be reviewed", "Delete every household record from the district immediately", "Ask another household to decide which record is right"], correct: 0, explanation: "A correction request needs a usable record and responsible follow-through. The module directs staff to document the request and escalate it through the programme route, not to make unsafe or blanket changes." },
+    { module: "Withdrawal", topic: "SMS reminder choice", text: "A beneficiary who previously agreed to health-session SMS reminders now asks to stop receiving them. What is the most appropriate first action?", options: ["Record the withdrawal and route it promptly so future reminder use can stop", "Keep sending reminders until the programme closes", "Require the beneficiary to explain why she changed her mind", "Treat the original agreement as permanent"], correct: 0, explanation: "The approved learning material says people can withdraw consent and that the process must be acted on through the defined route. Staff should record the request rather than make withdrawal difficult or ignore it." },
+    { module: "Grievance route", topic: "Unresolved deletion request", text: "A beneficiary says her earlier erasure request was not resolved and asks how to complain outside the organisation. What guidance should the programme give?", options: ["Use the organisation’s grievance route first; if still dissatisfied, she can complain to the Data Protection Board of India", "Go directly to a public social-media campaign", "Wait until the annual audit before raising any concern", "Ask a vendor to decide the complaint"], correct: 0, explanation: "The learning module explains that a person must first use the organisation’s grievance process before approaching the Data Protection Board of India if they remain dissatisfied." },
+    { module: "Right to nominate", topic: "Representative after incapacity", text: "A beneficiary wants her adult daughter to exercise her data rights if she becomes unable to do so herself. Which right is relevant?", options: ["Right to nominate", "Right to publish the beneficiary’s records", "Right to bypass all verification", "Right to give any staff member permanent access"], correct: 0, explanation: "The learning module identifies a right to nominate another person to exercise the Data Principal’s rights in the event of death or incapacity." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
