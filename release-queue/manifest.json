@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-02T13:37:18.857Z",
-  "publishedThisRun": "quiz-100-processor-assurance-gate",
-  "latestPublishedFolder": "quiz-100-processor-assurance-gate",
-  "lastPublishedAt": "2026-11-02T13:35:24.826Z",
-  "lastPublishedOnLocalDate": "2026-11-02",
+  "updatedAt": "2026-11-05T13:38:08.774Z",
+  "publishedThisRun": "quiz-101-jharkhand-notice-comprehension",
+  "latestPublishedFolder": "quiz-101-jharkhand-notice-comprehension",
+  "lastPublishedAt": "2026-11-05T13:38:08.770Z",
+  "lastPublishedOnLocalDate": "2026-11-05",
   "lastNotificationSentFor": "quiz-100-processor-assurance-gate",
   "queuedFolders": [
-    "quiz-101-jharkhand-notice-comprehension",
     "quiz-102-advanced-rights-request-triage",
     "quiz-103-developer-privacy-release-check",
     "quiz-104-bihar-consent-choice-points",
@@ -15,7 +14,8 @@
     "quiz-107-notice-field-readiness",
     "quiz-108-retention-control-checkpoint",
     "quiz-109-karuna-fellow-care-reporting-boundary",
-    "quiz-110-intermediate-rights-request-handoff"
+    "quiz-110-intermediate-rights-request-handoff",
+    "quiz-111-phase-two-consent-manager-readiness"
   ],
   "queuedCount": 10
 }

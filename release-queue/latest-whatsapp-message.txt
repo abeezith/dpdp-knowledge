@@ -1,7 +1,7 @@
-DPDP Quiz 100 | Processor Assurance Gate
+DPDP Quiz 101 | Jharkhand Notice Comprehension
 
-Five applied checks on processor contracts, least-privilege access, purpose boundaries, logs, and accountable sharing.
+Five Jharkhand field scenarios on notice timing, local-language explanation, itemised collection, voluntary choice, and consent evidence.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-100-processor-assurance-gate/
+https://abeezith.github.io/dpdp-knowledge/quiz-101-jharkhand-notice-comprehension/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

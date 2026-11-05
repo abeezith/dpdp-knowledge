@@ -8132,6 +8132,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 111,
+  slug: "phase-two-consent-manager-readiness",
+  shortTitle: "Phase II Consent Manager Readiness",
+  pageTitle: "DPDP Quiz 111 - Phase II Consent Manager Readiness",
+  eyebrow: "DPDP Quiz 111 | Phase II Consent Manager Readiness",
+  heroTitle: "Consent Manager Readiness: Timeline, Roles, and Practical Choices",
+  heroIntro: "Five scenario-based decisions on the Consent Manager framework, ABDM integration planning, and the transition from Phase II preparation to full compliance.",
+  cardDescription: "Five practical questions on Consent Manager purpose, the Phase II milestone, ABDM readiness, and a disciplined compliance timeline.",
+  audience: "ABDM integration teams, programme leads, IT governance, and privacy coordinators",
+  focus: "Consent Manager framework, registration, readiness planning, and DPDP rollout milestones",
+  resultSummary: "This set clarifies what the Consent Manager framework changes, who should prepare, and why Phase II readiness does not replace broader DPDP work.",
+  topics: [{ label: "Obligation area", text: "Consent Manager framework and DPBI registration" }, { label: "Project stage", text: "Phase II readiness and Phase III preparation" }, { label: "Source", text: "Approved compliance-timeline.md and act-and-rules-summary.md" }],
+  questions: [
+    { module: "Consent Manager", topic: "Core purpose", text: "An ABDM integration team asks what a Consent Manager is intended to help Data Principals do. Which answer best matches the approved DPDP guidance?", options: ["Give, manage, review, and withdraw consent through a registered intermediary", "Transfer ownership of all programme data to a software vendor", "Replace every organisation’s grievance process", "Approve any new data purpose without the person’s involvement"], correct: 0, explanation: "The approved Act-and-Rules summary describes a Consent Manager as a registered intermediary through which Data Principals can give, manage, review, and withdraw consent." },
+    { module: "Phase II", topic: "Framework milestone", text: "A project plan marks 13 November 2026 as a key DPDP date. What becomes active on that date according to the compliance timeline?", options: ["The Phase II Consent Manager framework", "All Phase III notice and breach rules", "A ban on every data processor", "Automatic deletion of all beneficiary data"], correct: 0, explanation: "The compliance timeline identifies 13 November 2026 as Phase II, when Rule 4 and the Consent Manager framework become active." },
+    { module: "Registration", topic: "Choosing an intermediary", text: "A programme wants to present itself to beneficiaries as a Consent Manager for an ABDM-linked workflow. What must it account for before doing so?", options: ["Consent Managers require registration with the DPBI", "Any field worker can declare the programme a Consent Manager", "Registration is required only after a breach", "Registration is optional if consent is collected verbally"], correct: 0, explanation: "The Phase II timeline states that registration with the DPBI is required for Consent Managers; a programme should not assume that ordinary consent collection makes it one." },
+    { module: "Readiness planning", topic: "ABDM workstream", text: "In an ABDM-linked programme, which workstream is specifically identified for Consent Manager readiness by November 2026?", options: ["BIDA and IT aligning the integration with Phase II", "Communications publishing beneficiary case notes", "Field teams removing every consent record", "Finance deciding complaints without IT input"], correct: 0, explanation: "The compliance timeline assigns Consent Manager readiness for ABDM integration teams to BIDA and IT by November 2026." },
+    { module: "Roadmap judgment", topic: "Preparation versus completion", text: "A manager says, ‘We are ready for the Consent Manager framework, so we can defer all remaining DPDP preparation until later.’ What is the best response?", options: ["Phase II readiness is useful, but full notice, consent, rights, security, breach, and children’s-data obligations remain part of Phase III preparation", "Consent Manager readiness ends all other DPDP obligations permanently", "Only processor contracts still matter after Phase II", "The organisation no longer needs a privacy contact point"], correct: 0, explanation: "The timeline treats November 2026 as a prudent readiness target while Phase III brings the wider core obligations into force on 13 May 2027. Consent Manager work is one preparation stream, not a substitute for the rest." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
