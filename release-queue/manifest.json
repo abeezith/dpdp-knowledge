@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-05T13:38:08.774Z",
+  "updatedAt": "2026-11-05T13:40:00.000Z",
   "publishedThisRun": "quiz-101-jharkhand-notice-comprehension",
   "latestPublishedFolder": "quiz-101-jharkhand-notice-comprehension",
   "lastPublishedAt": "2026-11-05T13:38:08.770Z",
   "lastPublishedOnLocalDate": "2026-11-05",
-  "lastNotificationSentFor": "quiz-100-processor-assurance-gate",
+  "lastNotificationSentFor": "quiz-101-jharkhand-notice-comprehension",
   "queuedFolders": [
     "quiz-102-advanced-rights-request-triage",
     "quiz-103-developer-privacy-release-check",
