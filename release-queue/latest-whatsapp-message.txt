@@ -1,7 +1,7 @@
-DPDP Quiz 101 | Jharkhand Notice Comprehension
+DPDP Quiz 102 | Advanced Rights Request Triage
 
-Five Jharkhand field scenarios on notice timing, local-language explanation, itemised collection, voluntary choice, and consent evidence.
+Five advanced rights-desk scenarios on safe identity checks, correction, erasure limits, nomination, and grievance routing.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-101-jharkhand-notice-comprehension/
+https://abeezith.github.io/dpdp-knowledge/quiz-102-advanced-rights-request-triage/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

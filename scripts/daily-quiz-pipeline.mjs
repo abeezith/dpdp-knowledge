@@ -8154,6 +8154,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 112,
+  slug: "breach-evidence-preservation",
+  shortTitle: "Breach Evidence Preservation",
+  pageTitle: "DPDP Quiz 112 - Breach Evidence Preservation",
+  eyebrow: "DPDP Quiz 112 | Breach Evidence Preservation",
+  heroTitle: "Breach Evidence Preservation: Contain Without Losing the Facts",
+  heroIntro: "Five incident-response scenarios on preserving evidence, documenting containment, and preparing an accurate notification trail after a suspected personal-data breach.",
+  cardDescription: "Five practical incident scenarios on evidence preservation, containment records, field escalation, and accountable breach follow-through.",
+  audience: "IT teams, programme leads, field supervisors, and staff who may discover incidents",
+  focus: "Evidence preservation, containment, assessment records, escalation, and notification support",
+  resultSummary: "This set reinforces the discipline of preserving the facts before remediation and keeping a usable record of every response step.",
+  topics: [{ label: "Project stage", text: "Incident containment and evidence preservation" }, { label: "Difficulty", text: "Advanced operational judgment" }, { label: "Source", text: "Approved breach-response-sop.md" }],
+  questions: [
+    { module: "Digital breach", topic: "Cloud activity evidence", text: "An IT analyst sees unusual bulk downloads from a programme cloud-storage account. Before changing access settings, what should be captured first?", options: ["Relevant logs and evidence of the activity, such as timestamps and download records", "Only a verbal account from the analyst", "A new public folder containing the affected files", "The analyst's personal opinion about who caused it"], correct: 0, explanation: "The breach SOP directs teams to preserve logs before they change. Capturing objective evidence supports containment, assessment, and later reporting." },
+    { module: "Wrong-recipient disclosure", topic: "Deletion request record", text: "A beneficiary file is sent to the wrong email address. The recipient confirms by phone that it was deleted. What should the sender still do?", options: ["Treat the phone call as enough and keep no record", "Document the deletion request and the recipient's response as part of the incident record", "Delete all internal email logs to close the matter", "Wait for the annual audit to note it"], correct: 1, explanation: "For a file sent to a wrong recipient, the SOP calls for requesting deletion and documenting the response. The record is needed even if containment appears successful." },
+    { module: "Physical breach", topic: "Field-device facts", text: "A field phone containing offline forms is stolen. Which detail is most useful to document immediately alongside the loss report?", options: ["The device model, time and place of loss, and the types of data stored on it", "Only the field worker's preferred replacement phone", "A promise that no beneficiary will complain", "Every unrelated contact in the field worker's address book"], correct: 0, explanation: "The physical-breach checklist calls for recording device details, date and location, and what data was held, such as offline forms or cached records. These facts support the risk assessment." },
+    { module: "Containment record", topic: "Action timeline", text: "During an account-compromise response, IT isolates a database, resets credentials, and contacts the programme lead. What should make the response record most reliable?", options: ["A timestamped record of each action and who performed it", "A final summary written from memory several weeks later", "Only the name of the database", "A decision to stop recording once the system is isolated"], correct: 0, explanation: "The SOP requires response actions to be documented. A timestamped action trail makes it possible to assess containment and prepare accurate reports." },
+    { module: "Post-breach review", topic: "Preventing recurrence", text: "After a contained incident, the review identifies that staff used an unapproved sharing channel. Which follow-through best matches the SOP?", options: ["Complete root-cause analysis and address the gap through a technical fix, process change, or training", "Close the incident because the data was recovered", "Keep the finding informal so it cannot be revisited", "Use the same channel but rename the group"], correct: 0, explanation: "The post-breach checklist requires root-cause analysis and action to address the security gap. The response should reduce the chance of the same failure recurring." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
