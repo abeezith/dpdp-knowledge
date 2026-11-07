@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-06T13:41:00.000Z",
-  "publishedThisRun": "quiz-102-advanced-rights-request-triage",
-  "latestPublishedFolder": "quiz-102-advanced-rights-request-triage",
-  "lastPublishedAt": "2026-11-06T13:36:37.847Z",
-  "lastPublishedOnLocalDate": "2026-11-06",
+  "updatedAt": "2026-11-07T13:37:13.198Z",
+  "publishedThisRun": "quiz-103-developer-privacy-release-check",
+  "latestPublishedFolder": "quiz-103-developer-privacy-release-check",
+  "lastPublishedAt": "2026-11-07T13:37:13.197Z",
+  "lastPublishedOnLocalDate": "2026-11-07",
   "lastNotificationSentFor": "quiz-102-advanced-rights-request-triage",
   "queuedFolders": [
-    "quiz-103-developer-privacy-release-check",
     "quiz-104-bihar-consent-choice-points",
     "quiz-105-advanced-child-data-safeguards",
     "quiz-106-odk-release-governance",
@@ -15,7 +14,8 @@
     "quiz-109-karuna-fellow-care-reporting-boundary",
     "quiz-110-intermediate-rights-request-handoff",
     "quiz-111-phase-two-consent-manager-readiness",
-    "quiz-112-breach-evidence-preservation"
+    "quiz-112-breach-evidence-preservation",
+    "quiz-113-bihar-field-notice-walkthrough"
   ],
   "queuedCount": 10
 }

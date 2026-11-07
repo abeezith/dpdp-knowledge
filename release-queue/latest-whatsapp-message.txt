@@ -1,7 +1,7 @@
-DPDP Quiz 102 | Advanced Rights Request Triage
+DPDP Quiz 103 | Developer Privacy Release Check
 
-Five advanced rights-desk scenarios on safe identity checks, correction, erasure limits, nomination, and grievance routing.
+Five developer scenarios on minimum collection, protected offline forms, audit evidence, recovery checks, and child-data release gates.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-102-advanced-rights-request-triage/
+https://abeezith.github.io/dpdp-knowledge/quiz-103-developer-privacy-release-check/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

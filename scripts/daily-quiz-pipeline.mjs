@@ -8176,6 +8176,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 113,
+  slug: "bihar-field-notice-walkthrough",
+  shortTitle: "Bihar Field Notice Walkthrough",
+  pageTitle: "DPDP Quiz 113 - Bihar Field Notice Walkthrough",
+  eyebrow: "DPDP Quiz 113 | Bihar Field Notice Walkthrough",
+  heroTitle: "Bihar Field Notice Walkthrough: Explain, Record, Respect",
+  heroIntro: "Five Bihar field-enrolment choices on giving a clear notice, recording consent, and respecting a beneficiary's choices before collection.",
+  cardDescription: "Five Bihar field scenarios on local-language notices, documented consent, purpose limits, and practical withdrawal routes.",
+  audience: "Field implementors, supervisors, programme officers, and enrolment teams",
+  focus: "Consent notices, local-language explanation, verbal-consent records, and purpose-specific collection",
+  resultSummary: "This set helps field teams turn notice and consent requirements into respectful, verifiable enrolment practice.",
+  topics: [{ label: "Location", text: "Bihar field enrolment and beneficiary communication" }, { label: "Obligation area", text: "Notice, consent, and withdrawal" }, { label: "Source", text: "Approved consent-templates.md, learning-modules.md, and act-and-rules-summary.md" }],
+  questions: [
+    { module: "Field notice", topic: "Language choice", text: "At a Bihar enrolment camp, a beneficiary says she cannot read the English notice. What should the field implementor do before requesting consent?", options: ["Explain the notice in a language she understands and make the notice available in the relevant language", "Ask her to sign because the English version is the official one", "Skip the notice if the queue is long", "Tell her the purpose can be explained after data collection"], correct: 0, explanation: "Rule 3 guidance requires a clear, plain-language notice and allows English or a scheduled Indian language. The consent templates specifically recommend Hindi and relevant regional-language versions for Bihar field programmes." },
+    { module: "Notice content", topic: "What to explain", text: "A worker reads a notice aloud before collecting contact details. Which combination must the explanation cover for consent-based collection?", options: ["The itemised data, the specific purpose, and how the person can withdraw consent", "Only the programme name and the worker's job title", "A promise that data may be useful for any future project", "Only the service benefits available that day"], correct: 0, explanation: "The Act-and-Rules summary states that consent notices identify the data collected, the specific purpose, and the withdrawal method. These details allow the person to make an informed choice." },
+    { module: "Verbal consent", topic: "Low-literacy record", text: "A beneficiary gives consent verbally after the notice is read out. Which record best makes that consent verifiable?", options: ["Record the language used and the beneficiary's exact response, with a witness where the template requires it", "Write only 'consent received' at the end of the day", "Rely on the worker's memory if a question arises", "Ask another beneficiary to confirm without recording anything"], correct: 0, explanation: "The verbal-consent template captures the language used and the beneficiary's response, and includes certification by the person explaining it and a witness. A bare, undocumented verbal yes is not verifiable." },
+    { module: "Purpose limitation", topic: "New donor-report use", text: "A Bihar programme collected phone numbers for appointment reminders. A communications colleague later wants to use them to recruit beneficiaries for a donor-report interview. What should happen first?", options: ["Check whether the new use is covered by the original purpose and obtain specific consent if it is not", "Use the numbers because the organisation collected them already", "Send the request anonymously from a personal phone", "Treat silence after one message as consent"], correct: 0, explanation: "The learning module cautions that consent for programme delivery may not cover a separate communications purpose. Consent must be specific, and silence is not affirmative consent." },
+    { module: "Withdrawal", topic: "Practical route", text: "A beneficiary asks how to stop receiving reminder messages and withdraw consent. What is the most appropriate field response?", options: ["Give the designated contact or office route stated in the notice and record the request for follow-through", "Say withdrawal is available only at the next annual camp", "Require a written legal notice before accepting the request", "Explain that consent cannot be withdrawn after enrolment"], correct: 0, explanation: "The consent templates provide a contact or office route for withdrawal, and the Act-and-Rules summary requires withdrawal to be as easy as giving consent. A clear, usable route should be given at the point of request." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
