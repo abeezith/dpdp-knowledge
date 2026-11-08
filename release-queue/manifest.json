@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-07T13:39:33.593Z",
-  "publishedThisRun": "quiz-103-developer-privacy-release-check",
-  "latestPublishedFolder": "quiz-103-developer-privacy-release-check",
-  "lastPublishedAt": "2026-11-07T13:37:13.197Z",
-  "lastPublishedOnLocalDate": "2026-11-07",
+  "updatedAt": "2026-11-08T13:37:51.872Z",
+  "publishedThisRun": "quiz-104-bihar-consent-choice-points",
+  "latestPublishedFolder": "quiz-104-bihar-consent-choice-points",
+  "lastPublishedAt": "2026-11-08T13:37:15.465Z",
+  "lastPublishedOnLocalDate": "2026-11-08",
   "lastNotificationSentFor": "quiz-103-developer-privacy-release-check",
   "queuedFolders": [
-    "quiz-104-bihar-consent-choice-points",
     "quiz-105-advanced-child-data-safeguards",
     "quiz-106-odk-release-governance",
     "quiz-107-notice-field-readiness",
@@ -15,7 +14,8 @@
     "quiz-110-intermediate-rights-request-handoff",
     "quiz-111-phase-two-consent-manager-readiness",
     "quiz-112-breach-evidence-preservation",
-    "quiz-113-bihar-field-notice-walkthrough"
+    "quiz-113-bihar-field-notice-walkthrough",
+    "quiz-114-advanced-breach-notification-clock"
   ],
   "queuedCount": 10
 }

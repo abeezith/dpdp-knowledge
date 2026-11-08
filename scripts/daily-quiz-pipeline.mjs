@@ -8198,6 +8198,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 114,
+  slug: "advanced-breach-notification-clock",
+  shortTitle: "Advanced Breach Notification Clock",
+  pageTitle: "DPDP Quiz 114 - Advanced Breach Notification Clock",
+  eyebrow: "DPDP Quiz 114 | Advanced Breach Notification Clock",
+  heroTitle: "Breach Notification Clock: Act Early, Report Clearly",
+  heroIntro: "Five advanced incident-response decisions on when the clock starts, what affected people need to know, and how to prepare a timely, evidence-based report.",
+  cardDescription: "Five advanced breach-response questions on notification timing, beneficiary communication, escalation, and the 72-hour report.",
+  audience: "IT teams, programme leads, privacy coordinators, and incident-response decision makers",
+  focus: "Breach awareness, early notification, Data Principal communication, and detailed reporting",
+  resultSummary: "This set reinforces the need to report promptly, communicate practically, and develop the detail in parallel rather than waiting for a perfect investigation.",
+  topics: [{ label: "Obligation area", text: "Personal data breach notification and reporting" }, { label: "Difficulty", text: "Advanced incident-response judgment" }, { label: "Source", text: "Approved breach-response-sop.md" }],
+  questions: [
+    { module: "Awareness", topic: "When the clock starts", text: "A Gandhi Fellow discovers that a beneficiary spreadsheet was shared in the wrong WhatsApp group at 9:00 a.m., but the programme lead is informed only at noon. From which point should the organisation treat the breach-response clock as running?", options: ["9:00 a.m., when any person in the organisation became aware", "Noon, when the programme lead was informed", "The next working day, after the facts are complete", "Only when a beneficiary complains"], correct: 0, explanation: "The approved breach SOP says the 72-hour deadline runs from when any person in the organisation becomes aware. Escalation must begin immediately; the team should not wait for management awareness or a complaint." },
+    { module: "Beneficiary notice", topic: "Useful protective guidance", text: "A health-data incident may expose beneficiaries to impersonation calls. Which addition makes the notification to affected people most useful?", options: ["A practical warning to watch for suspicious calls and a contact point for questions", "A statement that no one may discuss the incident", "Only the internal ticket number", "A promise that the investigation will never be documented"], correct: 0, explanation: "The SOP says the notice should explain likely consequences, steps the organisation is taking, protective steps people can take, and a privacy contact. Practical guidance helps people respond to the risk." },
+    { module: "Low connectivity", topic: "Reaching affected people", text: "Many affected beneficiaries have unreliable phones and do not receive SMS. What approach best follows the breach SOP?", options: ["Use field teams to notify people in person where practical and document attempts and outcomes", "Wait until every phone becomes reachable before taking other action", "Post beneficiary names in a public notice", "Assume notification is unnecessary outside cities"], correct: 0, explanation: "For low-connectivity field beneficiaries, the SOP recommends in-person notification where practical and requires teams to document notification attempts and outcomes." },
+    { module: "Initial report", topic: "Essential early facts", text: "During the first report to the DPBI, the team knows the likely number affected, where the incident occurred, when it was discovered, and the type of data involved. What should it do?", options: ["Submit the available initial facts without delay while investigating further", "Wait until every cause and mitigation action is fully confirmed", "Send only the affected system name", "Avoid recording the location because it may change"], correct: 0, explanation: "The SOP calls for an initial report without delay and lists the nature, extent, timing, location, and likely impact. Investigation can continue in parallel; a late complete report is not the preferred response." },
+    { module: "Detailed report", topic: "72-hour follow-through", text: "What is a key element of the detailed breach report due within 72 hours that goes beyond the initial notification?", options: ["The facts and circumstances, mitigation measures, findings on cause, and steps to prevent recurrence", "A list of every unrelated programme activity", "A guarantee that no future incident can occur", "Only the original one-line incident title"], correct: 0, explanation: "The detailed-report checklist includes a fuller description, circumstances and reasons, mitigation, findings on who caused the breach, remedial steps, and the record of notifications to affected Data Principals." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

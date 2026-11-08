@@ -1,7 +1,7 @@
-DPDP Quiz 103 | Developer Privacy Release Check
+DPDP Quiz 104 | Bihar Consent Choice Points
 
-Five developer scenarios on minimum collection, protected offline forms, audit evidence, recovery checks, and child-data release gates.
+Five Bihar enrolment scenarios on clear notices, active consent, optional fields, sharing explanations, and withdrawal handling.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-103-developer-privacy-release-check/
+https://abeezith.github.io/dpdp-knowledge/quiz-104-bihar-consent-choice-points/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
