@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-08T13:39:10.100Z",
-  "publishedThisRun": "quiz-104-bihar-consent-choice-points",
-  "latestPublishedFolder": "quiz-104-bihar-consent-choice-points",
-  "lastPublishedAt": "2026-11-08T13:37:15.465Z",
-  "lastPublishedOnLocalDate": "2026-11-08",
+  "updatedAt": "2026-11-09T13:30:29.968Z",
+  "publishedThisRun": "quiz-105-advanced-child-data-safeguards",
+  "latestPublishedFolder": "quiz-105-advanced-child-data-safeguards",
+  "lastPublishedAt": "2026-11-09T13:28:41.845Z",
+  "lastPublishedOnLocalDate": "2026-11-09",
   "lastNotificationSentFor": "quiz-104-bihar-consent-choice-points",
   "queuedFolders": [
-    "quiz-105-advanced-child-data-safeguards",
     "quiz-106-odk-release-governance",
     "quiz-107-notice-field-readiness",
     "quiz-108-retention-control-checkpoint",
@@ -15,7 +14,8 @@
     "quiz-111-phase-two-consent-manager-readiness",
     "quiz-112-breach-evidence-preservation",
     "quiz-113-bihar-field-notice-walkthrough",
-    "quiz-114-advanced-breach-notification-clock"
+    "quiz-114-advanced-breach-notification-clock",
+    "quiz-115-enrolment-data-design"
   ],
   "queuedCount": 10
 }

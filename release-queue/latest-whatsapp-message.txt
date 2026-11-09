@@ -1,7 +1,7 @@
-DPDP Quiz 104 | Bihar Consent Choice Points
+DPDP Quiz 105 | Advanced Child Data Safeguards
 
-Five Bihar enrolment scenarios on clear notices, active consent, optional fields, sharing explanations, and withdrawal handling.
+Five advanced child-data scenarios on verifiable parental consent, safe purpose boundaries, photo use, profiling risks, and escalation.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-104-bihar-consent-choice-points/
+https://abeezith.github.io/dpdp-knowledge/quiz-105-advanced-child-data-safeguards/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

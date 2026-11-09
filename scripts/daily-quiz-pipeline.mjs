@@ -8220,6 +8220,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 115,
+  slug: "enrolment-data-design",
+  shortTitle: "Enrolment Data Design",
+  pageTitle: "DPDP Quiz 115 - Enrolment Data Design",
+  eyebrow: "DPDP Quiz 115 | Enrolment Data Design",
+  heroTitle: "Enrolment Data Design: Collect With Purpose",
+  heroIntro: "Five field-design decisions on choosing necessary fields, explaining them before collection, and preserving a defensible consent trail.",
+  cardDescription: "Five enrolment-design scenarios on minimum fields, specific purposes, optional choices, notice clarity, and consent evidence.",
+  audience: "Form designers, field implementors, programme officers, and enrolment supervisors",
+  focus: "Data minimisation, itemised notices, freely given consent, purpose limits, and proof of consent",
+  resultSummary: "This set reinforces that good enrolment design starts with a defined purpose for every field and a clear record of the person’s informed choice.",
+  topics: [{ label: "Project stage", text: "Enrolment form design and pre-collection review" }, { label: "Obligation area", text: "Data minimisation, notice, consent, and accountability" }, { label: "Source", text: "Approved act-and-rules-summary.md, consent-templates.md, learning-modules.md, and Excel Quiz 1 seed themes" }],
+  questions: [
+    { module: "Data minimisation", topic: "Unused form field", text: "A village enrolment form adds a household's caste category because it might be useful for a future analysis, but the current service workflow has no use for it. What should the form owner do?", options: ["Remove the field unless a defined current purpose justifies collecting it", "Keep it mandatory because future analysis is always a valid purpose", "Collect it without mentioning it in the notice", "Ask the field worker to decide household by household"], correct: 0, explanation: "The approved guidance requires data minimisation and a specific purpose. A field that has no defined role in the present service or programme workflow should not be collected merely because it could be useful later." },
+    { module: "Itemised notice", topic: "Explaining each field", text: "Before a maternal-health follow-up enrolment, which explanation best supports an informed choice about the data being requested?", options: ["We will record your name, phone number, and visit details to arrange and follow up on your health sessions", "We need some information for programme purposes", "Give us all details now and we will explain later", "Your data may be used for any activity we start in the future"], correct: 0, explanation: "The consent and notice guidance calls for itemised data and a specific, plain-language purpose. Naming the relevant fields and their concrete use lets the person understand what they are agreeing to." },
+    { module: "Free consent", topic: "Unrelated condition", text: "A programme form makes an optional communications preference mandatory before a beneficiary can receive a health appointment. What is the most appropriate redesign?", options: ["Separate the communications choice from the appointment service and make it a genuine optional choice", "Keep it mandatory because the programme provides the appointment", "Replace the checkbox with a pre-ticked box", "Ask the field worker to tick it after the beneficiary leaves"], correct: 0, explanation: "Valid consent must be freely given and cannot be bundled as a condition for an unrelated service. A communications preference should be separately presented so declining it does not block the health appointment." },
+    { module: "Purpose change", topic: "New survey invitation", text: "A team collected contact details to schedule nutrition sessions. Months later it wants to invite the same people to an unrelated research survey. What should the team check before sending invitations?", options: ["Whether the new use is covered by the original stated purpose, and obtain a fresh specific choice if it is not", "Whether the old contact list is still easy to export", "Whether the survey has a shorter title than the original programme", "Whether a colleague can send invitations from a personal number"], correct: 0, explanation: "Consent is purpose-specific. The approved learning material distinguishes the original programme use from a new purpose, so the team should check coverage and use a fresh, specific consent path when needed." },
+    { module: "Accountability", topic: "Showing consent", text: "During a review, a supervisor needs to show that a beneficiary was given the right notice and agreed to the enrolment processing. Which evidence is most useful?", options: ["A dated consent record linked to the notice or notice version, the stated purpose, and the beneficiary's affirmative response", "A claim that the field team usually explains privacy", "Only a list of everyone who attended the camp", "A blank copy of the form with no beneficiary record"], correct: 0, explanation: "The Data Fiduciary bears the burden of showing that notice was given and consent obtained. A dated record tied to the relevant notice, purpose, and affirmative response provides much stronger evidence than a general assurance." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
