@@ -1,7 +1,7 @@
-DPDP Quiz 105 | Advanced Child Data Safeguards
+DPDP Quiz 106 | ODK Release Governance
 
-Five advanced child-data scenarios on verifiable parental consent, safe purpose boundaries, photo use, profiling risks, and escalation.
+Five ODK release-stage scenarios on approving minimum fields, authorised form control, HTTPS, version retirement, and field-device readiness.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-105-advanced-child-data-safeguards/
+https://abeezith.github.io/dpdp-knowledge/quiz-106-odk-release-governance/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

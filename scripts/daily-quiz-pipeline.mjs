@@ -8242,6 +8242,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 116,
+  slug: "dhis2-access-hygiene",
+  shortTitle: "DHIS2 Access Hygiene",
+  pageTitle: "DPDP Quiz 116 - DHIS2 Access Hygiene",
+  eyebrow: "DPDP Quiz 116 | DHIS2 Access Hygiene",
+  heroTitle: "DHIS2 Access Hygiene: Limit, Review, Evidence",
+  heroIntro: "Five practical platform-governance decisions on controlling access, protecting exports, and maintaining evidence for a DPDP-ready DHIS2 deployment.",
+  cardDescription: "Five DHIS2 scenarios on role-based access, inactive accounts, audit trails, exports, and protected backups.",
+  audience: "DHIS2 administrators, programme data leads, developers, and platform auditors",
+  focus: "RBAC, account review, audit trails, export controls, and recovery readiness",
+  resultSummary: "This set reinforces that platform access is an ongoing control: permissions, logs, exports, and backups all need deliberate review.",
+  topics: [{ label: "Platform", text: "DHIS2 programme-data administration" }, { label: "Lifecycle stage", text: "Access management and operational audit" }, { label: "Source", text: "Approved data-audit-checklist.md and learning-modules.md" }],
+  questions: [
+    { module: "RBAC", topic: "New district assignment", text: "A DHIS2 coordinator moves from one district to another but retains access to both districts' beneficiary data. What should the administrator do?", options: ["Review the role and remove the former district access unless there is a current authorised need", "Keep both permissions because access is easier to retain", "Give the coordinator a shared administrator account", "Export both districts' records to the coordinator's personal device"], correct: 0, explanation: "The approved checklist requires role-based access limited to authorised need. When responsibilities change, access should be reviewed and reduced to the current assignment." },
+    { module: "Account review", topic: "Dormant user", text: "A quarterly DHIS2 review finds an account with no login for fourteen months. Which control best follows the checklist?", options: ["Review and deactivate or restrict the inactive account", "Leave it active until a breach proves it is risky", "Change only the display name", "Share the password with the replacement staff member"], correct: 0, explanation: "The DHIS2 checklist sets a target of no accounts older than 12 months with no login and calls for a process to review and deactivate inactive accounts." },
+    { module: "Audit trail", topic: "Access investigation", text: "A supervisor needs to determine who opened a beneficiary record during an internal review. Which platform control should make this possible?", options: ["An enabled audit trail that records relevant access activity", "A staff WhatsApp group asking who remembers", "A monthly screenshot of the homepage", "A public spreadsheet of all beneficiary names"], correct: 0, explanation: "The checklist calls for an enabled DHIS2 audit trail and access logs. Those records provide evidence of who accessed what and when." },
+    { module: "Export control", topic: "CSV request", text: "A programme colleague asks for a full beneficiary-level CSV ‘just in case it is useful later’. What is the most appropriate response?", options: ["Confirm a defined authorised need and use restricted, logged export access; otherwise do not release it", "Send the entire CSV because the colleague works in the organisation", "Upload it to an unrestricted shared drive", "Replace names with IDs and assume no further control is needed"], correct: 0, explanation: "The DHIS2 checklist requires data-export access to be restricted to authorised roles, while the learning guidance emphasises minimum necessary use. A vague future use is not enough to justify a broad export." },
+    { module: "Backup readiness", topic: "Restoration test", text: "A platform owner says daily encrypted backups are sufficient and has never tried restoring one. What gap remains?", options: ["Backups should be tested for restorability", "No gap; backup testing is unnecessary", "Only public copies need testing", "The owner should delete old backup records immediately"], correct: 0, explanation: "The general checklist requires both a regular backup process and evidence that backups can be restored. An untested backup may not support recovery when it is needed." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
