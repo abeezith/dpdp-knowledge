@@ -8264,6 +8264,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 117,
+  slug: "retention-evidence-review",
+  shortTitle: "Retention Evidence Review",
+  pageTitle: "DPDP Quiz 117 - Retention Evidence Review",
+  eyebrow: "DPDP Quiz 117 | Retention Evidence Review",
+  heroTitle: "Retention Evidence Review: Keep What Is Needed, Erase What Is Not",
+  heroIntro: "Five practical lifecycle decisions on documented retention, pre-erasure notice, protected backups, and showing that personal data is not kept without purpose.",
+  cardDescription: "Five intermediate scenarios on retention schedules, automated erasure notice, backup controls, and evidence of purpose-complete deletion.",
+  audience: "Programme data owners, platform administrators, auditors, and implementation teams",
+  focus: "Retention policy, erasure controls, 48-hour notice, backup handling, and audit evidence",
+  resultSummary: "This set reinforces that retention is an active control: teams must define a purpose-based schedule, notify before automated erasure, and retain evidence that the controls work.",
+  topics: [{ label: "Lifecycle stage", text: "Retention, erasure, and audit evidence" }, { label: "Difficulty", text: "Intermediate operational review" }, { label: "Source", text: "Approved data-audit-checklist.md and compliance-timeline.md" }],
+  questions: [
+    { module: "Retention policy", topic: "Undefined legacy records", text: "A programme platform holds beneficiary records from a closed activity, but no one can identify a current purpose or retention period for them. What should the data owner do first?", options: ["Review the records against a documented retention policy and determine whether erasure is required", "Keep them indefinitely because storage is inexpensive", "Copy them to more shared drives before deciding", "Wait for a beneficiary to complain before reviewing them"], correct: 0, explanation: "The approved checklist asks whether a documented retention policy exists and whether data is kept only as long as necessary. Records from a closed activity need a purpose-and-retention review, not indefinite passive storage." },
+    { module: "Automated erasure", topic: "Beneficiary warning", text: "A system is configured to delete inactive beneficiary records automatically when the retention period ends. What communication control should be built into that workflow?", options: ["Notify the affected person at least 48 hours before automated erasure", "Notify only after deletion has completed", "Give notice only if the person lives in the same district as the server", "Avoid notice so the deletion is faster"], correct: 0, explanation: "The compliance timeline and audit checklist identify a process to notify people 48 hours before automated erasure. That notice gives the person a practical opportunity to act before deletion." },
+    { module: "Erasure controls", topic: "Spreadsheet duplicate", text: "After records are erased from the main application, an audit finds an old downloadable spreadsheet with the same identifiable records in a team folder. What does this show?", options: ["Erasure controls should cover duplicate copies and their storage locations, not only the main application", "The main-system deletion makes every other copy irrelevant", "The spreadsheet can stay because it was created earlier", "The team should email the spreadsheet broadly to confirm it exists"], correct: 0, explanation: "The audit checklist asks whether technical controls enforce erasure. A workable lifecycle control must account for identifiable duplicates and the places where they are stored, rather than deleting only one system copy." },
+    { module: "Backup review", topic: "Retention alignment", text: "An auditor asks whether deleted production records remain in backups and for how long. Which evidence best supports a DPDP-ready answer?", options: ["A documented backup-retention approach, access protection, and a tested process for managing backup copies", "A verbal assurance that backups exist somewhere", "A list of backup file names without any retention or access details", "A promise never to restore backups"], correct: 0, explanation: "The approved checklist requires encrypted backups, documented retention periods, and tested restore capability. Evidence should show that backup copies are protected and governed rather than silently retaining personal data without control." },
+    { module: "Audit evidence", topic: "Proof of deletion", text: "During a DPDP review, a platform owner says, ‘Our team deletes records when asked.’ What evidence would make that claim most credible?", options: ["A documented process with retention periods, technical erasure controls, and records showing the control has been applied", "A general statement that staff understand privacy", "A screenshot of the platform home page", "A list of unrelated training attendees"], correct: 0, explanation: "The audit checklist is evidence-oriented: it asks for a documented retention policy, technical controls, and pre-erasure notice. A repeatable process and records of its use are stronger than an informal assurance." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

@@ -1,7 +1,7 @@
-DPDP Quiz 106 | ODK Release Governance
+DPDP Quiz 107 | Notice Field Readiness
 
-Five ODK release-stage scenarios on approving minimum fields, authorised form control, HTTPS, version retirement, and field-device readiness.
+Five field-ready notice scenarios on timing, specific purposes, understandable language, evidence of explanation, and routes for exercising rights.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-106-odk-release-governance/
+https://abeezith.github.io/dpdp-knowledge/quiz-107-notice-field-readiness/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
