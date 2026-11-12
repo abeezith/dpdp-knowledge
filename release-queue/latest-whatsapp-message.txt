@@ -1,7 +1,7 @@
-DPDP Quiz 107 | Notice Field Readiness
+DPDP Quiz 108 | Retention Control Checkpoint
 
-Five field-ready notice scenarios on timing, specific purposes, understandable language, evidence of explanation, and routes for exercising rights.
+Five retention-control scenarios on documented schedules, legal holds, 48-hour notices, individual erasure requests, and audit-log preservation.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-107-notice-field-readiness/
+https://abeezith.github.io/dpdp-knowledge/quiz-108-retention-control-checkpoint/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

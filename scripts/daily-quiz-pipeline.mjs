@@ -8286,6 +8286,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 118,
+  slug: "bi-analyst-sharing-thresholds",
+  shortTitle: "BI Analyst Sharing Thresholds",
+  pageTitle: "DPDP Quiz 118 - BI Analyst Sharing Thresholds",
+  eyebrow: "DPDP Quiz 118 | BI Analyst Sharing Thresholds",
+  heroTitle: "BI Analyst Sharing Thresholds: Aggregate First, Escalate When Needed",
+  heroIntro: "Five applied decisions for analysts preparing programme insights, donor reporting, research outputs, and partner data requests under DPDP guidance.",
+  cardDescription: "Five BI analyst scenarios on re-identification risk, external sharing checks, small-cell suppression, research boundaries, and media consent.",
+  audience: "BI analysts, programme data leads, evaluation teams, and report reviewers",
+  focus: "Aggregation, re-identification risk, sharing agreements, research limits, and identifiable media",
+  resultSummary: "This set reinforces the safe analytical default: use the least identifiable output, confirm purpose and sharing controls, and escalate unclear individual-level requests.",
+  topics: [{ label: "Role", text: "BI and data-analysis decision-making" }, { label: "Lifecycle stage", text: "Analysis, reporting, and external sharing" }, { label: "Source", text: "Approved role-guidance.md and learning-modules.md" }],
+  questions: [
+    { module: "Re-identification", topic: "Small village table", text: "A BI analyst prepares a block-level dashboard. One village row shows only two beneficiaries with a rare health condition, and local staff could infer who they are. What is the safest next step?", options: ["Suppress or further aggregate the small cell before sharing the dashboard", "Publish the row because names are absent", "Add the beneficiaries' ages to make the row clearer", "Send the raw records to all field teams for confirmation"], correct: 0, explanation: "The BI guidance says that data can remain personal when people can be identified indirectly. Aggregation and small-cell suppression reduce this re-identification risk before an output is shared." },
+    { module: "External sharing", topic: "Donor request", text: "An international donor asks for the individual-level file behind a programme outcome chart. What should the analyst verify before any release?", options: ["Whether the original notice covers the sharing, a data-sharing agreement exists, the purpose is in scope, and an aggregated alternative is possible", "Only whether the donor promises to keep the file private", "Whether the chart has already been sent", "Whether the file can be compressed before email"], correct: 0, explanation: "The role guidance requires checks for original-purpose coverage and an appropriate sharing agreement, and asks teams to prefer anonymised or aggregated data when it can meet the need." },
+    { module: "Pseudonymisation", topic: "Coded case file", text: "A researcher receives a dataset where names are replaced with participant IDs, but the programme team still holds a table that links every ID to a person. How should the analyst classify the shared dataset?", options: ["It remains personal data because people can still be re-identified", "It is automatically anonymous because names were removed", "It is public information once it has IDs", "It can be posted online if the reference table stays internal"], correct: 0, explanation: "Replacing names with IDs is pseudonymisation, not anonymisation, when a link back to individuals remains possible. The dataset still needs the relevant DPDP-purpose and security controls." },
+    { module: "Research boundary", topic: "Individual targeting", text: "An evaluation team proposes to use a statistical dataset to decide which named households should be denied a service. Which point makes the research or statistical exemption unsuitable for that use?", options: ["The processing would be used to make a decision specific to an individual", "The dataset has more than one column", "The analysis has a deadline", "The team plans to make a chart"], correct: 0, explanation: "The learning material says the research or statistical exemption may apply only where the work is not used to make a decision specific to an individual Data Principal, alongside other safeguards." },
+    { module: "Media reporting", topic: "Identified case study", text: "A donor report combines an identifiable beneficiary photograph, name, and quote with outcome statistics. What should the analyst require before treating it as a routine aggregate report?", options: ["Explicit photography or media consent for the identified use", "Only a note that the report is for a donor", "Removal of the programme logo", "A promise that the donor will not print the report"], correct: 0, explanation: "The approved role guidance distinguishes aggregate reporting from identified photographs, names, and quotes. Identified media needs the relevant explicit photography or media consent." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

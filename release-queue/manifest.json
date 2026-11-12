@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-11T13:30:11.127Z",
-  "publishedThisRun": "quiz-107-notice-field-readiness",
-  "latestPublishedFolder": "quiz-107-notice-field-readiness",
-  "lastPublishedAt": "2026-11-11T13:29:56.539Z",
-  "lastPublishedOnLocalDate": "2026-11-11",
+  "updatedAt": "2026-11-12T13:28:13.966Z",
+  "publishedThisRun": "quiz-108-retention-control-checkpoint",
+  "latestPublishedFolder": "quiz-108-retention-control-checkpoint",
+  "lastPublishedAt": "2026-11-12T13:28:13.963Z",
+  "lastPublishedOnLocalDate": "2026-11-12",
   "lastNotificationSentFor": "quiz-107-notice-field-readiness",
   "queuedFolders": [
-    "quiz-108-retention-control-checkpoint",
     "quiz-109-karuna-fellow-care-reporting-boundary",
     "quiz-110-intermediate-rights-request-handoff",
     "quiz-111-phase-two-consent-manager-readiness",
@@ -15,7 +14,8 @@
     "quiz-114-advanced-breach-notification-clock",
     "quiz-115-enrolment-data-design",
     "quiz-116-dhis2-access-hygiene",
-    "quiz-117-retention-evidence-review"
+    "quiz-117-retention-evidence-review",
+    "quiz-118-bi-analyst-sharing-thresholds"
   ],
   "queuedCount": 10
 }
