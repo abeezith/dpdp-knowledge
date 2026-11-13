@@ -1,7 +1,7 @@
-DPDP Quiz 108 | Retention Control Checkpoint
+DPDP Quiz 109 | Karuna Fellow Care and Reporting Boundary
 
-Five retention-control scenarios on documented schedules, legal holds, 48-hour notices, individual erasure requests, and audit-log preservation.
+Five Karuna Fellow scenarios on child-care records, consent for reporting, verbal-consent evidence, confidential conversations, and safe escalation.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-108-retention-control-checkpoint/
+https://abeezith.github.io/dpdp-knowledge/quiz-109-karuna-fellow-care-reporting-boundary/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

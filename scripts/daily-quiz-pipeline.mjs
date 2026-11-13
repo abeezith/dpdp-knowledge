@@ -8308,6 +8308,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 119,
+  slug: "developer-breach-containment",
+  shortTitle: "Developer Breach Containment",
+  pageTitle: "DPDP Quiz 119 - Developer Breach Containment",
+  eyebrow: "DPDP Quiz 119 | Developer Breach Containment",
+  heroTitle: "Developer Breach Containment: Preserve, Isolate, Escalate",
+  heroIntro: "Five technical-response decisions on protecting evidence, limiting exposure, and escalating a suspected platform breach without delay.",
+  cardDescription: "Five developer scenarios on breach containment, log preservation, credential control, and evidence-led remediation.",
+  audience: "Developers, platform administrators, IT teams, and technical incident coordinators",
+  focus: "System isolation, log preservation, compromised credentials, breach scoping, and recurrence prevention",
+  resultSummary: "This set reinforces the technical sequence that matters most: preserve facts, contain exposure, escalate quickly, and record actions for accountable follow-through.",
+  topics: [{ label: "People role", text: "Developer and IT incident-response decisions" }, { label: "Project stage", text: "Technical breach containment and investigation" }, { label: "Source", text: "Approved breach-response-sop.md and role-guidance.md" }],
+  questions: [
+    { module: "Detection", topic: "Suspicious database access", text: "A developer sees unusual overnight downloads from a programme database and suspects an account was compromised. What should the developer do first?", options: ["Preserve the relevant logs and alert BIDA or the IT Head while isolating the affected access", "Quietly delete the download history before anyone notices", "Wait for the weekly operations meeting to see whether the pattern repeats", "Reset the entire database without saving any evidence"], correct: 0, explanation: "The breach SOP directs technical teams to preserve logs before changes, isolate affected systems or access, and alert BIDA or IT immediately. Evidence is needed to assess the breach and support reporting." },
+    { module: "Containment", topic: "Compromised credential", text: "An investigation confirms that a staff password may have been exposed. Which containment step is specifically appropriate?", options: ["Revoke the compromised credential and force password resets for affected users as needed", "Keep the account active so the team can watch it for a month", "Share the password with a colleague to maintain service", "Publish the password history for transparency"], correct: 0, explanation: "The technical-response checklist calls for revoking compromised credentials and forcing password resets for affected users. This limits ongoing unauthorised access while the incident is assessed." },
+    { module: "Evidence", topic: "Fix before facts", text: "A developer wants to immediately patch a suspected vulnerability that may have exposed beneficiary data. What is the most defensible sequence?", options: ["Capture the relevant logs and incident evidence, then contain and remediate through the incident process", "Patch silently and avoid documenting the issue", "Wait until the detailed report is finished before reducing exposure", "Ask field teams to delete their local notes instead"], correct: 0, explanation: "The SOP says not to attempt to fix a technical breach before documenting it. Preserve evidence first, then isolate and remediate so the organisation can assess facts, notifications, and prevention steps." },
+    { module: "Scoping", topic: "What was accessible", text: "After a cloud-storage account is compromised, which question should the technical team answer during the early assessment?", options: ["Which accounts or roles were compromised and what personal data they could access", "Which staff member has the most storage quota", "Whether the team can postpone all documentation", "Whether a new dashboard colour would improve security"], correct: 0, explanation: "The SOP directs the team to identify compromised accounts or roles and the data accessible from them, alongside checking for unusual downloads or API calls. These facts determine scope and likely impact." },
+    { module: "Post-breach", topic: "Preventing recurrence", text: "A breach review finds that an export endpoint allowed broad access because role checks were missing. What follow-through best matches the approved guidance?", options: ["Implement the technical access-control fix, document it, and address the root security gap", "Close the incident because the affected export was recovered", "Keep the endpoint unchanged to avoid disrupting users", "Remove the audit trail so the issue is harder to revisit"], correct: 0, explanation: "The post-breach checklist requires root-cause analysis and addressing the security gap through a technical fix, process change, or training. Role guidance also requires RBAC so authorised people see only the data they need." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
