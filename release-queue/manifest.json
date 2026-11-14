@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-13T13:36:45.438Z",
-  "publishedThisRun": "quiz-109-karuna-fellow-care-reporting-boundary",
-  "latestPublishedFolder": "quiz-109-karuna-fellow-care-reporting-boundary",
-  "lastPublishedAt": "2026-11-13T13:33:38.029Z",
-  "lastPublishedOnLocalDate": "2026-11-13",
+  "updatedAt": "2026-11-14T13:36:14.453Z",
+  "publishedThisRun": "quiz-110-intermediate-rights-request-handoff",
+  "latestPublishedFolder": "quiz-110-intermediate-rights-request-handoff",
+  "lastPublishedAt": "2026-11-14T13:36:14.452Z",
+  "lastPublishedOnLocalDate": "2026-11-14",
   "lastNotificationSentFor": "quiz-109-karuna-fellow-care-reporting-boundary",
   "queuedFolders": [
-    "quiz-110-intermediate-rights-request-handoff",
     "quiz-111-phase-two-consent-manager-readiness",
     "quiz-112-breach-evidence-preservation",
     "quiz-113-bihar-field-notice-walkthrough",
@@ -15,7 +14,8 @@
     "quiz-116-dhis2-access-hygiene",
     "quiz-117-retention-evidence-review",
     "quiz-118-bi-analyst-sharing-thresholds",
-    "quiz-119-developer-breach-containment"
+    "quiz-119-developer-breach-containment",
+    "quiz-120-nikshay-processor-assurance"
   ],
   "queuedCount": 10
 }

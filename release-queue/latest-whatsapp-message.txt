@@ -1,7 +1,7 @@
-DPDP Quiz 109 | Karuna Fellow Care and Reporting Boundary
+DPDP Quiz 110 | Intermediate Rights Request Handoff
 
-Five Karuna Fellow scenarios on child-care records, consent for reporting, verbal-consent evidence, confidential conversations, and safe escalation.
+Five intermediate scenarios on access, correction, withdrawal, grievance escalation, and nominated representatives.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-109-karuna-fellow-care-reporting-boundary/
+https://abeezith.github.io/dpdp-knowledge/quiz-110-intermediate-rights-request-handoff/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

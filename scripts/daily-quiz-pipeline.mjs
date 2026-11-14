@@ -8330,6 +8330,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 120,
+  slug: "nikshay-processor-assurance",
+  shortTitle: "Nikshay Processor Assurance",
+  pageTitle: "DPDP Quiz 120 - Nikshay Processor Assurance",
+  eyebrow: "DPDP Quiz 120 | Nikshay Processor Assurance",
+  heroTitle: "Nikshay Processor Assurance: Use Only What the Programme Authorises",
+  heroIntro: "Five applied decisions on role clarity, authorised access, local-copy controls, and processor assurance in a Nikshay-linked programme workflow.",
+  cardDescription: "Five Nikshay assurance scenarios on processor role clarity, authorised access, local-copy limits, purpose boundaries, and written safeguards.",
+  audience: "Programme leads, Nikshay users, platform administrators, and implementation partners",
+  focus: "Processor role clarity, authorised access, local-copy limits, purpose boundaries, and documented safeguards",
+  resultSummary: "This set reinforces a disciplined Nikshay default: confirm the authorised role and purpose, limit access and copies, and keep the relevant processing safeguards documented.",
+  topics: [{ label: "Platform setting", text: "Nikshay-linked tuberculosis programme operations" }, { label: "Obligation area", text: "Processor assurance, access control, and purpose limitation" }, { label: "Source", text: "Approved data-audit-checklist.md and role-guidance.md" }],
+  questions: [
+    { module: "Role clarity", topic: "Documenting the relationship", text: "A new team joins a Nikshay-linked programme and assumes it can decide new uses for the records because it can see them in the system. What should the team establish first?", options: ["Whether Piramal Foundation's Data Processor role and permitted processing are formally documented with the relevant programme authority", "That every user may choose a new use if it helps operations", "That access alone makes the team the Data Fiduciary", "That records can be copied into any internal tracker"], correct: 0, explanation: "The Nikshay checklist calls for Piramal Foundation's role as Data Processor to be formally documented and for a written agreement covering processing obligations. System access does not by itself authorise new purposes." },
+    { module: "Access control", topic: "Shared login request", text: "A district colleague asks a Nikshay user to share credentials so the colleague can check one case quickly. What is the best response?", options: ["Use individual authorised access and do not share credentials", "Share the password for the day and change it later", "Export the full case list to a personal device instead", "Post the credentials in the team group so everyone can help"], correct: 0, explanation: "The approved Nikshay checklist requires login credentials to be restricted to authorised staff. Shared credentials undermine access control and make accountability for system activity unclear." },
+    { module: "Local-copy control", topic: "Offline convenience file", text: "A field coordinator downloads a Nikshay case list to a personal laptop for convenience between visits. Which control best matches the checklist?", options: ["Avoid local storage of Nikshay data and use only authorised programme access arrangements", "Keep the file forever if the laptop has a password", "Email the file to all supervisors as a backup", "Rename the file so it is harder to find"], correct: 0, explanation: "The Nikshay checklist specifically asks whether Nikshay data is avoided from local storage and not downloaded to personal devices. Convenience does not replace controlled, authorised access." },
+    { module: "Purpose limitation", topic: "Unrelated analytics", text: "A team proposes using named Nikshay records to identify households for an unrelated education campaign. What should happen before any reuse?", options: ["Confirm whether the proposed use is authorised and within the NTEP programme purpose; otherwise do not use the records for it", "Proceed because the campaign may benefit the same households", "Remove the Nikshay logo and treat the records as general programme data", "Send the records to a partner for a second opinion"], correct: 0, explanation: "The checklist says Nikshay data should be used only for NTEP programme purposes, not for other analytics without separate authorisation. A potentially helpful unrelated use does not by itself create permission." },
+    { module: "Processor assurance", topic: "Integration vendor", text: "A vendor supports a TruNAT-to-Nikshay integration and can handle patient-related data during troubleshooting. What assurance should the programme seek?", options: ["A formal data-processing contract that sets the vendor's processing and security obligations", "A verbal promise that the vendor is experienced", "A public spreadsheet listing every patient affected by troubleshooting", "An open shared account so the vendor can work faster"], correct: 0, explanation: "The Nikshay checklist calls for a formal data-processing contract for relevant vendor integrations, while the role guidance expects processor arrangements to specify security requirements. This creates an accountable basis for access and safeguards." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
