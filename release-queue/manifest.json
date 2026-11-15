@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-14T13:36:14.453Z",
-  "publishedThisRun": "quiz-110-intermediate-rights-request-handoff",
-  "latestPublishedFolder": "quiz-110-intermediate-rights-request-handoff",
-  "lastPublishedAt": "2026-11-14T13:36:14.452Z",
-  "lastPublishedOnLocalDate": "2026-11-14",
+  "updatedAt": "2026-11-15T13:27:22.429Z",
+  "publishedThisRun": "quiz-111-phase-two-consent-manager-readiness",
+  "latestPublishedFolder": "quiz-111-phase-two-consent-manager-readiness",
+  "lastPublishedAt": "2026-11-15T13:26:17.858Z",
+  "lastPublishedOnLocalDate": "2026-11-15",
   "lastNotificationSentFor": "quiz-110-intermediate-rights-request-handoff",
   "queuedFolders": [
-    "quiz-111-phase-two-consent-manager-readiness",
     "quiz-112-breach-evidence-preservation",
     "quiz-113-bihar-field-notice-walkthrough",
     "quiz-114-advanced-breach-notification-clock",
@@ -15,7 +14,8 @@
     "quiz-117-retention-evidence-review",
     "quiz-118-bi-analyst-sharing-thresholds",
     "quiz-119-developer-breach-containment",
-    "quiz-120-nikshay-processor-assurance"
+    "quiz-120-nikshay-processor-assurance",
+    "quiz-121-gandhi-fellow-community-records"
   ],
   "queuedCount": 10
 }

@@ -1,7 +1,7 @@
-DPDP Quiz 110 | Intermediate Rights Request Handoff
+DPDP Quiz 111 | Phase II Consent Manager Readiness
 
-Five intermediate scenarios on access, correction, withdrawal, grievance escalation, and nominated representatives.
+Five practical questions on Consent Manager purpose, the Phase II milestone, ABDM readiness, and a disciplined compliance timeline.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-110-intermediate-rights-request-handoff/
+https://abeezith.github.io/dpdp-knowledge/quiz-111-phase-two-consent-manager-readiness/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

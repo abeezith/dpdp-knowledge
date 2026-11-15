@@ -8352,6 +8352,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 121,
+  slug: "gandhi-fellow-community-records",
+  shortTitle: "Gandhi Fellow Community Records",
+  pageTitle: "DPDP Quiz 121 - Gandhi Fellow Community Records",
+  eyebrow: "DPDP Quiz 121 | Gandhi Fellow Community Records",
+  heroTitle: "Community Records: Explain, Respect, Escalate",
+  heroIntro: "Five field-facing decisions on household-survey notice, respectful refusals, photography, audio recordings, and safe escalation during community work.",
+  cardDescription: "Five Gandhi Fellow scenarios on clear notice, limited collection, media consent, recording choices, and safe handling of community requests.",
+  audience: "Gandhi Fellows, community mobilisers, field coordinators, and programme officers",
+  focus: "Informed consent, refusal, media and audio choices, corrections, and escalation",
+  resultSummary: "This set reinforces a community-work default: explain first, collect only what is agreed, keep media separate, and escalate requests rather than improvising.",
+  topics: [{ label: "People role", text: "Gandhi Fellow community and household work" }, { label: "Lifecycle stage", text: "Collection, documentation, and request handling" }, { label: "Source", text: "Approved role-guidance.md and consent-templates.md" }],
+  questions: [
+    { module: "Household survey", topic: "Simple notice", text: "Before beginning a household survey, what should a Gandhi Fellow explain so a community member can make an informed choice?", options: ["What information will be collected, why it is needed, and that the person may ask for changes or deletion", "Only that the survey is important to the programme", "That all answers are compulsory once the visitor arrives", "That the data will be discussed later if there is time"], correct: 0, explanation: "The Gandhi Fellow guidance calls for a simple explanation of the data, programme purpose, and the person's ability to seek correction or deletion before collection begins." },
+    { module: "Refusal", topic: "Optional income field", text: "During a maternal-health survey, a participant agrees to speak about care access but refuses to disclose household income. What should the Gandhi Fellow do?", options: ["Record the income field as refused and continue only with the information the participant agrees to provide", "Estimate an income range from the neighbourhood", "End the interaction only after insisting income is mandatory", "Ask another household member to provide the answer without explanation"], correct: 0, explanation: "The role guidance says a person may say no to collection and that Fellows should not force or invent an answer. Record the refusal and proceed only where the programme can still do so appropriately." },
+    { module: "Photography", topic: "Village event recap", text: "A Fellow wants to photograph an identifiable beneficiary at a village event for a donor presentation. Which step is required before taking and using the image?", options: ["Explain the intended external use and obtain the appropriate photography consent", "Take the photo first because the event is public", "Rely on the person's survey consent for all future media use", "Post the image only in an internal group so no consent is needed"], correct: 0, explanation: "The Gandhi Fellow guidance treats an identifiable photograph as personal data. For reports, websites, social media, or donor presentations, use the photography consent notice after explaining the intended use." },
+    { module: "Audio recording", topic: "Interview notes", text: "A community member agrees to an interview but declines an audio recording for a Fellow's notes. What is the right response?", options: ["Do not record; continue with non-recorded notes only if the person is comfortable", "Record discreetly because the interview itself was accepted", "Ask a colleague to record from a distance", "Treat silence after the refusal as approval"], correct: 0, explanation: "The role guidance says recording a conversation is processing personal data. The Fellow should explain the recording in advance and, if the person says no, not record it." },
+    { module: "Correction request", topic: "Wrong household detail", text: "A community member says a household detail on the programme list is wrong. What should the Gandhi Fellow do next?", options: ["Note the correction and inform the supervisor for the record to be updated", "Tell the person the list cannot be changed", "Delete every household record from the device immediately", "Share the list in a WhatsApp group to ask who is correct"], correct: 0, explanation: "The Gandhi Fellow quick card says to note a correction and inform the supervisor. The request should be handled through the programme's record-correction process, not dismissed or exposed publicly." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
