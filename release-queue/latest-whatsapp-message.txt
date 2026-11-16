@@ -1,7 +1,7 @@
-DPDP Quiz 111 | Phase II Consent Manager Readiness
+DPDP Quiz 112 | Breach Evidence Preservation
 
-Five practical questions on Consent Manager purpose, the Phase II milestone, ABDM readiness, and a disciplined compliance timeline.
+Five incident-response scenarios on preserving evidence, documenting containment, and preparing an accurate notification trail after a suspected personal-data breach.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-111-phase-two-consent-manager-readiness/
+https://abeezith.github.io/dpdp-knowledge/quiz-112-breach-evidence-preservation/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
