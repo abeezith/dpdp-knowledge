@@ -8374,6 +8374,50 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 122,
+  slug: "cross-border-transfer-checkpoint",
+  shortTitle: "Cross-Border Transfer Checkpoint",
+  pageTitle: "DPDP Quiz 122 - Cross-Border Transfer Checkpoint",
+  eyebrow: "DPDP Quiz 122 | Cross-Border Transfer Checkpoint",
+  heroTitle: "Cross-Border Transfer: Map, Check, Protect",
+  heroIntro: "Five operational decisions on mapping overseas data flows, checking current restrictions, limiting access, and recording accountable approvals.",
+  cardDescription: "Five operational checks for overseas data flows: map the transfer, verify current restrictions, minimise access, and record safeguards.",
+  audience: "Programme leads, platform owners, BI teams, and vendor managers",
+  focus: "Transfer mapping, restriction checks, least-privilege access, and accountable sharing records",
+  resultSummary: "This set reinforces that cross-border transfers need a current restriction check, a defined purpose, minimum necessary data, and documented safeguards.",
+  topics: [{ label: "Obligation area", text: "Cross-border transfer governance" }, { label: "Lifecycle stage", text: "Vendor selection, sharing, and access review" }, { label: "Source", text: "Approved act-and-rules-summary.md and data-audit-checklist.md" }],
+  questions: [
+    { module: "Data inventory", topic: "Hosted platform mapping", text: "A programme plans to use an overseas cloud platform for beneficiary case records. What should the team establish before moving any records?", options: ["That the platform has the lowest price, with no further review", "The data categories, transfer destination, purpose, and safeguards needed for the flow", "Only the number of staff who prefer the platform", "That an overseas vendor is automatically approved"], correct: 1, explanation: "The audit checklist calls for a record of where personal data is held, including whether it is in India or abroad. Mapping the data, destination, purpose, and safeguards enables an accountable review." },
+    { module: "Transfer restriction check", topic: "Current government direction", text: "Before a cross-border transfer is activated, what is the safest compliance check?", options: ["Check whether a current government notification restricts transfer to the proposed country or territory", "Assume that a contract clause replaces all legal checks", "Send a sample of personal data first to test the service", "Rely on an old vendor presentation"], correct: 0, explanation: "The approved Act-and-Rules summary explains that transfers are permitted except to countries or territories restricted by government notification. The restriction check must be current and documented." },
+    { module: "Vendor access", topic: "Least-privilege support", text: "An overseas vendor needs to troubleshoot a dashboard. Which access arrangement best follows the data-minimisation and security guidance?", options: ["Give all vendor engineers permanent access to the production database", "Export a full beneficiary file to a shared folder for convenience", "Give time-bound, role-based access only to the data needed for the support task and log the activity", "Ask a field worker to share screenshots over a personal messaging app"], correct: 2, explanation: "The approved guidance emphasises minimum necessary access, role-based controls, and auditability. Support access should be narrow, controlled, and reviewable rather than broad or permanent." },
+    { module: "Processor accountability", topic: "Transfer evidence", text: "What record best supports a defensible decision to share personal data with an overseas service provider?", options: ["An undocumented verbal assurance from the provider", "A record of the purpose, data involved, destination, approval, processor obligations, and security safeguards", "A list of unrelated project deadlines", "Only a screenshot of the provider's home page"], correct: 1, explanation: "The audit guidance calls for data-sharing records and evidence that privacy controls are in place. Documenting the purpose, destination, safeguards, and accountable approvals makes the flow reviewable." },
+    { module: "Purpose limitation", topic: "Research reuse request", text: "A regional team wants to send identifiable programme data to an overseas research partner for a new analysis. What should happen before the transfer?", options: ["Confirm the new purpose is authorised, assess whether the data can be anonymised or minimised, and complete the required sharing review", "Reuse the data because it was already collected once", "Send the whole database because research teams may need it later", "Let an individual staff member decide without a recorded review"], correct: 0, explanation: "A new analysis is a new use to assess. The approved materials emphasise purpose limitation, data minimisation, anonymisation where possible, and documented review before external sharing." }
+  ]
+});
+
+quizCatalog.push({
+  number: 123,
+  slug: "advanced-notice-quality-review",
+  shortTitle: "Advanced Notice Quality Review",
+  pageTitle: "DPDP Quiz 123 - Advanced Notice Quality Review",
+  eyebrow: "DPDP Quiz 123 | Advanced Notice Quality Review",
+  heroTitle: "Notice Quality Review: Specific, Understandable, Accountable",
+  heroIntro: "Five advanced review decisions for making a beneficiary notice specific, understandable, evidenced, and ready for real field use.",
+  cardDescription: "Five advanced notice-review scenarios on clear purposes, understandable language, proof of delivery, legacy data, and rights routing.",
+  audience: "Programme leads, implementors, compliance reviewers, and platform owners",
+  focus: "Notice specificity, language testing, evidence, legacy-data notice, and rights contact routes",
+  resultSummary: "This set reinforces that a notice is operational evidence: it must be clear before collection, usable by the person, and supported by a reliable record.",
+  topics: [{ label: "Difficulty", text: "Advanced notice-quality review" }, { label: "Lifecycle stage", text: "Design, collection, and legacy-data remediation" }, { label: "Source", text: "Approved consent-templates.md, learning-modules.md, and Excel Quiz 1–3 notice seeds" }],
+  questions: [
+    { module: "Purpose wording", topic: "Generic programme language", text: "During a quality review, a notice says personal data is collected 'for programme purposes.' What change is most important?", options: ["Replace it with the actual service, follow-up, or reporting purpose in plain language", "Keep it because broad wording covers future activities", "Remove the purpose entirely to shorten the notice", "Add a legal disclaimer instead of describing the use"], correct: 0, explanation: "The approved templates require the specific programme purpose to be stated. General wording does not help a person understand why their information is needed." },
+    { module: "Comprehension", topic: "Local-language field test", text: "A Hindi notice has been translated for a Jharkhand field programme. What is the strongest next quality check?", options: ["Ask a small group of intended beneficiaries to explain the notice back in their own words", "Assume the translation is understood because it uses a local script", "Give the notice only after enrolment is finished", "Replace the notice with a staff-only checklist"], correct: 0, explanation: "The assessment workbook's notice guidance recommends testing comprehension with real beneficiaries. A translation should be understandable in practice, not merely available on paper." },
+    { module: "Delivery evidence", topic: "Verifiable notice", text: "Which record best demonstrates that a notice was given before an enrolment conversation began?", options: ["A dated form, app record, register entry, or other traceable acknowledgement tied to the interaction", "A team member's memory at the end of the quarter", "A blank copy of the notice stored in a shared folder", "A donor presentation that describes the programme"], correct: 0, explanation: "The approved assessment material treats a signed form, app record, tick box, or register entry as evidence that notice was delivered. The record should connect to the actual collection interaction." },
+    { module: "Legacy data", topic: "Earlier collection", text: "A project discovers beneficiary data collected before the current Rules rollout but still actively used for follow-up. What should its review plan include?", options: ["Giving or planning the required notice for the continuing use and documenting the remediation", "Ignoring the records because they pre-date the rollout", "Deleting the audit trail while keeping the data", "Sending the dataset to another partner for safekeeping"], correct: 0, explanation: "The notice assessment material expressly asks whether notice has been given or planned for information collected before the Rules. Continuing use calls for a documented remediation approach." },
+    { module: "Rights routing", topic: "Actionable help channel", text: "A draft notice explains the collection purpose well but only says 'contact the office for questions.' What critical improvement is needed?", options: ["Name a usable contact or mechanism for withdrawal and rights requests, including escalation information", "Add a longer organisation history", "State that signed consent cannot be changed", "Move the sentence into a separate staff manual"], correct: 0, explanation: "The approved notice guidance requires people to know where to seek help, withdraw consent, and request access, correction, or erasure, with the relevant complaint route explained." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

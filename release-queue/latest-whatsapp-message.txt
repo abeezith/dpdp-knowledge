@@ -1,7 +1,7 @@
-DPDP Quiz 112 | Breach Evidence Preservation
+DPDP Quiz 113 | Bihar Field Notice Walkthrough
 
-Five incident-response scenarios on preserving evidence, documenting containment, and preparing an accurate notification trail after a suspected personal-data breach.
+Five Bihar field scenarios on local-language notices, documented consent, purpose limits, and practical withdrawal routes.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-112-breach-evidence-preservation/
+https://abeezith.github.io/dpdp-knowledge/quiz-113-bihar-field-notice-walkthrough/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
