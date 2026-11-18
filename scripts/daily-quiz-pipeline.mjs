@@ -8418,6 +8418,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 124,
+  slug: "odk-offline-data-hygiene",
+  shortTitle: "ODK Offline Data Hygiene",
+  pageTitle: "DPDP Quiz 124 - ODK Offline Data Hygiene",
+  eyebrow: "DPDP Quiz 124 | ODK Offline Data Hygiene",
+  heroTitle: "ODK Offline Data: Minimise, Sync, Protect",
+  heroIntro: "Five field-operations decisions on collecting only what is needed, protecting offline forms, synchronising safely, and retiring unnecessary sensitive fields.",
+  cardDescription: "Five ODK field-data scenarios on minimum collection, encrypted devices, safe sync, local-copy cleanup, and form-version control.",
+  audience: "Field implementors, ODK form owners, programme officers, and platform support teams",
+  focus: "Data minimisation, device encryption, sync hygiene, access control, and sensitive-form retirement",
+  resultSummary: "This set reinforces that offline collection needs deliberate safeguards from form design through successful sync and cleanup.",
+  topics: [{ label: "Field setting", text: "ODK Collect and ODK Central operations" }, { label: "Lifecycle stage", text: "Collection, offline storage, synchronisation, and retirement" }, { label: "Source", text: "Approved data-audit-checklist.md and bilingual assessment workbook seed themes" }],
+  questions: [
+    { module: "Form design", topic: "Future-use field", text: "An ODK form designer proposes adding each beneficiary's alternate phone number because it might help a future project, although the current follow-up workflow does not use it. What is the best decision?", options: ["Leave the field out unless a defined current purpose requires it", "Make it mandatory so it is available for every future programme", "Collect it without showing it in the notice", "Ask enumerators to decide informally which households should provide it"], correct: 0, explanation: "The ODK checklist requires forms to collect only the minimum required fields. A speculative future use is not a reason to add personal data to the current form." },
+    { module: "Device safeguards", topic: "New field tablet", text: "Before a newly issued tablet is used for offline ODK collection, which safeguard is most important to confirm?", options: ["Full-device encryption is enabled", "The home-screen wallpaper shows the programme logo", "All staff can use the same device PIN", "Forms are copied to a personal backup phone"], correct: 0, explanation: "The ODK-specific audit checklist calls for full device encryption on phones and tablets used for field collection. This helps protect forms if a device is lost or accessed without authorisation." },
+    { module: "Successful sync", topic: "Local submissions", text: "An enumerator has confirmed that completed forms were successfully synchronised to ODK Central. What should the team’s controlled process address next?", options: ["Delete personal-data forms from the device according to the approved sync and cleanup process", "Keep every synced form on the device indefinitely for convenience", "Send copies of the forms to a personal email account", "Turn off the device lock because the forms are now backed up"], correct: 0, explanation: "The checklist asks whether forms containing personal data are deleted from devices after successful sync. A defined cleanup process reduces unnecessary local exposure while retaining approved central records." },
+    { module: "Access control", topic: "Form manager request", text: "A volunteer asks for ODK Central form-management access so they can view submissions during a one-day event. What should the platform owner do?", options: ["Grant access only if the role is authorised and limited to the necessary task", "Share a supervisor's login for the event", "Export all submissions to the volunteer's personal drive", "Create a permanent administrator account for convenience"], correct: 0, explanation: "The ODK checklist requires submission access and form management to be restricted to authorised staff. Access should be based on a defined role and minimum necessary permissions." },
+    { module: "Version control", topic: "Retired sensitive field", text: "A revised ODK form removes an unnecessary sensitive field, but the old version remains available for selection. What should happen?", options: ["Retire the old form version so it cannot continue collecting the unnecessary field", "Keep both versions active so enumerators can choose", "Hide the field label but continue storing the value", "Ask enumerators to remember not to use the older form"], correct: 0, explanation: "The approved checklist calls for old ODK form versions with sensitive fields to be retired. Technical version control is more reliable than relying on individual memory." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

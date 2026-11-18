@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-17T13:30:52.060Z",
-  "publishedThisRun": "quiz-113-bihar-field-notice-walkthrough",
-  "latestPublishedFolder": "quiz-113-bihar-field-notice-walkthrough",
-  "lastPublishedAt": "2026-11-17T13:30:52.058Z",
-  "lastPublishedOnLocalDate": "2026-11-17",
+  "updatedAt": "2026-11-18T13:32:29.246Z",
+  "publishedThisRun": "quiz-114-advanced-breach-notification-clock",
+  "latestPublishedFolder": "quiz-114-advanced-breach-notification-clock",
+  "lastPublishedAt": "2026-11-18T13:32:29.243Z",
+  "lastPublishedOnLocalDate": "2026-11-18",
   "lastNotificationSentFor": "quiz-113-bihar-field-notice-walkthrough",
   "queuedFolders": [
-    "quiz-114-advanced-breach-notification-clock",
     "quiz-115-enrolment-data-design",
     "quiz-116-dhis2-access-hygiene",
     "quiz-117-retention-evidence-review",
@@ -15,7 +14,8 @@
     "quiz-120-nikshay-processor-assurance",
     "quiz-121-gandhi-fellow-community-records",
     "quiz-122-cross-border-transfer-checkpoint",
-    "quiz-123-advanced-notice-quality-review"
+    "quiz-123-advanced-notice-quality-review",
+    "quiz-124-odk-offline-data-hygiene"
   ],
   "queuedCount": 10
 }

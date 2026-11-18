@@ -1,7 +1,7 @@
-DPDP Quiz 113 | Bihar Field Notice Walkthrough
+DPDP Quiz 114 | Advanced Breach Notification Clock
 
-Five Bihar field scenarios on local-language notices, documented consent, purpose limits, and practical withdrawal routes.
+Five advanced breach-response questions on notification timing, beneficiary communication, escalation, and the 72-hour report.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-113-bihar-field-notice-walkthrough/
+https://abeezith.github.io/dpdp-knowledge/quiz-114-advanced-breach-notification-clock/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
