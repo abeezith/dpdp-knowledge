@@ -8440,6 +8440,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 125,
+  slug: "amrit-access-assurance",
+  shortTitle: "AMRIT Access Assurance",
+  pageTitle: "DPDP Quiz 125 - AMRIT Access Assurance",
+  eyebrow: "DPDP Quiz 125 | AMRIT Access Assurance",
+  heroTitle: "AMRIT Access: Authorise, Protect, Review",
+  heroIntro: "Five practical access-control decisions for protecting patient records in AMRIT through role limits, session discipline, evidence, and vendor accountability.",
+  cardDescription: "Five AMRIT access scenarios on role-based visibility, inactive sessions, audit trails, ABHA-linked records, and vendor safeguards.",
+  audience: "AMRIT owners, clinical teams, platform administrators, and privacy reviewers",
+  focus: "Role-based access, session management, audit evidence, ABHA-linked record controls, and processor assurance",
+  resultSummary: "This set reinforces that patient-data access must be limited, reviewable, and protected through both platform controls and accountable vendor arrangements.",
+  topics: [{ label: "Platform", text: "AMRIT patient-data operations" }, { label: "Lifecycle stage", text: "Access, use, monitoring, and review" }, { label: "Source", text: "Approved data-audit-checklist.md and bilingual assessment workbook access-control seed themes" }],
+  questions: [
+    { module: "Role-based visibility", topic: "Reception desk request", text: "A reception worker asks for access to all AMRIT patient records so they can assist any clinic when it is busy. What should the platform owner do?", options: ["Limit access to the worker's authorised role and only the records needed for their duties", "Grant broad access because busy periods are unpredictable", "Share a clinician's account for the day", "Export all patient records to a shared spreadsheet"], correct: 0, explanation: "The AMRIT checklist requires patient data to be visible only to treating clinicians and authorised roles. Access should be role-based and limited to what is needed." },
+    { module: "Session management", topic: "Unattended terminal", text: "A clinician leaves an AMRIT terminal open while stepping away from a consultation area. Which control best reduces the exposure?", options: ["Automatic session timeout after inactivity, with users signing in again when needed", "Keeping the session open so the next user can continue", "Posting the password near the terminal", "Turning off the screen lock during clinic hours"], correct: 0, explanation: "The AMRIT-specific checklist asks whether sessions time out after inactivity. This reduces the chance that an unattended terminal exposes patient records." },
+    { module: "Audit evidence", topic: "Record-access concern", text: "A supervisor receives a concern that a patient record may have been viewed without a work reason. What evidence should be checked first?", options: ["The access log or audit trail for the patient record", "The clinic's monthly attendance sheet", "The patient’s programme eligibility score", "A staff member's personal recollection alone"], correct: 0, explanation: "The checklist calls for access logs for patient records to be enabled and retained. An audit trail provides the evidence needed to review who accessed a record and when." },
+    { module: "ABHA linkage", topic: "New analytics view", text: "A product team proposes showing ABHA-linked records in a broad analytics view used by non-clinical staff. What is the most appropriate safeguard?", options: ["Apply separate, role-based access controls before exposing ABHA-linked records", "Make the view public because it is an internal dashboard", "Remove only the patient name and keep all other identifiers unrestricted", "Let each analyst decide whether access is necessary"], correct: 0, explanation: "The AMRIT checklist specifically asks whether ABHA-linked records are access-controlled separately. Broad analytics access should not bypass that control." },
+    { module: "Vendor assurance", topic: "Support renewal", text: "Before renewing AMRIT vendor support that may involve patient-data access, what should the organisation confirm?", options: ["A written agreement requires the vendor to meet equivalent DPDP security safeguards", "The vendor has a polished presentation template", "The vendor can retain every support export indefinitely", "Support engineers may use any personal device"], correct: 0, explanation: "The approved checklist asks whether the AMRIT vendor or NIC has a written agreement covering DPDP security safeguards. Processor safeguards need to be explicit and accountable." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-18T13:34:48.114Z",
-  "publishedThisRun": "quiz-114-advanced-breach-notification-clock",
-  "latestPublishedFolder": "quiz-114-advanced-breach-notification-clock",
-  "lastPublishedAt": "2026-11-18T13:32:29.243Z",
-  "lastPublishedOnLocalDate": "2026-11-18",
+  "updatedAt": "2026-11-19T13:33:12.004Z",
+  "publishedThisRun": "quiz-115-enrolment-data-design",
+  "latestPublishedFolder": "quiz-115-enrolment-data-design",
+  "lastPublishedAt": "2026-11-19T13:32:58.214Z",
+  "lastPublishedOnLocalDate": "2026-11-19",
   "lastNotificationSentFor": "quiz-114-advanced-breach-notification-clock",
   "queuedFolders": [
-    "quiz-115-enrolment-data-design",
     "quiz-116-dhis2-access-hygiene",
     "quiz-117-retention-evidence-review",
     "quiz-118-bi-analyst-sharing-thresholds",
@@ -15,7 +14,8 @@
     "quiz-121-gandhi-fellow-community-records",
     "quiz-122-cross-border-transfer-checkpoint",
     "quiz-123-advanced-notice-quality-review",
-    "quiz-124-odk-offline-data-hygiene"
+    "quiz-124-odk-offline-data-hygiene",
+    "quiz-125-amrit-access-assurance"
   ],
   "queuedCount": 10
 }

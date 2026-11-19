@@ -1,7 +1,7 @@
-DPDP Quiz 114 | Advanced Breach Notification Clock
+DPDP Quiz 115 | Enrolment Data Design
 
-Five advanced breach-response questions on notification timing, beneficiary communication, escalation, and the 72-hour report.
+Five enrolment-design scenarios on minimum fields, specific purposes, optional choices, notice clarity, and consent evidence.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-114-advanced-breach-notification-clock/
+https://abeezith.github.io/dpdp-knowledge/quiz-115-enrolment-data-design/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
