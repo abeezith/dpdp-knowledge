@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-19T13:35:04.904Z",
-  "publishedThisRun": "quiz-115-enrolment-data-design",
-  "latestPublishedFolder": "quiz-115-enrolment-data-design",
-  "lastPublishedAt": "2026-11-19T13:32:58.214Z",
-  "lastPublishedOnLocalDate": "2026-11-19",
+  "updatedAt": "2026-11-20T17:24:54.017Z",
+  "publishedThisRun": "quiz-116-dhis2-access-hygiene",
+  "latestPublishedFolder": "quiz-116-dhis2-access-hygiene",
+  "lastPublishedAt": "2026-11-20T17:24:54.017Z",
+  "lastPublishedOnLocalDate": "2026-11-20",
   "lastNotificationSentFor": "quiz-115-enrolment-data-design",
   "queuedFolders": [
-    "quiz-116-dhis2-access-hygiene",
     "quiz-117-retention-evidence-review",
     "quiz-118-bi-analyst-sharing-thresholds",
     "quiz-119-developer-breach-containment",
@@ -15,7 +14,8 @@
     "quiz-122-cross-border-transfer-checkpoint",
     "quiz-123-advanced-notice-quality-review",
     "quiz-124-odk-offline-data-hygiene",
-    "quiz-125-amrit-access-assurance"
+    "quiz-125-amrit-access-assurance",
+    "quiz-126-grievance-resolution-practice"
   ],
   "queuedCount": 10
 }

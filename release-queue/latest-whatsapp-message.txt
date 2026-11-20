@@ -1,7 +1,7 @@
-DPDP Quiz 115 | Enrolment Data Design
+DPDP Quiz 116 | DHIS2 Access Hygiene
 
-Five enrolment-design scenarios on minimum fields, specific purposes, optional choices, notice clarity, and consent evidence.
+Five DHIS2 scenarios on role-based access, inactive accounts, audit trails, exports, and protected backups.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-115-enrolment-data-design/
+https://abeezith.github.io/dpdp-knowledge/quiz-116-dhis2-access-hygiene/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

@@ -8462,6 +8462,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 126,
+  slug: "grievance-resolution-practice",
+  shortTitle: "Grievance Resolution Practice",
+  pageTitle: "DPDP Quiz 126 - Grievance Resolution Practice",
+  eyebrow: "DPDP Quiz 126 | Grievance Resolution Practice",
+  heroTitle: "Grievance Resolution: Receive, Route, Respond",
+  heroIntro: "Five applied decisions for turning a beneficiary complaint into a clear, evidenced, and timely DPDP grievance response.",
+  cardDescription: "Five grievance-handling scenarios on published channels, request routing, response evidence, the 90-day window, and escalation after an internal resolution attempt.",
+  audience: "Programme officers, grievance owners, implementors, and privacy coordinators",
+  focus: "Published grievance channels, accountable routing, response records, timing, and escalation",
+  resultSummary: "This set reinforces that a grievance mechanism must be usable in practice: teams need a clear route, an accountable response, and a record of what was resolved.",
+  topics: [{ label: "Obligation area", text: "Grievance redressal under Section 8(10) and Rule 14(3)" }, { label: "Lifecycle stage", text: "Complaint intake, resolution, response, and escalation" }, { label: "Source", text: "Approved act-and-rules-summary.md and learning-modules.md" }],
+  questions: [
+    { module: "Grievance mechanism", topic: "Public route", text: "A beneficiary asks where to raise a DPDP complaint, but the programme website has no grievance contact or process. What should the organisation put in place?", options: ["A published grievance redressal mechanism on its website or app", "A private staff chat that beneficiaries cannot access", "A promise to explain the route only after a complaint is received", "A single annual grievance meeting"], correct: 0, explanation: "The approved Act-and-Rules summary says every Data Fiduciary must publish a grievance redressal mechanism on its website or app so people have a usable route to raise concerns." },
+    { module: "Rights handling", topic: "Wrong-team receipt", text: "A field implementor receives a complaint that a beneficiary's mobile number is incorrect in the programme system. What is the best first operational response?", options: ["Record the request and route it through the defined correction or grievance process", "Tell the beneficiary to return only when the annual audit starts", "Edit unrelated records until the correct number is found", "Delete the entire beneficiary profile without checking the request"], correct: 0, explanation: "The learning material links correction and grievance rights to an operational routing process. Intake should be recorded and passed to the accountable team rather than handled informally or ignored." },
+    { module: "Response timing", topic: "Open complaint", text: "A complaint about an unresolved access request has been open for 70 days. Which management action best matches the source guidance?", options: ["Prioritise a documented resolution and response before the maximum 90-day period expires", "Wait until the next financial year because the request is already old", "Close the complaint without replying because internal review is taking time", "Tell the beneficiary to contact the Board before any organisational response"], correct: 0, explanation: "The approved summary states that grievances must be responded to within a maximum of 90 days. An open case at day 70 needs active ownership and a timely documented response." },
+    { module: "Resolution evidence", topic: "Verifiable closure", text: "Which record gives the strongest evidence that a data grievance was handled properly?", options: ["The complaint received, actions taken, decision, response sent, and closure date", "A verbal assurance that the team discussed the issue", "Only the name of the staff member who first heard the complaint", "A blank copy of the grievance form"], correct: 0, explanation: "Accountable handling needs a traceable record. Capturing the request, investigation or action, response, and closure makes the outcome reviewable and supports follow-through." },
+    { module: "Escalation", topic: "After internal resolution", text: "After using the organisation's grievance process, a beneficiary remains dissatisfied with the response. What is the appropriate next step described in the approved learning material?", options: ["They may escalate to the Data Protection Board of India after exhausting the organisational grievance process", "They lose the right to raise the matter further", "The programme may erase the complaint record", "They must obtain a new consent form before seeking help"], correct: 0, explanation: "The learning modules explain that a Data Principal must first exhaust the organisation's grievance process and may then escalate an unresolved complaint to the Data Protection Board of India." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
