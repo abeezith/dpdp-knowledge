@@ -8484,6 +8484,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 127,
+  slug: "jharkhand-consent-conversation",
+  shortTitle: "Jharkhand Consent Conversation",
+  pageTitle: "DPDP Quiz 127 - Jharkhand Consent Conversation",
+  eyebrow: "DPDP Quiz 127 | Jharkhand Consent Conversation",
+  heroTitle: "Jharkhand Consent Conversation: Explain, Choice, Record",
+  heroIntro: "Five field-facing consent decisions that turn a notice into an understandable, voluntary and documented choice.",
+  cardDescription: "Five Jharkhand field scenarios on language choice, specific purposes, separate media consent, refusal without service loss, and witnessed verbal-consent records.",
+  audience: "Karuna Fellows, Gandhi Fellows, implementors, and programme leads",
+  focus: "Plain-language notice, specific choices, voluntary consent, and consent evidence",
+  resultSummary: "This set reinforces that good consent is a real conversation: explain the exact use, respect every choice, and keep evidence of what was agreed.",
+  topics: [{ label: "Field setting", text: "Jharkhand beneficiary enrolment and community sessions" }, { label: "Obligation area", text: "Notice, consent, withdrawal, and consent records" }, { label: "Source", text: "Approved consent-templates.md, learning-modules.md, and bilingual Quiz 1-3 seed concepts" }],
+  questions: [
+    { module: "Notice language", topic: "Community meeting", text: "At a Jharkhand livelihood meeting, an implementor has an English enrolment notice but most participants prefer Hindi. Before asking for agreement, what is the best next step?", options: ["Explain the notice in a language participants understand and make the relevant version available", "Read the English notice faster so the meeting can finish", "Ask a participant to sign first and explain the purpose later", "Replace the notice with a general promise to keep data safe"], correct: 0, explanation: "The approved templates say notices should be available in English or an Eighth Schedule language and recommend Hindi or relevant regional-language versions for field programmes. A person needs an understandable explanation before making a choice." },
+    { module: "Purpose clarity", topic: "Follow-up calls", text: "A field team collects a mobile number for nutrition-session reminders. Which explanation gives the beneficiary the clearest, purpose-specific choice?", options: ["We may contact you whenever useful", "We will use your mobile number to remind you about nutrition sessions in this programme", "Your number will be used for all future Foundation work", "We only need your number because the form has a space for it"], correct: 1, explanation: "The consent template requires the team to state the specific programme purpose. Naming the reminder use is clearer than broad future-use language." },
+    { module: "Separate media choice", topic: "Community success story", text: "After completing enrolment, a fellow asks to record a beneficiary's video testimonial for a donor report. What should happen before recording?", options: ["Obtain consent that specifically describes the video and donor-report purpose", "Treat the enrolment consent as permission for every recording", "Record first because the beneficiary already receives services", "Ask only the local volunteer to approve the recording"], correct: 0, explanation: "Photography, video, and audio use has its own approved consent template. The purpose and intended use should be described specifically rather than assumed from an enrolment form." },
+    { module: "Voluntary choice", topic: "Refusal", text: "A beneficiary agrees to programme enrolment but declines a photograph for social media. How should the team respond?", options: ["Respect the refusal and continue the programme service without using the photograph", "Explain that photographs are compulsory for receiving the service", "Take the photograph without a name so consent is unnecessary", "Ask another beneficiary to agree on the person's behalf"], correct: 0, explanation: "The media-consent template states that a person can say no and that this must not affect their services or benefits. A separate optional use cannot be made a condition of programme support." },
+    { module: "Verbal consent record", topic: "Low-literacy enrolment", text: "A beneficiary chooses to give consent verbally after the notice is explained aloud. Which record most directly shows that the field process was completed properly?", options: ["The date and location, fields collected, purpose and language explained, exact response, field staff details, and witness details", "Only the beneficiary's first name because the explanation was spoken", "A blank paper marked verbal consent", "The field worker's memory of the discussion at month end"], correct: 0, explanation: "The verbal-consent template calls for the setting, data fields, purpose, language, response, staff and witness details. These records evidence that the notice was explained and the person actively agreed." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

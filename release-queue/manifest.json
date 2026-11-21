@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-20T17:27:06.721Z",
-  "publishedThisRun": "quiz-116-dhis2-access-hygiene",
-  "latestPublishedFolder": "quiz-116-dhis2-access-hygiene",
-  "lastPublishedAt": "2026-11-20T17:24:54.017Z",
-  "lastPublishedOnLocalDate": "2026-11-20",
+  "updatedAt": "2026-11-21T13:32:39.319Z",
+  "publishedThisRun": "quiz-117-retention-evidence-review",
+  "latestPublishedFolder": "quiz-117-retention-evidence-review",
+  "lastPublishedAt": "2026-11-21T13:32:20.208Z",
+  "lastPublishedOnLocalDate": "2026-11-21",
   "lastNotificationSentFor": "quiz-116-dhis2-access-hygiene",
   "queuedFolders": [
-    "quiz-117-retention-evidence-review",
     "quiz-118-bi-analyst-sharing-thresholds",
     "quiz-119-developer-breach-containment",
     "quiz-120-nikshay-processor-assurance",
@@ -15,7 +14,8 @@
     "quiz-123-advanced-notice-quality-review",
     "quiz-124-odk-offline-data-hygiene",
     "quiz-125-amrit-access-assurance",
-    "quiz-126-grievance-resolution-practice"
+    "quiz-126-grievance-resolution-practice",
+    "quiz-127-jharkhand-consent-conversation"
   ],
   "queuedCount": 10
 }

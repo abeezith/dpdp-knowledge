@@ -1,7 +1,7 @@
-DPDP Quiz 116 | DHIS2 Access Hygiene
+DPDP Quiz 117 | Retention Evidence Review
 
-Five DHIS2 scenarios on role-based access, inactive accounts, audit trails, exports, and protected backups.
+Five intermediate scenarios on retention schedules, automated erasure notice, backup controls, and evidence of purpose-complete deletion.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-116-dhis2-access-hygiene/
+https://abeezith.github.io/dpdp-knowledge/quiz-117-retention-evidence-review/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
