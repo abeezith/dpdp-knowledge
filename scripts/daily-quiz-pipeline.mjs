@@ -8506,6 +8506,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 128,
+  slug: "advanced-retention-control-review",
+  shortTitle: "Advanced Retention Control Review",
+  pageTitle: "DPDP Quiz 128 - Advanced Retention Control Review",
+  eyebrow: "DPDP Quiz 128 | Advanced Retention Control Review",
+  heroTitle: "Retention Control Review: Decide, Notify, Evidence",
+  heroIntro: "Five advanced audit decisions on defining retention, preparing automated erasure, retaining required logs, and proving lifecycle controls work in practice.",
+  cardDescription: "Five advanced retention-control scenarios on documented schedules, 48-hour erasure notice, legal holds, audit-log retention, and evidence of deletion.",
+  audience: "Platform owners, privacy reviewers, programme leads, and data-governance teams",
+  focus: "Retention schedules, automated erasure, pre-erasure notice, required records, and audit evidence",
+  resultSummary: "This set reinforces that retention is an operational control: define the period, notify before automated erasure, preserve what law requires, and keep evidence that the control ran.",
+  topics: [{ label: "Difficulty", text: "Advanced lifecycle-control review" }, { label: "Lifecycle stage", text: "Retention, pre-erasure notification, deletion, and audit" }, { label: "Source", text: "Approved act-and-rules-summary.md, data-audit-checklist.md, and Excel Quiz 2 retention seed" }],
+  questions: [
+    { module: "Retention policy", topic: "Undefined case-record period", text: "An audit finds that a programme platform holds identifiable case records but its team cannot state when each category should be deleted or anonymised. What is the most important corrective action?", options: ["Create and apply a documented retention policy with defined periods and disposal actions for the relevant data categories", "Keep every record indefinitely until storage becomes expensive", "Ask each user to decide when to delete records", "Copy the records to another system so the issue is less visible"], correct: 0, explanation: "The audit checklist asks whether a documented retention policy exists for the platform. Retention decisions need defined periods and controlled deletion or anonymisation rather than ad hoc choices." },
+    { module: "Automated erasure", topic: "Scheduled deletion job", text: "A platform's automated rule will erase an inactive beneficiary record tomorrow morning. Which step should be built into the process before the erasure runs?", options: ["Notify the Data Principal at least 48 hours before automated erasure", "Send the record to a personal email as a backup", "Erase it without notice because the rule is automatic", "Ask another team to publish a list of affected people"], correct: 0, explanation: "The approved summary and audit checklist require notice at least 48 hours before automated erasure. Automation does not remove the need for a usable pre-erasure notification step." },
+    { module: "Retention exception", topic: "Required preservation", text: "A record has reached its normal retention end date, but a law requires the organisation to keep that category for a longer period. What should the lifecycle control do?", options: ["Retain it for the legally required period and document the basis instead of applying routine erasure", "Delete it immediately because every schedule must override law", "Share it broadly so others can decide", "Remove the audit trail while keeping the record"], correct: 0, explanation: "The source summary says data is erased when consent is withdrawn or the purpose is no longer served unless retention is required by law. The exception should be governed and documented, not handled informally." },
+    { module: "Audit logs", topic: "Investigation evidence", text: "A system owner proposes deleting access and processing logs after three months to save space. Which requirement should guide the decision?", options: ["Keep logs related to personal-data processing for at least one year from the date of processing", "Delete all logs once a dashboard looks stable", "Keep only screenshots chosen by individual users", "Replace logs with a monthly verbal update"], correct: 0, explanation: "The approved Act-and-Rules summary sets a minimum one-year retention expectation for logs related to personal-data processing. Logs provide accountability and investigation evidence." },
+    { module: "Control evidence", topic: "Deletion assurance", text: "A reviewer asks how the programme knows its automated retention control actually works. What evidence is strongest?", options: ["Scheduled-job records, deletion or anonymisation logs, exceptions, and periodic review evidence tied to the policy", "A general statement that the platform is privacy friendly", "A copy of an unrelated staff-training poster", "A promise that the vendor will remember to delete data"], correct: 0, explanation: "The audit checklist is evidence-focused: technical controls should enforce erasure and the organisation should be able to show the documented process has operated. Logs, exception records, and reviews make that assurance testable." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
