@@ -8528,6 +8528,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 129,
+  slug: "beginner-beneficiary-rights-basics",
+  shortTitle: "Beginner Beneficiary Rights Basics",
+  pageTitle: "DPDP Quiz 129 - Beginner Beneficiary Rights Basics",
+  eyebrow: "DPDP Quiz 129 | Beginner Beneficiary Rights Basics",
+  heroTitle: "Beneficiary Rights Basics: Ask, Act, Respond",
+  heroIntro: "Five beginner-friendly field scenarios on recognising a beneficiary request and moving it through a clear, respectful DPDP response process.",
+  cardDescription: "Five beginner scenarios on access, correction, withdrawal, nomination, and grievance routing for beneficiary data requests.",
+  audience: "Field teams, programme staff, new privacy coordinators, and beneficiary-support teams",
+  focus: "Access, correction, consent withdrawal, nomination, and grievance routing",
+  resultSummary: "This set reinforces that rights requests need a usable route, respectful intake, accountable follow-through, and a clear record of the outcome.",
+  topics: [{ label: "Difficulty", text: "Beginner practical rights handling" }, { label: "Lifecycle stage", text: "Request intake, verification, action, and response" }, { label: "Source", text: "Approved act-and-rules-summary.md, consent-templates.md, and learning-modules.md" }],
+  questions: [
+    { module: "Access request", topic: "What data is held", text: "A beneficiary asks what personal information the programme holds about her and how it has been used. Which DPDP right is she seeking to use?", options: ["The right to obtain a summary of personal data and processing activities", "The right to make every staff member a system administrator", "The right to stop all programme services for other beneficiaries", "The right to receive another person's health record"], correct: 0, explanation: "The approved learning material describes a right to access a summary of the personal data being processed and related processing information. The request should be handled through the published rights route." },
+    { module: "Correction", topic: "Changed phone number", text: "During a follow-up visit, a beneficiary says the mobile number in her programme record is wrong. What is the most appropriate field-team response?", options: ["Record and route the correction request through the defined process for verification and update", "Tell her that records can never be changed after enrolment", "Change unrelated beneficiaries' contact details until the number appears", "Ask her to post the correct number in a public group"], correct: 0, explanation: "The rights guidance includes correction and completion of inaccurate or incomplete personal data. A field team should use the accountable correction process rather than ignore the request or handle it insecurely." },
+    { module: "Withdrawal", topic: "Optional reminders", text: "A beneficiary no longer wants health-session reminder messages that she previously agreed to receive. What should the programme make possible?", options: ["A withdrawal route that is as easy to use as the original consent route", "A rule that reminders continue until the programme ends", "A requirement to visit headquarters before making any request", "A request that she find another beneficiary to withdraw for her"], correct: 0, explanation: "The consent guidance says a person must be able to withdraw consent as easily as it was given. The team should make the route clear and act on the withdrawal for that consent-based purpose." },
+    { module: "Nomination", topic: "Future incapacity", text: "A beneficiary wants to name her adult son to exercise her data rights if she becomes unable to do so herself. Which right addresses this request?", options: ["The right to nominate", "The right to publish all programme records", "The right to bypass identity checks", "The right to keep data forever"], correct: 0, explanation: "The approved learning module identifies the right to nominate another person to exercise Data Principal rights in the event of death or incapacity." },
+    { module: "Grievance route", topic: "Unresolved request", text: "A beneficiary says her earlier correction request was not resolved. Before directing her elsewhere, what should the organisation provide?", options: ["A published grievance redressal mechanism that can receive and resolve the concern", "A private staff-only chat without beneficiary access", "A request to submit a fresh consent form", "A promise to consider the issue only at the next annual audit"], correct: 0, explanation: "The Act-and-Rules summary says every Data Fiduciary must publish a grievance redressal mechanism on its website or app. It gives the person a usable internal route before any escalation." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
