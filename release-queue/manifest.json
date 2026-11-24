@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-23T13:31:00.000Z",
-  "publishedThisRun": "quiz-119-developer-breach-containment",
-  "latestPublishedFolder": "quiz-119-developer-breach-containment",
-  "lastPublishedAt": "2026-11-23T13:27:27.181Z",
-  "lastPublishedOnLocalDate": "2026-11-23",
+  "updatedAt": "2026-11-24T13:30:20.840Z",
+  "publishedThisRun": "quiz-120-nikshay-processor-assurance",
+  "latestPublishedFolder": "quiz-120-nikshay-processor-assurance",
+  "lastPublishedAt": "2026-11-24T13:28:50.620Z",
+  "lastPublishedOnLocalDate": "2026-11-24",
   "lastNotificationSentFor": "quiz-119-developer-breach-containment",
   "queuedFolders": [
-    "quiz-120-nikshay-processor-assurance",
     "quiz-121-gandhi-fellow-community-records",
     "quiz-122-cross-border-transfer-checkpoint",
     "quiz-123-advanced-notice-quality-review",
@@ -15,7 +14,8 @@
     "quiz-126-grievance-resolution-practice",
     "quiz-127-jharkhand-consent-conversation",
     "quiz-128-advanced-retention-control-review",
-    "quiz-129-beginner-beneficiary-rights-basics"
+    "quiz-129-beginner-beneficiary-rights-basics",
+    "quiz-130-advanced-breach-decision-sequence"
   ],
   "queuedCount": 10
 }

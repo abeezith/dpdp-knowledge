@@ -8550,6 +8550,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 130,
+  slug: "advanced-breach-decision-sequence",
+  shortTitle: "Advanced Breach Decision Sequence",
+  pageTitle: "DPDP Quiz 130 - Advanced Breach Decision Sequence",
+  eyebrow: "DPDP Quiz 130 | Advanced Breach Decision Sequence",
+  heroTitle: "Advanced Breach Response: Preserve, Contain, Assess",
+  heroIntro: "Five advanced scenarios on maintaining an evidence-led response when a possible personal-data breach is discovered.",
+  cardDescription: "Five advanced breach-response scenarios on evidence preservation, containment, assessment, notifications, and prevention of recurrence.",
+  audience: "IT, governance, programme leads, and privacy-response teams",
+  focus: "Technical containment, evidence preservation, impact assessment, notification content, and remediation",
+  resultSummary: "This set reinforces acting quickly without destroying evidence, while assessing impact and documenting a defensible response.",
+  topics: [{ label: "Difficulty", text: "Advanced response judgement" }, { label: "Lifecycle stage", text: "Detection, containment, assessment, notification, and remediation" }, { label: "Source", text: "Approved breach-response-sop.md" }],
+  questions: [
+    { module: "Evidence preservation", topic: "Unusual database activity", text: "A monitoring alert shows unusual downloads from a programme database. Before the technical team changes the configuration, what should be preserved first?", options: ["Relevant logs and evidence such as screenshots or exports", "Only the names of the staff on duty", "A new marketing consent form", "The original alert should be deleted to prevent confusion"], correct: 0, explanation: "The breach SOP directs teams to preserve logs before taking action on a technical breach. Evidence is needed to understand what happened and support the response." },
+    { module: "Containment", topic: "Compromised account", text: "An administrator account may have been compromised. Which combined immediate action best follows the approved SOP?", options: ["Disconnect the affected system from the network, preserve evidence, revoke compromised credentials, and alert IT/BIDA", "Wait for a completed investigation before alerting anyone", "Keep the account active so its activity continues to be visible", "Send all beneficiary records to a personal email for safekeeping"], correct: 0, explanation: "For a technical breach, the SOP calls for immediate containment, evidence preservation, credential revocation, and escalation to the IT/BIDA team." },
+    { module: "Assessment", topic: "Scope of impact", text: "After a suspected cloud-storage compromise is contained, which question is most useful during the 2–4 hour assessment stage?", options: ["What personal data was accessible and approximately how many Data Principals were affected?", "Which team can publish a celebratory announcement first?", "How can the incident be removed from every internal record?", "Which unrelated system can be upgraded this quarter?"], correct: 0, explanation: "The SOP requires assessment of the data involved, affected people, likely harm, whether the breach is ongoing, timing, and likely cause." },
+    { module: "Data Principal communication", topic: "Plain-language notice", text: "A breach communication is being drafted for affected beneficiaries. Which element belongs in that communication under the SOP?", options: ["A description of what happened, likely consequences, steps being taken, and a contact route", "A promise that no follow-up will ever be required", "The internal passwords of the response team", "A request that beneficiaries investigate the incident themselves"], correct: 0, explanation: "The SOP says affected people should receive a clear description, likely consequences, the steps being taken, and a way to seek information or help." },
+    { module: "Remediation", topic: "Preventing recurrence", text: "The immediate incident response is complete. Which follow-up best demonstrates a proper post-breach approach?", options: ["Document lessons, implement corrective controls, and include remedial steps in the detailed report", "Delete the incident record once systems are running", "Treat the incident as closed because no complaint has arrived", "Reuse the compromised credentials to test whether they still work"], correct: 0, explanation: "The detailed report and post-breach process require mitigation and remedial steps to prevent recurrence, supported by documented evidence and lessons learned." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

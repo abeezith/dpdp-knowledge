@@ -1,7 +1,7 @@
-DPDP Quiz 119 | Developer Breach Containment
+DPDP Quiz 120 | Nikshay Processor Assurance
 
-Five developer scenarios on breach containment, log preservation, credential control, and evidence-led remediation.
+Five Nikshay assurance scenarios on processor role clarity, authorised access, local-copy limits, purpose boundaries, and written safeguards.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-119-developer-breach-containment/
+https://abeezith.github.io/dpdp-knowledge/quiz-120-nikshay-processor-assurance/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
