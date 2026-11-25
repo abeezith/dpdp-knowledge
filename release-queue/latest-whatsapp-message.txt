@@ -1,7 +1,7 @@
-DPDP Quiz 120 | Nikshay Processor Assurance
+DPDP Quiz 121 | Gandhi Fellow Community Records
 
-Five Nikshay assurance scenarios on processor role clarity, authorised access, local-copy limits, purpose boundaries, and written safeguards.
+Five Gandhi Fellow scenarios on clear notice, limited collection, media consent, recording choices, and safe handling of community requests.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-120-nikshay-processor-assurance/
+https://abeezith.github.io/dpdp-knowledge/quiz-121-gandhi-fellow-community-records/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

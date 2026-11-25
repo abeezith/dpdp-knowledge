@@ -8572,6 +8572,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 131,
+  slug: "gandhi-fellow-audio-consent",
+  shortTitle: "Gandhi Fellow Audio Consent",
+  pageTitle: "DPDP Quiz 131 - Gandhi Fellow Audio Consent",
+  eyebrow: "DPDP Quiz 131 | Gandhi Fellow Audio Consent",
+  heroTitle: "Gandhi Fellow Audio Consent: Explain, Agree, Delete",
+  heroIntro: "Five field scenarios on seeking clear consent before recording community voices and handling recordings only for the stated purpose.",
+  cardDescription: "Five field-ready scenarios on audio consent, clear purpose explanations, children's recordings, secure sharing, and deletion after use.",
+  audience: "Gandhi Fellows, field teams, and community-mobilisation partners",
+  focus: "Audio-recording consent, purpose limitation, children's data, sharing boundaries, and deletion",
+  resultSummary: "This set reinforces that voice recordings are personal data: explain the purpose, honour refusal, use only the agreed channel, and delete after use.",
+  topics: [{ label: "Role", text: "Gandhi Fellow field practice" }, { label: "Lifecycle stage", text: "Recording, use, sharing, and deletion" }, { label: "Source", text: "Approved consent-templates.md and role-guidance.md" }],
+  questions: [
+    { module: "Audio recording", topic: "Explaining before record", text: "At a village meeting, a Gandhi Fellow wants to record a participant's voice so she can prepare field notes later. What should she do before starting the recording?", options: ["Explain that the conversation will be recorded for notes and ask whether the participant agrees", "Start recording quietly because the meeting is about a public programme", "Record first and ask for permission only if the participant objects", "Ask another participant to agree on everyone's behalf"], correct: 0, explanation: "The role guidance treats a recorded conversation as processing personal data. The Fellow should explain the intended recording before it starts and respect the person's decision." },
+    { module: "Purpose limitation", topic: "New use of an interview", text: "A voice interview was recorded with agreement for internal field notes. The communications team later asks to use a clip in a public campaign. What is the appropriate next step?", options: ["Seek consent for the public campaign use described specifically", "Share it because internal notes and public campaigns are both programme work", "Remove the speaker's name and publish without asking", "Send the clip to a WhatsApp group for a quick vote"], correct: 0, explanation: "Consent should be tied to a stated purpose. A recording agreed for internal notes should not be repurposed for a public campaign without a clear, specific further consent." },
+    { module: "Children's recordings", topic: "School event testimonial", text: "A Gandhi Fellow wants to record an identifiable schoolchild describing a learning activity for a training video. Whose consent is needed before recording?", options: ["The child's parent or guardian", "Any teacher who is nearby", "Only the Fellow's supervisor", "No consent if the child speaks voluntarily"], correct: 0, explanation: "The approved photography/video/audio template requires a parent or guardian to consent where the subject is under 18. A child's willingness alone does not replace that consent." },
+    { module: "Refusal", topic: "Participant says no", text: "After hearing why an interview would be recorded, a participant says she does not want an audio recording but is willing to speak off the record. What should the Fellow do?", options: ["Do not record and continue only in the non-recorded way the participant accepts", "Record anyway because the participant still agreed to talk", "Ask a colleague to record from another phone", "Tell her programme support depends on allowing the recording"], correct: 0, explanation: "Consent must be a genuine choice. The guidance says that if a person says no to recording, the Fellow should not record; services or participation should not be made conditional on an unnecessary recording." },
+    { module: "Retention", topic: "Notes completed", text: "A Fellow has used an agreed voice recording to prepare the required field note and no longer needs the file. Which action best fits the field guidance?", options: ["Delete the recording once its stated purpose has been served", "Keep it indefinitely on the personal phone in case it is useful", "Forward it to all Fellows as an example", "Upload it to a public drive without the speaker's name"], correct: 0, explanation: "The Gandhi Fellow guidance directs deletion of a recording after it has served its purpose. Keeping or sharing it beyond that purpose creates avoidable privacy risk." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1
