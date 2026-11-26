@@ -8594,6 +8594,28 @@ quizCatalog.push({
   ]
 });
 
+quizCatalog.push({
+  number: 132,
+  slug: "implementor-grievance-routing",
+  shortTitle: "Implementor Grievance Routing",
+  pageTitle: "DPDP Quiz 132 - Implementor Grievance Routing",
+  eyebrow: "DPDP Quiz 132 | Implementor Grievance Routing",
+  heroTitle: "Implementor Grievance Routing: Listen, Log, Escalate",
+  heroIntro: "Five applied scenarios on recognising a DPDP grievance, protecting confidentiality, and routing it through the published redressal process.",
+  cardDescription: "Five practical questions on receiving privacy grievances, recording requests safely, escalation, response timing, and the route to the DPBI.",
+  audience: "Implementors, programme officers, and frontline grievance-handling teams",
+  focus: "Grievance channels, access and correction requests, confidential intake, escalation, and 90-day response handling",
+  resultSummary: "This set reinforces a reliable first response: do not guess, do not expose records, log the request, and escalate it through the right channel.",
+  topics: [{ label: "Role", text: "Implementor and programme grievance intake" }, { label: "Obligation area", text: "Data Principal rights and grievance redressal" }, { label: "Source", text: "Approved act-and-rules-summary.md and learning-modules.md" }],
+  questions: [
+    { module: "Grievance intake", topic: "First response", text: "At a Bihar enrolment desk, a beneficiary says her mobile number is wrong in programme records and asks for it to be corrected. What should the implementor do first?", options: ["Record the correction request and route it to the responsible programme process", "Change the number from memory without recording the request", "Tell her corrections are allowed only after a complaint to the DPBI", "Ask another beneficiary to confirm her number publicly"], correct: 0, explanation: "Correction is a Data Principal right. The learning module directs frontline staff to record the request, including its date and type, then escalate it through the programme process rather than improvising." },
+    { module: "Confidentiality", topic: "Helpline caller", text: "A caller asks whether her name appears in a sensitive beneficiary list. The implementor cannot verify the caller's identity on that call. Which response is safest?", options: ["Acknowledge the request, avoid confirming any record on the call, and escalate it for secure handling", "Read out the list so the caller can check", "Confirm the record because the caller knows the district", "Ignore the call because only written requests count"], correct: 0, explanation: "The rights-handling scenario in the learning modules stresses that staff should not confirm sensitive records over an insecure interaction. They should log the request and route it safely." },
+    { module: "Published channel", topic: "Finding the right route", text: "A beneficiary wants to complain that a previous correction request received no response. Which organisational control should already be publicly available?", options: ["A grievance redressal mechanism on the website or app", "A rule that all grievances must be sent to a staff member's personal WhatsApp", "A promise that only donors may complain", "A requirement to visit the DPBI before contacting the organisation"], correct: 0, explanation: "The approved Act-and-Rules summary says every Data Fiduciary must publish a grievance redressal mechanism. The Data Principal uses that route before escalating an unresolved grievance to the DPBI." },
+    { module: "Response timing", topic: "Open grievance", text: "A logged DPDP grievance is still unresolved after internal review. What maximum response period does the approved summary set for the organisation?", options: ["90 days", "7 days", "30 minutes", "One calendar year"], correct: 0, explanation: "The summary states that grievances must receive a response within 90 days. A good intake record makes that deadline trackable and prevents a request from disappearing between teams." },
+    { module: "Escalation", topic: "Erasure request with retention duty", text: "A participant asks an implementor to erase her records, but the team believes a government programme rule may require some records to be retained. What is the best action?", options: ["Log and escalate the request to determine what can be erased and what must lawfully be retained", "Promise immediate deletion of every record without checking", "Refuse the request without recording it", "Share the records with another team so they cannot be erased"], correct: 0, explanation: "Erasure applies when consent is withdrawn or the purpose ends, unless retention is required by law. Frontline staff should record and escalate the request so the responsible team can assess the retention obligation." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

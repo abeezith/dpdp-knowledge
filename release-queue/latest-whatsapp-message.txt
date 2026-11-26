@@ -1,7 +1,7 @@
-DPDP Quiz 121 | Gandhi Fellow Community Records
+DPDP Quiz 122 | Cross-Border Transfer Checkpoint
 
-Five Gandhi Fellow scenarios on clear notice, limited collection, media consent, recording choices, and safe handling of community requests.
+Five operational checks for overseas data flows: map the transfer, verify current restrictions, minimise access, and record safeguards.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-121-gandhi-fellow-community-records/
+https://abeezith.github.io/dpdp-knowledge/quiz-122-cross-border-transfer-checkpoint/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured
