@@ -1,7 +1,7 @@
-DPDP Quiz 122 | Cross-Border Transfer Checkpoint
+DPDP Quiz 123 | Advanced Notice Quality Review
 
-Five operational checks for overseas data flows: map the transfer, verify current restrictions, minimise access, and record safeguards.
+Five advanced notice-review scenarios on clear purposes, understandable language, proof of delivery, legacy data, and rights routing.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-122-cross-border-transfer-checkpoint/
+https://abeezith.github.io/dpdp-knowledge/quiz-123-advanced-notice-quality-review/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

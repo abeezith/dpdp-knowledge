@@ -8616,6 +8616,29 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved data-audit-checklist.md, DHIS2-Specific Checklist.
+quizCatalog.push({
+  number: 133,
+  slug: "dhis2-assurance-evidence",
+  shortTitle: "DHIS2 Assurance Evidence",
+  pageTitle: "DPDP Quiz 133 - DHIS2 Assurance Evidence",
+  eyebrow: "DPDP Quiz 133 | DHIS2 Assurance Evidence",
+  heroTitle: "DHIS2 Assurance Evidence: Show the Safeguard Works",
+  heroIntro: "Five advanced scenarios on turning DHIS2 security controls into clear, reviewable evidence using the approved platform audit checklist.",
+  cardDescription: "Five advanced DHIS2 checks on role permissions, audit-log retention, API-token control, backup recovery evidence, and restricted exports.",
+  audience: "DHIS2 platform owners, administrators, auditors, and programme data leads",
+  focus: "RBAC, audit trails, token rotation, tested backups, and export controls",
+  resultSummary: "This set reinforces that an assurance claim needs current, traceable evidence—not a policy statement alone.",
+  topics: [{ label: "Platform", text: "DHIS2 programme data environment" }, { label: "Lifecycle stage", text: "Security assurance and audit review" }, { label: "Source", text: "Approved data-audit-checklist.md" }],
+  questions: [
+    { module: "RBAC review", topic: "Organisation-unit access", text: "During a DHIS2 access review, an administrator sees that a district user can open beneficiary records for districts outside her assigned programme area. What is the strongest corrective action?", options: ["Limit her role to the organisation units and data sets required for her work, then document the review", "Keep the access because district staff may need any record later", "Give every district user administrator access so permissions are consistent", "Remove the audit trail so the excess access is no longer visible"], correct: 0, explanation: "The DHIS2 checklist calls for an RBAC review of organisation-unit and data-set restrictions by role. Access should be limited to what the authorised person needs, with the review recorded." },
+    { module: "Audit evidence", topic: "Retained logs", text: "A team says DHIS2 audit logging is enabled, but it cannot show any retained log exports from the previous year. For an assurance review, what is the key gap?", options: ["None; enabled logging alone proves the control permanently", "The team needs evidence that audit logs are exported and retained for at least one year", "Only beneficiary consent forms matter during an audit", "The logs should be deleted monthly to reduce storage"], correct: 1, explanation: "The approved DHIS2 checklist asks both whether the audit trail is enabled and whether audit logs are exported and retained for at least one year. A configuration claim without retained evidence is incomplete." },
+    { module: "API security", topic: "Service-token handover", text: "A developer leaves a DHIS2 integration project, and the shared API token they used may still work. Which action best supports the checklist's API-access control?", options: ["Rotate or revoke the token, issue a controlled replacement if needed, and ensure API calls are logged", "Leave the token active because changing it could interrupt reports", "Email the token to every programme lead as a backup", "Convert the token into a public dashboard link"], correct: 0, explanation: "The checklist requires API keys or tokens to be rotated regularly and API calls to be logged. Departure or handover is a clear trigger to revoke or rotate a shared credential." },
+    { module: "Backup readiness", topic: "Recovery proof", text: "A DHIS2 owner confirms that encrypted daily backups are running, but no one has attempted a restore. Which evidence would best close the remaining assurance gap?", options: ["A documented restore test showing the backup can be recovered successfully", "A larger backup storage quota", "A statement that backups have never failed before", "A copy of the production password in the backup folder"], correct: 0, explanation: "The general checklist asks whether backups are tested for restorability. A recorded restore test demonstrates that the team can recover data, rather than merely that backup jobs exist." },
+    { module: "Export controls", topic: "CSV request", text: "A programme lead asks for a full beneficiary-level DHIS2 CSV to prepare a routine presentation. What should the platform owner check before allowing the export?", options: ["Whether the requester has an authorised role and whether an aggregated report can meet the stated need", "Whether the file can be sent through personal email quickly", "Whether all staff in the programme want a copy", "Whether the export contains more than one district"], correct: 0, explanation: "The checklist says data export to CSV or Excel should be restricted to authorised roles. It also supports minimising use of identifiable data, so an aggregated report should be preferred when it meets the purpose." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

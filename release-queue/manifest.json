@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-26T13:39:00.000Z",
-  "publishedThisRun": "quiz-122-cross-border-transfer-checkpoint",
-  "latestPublishedFolder": "quiz-122-cross-border-transfer-checkpoint",
-  "lastPublishedAt": "2026-11-26T13:36:08.032Z",
-  "lastPublishedOnLocalDate": "2026-11-26",
+  "updatedAt": "2026-11-27T13:37:15.946Z",
+  "publishedThisRun": "quiz-123-advanced-notice-quality-review",
+  "latestPublishedFolder": "quiz-123-advanced-notice-quality-review",
+  "lastPublishedAt": "2026-11-27T13:37:15.941Z",
+  "lastPublishedOnLocalDate": "2026-11-27",
   "lastNotificationSentFor": "quiz-122-cross-border-transfer-checkpoint",
   "queuedFolders": [
-    "quiz-123-advanced-notice-quality-review",
     "quiz-124-odk-offline-data-hygiene",
     "quiz-125-amrit-access-assurance",
     "quiz-126-grievance-resolution-practice",
@@ -15,7 +14,8 @@
     "quiz-129-beginner-beneficiary-rights-basics",
     "quiz-130-advanced-breach-decision-sequence",
     "quiz-131-gandhi-fellow-audio-consent",
-    "quiz-132-implementor-grievance-routing"
+    "quiz-132-implementor-grievance-routing",
+    "quiz-133-dhis2-assurance-evidence"
   ],
   "queuedCount": 10
 }
