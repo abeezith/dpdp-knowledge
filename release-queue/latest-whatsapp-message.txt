@@ -1,7 +1,7 @@
-DPDP Quiz 123 | Advanced Notice Quality Review
+DPDP Quiz 124 | ODK Offline Data Hygiene
 
-Five advanced notice-review scenarios on clear purposes, understandable language, proof of delivery, legacy data, and rights routing.
+Five ODK field-data scenarios on minimum collection, encrypted devices, safe sync, local-copy cleanup, and form-version control.
 
-https://abeezith.github.io/dpdp-knowledge/quiz-123-advanced-notice-quality-review/
+https://abeezith.github.io/dpdp-knowledge/quiz-124-odk-offline-data-hygiene/
 
 Note: with minimal and anonymous usage stats enabled. No. of visits and completion of quiz are captured

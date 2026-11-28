@@ -8639,6 +8639,29 @@ quizCatalog.push({
   ]
 });
 
+// Source: approved consent-templates.md, role-guidance.md, and data-audit-checklist.md.
+quizCatalog.push({
+  number: 134,
+  slug: "bihar-partner-sharing-gate",
+  shortTitle: "Bihar Partner Sharing Gate",
+  pageTitle: "DPDP Quiz 134 - Bihar Partner Sharing Gate",
+  eyebrow: "DPDP Quiz 134 | Bihar Partner Sharing Gate",
+  heroTitle: "Bihar Partner Sharing Gate: Check Purpose Before Sending",
+  heroIntro: "Five field-to-partner scenarios on deciding whether a proposed data share is covered, minimal, authorised, and safely evidenced before it leaves the programme team.",
+  cardDescription: "Five Bihar field-sharing scenarios on consent scope, minimum necessary data, authorised access, secure transfers, and recorded approvals.",
+  audience: "Programme officers, field implementors, data leads, and partner managers",
+  focus: "Purpose limitation, consent scope, data minimisation, authorised sharing, and evidence of review",
+  resultSummary: "This set reinforces a simple sharing gate: confirm the purpose and authority, reduce the data, use an approved route, and retain evidence of the decision.",
+  topics: [{ label: "Field setting", text: "Bihar programme-to-partner coordination" }, { label: "Lifecycle stage", text: "Sharing and disclosure decision" }, { label: "Source", text: "Approved consent templates, role guidance, and audit checklist" }],
+  questions: [
+    { module: "Consent scope", topic: "New partner request", text: "A Bihar programme team collected beneficiary contact details for follow-up visits. A new implementation partner asks for the full contact list to invite people to its separate training. What should the programme officer check first?", options: ["Whether the original notice or consent covers this partner and stated purpose", "Whether the partner can send invitations faster than the team", "Whether the file can be renamed before sharing", "Whether the list contains at least 100 names"], correct: 0, explanation: "The role guidance says teams should check whether the consent notice covered sharing with a partner. A new recipient or separate purpose should not be assumed to be covered simply because both activities are programme-related." },
+    { module: "Data minimisation", topic: "Attendance coordination", text: "A partner only needs to confirm which villages will host a health session. Which share best follows the minimisation approach?", options: ["Village names and session dates, without beneficiary-level contact or health details", "Every beneficiary record so the partner can choose whom to contact", "A spreadsheet that includes Aadhaar numbers for convenience", "All historic survey responses from the district"], correct: 0, explanation: "The audit checklist asks whether systems collect only the minimum required fields. The same discipline supports sharing only what is necessary for the stated coordination task." },
+    { module: "Authorised access", topic: "Shared-drive link", text: "A field coordinator proposes placing an identifiable beneficiary export in a public-link cloud folder so an approved partner can download it. What is the safer response?", options: ["Use an approved restricted-access sharing route and give access only to authorised recipients", "Keep the public link because the partner is trusted", "Post the file in a group chat so the link is easy to find", "Remove the folder name and leave the public permissions unchanged"], correct: 0, explanation: "The approved audit guidance requires access to be restricted to authorised staff and secure handling controls to be used. A public link is not a suitable substitute for controlled recipient access." },
+    { module: "Decision record", topic: "Partner handoff", text: "Before a programme sends an approved, identifiable dataset to a processor for the agreed activity, what evidence should be retained?", options: ["The purpose, authorised recipient, approval or consent basis, fields shared, and secure transfer record", "Only a verbal assurance that the processor will be careful", "A copy of every unrelated programme file", "No record, because the processor is already a partner"], correct: 0, explanation: "The source materials emphasise accountable processing, processor controls, and auditable data handling. Recording the basis, scope, recipient, and transfer decision makes the sharing review traceable." },
+    { module: "Purpose change", topic: "Donor story request", text: "After receiving a monitoring dataset for internal programme review, a partner asks to reuse identifiable case details in a donor newsletter. What is the best next step?", options: ["Pause the new use and obtain specific permission if the original notice did not cover donor-publication use", "Allow it because the partner already received the dataset", "Publish the story if the beneficiary's village is not named", "Treat internal monitoring and public communications as the same purpose"], correct: 0, explanation: "Consent templates distinguish stated purposes, and the role guidance requires checking whether sharing or a new use is within the original notice. Public donor communications are a separate purpose that needs a clear lawful basis and, where needed, specific consent." }
+  ]
+});
+
 function renderQuizHtml(quiz) {
   const preparedQuiz = prepareQuizForRendering(quiz);
   const previousQuiz = quiz.number > 1

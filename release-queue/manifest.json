@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-27T13:40:01.735Z",
-  "publishedThisRun": "quiz-123-advanced-notice-quality-review",
-  "latestPublishedFolder": "quiz-123-advanced-notice-quality-review",
-  "lastPublishedAt": "2026-11-27T13:37:15.941Z",
-  "lastPublishedOnLocalDate": "2026-11-27",
+  "updatedAt": "2026-11-28T13:28:22.815Z",
+  "publishedThisRun": "quiz-124-odk-offline-data-hygiene",
+  "latestPublishedFolder": "quiz-124-odk-offline-data-hygiene",
+  "lastPublishedAt": "2026-11-28T13:28:22.809Z",
+  "lastPublishedOnLocalDate": "2026-11-28",
   "lastNotificationSentFor": "quiz-123-advanced-notice-quality-review",
   "queuedFolders": [
-    "quiz-124-odk-offline-data-hygiene",
     "quiz-125-amrit-access-assurance",
     "quiz-126-grievance-resolution-practice",
     "quiz-127-jharkhand-consent-conversation",
@@ -15,7 +14,8 @@
     "quiz-130-advanced-breach-decision-sequence",
     "quiz-131-gandhi-fellow-audio-consent",
     "quiz-132-implementor-grievance-routing",
-    "quiz-133-dhis2-assurance-evidence"
+    "quiz-133-dhis2-assurance-evidence",
+    "quiz-134-bihar-partner-sharing-gate"
   ],
   "queuedCount": 10
 }
